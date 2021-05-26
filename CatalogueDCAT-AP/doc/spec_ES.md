@@ -2,11 +2,13 @@ Entidad: CatálogoDCAT-AP
 ========================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Descripción global: **Catálogo de conjuntos de datos que cumplen con la especificación DCAT-AP.**  
 
 ## Lista de propiedades  
 
-Propiedades requeridas  
-- No hay propiedades requeridas  ## Descripción del modelo de datos de las propiedades  
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `catalogue`: Esta propiedad se refiere a un catálogo cuyo contenido es de interés en el contexto de este catálogo  - `creator`: Esta propiedad se refiere a la entidad principalmente responsable de la elaboración del catálogo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dataset`: Esta propiedad vincula el Catálogo con un Conjunto de Datos que forma parte del Catálogo  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `hasPart`: Esta propiedad hace referencia a un Catálogo relacionado que forma parte del Catálogo descrito  - `homepage`: Esta propiedad se refiere a una página web que actúa como página principal del Catálogo.  - `id`: Identificador único de la entidad  - `isPartOf`: Esta propiedad se refiere a un Catálogo relacionado en el que el Catálogo descrito está física o lógicamente incluido.  - `language`: Esta propiedad se refiere a un idioma utilizado en los metadatos textuales que describen títulos, descripciones, etc. de los conjuntos de datos del Catálogo. Esta propiedad puede repetirse si los metadatos se proporcionan en varios idiomas.  - `licence`: Esta propiedad se refiere a la licencia bajo la cual se puede utilizar o reutilizar el Catálogo.  - `location`:   - `modificationDate`: Esta propiedad contiene la fecha más reciente en la que se modificó el Catálogo.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `publisher`: Esta propiedad se refiere a una entidad (organización) responsable de poner a disposición el Catálogo  - `record`: Esta propiedad se refiere a un Registro de Catálogo que forma parte del Catálogo  - `releaseDate`: Esta propiedad contiene la fecha de emisión formal (por ejemplo, publicación) del Catálogo.  - `rights`: Esta propiedad se refiere a una declaración que especifica los derechos asociados al Catálogo.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `service`: Esta propiedad se refiere a un sitio o punto final que aparece en el catálogo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `spatial_geographic`: Esta propiedad se refiere a un área geográfica cubierta por el Catálogo  - `themes`: Esta propiedad se refiere a un sistema de organización del conocimiento utilizado para clasificar los conjuntos de datos del Catálogo.  - `title`: Esta propiedad contiene un nombre dado al Catálogo. Esta propiedad puede repetirse para las versiones lingüísticas paralelas del nombre  - `type`: Tiene que ser CatálogoDCAT-AP    
+Propiedades requeridas  
+- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -394,9 +396,546 @@ CatalogueDCAT-AP:
 ## Ejemplo de carga útil  
 #### CatálogoDCAT-AP NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un CatalogueDCAT-AP en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
+  "type": "CatalogueDCAT-AP",  
+  "dateCreated": "1980-03-03T10:01:24Z",  
+  "dateModified": "1987-12-04T10:44:40Z",  
+  "source": "",  
+  "name": "Catalogue",  
+  "alternateName": "",  
+  "description": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size.",  
+  "dataProvider": "european open data portal",  
+  "owner": [  
+    "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:Catalogue:ILBA:60770941"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      -83.400987,  
+      0.152532  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "2 Rue Mercier",  
+    "addressLocality": "Luxembourg",  
+    "addressRegion": "Luxembourg",  
+    "addressCountry": "Luxembourg",  
+    "postalCode": "2985 ",  
+    "postOfficeBoxNumber": "",  
+    "areaServed": "European Union"  
+  },  
+  "dataset": [  
+    "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
+  ],  
+  "publisher": "Spanish data portal",  
+  "title": [  
+    "title first",  
+    "Secondary title."  
+  ],  
+  "homepage": "ngsi-ld:Catalogue:homepage:ZFAW:13633782",  
+  "language": [  
+    "ES",  
+    "DE"  
+  ],  
+  "licence": "Creative Commons 3.0 International",  
+  "releaseDate": "2004-08-22T22:32:47Z",  
+  "spatial_geographic": [  
+    {  
+      "type": "Point",  
+      "coordinates": [  
+        57.234944,  
+        52.840273  
+      ]  
+    }  
+  ],  
+  "themes": [  
+    "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
+    "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+  ],  
+  "modificationDate": "1982-09-02T03:16:28Z",  
+  "hasPart": [  
+    "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
+  ],  
+  "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287",  
+  "record": [  
+    "Catalogue.items.HLGA.73285516",  
+    "Catalogue.items.IHOB.85266800"  
+  ],  
+  "rights": "",  
+  "catalogue": [  
+    "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
+    "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
+  ],  
+  "creator": "Role fact sport shoulder blue direction probably order."  
+}  
+```  
 #### CatálogoDCAT-AP NGSI-v2 normalizado Ejemplo  
 He aquí un ejemplo de un CatalogueDCAT-AP en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
+  "type": "CatalogueDCAT-AP",  
+  "dateCreated": {  
+    "type": "DateTime",  
+    "value": "1980-03-03T10:01:24Z"  
+  },  
+  "dateModified": {  
+    "type": "DateTime",  
+    "value": "1987-12-04T10:44:40Z"  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": [  
+      ""  
+    ]  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": [  
+      "Catalogue"  
+    ]  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": [  
+      ""  
+    ]  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": [  
+      "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
+    ]  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": [  
+      "european open data portal"  
+    ]  
+  },  
+  "owner": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
+    ]  
+  },  
+  "seeAlso": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:ILBA:60770941"  
+    ]  
+  },  
+  "location": {  
+    "type": "Property",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -83.400987,  
+        0.152532  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "streetAddress": [  
+        "2 Rue Mercier"  
+      ],  
+      "addressLocality": [  
+        "Luxembourg"  
+      ],  
+      "addressRegion": [  
+        "Luxembourg"  
+      ],  
+      "addressCountry": [  
+        "Luxembourg"  
+      ],  
+      "postalCode": [  
+        "2985 "  
+      ],  
+      "postOfficeBoxNumber": [  
+        ""  
+      ],  
+      "areaServed": [  
+        "European Union"  
+      ]  
+    }  
+  },  
+  "dataset": {  
+    "type": "object",  
+    "value": "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
+  },  
+  "publisher": {  
+    "type": "Property",  
+    "value": [  
+      "Five knowledge level character. Toward we billion number situation box film."  
+    ]  
+  },  
+  "title": {  
+    "type": "Property",  
+    "value": [  
+      [  
+        "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."  
+      ],  
+      [  
+        "Technology life low standard second."  
+      ]  
+    ]  
+  },  
+  "homepage": {  
+    "type": "Property",  
+    "value": "urn:ngsi-ld:Catalogue:homepage:ZFAW:13633782"  
+  },  
+  "language": {  
+    "type": "Property",  
+    "value": [  
+      [  
+        "Town size computer way. Since challenge phone state listen south low."  
+      ],  
+      [  
+        "Eight once single. Build every kid."  
+      ]  
+    ]  
+  },  
+  "licence": {  
+    "type": "Property",  
+    "value": [  
+      "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."  
+    ]  
+  },  
+  "releaseDate": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2004-08-22T22:32:47Z"  
+    }  
+  },  
+  "spatial_geographic": {  
+    "type": "Property",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        57.234944,  
+        52.840273  
+      ]  
+    }  
+  },  
+  "themes": {  
+    "type": "Property",  
+    "value": [  
+      [  
+        "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member."  
+      ],  
+      [  
+        "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+      ]  
+    ]  
+  },  
+  "modificationDate": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "1982-09-02T03:16:28Z"  
+    }  
+  },  
+  "hasPart": {  
+    "type": "object",  
+    "value": "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
+  },  
+  "isPartOf": {  
+    "type": "object",  
+    "value": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"  
+  },  
+  "record": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:items:HLGA:73285516",  
+      "urn:ngsi-ld:Catalogue:items:IHOB:85266800"  
+    ]  
+  },  
+  "rights": {  
+    "type": "Property",  
+    "value": [  
+      "Smile item their unit laugh reflect. Standard our worker coach threat present huge name. Reveal certainly director business sense."  
+    ]  
+  },  
+  "catalogue": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
+      "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
+    ]  
+  },  
+  "creator": {  
+    "type": "Property",  
+    "value": [  
+      "Role fact sport shoulder blue direction probably order."  
+    ]  
+  }  
+}  
+```  
 #### CatálogoDCAT-AP NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un CatalogueDCAT-AP en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
+  "type": "CatalogueDCAT-AP",  
+  "dateCreated": "1980-03-03T10:01:24Z",  
+  "dateModified": "1987-12-04T10:44:40Z",  
+  "source": "",  
+  "name": "Catalogue",  
+  "alternateName": "",  
+  "description": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size.",  
+  "dataProvider": "european open data portal",  
+  "owner": [  
+    "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
+  ],  
+  "seeAlso": [  
+    "urn:ngsi-ld:Catalogue:ILBA:60770941"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      -83.400987,  
+      0.152532  
+    ]  
+  },  
+  "address": {  
+    "streetAddress": "2 Rue Mercier",  
+    "addressLocality": "Luxembourg",  
+    "addressRegion": "Luxembourg",  
+    "addressCountry": "Luxembourg",  
+    "postalCode": "2985 ",  
+    "postOfficeBoxNumber": "",  
+    "areaServed": "European Union"  
+  },  
+  "dataset": [  
+    "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
+  ],  
+  "publisher": "Spanish data portal",  
+  "title": [  
+    "title first",  
+    "Secondary title."  
+  ],  
+  "homepage": "ngsi-ld:Catalogue:homepage:ZFAW:13633782",  
+  "language": [  
+    "ES",  
+    "DE"  
+  ],  
+  "licence": "Creative Commons 3.0 International",  
+  "releaseDate": "2004-08-22T22:32:47Z",  
+  "spatial_geographic": [  
+    {  
+      "type": "Point",  
+      "coordinates": [  
+        57.234944,  
+        52.840273  
+      ]  
+    }  
+  ],  
+  "themes": [  
+    "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
+    "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+  ],  
+  "modificationDate": "1982-09-02T03:16:28Z",  
+  "hasPart": [  
+    "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
+  ],  
+  "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287",  
+  "record": [  
+    "Catalogue.items.HLGA.73285516",  
+    "Catalogue.items.IHOB.85266800"  
+  ],  
+  "rights": "",  
+  "catalogue": [  
+    "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
+    "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
+  ],  
+  "creator": "Role fact sport shoulder blue direction probably order.",  
+  "@context": "https://smartdatamodels.org/context.jsonld"  
+}  
+```  
 #### CatálogoDCAT-AP NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un CatalogueDCAT-AP en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
+  "type": "CatalogueDCAT-AP",  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "1980-03-03T10:01:24Z"  
+    }  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "1987-12-04T10:44:40Z"  
+    }  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "Catalogue"  
+  },  
+  "alternateName": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
+  },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "european open data portal"  
+  },  
+  "owner": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
+    ]  
+  },  
+  "seeAlso": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:ILBA:60770941"  
+    ]  
+  },  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -83.400987,  
+        0.152532  
+      ]  
+    }  
+  },  
+  "address": {  
+    "type": "PostalAddress",  
+    "value": {  
+      "streetAddress": "2 Rue Mercier",  
+      "addressLocality": "Luxembourg",  
+      "addressRegion": "Luxembourg",  
+      "addressCountry": "Luxembourg",  
+      "postalCode": "2985 ",  
+      "postOfficeBoxNumber": "",  
+      "areaServed": "European Union"  
+    }  
+  },  
+  "dataset": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
+    ]  
+  },  
+  "publisher": {  
+    "type": "Property",  
+    "value": "Five knowledge level character. Toward we billion number situation box film."  
+  },  
+  "title": {  
+    "type": "Property",  
+    "value": [  
+      [  
+        "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."  
+      ],  
+      [  
+        "Technology life low standard second."  
+      ]  
+    ]  
+  },  
+  "homepage": {  
+    "type": "Property",  
+    "value": "Catalogue.homepage.ZFAW.13633782"  
+  },  
+  "language": {  
+    "type": "Property",  
+    "value": [  
+      [  
+        "ES"  
+      ],  
+      [  
+        "DE"  
+      ]  
+    ]  
+  },  
+  "licence": {  
+    "type": "Property",  
+    "value": [  
+      "Creative Commons 3.0 International"  
+    ]  
+  },  
+  "releaseDate": {  
+    "type": "DateTime",  
+    "value": "2004-08-22T22:32:47Z"  
+  },  
+  "spatial_geographic": {  
+    "type": "Geoproperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        57.234944,  
+        52.840273  
+      ]  
+    }  
+  },  
+  "themes": {  
+    "type": "Property",  
+    "value": [  
+      [  
+        "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member."  
+      ],  
+      [  
+        "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+      ]  
+    ]  
+  },  
+  "modificationDate": {  
+    "type": "DateTime",  
+    "value": "1982-09-02T03:16:28Z"  
+  },  
+  "hasPart": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
+    ]  
+  },  
+  "isPartOf": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"  
+  },  
+  "record": {  
+    "type": "Property",  
+    "value": [  
+      "Catalogue.items.HLGA.73285516",  
+      "Catalogue.items.IHOB.85266800"  
+    ]  
+  },  
+  "rights": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "catalogue": {  
+    "type": "Relationship",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
+      "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
+    ]  
+  },  
+  "creator": {  
+    "type": "Property",  
+    "value": "Role fact sport shoulder blue direction probably order."  
+  }  
+}  
+```  
