@@ -658,7 +658,7 @@ CatalogueDCAT-AP:
 }  
 ```  
 #### CatalogueDCAT-AP NGSI-LD valeurs-clés Exemple  
-Voici un exemple d'un CatalogueDCAT-AP au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un CatalogueDCAT-AP au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
