@@ -70,8 +70,8 @@
     }
   },
   "dataset": {
-    "type": "Property",
-    "value": [
+    "type": "Relationship",
+    "object": [
       "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"
     ]
   },
