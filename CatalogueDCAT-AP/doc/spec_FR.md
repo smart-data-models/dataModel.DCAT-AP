@@ -6,9 +6,11 @@ Entité : CatalogueDCAT-AP
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `catalogue`: Cette propriété fait référence à un catalogue dont le contenu présente un intérêt dans le contexte de ce catalogue.  - `creator`: Cette propriété fait référence à l'entité principalement responsable de la production du catalogue.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dataset`: Cette propriété relie le catalogue à un ensemble de données qui fait partie du catalogue.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `hasPart`: Cette propriété fait référence à un catalogue connexe qui fait partie du catalogue décrit.  - `homepage`: Cette propriété fait référence à une page web qui fait office de page principale pour le catalogue.  - `id`: Identifiant unique de l'entité  - `isPartOf`: Cette propriété fait référence à un Catalogue connexe dans lequel le Catalogue décrit est physiquement ou logiquement inclus.  - `language`: Cette propriété fait référence à une langue utilisée dans les métadonnées textuelles décrivant les titres, les descriptions, etc. des ensembles de données du catalogue. Cette propriété peut être répétée si les métadonnées sont fournies en plusieurs langues.  - `licence`: Cette propriété fait référence à la licence sous laquelle le catalogue peut être utilisé ou réutilisé.  - `location`:   - `modificationDate`: Cette propriété contient la date la plus récente à laquelle le Catalogue a été modifié.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `publisher`: Cette propriété fait référence à une entité (organisation) responsable de la mise à disposition du catalogue.  - `record`: Cette propriété fait référence à une fiche de catalogue qui fait partie du catalogue.  - `releaseDate`: Cette propriété contient la date d'émission officielle (par exemple, la publication) du catalogue.  - `rights`: Cette propriété fait référence à une déclaration qui spécifie les droits associés au catalogue.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `service`: Cette propriété fait référence à un site ou à un point de terminaison qui est répertorié dans le catalogue.  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `spatial_geographic`: Cette propriété fait référence à une zone géographique couverte par le Catalogue  - `themes`: Cette propriété fait référence à un système d'organisation des connaissances utilisé pour classer les ensembles de données du catalogue.  - `title`: Cette propriété contient un nom donné au Catalogue. Cette propriété peut être répétée pour les versions linguistiques parallèles du nom.  - `type`: Il faut que ce soit le CatalogueDCAT-AP    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `catalogue`: Cette propriété fait référence à un catalogue dont le contenu présente un intérêt dans le contexte de ce catalogue.  - `creator`: Cette propriété fait référence à l'entité principalement responsable de la production du catalogue.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dataset`: Cette propriété relie le catalogue à un ensemble de données qui fait partie du catalogue.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `hasPart`: Cette propriété fait référence à un catalogue connexe qui fait partie du catalogue décrit.  - `homepage`: Cette propriété fait référence à une page web qui fait office de page principale pour le catalogue.  - `id`: Identifiant unique de l'entité  - `isPartOf`: Cette propriété fait référence à un Catalogue connexe dans lequel le Catalogue décrit est physiquement ou logiquement inclus.  - `language`: Cette propriété fait référence à une langue utilisée dans les métadonnées textuelles décrivant les titres, les descriptions, etc. des ensembles de données du catalogue. Cette propriété peut être répétée si les métadonnées sont fournies en plusieurs langues.  - `licence`: Cette propriété fait référence à la licence sous laquelle le catalogue peut être utilisé ou réutilisé.  - `location`:   - `modificationDate`: Cette propriété contient la date la plus récente à laquelle le Catalogue a été modifié.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `publisher`: Cette propriété fait référence à une entité (organisation) responsable de la mise à disposition du catalogue.  - `record`: Cette propriété fait référence à une fiche de catalogue qui fait partie du catalogue.  - `releaseDate`: Cette propriété contient la date d'émission officielle (par exemple, la publication) du catalogue.  - `rights`: Cette propriété fait référence à une déclaration qui spécifie les droits associés au catalogue.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `service`: Cette propriété fait référence à un site ou à un point de terminaison qui est répertorié dans le catalogue.  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `spatial_geographic`: Cette propriété fait référence à une zone géographique couverte par le Catalogue  - `themes`: Cette propriété fait référence à un système d'organisation des connaissances utilisé pour classer les ensembles de données du catalogue.  - `title`: Cette propriété contient un nom donné au catalogue. Cette propriété peut être répétée pour les versions linguistiques parallèles du nom.  - `type`: Il faut que ce soit le CatalogueDCAT-AP    
 Propriétés requises  
-- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  ## Description des propriétés du modèle de données  
+- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`    
+Ce modèle de données et d'autres du sujet DCAT-AP est adapté pour leur utilisation et il serait recommandé d'inclure un contexte supplémentaire. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -489,49 +491,39 @@ CatalogueDCAT-AP:
     "value": "1987-12-04T10:44:40Z"  
   },  
   "source": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
+    "type": "Text",  
+    "value": ""  
   },  
   "name": {  
-    "type": "Property",  
-    "value": [  
-      "Catalogue"  
-    ]  
+    "type": "Text",  
+    "value": "Catalogue"  
   },  
   "alternateName": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
+    "type": "Text",  
+    "value": ""  
   },  
   "description": {  
-    "type": "Property",  
-    "value": [  
-      "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
-    ]  
+    "type": "Text",  
+    "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
   },  
   "dataProvider": {  
-    "type": "Property",  
-    "value": [  
-      "european open data portal"  
-    ]  
+    "type": "Text",  
+    "value": "european open data portal"  
   },  
   "owner": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
     ]  
   },  
   "seeAlso": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:ILBA:60770941"  
     ]  
   },  
   "location": {  
-    "type": "Property",  
+    "type": "geo:json",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
@@ -541,7 +533,7 @@ CatalogueDCAT-AP:
     }  
   },  
   "address": {  
-    "type": "Property",  
+    "type": "StructuredValue",  
     "value": {  
       "streetAddress": [  
         "2 Rue Mercier"  
@@ -572,12 +564,10 @@ CatalogueDCAT-AP:
   },  
   "publisher": {  
     "type": "Property",  
-    "value": [  
-      "Five knowledge level character. Toward we billion number situation box film."  
-    ]  
+    "value": "spanish open data portal"  
   },  
   "title": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       [  
         "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."  
@@ -588,11 +578,11 @@ CatalogueDCAT-AP:
     ]  
   },  
   "homepage": {  
-    "type": "Property",  
+    "type": "string",  
     "value": "urn:ngsi-ld:Catalogue:homepage:ZFAW:13633782"  
   },  
   "language": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       [  
         "Town size computer way. Since challenge phone state listen south low."  
@@ -604,16 +594,11 @@ CatalogueDCAT-AP:
   },  
   "licence": {  
     "type": "Property",  
-    "value": [  
-      "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."  
-    ]  
+    "value": "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."  
   },  
   "releaseDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2004-08-22T22:32:47Z"  
-    }  
+    "type": "DateTime",  
+    "value": "2004-08-22T22:32:47Z"  
   },  
   "spatial_geographic": {  
     "type": "Property",  
@@ -626,7 +611,7 @@ CatalogueDCAT-AP:
     }  
   },  
   "themes": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       [  
         "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member."  
@@ -637,11 +622,8 @@ CatalogueDCAT-AP:
     ]  
   },  
   "modificationDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-09-02T03:16:28Z"  
-    }  
+    "type": "DateTime",  
+    "value": "1982-09-02T03:16:28Z"  
   },  
   "hasPart": {  
     "type": "object",  
@@ -652,7 +634,7 @@ CatalogueDCAT-AP:
     "value": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"  
   },  
   "record": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:items:HLGA:73285516",  
       "urn:ngsi-ld:Catalogue:items:IHOB:85266800"  
@@ -660,27 +642,23 @@ CatalogueDCAT-AP:
   },  
   "rights": {  
     "type": "Property",  
-    "value": [  
-      "Smile item their unit laugh reflect. Standard our worker coach threat present huge name. Reveal certainly director business sense."  
-    ]  
+    "value": "Open source"  
   },  
   "catalogue": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
       "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
     ]  
   },  
   "creator": {  
-    "type": "Property",  
-    "value": [  
-      "Role fact sport shoulder blue direction probably order."  
-    ]  
+    "type": "Text",  
+    "value": "Role fact sport shoulder blue direction probably order."  
   }  
 }  
 ```  
 #### CatalogueDCAT-AP NGSI-LD valeurs-clés Exemple  
-Voici un exemple d'un CatalogueDCAT-AP au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD quand on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un CatalogueDCAT-AP au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -757,7 +735,10 @@ CatalogueDCAT-AP:
     "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
   ],  
   "creator": "Role fact sport shoulder blue direction probably order.",  
-  "@context": "https://smartdatamodels.org/context.jsonld"  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld"  
+  ]  
 }  
 ```  
 #### CatalogueDCAT-AP NGSI-LD normalisé Exemple  
@@ -813,7 +794,7 @@ CatalogueDCAT-AP:
     ]  
   },  
   "location": {  
-    "type": "geo:json",  
+    "type": "GeoProperty",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
@@ -823,7 +804,7 @@ CatalogueDCAT-AP:
     }  
   },  
   "address": {  
-    "type": "PostalAddress",  
+    "type": "Property",  
     "value": {  
       "streetAddress": "2 Rue Mercier",  
       "addressLocality": "Luxembourg",  
@@ -835,29 +816,29 @@ CatalogueDCAT-AP:
     }  
   },  
   "dataset": {  
-    "type": "Property",  
-    "value": [  
+    "type": "Relationship",  
+    "object": [  
       "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
     ]  
   },  
   "publisher": {  
     "type": "Property",  
-    "value": "Five knowledge level character. Toward we billion number situation box film."  
+    "value": "Spain open data portal"  
   },  
   "title": {  
     "type": "Property",  
     "value": [  
       [  
-        "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."  
+        "New catalogue"  
       ],  
       [  
-        "Technology life low standard second."  
+        "Nuevo catalogo"  
       ]  
     ]  
   },  
   "homepage": {  
     "type": "Property",  
-    "value": "Catalogue.homepage.ZFAW.13633782"  
+    "value": "Catalogue:homepage:ZFAW:13633782"  
   },  
   "language": {  
     "type": "Property",  
@@ -935,7 +916,11 @@ CatalogueDCAT-AP:
   },  
   "creator": {  
     "type": "Property",  
-    "value": "Role fact sport shoulder blue direction probably order."  
-  }  
+    "value": ""  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld"  
+  ]  
 }  
 ```  
