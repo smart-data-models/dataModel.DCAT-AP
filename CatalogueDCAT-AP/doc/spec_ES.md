@@ -8,7 +8,9 @@ Entidad: CatálogoDCAT-AP
 
 - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `catalogue`: Esta propiedad se refiere a un catálogo cuyo contenido es de interés en el contexto de este catálogo  - `creator`: Esta propiedad se refiere a la entidad principalmente responsable de la elaboración del catálogo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dataset`: Esta propiedad vincula el Catálogo con un Conjunto de Datos que forma parte del Catálogo  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `hasPart`: Esta propiedad hace referencia a un Catálogo relacionado que forma parte del Catálogo descrito  - `homepage`: Esta propiedad se refiere a una página web que actúa como página principal del Catálogo.  - `id`: Identificador único de la entidad  - `isPartOf`: Esta propiedad se refiere a un Catálogo relacionado en el que el Catálogo descrito está física o lógicamente incluido.  - `language`: Esta propiedad se refiere a un idioma utilizado en los metadatos textuales que describen títulos, descripciones, etc. de los conjuntos de datos del Catálogo. Esta propiedad puede repetirse si los metadatos se proporcionan en varios idiomas.  - `licence`: Esta propiedad se refiere a la licencia bajo la cual se puede utilizar o reutilizar el Catálogo.  - `location`:   - `modificationDate`: Esta propiedad contiene la fecha más reciente en la que se modificó el Catálogo.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `publisher`: Esta propiedad se refiere a una entidad (organización) responsable de poner a disposición el Catálogo  - `record`: Esta propiedad se refiere a un Registro de Catálogo que forma parte del Catálogo  - `releaseDate`: Esta propiedad contiene la fecha de emisión formal (por ejemplo, publicación) del Catálogo.  - `rights`: Esta propiedad se refiere a una declaración que especifica los derechos asociados al Catálogo.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `service`: Esta propiedad se refiere a un sitio o punto final que aparece en el catálogo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `spatial_geographic`: Esta propiedad se refiere a un área geográfica cubierta por el Catálogo  - `themes`: Esta propiedad se refiere a un sistema de organización del conocimiento utilizado para clasificar los conjuntos de datos del Catálogo.  - `title`: Esta propiedad contiene un nombre dado al Catálogo. Esta propiedad puede repetirse para las versiones lingüísticas paralelas del nombre  - `type`: Tiene que ser CatálogoDCAT-AP    
 Propiedades requeridas  
-- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  ## Descripción del modelo de datos de las propiedades  
+- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`    
+Este modelo de datos y otros de la asignatura DCAT-AP están siendo adaptados para su uso y sería recomendable que se incluyera un contexto adicional. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -489,49 +491,39 @@ CatalogueDCAT-AP:
     "value": "1987-12-04T10:44:40Z"  
   },  
   "source": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
+    "type": "Text",  
+    "value": ""  
   },  
   "name": {  
-    "type": "Property",  
-    "value": [  
-      "Catalogue"  
-    ]  
+    "type": "Text",  
+    "value": "Catalogue"  
   },  
   "alternateName": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
+    "type": "Text",  
+    "value": ""  
   },  
   "description": {  
-    "type": "Property",  
-    "value": [  
-      "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
-    ]  
+    "type": "Text",  
+    "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
   },  
   "dataProvider": {  
-    "type": "Property",  
-    "value": [  
-      "european open data portal"  
-    ]  
+    "type": "Text",  
+    "value": "european open data portal"  
   },  
   "owner": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
     ]  
   },  
   "seeAlso": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:ILBA:60770941"  
     ]  
   },  
   "location": {  
-    "type": "Property",  
+    "type": "geo:json",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
@@ -541,7 +533,7 @@ CatalogueDCAT-AP:
     }  
   },  
   "address": {  
-    "type": "Property",  
+    "type": "StructuredValue",  
     "value": {  
       "streetAddress": [  
         "2 Rue Mercier"  
@@ -572,12 +564,10 @@ CatalogueDCAT-AP:
   },  
   "publisher": {  
     "type": "Property",  
-    "value": [  
-      "Five knowledge level character. Toward we billion number situation box film."  
-    ]  
+    "value": "spanish open data portal"  
   },  
   "title": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       [  
         "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."  
@@ -588,11 +578,11 @@ CatalogueDCAT-AP:
     ]  
   },  
   "homepage": {  
-    "type": "Property",  
+    "type": "string",  
     "value": "urn:ngsi-ld:Catalogue:homepage:ZFAW:13633782"  
   },  
   "language": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       [  
         "Town size computer way. Since challenge phone state listen south low."  
@@ -604,16 +594,11 @@ CatalogueDCAT-AP:
   },  
   "licence": {  
     "type": "Property",  
-    "value": [  
-      "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."  
-    ]  
+    "value": "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."  
   },  
   "releaseDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2004-08-22T22:32:47Z"  
-    }  
+    "type": "DateTime",  
+    "value": "2004-08-22T22:32:47Z"  
   },  
   "spatial_geographic": {  
     "type": "Property",  
@@ -626,7 +611,7 @@ CatalogueDCAT-AP:
     }  
   },  
   "themes": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       [  
         "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member."  
@@ -637,11 +622,8 @@ CatalogueDCAT-AP:
     ]  
   },  
   "modificationDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1982-09-02T03:16:28Z"  
-    }  
+    "type": "DateTime",  
+    "value": "1982-09-02T03:16:28Z"  
   },  
   "hasPart": {  
     "type": "object",  
@@ -652,7 +634,7 @@ CatalogueDCAT-AP:
     "value": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"  
   },  
   "record": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:items:HLGA:73285516",  
       "urn:ngsi-ld:Catalogue:items:IHOB:85266800"  
@@ -660,22 +642,18 @@ CatalogueDCAT-AP:
   },  
   "rights": {  
     "type": "Property",  
-    "value": [  
-      "Smile item their unit laugh reflect. Standard our worker coach threat present huge name. Reveal certainly director business sense."  
-    ]  
+    "value": "Open source"  
   },  
   "catalogue": {  
-    "type": "Property",  
+    "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
       "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
     ]  
   },  
   "creator": {  
-    "type": "Property",  
-    "value": [  
-      "Role fact sport shoulder blue direction probably order."  
-    ]  
+    "type": "Text",  
+    "value": "Role fact sport shoulder blue direction probably order."  
   }  
 }  
 ```  
@@ -757,7 +735,10 @@ CatalogueDCAT-AP:
     "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
   ],  
   "creator": "Role fact sport shoulder blue direction probably order.",  
-  "@context": "https://smartdatamodels.org/context.jsonld"  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld"  
+  ]  
 }  
 ```  
 #### CatálogoDCAT-AP NGSI-LD normalizado Ejemplo  
@@ -813,7 +794,7 @@ CatalogueDCAT-AP:
     ]  
   },  
   "location": {  
-    "type": "geo:json",  
+    "type": "GeoProperty",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
@@ -823,7 +804,7 @@ CatalogueDCAT-AP:
     }  
   },  
   "address": {  
-    "type": "PostalAddress",  
+    "type": "Property",  
     "value": {  
       "streetAddress": "2 Rue Mercier",  
       "addressLocality": "Luxembourg",  
@@ -835,29 +816,29 @@ CatalogueDCAT-AP:
     }  
   },  
   "dataset": {  
-    "type": "Property",  
-    "value": [  
+    "type": "Relationship",  
+    "object": [  
       "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
     ]  
   },  
   "publisher": {  
     "type": "Property",  
-    "value": "Five knowledge level character. Toward we billion number situation box film."  
+    "value": "Spain open data portal"  
   },  
   "title": {  
     "type": "Property",  
     "value": [  
       [  
-        "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."  
+        "New catalogue"  
       ],  
       [  
-        "Technology life low standard second."  
+        "Nuevo catalogo"  
       ]  
     ]  
   },  
   "homepage": {  
     "type": "Property",  
-    "value": "Catalogue.homepage.ZFAW.13633782"  
+    "value": "Catalogue:homepage:ZFAW:13633782"  
   },  
   "language": {  
     "type": "Property",  
@@ -935,7 +916,11 @@ CatalogueDCAT-AP:
   },  
   "creator": {  
     "type": "Property",  
-    "value": "Role fact sport shoulder blue direction probably order."  
-  }  
+    "value": ""  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld"  
+  ]  
 }  
 ```  
