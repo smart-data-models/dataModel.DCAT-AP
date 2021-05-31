@@ -10,49 +10,39 @@
     "value": "1987-12-04T10:44:40Z"
   },
   "source": {
-    "type": "Property",
-    "value": [
-      ""
-    ]
+    "type": "Text",
+    "value": ""
   },
   "name": {
-    "type": "Property",
-    "value": [
-      "Catalogue"
-    ]
+    "type": "Text",
+    "value": "Catalogue"
   },
   "alternateName": {
-    "type": "Property",
-    "value": [
-      ""
-    ]
+    "type": "Text",
+    "value": ""
   },
   "description": {
-    "type": "Property",
-    "value": [
-      "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."
-    ]
+    "type": "Text",
+    "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."
   },
   "dataProvider": {
-    "type": "Property",
-    "value": [
-      "european open data portal"
-    ]
+    "type": "Text",
+    "value": "european open data portal"
   },
   "owner": {
-    "type": "Property",
+    "type": "Array",
     "value": [
       "urn:ngsi-ld:Catalogue:ZYKY:89462950"
     ]
   },
   "seeAlso": {
-    "type": "Property",
+    "type": "Array",
     "value": [
       "urn:ngsi-ld:Catalogue:ILBA:60770941"
     ]
   },
   "location": {
-    "type": "Property",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -62,7 +52,7 @@
     }
   },
   "address": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": [
         "2 Rue Mercier"
@@ -93,12 +83,10 @@
   },
   "publisher": {
     "type": "Property",
-    "value": [
-      "Five knowledge level character. Toward we billion number situation box film."
-    ]
+    "value": "spanish open data portal"
   },
   "title": {
-    "type": "Property",
+    "type": "Array",
     "value": [
       [
         "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."
@@ -109,11 +97,11 @@
     ]
   },
   "homepage": {
-    "type": "Property",
+    "type": "string",
     "value": "urn:ngsi-ld:Catalogue:homepage:ZFAW:13633782"
   },
   "language": {
-    "type": "Property",
+    "type": "Array",
     "value": [
       [
         "Town size computer way. Since challenge phone state listen south low."
@@ -125,16 +113,11 @@
   },
   "licence": {
     "type": "Property",
-    "value": [
-      "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."
-    ]
+    "value": "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."
   },
   "releaseDate": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2004-08-22T22:32:47Z"
-    }
+    "type": "DateTime",
+    "value": "2004-08-22T22:32:47Z"
   },
   "spatial_geographic": {
     "type": "Property",
@@ -147,7 +130,7 @@
     }
   },
   "themes": {
-    "type": "Property",
+    "type": "Array",
     "value": [
       [
         "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member."
@@ -158,11 +141,8 @@
     ]
   },
   "modificationDate": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1982-09-02T03:16:28Z"
-    }
+    "type": "DateTime",
+    "value": "1982-09-02T03:16:28Z"
   },
   "hasPart": {
     "type": "object",
@@ -173,7 +153,7 @@
     "value": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"
   },
   "record": {
-    "type": "Property",
+    "type": "Array",
     "value": [
       "urn:ngsi-ld:Catalogue:items:HLGA:73285516",
       "urn:ngsi-ld:Catalogue:items:IHOB:85266800"
@@ -181,22 +161,17 @@
   },
   "rights": {
     "type": "Property",
-    "value": [
-      "Smile item their unit laugh reflect. Standard our worker coach threat present huge name. Reveal certainly director business sense."
-    ]
+    "value": "Open source"
   },
   "catalogue": {
-    "type": "Property",
+    "type": "Array",
     "value": [
       "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
       "urn:ngsi-ld:Catalogue:items:PECX:02526105"
     ]
   },
   "creator": {
-    "type": "Property",
-    "value": [
-      "Role fact sport shoulder blue direction probably order."
-    ]
+    "type": "Text",
+    "value": "Role fact sport shoulder blue direction probably order."
   }
 }
-

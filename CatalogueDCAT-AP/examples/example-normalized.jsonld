@@ -48,7 +48,7 @@
     ]
   },
   "location": {
-    "type": "geo:json",
+    "type": "GeoProperty",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -58,7 +58,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "Property",
     "value": {
       "streetAddress": "2 Rue Mercier",
       "addressLocality": "Luxembourg",
@@ -77,22 +77,22 @@
   },
   "publisher": {
     "type": "Property",
-    "value": "Five knowledge level character. Toward we billion number situation box film."
+    "value": "Spain open data portal"
   },
   "title": {
     "type": "Property",
     "value": [
       [
-        "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."
+        "New catalogue"
       ],
       [
-        "Technology life low standard second."
+        "Nuevo catalogo"
       ]
     ]
   },
   "homepage": {
     "type": "Property",
-    "value": "Catalogue.homepage.ZFAW.13633782"
+    "value": "Catalogue:homepage:ZFAW:13633782"
   },
   "language": {
     "type": "Property",
@@ -170,7 +170,10 @@
   },
   "creator": {
     "type": "Property",
-    "value": "Role fact sport shoulder blue direction probably order."
-  }
+    "value": ""
+  },
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld",
+    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld"
+  ]
 }
-

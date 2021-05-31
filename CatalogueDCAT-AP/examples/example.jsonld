@@ -73,6 +73,8 @@
     "urn:ngsi-ld:Catalogue:items:PECX:02526105"
   ],
   "creator": "Role fact sport shoulder blue direction probably order.",
-  "@context": "https://smartdatamodels.org/context.jsonld"
+  "@context": [
+    "https://smartdatamodels.org/context.jsonld",
+    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld"
+  ]
 }
-
