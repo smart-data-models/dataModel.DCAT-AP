@@ -143,10 +143,10 @@ CatalogueDCAT-AP:
       x-ngsi:    
         model: dct:license    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
-      oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
-        - properties:    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -166,7 +166,8 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -189,7 +190,8 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -214,7 +216,8 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -236,7 +239,8 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -261,7 +265,8 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -288,7 +293,7 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     modificationDate:    
       description: 'This property contains the most recent date on which the Catalogue was modified.'    
       format: date-time    
@@ -359,7 +364,149 @@ CatalogueDCAT-AP:
       items:    
         $id: https://geojson.org/schema/Geometry.json    
         $schema: "http://json-schema.org/draft-07/schema#"    
-        oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
+        oneOf:    
+          - properties:    
+              bbox:    
+                items:    
+                  type: number    
+                minItems: 4    
+                type: array    
+              coordinates:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type:    
+                enum:    
+                  - Point    
+                type: string    
+            required:    
+              - type    
+              - coordinates    
+            title: 'GeoJSON Point'    
+            type: object    
+          - properties:    
+              bbox:    
+                items:    
+                  type: number    
+                minItems: 4    
+                type: array    
+              coordinates:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type:    
+                enum:    
+                  - LineString    
+                type: string    
+            required:    
+              - type    
+              - coordinates    
+            title: 'GeoJSON LineString'    
+            type: object    
+          - properties:    
+              bbox:    
+                items:    
+                  type: number    
+                minItems: 4    
+                type: array    
+              coordinates:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type:    
+                enum:    
+                  - Polygon    
+                type: string    
+            required:    
+              - type    
+              - coordinates    
+            title: 'GeoJSON Polygon'    
+            type: object    
+          - properties:    
+              bbox:    
+                items:    
+                  type: number    
+                minItems: 4    
+                type: array    
+              coordinates:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                type: array    
+              type:    
+                enum:    
+                  - MultiPoint    
+                type: string    
+            required:    
+              - type    
+              - coordinates    
+            title: 'GeoJSON MultiPoint'    
+            type: object    
+          - properties:    
+              bbox:    
+                items:    
+                  type: number    
+                minItems: 4    
+                type: array    
+              coordinates:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 2    
+                  type: array    
+                type: array    
+              type:    
+                enum:    
+                  - MultiLineString    
+                type: string    
+            required:    
+              - type    
+              - coordinates    
+            title: 'GeoJSON MultiLineString'    
+            type: object    
+          - properties:    
+              bbox:    
+                items:    
+                  type: number    
+                minItems: 4    
+                type: array    
+              coordinates:    
+                items:    
+                  items:    
+                    items:    
+                      items:    
+                        type: number    
+                      minItems: 2    
+                      type: array    
+                    minItems: 4    
+                    type: array    
+                  type: array    
+                type: array    
+              type:    
+                enum:    
+                  - MultiPolygon    
+                type: string    
+            required:    
+              - type    
+              - coordinates    
+            title: 'GeoJSON MultiPolygon'    
+            type: object    
         title: 'GeoJSON Geometry'    
       type: Geoproperty    
       x-ngsi:    
