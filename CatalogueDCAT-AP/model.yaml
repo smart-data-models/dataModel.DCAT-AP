@@ -3,7 +3,7 @@ CatalogueDCAT-AP:
   properties:
     address:
       description: 'The mailing address'
-      properties:
+      properties: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_address_-_properties
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
           type: string
@@ -149,7 +149,7 @@ CatalogueDCAT-AP:
         type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
-      oneOf:
+      oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_location_-_oneof
         - description: 'Geoproperty. Geojson reference to the item. Point'
           properties:
             bbox:
@@ -382,152 +382,18 @@ CatalogueDCAT-AP:
     spatial_geographic:
       description: 'This property refers to a geographical area covered by the Catalogue'
       items:
-        $id: https://geojson.org/schema/Geometry.json
-        $schema: "http://json-schema.org/draft-07/schema#"
-        oneOf:
-          - properties:
-              bbox:
-                items:
-                  type: number
-                minItems: 4
-                type: array
-              coordinates:
-                items:
-                  type: number
-                minItems: 2
-                type: array
-              type:
-                enum:
-                  - Point
-                type: string
-            required:
-              - type
-              - coordinates
-            title: 'GeoJSON Point'
+        properties:
+          address:
+            description: 'Property. The mailing address. Model:''https://schema.org/address'''
+            properties: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_address_-_properties
             type: object
-          - properties:
-              bbox:
-                items:
-                  type: number
-                minItems: 4
-                type: array
-              coordinates:
-                items:
-                  items:
-                    type: number
-                  minItems: 2
-                  type: array
-                minItems: 2
-                type: array
-              type:
-                enum:
-                  - LineString
-                type: string
-            required:
-              - type
-              - coordinates
-            title: 'GeoJSON LineString'
-            type: object
-          - properties:
-              bbox:
-                items:
-                  type: number
-                minItems: 4
-                type: array
-              coordinates:
-                items:
-                  items:
-                    items:
-                      type: number
-                    minItems: 2
-                    type: array
-                  minItems: 4
-                  type: array
-                type: array
-              type:
-                enum:
-                  - Polygon
-                type: string
-            required:
-              - type
-              - coordinates
-            title: 'GeoJSON Polygon'
-            type: object
-          - properties:
-              bbox:
-                items:
-                  type: number
-                minItems: 4
-                type: array
-              coordinates:
-                items:
-                  items:
-                    type: number
-                  minItems: 2
-                  type: array
-                type: array
-              type:
-                enum:
-                  - MultiPoint
-                type: string
-            required:
-              - type
-              - coordinates
-            title: 'GeoJSON MultiPoint'
-            type: object
-          - properties:
-              bbox:
-                items:
-                  type: number
-                minItems: 4
-                type: array
-              coordinates:
-                items:
-                  items:
-                    items:
-                      type: number
-                    minItems: 2
-                    type: array
-                  minItems: 2
-                  type: array
-                type: array
-              type:
-                enum:
-                  - MultiLineString
-                type: string
-            required:
-              - type
-              - coordinates
-            title: 'GeoJSON MultiLineString'
-            type: object
-          - properties:
-              bbox:
-                items:
-                  type: number
-                minItems: 4
-                type: array
-              coordinates:
-                items:
-                  items:
-                    items:
-                      items:
-                        type: number
-                      minItems: 2
-                      type: array
-                    minItems: 4
-                    type: array
-                  type: array
-                type: array
-              type:
-                enum:
-                  - MultiPolygon
-                type: string
-            required:
-              - type
-              - coordinates
-            title: 'GeoJSON MultiPolygon'
-            type: object
-        title: 'GeoJSON Geometry'
+          areaServed:
+            description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
+            type: string
+          location:
+            description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+            oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_location_-_oneof
+        type: object
       type: array
       x-ngsi:
         model: dct:spatial
