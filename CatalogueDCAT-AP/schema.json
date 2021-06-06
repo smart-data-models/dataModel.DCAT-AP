@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.2",
   "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueDCAT-AP/schema.json",
   "title": " Smart Data Models - CatalogueDCAT-AP",
   "description": "Catalogue of datasets compliant with DCAT-AP specification.",
