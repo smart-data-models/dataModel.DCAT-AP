@@ -4,7 +4,11 @@ These data models are mapped from version 2.0.1 of the DCAT-AP standard. [Link](
 ### List of data models
 
 The following entity types are available:
+- [AgentDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/AgentDCAT-AP/README.md). Agent Schema meeting DCAT-AP 2.0 specification
+
 - [CatalogueDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/README.md). Catalogue of datasets compliant with DCAT-AP specification.
+
+- [Dataset](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting DCAT-AP 2.0 specification
 
 
 
