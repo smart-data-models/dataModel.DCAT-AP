@@ -1,0 +1,507 @@
+Dataset:
+  description: 'Dataset Schema meeting DCAT-AP 2.0 specification'
+  properties:
+    accessRights:
+      description: 'This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. Enum:''public, restricted, non-public'''
+      enum:
+        - public
+        - restricted
+        - non-public
+      type: string
+      x-ngsi:
+        model: foaf:Agent
+        type: Property
+    alternateName:
+      description: 'An alternative name for this item'
+      type: string
+      x-ngsi:
+        type: Property
+    contactPoint:
+      description: 'It corresponds with the ''contact point'' mandatory property of DCAT-AP 2.0.1. This property contains contact information that can be used for sending comments about the Dataset.'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        model: vcard:Kind
+        type: Property
+    creator:
+      description: 'This property refers to the entity primarily responsible for producing the catalogue'
+      type: string
+      x-ngsi:
+        model: dct:creator
+        type: Property
+    dataProvider:
+      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      type: string
+      x-ngsi:
+        type: Property
+    datasetDescription:
+      description: 'This property contains a free-text account of the Dataset. It corresponds with the ''description'' mandatory property of DCAT-AP 2.0.1. This property can be repeated for parallel language versions of the description.'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        type: Property
+    datasetDistribution:
+      description: 'This property links the Dataset to an available Distributions. It corresponds with the ''dataset distribution'' mandatory property of DCAT-AP 2.0.1'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: dcat:distribution
+        type: Property
+    datasetSource:
+      description: 'It corresponds with the property ''source'' from DCAT-AP 2.0.1. This property refers to a related Dataset from which the described Dataset is derived.'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: rdfs:Resource
+        type: Property
+    datasetType:
+      description: 'This property refers to the type of the Dataset. It corresponds to the property ''Type'' of the DCAT 2.0.1. A controlled vocabulary for the values has not been established.'
+      type: string
+      x-ngsi:
+        model: dct:type
+        type: Property
+    dateCreated:
+      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    description:
+      description: 'A description of this item'
+      type: string
+      x-ngsi:
+        type: Property
+    documentation:
+      description: 'This property refers to a page or document about this Dataset'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: foaf:Document
+        type: Property
+    frequency:
+      description: 'This property refers to the frequency at which the Dataset is updated.'
+      type: string
+      x-ngsi:
+        model: dct:Frequency
+        type: Property
+    hasVersion:
+      description: 'This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        type: Property
+    id:
+      anyOf: &dataset_-_properties_-_owner_-_items_-_anyof
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
+      description: 'Unique identifier of the entity'
+      x-ngsi:
+        type: Property
+    identifier:
+      description: 'This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: dct:identifier
+        type: Property
+    isReferencedBy:
+      description: 'This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: dct:isVersionOf
+        type: Property
+    isVersionOf:
+      description: 'This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: dct:identifier
+        type: Property
+    keyword:
+      description: 'This property contains a keyword or tag, describing the Dataset'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        model: dcat:keyword
+        type: Property
+    landingPage:
+      description: 'This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: dcat:landingPage
+        type: Property
+    language:
+      description: 'This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        model: dct:LinguisticSystem
+        type: Property
+    name:
+      description: 'The name of this item.'
+      type: string
+      x-ngsi:
+        type: Property
+    otherIdentifier:
+      description: 'This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: dct:identifier
+        type: Property
+    owner:
+      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      items:
+        anyOf: *dataset_-_properties_-_owner_-_items_-_anyof
+        description: 'Property. Unique identifier of the entity'
+      type: array
+      x-ngsi:
+        type: Property
+    provenance:
+      description: 'This property contains a statement about the lineage of a Dataset.'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        model: dct:ProvenanceStatement
+        type: Property
+    publisher:
+      description: 'This property refers to an entity (organisation) responsible for making the Dataset available'
+      type: string
+      x-ngsi:
+        model: foaf:Agent
+        type: Property
+    qualifiedAttribution:
+      description: 'This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        model: prov:qualifiedAttribution
+        type: Property
+    qualifiedRelation:
+      description: 'This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: dcat:Relationship
+        type: Property
+    relatedResource:
+      description: 'This property refers to a related resource'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: rdfs:Resource
+        type: Property
+    releaseDate:
+      description: 'This property contains the date of formal issuance (e.g., publication) of the Dataset.'
+      format: date-time
+      type: string
+      x-ngsi:
+        model: dct:issued
+        type: Property
+    sample:
+      description: 'This property refers to a sample distribution of the dataset'
+      items:
+        format: uri
+        type: string
+      type: array
+      x-ngsi:
+        model: rdfs:Resource
+        type: Property
+    seeAlso:
+      description: 'list of uri pointing to additional resources about the item'
+      oneOf:
+        - items:
+            format: uri
+            type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      x-ngsi:
+        type: Property
+    source:
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
+      type: string
+      x-ngsi:
+        type: Property
+    spatial:
+      description: 'This property refers to a geographic region that is covered by the Dataset'
+      items:
+        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+        oneOf:
+          - description: 'Geoproperty. Geojson reference to the item. Point'
+            properties:
+              bbox:
+                items:
+                  type: number
+                minItems: 4
+                type: array
+              coordinates:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type:
+                enum:
+                  - Point
+                type: string
+            required:
+              - type
+              - coordinates
+            title: 'GeoJSON Point'
+            type: object
+          - description: 'Geoproperty. Geojson reference to the item. LineString'
+            properties:
+              bbox:
+                items:
+                  type: number
+                minItems: 4
+                type: array
+              coordinates:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type:
+                enum:
+                  - LineString
+                type: string
+            required:
+              - type
+              - coordinates
+            title: 'GeoJSON LineString'
+            type: object
+          - description: 'Geoproperty. Geojson reference to the item. Polygon'
+            properties:
+              bbox:
+                items:
+                  type: number
+                minItems: 4
+                type: array
+              coordinates:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type:
+                enum:
+                  - Polygon
+                type: string
+            required:
+              - type
+              - coordinates
+            title: 'GeoJSON Polygon'
+            type: object
+          - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+            properties:
+              bbox:
+                items:
+                  type: number
+                minItems: 4
+                type: array
+              coordinates:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                type: array
+              type:
+                enum:
+                  - MultiPoint
+                type: string
+            required:
+              - type
+              - coordinates
+            title: 'GeoJSON MultiPoint'
+            type: object
+          - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+            properties:
+              bbox:
+                items:
+                  type: number
+                minItems: 4
+                type: array
+              coordinates:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 2
+                  type: array
+                type: array
+              type:
+                enum:
+                  - MultiLineString
+                type: string
+            required:
+              - type
+              - coordinates
+            title: 'GeoJSON MultiLineString'
+            type: object
+          - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+            properties:
+              bbox:
+                items:
+                  type: number
+                minItems: 4
+                type: array
+              coordinates:
+                items:
+                  items:
+                    items:
+                      items:
+                        type: number
+                      minItems: 2
+                      type: array
+                    minItems: 4
+                    type: array
+                  type: array
+                type: array
+              type:
+                enum:
+                  - MultiPolygon
+                type: string
+            required:
+              - type
+              - coordinates
+            title: 'GeoJSON MultiPolygon'
+            type: object
+      type: array
+      x-ngsi:
+        model: dct:Location
+        type: Geoproperty
+    spatialResolution:
+      description: 'This property refers to the minimum spatial separation resolvable in a dataset, measured in meters'
+      items:
+        type: number
+      type: array
+      x-ngsi:
+        model: 'dcat:spatialResolutionIn Meters'
+        type: Property
+    temporal:
+      description: 'This property refers to a temporal period that the Dataset covers'
+      items:
+        format: date-time
+        type: string
+      type: array
+      x-ngsi:
+        model: dct:PeriodOfTime
+        type: Property
+    temporalResolution:
+      description: 'This property refers to the minimum time period resolvable in the dataset.'
+      items:
+        type: number
+      type: array
+      x-ngsi:
+        model: dcat:temporalResolution
+        type: Property
+    theme:
+      description: 'This property refers to a category of the Dataset. A Dataset may be associated with multiple themes'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        model: dcat:theme
+        type: Property
+    title:
+      description: 'This property contains a name given to the Dataset. It corresponds with the ''Title'' mandatory property of DCAT-AP 2.0.1. This property can be repeated for parallel language versions of the name.'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        type: Property
+    type:
+      description: 'NGSI type. It has to be Dataset'
+      enum:
+        - Dataset
+      type: string
+      x-ngsi:
+        type: Property
+    updateDate:
+      description: 'This property contains the most recent date on which the Dataset was changed or modified.'
+      format: date-time
+      type: string
+      x-ngsi:
+        model: dct:modified
+        type: Property
+    version:
+      description: 'This property contains a version number or other version designation of the Dataset'
+      type: string
+      x-ngsi:
+        model: owl:versionInfo
+        type: Property
+    versionNotes:
+      description: 'This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        model: adms:versionNotes
+        type: Property
+    wasGeneratedBy:
+      description: 'This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.'
+      items:
+        type: string
+      type: array
+      x-ngsi:
+        model: prov:wasGeneratedBy
+        type: Property
+  required:
+    - id
+    - type
+    - datasetDescription
+    - title
+  type: object
