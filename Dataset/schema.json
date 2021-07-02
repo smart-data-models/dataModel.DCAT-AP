@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "$id": "https://github.com/smart-data-models/",
+  "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/schema.json",
   "title": "Dataset DCAT-AP 2.0 schema",
   "description": "Dataset Schema meeting DCAT-AP 2.0 specification",
   "type": "object",
