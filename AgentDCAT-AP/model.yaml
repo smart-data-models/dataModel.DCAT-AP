@@ -282,3 +282,4 @@ AgentDCAT-AP:
     - type
     - agentName
   type: object
+  version: ""
