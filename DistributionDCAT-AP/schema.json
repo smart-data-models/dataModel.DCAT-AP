@@ -145,7 +145,8 @@
         }
       },
       "required": [
-        "https://smartdatamodels.org/context.jsonld"
+        "id",
+        "type"
       ]
     }
   ]
