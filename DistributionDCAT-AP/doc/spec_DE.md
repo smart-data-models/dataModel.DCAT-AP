@@ -701,7 +701,7 @@ DistributionDCAT-AP:
   }  
 }  
 ```  
-#### VerteilungDCAT-AP NGSI-LD Schlüsselwerte Beispiel  
+#### VerteilungDCAT-AP NGSI-LD-Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für einen DistributionDCAT-AP im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
