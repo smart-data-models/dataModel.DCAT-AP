@@ -1,0 +1,75 @@
+{
+  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",
+  "type": "DistributionDCAT-AP",
+  "accessService": [
+    ""
+  ],
+  "accessUrl": [
+    ""
+  ],
+  "address": {
+    "addressCountry": "Luxembourg",
+    "addressLocality": "Luxembourg",
+    "addressRegion": "Luxembourg",
+    "postOfficeBoxNumber": "",
+    "postalCode": "24004",
+    "streetAddress": "Luxembourg platz 2"
+  },
+  "alternateName": "csv",
+  "areaServed": "European Union.",
+  "availability": "yes",
+  "byteSize": 43503,
+  "checksum": "H3FR.",
+  "compressionFormat": "",
+  "dataProvider": "Meloda.org",
+  "dateCreated": "1993-08-16T05:35:56Z",
+  "dateModified": "1970-07-14T10:48:19Z",
+  "description": "Distribution of open data portals in csv",
+  "documentation": [],
+  "downloadURL": [
+    "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
+    "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
+  ],
+  "format": " text/csv",
+  "hasPolicy": "Open data policy.",
+  "language": [
+    "EN",
+    "ES"
+  ],
+  "license": "CC-BY",
+  "linkedSchemas": [],
+  "location": {
+    "coordinates": [
+      -67.057831,
+      67.968509
+    ],
+    "type": "Point"
+  },
+  "mediaType": "",
+  "modifiedDate": "1986-03-28T19:56:43Z",
+  "name": "csv portals distribution",
+  "owner": [
+    "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",
+    "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"
+  ],
+  "packagingFormat": "zip",
+  "releaseDate": "1997-05-06T05:04:10Z",
+  "rights": "copyleft",
+  "seeAlso": [
+    "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",
+    "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"
+  ],
+  "source": "",
+  "spatialResolution": [
+    0.5,
+    0.5
+  ],
+  "status": "Withdrawn",
+  "temporalResolution": [
+    2,
+    10
+  ],
+  "title": [
+    "Dataset base"
+  ]
+}

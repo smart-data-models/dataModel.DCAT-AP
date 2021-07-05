@@ -1,0 +1,180 @@
+{
+  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",
+  "dateCreated": {
+    "type": "DateTime",
+    "value": "1993-08-16T05:35:56Z"
+  },
+  "dateModified": {
+    "type": "DateTime",
+    "value": "1970-07-14T10:48:19Z"
+  },
+  "source": {
+    "type": "Text",
+    "value": ""
+  },
+  "name": {
+    "type": "Text",
+    "value": "csv portals distribution"
+  },
+  "alternateName": {
+    "type": "Text",
+    "value": "csv"
+  },
+  "description": {
+    "type": "Text",
+    "value": "Distribution of open data portals in csv"
+  },
+  "dataProvider": {
+    "type": "Text",
+    "value": "Meloda.org"
+  },
+  "owner": {
+    "type": "Text",
+    "value": [
+      "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",
+      "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"
+    ]
+  },
+  "seeAlso": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",
+      "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"
+    ]
+  },
+  "location": {
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -67.057831,
+        67.968509
+      ]
+    }
+  },
+  "address": {
+    "type": "PostalAddress",
+    "value": {
+      "streetAddress": "Luxembourg platz 2",
+      "addressLocality": "Luxembourg",
+      "addressRegion": "Luxembourg",
+      "addressCountry": "Luxembourg",
+      "postalCode": "24004",
+      "postOfficeBoxNumber": ""
+    }
+  },
+  "areaServed": {
+    "type": "Text",
+    "value": "European Union."
+  },
+  "accessUrl": {
+    "type": "array",
+    "value": [
+      ""
+    ]
+  },
+  "availability": {
+    "type": "Text",
+    "value": "yes"
+  },
+  "format": {
+    "type": "Text",
+    "value": " text/csv"
+  },
+  "license": {
+    "type": "Text",
+    "value": "CC-BY"
+  },
+  "accessService": {
+    "type": "array",
+    "value": [
+      ""
+    ]
+  },
+  "byteSize": {
+    "type": "array",
+    "value": 43503
+  },
+  "checksum": {
+    "type": "Text",
+    "value": "H3FR."
+  },
+  "compressionFormat": {
+    "type": "Text",
+    "value": ""
+  },
+  "documentation": {
+    "type": "array",
+    "value": [
+    ]
+  },
+  "downloadURL": {
+    "type": "array",
+    "value": [
+      "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
+      "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
+    ]
+  },
+  "hasPolicy": {
+    "type": "Text",
+    "value": "Open data policy."
+  },
+  "language": {
+    "type": "array",
+    "value": [
+      "EN",
+      "ES"
+    ]
+  },
+  "linkedSchemas": {
+    "type": "array",
+    "value": [
+    ]
+  },
+  "mediaType": {
+    "type": "Text",
+    "value": ""
+  },
+  "packagingFormat": {
+    "type": "Text",
+    "value": "zip"
+  },
+  "releaseDate": {
+    "type": "DateTime",
+    "value": "1997-05-06T05:04:10Z"
+  },
+  "rights": {
+    "type": "Text",
+    "value": "copyleft"
+  },
+  "spatialResolution": {
+    "type": "array",
+    "value": [
+      0.5,
+      0.5
+    ]
+  },
+  "status": {
+    "type": "Text",
+    "value": "Withdrawn"
+  },
+  "temporalResolution": {
+    "type": "array",
+    "value": [
+      2,
+      10
+    ]
+  },
+  "title": {
+    "type": "array",
+    "value": [
+      "Dataset base"
+    ]
+  },
+  "modifiedDate": {
+    "type": "DateTime",
+    "value": "1986-03-28T19:56:43Z"
+  }
+}
+
+
