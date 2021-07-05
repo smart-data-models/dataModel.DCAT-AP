@@ -441,7 +441,7 @@ DistributionDCAT-AP:
 </details>    
 ## Exemples de charges utiles  
 #### DistributionDCAT-AP NGSI-v2 valeurs-clés Exemple  
-Voici un exemple d'un DistributionDCAT-AP au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un DistributionDCAT-AP au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
