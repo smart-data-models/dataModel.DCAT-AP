@@ -1,5 +1,5 @@
 DataServiceDCAT-AP:
-  description: 'Agent Schema meeting DCAT-AP 2.0 specification, but extended with additional properties'
+  description: 'Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard'
   properties:
     accessRights:
       description: 'This property MAY include information regarding access or restrictions based on privacy, security, or other policies'
