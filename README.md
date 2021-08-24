@@ -10,7 +10,7 @@ The following entity types are available:
 
 - [CatalogueRecordDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecordDCAT-AP/README.md). This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.0.1
 
-- [DataServiceDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/README.md). Agent Schema meeting DCAT-AP 2.0 specification, but extended with additional properties
+- [DataServiceDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/README.md). Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard
 
 - [Dataset](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting DCAT-AP 2.0 specification
 
