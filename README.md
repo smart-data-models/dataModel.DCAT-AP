@@ -10,6 +10,8 @@ The following entity types are available:
 
 - [Dataset](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting DCAT-AP 2.0 specification
 
+- [DistributionDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/README.md). this is a distribution belonging ot a dataset according to the DCAT-AP standard 2.0.1
+
 
 
 ### Contributors
