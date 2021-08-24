@@ -3,7 +3,7 @@
   "$schemaVersion": "0.0.1",
   "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/DataServiceDCAT-AP/schema.json",
   "title": "Data Service DCAT-AP 2.0 schema",
-  "description": "Agent Schema meeting DCAT-AP 2.0 specification, but extended with additional properties",
+  "description": "Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard",
   "type": "object",
   "allOf": [
     {
