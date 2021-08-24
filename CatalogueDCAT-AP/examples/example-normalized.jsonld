@@ -5,14 +5,14 @@
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "1980-03-03T10:01:24Z"
+      "@value": "2020-03-03T10:01:24Z"
     }
   },
   "dateModified": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
-      "@value": "1987-12-04T10:44:40Z"
+      "@value": "2021-07-04T10:44:40Z"
     }
   },
   "source": {
@@ -29,11 +29,11 @@
   },
   "description": {
     "type": "Property",
-    "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."
+    "value": ""
   },
   "dataProvider": {
     "type": "Property",
-    "value": "european open data portal"
+    "value": "European open data portal"
   },
   "owner": {
     "type": "Property",
