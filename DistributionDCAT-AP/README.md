@@ -6,7 +6,7 @@ Version: 0.0.1
 this is a distribution belonging ot a dataset according to the DCAT-AP standard 2.0.1
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/DistributionDCAT-AP/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/doc/spec.md)
 
