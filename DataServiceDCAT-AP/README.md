@@ -6,7 +6,7 @@ Version: 0.0.1
 Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/DataServiceDCAT-AP/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/doc/spec.md)
 
