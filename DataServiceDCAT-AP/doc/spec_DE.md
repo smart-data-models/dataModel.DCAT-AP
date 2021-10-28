@@ -2,7 +2,7 @@ Entität: DataServiceDCAT-AP
 ===========================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Agent Schema gemäß DCAT-AP 2.0 Spezifikation, aber erweitert um zusätzliche Eigenschaften**  
+Globale Beschreibung: **Datendienst angepasst an die DCAT-AP 2.0 Spezifikation, aber erweitert um zusätzliche Eigenschaften und kompatibel mit dem NGSI Standard**  
 Version: 0.0.1  
 
 ## Liste der Eigenschaften  
@@ -16,7 +16,7 @@ Entität: DataServiceDCAT-AP
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DataServiceDCAT-AP:    
-  description: 'Agent Schema meeting DCAT-AP 2.0 specification, but extended with additional properties'    
+  description: 'Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard'    
   properties:    
     accessRights:    
       description: 'This property MAY include information regarding access or restrictions based on privacy, security, or other policies'    
