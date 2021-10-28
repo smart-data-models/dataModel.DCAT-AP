@@ -2,14 +2,14 @@ Entität: KatalogDCAT-AP
 =======================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Katalog der Datensätze, die mit der DCAT-AP-Spezifikation konform sind**.  
+Globale Beschreibung: **Katalog der Datensätze, die mit der DCAT-AP-Spezifikation übereinstimmen.**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `catalogue`: Diese Eigenschaft verweist auf einen Katalog, dessen Inhalt im Zusammenhang mit diesem Katalog von Interesse ist  - `creator`: Diese Eigenschaft bezieht sich auf die Entität, die hauptsächlich für die Erstellung des Katalogs verantwortlich ist  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dataset`: Diese Eigenschaft verknüpft den Katalog mit einem Dataset, das Teil des Katalogs ist  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `hasPart`: Diese Eigenschaft verweist auf einen zugehörigen Katalog, der Teil des beschriebenen Katalogs ist  - `homepage`: Diese Eigenschaft verweist auf eine Webseite, die als Hauptseite für den Katalog fungiert.  - `id`: Eindeutiger Bezeichner der Entität  - `isPartOf`: Diese Eigenschaft verweist auf einen zugehörigen Katalog, in dem der beschriebene Katalog physisch oder logisch enthalten ist.  - `language`: Diese Eigenschaft bezieht sich auf eine Sprache, die in den textuellen Metadaten verwendet wird, die Titel, Beschreibungen usw. der Datasets im Katalog beschreiben. Diese Eigenschaft kann wiederholt werden, wenn die Metadaten in mehreren Sprachen bereitgestellt werden.  - `licence`: Diese Eigenschaft bezieht sich auf die Lizenz, unter der der Katalog verwendet oder wiederverwendet werden kann.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `modificationDate`: Diese Eigenschaft enthält das Datum, an dem der Katalog zuletzt geändert wurde.  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `publisher`: Diese Eigenschaft bezieht sich auf eine Entität (Organisation), die für die Bereitstellung des Katalogs verantwortlich ist  - `record`: Diese Eigenschaft bezieht sich auf einen Katalogsatz, der Teil des Katalogs ist  - `releaseDate`: Diese Eigenschaft enthält das Datum der formalen Herausgabe (z. B. Veröffentlichung) des Katalogs.  - `rights`: Diese Eigenschaft bezieht sich auf eine Anweisung, die die mit dem Katalog verbundenen Rechte angibt.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `service`: Diese Eigenschaft verweist auf einen Standort oder Endpunkt, der im Katalog aufgeführt ist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `spatial_geographic`: Diese Eigenschaft bezieht sich auf ein geografisches Gebiet, das durch den Katalog abgedeckt wird  - `themes`: Diese Eigenschaft bezieht sich auf ein Wissensorganisationssystem, das zur Klassifizierung der Datensätze des Katalogs verwendet wird.  - `title`: Diese Eigenschaft enthält einen Namen, der dem Katalog gegeben wurde. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden  - `type`: Es muss der KatalogDCAT-AP sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `catalogue`: Diese Eigenschaft verweist auf einen Katalog, dessen Inhalt im Zusammenhang mit diesem Katalog von Interesse ist  - `creator`: Diese Eigenschaft bezieht sich auf die Einrichtung, die hauptsächlich für die Erstellung des Katalogs verantwortlich ist  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dataset`: Diese Eigenschaft verknüpft den Katalog mit einem Datensatz, der Teil des Katalogs ist  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `hasPart`: Diese Eigenschaft verweist auf einen verwandten Katalog, der Teil des beschriebenen Katalogs ist  - `homepage`: Diese Eigenschaft bezieht sich auf eine Webseite, die als Hauptseite für den Katalog dient.  - `id`: Eindeutiger Bezeichner der Entität  - `isPartOf`: Diese Eigenschaft bezieht sich auf einen verwandten Katalog, in dem der beschriebene Katalog physisch oder logisch enthalten ist.  - `language`: Diese Eigenschaft bezieht sich auf eine Sprache, die in den textlichen Metadaten verwendet wird, die Titel, Beschreibungen usw. der Datensätze im Katalog beschreiben. Diese Eigenschaft kann wiederholt werden, wenn die Metadaten in mehreren Sprachen bereitgestellt werden.  - `licence`: Diese Eigenschaft bezieht sich auf die Lizenz, unter der der Katalog verwendet oder wiederverwendet werden kann.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `modificationDate`: Diese Eigenschaft enthält das letzte Datum, an dem der Katalog geändert wurde.  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `publisher`: Diese Eigenschaft bezieht sich auf eine Einrichtung (Organisation), die für die Bereitstellung des Katalogs verantwortlich ist  - `record`: Diese Eigenschaft bezieht sich auf einen Katalogsatz, der Teil des Katalogs ist  - `releaseDate`: Diese Eigenschaft enthält das Datum der förmlichen Herausgabe (z. B. Veröffentlichung) des Katalogs.  - `rights`: Diese Eigenschaft bezieht sich auf eine Erklärung, die die mit dem Katalog verbundenen Rechte angibt.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `service`: Diese Eigenschaft bezieht sich auf einen Standort oder Endpunkt, der im Katalog aufgeführt ist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `spatial_geographic`: Diese Eigenschaft bezieht sich auf ein geografisches Gebiet, das durch den Katalog abgedeckt wird  - `themes`: Diese Eigenschaft bezieht sich auf ein Wissensorganisationssystem, das zur Klassifizierung der Datensätze des Katalogs verwendet wird.  - `title`: Diese Eigenschaft enthält einen Namen, der dem Katalog gegeben wurde. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden  - `type`: Es muss der KatalogDCAT-AP sein    
 Erforderliche Eigenschaften  
 - `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`    
-Dieses Datenmodell und andere des Themas DCAT-AP werden für ihre Verwendung angepasst und es wäre empfehlenswert, zusätzlichen Kontext einzubeziehen. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+Dieses Datenmodell und andere des Themas DCAT-AP werden für ihre Verwendung angepasst und es wird empfohlen, zusätzlichen Kontext einzubeziehen. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -450,7 +450,7 @@ CatalogueDCAT-AP:
 </details>    
 ## Beispiel-Nutzlasten  
 #### KatalogDCAT-AP NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -530,7 +530,7 @@ CatalogueDCAT-AP:
 }  
 ```  
 #### KatalogDCAT-AP NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -711,7 +711,7 @@ CatalogueDCAT-AP:
 }  
 ```  
 #### KatalogDCAT-AP NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -795,7 +795,7 @@ CatalogueDCAT-AP:
 }  
 ```  
 #### KatalogDCAT-AP NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format wie normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -804,14 +804,14 @@ CatalogueDCAT-AP:
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
-      "@value": "1980-03-03T10:01:24Z"  
+      "@value": "2020-03-03T10:01:24Z"  
     }  
   },  
   "dateModified": {  
     "type": "Property",  
     "value": {  
       "@type": "DateTime",  
-      "@value": "1987-12-04T10:44:40Z"  
+      "@value": "2021-07-04T10:44:40Z"  
     }  
   },  
   "source": {  
@@ -828,11 +828,11 @@ CatalogueDCAT-AP:
   },  
   "description": {  
     "type": "Property",  
-    "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
+    "value": ""  
   },  
   "dataProvider": {  
     "type": "Property",  
-    "value": "european open data portal"  
+    "value": "European open data portal"  
   },  
   "owner": {  
     "type": "Property",  
