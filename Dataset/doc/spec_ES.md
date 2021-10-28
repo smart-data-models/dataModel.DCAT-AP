@@ -661,7 +661,7 @@ Dataset:
 }  
 ```  
 #### Conjunto de datos NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un conjunto de datos en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+He aquí un ejemplo de un conjunto de datos en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
