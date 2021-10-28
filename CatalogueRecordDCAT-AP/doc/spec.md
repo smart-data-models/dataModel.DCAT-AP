@@ -2,11 +2,14 @@ Entity: CatalogueRecordDCAT-AP
 ==============================  
 [Open License](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueRecordDCAT-AP/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Global description: **This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.0.1**  
+version: 0.0.1  
 
 ## List of properties  
 
-Required properties  
-- No required properties    
+- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `applicationProfile`: This property refers to an Application Profile that the Dataset’s metadata conforms to  - `areaServed`: The geographic area where a service or offered item is provided  - `changeType`: This property refers to the type of the latest revision of a Dataset's entry in the Catalogue.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `id`: Unique identifier of the entity  - `language`: This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages  - `listingDate`: This property contains the date on which the description of the Dataset was included in the Catalogue.  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `modificationDate`: This property contains the most recent date on which the Catalogue entry was changed or modified..  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `primaryTopic`: This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `sourceMetadata`: This property refers to the original metadata that was used in creating metadata for the Dataset.  - `title`: This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.  - `type`: NGSI entity type. It has to be CatalogueRecordDCAT-AP    
+Required properties  
+- `id`  - `modificationDate`  - `primaryTopic`  - `type`    
 Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
