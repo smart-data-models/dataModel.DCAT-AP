@@ -917,7 +917,7 @@ Dataset:
   }  
 }  
 ```  
-#### Ensemble de données Valeurs clés NGSI-LD Exemple  
+#### Ensemble de données Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'un ensemble de données au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
