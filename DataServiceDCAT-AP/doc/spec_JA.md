@@ -516,7 +516,7 @@ DataServiceDCAT-AP:
 }  
 ```  
 #### DataServiceDCAT-AP NGSI-LD キーバリューの例  
-DataServiceDCAT-APをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+DataServiceDCAT-APをJSON-LD形式でkey-valuesにした例を紹介します。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:DataServiceDCAT-AP:id:JBDJ:56257192",  
