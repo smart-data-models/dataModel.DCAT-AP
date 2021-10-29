@@ -450,7 +450,7 @@ CatalogueDCAT-AP:
 </details>    
 ## Beispiel-Nutzlasten  
 #### KatalogDCAT-AP NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
