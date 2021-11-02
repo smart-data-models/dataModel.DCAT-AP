@@ -415,8 +415,20 @@ DistributionDCAT-AP:
       x-ngsi:
         model: https://schema.org/Text
         type: Property
+    type:
+      description: 'NGSI entity type. It has to be DistributionDCAT-AP'
+      enum:
+        - DistributionDCAT-AP
+      type: string
+      x-ngsi:
+        type: Property
   required:
     - id
     - type
   type: object
-  version: 0.0.1
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT_AP/DistributionDCAT-AP/schema.json
+  x-model-tags: ""
+  x-version: 0.0.1
