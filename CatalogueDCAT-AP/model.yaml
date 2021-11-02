@@ -3,7 +3,7 @@ CatalogueDCAT-AP:
   properties:
     address:
       description: 'The mailing address'
-      properties: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_address_-_properties
+      properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
           type: string
@@ -149,7 +149,7 @@ CatalogueDCAT-AP:
         type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
-      oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_location_-_oneof
+      oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof
         - description: 'Geoproperty. Geojson reference to the item. Point'
           properties:
             bbox:
@@ -382,18 +382,8 @@ CatalogueDCAT-AP:
     spatial_geographic:
       description: 'This property refers to a geographical area covered by the Catalogue'
       items:
-        properties:
-          address:
-            description: 'Property. The mailing address. Model:''https://schema.org/address'''
-            properties: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_address_-_properties
-            type: object
-          areaServed:
-            description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''
-            type: string
-          location:
-            description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
-            oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_location_-_oneof
-        type: object
+        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+        oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof
       type: array
       x-ngsi:
         model: dct:spatial
@@ -430,3 +420,9 @@ CatalogueDCAT-AP:
     - publisher
     - title
   type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueDCAT-AP/schema.json
+  x-model-tags: ""
+  x-version: 0.0.2
