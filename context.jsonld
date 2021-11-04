@@ -54,6 +54,7 @@
         "modificationDate": "https://smartdatamodels.org/dataModel.DCAT-AP/modificationDate",
         "modifiedDate": "https://smartdatamodels.org/dataModel.DCAT-AP/modifiedDate",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "otherIdentifier": "https://smartdatamodels.org/dataModel.DCAT-AP/otherIdentifier",
         "owner": "https://smartdatamodels.org/owner",
         "packagingFormat": "https://smartdatamodels.org/dataModel.DCAT-AP/packagingFormat",
