@@ -1,0 +1,367 @@
+{
+    "@id": "dtmi:com:ngsi-ld:DistributionDCAT-AP;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models -DCAT-AP distribution of a Dataset, adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/DistributionDCAT-AP/schema.json",
+    "description": "this is a distribution belonging ot a dataset according to the DCAT-AP standard 2.0.1",
+    "displayName": "DistributionDCAT-AP",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "availability",
+            "writable": true,
+            "displayName": "availability",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property indicates how long it is planned to keep the Distribution of the Dataset available."
+        },
+        {
+            "name": "byteSize",
+            "writable": true,
+            "displayName": "byteSize",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "This property contains the size of a Distribution in bytes."
+        },
+        {
+            "name": "checksum",
+            "writable": true,
+            "displayName": "checksum",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."
+        },
+        {
+            "name": "compressionFormat",
+            "writable": true,
+            "displayName": "compressionFormat",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "format",
+            "writable": true,
+            "displayName": "format",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to the file format of the Distribution."
+        },
+        {
+            "name": "hasPolicy",
+            "writable": true,
+            "displayName": "hasPolicy",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary"
+        },
+        {
+            "name": "license",
+            "writable": true,
+            "displayName": "license",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to a data service that gives access to the distribution of the dataset"
+        },
+        {
+            "name": "mediaType",
+            "writable": true,
+            "displayName": "mediaType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA"
+        },
+        {
+            "name": "modifiedDate",
+            "writable": true,
+            "displayName": "modifiedDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "This property contains the most recent date on which the Distribution was changed or modified."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "packagingFormat",
+            "writable": true,
+            "displayName": "packagingFormat",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA"
+        },
+        {
+            "name": "releaseDate",
+            "writable": true,
+            "displayName": "releaseDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "This property contains the date of formal issuance (e.g., publication) of the Distribution."
+        },
+        {
+            "name": "rights",
+            "writable": true,
+            "displayName": "rights",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "This property refers to a statement that specifies rights associated with the Distribution."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "accessService",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property refers to a data service that gives access to the distribution of the dataset",
+            "displayName": "accessService"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "accessUrl",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.",
+            "displayName": "accessUrl"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "documentation",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property refers to a page or document about this Distribution.",
+            "displayName": "documentation"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "downloadURL",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property contains a URL that is a directlink to a downloadable file in a givenformat.",
+            "displayName": "downloadURL"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "language",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.",
+            "displayName": "language"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "linkedSchemas",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property refers to an established schema to which the described Distribution conforms.",
+            "displayName": "linkedSchemas"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "spatialResolution",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "This property refers to the minimum spatial separation resolvable in a dataset distribution, measured in meters",
+            "displayName": "spatialResolution"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "temporalResolution",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "number"
+            },
+            "comment": "This property refers to the minimum time period resolvable in the dataset distribution",
+            "displayName": "temporalResolution"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "title",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.",
+            "displayName": "title"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Completed",
+                        "displayName": "Completed",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Deprecated",
+                        "displayName": "Deprecated",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Under Development",
+                        "displayName": "Under Development",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Withdrawn",
+                        "displayName": "Withdrawn",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}
