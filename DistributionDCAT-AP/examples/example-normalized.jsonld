@@ -1,195 +1,189 @@
 {
-  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",
-  "dateCreated": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1993-08-16T05:35:56Z"
-    }
-  },
-  "dateModified": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1970-07-14T10:48:19Z"
-    }
-  },
-  "source": {
-    "type": "Property",
-    "value": ""
-  },
-  "name": {
-    "type": "Property",
-    "value": "csv portals distribution"
-  },
-  "alternateName": {
-    "type": "Property",
-    "value": "csv"
-  },
-  "description": {
-    "type": "Property",
-    "value": "Distribution of open data portals in csv"
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "Meloda.org"
-  },
-  "owner": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",
-      "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"
-    ]
-  },
-  "seeAlso": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",
-      "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"
-    ]
-  },
-  "location": {
-    "type": "Property",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -67.057831,
-        67.968509
-      ]
-    }
-  },
-  "address": {
-    "type": "Property",
-    "value": {
-      "streetAddress": "Luxembourg platz 2",
-      "addressLocality": "Luxembourg",
-      "addressRegion": "Luxembourg",
-      "addressCountry": "Luxembourg",
-      "postalCode": "24004",
-      "postOfficeBoxNumber": ""
-    }
-  },
-  "areaServed": {
-    "type": "Property",
-    "value": "European Union."
-  },
-  "accessUrl": {
-    "type": "Property",
-    "value": [
-      ""
-    ]
-  },
-  "availability": {
-    "type": "Property",
-    "value": "yes"
-  },
-  "format": {
-    "type": "Property",
-    "value": " text/csv"
-  },
-  "license": {
-    "type": "Property",
-    "value": "CC-BY"
-  },
-  "accessService": {
-    "type": "Property",
-    "value": [
-      ""
-    ]
-  },
-  "byteSize": {
-    "type": "Property",
-    "value": 43503
-  },
-  "checksum": {
-    "type": "Property",
-    "value": "H3FR."
-  },
-  "compressionFormat": {
-    "type": "Property",
-    "value": ""
-  },
-  "documentation": {
-    "type": "Property",
-    "value": [
-    ]
-  },
-  "downloadURL": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
-      "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
-    ]
-  },
-  "hasPolicy": {
-    "type": "Property",
-    "value": "Open data policy."
-  },
-  "language": {
-    "type": "Property",
-    "value": [
-      "EN",
-      "ES"
-    ]
-  },
-  "linkedSchemas": {
-    "type": "Property",
-    "value": [
-    ]
-  },
-  "mediaType": {
-    "type": "Property",
-    "value": ""
-  },
-  "packagingFormat": {
-    "type": "Property",
-    "value": "zip"
-  },
-  "releaseDate": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1997-05-06T05:04:10Z"
-    }
-  },
-  "rights": {
-    "type": "Property",
-    "value": "copyleft"
-  },
-  "spatialResolution": {
-    "type": "Property",
-    "value": [
-      0.5,
-      0.5
-    ]
-  },
-  "status": {
-    "type": "Property",
-    "value": "Withdrawn"
-  },
-  "temporalResolution": {
-    "type": "Property",
-    "value": [
-      2,
-      10
-    ]
-  },
-  "title": {
-    "type": "Property",
-    "value": [
-      "Dataset base"
-    ]
-  },
-  "modifiedDate": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "1986-03-28T19:56:43Z"
-    }
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",
+    "accessService": {
+        "type": "Property",
+        "value": [
+            ""
+        ]
+    },
+    "accessUrl": {
+        "type": "Property",
+        "value": [
+            ""
+        ]
+    },
+    "address": {
+        "type": "Property",
+        "value": {
+            "streetAddress": "Luxembourg platz 2",
+            "addressLocality": "Luxembourg",
+            "addressRegion": "Luxembourg",
+            "addressCountry": "Luxembourg",
+            "postalCode": "24004",
+            "postOfficeBoxNumber": ""
+        }
+    },
+    "alternateName": {
+        "type": "Property",
+        "value": "csv"
+    },
+    "areaServed": {
+        "type": "Property",
+        "value": "European Union."
+    },
+    "availability": {
+        "type": "Property",
+        "value": "yes"
+    },
+    "byteSize": {
+        "type": "Property",
+        "value": 43503
+    },
+    "checksum": {
+        "type": "Property",
+        "value": "H3FR."
+    },
+    "compressionFormat": {
+        "type": "Property",
+        "value": ""
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "Meloda.org"
+    },
+    "dateCreated": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1993-08-16T05:35:56Z"
+        }
+    },
+    "dateModified": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1970-07-14T10:48:19Z"
+        }
+    },
+    "description": {
+        "type": "Property",
+        "value": "Distribution of open data portals in csv"
+    },
+    "documentation": {
+        "type": "Property",
+        "value": []
+    },
+    "downloadURL": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
+            "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
+        ]
+    },
+    "format": {
+        "type": "Property",
+        "value": " text/csv"
+    },
+    "hasPolicy": {
+        "type": "Property",
+        "value": "Open data policy."
+    },
+    "language": {
+        "type": "Property",
+        "value": [
+            "EN",
+            "ES"
+        ]
+    },
+    "license": {
+        "type": "Property",
+        "value": "CC-BY"
+    },
+    "linkedSchemas": {
+        "type": "Property",
+        "value": []
+    },
+    "location": {
+        "type": "Property",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -67.057831,
+                67.968509
+            ]
+        }
+    },
+    "mediaType": {
+        "type": "Property",
+        "value": ""
+    },
+    "modifiedDate": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1986-03-28T19:56:43Z"
+        }
+    },
+    "name": {
+        "type": "Property",
+        "value": "csv portals distribution"
+    },
+    "owner": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",
+            "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"
+        ]
+    },
+    "packagingFormat": {
+        "type": "Property",
+        "value": "zip"
+    },
+    "releaseDate": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "1997-05-06T05:04:10Z"
+        }
+    },
+    "rights": {
+        "type": "Property",
+        "value": "copyleft"
+    },
+    "seeAlso": {
+        "type": "Property",
+        "value": [
+            "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",
+            "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"
+        ]
+    },
+    "source": {
+        "type": "Property",
+        "value": ""
+    },
+    "spatialResolution": {
+        "type": "Property",
+        "value": [
+            0.5,
+            0.5
+        ]
+    },
+    "status": {
+        "type": "Property",
+        "value": "Withdrawn"
+    },
+    "temporalResolution": {
+        "type": "Property",
+        "value": [
+            2,
+            10
+        ]
+    },
+    "title": {
+        "type": "Property",
+        "value": [
+            "Dataset base"
+        ]
+    },
+    "@context": []
 }
-
-
