@@ -80,5 +80,7 @@
         "type": "Property",
         "value": "Any source for an Agent."
     },
-    "@context": []
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+    ]
 }
