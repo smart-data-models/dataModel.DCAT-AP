@@ -1,12 +1,14 @@
-Entidad: CatálogoDCAT-AP  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: CatálogoDCAT-AP  
 ========================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **Catálogo de conjuntos de datos que cumplen con la especificación DCAT-AP.**  
+versión: 0.0.2  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `catalogue`: Esta propiedad se refiere a un catálogo cuyo contenido es de interés en el contexto de este catálogo  - `creator`: Esta propiedad se refiere a la entidad principalmente responsable de la elaboración del catálogo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dataset`: Esta propiedad vincula el Catálogo con un Conjunto de Datos que forma parte del Catálogo  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `hasPart`: Esta propiedad hace referencia a un Catálogo relacionado que forma parte del Catálogo descrito  - `homepage`: Esta propiedad se refiere a una página web que actúa como página principal del Catálogo.  - `id`: Identificador único de la entidad  - `isPartOf`: Esta propiedad se refiere a un Catálogo relacionado en el que el Catálogo descrito está física o lógicamente incluido.  - `language`: Esta propiedad se refiere a un idioma utilizado en los metadatos textuales que describen títulos, descripciones, etc. de los conjuntos de datos del Catálogo. Esta propiedad puede repetirse si los metadatos se proporcionan en varios idiomas.  - `licence`: Esta propiedad se refiere a la licencia bajo la cual se puede utilizar o reutilizar el Catálogo.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `modificationDate`: Esta propiedad contiene la fecha más reciente en la que se modificó el Catálogo.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `publisher`: Esta propiedad se refiere a una entidad (organización) responsable de poner a disposición el Catálogo  - `record`: Esta propiedad se refiere a un Registro de Catálogo que forma parte del Catálogo  - `releaseDate`: Esta propiedad contiene la fecha de emisión formal (por ejemplo, publicación) del Catálogo.  - `rights`: Esta propiedad se refiere a una declaración que especifica los derechos asociados al Catálogo.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `service`: Esta propiedad se refiere a un sitio o punto final que aparece en el catálogo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `spatial_geographic`: Esta propiedad se refiere a un área geográfica cubierta por el Catálogo  - `themes`: Esta propiedad se refiere a un sistema de organización del conocimiento utilizado para clasificar los conjuntos de datos del Catálogo.  - `title`: Esta propiedad contiene un nombre dado al Catálogo. Esta propiedad puede repetirse para las versiones lingüísticas paralelas del nombre  - `type`: Tiene que ser CatálogoDCAT-AP    
+- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `catalogue`: Esta propiedad se refiere a un catálogo cuyo contenido es de interés en el contexto de este catálogo  - `creator`: Esta propiedad se refiere a la entidad principalmente responsable de la elaboración del catálogo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dataset`: Esta propiedad vincula el Catálogo con un Conjunto de Datos que forma parte del Catálogo  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `hasPart`: Esta propiedad se refiere a un Catálogo relacionado que forma parte del Catálogo descrito  - `homepage`: Esta propiedad se refiere a una página web que actúa como página principal del Catálogo.  - `id`: Identificador único de la entidad  - `isPartOf`: Esta propiedad se refiere a un Catálogo relacionado en el que el Catálogo descrito está física o lógicamente incluido.  - `language`: Esta propiedad se refiere a un idioma utilizado en los metadatos textuales que describen títulos, descripciones, etc. de los conjuntos de datos del Catálogo. Esta propiedad puede repetirse si los metadatos se proporcionan en varios idiomas.  - `licence`: Esta propiedad se refiere a la licencia bajo la cual se puede utilizar o reutilizar el Catálogo.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `modificationDate`: Esta propiedad contiene la fecha más reciente en la que se modificó el Catálogo.  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `publisher`: Esta propiedad se refiere a una entidad (organización) responsable de poner a disposición el Catálogo  - `record`: Esta propiedad se refiere a un Registro de Catálogo que forma parte del Catálogo  - `releaseDate`: Esta propiedad contiene la fecha de emisión formal (por ejemplo, publicación) del Catálogo.  - `rights`: Esta propiedad se refiere a una declaración que especifica los derechos asociados al Catálogo.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `service`: Esta propiedad se refiere a un sitio o punto final que aparece en el catálogo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `spatial_geographic`: Esta propiedad se refiere a un área geográfica cubierta por el Catálogo  - `themes`: Esta propiedad se refiere a un sistema de organización del conocimiento utilizado para clasificar los conjuntos de datos del Catálogo.  - `title`: Esta propiedad contiene un nombre dado al Catálogo. Esta propiedad puede repetirse para las versiones lingüísticas paralelas del nombre  - `type`: Tiene que ser CatálogoDCAT-AP    
 Propiedades requeridas  
 - `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`    
 Este modelo de datos y otros de la asignatura DCAT-AP están siendo adaptados para su uso y sería recomendable que se incluyera un contexto adicional. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
@@ -19,7 +21,7 @@ CatalogueDCAT-AP:
   properties:    
     address:    
       description: 'The mailing address'    
-      properties: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_address_-_properties    
+      properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
@@ -165,7 +167,7 @@ CatalogueDCAT-AP:
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_location_-_oneof    
+      oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
         - description: 'Geoproperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
@@ -398,18 +400,8 @@ CatalogueDCAT-AP:
     spatial_geographic:    
       description: 'This property refers to a geographical area covered by the Catalogue'    
       items:    
-        properties:    
-          address:    
-            description: 'Property. The mailing address. Model:''https://schema.org/address'''    
-            properties: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_address_-_properties    
-            type: object    
-          areaServed:    
-            description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
-            type: string    
-          location:    
-            description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-            oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_properties_-_location_-_oneof    
-        type: object    
+        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
       type: array    
       x-ngsi:    
         model: dct:spatial    
@@ -446,6 +438,12 @@ CatalogueDCAT-AP:
     - publisher    
     - title    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueDCAT-AP/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Ejemplo de carga útil  
@@ -588,27 +586,13 @@ CatalogueDCAT-AP:
   "address": {  
     "type": "StructuredValue",  
     "value": {  
-      "streetAddress": [  
-        "2 Rue Mercier"  
-      ],  
-      "addressLocality": [  
-        "Luxembourg"  
-      ],  
-      "addressRegion": [  
-        "Luxembourg"  
-      ],  
-      "addressCountry": [  
-        "Luxembourg"  
-      ],  
-      "postalCode": [  
-        "2985 "  
-      ],  
-      "postOfficeBoxNumber": [  
-        ""  
-      ],  
-      "areaServed": [  
-        "European Union"  
-      ]  
+      "streetAddress": "2 Rue Mercier",  
+      "addressLocality": "Luxembourg",  
+      "addressRegion": "Luxembourg",  
+      "addressCountry": "Luxembourg",  
+      "postalCode": "2985 ",  
+      "postOfficeBoxNumber": "",  
+      "areaServed": "European Union"  
     }  
   },  
   "dataset": {  
@@ -622,12 +606,8 @@ CatalogueDCAT-AP:
   "title": {  
     "type": "Array",  
     "value": [  
-      [  
-        "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."  
-      ],  
-      [  
-        "Technology life low standard second."  
-      ]  
+      "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us.",  
+      "Technology life low standard second."  
     ]  
   },  
   "homepage": {  
@@ -637,12 +617,8 @@ CatalogueDCAT-AP:
   "language": {  
     "type": "Array",  
     "value": [  
-      [  
-        "Town size computer way. Since challenge phone state listen south low."  
-      ],  
-      [  
-        "Eight once single. Build every kid."  
-      ]  
+      "Town size computer way. Since challenge phone state listen south low.",  
+      "Eight once single. Build every kid."  
     ]  
   },  
   "licence": {  
@@ -666,12 +642,8 @@ CatalogueDCAT-AP:
   "themes": {  
     "type": "Array",  
     "value": [  
-      [  
-        "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member."  
-      ],  
-      [  
-        "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
-      ]  
+      "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
+      "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
     ]  
   },  
   "modificationDate": {  
@@ -714,84 +686,84 @@ CatalogueDCAT-AP:
 Aquí hay un ejemplo de un CatalogueDCAT-AP en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
-  "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
-  "type": "CatalogueDCAT-AP",  
-  "dateCreated": "1980-03-03T10:01:24Z",  
-  "dateModified": "1987-12-04T10:44:40Z",  
-  "source": "",  
-  "name": "Catalogue",  
-  "alternateName": "",  
-  "description": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size.",  
-  "dataProvider": "european open data portal",  
-  "owner": [  
-    "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Catalogue:ILBA:60770941"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -83.400987,  
-      0.152532  
+    "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
+    "type": "CatalogueDCAT-AP",  
+    "address": {  
+        "streetAddress": "2 Rue Mercier",  
+        "addressLocality": "Luxembourg",  
+        "addressRegion": "Luxembourg",  
+        "addressCountry": "Luxembourg",  
+        "postalCode": "2985 ",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": "European Union"  
+    },  
+    "alternateName": "",  
+    "catalogue": [  
+        "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
+        "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
+    ],  
+    "creator": "Role fact sport shoulder blue direction probably order.",  
+    "dataProvider": "european open data portal",  
+    "dataset": [  
+        "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
+    ],  
+    "dateCreated": "1980-03-03T10:01:24Z",  
+    "dateModified": "1987-12-04T10:44:40Z",  
+    "description": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size.",  
+    "hasPart": [  
+        "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
+    ],  
+    "homepage": "ngsi-ld:Catalogue:homepage:ZFAW:13633782",  
+    "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287",  
+    "language": [  
+        "ES",  
+        "DE"  
+    ],  
+    "licence": "Creative Commons 3.0 International",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -83.400987,  
+            0.152532  
+        ]  
+    },  
+    "modificationDate": "1982-09-02T03:16:28Z",  
+    "name": "Catalogue",  
+    "owner": [  
+        "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
+    ],  
+    "publisher": "Spanish data portal",  
+    "record": [  
+        "Catalogue.items.HLGA.73285516",  
+        "Catalogue.items.IHOB.85266800"  
+    ],  
+    "releaseDate": "2004-08-22T22:32:47Z",  
+    "rights": "",  
+    "seeAlso": [  
+        "urn:ngsi-ld:Catalogue:ILBA:60770941"  
+    ],  
+    "source": "",  
+    "spatial_geographic": [  
+        {  
+            "type": "Point",  
+            "coordinates": [  
+                57.234944,  
+                52.840273  
+            ]  
+        }  
+    ],  
+    "themes": [  
+        "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
+        "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+    ],  
+    "title": [  
+        "title first",  
+        "Secondary title."  
+    ],  
+    "@context": [  
+        "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "2 Rue Mercier",  
-    "addressLocality": "Luxembourg",  
-    "addressRegion": "Luxembourg",  
-    "addressCountry": "Luxembourg",  
-    "postalCode": "2985 ",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": "European Union"  
-  },  
-  "dataset": [  
-    "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
-  ],  
-  "publisher": "Spanish data portal",  
-  "title": [  
-    "title first",  
-    "Secondary title."  
-  ],  
-  "homepage": "ngsi-ld:Catalogue:homepage:ZFAW:13633782",  
-  "language": [  
-    "ES",  
-    "DE"  
-  ],  
-  "licence": "Creative Commons 3.0 International",  
-  "releaseDate": "2004-08-22T22:32:47Z",  
-  "spatial_geographic": [  
-    {  
-      "type": "Point",  
-      "coordinates": [  
-        57.234944,  
-        52.840273  
-      ]  
-    }  
-  ],  
-  "themes": [  
-    "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
-    "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
-  ],  
-  "modificationDate": "1982-09-02T03:16:28Z",  
-  "hasPart": [  
-    "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
-  ],  
-  "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287",  
-  "record": [  
-    "Catalogue.items.HLGA.73285516",  
-    "Catalogue.items.IHOB.85266800"  
-  ],  
-  "rights": "",  
-  "catalogue": [  
-    "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
-    "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
-  ],  
-  "creator": "Role fact sport shoulder blue direction probably order.",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld"  
-  ]  
 }  
 ```  
 #### CatálogoDCAT-AP NGSI-LD normalizado Ejemplo  
@@ -800,62 +772,6 @@ CatalogueDCAT-AP:
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-03-03T10:01:24Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-07-04T10:44:40Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Catalogue"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "European open data portal"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Catalogue:ILBA:60770941"  
-    ]  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -83.400987,  
-        0.152532  
-      ]  
-    }  
-  },  
   "address": {  
     "type": "Property",  
     "value": {  
@@ -868,95 +784,7 @@ CatalogueDCAT-AP:
       "areaServed": "European Union"  
     }  
   },  
-  "dataset": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
-    ]  
-  },  
-  "publisher": {  
-    "type": "Property",  
-    "value": "Spain open data portal"  
-  },  
-  "title": {  
-    "type": "Property",  
-    "value": [  
-      [  
-        "New catalogue"  
-      ],  
-      [  
-        "Nuevo catalogo"  
-      ]  
-    ]  
-  },  
-  "homepage": {  
-    "type": "Property",  
-    "value": "Catalogue:homepage:ZFAW:13633782"  
-  },  
-  "language": {  
-    "type": "Property",  
-    "value": [  
-      [  
-        "ES"  
-      ],  
-      [  
-        "DE"  
-      ]  
-    ]  
-  },  
-  "licence": {  
-    "type": "Property",  
-    "value": [  
-      "Creative Commons 3.0 International"  
-    ]  
-  },  
-  "releaseDate": {  
-    "type": "DateTime",  
-    "value": "2004-08-22T22:32:47Z"  
-  },  
-  "spatial_geographic": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        57.234944,  
-        52.840273  
-      ]  
-    }  
-  },  
-  "themes": {  
-    "type": "Property",  
-    "value": [  
-      [  
-        "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member."  
-      ],  
-      [  
-        "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
-      ]  
-    ]  
-  },  
-  "modificationDate": {  
-    "type": "DateTime",  
-    "value": "1982-09-02T03:16:28Z"  
-  },  
-  "hasPart": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
-    ]  
-  },  
-  "isPartOf": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"  
-  },  
-  "record": {  
-    "type": "Property",  
-    "value": [  
-      "Catalogue.items.HLGA.73285516",  
-      "Catalogue.items.IHOB.85266800"  
-    ]  
-  },  
-  "rights": {  
+  "alternateName": {  
     "type": "Property",  
     "value": ""  
   },  
@@ -971,10 +799,142 @@ CatalogueDCAT-AP:
     "type": "Property",  
     "value": ""  
   },  
+  "dataProvider": {  
+    "type": "Property",  
+    "value": "European open data portal"  
+  },  
+  "dataset": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
+    ]  
+  },  
+  "dateCreated": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2020-03-03T10:01:24Z"  
+    }  
+  },  
+  "dateModified": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2021-07-04T10:44:40Z"  
+    }  
+  },  
+  "description": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "hasPart": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
+    ]  
+  },  
+  "homepage": {  
+    "type": "Property",  
+    "value": "Catalogue:homepage:ZFAW:13633782"  
+  },  
+  "isPartOf": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"  
+  },  
+  "language": {  
+    "type": "Property",  
+    "value": [  
+      "ES",  
+      "DE"  
+    ]  
+  },  
+  "licence": {  
+    "type": "Property",  
+    "value": [  
+      "Creative Commons 3.0 International"  
+    ]  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -83.400987,  
+        0.152532  
+      ]  
+    }  
+  },  
+  "modificationDate": {  
+    "type": "DateTime",  
+    "value": "1982-09-02T03:16:28Z"  
+  },  
+  "name": {  
+    "type": "Property",  
+    "value": "Catalogue"  
+  },  
+  "owner": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
+    ]  
+  },  
+  "publisher": {  
+    "type": "Property",  
+    "value": "Spain open data portal"  
+  },  
+  "record": {  
+    "type": "Property",  
+    "value": [  
+      "Catalogue.items.HLGA.73285516",  
+      "Catalogue.items.IHOB.85266800"  
+    ]  
+  },  
+  "releaseDate": {  
+    "type": "DateTime",  
+    "value": "2004-08-22T22:32:47Z"  
+  },  
+  "rights": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "seeAlso": {  
+    "type": "Property",  
+    "value": [  
+      "urn:ngsi-ld:Catalogue:ILBA:60770941"  
+    ]  
+  },  
+  "source": {  
+    "type": "Property",  
+    "value": ""  
+  },  
+  "spatial_geographic": {  
+    "type": "Geoproperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        57.234944,  
+        52.840273  
+      ]  
+    }  
+  },  
+  "themes": {  
+    "type": "Property",  
+    "value": [  
+      "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
+      "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+    ]  
+  },  
+  "title": {  
+    "type": "Property",  
+    "value": [  
+      "New catalogue",  
+      "Nuevo catalogo"  
+    ]  
+  },  
   "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld"  
+    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
   ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
