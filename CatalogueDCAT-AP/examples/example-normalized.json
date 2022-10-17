@@ -54,27 +54,13 @@
   "address": {
     "type": "StructuredValue",
     "value": {
-      "streetAddress": [
-        "2 Rue Mercier"
-      ],
-      "addressLocality": [
-        "Luxembourg"
-      ],
-      "addressRegion": [
-        "Luxembourg"
-      ],
-      "addressCountry": [
-        "Luxembourg"
-      ],
-      "postalCode": [
-        "2985 "
-      ],
-      "postOfficeBoxNumber": [
-        ""
-      ],
-      "areaServed": [
-        "European Union"
-      ]
+      "streetAddress": "2 Rue Mercier",
+      "addressLocality": "Luxembourg",
+      "addressRegion": "Luxembourg",
+      "addressCountry": "Luxembourg",
+      "postalCode": "2985 ",
+      "postOfficeBoxNumber": "",
+      "areaServed": "European Union"
     }
   },
   "dataset": {
@@ -88,12 +74,8 @@
   "title": {
     "type": "Array",
     "value": [
-      [
-        "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us."
-      ],
-      [
-        "Technology life low standard second."
-      ]
+      "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us.",
+      "Technology life low standard second."
     ]
   },
   "homepage": {
@@ -103,12 +85,8 @@
   "language": {
     "type": "Array",
     "value": [
-      [
-        "Town size computer way. Since challenge phone state listen south low."
-      ],
-      [
-        "Eight once single. Build every kid."
-      ]
+      "Town size computer way. Since challenge phone state listen south low.",
+      "Eight once single. Build every kid."
     ]
   },
   "licence": {
@@ -132,12 +110,8 @@
   "themes": {
     "type": "Array",
     "value": [
-      [
-        "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member."
-      ],
-      [
-        "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."
-      ]
+      "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",
+      "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."
     ]
   },
   "modificationDate": {
