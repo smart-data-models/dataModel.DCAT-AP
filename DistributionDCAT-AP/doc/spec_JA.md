@@ -1,18 +1,32 @@
-エンティティディストリビューションDCAT-AP  
-========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+事業者DistributionDCAT-AP  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明。**このディストリビューションは、DCAT-AP規格2.0.1に準拠したデータセットに属するものです。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述です。**DCAT-AP規格2.0.1**に準拠したデータセットに属する配布物です。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `accessService`: このプロパティは、データセットの配布にアクセスするためのデータサービスを指します。  - `accessUrl`: このプロパティには、データセットの配布物にアクセスするための URL が含まれます。アクセスURLのリソースには、データセットの入手方法に関する情報が含まれている場合があります。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `availability`: 本プロパティは、本データセットの配信をいつまで維持するかを示す。  - `byteSize`: このプロパティは、Distribution のサイズをバイト単位で表したものである。  - `checksum`: このプロパティは、ディストリビューションのコンテンツが変更されていないことを確認するために使用できるメカニズムを提供します。チェックサムは、downloadURLに関連しています。  - `compressionFormat`: 本プロパティは、ダウンロードするファイルのサイズを小さくするために、データを圧縮して含 むファイルの形式を示す。IANAが管理するメディアタイプの公式レジスタに定義されているメディアタイプを用いて表現すべきである（SHOULD）。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `documentation`: このプロパティは、このDistributionに関するページやドキュメントを指します。  - `downloadURL`: このプロパティは、指定されたフォーマットのダウンロード可能なファイルへのダイレクトリンクであるURLを含みます。  - `format`: 本プロパティは、Distribution のファイル形式を示す。  - `hasPolicy`: このプロパティは、ODRL ボキャブラリーを使用している場合、配布に関連する権利を表現するポリシーを指します。  - `id`: エンティティのユニークな識別子  - `language`: 本プロパティは、本ディストリビューションで使用されている言語を示す。メタデータが複数の言語で提供されている場合は、このプロパティを繰り返すことができる。  - `license`: このプロパティは、データセットの配布にアクセスするためのデータサービスを指します。  - `linkedSchemas`: 本プロパティは、記述された Distribution が準拠している確立されたスキーマを指す。  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `mediaType`: 本プロパティは、IANA が管理するメディアタイプの公式登録簿で定義されている Distribution のメディアタイプを指す。  - `modifiedDate`: このプロパティには、Distribution の変更または修正が行われた最新の日付が含まれる。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `packagingFormat`: 本プロパティは、関連するファイルをまとめてダウンロードするために、1 つ以上のデー タファイルをまとめたファイルの形式を示すものである。IANAが管理するメディアタイプの公式登録簿で定義されているメディアタイプを用いて表現すべきである（SHOULD）。  - `releaseDate`: 本プロパティには、Distribution の正式な発行日（公開日など）が含まれる。  - `rights`: 本プロパティは、"Distribution "に関連する権利を指定する記述を指す。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spatialResolution`: このプロパティは、データセットの分布において解決可能な最小の空間分離を示すもので、単位はメートルです。  - `status`: このプロパティは、ディストリビューションの成熟度を示す。Completed」、「Deprecated」、「Under Development」、「Withdrawn」のいずれかの値を取らなければなりません。  - `temporalResolution`: このプロパティは、データセットの配布で解決可能な最小の時間帯を示す。  - `title`: このプロパティには、Distribution に付けられた名前が含まれる。このプロパティは、説明の並列言語バージョンのために繰り返すことができる。    
-必須項目  
-- `id`  - `type`    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `accessService[array]`: このプロパティは、データセットの配布にアクセスするためのデータサービスを指します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `accessUrl[array]`: このプロパティには、データセットの配布にアクセスするための URL が含まれます。アクセスURLのリソースには、データセットの入手方法に関する情報が含まれている場合があります。  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `availability[string]`: このプロパティは、データセットの配布を利用可能にするための期間を示す。  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: 本プロパティは、ディストリビューションのサイズをバイト数で示す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `checksum[string]`: このプロパティは、ディストリビューションのコンテンツが変更されていないことを確認するために使用できるメカニズムを提供します。チェックサムは、downloadURLに関連しています。  . Model: [https://schema.org/Text](https://schema.org/Text)- `compressionFormat[string]`: このプロパティは、ダウンロード可能なファイルサイズを縮小するためなどに、データを圧縮して格納するファイルの形式を指す。IANA が管理するメディアタイプの公式な登録簿に定義されたメディアタイプを用いて表現されるべ きである（SHOULD）。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `documentation[array]`: このプロパティは、このディストリビューションに関するページまたはドキュメントを参照します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `downloadURL[array]`: このプロパティは、指定されたフォーマットのダウンロード可能なファイルへの直接リンクである URL を含む。  . Model: [https://schema.org/Text](https://schema.org/Text)- `format[string]`: このプロパティは、ディストリビューションのファイル形式を参照します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `hasPolicy[string]`: このプロパティは、ODRL ボキャブラリを使用する場合、配布に関連する権利を表現するポリシーを参照する。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意な識別子  - `language[array]`: このプロパティは、ディストリビューションで使用されている言語を参照する。メタデータが複数の言語で提供されている場合、このプロパティは繰り返すことができます。  . Model: [https://schema.org/Text](https://schema.org/Text)- `license[string]`: このプロパティは、データセットの配布にアクセスするためのデータサービスを指します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `linkedSchemas[array]`: このプロパティは、記述されたディストリビューションが準拠する確立されたスキーマを参照する。  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `mediaType[string]`: このプロパティは、IANA が管理するメディアタイプの公式レジスタに定義されているディストリビューションのメディアタイプを参照する。  . Model: [https://schema.org/Text](https://schema.org/Text)- `modifiedDate[string]`: このプロパティは、ディストリビューションが変更または修正された直近の日付を含む。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `packagingFormat[string]`: このプロパティは、1 つ以上のデータファイルがグループ化されたファイルの形式を指し、例えば、 関連する一連のファイルを一緒にダウンロードできるようにするためのものである。IANA が管理するメディアタイプの公式記録で定義されるメディアタイプを使用して表現されるべきであ る（SHOULD）。  . Model: [https://schema.org/Text](https://schema.org/Text)- `releaseDate[string]`: 本プロパティは、ディストリビューションの正式発行（発行等）の日付を含む。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: このプロパティは、ディストリビューションに関連する権利を指定するステートメントを指します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spatialResolution[array]`: このプロパティは、データセットの分布で解決可能な最小の空間分離を指し、メートル単位で測定されます。  . Model: [https://schema.org/Text](https://schema.org/Text)- `status[string]`: このプロパティは、ディストリビューションの成熟度について言及している。Completed, Deprecated, Under Development, Withdrawnのいずれかの値を取らなければならない（MUST）。  . Model: [https://schema.org/Text](https://schema.org/Text)- `temporalResolution[array]`: このプロパティは、データセットの分布で解決可能な最小の時間帯を指す。  . Model: [https://schema.org/Text](https://schema.org/Text)- `title[array]`: このプロパティには、ディストリビューションに付けられた名前が含まれています。このプロパティは、説明の並行言語版のために繰り返すことができます。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSIエンティティタイプ。DistributionDCAT-AP でなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DistributionDCAT-AP:    
@@ -432,16 +446,33 @@ DistributionDCAT-AP:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be DistributionDCAT-AP'    
+      enum:    
+        - DistributionDCAT-AP    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT_AP/DistributionDCAT-AP/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### DistributionDCAT-AP NGSI-v2 key-valuesの例。  
-DistributionDCAT-APをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DistributionDCAT-AP NGSI-v2 key-value の例。  
+DistributionDCAT-APをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
@@ -519,8 +550,10 @@ DistributionDCAT-AP:
   ]  
 }  
 ```  
-#### ディストリビューションDCAT-AP NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のDistributionDCAT-APの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### DistributionDCAT-AP NGSI-v2 正規化例  
+以下は、DistributionDCAT-APをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
@@ -701,283 +734,293 @@ DistributionDCAT-AP:
   }  
 }  
 ```  
-#### ディストリビューションDCAT-AP NGSI-LDのキーバリューの例  
-DistributionDCAT-APをkey-valuesとしてJSON-LD形式で出力した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### DistributionDCAT-AP NGSI-LD key-value の例。  
+DistributionDCAT-APをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
-  "type": "DistributionDCAT-AP",  
-  "accessService": [  
-    ""  
-  ],  
-  "accessUrl": [  
-    ""  
-  ],  
-  "address": {  
-    "addressCountry": "Luxembourg",  
-    "addressLocality": "Luxembourg",  
-    "addressRegion": "Luxembourg",  
-    "postOfficeBoxNumber": "",  
-    "postalCode": "24004",  
-    "streetAddress": "Luxembourg platz 2"  
-  },  
-  "alternateName": "csv",  
-  "areaServed": "European Union.",  
-  "availability": "yes",  
-  "byteSize": 43503,  
-  "checksum": "H3FR.",  
-  "compressionFormat": "",  
-  "dataProvider": "Meloda.org",  
-  "dateCreated": "1993-08-16T05:35:56Z",  
-  "dateModified": "1970-07-14T10:48:19Z",  
-  "description": "Distribution of open data portals in csv",  
-  "documentation": [],  
-  "downloadURL": [  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"  
-  ],  
-  "format": " text/csv",  
-  "hasPolicy": "Open data policy.",  
-  "language": [  
-    "EN",  
-    "ES"  
-  ],  
-  "license": "CC-BY",  
-  "linkedSchemas": [],  
-  "location": {  
-    "coordinates": [  
-      -67.057831,  
-      67.968509  
+    "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
+    "type": "DistributionDCAT-AP",  
+    "accessService": [  
+        ""  
     ],  
-    "type": "Point"  
-  },  
-  "mediaType": "",  
-  "modifiedDate": "1986-03-28T19:56:43Z",  
-  "name": "csv portals distribution",  
-  "owner": [  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"  
-  ],  
-  "packagingFormat": "zip",  
-  "releaseDate": "1997-05-06T05:04:10Z",  
-  "rights": "copyleft",  
-  "seeAlso": [  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"  
-  ],  
-  "source": "",  
-  "spatialResolution": [  
-    0.5,  
-    0.5  
-  ],  
-  "status": "Withdrawn",  
-  "temporalResolution": [  
-    2,  
-    10  
-  ],  
-  "title": [  
-    "Dataset base"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "accessUrl": [  
+        ""  
+    ],  
+    "address": {  
+        "addressCountry": "Luxembourg",  
+        "addressLocality": "Luxembourg",  
+        "addressRegion": "Luxembourg",  
+        "postOfficeBoxNumber": "",  
+        "postalCode": "24004",  
+        "streetAddress": "Luxembourg platz 2"  
+    },  
+    "alternateName": "csv",  
+    "areaServed": "European Union.",  
+    "availability": "yes",  
+    "byteSize": 43503,  
+    "checksum": "H3FR.",  
+    "compressionFormat": "",  
+    "dataProvider": "Meloda.org",  
+    "dateCreated": "1993-08-16T05:35:56Z",  
+    "dateModified": "1970-07-14T10:48:19Z",  
+    "description": "Distribution of open data portals in csv",  
+    "documentation": [],  
+    "downloadURL": [  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"  
+    ],  
+    "format": " text/csv",  
+    "hasPolicy": "Open data policy.",  
+    "language": [  
+        "EN",  
+        "ES"  
+    ],  
+    "license": "CC-BY",  
+    "linkedSchemas": [],  
+    "location": {  
+        "coordinates": [  
+            -67.057831,  
+            67.968509  
+        ],  
+        "type": "Point"  
+    },  
+    "mediaType": "",  
+    "modifiedDate": "1986-03-28T19:56:43Z",  
+    "name": "csv portals distribution",  
+    "owner": [  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"  
+    ],  
+    "packagingFormat": "zip",  
+    "releaseDate": "1997-05-06T05:04:10Z",  
+    "rights": "copyleft",  
+    "seeAlso": [  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"  
+    ],  
+    "source": "",  
+    "spatialResolution": [  
+        0.5,  
+        0.5  
+    ],  
+    "status": "Withdrawn",  
+    "temporalResolution": [  
+        2,  
+        10  
+    ],  
+    "title": [  
+        "Dataset base"  
+    ],  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### ディストリビューションDCAT-AP NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のDistributionDCAT-APの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### DistributionDCAT-AP NGSI-LD 正規化例  
+DistributionDCAT-APをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-08-16T05:35:56Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1970-07-14T10:48:19Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "csv portals distribution"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "csv"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Distribution of open data portals in csv"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Meloda.org"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"  
+    "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
+    "accessService": {  
+        "type": "Property",  
+        "value": [  
+            ""  
+        ]  
+    },  
+    "accessUrl": {  
+        "type": "Property",  
+        "value": [  
+            ""  
+        ]  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Luxembourg platz 2",  
+            "addressLocality": "Luxembourg",  
+            "addressRegion": "Luxembourg",  
+            "addressCountry": "Luxembourg",  
+            "postalCode": "24004",  
+            "postOfficeBoxNumber": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "csv"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "European Union."  
+    },  
+    "availability": {  
+        "type": "Property",  
+        "value": "yes"  
+    },  
+    "byteSize": {  
+        "type": "Property",  
+        "value": 43503  
+    },  
+    "checksum": {  
+        "type": "Property",  
+        "value": "H3FR."  
+    },  
+    "compressionFormat": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Meloda.org"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-08-16T05:35:56Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1970-07-14T10:48:19Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Distribution of open data portals in csv"  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": []  
+    },  
+    "downloadURL": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"  
+        ]  
+    },  
+    "format": {  
+        "type": "Property",  
+        "value": " text/csv"  
+    },  
+    "hasPolicy": {  
+        "type": "Property",  
+        "value": "Open data policy."  
+    },  
+    "language": {  
+        "type": "Property",  
+        "value": [  
+            "EN",  
+            "ES"  
+        ]  
+    },  
+    "license": {  
+        "type": "Property",  
+        "value": "CC-BY"  
+    },  
+    "linkedSchemas": {  
+        "type": "Property",  
+        "value": []  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -67.057831,  
+                67.968509  
+            ]  
+        }  
+    },  
+    "mediaType": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "modifiedDate": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1986-03-28T19:56:43Z"  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "csv portals distribution"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"  
+        ]  
+    },  
+    "packagingFormat": {  
+        "type": "Property",  
+        "value": "zip"  
+    },  
+    "releaseDate": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1997-05-06T05:04:10Z"  
+        }  
+    },  
+    "rights": {  
+        "type": "Property",  
+        "value": "copyleft"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "spatialResolution": {  
+        "type": "Property",  
+        "value": [  
+            0.5,  
+            0.5  
+        ]  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "Withdrawn"  
+    },  
+    "temporalResolution": {  
+        "type": "Property",  
+        "value": [  
+            2,  
+            10  
+        ]  
+    },  
+    "title": {  
+        "type": "Property",  
+        "value": [  
+            "Dataset base"  
+        ]  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -67.057831,  
-        67.968509  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Luxembourg platz 2",  
-      "addressLocality": "Luxembourg",  
-      "addressRegion": "Luxembourg",  
-      "addressCountry": "Luxembourg",  
-      "postalCode": "24004",  
-      "postOfficeBoxNumber": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "European Union."  
-  },  
-  "accessUrl": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
-  },  
-  "availability": {  
-    "type": "Property",  
-    "value": "yes"  
-  },  
-  "format": {  
-    "type": "Property",  
-    "value": " text/csv"  
-  },  
-  "license": {  
-    "type": "Property",  
-    "value": "CC-BY"  
-  },  
-  "accessService": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
-  },  
-  "byteSize": {  
-    "type": "Property",  
-    "value": 43503  
-  },  
-  "checksum": {  
-    "type": "Property",  
-    "value": "H3FR."  
-  },  
-  "compressionFormat": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "documentation": {  
-    "type": "Property",  
-    "value": [  
-    ]  
-  },  
-  "downloadURL": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"  
-    ]  
-  },  
-  "hasPolicy": {  
-    "type": "Property",  
-    "value": "Open data policy."  
-  },  
-  "language": {  
-    "type": "Property",  
-    "value": [  
-      "EN",  
-      "ES"  
-    ]  
-  },  
-  "linkedSchemas": {  
-    "type": "Property",  
-    "value": [  
-    ]  
-  },  
-  "mediaType": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "packagingFormat": {  
-    "type": "Property",  
-    "value": "zip"  
-  },  
-  "releaseDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1997-05-06T05:04:10Z"  
-    }  
-  },  
-  "rights": {  
-    "type": "Property",  
-    "value": "copyleft"  
-  },  
-  "spatialResolution": {  
-    "type": "Property",  
-    "value": [  
-      0.5,  
-      0.5  
-    ]  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "Withdrawn"  
-  },  
-  "temporalResolution": {  
-    "type": "Property",  
-    "value": [  
-      2,  
-      10  
-    ]  
-  },  
-  "title": {  
-    "type": "Property",  
-    "value": [  
-      "Dataset base"  
-    ]  
-  },  
-  "modifiedDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1986-03-28T19:56:43Z"  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
