@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティカタログDCAT-AP  
-=================  
+=================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**DCAT-AP仕様に準拠したデータセットのカタログです。  
 バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `catalogue`: このプロパティは、このカタログのコンテキストで関心のある内容を持つカタログを参照します。  - `creator`: このプロパティは、カタログの制作を主に担当する団体を指す。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dataset`: このプロパティは、Catalogue と、Catalogue の一部である Dataset をリンクする。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `hasPart`: このプロパティは、記述されたカタログの一部である関連カタログを参照する。  - `homepage`: このプロパティは、カタログのメインページとして機能するウェブページを参照します。  - `id`: エンティティの一意な識別子  - `isPartOf`: このプロパティは、記述されたカタログが物理的または論理的に含まれる関連カタログを参照する。  - `language`: このプロパティは、カタログのデータセットのタイトルや説明などを記述するテキストメタデータで使用される言語を参照する。メタデータが複数の言語で提供されている場合、このプロパティは繰り返すことができる。  - `licence`: このプロパティは、カタログを使用または再利用することができるライセンスを指します。  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `modificationDate`: このプロパティは、カタログが修正された最新の日付を含む。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `publisher`: このプロパティは、カタログを利用可能にする責任を有するエンティティ（組織）を指す。  - `record`: このプロパティは、カタログの一部であるカタログレコードを参照します。  - `releaseDate`: 本プロパティは、カタログの正式発行（発行等）の日付を含む。  - `rights`: このプロパティは、カタログに関連する権利を指定するステートメントを参照する。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `service`: このプロパティは、カタログに記載されているサイトまたはエンドポイントを指します。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spatial_geographic`: このプロパティは、カタログに記載されている地理的な範囲を指します。  - `themes`: このプロパティは、カタログのデータセットを分類するために使用される知識体系を参照する。  - `title`: このプロパティは、カタログに与えられた名前を含む。このプロパティは名前の並行言語バージョンのために繰り返すことができます。  - `type`: CatalogueDCAT-APである必要があります。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalogue[array]`: このプロパティは、このカタログのコンテキストで関心のある内容を持つカタログを参照します。  . Model: [dcat:catalog](dcat:catalog)- `creator[string]`: このプロパティは、カタログの制作を主に担当する団体を指す。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dataset[array]`: このプロパティは、Catalogue と、Catalogue の一部である Dataset をリンクする。  . Model: [dcat:Dataset](dcat:Dataset)- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasPart[array]`: このプロパティは、記述されたカタログの一部である関連カタログを参照する。  . Model: [https://schema.org/URL](https://schema.org/URL)- `homepage[string]`: このプロパティは、カタログのメインページとして機能するウェブページを参照します。  . Model: [foaf:homepage](foaf:homepage)- `id[*]`: エンティティの一意な識別子  - `isPartOf[string]`: このプロパティは、記述されたカタログが物理的または論理的に含まれる関連カタログを参照する。  . Model: [https://schema.org/URL](https://schema.org/URL)- `language[array]`: このプロパティは、カタログのデータセットのタイトルや説明などを記述するテキストメタデータで使用される言語を参照する。メタデータが複数の言語で提供されている場合、このプロパティは繰り返すことができる。  . Model: [dct:language](dct:language)- `licence[string]`: このプロパティは、カタログを使用または再利用することができるライセンスを指します。  . Model: [dct:license](dct:license)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `modificationDate[string]`: このプロパティは、カタログが修正された最新の日付を含む。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `publisher[string]`: このプロパティは、カタログを利用可能にする責任を有するエンティティ（組織）を指す。  . Model: [dct:publisher](dct:publisher)- `record[array]`: このプロパティは、カタログの一部であるカタログレコードを参照します。  - `releaseDate[string]`: 本プロパティは、カタログの正式発行（発行等）の日付を含む。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: このプロパティは、カタログに関連する権利を指定するステートメントを参照する。  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `service[array]`: このプロパティは、カタログに記載されているサイトまたはエンドポイントを参照します。  . Model: [dcat:DataService](dcat:DataService)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spatial_geographic[array]`: このプロパティは、カタログに記載されている地理的な範囲を指します。  . Model: [dct:spatial](dct:spatial)- `themes[array]`: このプロパティは、カタログのデータセットを分類するために使用される知識体系を参照する。  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)- `title[array]`: このプロパティは、カタログに与えられた名前を含む。このプロパティは名前の並行言語バージョンのために繰り返すことができます。  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: CatalogueDCAT-APである必要があります。  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`    
+- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 このデータモデルと対象DCAT-APの他のものは、彼らの使用のために適応されており、追加のコンテキストが含まれることが推奨されるでしょう。[https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CatalogueDCAT-AP:    
@@ -446,9 +459,14 @@ CatalogueDCAT-AP:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### CatalogueDCAT-AP NGSI-v2 key-value の例。  
 以下は、CatalogueDCAT-APをJSON-LD形式でkey-valuesにした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -527,8 +545,10 @@ CatalogueDCAT-AP:
   "creator": "Role fact sport shoulder blue direction probably order."  
 }  
 ```  
+</details>  
 #### CatalogueDCAT-AP NGSI-v2 正規化例  
 以下は、CatalogueDCAT-APをJSON-LD形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -682,8 +702,10 @@ CatalogueDCAT-AP:
   }  
 }  
 ```  
+</details>  
 #### CatalogueDCAT-AP NGSI-LD key-value の例。  
 ここでは、CatalogueDCAT-APをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -766,8 +788,10 @@ CatalogueDCAT-AP:
     ]  
 }  
 ```  
+</details>  
 #### CatalogueDCAT-AP NGSI-LD 正規化例  
 以下は、CatalogueDCAT-APをJSON-LD形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -937,4 +961,12 @@ CatalogueDCAT-AP:
   ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
