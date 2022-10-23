@@ -1,18 +1,32 @@
-Entidad: CatalogueRecordDCAT-AP  
-===============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: CatalogueRecordDCAT-AP  
+===============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueRecordDCAT-AP/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Se trata de un Registro de Catálogo perteneciente a un conjunto de datos según la norma DCAT-AP 2.0.1**  
 versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `applicationProfile`: Esta propiedad hace referencia a un perfil de aplicación al que se ajustan los metadatos del conjunto de datos  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `changeType`: Esta propiedad se refiere al tipo de la última revisión de la entrada de un Dataset en el Catálogo.  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `language`: Esta propiedad se refiere a un idioma utilizado en los metadatos textuales que describen títulos, descripciones, etc. del conjunto de datos. Esta propiedad puede repetirse si los metadatos se proporcionan en varios idiomas  - `listingDate`: Esta propiedad contiene la fecha en la que la descripción del conjunto de datos se incluyó en el Catálogo.  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `modificationDate`: Esta propiedad contiene la fecha más reciente en la que la entrada del Catálogo fue cambiada o modificada..  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `primaryTopic`: Esta propiedad vincula el registro del catálogo con el conjunto de datos, el servicio de datos o el catálogo descrito en el registro.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `sourceMetadata`: Esta propiedad se refiere a los metadatos originales que se utilizaron para crear los metadatos del conjunto de datos.  - `title`: Esta propiedad contiene un nombre dado al registro del catálogo. Esta propiedad puede repetirse para versiones lingüísticas paralelas del nombre.  - `type`: Tipo de entidad NGSI. Debe ser CatalogueRecordDCAT-AP    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `applicationProfile[string]`: Esta propiedad hace referencia a un perfil de aplicación al que se ajustan los metadatos del conjunto de datos  . Model: [dct:conformsTo](dct:conformsTo)- `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `changeType[string]`: Esta propiedad se refiere al tipo de la última revisión de la entrada de un Conjunto de Datos en el Catálogo.  . Model: [adms:status](adms:status)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `language[array]`: Esta propiedad se refiere a un idioma utilizado en los metadatos textuales que describen títulos, descripciones, etc. del conjunto de datos. Esta propiedad puede repetirse si los metadatos se proporcionan en varios idiomas  . Model: [dct:language](dct:language)- `listingDate[string]`: Esta propiedad contiene la fecha en la que la descripción del conjunto de datos se incluyó en el Catálogo.  . Model: [dct:issued](dct:issued)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `modificationDate[string]`: Esta propiedad contiene la fecha más reciente en la que la entrada del Catálogo fue cambiada o modificada..  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `primaryTopic[string]`: Esta propiedad vincula el registro del catálogo con el conjunto de datos, el servicio de datos o el catálogo descrito en el registro.  . Model: [foaf:primaryTopic](foaf:primaryTopic)- `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `sourceMetadata[string]`: Esta propiedad se refiere a los metadatos originales que se utilizaron para crear los metadatos del conjunto de datos.  . Model: [dct:source](dct:source)- `title[array]`: Esta propiedad contiene un nombre dado al registro del catálogo. Esta propiedad puede repetirse para versiones lingüísticas paralelas del nombre.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Tipo de entidad NGSI. Debe ser CatalogueRecordDCAT-AP  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `modificationDate`  - `primaryTopic`  - `type`    
+- `id`  - `modificationDate`  - `primaryTopic`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CatalogueRecordDCAT-AP:    
@@ -339,12 +353,22 @@ CatalogueRecordDCAT-AP:
     - primaryTopic    
     - modificationDate    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecordDCAT-AP/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT_AP/CatalogueRecordDCAT-AP/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### CatalogueRecordDCAT-AP NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un CatalogueRecordDCAT-AP en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
@@ -396,8 +420,10 @@ CatalogueRecordDCAT-AP:
   ]  
 }  
 ```  
+</details>  
 #### CatalogueRecordDCAT-AP NGSI-v2 normalizado Ejemplo  
 He aquí un ejemplo de un CatalogueRecordDCAT-AP en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
@@ -509,181 +535,196 @@ CatalogueRecordDCAT-AP:
   }  
 }  
 ```  
+</details>  
 #### CatalogueRecordDCAT-AP NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un CatalogueRecordDCAT-AP en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+Este es un ejemplo de un CatalogueRecordDCAT-AP en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
-  "type": "CatalogueRecordDCAT-AP",  
-  "dateCreated": "2020-11-02T21:25:54Z",  
-  "dateModified": "2021-07-02T18:37:55Z",  
-  "source": "",  
-  "name": "",  
-  "alternateName": "",  
-  "description": "Catalogue record of the solar system open data portal",  
-  "dataProvider": "european open data portal",  
-  "owner": [  
-    "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:ISXP:07320625",  
-    "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:BQMW:23610768"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:FVCU:03753474",  
-    "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:AIEC:73224831"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      36.633152,  
-      -85.183315  
+    "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
+    "type": "CatalogueRecordDCAT-AP",  
+    "address": {  
+        "streetAddress": "2, rue Mercier",  
+        "addressLocality": "Luxembourg",  
+        "addressRegion": "Luxembourg",  
+        "addressCountry": "Luxembourg",  
+        "postalCode": "2985",  
+        "postOfficeBoxNumber": ""  
+    },  
+    "alternateName": "",  
+    "applicationProfile": "DCAT Application profile for data portals in Europe",  
+    "areaServed": "European Union and beyond",  
+    "changeType": "First version",  
+    "dataProvider": "european open data portal",  
+    "dateCreated": "2020-11-02T21:25:54Z",  
+    "dateModified": "2021-07-02T18:37:55Z",  
+    "description": "Catalogue record of the solar system open data portal",  
+    "language": [  
+        "EN",  
+        "ES"  
+    ],  
+    "listingDate": "2021-07-02T18:37:55Z",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            36.633152,  
+            -85.183315  
+        ]  
+    },  
+    "modificationDate": "2021-07-02T18:37:55Z",  
+    "name": "",  
+    "owner": [  
+        "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:ISXP:07320625",  
+        "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:BQMW:23610768"  
+    ],  
+    "primaryTopic": "Public administration",  
+    "seeAlso": [  
+        "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:FVCU:03753474",  
+        "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:AIEC:73224831"  
+    ],  
+    "source": "",  
+    "sourceMetadata": "",  
+    "title": [  
+        "Example of catalogue record",  
+        "Ejemplo de registro de cat\u00e1logo"  
+    ],  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "2, rue Mercier",  
-    "addressLocality": "Luxembourg",  
-    "addressRegion": "Luxembourg",  
-    "addressCountry": "Luxembourg",  
-    "postalCode": "2985",  
-    "postOfficeBoxNumber": ""  
-  },  
-  "areaServed": "European Union and beyond",  
-  "primaryTopic": "Public administration",  
-  "modificationDate": "2021-07-02T18:37:55Z",  
-  "applicationProfile": "DCAT Application profile for data portals in Europe",  
-  "changeType": "First version",  
-  "listingDate": "2021-07-02T18:37:55Z",  
-  "language": [  
-    "EN",  
-    "ES"  
-  ],  
-  "sourceMetadata": "",  
-  "title": [  
-    "Example of catalogue record",  
-    "Ejemplo de registro de catÃ¡logo"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### CatalogueRecordDCAT-AP NGSI-LD normalizado Ejemplo  
 He aquí un ejemplo de un CatalogueRecordDCAT-AP en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
-  "type": "CatalogueRecordDCAT-AP",  
-  "dateCreated": {  
-    "type": {  
-      "@type": "Property",  
-      "@value": "2020-11-02T21:25:54Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": {  
-      "@type": "Property",  
-      "@value": "2021-07-02T18:37:55Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Catalogue record of the solar system open data portal"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "european open data portal"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:ISXP:07320625",  
-      "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:BQMW:23610768"  
+    "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
+    "type": "CatalogueRecordDCAT-AP",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "2, rue Mercier",  
+            "addressLocality": "Luxembourg",  
+            "addressRegion": "Luxembourg",  
+            "addressCountry": "Luxembourg",  
+            "postalCode": "2985",  
+            "postOfficeBoxNumber": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "applicationProfile": {  
+        "type": "Property",  
+        "value": "DCAT Application profile for data portals in Europe"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "European Union and beyond"  
+    },  
+    "changeType": {  
+        "type": "Property",  
+        "value": "First version"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "european open data portal"  
+    },  
+    "dateCreated": {  
+        "type": {  
+            "@type": "Property",  
+            "@value": "2020-11-02T21:25:54Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": {  
+            "@type": "Property",  
+            "@value": "2021-07-02T18:37:55Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Catalogue record of the solar system open data portal"  
+    },  
+    "language": {  
+        "type": "Property",  
+        "value": [  
+            "EN",  
+            "ES"  
+        ]  
+    },  
+    "listingDate": {  
+        "type": {  
+            "@type": "Property",  
+            "@value": "2021-07-02T18:37:55Z"  
+        }  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                36.633152,  
+                -85.183315  
+            ]  
+        }  
+    },  
+    "modificationDate": {  
+        "type": {  
+            "@type": "Property",  
+            "@value": "2021-07-02T18:37:55Z"  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:ISXP:07320625",  
+            "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:BQMW:23610768"  
+        ]  
+    },  
+    "primaryTopic": {  
+        "type": "Property",  
+        "value": "Public administration"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:FVCU:03753474",  
+            "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:AIEC:73224831"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "sourceMetadata": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "title": {  
+        "type": "Property",  
+        "value": [  
+            "Example of catalogue record",  
+            "Ejemplo de registro de cat\u00e1logo"  
+        ]  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:FVCU:03753474",  
-      "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:AIEC:73224831"  
-    ]  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        36.633152,  
-        -85.183315  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "2, rue Mercier",  
-      "addressLocality": "Luxembourg",  
-      "addressRegion": "Luxembourg",  
-      "addressCountry": "Luxembourg",  
-      "postalCode": "2985",  
-      "postOfficeBoxNumber": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "European Union and beyond"  
-  },  
-  "primaryTopic": {  
-    "type": "Property",  
-    "value": "Public administration"  
-  },  
-  "modificationDate": {  
-    "type": {  
-      "@type": "Property",  
-      "@value": "2021-07-02T18:37:55Z"  
-    }  
-  },  
-  "applicationProfile": {  
-    "type": "Property",  
-    "value": "DCAT Application profile for data portals in Europe"  
-  },  
-  "changeType": {  
-    "type": "Property",  
-    "value": "First version"  
-  },  
-  "listingDate": {  
-    "type": {  
-      "@type": "Property",  
-      "@value": "2021-07-02T18:37:55Z"  
-    }  
-  },  
-  "language": {  
-    "type": "Property",  
-    "value": [  
-      "EN",  
-      "ES"  
-    ]  
-  },  
-  "sourceMetadata": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "title": {  
-    "type": "Property",  
-    "value": [  
-      "Example of catalogue record",  
-      "Ejemplo de registro de catÃ¡logo"  
-    ]  
-  }  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
