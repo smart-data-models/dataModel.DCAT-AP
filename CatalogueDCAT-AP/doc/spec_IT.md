@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entità: CatalogoDCAT-AP  
-=======================  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descrizione globale: **Catalogo di insiemi di dati conformi alle specifiche DCAT-AP.**  
 versione: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  - `catalogue`: Questa proprietà si riferisce a un catalogo il cui contenuto è di interesse nel contesto di questo catalogo.  - `creator`: Questa proprietà si riferisce all'entità principalmente responsabile della produzione del catalogo.  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dataset`: Questa proprietà collega il Catalogo con un set di dati che fa parte del Catalogo.  - `dateCreated`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description`: Descrizione dell'articolo  - `hasPart`: Questa proprietà si riferisce a un Catalogo correlato che fa parte del Catalogo descritto.  - `homepage`: Questa proprietà si riferisce a una pagina web che funge da pagina principale del Catalogo.  - `id`: Identificatore univoco dell'entità  - `isPartOf`: Questa proprietà si riferisce a un Catalogo correlato in cui il Catalogo descritto è fisicamente o logicamente incluso.  - `language`: Questa proprietà si riferisce a una lingua utilizzata nei metadati testuali che descrivono i titoli, le descrizioni, ecc. dei dataset del catalogo. Questa proprietà può essere ripetuta se i metadati sono forniti in più lingue.  - `licence`: Questa proprietà si riferisce alla licenza con cui il Catalogo può essere utilizzato o riutilizzato.  - `location`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `modificationDate`: Questa proprietà contiene la data più recente in cui il Catalogo è stato modificato.  - `name`: Il nome di questo elemento.  - `owner`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `publisher`: Questa proprietà si riferisce a un'entità (organizzazione) responsabile della messa a disposizione del catalogo.  - `record`: Questa proprietà si riferisce a un record del catalogo che fa parte del catalogo.  - `releaseDate`: Questa proprietà contiene la data di emissione formale (ad esempio, la pubblicazione) del Catalogo.  - `rights`: Questa proprietà si riferisce a una dichiarazione che specifica i diritti associati al Catalogo.  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `service`: Questa proprietà si riferisce a un sito o a un punto finale elencato nel catalogo.  - `source`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `spatial_geographic`: Questa proprietà si riferisce ad un'area geografica coperta dal Catalogo  - `themes`: Questa proprietà si riferisce a un sistema di organizzazione della conoscenza utilizzato per classificare gli insiemi di dati del catalogo.  - `title`: Questa proprietà contiene un nome dato al Catalogo. Questa proprietà può essere ripetuta per le versioni in lingue parallele del nome  - `type`: Deve essere CatalogoDCAT-AP    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalogue[array]`: Questa proprietà si riferisce a un catalogo il cui contenuto è di interesse nel contesto di questo catalogo.  . Model: [dcat:catalog](dcat:catalog)- `creator[string]`: Questa proprietà si riferisce all'entità principalmente responsabile della produzione del catalogo.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dataset[array]`: Questa proprietà collega il Catalogo con un set di dati che fa parte del Catalogo.  . Model: [dcat:Dataset](dcat:Dataset)- `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `hasPart[array]`: Questa proprietà si riferisce a un Catalogo correlato che fa parte del Catalogo descritto.  . Model: [https://schema.org/URL](https://schema.org/URL)- `homepage[string]`: Questa proprietà si riferisce a una pagina web che funge da pagina principale del Catalogo.  . Model: [foaf:homepage](foaf:homepage)- `id[*]`: Identificatore univoco dell'entità  - `isPartOf[string]`: Questa proprietà si riferisce a un Catalogo correlato in cui il Catalogo descritto è fisicamente o logicamente incluso.  . Model: [https://schema.org/URL](https://schema.org/URL)- `language[array]`: Questa proprietà si riferisce a una lingua utilizzata nei metadati testuali che descrivono i titoli, le descrizioni, ecc. dei dataset del catalogo. Questa proprietà può essere ripetuta se i metadati sono forniti in più lingue.  . Model: [dct:language](dct:language)- `licence[string]`: Questa proprietà si riferisce alla licenza con cui il Catalogo può essere utilizzato o riutilizzato.  . Model: [dct:license](dct:license)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `modificationDate[string]`: Questa proprietà contiene la data più recente in cui il Catalogo è stato modificato.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `publisher[string]`: Questa proprietà si riferisce a un'entità (organizzazione) responsabile della messa a disposizione del catalogo.  . Model: [dct:publisher](dct:publisher)- `record[array]`: Questa proprietà si riferisce a un record del catalogo che fa parte del catalogo.  - `releaseDate[string]`: Questa proprietà contiene la data di emissione formale (ad esempio, la pubblicazione) del Catalogo.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: Questa proprietà si riferisce a una dichiarazione che specifica i diritti associati al Catalogo.  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `service[array]`: Questa proprietà si riferisce a un sito o a un punto finale elencato nel catalogo.  . Model: [dcat:DataService](dcat:DataService)- `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `spatial_geographic[array]`: Questa proprietà si riferisce ad un'area geografica coperta dal Catalogo  . Model: [dct:spatial](dct:spatial)- `themes[array]`: Questa proprietà si riferisce a un sistema di organizzazione della conoscenza utilizzato per classificare gli insiemi di dati del catalogo.  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)- `title[array]`: Questa proprietà contiene un nome dato al Catalogo. Questa proprietà può essere ripetuta per le versioni in lingue parallele del nome  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: Deve essere CatalogoDCAT-AP  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`    
+- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Questo modello di dati e altri del soggetto DCAT-AP vengono adattati per il loro uso e si raccomanda di includere un contesto aggiuntivo. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CatalogueDCAT-AP:    
@@ -446,9 +459,14 @@ CatalogueDCAT-AP:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Esempi di payload  
 #### CatalogoDCAT-AP NGSI-v2 valori-chiave Esempio  
 Ecco un esempio di CatalogueDCAT-AP in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -527,8 +545,10 @@ CatalogueDCAT-AP:
   "creator": "Role fact sport shoulder blue direction probably order."  
 }  
 ```  
+</details>  
 #### CatalogoDCAT-AP NGSI-v2 normalizzato Esempio  
 Ecco un esempio di CatalogueDCAT-AP in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -682,8 +702,10 @@ CatalogueDCAT-AP:
   }  
 }  
 ```  
+</details>  
 #### CatalogoDCAT-AP Valori chiave NGSI-LD Esempio  
 Ecco un esempio di CatalogoDCAT-AP in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -766,8 +788,10 @@ CatalogueDCAT-AP:
     ]  
 }  
 ```  
+</details>  
 #### CatalogoDCAT-AP NGSI-LD normalizzato Esempio  
 Ecco un esempio di CatalogueDCAT-AP in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
@@ -937,4 +961,12 @@ CatalogueDCAT-AP:
   ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
