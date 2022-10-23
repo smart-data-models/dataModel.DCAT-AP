@@ -1,18 +1,32 @@
-エンティティエージェントDCAT-AP  
-===================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティAgentDCAT-AP  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/AgentDCAT-AP/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述です。**DCAT-AP 2.0仕様に準拠したエージェントスキーマ**。  
 バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `agentName`: このプロパティには、Distribution に関するフリーテキストの説明が含まれる。このプロパティは、説明の並列言語バージョンのために繰り返すことができます。  - `agentType`: このプロパティは、カタログやデータセットを利用可能にするエージェントのタイプを指す。  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティタイプ。AgentDCAT-APである必要があります。    
-必須項目  
-- `agentName`  - `id`  - `type`    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `agentName[array]`: このプロパティは、配布に関するフリーテキストの説明を含んでいます。このプロパティは、説明の並行言語版のために繰り返すことができます。  . Model: [dct:description](dct:description)- `agentType[string]`: このプロパティは、カタログまたはデータセットを利用可能にするエージェントのタイプを参照します。  . Model: [dct:type](dct:type)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI エンティティタイプ。AgentDCAT-APでなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `agentName`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 AgentDCAT-AP:    
@@ -299,12 +313,22 @@ AgentDCAT-AP:
     - type    
     - agentName    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/AgentDCAT-AP/LICENSE.md    
+  x-model-schema: https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/AgentDCAT-AP/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### AgentDCAT-AP NGSI-v2 キーバリューの例  
-AgentDCAT-APをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### AgentDCAT-AP NGSI-v2 key-value の例。  
+AgentDCAT-APをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:id:ZLHO:07918336",  
@@ -345,8 +369,10 @@ AgentDCAT-AP:
   "agentType": "EU Publications office"  
 }  
 ```  
-#### AgentDCAT-AP NGSI-v2の正規化例  
-ここでは、正規化されたJSON-LD形式のAgentDCAT-APの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AgentDCAT-AP NGSI-v2 正規化例  
+以下は、AgentDCAT-APを正規化したJSON-LD形式の例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:id:ZLHO:07918336",  
@@ -426,140 +452,151 @@ AgentDCAT-AP:
   }  
 }  
 ```  
-#### AgentDCAT-AP NGSI-LDのキーバリューの例  
-AgentDCAT-APをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AgentDCAT-AP NGSI-LD キー値例  
+AgentDCAT-APをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:id:ZLHO:07918336",  
-  "type": "AgentDCAT-AP",  
-  "dateCreated": "1988-07-01T14:50:52Z",  
-  "dateModified": "2000-06-02T13:25:42Z",  
-  "source": "Any source for an Agent.",  
-  "name": "Agent 10.",  
-  "alternateName": "Agent-10.",  
-  "description": "organization the Agent 10 belongs to.",  
-  "dataProvider": "",  
-  "owner": [  
-    "urn:ngsi-ld:Agent:TBSV:39232621"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:AgentAECY:13995407"  
-  ],  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      12.934074,  
-      -149.532943  
+    "id": "urn:ngsi-ld:id:ZLHO:07918336",  
+    "type": "AgentDCAT-AP",  
+    "address": {  
+        "streetAddress": "2 Rue Mercier",  
+        "addressLocality": "Luxembourg",  
+        "addressRegion": "Luxembourg",  
+        "addressCountry": "Luxembourg",  
+        "postalCode": "2985 ",  
+        "postOfficeBoxNumber": "",  
+        "areaServed": "European Union"  
+    },  
+    "agentName": [  
+        "Agent 10",  
+        "Agente 10"  
+    ],  
+    "agentType": "EU Publications office",  
+    "alternateName": "Agent-10.",  
+    "dataProvider": "",  
+    "dateCreated": "1988-07-01T14:50:52Z",  
+    "dateModified": "2000-06-02T13:25:42Z",  
+    "description": "organization the Agent 10 belongs to.",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            12.934074,  
+            -149.532943  
+        ]  
+    },  
+    "name": "Agent 10.",  
+    "owner": [  
+        "urn:ngsi-ld:Agent:TBSV:39232621"  
+    ],  
+    "seeAlso": [  
+        "urn:ngsi-ld:AgentAECY:13995407"  
+    ],  
+    "source": "Any source for an Agent.",  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "streetAddress": "2 Rue Mercier",  
-    "addressLocality": "Luxembourg",  
-    "addressRegion": "Luxembourg",  
-    "addressCountry": "Luxembourg",  
-    "postalCode": "2985 ",  
-    "postOfficeBoxNumber": "",  
-    "areaServed": "European Union"  
-  },  
-  "agentName": [  
-    "Agent 10",  
-    "Agente 10"  
-  ],  
-  "agentType": "EU Publications office",  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-#### AgentDCAT-AP NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のAgentDCAT-APの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### AgentDCAT-AP NGSI-LD 正規化例  
+以下は、AgentDCAT-APを正規化したJSON-LD形式の例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:id:ZLHO:07918336",  
-  "type": "AgentDCAT-AP",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1988-07-01T14:50:52Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2000-06-02T13:25:42Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": "Any source for an Agent."  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Agent 10."  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "Agent-10."  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "organization the Agent 10 belongs to."  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Agent:TBSV:39232621"  
+    "id": "urn:ngsi-ld:id:ZLHO:07918336",  
+    "type": "AgentDCAT-AP",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "2 Rue Mercier",  
+            "addressLocality": "Luxembourg",  
+            "addressRegion": "Luxembourg",  
+            "addressCountry": "Luxembourg",  
+            "postalCode": "2985 ",  
+            "postOfficeBoxNumber": "",  
+            "areaServed": "European Union"  
+        }  
+    },  
+    "agentName": {  
+        "type": "Property",  
+        "value": [  
+            "Agent 10",  
+            "Agente 10"  
+        ]  
+    },  
+    "agentType": {  
+        "type": "Property",  
+        "value": "EU Publications office"  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "Agent-10."  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1988-07-01T14:50:52Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2000-06-02T13:25:42Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "organization the Agent 10 belongs to."  
+    },  
+    "location": {  
+        "type": "Geoproperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                12.934074,  
+                -149.532943  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Agent 10."  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Agent:TBSV:39232621"  
+        ]  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:AgentAECY:13995407"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": "Any source for an Agent."  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:AgentAECY:13995407"  
-    ]  
-  },  
-  "location": {  
-    "type": "Geoproperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        12.934074,  
-        -149.532943  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "2 Rue Mercier",  
-      "addressLocality": "Luxembourg",  
-      "addressRegion": "Luxembourg",  
-      "addressCountry": "Luxembourg",  
-      "postalCode": "2985 ",  
-      "postOfficeBoxNumber": "",  
-      "areaServed": "European Union"  
-    }  
-  },  
-  "agentName": {  
-    "type": "Property",  
-    "value": [  
-      "Agent 10",  
-      "Agente 10"  
-    ]  
-  },  
-  "agentType": {  
-    "type": "Property",  
-    "value":  
-      "EU Publications office"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
