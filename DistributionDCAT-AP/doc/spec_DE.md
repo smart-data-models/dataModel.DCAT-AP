@@ -1,18 +1,32 @@
-Entität: DistributionDCAT-AP  
-============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: DistributionDCAT-AP  
+============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Globale Beschreibung: **Dies ist eine Verteilung, die zu einem Datensatz nach dem DCAT-AP Standard 2.0.1** gehört  
 Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `accessService`: Diese Eigenschaft bezieht sich auf einen Datendienst, der den Zugriff auf die Verteilung des Datensatzes ermöglicht  - `accessUrl`: Diese Eigenschaft enthält eine URL, die den Zugriff auf eine Verteilung des Datensatzes ermöglicht. Die Ressource unter der Zugriffs-URL kann Informationen darüber enthalten, wie man den Datensatz erhält.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `availability`: Diese Eigenschaft gibt an, wie lange die Verteilung des Datensatzes verfügbar bleiben soll.  - `byteSize`: Diese Eigenschaft enthält die Größe einer Verteilung in Bytes.  - `checksum`: Diese Eigenschaft bietet einen Mechanismus, mit dem überprüft werden kann, ob sich der Inhalt einer Distribution nicht geändert hat. Die Prüfsumme bezieht sich auf die downloadURL.  - `compressionFormat`: Diese Eigenschaft bezieht sich auf das Format der Datei, in der die Daten in komprimierter Form enthalten sind, z. B. um die Größe der herunterladbaren Datei zu verringern. Sie SOLLTE durch einen Medientyp ausgedrückt werden, der im offiziellen, von der IANA verwalteten Register der Medientypen definiert ist  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `documentation`: Diese Eigenschaft verweist auf eine Seite oder ein Dokument über diese Verteilung.  - `downloadURL`: Diese Eigenschaft enthält eine URL, die ein Direktlink zu einer herunterladbaren Datei in einem bestimmten Format ist.  - `format`: Diese Eigenschaft bezieht sich auf das Dateiformat der Verteilung.  - `hasPolicy`: Diese Eigenschaft bezieht sich auf die Richtlinie, die bei Verwendung des ODRL-Vokabulars die mit der Verteilung verbundenen Rechte ausdrückt  - `id`: Eindeutiger Bezeichner der Entität  - `language`: Diese Eigenschaft bezieht sich auf eine in der Verteilung verwendete Sprache. Diese Eigenschaft kann wiederholt werden, wenn die Metadaten in mehreren Sprachen bereitgestellt werden.  - `license`: Diese Eigenschaft bezieht sich auf einen Datendienst, der den Zugriff auf die Verteilung des Datensatzes ermöglicht  - `linkedSchemas`: Diese Eigenschaft verweist auf ein etabliertes Schema, dem die beschriebene Verteilung entspricht.  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mediaType`: Diese Eigenschaft bezieht sich auf den Medientyp der Distribution, wie er im offiziellen, von der IANA verwalteten Register der Medientypen definiert ist  - `modifiedDate`: Diese Eigenschaft enthält das letzte Datum, an dem die Verteilung geändert oder modifiziert wurde.  - `name`: Der Name dieses Artikels.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `packagingFormat`: Diese Eigenschaft bezieht sich auf das Dateiformat, in dem eine oder mehrere Datendateien gruppiert sind, z. B. um einen Satz zusammengehöriger Dateien gemeinsam herunterladen zu können. Sie SOLLTE durch einen Medientyp ausgedrückt werden, der im offiziellen, von der IANA verwalteten Register der Medientypen definiert ist  - `releaseDate`: Diese Eigenschaft enthält das Datum der förmlichen Herausgabe (z. B. Veröffentlichung) der Verteilung.  - `rights`: Diese Eigenschaft bezieht sich auf eine Erklärung, die die mit der Verteilung verbundenen Rechte angibt.  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `spatialResolution`: Diese Eigenschaft bezieht sich auf die minimale räumliche Trennung, die in einer Datensatzverteilung auflösbar ist, gemessen in Metern  - `status`: Diese Eigenschaft bezieht sich auf die Fälligkeit der Verteilung. Sie MUSS einen der Werte Completed, Deprecated, Under Development, Withdrawn annehmen  - `temporalResolution`: Diese Eigenschaft bezieht sich auf den kleinsten auflösbaren Zeitraum in der Dataset-Verteilung  - `title`: Diese Eigenschaft enthält einen Namen, der der Verteilung gegeben wird. Diese Eigenschaft kann für parallele Sprachversionen der Beschreibung wiederholt werden.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `accessService[array]`: Diese Eigenschaft bezieht sich auf einen Datendienst, der den Zugriff auf die Verteilung des Datensatzes ermöglicht  . Model: [https://schema.org/Text](https://schema.org/Text)- `accessUrl[array]`: Diese Eigenschaft enthält eine URL, die den Zugriff auf eine Verteilung des Datensatzes ermöglicht. Die Ressource unter der Zugriffs-URL kann Informationen darüber enthalten, wie man den Datensatz erhält.  . Model: [https://schema.org/Text](https://schema.org/Text)- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `availability[string]`: Diese Eigenschaft gibt an, wie lange die Verteilung des Datensatzes verfügbar bleiben soll.  . Model: [https://schema.org/Text](https://schema.org/Text)- `byteSize[number]`: Diese Eigenschaft enthält die Größe einer Verteilung in Bytes.  . Model: [https://schema.org/Number](https://schema.org/Number)- `checksum[string]`: Diese Eigenschaft bietet einen Mechanismus, mit dem überprüft werden kann, ob sich der Inhalt einer Distribution nicht geändert hat. Die Prüfsumme bezieht sich auf die downloadURL.  . Model: [https://schema.org/Text](https://schema.org/Text)- `compressionFormat[string]`: Diese Eigenschaft bezieht sich auf das Format der Datei, in der die Daten in komprimierter Form enthalten sind, z. B. um die Größe der herunterladbaren Datei zu verringern. Sie SOLLTE durch einen Medientyp ausgedrückt werden, der im offiziellen, von der IANA verwalteten Register der Medientypen definiert ist  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `documentation[array]`: Diese Eigenschaft verweist auf eine Seite oder ein Dokument über diese Verteilung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `downloadURL[array]`: Diese Eigenschaft enthält eine URL, die ein direkter Link zu einer herunterladbaren Datei in einem bestimmten Format ist.  . Model: [https://schema.org/Text](https://schema.org/Text)- `format[string]`: Diese Eigenschaft bezieht sich auf das Dateiformat der Verteilung.  . Model: [https://schema.org/Text](https://schema.org/Text)- `hasPolicy[string]`: Diese Eigenschaft bezieht sich auf die Richtlinie, die bei Verwendung des ODRL-Vokabulars die mit der Verteilung verbundenen Rechte ausdrückt  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Eindeutiger Bezeichner der Entität  - `language[array]`: Diese Eigenschaft bezieht sich auf eine in der Verteilung verwendete Sprache. Diese Eigenschaft kann wiederholt werden, wenn die Metadaten in mehreren Sprachen bereitgestellt werden.  . Model: [https://schema.org/Text](https://schema.org/Text)- `license[string]`: Diese Eigenschaft bezieht sich auf einen Datendienst, der den Zugriff auf die Verteilung des Datensatzes ermöglicht  . Model: [https://schema.org/Text](https://schema.org/Text)- `linkedSchemas[array]`: Diese Eigenschaft verweist auf ein etabliertes Schema, dem die beschriebene Verteilung entspricht.  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `mediaType[string]`: Diese Eigenschaft bezieht sich auf den Medientyp der Distribution, wie er im offiziellen, von der IANA verwalteten Register der Medientypen definiert ist  . Model: [https://schema.org/Text](https://schema.org/Text)- `modifiedDate[string]`: Diese Eigenschaft enthält das letzte Datum, an dem die Verteilung geändert oder modifiziert wurde.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `packagingFormat[string]`: Diese Eigenschaft bezieht sich auf das Dateiformat, in dem eine oder mehrere Datendateien gruppiert sind, z. B. um einen Satz zusammengehöriger Dateien gemeinsam herunterladen zu können. Sie SOLLTE durch einen Medientyp ausgedrückt werden, der im offiziellen, von der IANA verwalteten Register der Medientypen definiert ist  . Model: [https://schema.org/Text](https://schema.org/Text)- `releaseDate[string]`: Diese Eigenschaft enthält das Datum der förmlichen Herausgabe (z. B. Veröffentlichung) der Verteilung.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: Diese Eigenschaft bezieht sich auf eine Erklärung, die die mit der Verteilung verbundenen Rechte angibt.  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `spatialResolution[array]`: Diese Eigenschaft bezieht sich auf den minimalen räumlichen Abstand, der in einer Datensatzverteilung auflösbar ist, gemessen in Metern  . Model: [https://schema.org/Text](https://schema.org/Text)- `status[string]`: Diese Eigenschaft bezieht sich auf die Fälligkeit der Verteilung. Sie MUSS einen der Werte Completed, Deprecated, Under Development, Withdrawn annehmen  . Model: [https://schema.org/Text](https://schema.org/Text)- `temporalResolution[array]`: Diese Eigenschaft bezieht sich auf den kleinsten auflösbaren Zeitraum in der Dataset-Verteilung  . Model: [https://schema.org/Text](https://schema.org/Text)- `title[array]`: Diese Eigenschaft enthält einen Namen, der der Verteilung gegeben wird. Diese Eigenschaft kann für parallele Sprachversionen der Beschreibung wiederholt werden.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI-Entitätstyp. Es muss DistributionDCAT-AP sein.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 DistributionDCAT-AP:    
@@ -432,16 +446,33 @@ DistributionDCAT-AP:
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
+    type:    
+      description: 'NGSI entity type. It has to be DistributionDCAT-AP'    
+      enum:    
+        - DistributionDCAT-AP    
+      type: string    
+      x-ngsi:    
+        type: Property    
   required:    
     - id    
     - type    
   type: object    
-  version: 0.0.1    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT_AP/DistributionDCAT-AP/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### VerteilungDCAT-AP NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen DistributionDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für einen DistributionDCAT-AP im JSON-LD Format als Key-Values. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
@@ -519,8 +550,10 @@ DistributionDCAT-AP:
   ]  
 }  
 ```  
+</details>  
 #### VerteilungDCAT-AP NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen DistributionDCAT-AP im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
@@ -701,283 +734,293 @@ DistributionDCAT-AP:
   }  
 }  
 ```  
+</details>  
 #### VerteilungDCAT-AP NGSI-LD Schlüsselwerte Beispiel  
 Hier ist ein Beispiel für einen DistributionDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
-  "type": "DistributionDCAT-AP",  
-  "accessService": [  
-    ""  
-  ],  
-  "accessUrl": [  
-    ""  
-  ],  
-  "address": {  
-    "addressCountry": "Luxembourg",  
-    "addressLocality": "Luxembourg",  
-    "addressRegion": "Luxembourg",  
-    "postOfficeBoxNumber": "",  
-    "postalCode": "24004",  
-    "streetAddress": "Luxembourg platz 2"  
-  },  
-  "alternateName": "csv",  
-  "areaServed": "European Union.",  
-  "availability": "yes",  
-  "byteSize": 43503,  
-  "checksum": "H3FR.",  
-  "compressionFormat": "",  
-  "dataProvider": "Meloda.org",  
-  "dateCreated": "1993-08-16T05:35:56Z",  
-  "dateModified": "1970-07-14T10:48:19Z",  
-  "description": "Distribution of open data portals in csv",  
-  "documentation": [],  
-  "downloadURL": [  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"  
-  ],  
-  "format": " text/csv",  
-  "hasPolicy": "Open data policy.",  
-  "language": [  
-    "EN",  
-    "ES"  
-  ],  
-  "license": "CC-BY",  
-  "linkedSchemas": [],  
-  "location": {  
-    "coordinates": [  
-      -67.057831,  
-      67.968509  
+    "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
+    "type": "DistributionDCAT-AP",  
+    "accessService": [  
+        ""  
     ],  
-    "type": "Point"  
-  },  
-  "mediaType": "",  
-  "modifiedDate": "1986-03-28T19:56:43Z",  
-  "name": "csv portals distribution",  
-  "owner": [  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"  
-  ],  
-  "packagingFormat": "zip",  
-  "releaseDate": "1997-05-06T05:04:10Z",  
-  "rights": "copyleft",  
-  "seeAlso": [  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",  
-    "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"  
-  ],  
-  "source": "",  
-  "spatialResolution": [  
-    0.5,  
-    0.5  
-  ],  
-  "status": "Withdrawn",  
-  "temporalResolution": [  
-    2,  
-    10  
-  ],  
-  "title": [  
-    "Dataset base"  
-  ],  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
+    "accessUrl": [  
+        ""  
+    ],  
+    "address": {  
+        "addressCountry": "Luxembourg",  
+        "addressLocality": "Luxembourg",  
+        "addressRegion": "Luxembourg",  
+        "postOfficeBoxNumber": "",  
+        "postalCode": "24004",  
+        "streetAddress": "Luxembourg platz 2"  
+    },  
+    "alternateName": "csv",  
+    "areaServed": "European Union.",  
+    "availability": "yes",  
+    "byteSize": 43503,  
+    "checksum": "H3FR.",  
+    "compressionFormat": "",  
+    "dataProvider": "Meloda.org",  
+    "dateCreated": "1993-08-16T05:35:56Z",  
+    "dateModified": "1970-07-14T10:48:19Z",  
+    "description": "Distribution of open data portals in csv",  
+    "documentation": [],  
+    "downloadURL": [  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"  
+    ],  
+    "format": " text/csv",  
+    "hasPolicy": "Open data policy.",  
+    "language": [  
+        "EN",  
+        "ES"  
+    ],  
+    "license": "CC-BY",  
+    "linkedSchemas": [],  
+    "location": {  
+        "coordinates": [  
+            -67.057831,  
+            67.968509  
+        ],  
+        "type": "Point"  
+    },  
+    "mediaType": "",  
+    "modifiedDate": "1986-03-28T19:56:43Z",  
+    "name": "csv portals distribution",  
+    "owner": [  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"  
+    ],  
+    "packagingFormat": "zip",  
+    "releaseDate": "1997-05-06T05:04:10Z",  
+    "rights": "copyleft",  
+    "seeAlso": [  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",  
+        "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"  
+    ],  
+    "source": "",  
+    "spatialResolution": [  
+        0.5,  
+        0.5  
+    ],  
+    "status": "Withdrawn",  
+    "temporalResolution": [  
+        2,  
+        10  
+    ],  
+    "title": [  
+        "Dataset base"  
+    ],  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### VerteilungDCAT-AP NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen DistributionDCAT-AP im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1993-08-16T05:35:56Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1970-07-14T10:48:19Z"  
-    }  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "csv portals distribution"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "csv"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Distribution of open data portals in csv"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "Meloda.org"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"  
+    "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",  
+    "accessService": {  
+        "type": "Property",  
+        "value": [  
+            ""  
+        ]  
+    },  
+    "accessUrl": {  
+        "type": "Property",  
+        "value": [  
+            ""  
+        ]  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "streetAddress": "Luxembourg platz 2",  
+            "addressLocality": "Luxembourg",  
+            "addressRegion": "Luxembourg",  
+            "addressCountry": "Luxembourg",  
+            "postalCode": "24004",  
+            "postOfficeBoxNumber": ""  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "csv"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "European Union."  
+    },  
+    "availability": {  
+        "type": "Property",  
+        "value": "yes"  
+    },  
+    "byteSize": {  
+        "type": "Property",  
+        "value": 43503  
+    },  
+    "checksum": {  
+        "type": "Property",  
+        "value": "H3FR."  
+    },  
+    "compressionFormat": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "Meloda.org"  
+    },  
+    "dateCreated": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1993-08-16T05:35:56Z"  
+        }  
+    },  
+    "dateModified": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1970-07-14T10:48:19Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Distribution of open data portals in csv"  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": []  
+    },  
+    "downloadURL": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"  
+        ]  
+    },  
+    "format": {  
+        "type": "Property",  
+        "value": " text/csv"  
+    },  
+    "hasPolicy": {  
+        "type": "Property",  
+        "value": "Open data policy."  
+    },  
+    "language": {  
+        "type": "Property",  
+        "value": [  
+            "EN",  
+            "ES"  
+        ]  
+    },  
+    "license": {  
+        "type": "Property",  
+        "value": "CC-BY"  
+    },  
+    "linkedSchemas": {  
+        "type": "Property",  
+        "value": []  
+    },  
+    "location": {  
+        "type": "Property",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -67.057831,  
+                67.968509  
+            ]  
+        }  
+    },  
+    "mediaType": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "modifiedDate": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1986-03-28T19:56:43Z"  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "csv portals distribution"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"  
+        ]  
+    },  
+    "packagingFormat": {  
+        "type": "Property",  
+        "value": "zip"  
+    },  
+    "releaseDate": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "1997-05-06T05:04:10Z"  
+        }  
+    },  
+    "rights": {  
+        "type": "Property",  
+        "value": "copyleft"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",  
+            "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"  
+        ]  
+    },  
+    "source": {  
+        "type": "Property",  
+        "value": ""  
+    },  
+    "spatialResolution": {  
+        "type": "Property",  
+        "value": [  
+            0.5,  
+            0.5  
+        ]  
+    },  
+    "status": {  
+        "type": "Property",  
+        "value": "Withdrawn"  
+    },  
+    "temporalResolution": {  
+        "type": "Property",  
+        "value": [  
+            2,  
+            10  
+        ]  
+    },  
+    "title": {  
+        "type": "Property",  
+        "value": [  
+            "Dataset base"  
+        ]  
+    },  
+    "@context": [  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"  
-    ]  
-  },  
-  "location": {  
-    "type": "Property",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -67.057831,  
-        67.968509  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "streetAddress": "Luxembourg platz 2",  
-      "addressLocality": "Luxembourg",  
-      "addressRegion": "Luxembourg",  
-      "addressCountry": "Luxembourg",  
-      "postalCode": "24004",  
-      "postOfficeBoxNumber": ""  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "European Union."  
-  },  
-  "accessUrl": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
-  },  
-  "availability": {  
-    "type": "Property",  
-    "value": "yes"  
-  },  
-  "format": {  
-    "type": "Property",  
-    "value": " text/csv"  
-  },  
-  "license": {  
-    "type": "Property",  
-    "value": "CC-BY"  
-  },  
-  "accessService": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
-  },  
-  "byteSize": {  
-    "type": "Property",  
-    "value": 43503  
-  },  
-  "checksum": {  
-    "type": "Property",  
-    "value": "H3FR."  
-  },  
-  "compressionFormat": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "documentation": {  
-    "type": "Property",  
-    "value": [  
-    ]  
-  },  
-  "downloadURL": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",  
-      "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"  
-    ]  
-  },  
-  "hasPolicy": {  
-    "type": "Property",  
-    "value": "Open data policy."  
-  },  
-  "language": {  
-    "type": "Property",  
-    "value": [  
-      "EN",  
-      "ES"  
-    ]  
-  },  
-  "linkedSchemas": {  
-    "type": "Property",  
-    "value": [  
-    ]  
-  },  
-  "mediaType": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "packagingFormat": {  
-    "type": "Property",  
-    "value": "zip"  
-  },  
-  "releaseDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1997-05-06T05:04:10Z"  
-    }  
-  },  
-  "rights": {  
-    "type": "Property",  
-    "value": "copyleft"  
-  },  
-  "spatialResolution": {  
-    "type": "Property",  
-    "value": [  
-      0.5,  
-      0.5  
-    ]  
-  },  
-  "status": {  
-    "type": "Property",  
-    "value": "Withdrawn"  
-  },  
-  "temporalResolution": {  
-    "type": "Property",  
-    "value": [  
-      2,  
-      10  
-    ]  
-  },  
-  "title": {  
-    "type": "Property",  
-    "value": [  
-      "Dataset base"  
-    ]  
-  },  
-  "modifiedDate": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "1986-03-28T19:56:43Z"  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld"  
-  ]  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
