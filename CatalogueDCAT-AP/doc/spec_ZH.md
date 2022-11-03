@@ -181,7 +181,7 @@ CatalogueDCAT-AP:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
-        - description: 'Geoproperty. Geojson reference to the item. Point'    
+        - description: 'GeoProperty. Geojson reference to the item. Point'    
           properties:    
             bbox:    
               items:    
@@ -202,7 +202,7 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+        - description: 'GeoProperty. Geojson reference to the item. LineString'    
           properties:    
             bbox:    
               items:    
@@ -226,7 +226,7 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
           properties:    
             bbox:    
               items:    
@@ -252,7 +252,7 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
           properties:    
             bbox:    
               items:    
@@ -275,7 +275,7 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -301,7 +301,7 @@ CatalogueDCAT-AP:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
           properties:    
             bbox:    
               items:    
@@ -330,7 +330,7 @@ CatalogueDCAT-AP:
           title: 'GeoJSON MultiPolygon'    
           type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     modificationDate:    
       description: 'This property contains the most recent date on which the Catalogue was modified.'    
       format: date-time    
@@ -413,12 +413,12 @@ CatalogueDCAT-AP:
     spatial_geographic:    
       description: 'This property refers to a geographical area covered by the Catalogue'    
       items:    
-        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
       type: array    
       x-ngsi:    
         model: dct:spatial    
-        type: Geoproperty    
+        type: GeoProperty    
     themes:    
       description: 'This property refers to a knowledge organization system used to classify the Catalogue''s Datasets.'    
       items:    
@@ -932,7 +932,7 @@ CatalogueDCAT-AP:
     "value": ""  
   },  
   "spatial_geographic": {  
-    "type": "Geoproperty",  
+    "type": "GeoProperty",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
