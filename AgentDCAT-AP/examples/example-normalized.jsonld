@@ -51,7 +51,7 @@
         "value": "organization the Agent 10 belongs to."
     },
     "location": {
-        "type": "Geoproperty",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
