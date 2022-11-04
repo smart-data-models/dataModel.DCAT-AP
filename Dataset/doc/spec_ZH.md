@@ -300,9 +300,9 @@ Dataset:
     spatial:    
       description: 'This property refers to a geographic region that is covered by the Dataset'    
       items:    
-        description: 'Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: 'Geoproperty. Geojson reference to the item. Point'    
+          - description: 'GeoProperty. Geojson reference to the item. Point'    
             properties:    
               bbox:    
                 items:    
@@ -323,7 +323,7 @@ Dataset:
               - coordinates    
             title: 'GeoJSON Point'    
             type: object    
-          - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          - description: 'GeoProperty. Geojson reference to the item. LineString'    
             properties:    
               bbox:    
                 items:    
@@ -347,7 +347,7 @@ Dataset:
               - coordinates    
             title: 'GeoJSON LineString'    
             type: object    
-          - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          - description: 'GeoProperty. Geojson reference to the item. Polygon'    
             properties:    
               bbox:    
                 items:    
@@ -373,7 +373,7 @@ Dataset:
               - coordinates    
             title: 'GeoJSON Polygon'    
             type: object    
-          - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
             properties:    
               bbox:    
                 items:    
@@ -396,7 +396,7 @@ Dataset:
               - coordinates    
             title: 'GeoJSON MultiPoint'    
             type: object    
-          - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
             properties:    
               bbox:    
                 items:    
@@ -422,7 +422,7 @@ Dataset:
               - coordinates    
             title: 'GeoJSON MultiLineString'    
             type: object    
-          - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
             properties:    
               bbox:    
                 items:    
@@ -453,7 +453,7 @@ Dataset:
       type: array    
       x-ngsi:    
         model: dct:Location    
-        type: Geoproperty    
+        type: GeoProperty    
     spatialResolution:    
       description: 'This property refers to the minimum spatial separation resolvable in a dataset, measured in meters'    
       items:    
