@@ -1,0 +1,25 @@
+{
+    "id": "urn:ngsi-ld:DataServiceDCAT-AP:AgendaAnalyticsCrawling",
+    "type": "DataServiceDCAT-AP",
+    "configuration": [
+      "param1",
+      "param2"
+    ],
+    "dateCreated": "2022-06-21T08:24:35.905712+02:00",
+    "dateModified": "2022-06-22T09:24:35.905712+02:00",
+    "dataServiceDescription": "Service that crawls web documents for a specific NGSI-LD entity of the type Organization (https://smartdatamodels.org/dataModel.Organization/Organization)",
+    "title": "AgendaAnalyticsCrawling",
+    "contactPoint": {
+      "name": "Contact for Support of AgendaAnalyticsCrawling service",
+      "url": "https://www.support.com"
+    },
+    "dataProvider": "urn:ngsi-ld:Organization:DataServiceCompanyXYZ",
+    "endpointURL": "https://www.crawling-service.com",
+    "assetProvider": [
+      "https://github.com/DigitalPebble/storm-crawler"
+    ],
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+    ]
+}
