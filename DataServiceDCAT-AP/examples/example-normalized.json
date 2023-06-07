@@ -110,6 +110,25 @@
   "license": {
     "type": "Text",
     "value": "EUPL."
+  },
+  "configuration": {
+    "type": "array",
+    "value": [
+      "format"
+    ]
+  },
+  "contactPoint": {
+    "type": "StructuredValue",
+    "value": {
+      "name": "contact point for european open data portal.",
+      "url": "https://data.europa.eu/en/contact-us"
+    }
+  },
+  "assetProvider": {
+    "type": "array",
+    "value": [
+      "https://op.europa.eu/en/home"
+    ]
   }
 }
 

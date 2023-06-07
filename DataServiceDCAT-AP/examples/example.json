@@ -53,5 +53,15 @@
   "title": [
     "Data service of the european open data portal",
     "Data service del portal europeo de datos abiertos"
+  ],
+  "assetProvider": [
+    "https://op.europa.eu/en/home"
+  ],
+  "contactPoint": {
+    "name": "contact point for european open data portal.",
+    "url": "https://data.europa.eu/en/contact-us"
+  },
+  "configuration": [
+    "format"
   ]
 }

@@ -78,11 +78,6 @@
                       "format": "uri"
                     }
                 },
-                "dataProvider": {
-                    "type": "string",
-                    "description": "Property. An uri pointing to the provider of the harmonised data entity.",
-                    "format": "uri"
-                }, 
                 "configuration": {
                     "type": "array",
                     "description": "Property. Technical configuration of the service. This attribute is intended to be an array of parameter names (without values) which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.",

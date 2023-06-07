@@ -117,6 +117,25 @@
             "Data service del portal europeo de datos abiertos"
         ]
     },
+    "configuration": {
+        "type": "Property",
+        "value": [
+          "format"
+        ]
+      },
+    "contactPoint": {
+        "type": "Property",
+        "value": {
+            "name": "contact point for european open data portal.",
+            "url": "https://data.europa.eu/en/contact-us"
+        }
+    },
+    "assetProvider": {
+        "type": "Property",
+        "value": [
+            "https://op.europa.eu/en/home"
+        ]
+    },
     "@context": [
         "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
     ]
