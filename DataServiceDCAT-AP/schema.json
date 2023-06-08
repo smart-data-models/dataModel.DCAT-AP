@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
+    "$schemaVersion": "0.0.2",
     "modelTags": "",
     "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/DataServiceDCAT-AP/schema.json",
     "title": "Data Service DCAT-AP 2.0 schema - extended",
