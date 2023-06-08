@@ -1,30 +1,30 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティDataServiceDCAT-AP  
-========================<!-- /10-Header -->  
+エンティティデータサービスDCAT-AP  
+====================<!-- /10-Header -->  
 <!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述です。**DCAT-AP 2.0仕様のデータサービスだが、プロパティを追加して拡張し、NGSI標準と互換性を持たせている**。  
-バージョン: 0.0.1  
+グローバルな記述です：**DCAT-AP 2.0仕様のデータサービスだが、プロパティを追加して拡張し、NGSI標準と互換性を持たせた**。  
+バージョン：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `accessRights[string]`: このプロパティは、プライバシー、セキュリティ、またはその他のポリシーに基づくアクセスまたは制限に関する情報を含む場合があります。  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dataServiceDescription[array]`: このプロパティは、データサービスに関するフリーテキストの説明を含む。このプロパティは、並行言語バージョンの説明のために繰り返すことができます。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `endPointDescription[array]`: このプロパティには、エンドポイントを介して利用可能なサービスの説明が含まれ、その操作やパラメータなどが含まれます。このプロパティは、実際のエンドポイントインスタンスの具体的な詳細を提供し、dct:conformsToは、エンドポイントが実装する一般的な標準または仕様を示すために使用されます。  - `endPointURL[array]`: サービスのルートロケーションまたはプライマリエンドポイント（IRI）。  - `id[*]`: エンティティの一意な識別子  - `license[string]`: このプロパティは、データサービスが利用できるようにするためのライセンスを含む。  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `servesDataset[array]`: 本プロパティは、本データサービスが配信可能なデータの集合を指す。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `title[array]`: このプロパティは、データサービスに付けられた名前を含む。このプロパティは、並列言語バージョンの名前に対して繰り返すことができる。  - `type[string]`: NGSI エンティティタイプ。DataServiceDCAT-AP である必要があります。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `accessRights[string]`: このプロパティには、プライバシー、セキュリティ、その他のポリシーに基づくアクセスまたは制限に関する情報を含めることができる。  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dataServiceDescription[array]`: このプロパティは、データサービスに関するフリーテキストの説明を含む。このプロパティは、並行言語版の説明のために繰り返すことができます。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `endPointDescription[array]`: このプロパティは、エンドポイントを介して利用可能なサービスの説明（操作、パラメータなど）を含む。このプロパティは、実際のエンドポイントインスタンスの具体的な詳細を提供し、dct:conformsToは、エンドポイントが実装する一般的な標準または仕様を示すために使用されます。  - `endPointURL[array]`: サービスのルートロケーションまたは一次エンドポイント（IRI）。  - `id[*]`: エンティティの一意な識別子  - `license[string]`: このプロパティには、データサービスが利用可能なライセンスが含まれる。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `servesDataset[array]`: このプロパティは、このデータサービスが配布可能なデータの集合体を示すものである。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `title[array]`: このプロパティは、データサービスに与えられた名前を含む。このプロパティは、名前の並列言語バージョンに対して繰り返すことができる。  - `type[string]`: NGSI Entity タイプ。DataServiceDCAT-APである必要があります。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `endPointURL`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).いくつかのプロパティは、他の既存のプロパティとの衝突を防ぐために名前が変更されている。また、NGSI標準や他のデータモデルとの互換性を保つために、他のプロパティが追加されている。  
+Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).いくつかのプロパティは、他の既存のプロパティとの衝突を防ぐために、名前が変更されている。また、NGSI標準や他のデータモデルとの互換性を保つために、他のプロパティが追加されている。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -33,12 +33,12 @@ DataServiceDCAT-AP:
   description: 'Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard'    
   properties:    
     accessRights:    
-      description: 'This property MAY include information regarding access or restrictions based on privacy, security, or other policies'    
+      description: 'Property. This property MAY include information regarding access or restrictions based on privacy, security, or other policies'    
       type: string    
       x-ngsi:    
         type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
@@ -49,6 +49,9 @@ DataServiceDCAT-AP:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
@@ -58,59 +61,141 @@ DataServiceDCAT-AP:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
+    assetProvider:    
+      description: Property. A list of uri pointing to the asset providers for this services.    
+      items:    
+        format: uri    
+        type: string    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    configuration:    
+      description: 'Property. Technical configuration of the service. This attribute is intended to be an array of parameter names (without values) which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.'    
+      items:    
+        format: text    
+        type: string    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    contactPoint:    
+      description: The details to contact with the item.    
+      properties:    
+        areaServed:    
+          description: Property. The geographic area where a service or offered item is provided. Supersedes serviceArea.    
+          type: string    
+        availabilityRestriction:    
+          anyOf:    
+            - description: Property. Array of identifiers format of any NGSI entity.    
+              items:    
+                maxLength: 256    
+                minLength: 1    
+                pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+                type: string    
+              type: array    
+            - description: Property. Array of identifiers format of any NGSI entity.    
+              items:    
+                format: uri    
+                type: string    
+              type: array    
+          description: 'Relationship. Model:''http://schema.org/hoursAvailable''. This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class.'    
+        availableLanguage:    
+          anyOf:    
+            - anyOf:    
+                - type: string    
+                - items:    
+                    type: string    
+                  type: array    
+          description: 'Property. Model:''http://schema.org/availableLanguage''. A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
+        contactOption:    
+          anyOf:    
+            - type: string    
+            - items:    
+                type: string    
+              type: array    
+          description: 'Property. Model:''http://schema.org/contactOption''. An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).'    
+        contactType:    
+          description: Property. Contact type of this item.    
+          type: string    
+        email:    
+          description: Property. Email address of owner.    
+          format: idn-email    
+          type: string    
+        faxNumber:    
+          description: 'Property. Model:''http://schema.org/Text''. The fax number.'    
+          type: string    
+        name:    
+          description: Property. The name of this item.    
+          type: string    
+        productSupported:    
+          description: 'Property. Model:''http://schema.org/Text''. The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").'    
+          type: string    
+        telephone:    
+          description: Property. Telephone of this contact.    
+          type: string    
+        url:    
+          description: Property. URL which provides a description or further information about this item.    
+          format: uri    
+          type: string    
+      type: object    
+      x-ngsi:    
+        model: https://schema.org/ContactPoint    
+        type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     dataServiceDescription:    
-      description: 'This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description'    
+      description: Property. This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description    
       items:    
         type: string    
       type: array    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     endPointDescription:    
-      description: 'This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.'    
+      description: 'Property. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.'    
       items:    
         type: string    
       type: array    
       x-ngsi:    
         type: Property    
     endPointURL:    
-      description: 'The root location or primary endpoint of the service (an IRI).'    
+      description: Property. The root location or primary endpoint of the service (an IRI).    
       items:    
         format: uri    
         minItems: 1    
@@ -120,26 +205,26 @@ DataServiceDCAT-AP:
         type: Property    
     id:    
       anyOf: &dataservicedcat-ap_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     license:    
-      description: 'This property contains the licence under which the Data service is made available.'    
+      description: Property. This property contains the licence under which the Data service is made available.    
       type: string    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -158,9 +243,9 @@ DataServiceDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -182,9 +267,9 @@ DataServiceDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -208,9 +293,9 @@ DataServiceDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -231,9 +316,9 @@ DataServiceDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -257,9 +342,9 @@ DataServiceDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -285,25 +370,25 @@ DataServiceDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *dataservicedcat-ap_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -315,7 +400,7 @@ DataServiceDCAT-AP:
       x-ngsi:    
         type: Property    
     servesDataset:    
-      description: 'This property refers to a collection of data that this data service can distribute.'    
+      description: Property. This property refers to a collection of data that this data service can distribute.    
       items:    
         type: string    
       type: array    
@@ -327,14 +412,14 @@ DataServiceDCAT-AP:
       x-ngsi:    
         type: Property    
     title:    
-      description: 'This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.'    
+      description: Property. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.    
       items:    
         type: string    
       type: array    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be DataServiceDCAT-AP'    
+      description: Property. NGSI Entity type. It has to be DataServiceDCAT-AP    
       enum:    
         - DataServiceDCAT-AP    
       type: string    
@@ -347,20 +432,21 @@ DataServiceDCAT-AP:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/LICENSE.md    
   x-model-schema: https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/DataServiceDCAT-AP/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
+より幅広い使い方を可能にするために、いくつかのプロパティが追加されました。すなわち、contactPoint、assetProvider、configurationです。  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### DataServiceDCAT-AP NGSI-v2 key-values の例。  
-DataServiceDCAT-APをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DataServiceDCAT-AP NGSI-v2 キー値例  
+DataServiceDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -418,12 +504,22 @@ DataServiceDCAT-AP:
   "title": [  
     "Data service of the european open data portal",  
     "Data service del portal europeo de datos abiertos"  
+  ],  
+  "assetProvider": [  
+    "https://op.europa.eu/en/home"  
+  ],  
+  "contactPoint": {  
+    "name": "contact point for european open data portal.",  
+    "url": "https://data.europa.eu/en/contact-us"  
+  },  
+  "configuration": [  
+    "format"  
   ]  
 }  
 ```  
 </details>  
 #### DataServiceDCAT-AP NGSI-v2 正規化例  
-DataServiceDCAT-APをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のDataServiceDCAT-APを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -538,12 +634,31 @@ DataServiceDCAT-AP:
   "license": {  
     "type": "Text",  
     "value": "EUPL."  
+  },  
+  "configuration": {  
+    "type": "array",  
+    "value": [  
+      "format"  
+    ]  
+  },  
+  "contactPoint": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "name": "contact point for european open data portal.",  
+      "url": "https://data.europa.eu/en/contact-us"  
+    }  
+  },  
+  "assetProvider": {  
+    "type": "array",  
+    "value": [  
+      "https://op.europa.eu/en/home"  
+    ]  
   }  
 }  
 ```  
 </details>  
-#### DataServiceDCAT-AP NGSI-LD key-value の例  
-DataServiceDCAT-APをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返されます。  
+#### DataServiceDCAT-AP NGSI-LD キー値例  
+DataServiceDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -602,6 +717,16 @@ DataServiceDCAT-AP:
         "Data service of the european open data portal",  
         "Data service del portal europeo de datos abiertos"  
     ],  
+    "assetProvider": [  
+        "https://op.europa.eu/en/home"  
+    ],  
+    "contactPoint": {  
+    "name": "contact point for european open data portal.",  
+    "url": "https://data.europa.eu/en/contact-us"  
+    },  
+    "configuration": [  
+    "format"  
+    ],  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
@@ -609,7 +734,7 @@ DataServiceDCAT-AP:
 ```  
 </details>  
 #### DataServiceDCAT-AP NGSI-LD 正規化例  
-DataServiceDCAT-APをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+JSON-LD形式のDataServiceDCAT-APを正規化した例を紹介します。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -729,6 +854,25 @@ DataServiceDCAT-AP:
         "value": [  
             "Data service of the european open data portal",  
             "Data service del portal europeo de datos abiertos"  
+        ]  
+    },  
+    "configuration": {  
+        "type": "Property",  
+        "value": [  
+          "format"  
+        ]  
+      },  
+    "contactPoint": {  
+        "type": "Property",  
+        "value": {  
+            "name": "contact point for european open data portal.",  
+            "url": "https://data.europa.eu/en/contact-us"  
+        }  
+    },  
+    "assetProvider": {  
+        "type": "Property",  
+        "value": [  
+            "https://op.europa.eu/en/home"  
         ]  
     },  
     "@context": [  
