@@ -11,7 +11,7 @@ info:
   description:  |
     Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard
   title: DataServiceDCAT-AP
-  version: "0.0.1"
+  version: "0.0.2"
 openapi: "3.0.0"
 
 paths: 

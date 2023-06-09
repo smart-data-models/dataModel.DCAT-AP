@@ -8,14 +8,14 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descrizione globale: **Schema del set di dati conforme alle specifiche DCAT-AP 2.0**  
-versione: 0.0.1  
+versione: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `accessRights[string]`: Questa proprietà si riferisce alle informazioni che indicano se il Dataset è un dato aperto, ha restrizioni di accesso o non è pubblico. Un vocabolario controllato con tre membri (:public, :restricted, :non-public) sarà creato e mantenuto dall'Ufficio delle pubblicazioni dell'UE. Enum:'pubblico, ristretto, non pubblico'.  . Model: [foaf:Agent](foaf:Agent)- `alternateName[string]`: Un nome alternativo per questa voce  - `contactPoint[array]`: Corrisponde alla proprietà obbligatoria "punto di contatto" della DCAT-AP 2.0.1. Questa proprietà contiene informazioni di contatto che possono essere utilizzate per inviare commenti sul Dataset.  . Model: [vcard:Kind](vcard:Kind)- `creator[string]`: Questa proprietà si riferisce all'entità principalmente responsabile della produzione del catalogo.  . Model: [dct:creator](dct:creator)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `datasetDescription[array]`: Questa proprietà contiene un resoconto di testo libero del Dataset. Corrisponde alla proprietà obbligatoria 'description' del DCAT-AP 2.0.1. Questa proprietà può essere ripetuta per versioni linguistiche parallele della descrizione.  - `datasetDistribution[array]`: Questa proprietà collega il dataset a una distribuzione disponibile. Corrisponde alla proprietà obbligatoria "distribuzione del dataset" di DCAT-AP 2.0.1.  . Model: [dcat:distribution](dcat:distribution)- `datasetSource[array]`: Corrisponde alla proprietà "source" della DCAT-AP 2.0.1. Questa proprietà si riferisce a un set di dati correlato da cui deriva il set di dati descritto.  . Model: [rdfs:Resource](rdfs:Resource)- `datasetType[string]`: Questa proprietà si riferisce al tipo di Dataset. Corrisponde alla proprietà 'Tipo' del DCAT 2.0.1. Non è stato definito un vocabolario controllato per i valori.  . Model: [dct:type](dct:type)- `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `documentation[array]`: Questa proprietà si riferisce a una pagina o a un documento su questo Dataset.  . Model: [foaf:Document](foaf:Document)- `frequency[string]`: Questa proprietà si riferisce alla frequenza di aggiornamento del Dataset.  . Model: [dct:Frequency](dct:Frequency)- `hasVersion[array]`: Questa proprietà si riferisce a un Dataset correlato che è una versione, un'edizione o un adattamento del Dataset descritto.  - `id[*]`: Identificatore univoco dell'entità  - `identifier[array]`: Questa proprietà contiene l'identificatore principale del Dataset, ad esempio l'URI o un altro identificatore univoco nel contesto del Catalogo.  . Model: [dct:identifier](dct:identifier)- `isReferencedBy[array]`: Questa proprietà si riferisce a un Dataset correlato di cui il Dataset descritto è una versione, un'edizione o un adattamento.  . Model: [dct:isVersionOf](dct:isVersionOf)- `isVersionOf[array]`: Questa proprietà contiene l'identificatore principale del Dataset, ad esempio l'URI o un altro identificatore univoco nel contesto del Catalogo.  . Model: [dct:identifier](dct:identifier)- `keyword[array]`: Questa proprietà contiene una parola chiave o un tag che descrive il set di dati.  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: Questa proprietà si riferisce a una pagina web che fornisce accesso al dataset, alle sue distribuzioni e/o a informazioni aggiuntive. Si intende puntare a una pagina di destinazione presso il fornitore originale dei dati, non a una pagina su un sito di terzi, come un aggregatore.  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: Questa proprietà si riferisce a una lingua del Dataset. Questa proprietà può essere ripetuta se ci sono più lingue nel Dataset.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `name[string]`: Il nome di questo elemento.  - `otherIdentifier[array]`: Questa proprietà si riferisce a un identificatore secondario del dataset, come MAST/ADS, DataCite, DOI, EZID o W3ID.  . Model: [dct:identifier](dct:identifier)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `provenance[array]`: Questa proprietà contiene una dichiarazione sulla discendenza di un set di dati.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: Questa proprietà si riferisce a un'entità (organizzazione) responsabile della messa a disposizione del Dataset.  . Model: [foaf:Agent](foaf:Agent)- `qualifiedAttribution[array]`: Questa proprietà riguarda una risorsa correlata, come una pubblicazione, che fa riferimento, cita o punta in altro modo al dataset.  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)- `qualifiedRelation[array]`: Questa proprietà riguarda una risorsa correlata, come una pubblicazione, che fa riferimento, cita o punta in altro modo al set di dati.  . Model: [dcat:Relationship](dcat:Relationship)- `relatedResource[array]`: Questa proprietà si riferisce a una risorsa correlata  . Model: [rdfs:Resource](rdfs:Resource)- `releaseDate[string]`: Questa proprietà contiene la data di emissione formale (ad esempio, la pubblicazione) del Dataset.  . Model: [dct:issued](dct:issued)- `sample[array]`: Questa proprietà si riferisce a una distribuzione campionaria dell'insieme di dati  . Model: [rdfs:Resource](rdfs:Resource)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `spatial[array]`: Questa proprietà si riferisce a una regione geografica coperta dal dataset.  . Model: [dct:Location](dct:Location)- `spatialResolution[array]`: Questa proprietà si riferisce alla minima separazione spaziale risolvibile in un set di dati, misurata in metri.  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)- `temporal[array]`: Questa proprietà si riferisce a un periodo temporale che il dataset copre  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `temporalResolution[array]`: Questa proprietà si riferisce al periodo di tempo minimo risolvibile nel dataset.  . Model: [dcat:temporalResolution](dcat:temporalResolution)- `theme[array]`: Questa proprietà si riferisce a una categoria del Dataset. Un set di dati può essere associato a più temi  . Model: [dcat:theme](dcat:theme)- `title[array]`: Questa proprietà contiene un nome dato al Dataset. Corrisponde alla proprietà obbligatoria 'Title' di DCAT-AP 2.0.1. Questa proprietà può essere ripetuta per versioni linguistiche parallele del nome.  - `type[string]`: Tipo NGSI. Deve essere un set di dati  - `updateDate[string]`: Questa proprietà contiene la data più recente in cui il Dataset è stato cambiato o modificato.  . Model: [dct:modified](dct:modified)- `version[string]`: Questa proprietà contiene un numero di versione o un'altra designazione di versione del set di dati.  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: Questa proprietà contiene una descrizione delle differenze tra questa versione e una versione precedente del Dataset. Questa proprietà può essere ripetuta per le versioni in lingue parallele delle note di versione.  . Model: [adms:versionNotes](adms:versionNotes)- `wasGeneratedBy[array]`: Questa proprietà contiene una descrizione delle differenze tra questa versione e una versione precedente del Dataset. Questa proprietà può essere ripetuta per le versioni in lingue parallele delle note di versione.  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)<!-- /30-PropertiesList -->  
+- `accessRights[string]`: Proprietà. Modello:'foaf:Agent'. Questa proprietà si riferisce alle informazioni che indicano se il Dataset è un dato aperto, con restrizioni di accesso o non pubblico. Un vocabolario controllato con tre membri (:public, :restricted, :non-public) sarà creato e mantenuto dall'Ufficio delle pubblicazioni dell'UE. Enum:'pubblico, ristretto, non pubblico'.  . Model: [foaf:Agent](foaf:Agent)- `alternateName[string]`: Un nome alternativo per questa voce  - `conformsTo[string]`: Proprietà. Modello:'dct:conformsTo'. Questa proprietà si riferisce a una regola di implementazione o a un'altra specifica.  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: Proprietà. Modello:'vcard:Kind'. Corrisponde alla proprietà obbligatoria 'punto di contatto' della DCAT-AP 2.0.1. Questa proprietà contiene informazioni di contatto che possono essere utilizzate per inviare commenti sul Dataset.  . Model: [vcard:Kind](vcard:Kind)- `creator[string]`: Proprietà. Modello:'dct:creator'. Questa proprietà si riferisce all'entità principalmente responsabile della produzione del catalogo.  . Model: [dct:creator](dct:creator)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `datasetDescription[array]`: Proprietà. Questa proprietà contiene un resoconto di testo libero del Dataset. Corrisponde alla proprietà obbligatoria "description" di DCAT-AP 2.0.1. Questa proprietà può essere ripetuta per versioni linguistiche parallele della descrizione.  - `datasetDistribution[array]`: Proprietà. Questa proprietà collega il dataset a una distribuzione disponibile. Corrisponde alla proprietà obbligatoria 'dataset distribution' di DCAT-AP 2.0.1. Modello:'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)- `datasetSource[array]`: Proprietà. Modello:'rdfs:Resource'. Corrisponde alla proprietà 'source' di DCAT-AP 2.0.1. Questa proprietà si riferisce a un set di dati correlato da cui deriva il set di dati descritto.  . Model: [rdfs:Resource](rdfs:Resource)- `datasetType[string]`: Proprietà. Modello:'dct:type'. Questa proprietà si riferisce al tipo di dataset. Corrisponde alla proprietà 'Type' del DCAT 2.0.1. Non è stato stabilito un vocabolario controllato per i valori.  . Model: [dct:type](dct:type)- `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `documentation[array]`: Proprietà. Modello:'foaf:Document'. Questa proprietà si riferisce a una pagina o a un documento su questo set di dati.  . Model: [foaf:Document](foaf:Document)- `frequency[string]`: Proprietà. Modello:'dct:Frequency'. Questa proprietà si riferisce alla frequenza di aggiornamento del dataset.  . Model: [dct:Frequency](dct:Frequency)- `hasVersion[array]`: Proprietà. Questa proprietà si riferisce a un Dataset correlato che è una versione, un'edizione o un adattamento del Dataset descritto.  - `id[*]`: Identificatore univoco dell'entità  - `identifier[array]`: Proprietà. Modello:'dct:identifier'. Questa proprietà contiene l'identificatore principale del set di dati, ad esempio l'URI o un altro identificatore unico nel contesto del catalogo.  . Model: [dct:identifier](dct:identifier)- `isReferencedBy[array]`: Proprietà. Modello:'dct:isVersionOf'. Questa proprietà si riferisce a un set di dati correlato di cui il set di dati descritto è una versione, un'edizione o un adattamento.  . Model: [dct:isVersionOf](dct:isVersionOf)- `isVersionOf[array]`: Proprietà. Modello:'dct:identifier'. Questa proprietà contiene l'identificatore principale del set di dati, ad esempio l'URI o un altro identificatore unico nel contesto del catalogo.  . Model: [dct:identifier](dct:identifier)- `keyword[array]`: Proprietà. Questa proprietà contiene una parola chiave o un tag che descrive il set di dati. Modello:'dcat:parola chiave'  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: Proprietà. Modello:'dcat:landingPage'. Questa proprietà si riferisce a una pagina web che fornisce accesso al dataset, alle sue distribuzioni e/o a informazioni aggiuntive. Si intende puntare a una pagina di destinazione presso il fornitore originale di dati, non a una pagina su un sito di terzi, come un aggregatore.  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: Proprietà. Modello:'dct:LinguisticSystem'. Questa proprietà si riferisce a una lingua del dataset. Questa proprietà può essere ripetuta se ci sono più lingue nel dataset.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `name[string]`: Il nome di questo elemento.  - `otherIdentifier[array]`: Proprietà. Modello:'dct:identifier'. Questa proprietà si riferisce a un identificatore secondario del dataset, come MAST/ADS, DataCite, DOI, EZID o W3ID.  . Model: [dct:identifier](dct:identifier)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `provenance[array]`: Proprietà. Modello:'dct:ProvenanceStatement'. Questa proprietà contiene una dichiarazione sulla discendenza di un set di dati.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: Proprietà. Modello:'foaf:Agent'. Questa proprietà si riferisce a un'entità (organizzazione) responsabile di rendere disponibile il dataset.  . Model: [foaf:Agent](foaf:Agent)- `qualifiedAttribution[array]`: Proprietà. Modello:'prov:qualifiedAttribution'. Questa proprietà riguarda una risorsa correlata, come una pubblicazione, che fa riferimento, cita o punta in altro modo al set di dati.  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)- `qualifiedRelation[array]`: Proprietà. Modello:'dcat:Relationship'. Questa proprietà riguarda una risorsa correlata, come una pubblicazione, che fa riferimento, cita o punta in altro modo al set di dati.  . Model: [dcat:Relationship](dcat:Relationship)- `relatedResource[array]`: Proprietà. Modello:'rdfs:Resource'. Questa proprietà si riferisce a una risorsa correlata  . Model: [rdfs:Resource](rdfs:Resource)- `releaseDate[string]`: Proprietà. Modello:'dct:issued'. Questa proprietà contiene la data di emissione formale (ad esempio, la pubblicazione) del set di dati.  . Model: [dct:issued](dct:issued)- `sample[array]`: Proprietà. Modello:'rdfs:Resource'. Questa proprietà si riferisce a un campione di distribuzione dell'insieme di dati.  . Model: [rdfs:Resource](rdfs:Resource)- `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `spatial[array]`: Geoproprietà. Modello:'dct:Location'. Questa proprietà si riferisce a una regione geografica coperta dal set di dati.  . Model: [dct:Location](dct:Location)- `spatialResolution[array]`: Proprietà. Modello:'dcat:spatialResolutionIn Meters'. Questa proprietà si riferisce alla minima separazione spaziale risolvibile in un set di dati, misurata in metri.  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)- `temporal[array]`: Proprietà. Questa proprietà si riferisce a un periodo temporale che il dataset copre. Modello:'dct:PeriodOfTime'  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `temporalResolution[array]`: Proprietà. Modello:'dcat:temporalResolution'. Questa proprietà si riferisce al periodo temporale minimo risolvibile nel set di dati.  . Model: [dcat:temporalResolution](dcat:temporalResolution)- `theme[array]`: Proprietà. Modello:'dcat:theme'. Questa proprietà si riferisce a una categoria del Dataset. Un set di dati può essere associato a più temi  . Model: [dcat:theme](dcat:theme)- `title[array]`: Proprietà. Questa proprietà contiene un nome dato al set di dati. Corrisponde alla proprietà obbligatoria "Titolo" di DCAT-AP 2.0.1. Questa proprietà può essere ripetuta per versioni linguistiche parallele del nome.  - `type[string]`: Proprietà. Tipo NGSI. Deve essere un set di dati  - `updateDate[string]`: Proprietà. Modello:'dct:modified'. Questa proprietà contiene la data più recente in cui il set di dati è stato cambiato o modificato.  . Model: [dct:modified](dct:modified)- `version[string]`: Proprietà. Modello:'owl:versionInfo'. Questa proprietà contiene un numero di versione o un'altra designazione di versione del set di dati.  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: Proprietà. Modello:'adms:versionNotes'. Questa proprietà contiene una descrizione delle differenze tra questa versione e una versione precedente del Dataset. Questa proprietà può essere ripetuta per versioni linguistiche parallele delle note di versione.  . Model: [adms:versionNotes](adms:versionNotes)- `wasGeneratedBy[array]`: Proprietà. Modello:'prov:wasGeneratedBy'. Questa proprietà contiene una descrizione delle differenze tra questa versione e una versione precedente del Dataset. Questa proprietà può essere ripetuta per le versioni in lingue parallele delle note di versione.  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `datasetDescription`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -30,10 +30,10 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Dataset:    
-  description: 'Dataset Schema meeting DCAT-AP 2.0 specification'    
+  description: Dataset Schema meeting DCAT-AP 2.0 specification    
   properties:    
     accessRights:    
-      description: 'This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. Enum:''public, restricted, non-public'''    
+      description: 'Property. Model:''foaf:Agent''. This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. Enum:''public, restricted, non-public'''    
       enum:    
         - public    
         - restricted    
@@ -43,12 +43,18 @@ Dataset:
         model: foaf:Agent    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
+    conformsTo:    
+      description: 'Property. Model:''dct:conformsTo''. This property refers to an implementing rule nor other specification.'    
+      type: string    
+      x-ngsi:    
+        model: dct:conformsTo    
+        type: Property    
     contactPoint:    
-      description: 'It corresponds with the ''contact point'' mandatory property of DCAT-AP 2.0.1. This property contains contact information that can be used for sending comments about the Dataset.'    
+      description: 'Property. Model:''vcard:Kind''. It corresponds with the ''contact point'' mandatory property of DCAT-AP 2.0.1. This property contains contact information that can be used for sending comments about the Dataset.'    
       items:    
         type: string    
       type: array    
@@ -56,25 +62,25 @@ Dataset:
         model: vcard:Kind    
         type: Property    
     creator:    
-      description: 'This property refers to the entity primarily responsible for producing the catalogue'    
+      description: 'Property. Model:''dct:creator''. This property refers to the entity primarily responsible for producing the catalogue'    
       type: string    
       x-ngsi:    
         model: dct:creator    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     datasetDescription:    
-      description: 'This property contains a free-text account of the Dataset. It corresponds with the ''description'' mandatory property of DCAT-AP 2.0.1. This property can be repeated for parallel language versions of the description.'    
+      description: Property. This property contains a free-text account of the Dataset. It corresponds with the 'description' mandatory property of DCAT-AP 2.0.1. This property can be repeated for parallel language versions of the description.    
       items:    
         type: string    
       type: array    
       x-ngsi:    
         type: Property    
     datasetDistribution:    
-      description: 'This property links the Dataset to an available Distributions. It corresponds with the ''dataset distribution'' mandatory property of DCAT-AP 2.0.1'    
+      description: 'Property. This property links the Dataset to an available Distributions. It corresponds with the ''dataset distribution'' mandatory property of DCAT-AP 2.0.1. Model:''dcat:distribution'''    
       items:    
         format: uri    
         type: string    
@@ -83,7 +89,7 @@ Dataset:
         model: dcat:distribution    
         type: Property    
     datasetSource:    
-      description: 'It corresponds with the property ''source'' from DCAT-AP 2.0.1. This property refers to a related Dataset from which the described Dataset is derived.'    
+      description: 'Property. Model:''rdfs:Resource''. It corresponds with the property ''source'' from DCAT-AP 2.0.1. This property refers to a related Dataset from which the described Dataset is derived.'    
       items:    
         format: uri    
         type: string    
@@ -92,30 +98,30 @@ Dataset:
         model: rdfs:Resource    
         type: Property    
     datasetType:    
-      description: 'This property refers to the type of the Dataset. It corresponds to the property ''Type'' of the DCAT 2.0.1. A controlled vocabulary for the values has not been established.'    
+      description: 'Property. Model:''dct:type''. This property refers to the type of the Dataset. It corresponds to the property ''Type'' of the DCAT 2.0.1. A controlled vocabulary for the values has not been established.'    
       type: string    
       x-ngsi:    
         model: dct:type    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     documentation:    
-      description: 'This property refers to a page or document about this Dataset'    
+      description: 'Property. Model:''foaf:Document''. This property refers to a page or document about this Dataset'    
       items:    
         format: uri    
         type: string    
@@ -124,13 +130,13 @@ Dataset:
         model: foaf:Document    
         type: Property    
     frequency:    
-      description: 'This property refers to the frequency at which the Dataset is updated.'    
+      description: 'Property. Model:''dct:Frequency''. This property refers to the frequency at which the Dataset is updated.'    
       type: string    
       x-ngsi:    
         model: dct:Frequency    
         type: Property    
     hasVersion:    
-      description: 'This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.'    
+      description: 'Property. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.'    
       items:    
         format: uri    
         type: string    
@@ -139,19 +145,19 @@ Dataset:
         type: Property    
     id:    
       anyOf: &dataset_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     identifier:    
-      description: 'This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'    
+      description: 'Property. Model:''dct:identifier''. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'    
       items:    
         format: uri    
         type: string    
@@ -160,7 +166,7 @@ Dataset:
         model: dct:identifier    
         type: Property    
     isReferencedBy:    
-      description: 'This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation'    
+      description: 'Property. Model:''dct:isVersionOf''. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation'    
       items:    
         format: uri    
         type: string    
@@ -169,7 +175,7 @@ Dataset:
         model: dct:isVersionOf    
         type: Property    
     isVersionOf:    
-      description: 'This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'    
+      description: 'Property. Model:''dct:identifier''. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'    
       items:    
         format: uri    
         type: string    
@@ -178,7 +184,7 @@ Dataset:
         model: dct:identifier    
         type: Property    
     keyword:    
-      description: 'This property contains a keyword or tag, describing the Dataset'    
+      description: 'Property. This property contains a keyword or tag, describing the Dataset. Model:''dcat:keyword'''    
       items:    
         type: string    
       type: array    
@@ -186,7 +192,7 @@ Dataset:
         model: dcat:keyword    
         type: Property    
     landingPage:    
-      description: 'This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.'    
+      description: 'Property. Model:''dcat:landingPage''. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.'    
       items:    
         format: uri    
         type: string    
@@ -195,7 +201,7 @@ Dataset:
         model: dcat:landingPage    
         type: Property    
     language:    
-      description: 'This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.'    
+      description: 'Property. Model:''dct:LinguisticSystem''. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.'    
       items:    
         type: string    
       type: array    
@@ -203,12 +209,12 @@ Dataset:
         model: dct:LinguisticSystem    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     otherIdentifier:    
-      description: 'This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.'    
+      description: 'Property. Model:''dct:identifier''. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.'    
       items:    
         format: uri    
         type: string    
@@ -217,15 +223,15 @@ Dataset:
         model: dct:identifier    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *dataset_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     provenance:    
-      description: 'This property contains a statement about the lineage of a Dataset.'    
+      description: 'Property. Model:''dct:ProvenanceStatement''. This property contains a statement about the lineage of a Dataset.'    
       items:    
         type: string    
       type: array    
@@ -233,13 +239,13 @@ Dataset:
         model: dct:ProvenanceStatement    
         type: Property    
     publisher:    
-      description: 'This property refers to an entity (organisation) responsible for making the Dataset available'    
+      description: 'Property. Model:''foaf:Agent''. This property refers to an entity (organisation) responsible for making the Dataset available'    
       type: string    
       x-ngsi:    
         model: foaf:Agent    
         type: Property    
     qualifiedAttribution:    
-      description: 'This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.'    
+      description: 'Property. Model:''prov:qualifiedAttribution''. This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.'    
       items:    
         type: string    
       type: array    
@@ -247,7 +253,7 @@ Dataset:
         model: prov:qualifiedAttribution    
         type: Property    
     qualifiedRelation:    
-      description: 'This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset'    
+      description: 'Property. Model:''dcat:Relationship''. This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset'    
       items:    
         format: uri    
         type: string    
@@ -256,7 +262,7 @@ Dataset:
         model: dcat:Relationship    
         type: Property    
     relatedResource:    
-      description: 'This property refers to a related resource'    
+      description: 'Property. Model:''rdfs:Resource''. This property refers to a related resource'    
       items:    
         format: uri    
         type: string    
@@ -265,14 +271,14 @@ Dataset:
         model: rdfs:Resource    
         type: Property    
     releaseDate:    
-      description: 'This property contains the date of formal issuance (e.g., publication) of the Dataset.'    
+      description: 'Property. Model:''dct:issued''. This property contains the date of formal issuance (e.g., publication) of the Dataset.'    
       format: date-time    
       type: string    
       x-ngsi:    
         model: dct:issued    
         type: Property    
     sample:    
-      description: 'This property refers to a sample distribution of the dataset'    
+      description: 'Property. Model:''rdfs:Resource''. This property refers to a sample distribution of the dataset'    
       items:    
         format: uri    
         type: string    
@@ -281,7 +287,7 @@ Dataset:
         model: rdfs:Resource    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -298,11 +304,11 @@ Dataset:
       x-ngsi:    
         type: Property    
     spatial:    
-      description: 'This property refers to a geographic region that is covered by the Dataset'    
+      description: 'Geoproperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: 'GeoProperty. Geojson reference to the item. Point'    
+          - description: GeoProperty. Geojson reference to the item. Point    
             properties:    
               bbox:    
                 items:    
@@ -321,9 +327,9 @@ Dataset:
             required:    
               - type    
               - coordinates    
-            title: 'GeoJSON Point'    
+            title: GeoJSON Point    
             type: object    
-          - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          - description: GeoProperty. Geojson reference to the item. LineString    
             properties:    
               bbox:    
                 items:    
@@ -345,9 +351,9 @@ Dataset:
             required:    
               - type    
               - coordinates    
-            title: 'GeoJSON LineString'    
+            title: GeoJSON LineString    
             type: object    
-          - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          - description: GeoProperty. Geojson reference to the item. Polygon    
             properties:    
               bbox:    
                 items:    
@@ -371,9 +377,9 @@ Dataset:
             required:    
               - type    
               - coordinates    
-            title: 'GeoJSON Polygon'    
+            title: GeoJSON Polygon    
             type: object    
-          - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          - description: GeoProperty. Geojson reference to the item. MultiPoint    
             properties:    
               bbox:    
                 items:    
@@ -394,9 +400,9 @@ Dataset:
             required:    
               - type    
               - coordinates    
-            title: 'GeoJSON MultiPoint'    
+            title: GeoJSON MultiPoint    
             type: object    
-          - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -420,9 +426,9 @@ Dataset:
             required:    
               - type    
               - coordinates    
-            title: 'GeoJSON MultiLineString'    
+            title: GeoJSON MultiLineString    
             type: object    
-          - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          - description: GeoProperty. Geojson reference to the item. MultiLineString    
             properties:    
               bbox:    
                 items:    
@@ -448,14 +454,13 @@ Dataset:
             required:    
               - type    
               - coordinates    
-            title: 'GeoJSON MultiPolygon'    
+            title: GeoJSON MultiPolygon    
             type: object    
       type: array    
       x-ngsi:    
         model: dct:Location    
-        type: GeoProperty    
     spatialResolution:    
-      description: 'This property refers to the minimum spatial separation resolvable in a dataset, measured in meters'    
+      description: 'Property. Model:''dcat:spatialResolutionIn Meters''. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters'    
       items:    
         type: number    
       type: array    
@@ -463,7 +468,7 @@ Dataset:
         model: 'dcat:spatialResolutionIn Meters'    
         type: Property    
     temporal:    
-      description: 'This property refers to a temporal period that the Dataset covers'    
+      description: 'Property. This property refers to a temporal period that the Dataset covers. Model:''dct:PeriodOfTime'''    
       items:    
         format: date-time    
         type: string    
@@ -472,7 +477,7 @@ Dataset:
         model: dct:PeriodOfTime    
         type: Property    
     temporalResolution:    
-      description: 'This property refers to the minimum time period resolvable in the dataset.'    
+      description: 'Property. Model:''dcat:temporalResolution''. This property refers to the minimum time period resolvable in the dataset.'    
       items:    
         type: number    
       type: array    
@@ -480,7 +485,7 @@ Dataset:
         model: dcat:temporalResolution    
         type: Property    
     theme:    
-      description: 'This property refers to a category of the Dataset. A Dataset may be associated with multiple themes'    
+      description: 'Property. Model:''dcat:theme''. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes'    
       items:    
         type: string    
       type: array    
@@ -488,34 +493,34 @@ Dataset:
         model: dcat:theme    
         type: Property    
     title:    
-      description: 'This property contains a name given to the Dataset. It corresponds with the ''Title'' mandatory property of DCAT-AP 2.0.1. This property can be repeated for parallel language versions of the name.'    
+      description: Property. This property contains a name given to the Dataset. It corresponds with the 'Title' mandatory property of DCAT-AP 2.0.1. This property can be repeated for parallel language versions of the name.    
       items:    
         type: string    
       type: array    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI type. It has to be Dataset'    
+      description: Property. NGSI type. It has to be Dataset    
       enum:    
         - Dataset    
       type: string    
       x-ngsi:    
         type: Property    
     updateDate:    
-      description: 'This property contains the most recent date on which the Dataset was changed or modified.'    
+      description: 'Property. Model:''dct:modified''. This property contains the most recent date on which the Dataset was changed or modified.'    
       format: date-time    
       type: string    
       x-ngsi:    
         model: dct:modified    
         type: Property    
     version:    
-      description: 'This property contains a version number or other version designation of the Dataset'    
+      description: 'Property. Model:''owl:versionInfo''. This property contains a version number or other version designation of the Dataset'    
       type: string    
       x-ngsi:    
         model: owl:versionInfo    
         type: Property    
     versionNotes:    
-      description: 'This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.'    
+      description: 'Property. Model:''adms:versionNotes''. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.'    
       items:    
         type: string    
       type: array    
@@ -523,7 +528,7 @@ Dataset:
         model: adms:versionNotes    
         type: Property    
     wasGeneratedBy:    
-      description: 'This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.'    
+      description: 'Property. Model:''prov:wasGeneratedBy''. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.'    
       items:    
         type: string    
       type: array    
@@ -537,11 +542,11 @@ Dataset:
     - title    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md    
   x-model-schema: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  

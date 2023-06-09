@@ -2,7 +2,7 @@
     "@id": "dtmi:com:ngsi-ld:DataServiceDCAT-AP;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": "Data Service DCAT-AP 2.0 schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/DataServiceDCAT-AP/schema.json",
+    "comment": "Data Service DCAT-AP 2.0 schema - extended adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/DataServiceDCAT-AP/schema.json",
     "description": "Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard",
     "displayName": "DataServiceDCAT-AP",
     "contents": [
@@ -12,7 +12,7 @@
             "displayName": "accessRights",
             "@type": "Property",
             "schema": "string",
-            "comment": "This property MAY include information regarding access or restrictions based on privacy, security, or other policies"
+            "comment": "Property. This property MAY include information regarding access or restrictions based on privacy, security, or other policies"
         },
         {
             "name": "alternateName",
@@ -68,7 +68,12 @@
             "displayName": "license",
             "@type": "Property",
             "schema": "string",
-            "comment": "This property contains the licence under which the Data service is made available."
+            "comment": "Property. This property contains the licence under which the Data service is made available."
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
         },
         {
             "name": "name",
@@ -93,12 +98,32 @@
         },
         {
             "@type": "Telemetry",
+            "name": "assetProvider",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Property. A list of uri pointing to the asset providers for this services.",
+            "displayName": "assetProvider"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "configuration",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Property. Technical configuration of the service. This attribute is intended to be an array of parameter names (without values) which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.",
+            "displayName": "configuration"
+        },
+        {
+            "@type": "Telemetry",
             "name": "dataServiceDescription",
             "schema": {
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description",
+            "comment": "Property. This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description",
             "displayName": "dataServiceDescription"
         },
         {
@@ -108,7 +133,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.",
+            "comment": "Property. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.",
             "displayName": "endPointDescription"
         },
         {
@@ -118,7 +143,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "The root location or primary endpoint of the service (an IRI).",
+            "comment": "Property. The root location or primary endpoint of the service (an IRI).",
             "displayName": "endPointURL"
         },
         {
@@ -138,7 +163,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "This property refers to a collection of data that this data service can distribute.",
+            "comment": "Property. This property refers to a collection of data that this data service can distribute.",
             "displayName": "servesDataset"
         },
         {
@@ -148,7 +173,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.",
+            "comment": "Property. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.",
             "displayName": "title"
         },
         {
@@ -170,6 +195,10 @@
                     "schema": "string"
                 },
                 {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
                     "name": "postOfficeBoxNumber",
                     "schema": "string"
                 },
@@ -180,38 +209,64 @@
                 {
                     "name": "streetAddress",
                     "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
                 }
             ]
         },
         {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
+            "@type": "object",
+            "name": "contactPoint",
+            "comment": "The details to contact with the item.",
+            "displayName": "contactPoint",
+            "fields": [
+                {
+                    "name": "areaServed",
+                    "schema": "string"
+                },
+                {
+                    "name": "availabilityRestriction",
+                    "schema": "array"
+                },
+                {
+                    "name": "availableLanguage",
+                    "schema": "string"
+                },
+                {
+                    "name": "contactOption",
+                    "schema": "string"
+                },
+                {
+                    "name": "contactType",
+                    "schema": "string"
+                },
+                {
+                    "name": "email",
+                    "schema": "string"
+                },
+                {
+                    "name": "faxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "name",
+                    "schema": "string"
+                },
+                {
+                    "name": "productSupported",
+                    "schema": "string"
+                },
+                {
+                    "name": "telephone",
+                    "schema": "string"
+                },
+                {
+                    "name": "url",
+                    "schema": "string"
+                }
+            ]
         }
     ]
 }

@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
+    "$schemaVersion": "0.0.2",
     "modelTags": "",
     "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/DataServiceDCAT-AP/schema.json",
-    "title": "Data Service DCAT-AP 2.0 schema",
+    "title": "Data Service DCAT-AP 2.0 schema - extended",
     "description": "Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard",
     "type": "object",
     "allOf": [
@@ -66,7 +66,26 @@
                 "license": {
                     "type": "string",
                     "description": "Property. This property contains the licence under which the Data service is made available."
-                }
+                },
+                "contactPoint": {
+                    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons/properties/contactPoint"
+                },
+                "assetProvider": {
+                    "type": "array",
+                    "description": "Property. A list of uri pointing to the asset providers for this services.",
+                    "items": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                },
+                "configuration": {
+                    "type": "array",
+                    "description": "Property. Technical configuration of the service. This attribute is intended to be an array of parameter names (without values) which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.",
+                    "items": {
+                      "type": "string",
+                      "format": "text"
+                    }
+                }               
             }
         }
     ],
