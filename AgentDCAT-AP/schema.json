@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.2",
   "modelTags": "",
-  "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/AgentDCAT-AP/schema.json",
+  "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/master/AgentDCAT-AP/schema.json",
   "title": "Agent DCAT-AP 2.0 schema",
   "description": "Agent Schema meeting DCAT-AP 2.0 specification",
   "type": "object",

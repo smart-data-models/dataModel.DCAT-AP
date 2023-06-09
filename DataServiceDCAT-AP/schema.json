@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/schema#",
     "$schemaVersion": "0.0.2",
     "modelTags": "",
-    "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/DataServiceDCAT-AP/schema.json",
+    "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/master/DataServiceDCAT-AP/schema.json",
     "title": "Data Service DCAT-AP 2.0 schema - extended",
     "description": "Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard",
     "type": "object",

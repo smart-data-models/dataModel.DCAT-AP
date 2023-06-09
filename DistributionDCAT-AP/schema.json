@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/schema",
   "$schemaVersion": "0.0.2",
   "modelTags": "",
-  "$id": "https://smart-data-models.github.io/dataModel.DCAT_AP/DistributionDCAT-AP/schema.json",
+  "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/schema.json",
   "title": "Smart Data models -DCAT-AP distribution of a Dataset,",
   "description": "this is a distribution belonging ot a dataset according to the DCAT-AP standard 2.0.1",
   "type": "object",
