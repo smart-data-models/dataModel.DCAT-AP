@@ -1,5 +1,5 @@
 # dataModel.DCAT-AP
-These data models are mapped from version 2.0.1 of the DCAT-AP standard. [Link](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/dcat-ap-release-201)
+These data models are mapped from version 2.0.1 of the DCAT-AP standard. [Link](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/dcat-ap-release-201). They have been extended with the data model dataServiceRun data model and additional attributes
 
 ### List of data models
 
@@ -11,6 +11,8 @@ The following entity types are available:
 - [CatalogueRecordDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecordDCAT-AP/README.md). This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.0.1
 
 - [DataServiceDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/README.md). Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard
+
+- [DataServiceRun](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceRun/README.md). A representation of one specific run of a data service (e.g. DataServiceDCAT-AP).
 
 - [Dataset](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting DCAT-AP 2.0 specification
 
