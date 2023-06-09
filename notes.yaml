@@ -1,5 +1,5 @@
 notesPrevious:
-  These data models are mapped from version 2.0.1 of the DCAT-AP standard. [Link](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/dcat-ap-release-201)
+  These data models are mapped from version 2.0.1 of the DCAT-AP standard. [Link](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/dcat-ap-release-201). They have been extended with the data model dataServiceRun data model and additional attributes
 
 notesEnd:
   ""
