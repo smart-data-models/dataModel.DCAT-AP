@@ -15,12 +15,12 @@
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalogue[array]`: Diese Eigenschaft verweist auf einen Katalog, dessen Inhalt im Zusammenhang mit diesem Katalog von Interesse ist  . Model: [dcat:catalog](dcat:catalog)- `creator[string]`: Diese Eigenschaft bezieht sich auf die Einrichtung, die hauptsächlich für die Erstellung des Katalogs verantwortlich ist  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dataset[array]`: Diese Eigenschaft verknüpft den Katalog mit einem Datensatz, der Teil des Katalogs ist  . Model: [dcat:Dataset](dcat:Dataset)- `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hasPart[array]`: Diese Eigenschaft verweist auf einen verwandten Katalog, der Teil des beschriebenen Katalogs ist  . Model: [https://schema.org/URL](https://schema.org/URL)- `homepage[string]`: Diese Eigenschaft bezieht sich auf eine Webseite, die als Hauptseite für den Katalog dient.  . Model: [foaf:homepage](foaf:homepage)- `id[*]`: Eindeutiger Bezeichner der Entität  - `isPartOf[string]`: Diese Eigenschaft bezieht sich auf einen verwandten Katalog, in dem der beschriebene Katalog physisch oder logisch enthalten ist.  . Model: [https://schema.org/URL](https://schema.org/URL)- `language[array]`: Diese Eigenschaft bezieht sich auf eine Sprache, die in den textlichen Metadaten verwendet wird, die Titel, Beschreibungen usw. der Datensätze im Katalog beschreiben. Diese Eigenschaft kann wiederholt werden, wenn die Metadaten in mehreren Sprachen bereitgestellt werden.  . Model: [dct:language](dct:language)- `licence[string]`: Diese Eigenschaft bezieht sich auf die Lizenz, unter der der Katalog verwendet oder wiederverwendet werden kann.  . Model: [dct:license](dct:license)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `modificationDate[string]`: Diese Eigenschaft enthält das letzte Datum, an dem der Katalog geändert wurde.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `publisher[string]`: Diese Eigenschaft bezieht sich auf eine Einrichtung (Organisation), die für die Bereitstellung des Katalogs verantwortlich ist  . Model: [dct:publisher](dct:publisher)- `record[array]`: Diese Eigenschaft bezieht sich auf einen Katalogsatz, der Teil des Katalogs ist  - `releaseDate[string]`: Diese Eigenschaft enthält das Datum der förmlichen Herausgabe (z. B. Veröffentlichung) des Katalogs.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: Diese Eigenschaft bezieht sich auf eine Erklärung, die die mit dem Katalog verbundenen Rechte angibt.  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `service[array]`: Diese Eigenschaft bezieht sich auf einen Standort oder Endpunkt, der im Katalog aufgeführt ist  . Model: [dcat:DataService](dcat:DataService)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `spatial_geographic[array]`: Diese Eigenschaft bezieht sich auf ein geografisches Gebiet, das durch den Katalog abgedeckt wird  . Model: [dct:spatial](dct:spatial)- `themes[array]`: Diese Eigenschaft bezieht sich auf ein Wissensorganisationssystem, das zur Klassifizierung der Datensätze des Katalogs verwendet wird.  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)- `title[array]`: Diese Eigenschaft enthält einen Namen, der dem Katalog gegeben wurde. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: Es muss der KatalogDCAT-AP sein  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalogue[array]`: Beziehung. Modell:'dcat:catalog'. Diese Eigenschaft verweist auf einen Katalog, dessen Inhalt im Zusammenhang mit diesem Katalog von Interesse ist  . Model: [dcat:catalog](dcat:catalog)- `creator[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Diese Eigenschaft bezieht sich auf die Einrichtung, die hauptsächlich für die Erstellung des Katalogs verantwortlich ist  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dataset[array]`: Verknüpfung. Diese Eigenschaft verbindet den Katalog mit einem Dataset, das Teil des Katalogs ist. Modell:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)- `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hasPart[array]`: Verwandtschaft. Modell:'https://schema.org/URL'. Diese Eigenschaft bezieht sich auf einen verwandten Katalog, der Teil des beschriebenen Katalogs ist  . Model: [https://schema.org/URL](https://schema.org/URL)- `homepage[string]`: Eigenschaft. Modell:'foaf:homepage'. Diese Eigenschaft verweist auf eine Webseite, die als Hauptseite für den Katalog dient.  . Model: [foaf:homepage](foaf:homepage)- `id[*]`: Eindeutiger Bezeichner der Entität  - `isPartOf[string]`: Verwandtschaft. Modell:'https://schema.org/URL'. Diese Eigenschaft bezieht sich auf einen verwandten Katalog, in dem der beschriebene Katalog physisch oder logisch enthalten ist.  . Model: [https://schema.org/URL](https://schema.org/URL)- `language[array]`: Eigenschaft. Modell:'dct:language'. Diese Eigenschaft bezieht sich auf eine Sprache, die in den textlichen Metadaten verwendet wird, die Titel, Beschreibungen usw. der Datensätze im Katalog beschreiben. Diese Eigenschaft kann wiederholt werden, wenn die Metadaten in mehreren Sprachen bereitgestellt werden.  . Model: [dct:language](dct:language)- `licence[string]`: Eigenschaft. Modell:'dct:license'. Diese Eigenschaft bezieht sich auf die Lizenz, unter der der Katalog verwendet oder wiederverwendet werden kann.  . Model: [dct:license](dct:license)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `modificationDate[string]`: Eigenschaft. Modell:'https://schema.org/DateTime'. Diese Eigenschaft enthält das letzte Datum, an dem der Katalog geändert wurde.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `publisher[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Diese Eigenschaft bezieht sich auf eine Einrichtung (Organisation), die für die Bereitstellung des Katalogs verantwortlich ist. Modell:'dct:publisher'  . Model: [dct:publisher](dct:publisher)- `record[array]`: Verknüpfung. Diese Eigenschaft bezieht sich auf einen Katalogsatz, der Teil des Katalogs ist  - `releaseDate[string]`: Eigenschaft. Modell:'https://schema.org/DateTime'. Diese Eigenschaft enthält das Datum der offiziellen Ausgabe (z. B. Veröffentlichung) des Katalogs.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: Eigenschaft. Modell:'dct:rights'. Diese Eigenschaft bezieht sich auf eine Erklärung, die die mit dem Katalog verbundenen Rechte angibt.  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `service[array]`: Eigenschaft. Diese Eigenschaft bezieht sich auf einen Standort oder Endpunkt, der im Katalog aufgeführt ist. Modell:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `spatial_geographic[array]`: Geoproperty. Diese Eigenschaft bezieht sich auf ein geografisches Gebiet, das vom Katalog abgedeckt wird. Modell:'dct:spatial'  . Model: [dct:spatial](dct:spatial)- `themes[array]`: Eigenschaft. Modell:'dcat:themeTaxonomy'. Diese Eigenschaft bezieht sich auf ein Wissensorganisationssystem, das zur Klassifizierung der Datensätze des Katalogs verwendet wird.  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)- `title[array]`: Eigenschaft. Model:'https://schema.org/URL'. Diese Eigenschaft enthält einen Namen, der dem Katalog gegeben wurde. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden. Modell:'rdfs:Literal'  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Es muss KatalogDCAT-AP sein  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Dieses Datenmodell und andere des Themas DCAT-AP werden für ihre Verwendung angepasst und es wird empfohlen, zusätzlichen Kontext einzubeziehen. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+Dieses Datenmodell und andere des Themas DCAT-AP werden für ihre Verwendung angepasst und es wird empfohlen, dass zusätzlicher Kontext aufgenommen wird. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -30,10 +30,10 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 CatalogueDCAT-AP:    
-  description: 'Catalogue of datasets compliant with DCAT-AP specification.'    
+  description: Catalogue of datasets compliant with DCAT-AP specification.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
@@ -44,6 +44,9 @@ CatalogueDCAT-AP:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
@@ -53,31 +56,34 @@ CatalogueDCAT-AP:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     catalogue:    
-      description: 'This property refers to a catalog whose contents are of interest in the context of this catalog'    
+      description: 'Relationship. Model:''dcat:catalog''. This property refers to a catalog whose contents are of interest in the context of this catalog'    
       items:    
         anyOf:    
-          - description: 'Property. Identifier format of any NGSI entity'    
+          - description: Property. Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: 'Property. Identifier format of any NGSI entity'    
+          - description: Property. Identifier format of any NGSI entity    
             format: uri    
             type: string    
       type: array    
@@ -85,26 +91,26 @@ CatalogueDCAT-AP:
         model: dcat:catalog    
         type: Relationship    
     creator:    
-      description: 'This property refers to the entity primarily responsible for producing the catalogue'    
+      description: 'Property. Model:''https://schema.org/Text''. This property refers to the entity primarily responsible for producing the catalogue'    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity.    
       type: string    
       x-ngsi:    
         type: Property    
     dataset:    
-      description: 'This property links the Catalogue with a Dataset that is part of the Catalogue'    
+      description: 'Relationship. This property links the Catalogue with a Dataset that is part of the Catalogue. Model:''dcat:Dataset'''    
       items:    
         anyOf:    
-          - description: 'Property. Identifier format of any NGSI entity'    
+          - description: Property. Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: 'Property. Identifier format of any NGSI entity'    
+          - description: Property. Identifier format of any NGSI entity    
             format: uri    
             type: string    
       type: array    
@@ -112,24 +118,24 @@ CatalogueDCAT-AP:
         model: dcat:Dataset    
         type: Relationship    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     hasPart:    
-      description: 'This property refers to a related Catalogue that is part of the described Catalogue'    
+      description: 'Relationship. Model:''https://schema.org/URL''. This property refers to a related Catalogue that is part of the described Catalogue'    
       items:    
         format: uri    
         type: string    
@@ -138,7 +144,7 @@ CatalogueDCAT-AP:
         model: https://schema.org/URL    
         type: Relationship    
     homepage:    
-      description: 'This property refers to a web page that acts as the main page for the Catalogue.'    
+      description: 'Property. Model:''foaf:homepage''. This property refers to a web page that acts as the main page for the Catalogue.'    
       format: uri    
       type: string    
       x-ngsi:    
@@ -146,26 +152,26 @@ CatalogueDCAT-AP:
         type: Property    
     id:    
       anyOf: &cataloguedcat-ap_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isPartOf:    
-      description: 'This property refers to a related Catalogue in which the described Catalogue is physically or logically included.'    
+      description: 'Relationship. Model:''https://schema.org/URL''. This property refers to a related Catalogue in which the described Catalogue is physically or logically included.'    
       format: uri    
       type: string    
       x-ngsi:    
         model: https://schema.org/URL    
         type: Relationship    
     language:    
-      description: 'This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.'    
+      description: 'Property. Model:''dct:language''. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.'    
       items:    
         type: string    
       type: array    
@@ -173,7 +179,7 @@ CatalogueDCAT-AP:
         model: dct:language    
         type: Property    
     licence:    
-      description: 'This property refers to the licence under which the Catalogue can be used or reused.'    
+      description: 'Property. Model:''dct:license''. This property refers to the licence under which the Catalogue can be used or reused.'    
       type: string    
       x-ngsi:    
         model: dct:license    
@@ -181,7 +187,7 @@ CatalogueDCAT-AP:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -200,9 +206,9 @@ CatalogueDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -224,9 +230,9 @@ CatalogueDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -250,9 +256,9 @@ CatalogueDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -273,9 +279,9 @@ CatalogueDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -299,9 +305,9 @@ CatalogueDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -327,66 +333,66 @@ CatalogueDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
         type: GeoProperty    
     modificationDate:    
-      description: 'This property contains the most recent date on which the Catalogue was modified.'    
+      description: 'Property. Model:''https://schema.org/DateTime''. This property contains the most recent date on which the Catalogue was modified.'    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item.    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf: *cataloguedcat-ap_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Unique identifier of the entity    
       type: array    
       x-ngsi:    
         type: Property    
     publisher:    
-      description: 'This property refers to an entity (organisation) responsible for making the Catalogue available'    
+      description: 'Property. Model:''https://schema.org/Text''. This property refers to an entity (organisation) responsible for making the Catalogue available. Model:''dct:publisher'''    
       type: string    
       x-ngsi:    
         model: dct:publisher    
         type: Property    
     record:    
-      description: 'This property refers to a Catalogue Record that is part of the Catalogue'    
+      description: Relationship. This property refers to a Catalogue Record that is part of the Catalogue    
       items:    
         anyOf:    
-          - description: 'Property. Identifier format of any NGSI entity'    
+          - description: Property. Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: 'Property. Identifier format of any NGSI entity'    
+          - description: Property. Identifier format of any NGSI entity    
             format: uri    
             type: string    
       type: array    
       x-ngsi:    
         type: Relationship    
     releaseDate:    
-      description: 'This property contains the date of formal issuance (e.g., publication) of the Catalogue.'    
+      description: 'Property. Model:''https://schema.org/DateTime''. This property contains the date of formal issuance (e.g., publication) of the Catalogue.'    
       format: date-time    
       type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
         type: Property    
     rights:    
-      description: 'This property refers to a statement that specifies rights associated with the Catalogue.'    
+      description: 'Property. Model:''dct:rights''. This property refers to a statement that specifies rights associated with the Catalogue.'    
       type: string    
       x-ngsi:    
         model: dct:rights    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -398,7 +404,7 @@ CatalogueDCAT-AP:
       x-ngsi:    
         type: Property    
     service:    
-      description: 'This property refers to a site or end-point that is listed in the catalog'    
+      description: 'Property. This property refers to a site or end-point that is listed in the catalog. Model:''dcat:DataService'''    
       items:    
         type: string    
       type: array    
@@ -411,16 +417,15 @@ CatalogueDCAT-AP:
       x-ngsi:    
         type: Property    
     spatial_geographic:    
-      description: 'This property refers to a geographical area covered by the Catalogue'    
+      description: 'Geoproperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
       type: array    
       x-ngsi:    
         model: dct:spatial    
-        type: GeoProperty    
     themes:    
-      description: 'This property refers to a knowledge organization system used to classify the Catalogue''s Datasets.'    
+      description: 'Property. Model:''dcat:themeTaxonomy''. This property refers to a knowledge organization system used to classify the Catalogue''s Datasets.'    
       items:    
         type: string    
       type: array    
@@ -428,7 +433,7 @@ CatalogueDCAT-AP:
         model: dcat:themeTaxonomy    
         type: Property    
     title:    
-      description: 'This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name'    
+      description: 'Property. Model:''https://schema.org/URL''. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name. Model:''rdfs:Literal'''    
       items:    
         type: string    
       type: array    
@@ -436,7 +441,7 @@ CatalogueDCAT-AP:
         model: rdfs:Literal    
         type: Property    
     type:    
-      description: 'It has to be CatalogueDCAT-AP'    
+      description: 'Property. Model:''https://schema.org/Text''. It has to be CatalogueDCAT-AP'    
       enum:    
         - CatalogueDCAT-AP    
       type: string    
