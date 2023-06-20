@@ -1,4 +1,5 @@
-# CatalogueDCAT-AP
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+# CatalogueDCAT-AP
 Version: 0.0.2
 
 ## Description 
@@ -19,6 +20,8 @@ Link zur [deutschen Spezifikation](https://github.com/smart-data-models/dataMode
 Link alla [specifica](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/doc/spec_IT.md)
 
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/doc/spec_JA.md)
+
+[链接到规范](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/doc/spec_ZH.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueDCAT-AP/examples/example.json) (keyvalues) for NGSI v2
