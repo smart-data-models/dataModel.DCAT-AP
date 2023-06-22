@@ -1,34 +1,99 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: CatalogueDCAT-AP  
-========================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Global description: **Catalogue of datasets compliant with DCAT-AP specification.**  
-version: 0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## List of properties  
+Entity: CatalogueDCAT-AP  
+========================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalogue[array]`: Relationship. Model:'dcat:catalog'. This property refers to a catalog whose contents are of interest in the context of this catalog  . Model: [dcat:catalog](dcat:catalog)- `creator[string]`: Property. Model:'https://schema.org/Text'. This property refers to the entity primarily responsible for producing the catalogue  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dataset[array]`: Relationship. This property links the Catalogue with a Dataset that is part of the Catalogue. Model:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)- `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `hasPart[array]`: Relationship. Model:'https://schema.org/URL'. This property refers to a related Catalogue that is part of the described Catalogue  . Model: [https://schema.org/URL](https://schema.org/URL)- `homepage[string]`: Property. Model:'foaf:homepage'. This property refers to a web page that acts as the main page for the Catalogue.  . Model: [foaf:homepage](foaf:homepage)- `id[*]`: Unique identifier of the entity  - `isPartOf[string]`: Relationship. Model:'https://schema.org/URL'. This property refers to a related Catalogue in which the described Catalogue is physically or logically included.  . Model: [https://schema.org/URL](https://schema.org/URL)- `language[array]`: Property. Model:'dct:language'. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.  . Model: [dct:language](dct:language)- `licence[string]`: Property. Model:'dct:license'. This property refers to the licence under which the Catalogue can be used or reused.  . Model: [dct:license](dct:license)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `modificationDate[string]`: Property. Model:'https://schema.org/DateTime'. This property contains the most recent date on which the Catalogue was modified.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `publisher[string]`: Property. Model:'https://schema.org/Text'. This property refers to an entity (organisation) responsible for making the Catalogue available. Model:'dct:publisher'  . Model: [dct:publisher](dct:publisher)- `record[array]`: Relationship. This property refers to a Catalogue Record that is part of the Catalogue  - `releaseDate[string]`: Property. Model:'https://schema.org/DateTime'. This property contains the date of formal issuance (e.g., publication) of the Catalogue.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: Property. Model:'dct:rights'. This property refers to a statement that specifies rights associated with the Catalogue.  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `service[array]`: Property. This property refers to a site or end-point that is listed in the catalog. Model:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `spatial_geographic[array]`: Geoproperty. This property refers to a geographical area covered by the Catalogue. Model:'dct:spatial'  . Model: [dct:spatial](dct:spatial)- `themes[array]`: Property. Model:'dcat:themeTaxonomy'. This property refers to a knowledge organization system used to classify the Catalogue's Datasets.  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)- `title[array]`: Property. Model:'https://schema.org/URL'. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name. Model:'rdfs:Literal'  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: Property. Model:'https://schema.org/Text'. It has to be CatalogueDCAT-AP  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Required properties  
-- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-This data model and other of the subject DCAT-AP is being adapted for their use and it would be recommended that additional context would be included. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Data Model description of properties  
-Sorted alphabetically (click for details)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Open License](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
+
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Global description: **Catalogue of datasets compliant with DCAT-AP specification.**  
+
+version: 0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## List of properties  
+
+
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: An alternative name for this item  
+- `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `catalogue[array]`: Relationship. Model:'dcat:catalog'. This property refers to a catalog whose contents are of interest in the context of this catalog  . Model: [dcat:catalog](dcat:catalog)
+- `creator[string]`: Property. Model:'https://schema.org/Text'. This property refers to the entity primarily responsible for producing the catalogue  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  
+- `dataset[array]`: Relationship. This property links the Catalogue with a Dataset that is part of the Catalogue. Model:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)
+- `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  
+- `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  
+- `description[string]`: A description of this item  
+- `hasPart[array]`: Relationship. Model:'https://schema.org/URL'. This property refers to a related Catalogue that is part of the described Catalogue  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `homepage[string]`: Property. Model:'foaf:homepage'. This property refers to a web page that acts as the main page for the Catalogue.  . Model: [foaf:homepage](foaf:homepage)
+- `id[*]`: Unique identifier of the entity  
+- `isPartOf[string]`: Relationship. Model:'https://schema.org/URL'. This property refers to a related Catalogue in which the described Catalogue is physically or logically included.  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `language[array]`: Property. Model:'dct:language'. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.  . Model: [dct:language](dct:language)
+- `licence[string]`: Property. Model:'dct:license'. This property refers to the licence under which the Catalogue can be used or reused.  . Model: [dct:license](dct:license)
+- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  
+- `modificationDate[string]`: Property. Model:'https://schema.org/DateTime'. This property contains the most recent date on which the Catalogue was modified.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `name[string]`: The name of this item.  
+- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  
+- `publisher[string]`: Property. Model:'https://schema.org/Text'. This property refers to an entity (organisation) responsible for making the Catalogue available. Model:'dct:publisher'  . Model: [dct:publisher](dct:publisher)
+- `record[array]`: Relationship. This property refers to a Catalogue Record that is part of the Catalogue  
+- `releaseDate[string]`: Property. Model:'https://schema.org/DateTime'. This property contains the date of formal issuance (e.g., publication) of the Catalogue.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `rights[string]`: Property. Model:'dct:rights'. This property refers to a statement that specifies rights associated with the Catalogue.  . Model: [dct:rights](dct:rights)
+- `seeAlso[*]`: list of uri pointing to additional resources about the item  
+- `service[array]`: Property. This property refers to a site or end-point that is listed in the catalog. Model:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)
+- `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  
+- `spatial_geographic[array]`: GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:'dct:spatial'  . Model: [dct:spatial](dct:spatial)
+- `themes[array]`: Property. Model:'dcat:themeTaxonomy'. This property refers to a knowledge organization system used to classify the Catalogue's Datasets.  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)
+- `title[array]`: Property. Model:'https://schema.org/URL'. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name. Model:'rdfs:Literal'  . Model: [rdfs:Literal](rdfs:Literal)
+- `type[string]`: Property. Model:'https://schema.org/Text'. It has to be CatalogueDCAT-AP  . Model: [https://schema.org/Text](https://schema.org/Text)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Required properties  
+- `dataset`  
+- `description`  
+- `id`  
+- `publisher`  
+- `title`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+This data model and other of the subject DCAT-AP is being adapted for their use and it would be recommended that additional context would be included. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Data Model description of properties  
+
+Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 CatalogueDCAT-AP:    
   description: Catalogue of datasets compliant with DCAT-AP specification.    
   properties:    
@@ -417,7 +482,7 @@ CatalogueDCAT-AP:
       x-ngsi:    
         type: Property    
     spatial_geographic:    
-      description: 'Geoproperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
+      description: 'GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
@@ -464,16 +529,25 @@ CatalogueDCAT-AP:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Example payloads    
-#### CatalogueDCAT-AP NGSI-v2 key-values Example    
-Here is an example of a CatalogueDCAT-AP in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Example payloads    
+
+#### CatalogueDCAT-AP NGSI-v2 key-values Example    
+
+Here is an example of a CatalogueDCAT-AP in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "dateCreated": "1980-03-03T10:01:24Z",  
@@ -551,11 +625,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueDCAT-AP NGSI-v2 normalized Example    
-Here is an example of a CatalogueDCAT-AP in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+
+#### CatalogueDCAT-AP NGSI-v2 normalized Example    
+
+Here is an example of a CatalogueDCAT-AP in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "dateCreated": {  
@@ -708,11 +786,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueDCAT-AP NGSI-LD key-values Example    
-Here is an example of a CatalogueDCAT-AP in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+
+#### CatalogueDCAT-AP NGSI-LD key-values Example    
+
+Here is an example of a CatalogueDCAT-AP in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
     "type": "CatalogueDCAT-AP",  
     "address": {  
@@ -794,11 +876,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueDCAT-AP NGSI-LD normalized Example    
-Here is an example of a CatalogueDCAT-AP in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+
+#### CatalogueDCAT-AP NGSI-LD normalized Example    
+
+Here is an example of a CatalogueDCAT-AP in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "address": {  
@@ -966,12 +1052,21 @@ CatalogueDCAT-AP:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

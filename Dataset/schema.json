@@ -60,7 +60,7 @@
           "type": "string"
         },
         "spatial": {
-          "description": "Geoproperty. Model:'dct:Location'. This property refers to a geographic region that is covered by the Dataset",
+          "description": "GeoProperty. Model:'dct:Location'. This property refers to a geographic region that is covered by the Dataset",
           "type": "array",
           "items": {
             "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"

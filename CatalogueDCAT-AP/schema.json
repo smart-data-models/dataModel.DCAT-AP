@@ -76,7 +76,7 @@
                 },
                 "spatial_geographic": {
                     "type": "array",
-                    "description": "Geoproperty. This property refers to a geographical area covered by the Catalogue. Model:'dct:spatial'",
+                    "description": "GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:'dct:spatial'",
                     "items": {
                         "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
                     }

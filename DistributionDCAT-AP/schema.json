@@ -28,7 +28,7 @@
         },
         "accessUrl": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.",
+          "description": "Property. Model:'https://schema.org/Text'. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.",
           "items": {
             "type": "string",
             "minItems": 1
@@ -48,7 +48,7 @@
         },
         "accessService": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property refers to a data service that gives access to the distribution of the dataset",
+          "description": "Property. Model:'https://schema.org/Text'. This property refers to a data service that gives access to the distribution of the dataset",
           "items": {
             "type": "string"
           }
@@ -67,14 +67,14 @@
         },
         "documentation": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property refers to a page or document about this Distribution.",
+          "description": "Property. Model:'https://schema.org/Text'. This property refers to a page or document about this Distribution.",
           "items": {
             "type": "string"
           }
         },
         "downloadURL": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property contains a URL that is a directlink to a downloadable file in a givenformat.",
+          "description": "Property. Model:'https://schema.org/Text'. This property contains a URL that is a directlink to a downloadable file in a givenformat.",
           "items": {
             "type": "string",
             "format": "uri"
@@ -86,14 +86,14 @@
         },
         "language": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.",
+          "description": "Property. Model:'https://schema.org/Text'. This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.",
           "items": {
             "type": "string"
           }
         },
         "linkedSchemas": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property refers to an established schema to which the described Distribution conforms.",
+          "description": "Property. Model:'https://schema.org/Text'. This property refers to an established schema to which the described Distribution conforms.",
           "items": {
             "type": "string"
           }
@@ -117,7 +117,7 @@
         },
         "spatialResolution": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property refers to the minimum spatial separation resolvable in a dataset distribution, measured in meters. Units:'Meters",
+          "description": "Property. Model:'https://schema.org/Text'. This property refers to the minimum spatial separation resolvable in a dataset distribution, measured in meters. Units:'Meters",
           "items": {
             "type": "number"
           }
@@ -134,14 +134,14 @@
         },
         "temporalResolution": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property refers to the minimum time period resolvable in the dataset distribution",
+          "description": "Property. Model:'https://schema.org/Text'. This property refers to the minimum time period resolvable in the dataset distribution",
           "items": {
             "type": "number"
           }
         },
         "title": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.",
+          "description": "Property. Model:'https://schema.org/Text'. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.",
           "items": {
             "type": "string"
           }

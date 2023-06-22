@@ -1,34 +1,112 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : Ensemble de données  
-============================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Description globale : **Schéma du jeu de données conforme à la spécification DCAT-AP 2.0**  
-version : 0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Liste des propriétés  
+Entité : Ensemble de données  
+============================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `accessRights[string]`: Propriété. Modèle : "foaf:Agent". Cette propriété fait référence aux informations qui indiquent si le jeu de données est une donnée ouverte, s'il est soumis à des restrictions d'accès ou s'il n'est pas public. Un vocabulaire contrôlé comprenant trois membres (:public, :restricted, :non-public) sera créé et mis à jour par l'Office des publications de l'UE. Enum : "public, restreint, non public  . Model: [foaf:Agent](foaf:Agent)- `alternateName[string]`: Un nom alternatif pour ce poste  - `conformsTo[string]`: Propriété. Modèle : "dct:conformsTo". Cette propriété fait référence à une règle d'application ou à une autre spécification.  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: Propriété. Modèle : "vcard:Kind". Elle correspond à la propriété obligatoire "contact point" de DCAT-AP 2.0.1. Cette propriété contient des informations de contact qui peuvent être utilisées pour envoyer des commentaires sur le jeu de données.  . Model: [vcard:Kind](vcard:Kind)- `creator[string]`: Propriété. Modèle : "dct:creator". Cette propriété fait référence à l'entité principalement responsable de la production du catalogue  . Model: [dct:creator](dct:creator)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `datasetDescription[array]`: Propriété. Cette propriété contient un compte rendu en texte libre de l'ensemble de données. Elle correspond à la propriété obligatoire "description" de DCAT-AP 2.0.1. Cette propriété peut être répétée pour les versions en langues parallèles de la description.  - `datasetDistribution[array]`: Propriété. Cette propriété lie l'ensemble de données à une distribution disponible. Elle correspond à la propriété obligatoire "dataset distribution" de DCAT-AP 2.0.1. Modèle : 'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)- `datasetSource[array]`: Propriété. Modèle : "rdfs:Resource". Elle correspond à la propriété "source" de DCAT-AP 2.0.1. Cette propriété fait référence à un ensemble de données apparenté dont l'ensemble de données décrit est dérivé.  . Model: [rdfs:Resource](rdfs:Resource)- `datasetType[string]`: Propriété. Modèle : "dct:type". Cette propriété fait référence au type de l'ensemble de données. Elle correspond à la propriété "Type" du DCAT 2.0.1. Un vocabulaire contrôlé pour les valeurs n'a pas été établi.  . Model: [dct:type](dct:type)- `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  - `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  - `description[string]`: Une description de l'article  - `documentation[array]`: Propriété. Modèle : "foaf:Document". Cette propriété fait référence à une page ou à un document sur cet ensemble de données.  . Model: [foaf:Document](foaf:Document)- `frequency[string]`: Propriété. Modèle : "dct:Frequency". Cette propriété fait référence à la fréquence à laquelle le Dataset est mis à jour.  . Model: [dct:Frequency](dct:Frequency)- `hasVersion[array]`: Propriété. Cette propriété fait référence à un jeu de données apparenté qui est une version, une édition ou une adaptation du jeu de données décrit.  - `id[*]`: Identifiant unique de l'entité  - `identifier[array]`: Propriété. Modèle : "dct:identifier". Cette propriété contient l'identifiant principal du jeu de données, par exemple l'URI ou un autre identifiant unique dans le contexte du catalogue.  . Model: [dct:identifier](dct:identifier)- `isReferencedBy[array]`: Propriété. Modèle : "dct:isVersionOf". Cette propriété fait référence à un jeu de données apparenté dont le jeu de données décrit est une version, une édition ou une adaptation.  . Model: [dct:isVersionOf](dct:isVersionOf)- `isVersionOf[array]`: Propriété. Modèle : "dct:identifier". Cette propriété contient l'identifiant principal du jeu de données, par exemple l'URI ou un autre identifiant unique dans le contexte du catalogue.  . Model: [dct:identifier](dct:identifier)- `keyword[array]`: Propriété. Cette propriété contient un mot-clé ou une étiquette décrivant l'ensemble de données. Modèle : 'dcat:keyword'  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: Propriété. Modèle : "dcat:landingPage". Cette propriété renvoie à une page web qui permet d'accéder à l'ensemble de données, à ses distributions et/ou à des informations supplémentaires. Elle est destinée à pointer vers une page d'atterrissage chez le fournisseur de données original, et non vers une page sur le site d'un tiers, tel qu'un agrégateur.  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: Propriété. Modèle : 'dct:LinguisticSystem'. Cette propriété fait référence à une langue de l'ensemble de données. Cette propriété peut être répétée si le jeu de données comporte plusieurs langues.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `name[string]`: Le nom de cet élément.  - `otherIdentifier[array]`: Propriété. Modèle : "dct:identifier". Cette propriété fait référence à un identifiant secondaire du jeu de données, tel que MAST/ADS, DataCite, DOI, EZID ou W3ID.  . Model: [dct:identifier](dct:identifier)- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `provenance[array]`: Propriété. Modèle : "dct:ProvenanceStatement". Cette propriété contient une déclaration sur la lignée d'un Dataset.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: Propriété. Modèle : "foaf:Agent". Cette propriété fait référence à une entité (organisation) responsable de la mise à disposition de l'ensemble de données.  . Model: [foaf:Agent](foaf:Agent)- `qualifiedAttribution[array]`: Propriété. Modèle : "prov:qualifiedAttribution". Cette propriété concerne une ressource connexe, telle qu'une publication, qui fait référence à l'ensemble de données, le cite ou le signale d'une autre manière.  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)- `qualifiedRelation[array]`: Propriété. Modèle : "dcat:Relationship". Cette propriété concerne une ressource connexe, telle qu'une publication, qui fait référence, cite ou pointe vers l'ensemble de données.  . Model: [dcat:Relationship](dcat:Relationship)- `relatedResource[array]`: Propriété. Modèle : "rdfs:Resource". Cette propriété fait référence à une ressource connexe  . Model: [rdfs:Resource](rdfs:Resource)- `releaseDate[string]`: Propriété. Modèle : "dct:issued". Cette propriété contient la date d'émission officielle (par exemple, la publication) du jeu de données.  . Model: [dct:issued](dct:issued)- `sample[array]`: Propriété. Modèle : "rdfs:Resource". Cette propriété fait référence à un échantillon de distribution de l'ensemble de données  . Model: [rdfs:Resource](rdfs:Resource)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `spatial[array]`: Géopropriété. Modèle : "dct:Location". Cette propriété fait référence à une région géographique couverte par le jeu de données.  . Model: [dct:Location](dct:Location)- `spatialResolution[array]`: Propriété. Modèle : "dcat:spatialResolutionIn Meters". Cette propriété fait référence à la séparation spatiale minimale pouvant être résolue dans un jeu de données, mesurée en mètres.  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)- `temporal[array]`: Propriété. Cette propriété fait référence à une période temporelle couverte par le jeu de données. Modèle:'dct:PeriodOfTime'  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `temporalResolution[array]`: Propriété. Modèle : "dcat:temporalResolution". Cette propriété fait référence à la période de temps minimale pouvant être résolue dans le jeu de données.  . Model: [dcat:temporalResolution](dcat:temporalResolution)- `theme[array]`: Propriété. Modèle : "dcat:theme". Cette propriété fait référence à une catégorie de l'ensemble de données. Un jeu de données peut être associé à plusieurs thèmes  . Model: [dcat:theme](dcat:theme)- `title[array]`: Propriété. Cette propriété contient un nom donné à l'ensemble de données. Elle correspond à la propriété obligatoire "Title" de DCAT-AP 2.0.1. Cette propriété peut être répétée pour les versions linguistiques parallèles du nom.  - `type[string]`: Propriété. Type NGSI. Il doit s'agir d'un jeu de données  - `updateDate[string]`: Propriété. Modèle : "dct:modified". Cette propriété contient la date la plus récente à laquelle le jeu de données a été changé ou modifié.  . Model: [dct:modified](dct:modified)- `version[string]`: Propriété. Modèle : "owl:versionInfo". Cette propriété contient un numéro de version ou une autre désignation de la version du jeu de données.  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: Propriété. Modèle : "adms:versionNotes". Cette propriété contient une description des différences entre cette version et une version précédente de l'ensemble de données. Cette propriété peut être répétée pour des versions linguistiques parallèles des notes de version.  . Model: [adms:versionNotes](adms:versionNotes)- `wasGeneratedBy[array]`: Propriété. Modèle : "prov:wasGeneratedBy". Cette propriété contient une description des différences entre cette version et une version antérieure de l'ensemble de données. Cette propriété peut être répétée pour les versions en langues parallèles des notes de version.  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propriétés requises  
-- `datasetDescription`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Modèle de données description des propriétés  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
+
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Description globale : **Schéma du jeu de données conforme à la spécification DCAT-AP 2.0**  
+
+version : 0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Liste des propriétés  
+
+
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `accessRights[string]`: Propriété. Modèle : "foaf:Agent". Cette propriété fait référence aux informations qui indiquent si le jeu de données est une donnée ouverte, s'il est soumis à des restrictions d'accès ou s'il n'est pas public. Un vocabulaire contrôlé comprenant trois membres (:public, :restricted, :non-public) sera créé et mis à jour par l'Office des publications de l'UE. Enum : "public, restreint, non public  . Model: [foaf:Agent](foaf:Agent)
+- `alternateName[string]`: Un nom alternatif pour ce poste  
+- `conformsTo[string]`: Propriété. Modèle : "dct:conformsTo". Cette propriété fait référence à une règle d'application ou à une autre spécification.  . Model: [dct:conformsTo](dct:conformsTo)
+- `contactPoint[array]`: Propriété. Modèle : "vcard:Kind". Elle correspond à la propriété obligatoire "contact point" de DCAT-AP 2.0.1. Cette propriété contient des informations de contact qui peuvent être utilisées pour envoyer des commentaires sur le jeu de données.  . Model: [vcard:Kind](vcard:Kind)
+- `creator[string]`: Propriété. Modèle : "dct:creator". Cette propriété fait référence à l'entité principalement responsable de la production du catalogue  . Model: [dct:creator](dct:creator)
+- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  
+- `datasetDescription[array]`: Propriété. Cette propriété contient un compte rendu en texte libre de l'ensemble de données. Elle correspond à la propriété obligatoire "description" de DCAT-AP 2.0.1. Cette propriété peut être répétée pour les versions en langues parallèles de la description.  
+- `datasetDistribution[array]`: Propriété. Cette propriété lie l'ensemble de données à une distribution disponible. Elle correspond à la propriété obligatoire "dataset distribution" de DCAT-AP 2.0.1. Modèle : 'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)
+- `datasetSource[array]`: Propriété. Modèle : "rdfs:Resource". Elle correspond à la propriété "source" de DCAT-AP 2.0.1. Cette propriété fait référence à un ensemble de données apparenté dont l'ensemble de données décrit est dérivé.  . Model: [rdfs:Resource](rdfs:Resource)
+- `datasetType[string]`: Propriété. Modèle : "dct:type". Cette propriété fait référence au type de l'ensemble de données. Elle correspond à la propriété "Type" du DCAT 2.0.1. Un vocabulaire contrôlé pour les valeurs n'a pas été établi.  . Model: [dct:type](dct:type)
+- `dateCreated[string]`: Date de création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage.  
+- `dateModified[string]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage.  
+- `description[string]`: Une description de l'article  
+- `documentation[array]`: Propriété. Modèle : "foaf:Document". Cette propriété fait référence à une page ou à un document sur cet ensemble de données.  . Model: [foaf:Document](foaf:Document)
+- `frequency[string]`: Propriété. Modèle : "dct:Frequency". Cette propriété fait référence à la fréquence à laquelle le Dataset est mis à jour.  . Model: [dct:Frequency](dct:Frequency)
+- `hasVersion[array]`: Propriété. Cette propriété fait référence à un jeu de données apparenté qui est une version, une édition ou une adaptation du jeu de données décrit.  
+- `id[*]`: Identifiant unique de l'entité  
+- `identifier[array]`: Propriété. Modèle : "dct:identifier". Cette propriété contient l'identifiant principal du jeu de données, par exemple l'URI ou un autre identifiant unique dans le contexte du catalogue.  . Model: [dct:identifier](dct:identifier)
+- `isReferencedBy[array]`: Propriété. Modèle : "dct:isVersionOf". Cette propriété fait référence à un jeu de données apparenté dont le jeu de données décrit est une version, une édition ou une adaptation.  . Model: [dct:isVersionOf](dct:isVersionOf)
+- `isVersionOf[array]`: Propriété. Modèle : "dct:identifier". Cette propriété contient l'identifiant principal du jeu de données, par exemple l'URI ou un autre identifiant unique dans le contexte du catalogue.  . Model: [dct:identifier](dct:identifier)
+- `keyword[array]`: Propriété. Cette propriété contient un mot-clé ou une étiquette décrivant l'ensemble de données. Modèle : 'dcat:keyword'  . Model: [dcat:keyword](dcat:keyword)
+- `landingPage[array]`: Propriété. Modèle : "dcat:landingPage". Cette propriété renvoie à une page web qui permet d'accéder à l'ensemble de données, à ses distributions et/ou à des informations supplémentaires. Elle est destinée à pointer vers une page d'atterrissage chez le fournisseur de données original, et non vers une page sur le site d'un tiers, tel qu'un agrégateur.  . Model: [dcat:landingPage](dcat:landingPage)
+- `language[array]`: Propriété. Modèle : 'dct:LinguisticSystem'. Cette propriété fait référence à une langue de l'ensemble de données. Cette propriété peut être répétée si le jeu de données comporte plusieurs langues.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)
+- `name[string]`: Le nom de cet élément.  
+- `otherIdentifier[array]`: Propriété. Modèle : "dct:identifier". Cette propriété fait référence à un identifiant secondaire du jeu de données, tel que MAST/ADS, DataCite, DOI, EZID ou W3ID.  . Model: [dct:identifier](dct:identifier)
+- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  
+- `provenance[array]`: Propriété. Modèle : "dct:ProvenanceStatement". Cette propriété contient une déclaration sur la lignée d'un Dataset.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)
+- `publisher[string]`: Propriété. Modèle : "foaf:Agent". Cette propriété fait référence à une entité (organisation) responsable de la mise à disposition de l'ensemble de données.  . Model: [foaf:Agent](foaf:Agent)
+- `qualifiedAttribution[array]`: Propriété. Modèle : "prov:qualifiedAttribution". Cette propriété concerne une ressource connexe, telle qu'une publication, qui fait référence à l'ensemble de données, le cite ou le signale d'une autre manière.  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)
+- `qualifiedRelation[array]`: Propriété. Modèle : "dcat:Relationship". Cette propriété concerne une ressource connexe, telle qu'une publication, qui fait référence, cite ou pointe vers l'ensemble de données.  . Model: [dcat:Relationship](dcat:Relationship)
+- `relatedResource[array]`: Propriété. Modèle : "rdfs:Resource". Cette propriété fait référence à une ressource connexe  . Model: [rdfs:Resource](rdfs:Resource)
+- `releaseDate[string]`: Propriété. Modèle : "dct:issued". Cette propriété contient la date d'émission officielle (par exemple, la publication) du jeu de données.  . Model: [dct:issued](dct:issued)
+- `sample[array]`: Propriété. Modèle : "rdfs:Resource". Cette propriété fait référence à un échantillon de distribution de l'ensemble de données  . Model: [rdfs:Resource](rdfs:Resource)
+- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  
+- `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  
+- `spatial[array]`: Géopropriété. Modèle : "dct:Location". Cette propriété fait référence à une région géographique couverte par le jeu de données.  . Model: [dct:Location](dct:Location)
+- `spatialResolution[array]`: Propriété. Modèle : "dcat:spatialResolutionIn Meters". Cette propriété fait référence à la séparation spatiale minimale pouvant être résolue dans un jeu de données, mesurée en mètres.  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)
+- `temporal[array]`: Propriété. Cette propriété fait référence à une période temporelle couverte par le jeu de données. Modèle:'dct:PeriodOfTime'  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)
+- `temporalResolution[array]`: Propriété. Modèle : "dcat:temporalResolution". Cette propriété fait référence à la période de temps minimale pouvant être résolue dans le jeu de données.  . Model: [dcat:temporalResolution](dcat:temporalResolution)
+- `theme[array]`: Propriété. Modèle : "dcat:theme". Cette propriété fait référence à une catégorie de l'ensemble de données. Un jeu de données peut être associé à plusieurs thèmes  . Model: [dcat:theme](dcat:theme)
+- `title[array]`: Propriété. Cette propriété contient un nom donné à l'ensemble de données. Elle correspond à la propriété obligatoire "Title" de DCAT-AP 2.0.1. Cette propriété peut être répétée pour les versions linguistiques parallèles du nom.  
+- `type[string]`: Propriété. Type NGSI. Il doit s'agir d'un jeu de données  
+- `updateDate[string]`: Propriété. Modèle : "dct:modified". Cette propriété contient la date la plus récente à laquelle le jeu de données a été changé ou modifié.  . Model: [dct:modified](dct:modified)
+- `version[string]`: Propriété. Modèle : "owl:versionInfo". Cette propriété contient un numéro de version ou une autre désignation de la version du jeu de données.  . Model: [owl:versionInfo](owl:versionInfo)
+- `versionNotes[array]`: Propriété. Modèle : "adms:versionNotes". Cette propriété contient une description des différences entre cette version et une version précédente de l'ensemble de données. Cette propriété peut être répétée pour des versions linguistiques parallèles des notes de version.  . Model: [adms:versionNotes](adms:versionNotes)
+- `wasGeneratedBy[array]`: Propriété. Modèle : "prov:wasGeneratedBy". Cette propriété contient une description des différences entre cette version et une version antérieure de l'ensemble de données. Cette propriété peut être répétée pour les versions en langues parallèles des notes de version.  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Propriétés requises  
+- `datasetDescription`  
+- `id`  
+- `title`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Modèle de données description des propriétés  
+
+Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Dataset:    
   description: Dataset Schema meeting DCAT-AP 2.0 specification    
   properties:    
@@ -304,7 +382,7 @@ Dataset:
       x-ngsi:    
         type: Property    
     spatial:    
-      description: 'Geoproperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
+      description: 'GeoProperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
@@ -549,16 +627,25 @@ Dataset:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Exemples de charges utiles  
-#### Ensemble de données NGSI-v2 Valeurs clés Exemple  
-Voici un exemple de jeu de données au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Exemples de charges utiles  
+
+#### Ensemble de données NGSI-v2 Valeurs clés Exemple  
+
+Voici un exemple de jeu de données au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
   "dateCreated": "1985-07-20T10:08:50Z",  
   "dateModified": "2015-07-13T03:09:32Z",  
@@ -692,11 +779,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### Ensemble de données NGSI-v2 normalisé Exemple  
-Voici un exemple d'un jeu de données au format JSON-LD tel que normalisé. Ce format est compatible avec les NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+
+#### Ensemble de données NGSI-v2 normalisé Exemple  
+
+Voici un exemple d'un jeu de données au format JSON-LD tel que normalisé. Ce format est compatible avec les NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
   "type": "Dataset",  
   "dateCreated": {  
@@ -951,11 +1042,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### Ensemble de données Valeurs clés NGSI-LD Exemple  
-Voici un exemple d'ensemble de données au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+
+#### Ensemble de données Valeurs clés NGSI-LD Exemple  
+
+Voici un exemple d'ensemble de données au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
     "type": "Dataset",  
     "accessRights": "non-public",  
@@ -1092,11 +1187,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### Ensemble de données NGSI-LD normalisé Exemple  
-Voici un exemple de jeu de données au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données contextuelles d'une entité individuelle.  
+
+#### Ensemble de données NGSI-LD normalisé Exemple  
+
+Voici un exemple de jeu de données au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
     "type": "Dataset",  
     "accessRights": {  
@@ -1371,12 +1470,21 @@ Dataset:
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

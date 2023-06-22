@@ -1,34 +1,99 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体：目录DCAT-AP  
-============<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-全球描述：**符合DCAT-AP规范的数据集目录**。  
-版本：0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体：目录DCAT-AP  
+============
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalogue[array]`: 关系。模型:'dcat:catalog'。该属性指的是一个目录，其内容在本目录的上下文中是有意义的。  . Model: [dcat:catalog](dcat:catalog)- `creator[string]`: 属性。模型:'https://schema.org/Text'。此属性指的是主要负责制作目录的实体  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dataset[array]`: 关系。这个属性将目录与作为目录一部分的数据集联系起来。模型:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `hasPart[array]`: 关系。模型:'https://schema.org/URL'。这个属性指的是一个相关的目录，它是所述目录的一部分。  . Model: [https://schema.org/URL](https://schema.org/URL)- `homepage[string]`: 属性。模型:'foaf:homepage'。此属性指的是作为目录主页面的网页。  . Model: [foaf:homepage](foaf:homepage)- `id[*]`: 实体的唯一标识符  - `isPartOf[string]`: 关系。模型:'https://schema.org/URL'。此属性指的是一个相关的目录，所描述的目录在物理上或逻辑上被包含在其中。  . Model: [https://schema.org/URL](https://schema.org/URL)- `language[array]`: 属性。模型:'dct:language'。该属性指的是描述《目录》中数据集的标题、描述等的文本元数据中所使用的一种语言。如果元数据是以多种语言提供的，这个属性可以重复使用。  . Model: [dct:language](dct:language)- `licence[string]`: 属性。模型:'dct:license'。此属性指的是可以使用或重新使用目录的许可。  . Model: [dct:license](dct:license)- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `modificationDate[string]`: 属性。模型:'https://schema.org/DateTime'。此属性包含目录被修改的最新日期。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `publisher[string]`: 属性。模型:'https://schema.org/Text'。此属性指的是负责提供《目录》的实体（组织）。模型:'dct:出版商'  . Model: [dct:publisher](dct:publisher)- `record[array]`: 关系。此属性指的是属于目录的一个目录记录。  - `releaseDate[string]`: 属性。模型:'https://schema.org/DateTime'。该属性包含《目录》正式发布（如出版）的日期。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: 属性。模型:'dct:rights'。此属性指的是指定与目录相关的权利的声明。  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `service[array]`: 属性。该属性指的是目录中列出的站点或端点。模型:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `spatial_geographic[array]`: Geoproperty。该属性指的是目录所涵盖的地理区域。模型:'dct:spatial'  . Model: [dct:spatial](dct:spatial)- `themes[array]`: 属性。模型:'dcat:themeTaxonomy'。该属性指的是用于对《目录》数据集进行分类的知识组织系统。  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)- `title[array]`: 属性。模型:'https://schema.org/URL'。此属性包含了给予目录的一个名称。这个属性可以重复用于平行语言版本的名称。模型:'rdfs:Literal'。  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: 属性。模型:'https://schema.org/Text'。它必须是 CatalogueDCAT-AP  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-这个数据模型和其他的主题DCAT-AP正在适应他们的使用，建议包括额外的背景。[https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+全球描述：**符合DCAT-AP规范的数据集目录**。  
+
+版本：0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: 这个项目的一个替代名称  
+- `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `catalogue[array]`: 关系。模型:'dcat:catalog'。该属性指的是一个目录，其内容在本目录的上下文中是有意义的。  . Model: [dcat:catalog](dcat:catalog)
+- `creator[string]`: 属性。模型:'https://schema.org/Text'。此属性指的是主要负责制作目录的实体  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  
+- `dataset[array]`: 关系。这个属性将目录与作为目录一部分的数据集联系起来。模型:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)
+- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  
+- `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  
+- `description[string]`: 对这个项目的描述  
+- `hasPart[array]`: 关系。模型:'https://schema.org/URL'。这个属性指的是一个相关的目录，它是所述目录的一部分。  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `homepage[string]`: 属性。模型:'foaf:homepage'。此属性指的是作为目录主页面的网页。  . Model: [foaf:homepage](foaf:homepage)
+- `id[*]`: 实体的唯一标识符  
+- `isPartOf[string]`: 关系。模型:'https://schema.org/URL'。此属性指的是一个相关的目录，所描述的目录在物理上或逻辑上被包含在其中。  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `language[array]`: 属性。模型:'dct:language'。该属性指的是描述《目录》中数据集的标题、描述等的文本元数据中所使用的一种语言。如果元数据是以多种语言提供的，这个属性可以重复使用。  . Model: [dct:language](dct:language)
+- `licence[string]`: 属性。模型:'dct:license'。此属性指的是可以使用或重新使用目录的许可。  . Model: [dct:license](dct:license)
+- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  
+- `modificationDate[string]`: 属性。模型:'https://schema.org/DateTime'。此属性包含目录被修改的最新日期。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `name[string]`: 这个项目的名称。  
+- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  
+- `publisher[string]`: 属性。模型:'https://schema.org/Text'。此属性指的是负责提供《目录》的实体（组织）。模型:'dct:出版商'  . Model: [dct:publisher](dct:publisher)
+- `record[array]`: 关系。此属性指的是属于目录的一个目录记录。  
+- `releaseDate[string]`: 属性。模型:'https://schema.org/DateTime'。该属性包含《目录》正式发布（如出版）的日期。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `rights[string]`: 属性。模型:'dct:rights'。此属性指的是指定与目录相关的权利的声明。  . Model: [dct:rights](dct:rights)
+- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  
+- `service[array]`: 属性。该属性指的是目录中列出的站点或端点。模型:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)
+- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  
+- `spatial_geographic[array]`: GeoProperty。该属性指的是目录所涵盖的地理区域。模型:'dct:spatial'  . Model: [dct:spatial](dct:spatial)
+- `themes[array]`: 属性。模型:'dcat:themeTaxonomy'。该属性指的是用于对《目录》数据集进行分类的知识组织系统。  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)
+- `title[array]`: 属性。模型:'https://schema.org/URL'。此属性包含了给予目录的一个名称。这个属性可以重复用于平行语言版本的名称。模型:'rdfs:Literal'。  . Model: [rdfs:Literal](rdfs:Literal)
+- `type[string]`: 属性。模型:'https://schema.org/Text'。它必须是 CatalogueDCAT-AP  . Model: [https://schema.org/Text](https://schema.org/Text)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- `dataset`  
+- `description`  
+- `id`  
+- `publisher`  
+- `title`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+这个数据模型和其他的主题DCAT-AP正在适应他们的使用，建议包括额外的背景。[https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 CatalogueDCAT-AP:    
   description: Catalogue of datasets compliant with DCAT-AP specification.    
   properties:    
@@ -417,7 +482,7 @@ CatalogueDCAT-AP:
       x-ngsi:    
         type: Property    
     spatial_geographic:    
-      description: 'Geoproperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
+      description: 'GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
@@ -464,16 +529,25 @@ CatalogueDCAT-AP:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### CatalogueDCAT-AP NGSI-v2 key-values 示例  
-下面是一个以JSON-LD格式作为key-values的CatalogueDCAT-AP的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### CatalogueDCAT-AP NGSI-v2 key-values 示例  
+
+下面是一个以JSON-LD格式作为key-values的CatalogueDCAT-AP的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "dateCreated": "1980-03-03T10:01:24Z",  
@@ -551,11 +625,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### 目录DCAT-AP NGSI-v2规范化示例  
-下面是一个以JSON-LD格式规范化的CatalogueDCAT-AP的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### 目录DCAT-AP NGSI-v2规范化示例  
+
+下面是一个以JSON-LD格式规范化的CatalogueDCAT-AP的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "dateCreated": {  
@@ -708,11 +786,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueDCAT-AP NGSI-LD key-values 示例  
-下面是一个以JSON-LD格式作为key-values的CatalogueDCAT-AP的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### CatalogueDCAT-AP NGSI-LD key-values 示例  
+
+下面是一个以JSON-LD格式作为key-values的CatalogueDCAT-AP的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
     "type": "CatalogueDCAT-AP",  
     "address": {  
@@ -794,11 +876,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### 目录DCAT-AP NGSI-LD归一化示例  
-下面是一个以JSON-LD格式规范化的CatalogueDCAT-AP的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### 目录DCAT-AP NGSI-LD归一化示例  
+
+下面是一个以JSON-LD格式规范化的CatalogueDCAT-AP的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "address": {  
@@ -966,12 +1052,21 @@ CatalogueDCAT-AP:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

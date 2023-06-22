@@ -1,34 +1,112 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体：数据集  
-======<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-全局描述：**符合DCAT-AP 2.0规范的数据集模式**。  
-版本：0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体：数据集  
+======
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `accessRights[string]`: 属性。模型:'foaf:Agent'。这个属性指的是表明数据集是否是开放数据、有访问限制或不公开的信息。欧盟出版办公室将创建并维护一个有三个成员（:公开、限制、非公开）的受控词汇表。枚举："公开、限制、非公开  . Model: [foaf:Agent](foaf:Agent)- `alternateName[string]`: 这个项目的一个替代名称  - `conformsTo[string]`: 属性。模型:'dct:conformsTo'。这个属性指的是一个实施规则，也不是其他规范。  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: 属性。模型:'vcard:Kind'。它与DCAT-AP 2.0.1的 "联系点 "强制属性相对应。这个属性包含了联系信息，可以用来发送关于数据集的评论。  . Model: [vcard:Kind](vcard:Kind)- `creator[string]`: 属性。模型:'dct:creator'。此属性指的是主要负责制作目录的实体  . Model: [dct:creator](dct:creator)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `datasetDescription[array]`: 属性。该属性包含数据集的自由文本说明。它与DCAT-AP 2.0.1的 "描述"（description）强制属性相呼应。这个属性可以重复用于平行语言版本的描述。  - `datasetDistribution[array]`: 属性。该属性将数据集链接到一个可用的分布区。它与DCAT-AP 2.0.1的 "数据集分布 "强制属性相呼应。模型:'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)- `datasetSource[array]`: 属性。模型:'rdfs:资源'。它与DCAT-AP 2.0.1的 "源 "属性相对应。这个属性指的是一个相关的数据集，所描述的数据集就来自于此。  . Model: [rdfs:Resource](rdfs:Resource)- `datasetType[string]`: 属性。模型:'dct:type'。这个属性指的是数据集的类型。它对应于DCAT 2.0.1的 "类型 "属性。值的控制词汇表还没有建立。  . Model: [dct:type](dct:type)- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `documentation[array]`: 属性。模型:'foaf:Document'。这个属性指的是关于这个数据集的一个页面或文档。  . Model: [foaf:Document](foaf:Document)- `frequency[string]`: 属性。模型:'dct:Frequency'。这个属性指的是数据集被更新的频率。  . Model: [dct:Frequency](dct:Frequency)- `hasVersion[array]`: 属性。这个属性指的是一个相关的数据集，它是所述数据集的一个版本、版本或改编。  - `id[*]`: 实体的唯一标识符  - `identifier[array]`: 属性。模型：'dct:identifier'。这个属性包含了数据集的主要标识符，例如URI或者目录中的其他唯一标识符。  . Model: [dct:identifier](dct:identifier)- `isReferencedBy[array]`: 属性。模型：'dct:isVersionOf'。该属性指的是一个相关的数据集，所描述的数据集是其版本、版本或改编版。  . Model: [dct:isVersionOf](dct:isVersionOf)- `isVersionOf[array]`: 属性。模型：'dct:identifier'。这个属性包含了数据集的主要标识符，例如URI或者目录中的其他唯一标识符。  . Model: [dct:identifier](dct:identifier)- `keyword[array]`: 属性。该属性包含一个关键词或标签，描述数据集。模型:'dcat:keyword'  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: 属性。模型:'dcat:landingPage'。这个属性指的是提供数据集、其分布和/或额外信息访问的网页。它的目的是指向原始数据提供者的登陆页面，而不是指向第三方网站的页面，例如聚合器。  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: 属性。模型:'dct:LinguisticSystem'。这个属性指的是数据集的一种语言。如果数据集有多种语言，这个属性可以重复。  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `name[string]`: 这个项目的名称。  - `otherIdentifier[array]`: 属性。模型:'dct:identifier'。该属性指的是数据集的二级标识符，如MAST/ADS、DataCite、DOI、EZID或W3ID。  . Model: [dct:identifier](dct:identifier)- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `provenance[array]`: 属性。模型:'dct:ProvenanceStatement'。这个属性包含一个关于数据集血统的声明。  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: 属性。模型:'foaf:Agent'。这个属性指的是一个负责提供数据集的实体（组织）。  . Model: [foaf:Agent](foaf:Agent)- `qualifiedAttribution[array]`: 属性。模型:'prov:qualifiedAttribution'。这个属性是关于一个相关的资源，如出版物，参考、引用或以其他方式指向该数据集。  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)- `qualifiedRelation[array]`: 属性。模型:'dcat:Relationship'。这个属性是关于一个相关的资源，如出版物，它引用、引用或以其他方式指向数据集。  . Model: [dcat:Relationship](dcat:Relationship)- `relatedResource[array]`: 属性。模型:'rdfs:资源'。这个属性指的是一个相关的资源  . Model: [rdfs:Resource](rdfs:Resource)- `releaseDate[string]`: 属性。模型：'dct:issued'。这个属性包含了数据集的正式发布（例如，出版）日期。  . Model: [dct:issued](dct:issued)- `sample[array]`: 属性。模型:'rdfs:资源'。这个属性指的是数据集的一个样本分布  . Model: [rdfs:Resource](rdfs:Resource)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `spatial[array]`: Geoproperty.模型:'dct:Location'。这个属性指的是数据集所涵盖的地理区域。  . Model: [dct:Location](dct:Location)- `spatialResolution[array]`: 属性。模型:'dcat:spatialResolutionIn Meters'。该属性指的是数据集中可解析的最小空间分离，以米为单位。  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)- `temporal[array]`: 属性。这个属性指的是数据集所涵盖的一个时间段。模型:'dct:PeriodOfTime'。  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `temporalResolution[array]`: 属性。模型:'dcat:temporalResolution'。该属性指的是数据集中可解析的最小时间段。  . Model: [dcat:temporalResolution](dcat:temporalResolution)- `theme[array]`: 属性。模型:'dcat:theme'。这个属性指的是数据集的一个类别。一个数据集可以与多个主题相关联  . Model: [dcat:theme](dcat:theme)- `title[array]`: 属性。这个属性包含了给数据集的一个名称。它与DCAT-AP 2.0.1的 "标题"（Title）强制属性相呼应。这个属性可以重复用于平行语言版本的名称。  - `type[string]`: 属性。NGSI类型。它必须是数据集  - `updateDate[string]`: 属性。模型:'dct:modified'。该属性包含数据集被改变或修改的最新日期。  . Model: [dct:modified](dct:modified)- `version[string]`: 属性。模型:'owl:versionInfo'。该属性包含数据集的版本号或其他版本名称。  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: 属性。模型：'adms:versionNotes'。这个属性包含了这个版本与数据集的上一个版本之间的差异描述。这个属性可以重复用于平行语言版本的版本说明。  . Model: [adms:versionNotes](adms:versionNotes)- `wasGeneratedBy[array]`: 属性。模型:'prov:wasGeneratedBy'。这个属性包含了这个版本与数据集之前版本之间的差异描述。这个属性可以重复用于平行语言版本的版本说明。  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- `datasetDescription`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+全局描述：**符合DCAT-AP 2.0规范的数据集模式**。  
+
+版本：0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+- `accessRights[string]`: 属性。模型:'foaf:Agent'。这个属性指的是表明数据集是否是开放数据、有访问限制或不公开的信息。欧盟出版办公室将创建并维护一个有三个成员（:公开、限制、非公开）的受控词汇表。枚举："公开、限制、非公开  . Model: [foaf:Agent](foaf:Agent)
+- `alternateName[string]`: 这个项目的一个替代名称  
+- `conformsTo[string]`: 属性。模型:'dct:conformsTo'。这个属性指的是一个实施规则，也不是其他规范。  . Model: [dct:conformsTo](dct:conformsTo)
+- `contactPoint[array]`: 属性。模型:'vcard:Kind'。它与DCAT-AP 2.0.1的 "联系点 "强制属性相对应。这个属性包含了联系信息，可以用来发送关于数据集的评论。  . Model: [vcard:Kind](vcard:Kind)
+- `creator[string]`: 属性。模型:'dct:creator'。此属性指的是主要负责制作目录的实体  . Model: [dct:creator](dct:creator)
+- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  
+- `datasetDescription[array]`: 属性。该属性包含数据集的自由文本说明。它与DCAT-AP 2.0.1的 "描述"（description）强制属性相呼应。这个属性可以重复用于平行语言版本的描述。  
+- `datasetDistribution[array]`: 属性。该属性将数据集链接到一个可用的分布区。它与DCAT-AP 2.0.1的 "数据集分布 "强制属性相呼应。模型:'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)
+- `datasetSource[array]`: 属性。模型:'rdfs:资源'。它与DCAT-AP 2.0.1的 "源 "属性相对应。这个属性指的是一个相关的数据集，所描述的数据集就来自于此。  . Model: [rdfs:Resource](rdfs:Resource)
+- `datasetType[string]`: 属性。模型:'dct:type'。这个属性指的是数据集的类型。它对应于DCAT 2.0.1的 "类型 "属性。值的控制词汇表还没有建立。  . Model: [dct:type](dct:type)
+- `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  
+- `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  
+- `description[string]`: 对这个项目的描述  
+- `documentation[array]`: 属性。模型:'foaf:Document'。这个属性指的是关于这个数据集的一个页面或文档。  . Model: [foaf:Document](foaf:Document)
+- `frequency[string]`: 属性。模型:'dct:Frequency'。这个属性指的是数据集被更新的频率。  . Model: [dct:Frequency](dct:Frequency)
+- `hasVersion[array]`: 属性。这个属性指的是一个相关的数据集，它是所述数据集的一个版本、版本或改编。  
+- `id[*]`: 实体的唯一标识符  
+- `identifier[array]`: 属性。模型：'dct:identifier'。这个属性包含了数据集的主要标识符，例如URI或者目录中的其他唯一标识符。  . Model: [dct:identifier](dct:identifier)
+- `isReferencedBy[array]`: 属性。模型：'dct:isVersionOf'。该属性指的是一个相关的数据集，所描述的数据集是其版本、版本或改编版。  . Model: [dct:isVersionOf](dct:isVersionOf)
+- `isVersionOf[array]`: 属性。模型：'dct:identifier'。这个属性包含了数据集的主要标识符，例如URI或者目录中的其他唯一标识符。  . Model: [dct:identifier](dct:identifier)
+- `keyword[array]`: 属性。该属性包含一个关键词或标签，描述数据集。模型:'dcat:keyword'  . Model: [dcat:keyword](dcat:keyword)
+- `landingPage[array]`: 属性。模型:'dcat:landingPage'。这个属性指的是提供数据集、其分布和/或额外信息访问的网页。它的目的是指向原始数据提供者的登陆页面，而不是指向第三方网站的页面，例如聚合器。  . Model: [dcat:landingPage](dcat:landingPage)
+- `language[array]`: 属性。模型:'dct:LinguisticSystem'。这个属性指的是数据集的一种语言。如果数据集有多种语言，这个属性可以重复。  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)
+- `name[string]`: 这个项目的名称。  
+- `otherIdentifier[array]`: 属性。模型:'dct:identifier'。该属性指的是数据集的二级标识符，如MAST/ADS、DataCite、DOI、EZID或W3ID。  . Model: [dct:identifier](dct:identifier)
+- `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  
+- `provenance[array]`: 属性。模型:'dct:ProvenanceStatement'。这个属性包含一个关于数据集血统的声明。  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)
+- `publisher[string]`: 属性。模型:'foaf:Agent'。这个属性指的是一个负责提供数据集的实体（组织）。  . Model: [foaf:Agent](foaf:Agent)
+- `qualifiedAttribution[array]`: 属性。模型:'prov:qualifiedAttribution'。这个属性是关于一个相关的资源，如出版物，参考、引用或以其他方式指向该数据集。  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)
+- `qualifiedRelation[array]`: 属性。模型:'dcat:Relationship'。这个属性是关于一个相关的资源，如出版物，它引用、引用或以其他方式指向数据集。  . Model: [dcat:Relationship](dcat:Relationship)
+- `relatedResource[array]`: 属性。模型:'rdfs:资源'。这个属性指的是一个相关的资源  . Model: [rdfs:Resource](rdfs:Resource)
+- `releaseDate[string]`: 属性。模型：'dct:issued'。这个属性包含了数据集的正式发布（例如，出版）日期。  . Model: [dct:issued](dct:issued)
+- `sample[array]`: 属性。模型:'rdfs:资源'。这个属性指的是数据集的一个样本分布  . Model: [rdfs:Resource](rdfs:Resource)
+- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  
+- `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  
+- `spatial[array]`: GeoProperty.模型:'dct:Location'。这个属性指的是数据集所涵盖的地理区域。  . Model: [dct:Location](dct:Location)
+- `spatialResolution[array]`: 属性。模型:'dcat:spatialResolutionIn Meters'。该属性指的是数据集中可解析的最小空间分离，以米为单位。  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)
+- `temporal[array]`: 属性。这个属性指的是数据集所涵盖的一个时间段。模型:'dct:PeriodOfTime'。  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)
+- `temporalResolution[array]`: 属性。模型:'dcat:temporalResolution'。该属性指的是数据集中可解析的最小时间段。  . Model: [dcat:temporalResolution](dcat:temporalResolution)
+- `theme[array]`: 属性。模型:'dcat:theme'。这个属性指的是数据集的一个类别。一个数据集可以与多个主题相关联  . Model: [dcat:theme](dcat:theme)
+- `title[array]`: 属性。这个属性包含了给数据集的一个名称。它与DCAT-AP 2.0.1的 "标题"（Title）强制属性相呼应。这个属性可以重复用于平行语言版本的名称。  
+- `type[string]`: 属性。NGSI类型。它必须是数据集  
+- `updateDate[string]`: 属性。模型:'dct:modified'。该属性包含数据集被改变或修改的最新日期。  . Model: [dct:modified](dct:modified)
+- `version[string]`: 属性。模型:'owl:versionInfo'。该属性包含数据集的版本号或其他版本名称。  . Model: [owl:versionInfo](owl:versionInfo)
+- `versionNotes[array]`: 属性。模型：'adms:versionNotes'。这个属性包含了这个版本与数据集的上一个版本之间的差异描述。这个属性可以重复用于平行语言版本的版本说明。  . Model: [adms:versionNotes](adms:versionNotes)
+- `wasGeneratedBy[array]`: 属性。模型:'prov:wasGeneratedBy'。这个属性包含了这个版本与数据集之前版本之间的差异描述。这个属性可以重复用于平行语言版本的版本说明。  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- `datasetDescription`  
+- `id`  
+- `title`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Dataset:    
   description: Dataset Schema meeting DCAT-AP 2.0 specification    
   properties:    
@@ -304,7 +382,7 @@ Dataset:
       x-ngsi:    
         type: Property    
     spatial:    
-      description: 'Geoproperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
+      description: 'GeoProperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
@@ -549,16 +627,25 @@ Dataset:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### 数据集NGSI-v2关键值示例  
-这里有一个JSON-LD格式的数据集的例子，作为key-values。当使用`options=keyValues'时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### 数据集NGSI-v2关键值示例  
+
+这里有一个JSON-LD格式的数据集的例子，作为key-values。当使用`options=keyValues'时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
   "dateCreated": "1985-07-20T10:08:50Z",  
   "dateModified": "2015-07-13T03:09:32Z",  
@@ -692,11 +779,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### 数据集NGSI-v2规范化示例  
-下面是一个规范化的JSON-LD格式的数据集的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### 数据集NGSI-v2规范化示例  
+
+下面是一个规范化的JSON-LD格式的数据集的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
   "type": "Dataset",  
   "dateCreated": {  
@@ -951,11 +1042,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### 数据集NGSI-LD关键值示例  
-这里有一个JSON-LD格式的数据集的例子，作为key-values。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### 数据集NGSI-LD关键值示例  
+
+这里有一个JSON-LD格式的数据集的例子，作为key-values。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
     "type": "Dataset",  
     "accessRights": "non-public",  
@@ -1092,11 +1187,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### 数据集NGSI-LD规范化示例  
-下面是一个以JSON-LD格式规范化的数据集的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### 数据集NGSI-LD规范化示例  
+
+下面是一个以JSON-LD格式规范化的数据集的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
     "type": "Dataset",  
     "accessRights": {  
@@ -1371,12 +1470,21 @@ Dataset:
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

@@ -1,34 +1,112 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entität: Datensatz  
-==================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Globale Beschreibung: **Datensatzschema gemäß DCAT-AP 2.0-Spezifikation**  
-Version: 0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Liste der Eigenschaften  
+Entität: Datensatz  
+==================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `accessRights[string]`: Eigenschaft. Modell:'foaf:Agent'. Diese Eigenschaft bezieht sich auf Informationen, die angeben, ob es sich bei dem Datensatz um offene Daten handelt, ob der Zugang eingeschränkt oder nicht öffentlich ist. Ein kontrolliertes Vokabular mit drei Mitgliedern (:public, :restricted, :non-public) wird vom Amt für Veröffentlichungen der EU erstellt und gepflegt. Enum:'public, restricted, non-public' (öffentlich, eingeschränkt, nicht öffentlich)  . Model: [foaf:Agent](foaf:Agent)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `conformsTo[string]`: Eigenschaft. Modell:'dct:conformsTo'. Diese Eigenschaft bezieht sich auf eine Durchführungsvorschrift oder eine andere Spezifikation.  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: Eigenschaft. Modell:'vcard:Kind'. Sie entspricht der obligatorischen Eigenschaft "Kontaktstelle" von DCAT-AP 2.0.1. Diese Eigenschaft enthält Kontaktinformationen, die für die Übermittlung von Kommentaren über den Datensatz verwendet werden können.  . Model: [vcard:Kind](vcard:Kind)- `creator[string]`: Eigenschaft. Modell:'dct:creator'. Diese Eigenschaft bezieht sich auf die Entität, die hauptsächlich für die Erstellung des Katalogs verantwortlich ist  . Model: [dct:creator](dct:creator)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `datasetDescription[array]`: Eigenschaft. Diese Eigenschaft enthält eine Freitextbeschreibung des Datasets. Sie entspricht der obligatorischen Eigenschaft "description" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen der Beschreibung wiederholt werden.  - `datasetDistribution[array]`: Eigenschaft. Diese Eigenschaft verknüpft das Dataset mit einer verfügbaren Distributionen. Sie entspricht der obligatorischen Eigenschaft 'dataset distribution' von DCAT-AP 2.0.1. Modell:'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)- `datasetSource[array]`: Eigenschaft. Modell:'rdfs:Ressource'. Sie entspricht der Eigenschaft 'source' aus DCAT-AP 2.0.1. Diese Eigenschaft bezieht sich auf ein verwandtes Dataset, von dem das beschriebene Dataset abgeleitet ist.  . Model: [rdfs:Resource](rdfs:Resource)- `datasetType[string]`: Eigenschaft. Modell:'dct:type'. Diese Eigenschaft bezieht sich auf den Typ des Datasets. Sie entspricht der Eigenschaft "Typ" des DCAT 2.0.1. Ein kontrolliertes Vokabular für die Werte ist nicht festgelegt worden.  . Model: [dct:type](dct:type)- `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `documentation[array]`: Eigenschaft. Modell:'foaf:Document'. Diese Eigenschaft verweist auf eine Seite oder ein Dokument über diesen Datensatz  . Model: [foaf:Document](foaf:Document)- `frequency[string]`: Eigenschaft. Modell:'dct:Frequenz'. Diese Eigenschaft bezieht sich auf die Häufigkeit, mit der der Datensatz aktualisiert wird.  . Model: [dct:Frequency](dct:Frequency)- `hasVersion[array]`: Eigenschaft. Diese Eigenschaft bezieht sich auf einen verwandten Datensatz, der eine Version, Ausgabe oder Anpassung des beschriebenen Datensatzes ist.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `identifier[array]`: Eigenschaft. Modell:'dct:identifier'. Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [dct:identifier](dct:identifier)- `isReferencedBy[array]`: Eigenschaft. Modell:'dct:isVersionOf'. Diese Eigenschaft bezieht sich auf einen verwandten Datensatz, von dem der beschriebene Datensatz eine Version, Ausgabe oder Anpassung ist  . Model: [dct:isVersionOf](dct:isVersionOf)- `isVersionOf[array]`: Eigenschaft. Modell:'dct:identifier'. Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [dct:identifier](dct:identifier)- `keyword[array]`: Eigenschaft. Diese Eigenschaft enthält ein Schlüsselwort oder Tag, das den Datensatz beschreibt. Modell:'dcat:keyword'  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: Eigenschaft. Modell:'dcat:landingPage'. Diese Eigenschaft bezieht sich auf eine Webseite, die Zugang zu dem Datensatz, seinen Verteilungen und/oder zusätzlichen Informationen bietet. Sie soll auf eine Landing Page beim ursprünglichen Datenanbieter verweisen, nicht auf eine Seite auf einer Website eines Dritten, wie z. B. eines Aggregators.  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: Eigenschaft. Modell:'dct:LinguisticSystem'. Diese Eigenschaft bezieht sich auf eine Sprache des Datensatzes. Diese Eigenschaft kann wiederholt werden, wenn der Datensatz mehrere Sprachen enthält.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `name[string]`: Der Name dieses Artikels.  - `otherIdentifier[array]`: Eigenschaft. Modell:'dct:identifier'. Diese Eigenschaft bezieht sich auf einen sekundären Bezeichner des Datensatzes, wie MAST/ADS, DataCite, DOI, EZID oder W3ID.  . Model: [dct:identifier](dct:identifier)- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `provenance[array]`: Eigenschaft. Modell:'dct:ProvenanceStatement'. Diese Eigenschaft enthält eine Aussage über die Abstammung eines Datensatzes.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: Eigenschaft. Modell:'foaf:Agent'. Diese Eigenschaft bezieht sich auf eine Einheit (Organisation), die für die Bereitstellung des Datensatzes verantwortlich ist  . Model: [foaf:Agent](foaf:Agent)- `qualifiedAttribution[array]`: Eigenschaft. Modell:'prov:qualifiedAttribution'. Diese Eigenschaft bezieht sich auf eine verwandte Ressource, z. B. eine Veröffentlichung, die auf den Datensatz verweist, ihn zitiert oder anderweitig auf ihn verweist.  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)- `qualifiedRelation[array]`: Eigenschaft. Modell:'dcat:Relationship'. Diese Eigenschaft bezieht sich auf eine verwandte Ressource, z. B. eine Veröffentlichung, die auf den Datensatz verweist, ihn zitiert oder anderweitig auf ihn verweist  . Model: [dcat:Relationship](dcat:Relationship)- `relatedResource[array]`: Eigenschaft. Modell:'rdfs:Ressource'. Diese Eigenschaft bezieht sich auf eine verwandte Ressource  . Model: [rdfs:Resource](rdfs:Resource)- `releaseDate[string]`: Eigenschaft. Modell:'dct:issued'. Diese Eigenschaft enthält das Datum der offiziellen Ausgabe (z. B. Veröffentlichung) des Datensatzes.  . Model: [dct:issued](dct:issued)- `sample[array]`: Eigenschaft. Modell:'rdfs:Ressource'. Diese Eigenschaft bezieht sich auf eine Musterverteilung des Datensatzes  . Model: [rdfs:Resource](rdfs:Resource)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `spatial[array]`: Geoproperty. Modell:'dct:Location'. Diese Eigenschaft bezieht sich auf eine geografische Region, die durch den Datensatz abgedeckt wird  . Model: [dct:Location](dct:Location)- `spatialResolution[array]`: Eigenschaft. Modell:'dcat:spatialResolutionIn Meters'. Diese Eigenschaft bezieht sich auf die minimale räumliche Trennung, die in einem Datensatz auflösbar ist, gemessen in Metern  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)- `temporal[array]`: Eigenschaft. Diese Eigenschaft bezieht sich auf einen zeitlichen Zeitraum, den der Datensatz abdeckt. Modell:'dct:PeriodOfTime'  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `temporalResolution[array]`: Eigenschaft. Modell:'dcat:temporalResolution'. Diese Eigenschaft bezieht sich auf den Mindestzeitraum, der im Datensatz auflösbar ist.  . Model: [dcat:temporalResolution](dcat:temporalResolution)- `theme[array]`: Eigenschaft. Modell:'dcat:theme'. Diese Eigenschaft bezieht sich auf eine Kategorie des Datasets. Ein Dataset kann mit mehreren Themen verbunden sein  . Model: [dcat:theme](dcat:theme)- `title[array]`: Eigenschaft. Diese Eigenschaft enthält einen Namen, der dem Dataset gegeben wird. Sie entspricht der obligatorischen Eigenschaft "Titel" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden.  - `type[string]`: Eigenschaft. NGSI-Typ. Es muss Dataset sein  - `updateDate[string]`: Eigenschaft. Modell:'dct:modified'. Diese Eigenschaft enthält das jüngste Datum, an dem der Datensatz geändert oder modifiziert wurde.  . Model: [dct:modified](dct:modified)- `version[string]`: Eigenschaft. Modell:'owl:versionInfo'. Diese Eigenschaft enthält eine Versionsnummer oder eine andere Versionsbezeichnung des Datasets  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: Eigenschaft. Modell:'adms:versionNotes'. Diese Eigenschaft enthält eine Beschreibung der Unterschiede zwischen dieser Version und einer früheren Version des Datensatzes. Diese Eigenschaft kann für parallele Sprachversionen der Versionshinweise wiederholt werden.  . Model: [adms:versionNotes](adms:versionNotes)- `wasGeneratedBy[array]`: Eigenschaft. Modell:'prov:wasGeneratedBy'. Diese Eigenschaft enthält eine Beschreibung der Unterschiede zwischen dieser Version und einer früheren Version des Datensatzes. Diese Eigenschaft kann für parallele Sprachversionen der Versionshinweise wiederholt werden.  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Erforderliche Eigenschaften  
-- `datasetDescription`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
+
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Globale Beschreibung: **Datensatzschema gemäß DCAT-AP 2.0-Spezifikation**  
+
+Version: 0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Liste der Eigenschaften  
+
+
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `accessRights[string]`: Eigenschaft. Modell:'foaf:Agent'. Diese Eigenschaft bezieht sich auf Informationen, die angeben, ob es sich bei dem Datensatz um offene Daten handelt, ob der Zugang eingeschränkt oder nicht öffentlich ist. Ein kontrolliertes Vokabular mit drei Mitgliedern (:public, :restricted, :non-public) wird vom Amt für Veröffentlichungen der EU erstellt und gepflegt. Enum:'public, restricted, non-public' (öffentlich, eingeschränkt, nicht öffentlich)  . Model: [foaf:Agent](foaf:Agent)
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  
+- `conformsTo[string]`: Eigenschaft. Modell:'dct:conformsTo'. Diese Eigenschaft bezieht sich auf eine Durchführungsvorschrift oder eine andere Spezifikation.  . Model: [dct:conformsTo](dct:conformsTo)
+- `contactPoint[array]`: Eigenschaft. Modell:'vcard:Kind'. Sie entspricht der obligatorischen Eigenschaft "Kontaktstelle" von DCAT-AP 2.0.1. Diese Eigenschaft enthält Kontaktinformationen, die für die Übermittlung von Kommentaren über den Datensatz verwendet werden können.  . Model: [vcard:Kind](vcard:Kind)
+- `creator[string]`: Eigenschaft. Modell:'dct:creator'. Diese Eigenschaft bezieht sich auf die Entität, die hauptsächlich für die Erstellung des Katalogs verantwortlich ist  . Model: [dct:creator](dct:creator)
+- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  
+- `datasetDescription[array]`: Eigenschaft. Diese Eigenschaft enthält eine Freitextbeschreibung des Datasets. Sie entspricht der obligatorischen Eigenschaft "description" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen der Beschreibung wiederholt werden.  
+- `datasetDistribution[array]`: Eigenschaft. Diese Eigenschaft verknüpft das Dataset mit einer verfügbaren Distributionen. Sie entspricht der obligatorischen Eigenschaft 'dataset distribution' von DCAT-AP 2.0.1. Modell:'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)
+- `datasetSource[array]`: Eigenschaft. Modell:'rdfs:Ressource'. Sie entspricht der Eigenschaft 'source' aus DCAT-AP 2.0.1. Diese Eigenschaft bezieht sich auf ein verwandtes Dataset, von dem das beschriebene Dataset abgeleitet ist.  . Model: [rdfs:Resource](rdfs:Resource)
+- `datasetType[string]`: Eigenschaft. Modell:'dct:type'. Diese Eigenschaft bezieht sich auf den Typ des Datasets. Sie entspricht der Eigenschaft "Typ" des DCAT 2.0.1. Ein kontrolliertes Vokabular für die Werte ist nicht festgelegt worden.  . Model: [dct:type](dct:type)
+- `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  
+- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  
+- `description[string]`: Eine Beschreibung dieses Artikels  
+- `documentation[array]`: Eigenschaft. Modell:'foaf:Document'. Diese Eigenschaft verweist auf eine Seite oder ein Dokument über diesen Datensatz  . Model: [foaf:Document](foaf:Document)
+- `frequency[string]`: Eigenschaft. Modell:'dct:Frequenz'. Diese Eigenschaft bezieht sich auf die Häufigkeit, mit der der Datensatz aktualisiert wird.  . Model: [dct:Frequency](dct:Frequency)
+- `hasVersion[array]`: Eigenschaft. Diese Eigenschaft bezieht sich auf einen verwandten Datensatz, der eine Version, Ausgabe oder Anpassung des beschriebenen Datensatzes ist.  
+- `id[*]`: Eindeutiger Bezeichner der Entität  
+- `identifier[array]`: Eigenschaft. Modell:'dct:identifier'. Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [dct:identifier](dct:identifier)
+- `isReferencedBy[array]`: Eigenschaft. Modell:'dct:isVersionOf'. Diese Eigenschaft bezieht sich auf einen verwandten Datensatz, von dem der beschriebene Datensatz eine Version, Ausgabe oder Anpassung ist  . Model: [dct:isVersionOf](dct:isVersionOf)
+- `isVersionOf[array]`: Eigenschaft. Modell:'dct:identifier'. Diese Eigenschaft enthält den Hauptbezeichner für den Datensatz, z. B. den URI oder einen anderen eindeutigen Bezeichner im Kontext des Katalogs  . Model: [dct:identifier](dct:identifier)
+- `keyword[array]`: Eigenschaft. Diese Eigenschaft enthält ein Schlüsselwort oder Tag, das den Datensatz beschreibt. Modell:'dcat:keyword'  . Model: [dcat:keyword](dcat:keyword)
+- `landingPage[array]`: Eigenschaft. Modell:'dcat:landingPage'. Diese Eigenschaft bezieht sich auf eine Webseite, die Zugang zu dem Datensatz, seinen Verteilungen und/oder zusätzlichen Informationen bietet. Sie soll auf eine Landing Page beim ursprünglichen Datenanbieter verweisen, nicht auf eine Seite auf einer Website eines Dritten, wie z. B. eines Aggregators.  . Model: [dcat:landingPage](dcat:landingPage)
+- `language[array]`: Eigenschaft. Modell:'dct:LinguisticSystem'. Diese Eigenschaft bezieht sich auf eine Sprache des Datensatzes. Diese Eigenschaft kann wiederholt werden, wenn der Datensatz mehrere Sprachen enthält.  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)
+- `name[string]`: Der Name dieses Artikels.  
+- `otherIdentifier[array]`: Eigenschaft. Modell:'dct:identifier'. Diese Eigenschaft bezieht sich auf einen sekundären Bezeichner des Datensatzes, wie MAST/ADS, DataCite, DOI, EZID oder W3ID.  . Model: [dct:identifier](dct:identifier)
+- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  
+- `provenance[array]`: Eigenschaft. Modell:'dct:ProvenanceStatement'. Diese Eigenschaft enthält eine Aussage über die Abstammung eines Datensatzes.  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)
+- `publisher[string]`: Eigenschaft. Modell:'foaf:Agent'. Diese Eigenschaft bezieht sich auf eine Einheit (Organisation), die für die Bereitstellung des Datensatzes verantwortlich ist  . Model: [foaf:Agent](foaf:Agent)
+- `qualifiedAttribution[array]`: Eigenschaft. Modell:'prov:qualifiedAttribution'. Diese Eigenschaft bezieht sich auf eine verwandte Ressource, z. B. eine Veröffentlichung, die auf den Datensatz verweist, ihn zitiert oder anderweitig auf ihn verweist.  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)
+- `qualifiedRelation[array]`: Eigenschaft. Modell:'dcat:Relationship'. Diese Eigenschaft bezieht sich auf eine verwandte Ressource, z. B. eine Veröffentlichung, die auf den Datensatz verweist, ihn zitiert oder anderweitig auf ihn verweist  . Model: [dcat:Relationship](dcat:Relationship)
+- `relatedResource[array]`: Eigenschaft. Modell:'rdfs:Ressource'. Diese Eigenschaft bezieht sich auf eine verwandte Ressource  . Model: [rdfs:Resource](rdfs:Resource)
+- `releaseDate[string]`: Eigenschaft. Modell:'dct:issued'. Diese Eigenschaft enthält das Datum der offiziellen Ausgabe (z. B. Veröffentlichung) des Datensatzes.  . Model: [dct:issued](dct:issued)
+- `sample[array]`: Eigenschaft. Modell:'rdfs:Ressource'. Diese Eigenschaft bezieht sich auf eine Musterverteilung des Datensatzes  . Model: [rdfs:Resource](rdfs:Resource)
+- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  
+- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  
+- `spatial[array]`: GeoProperty. Modell:'dct:Location'. Diese Eigenschaft bezieht sich auf eine geografische Region, die durch den Datensatz abgedeckt wird  . Model: [dct:Location](dct:Location)
+- `spatialResolution[array]`: Eigenschaft. Modell:'dcat:spatialResolutionIn Meters'. Diese Eigenschaft bezieht sich auf die minimale räumliche Trennung, die in einem Datensatz auflösbar ist, gemessen in Metern  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)
+- `temporal[array]`: Eigenschaft. Diese Eigenschaft bezieht sich auf einen zeitlichen Zeitraum, den der Datensatz abdeckt. Modell:'dct:PeriodOfTime'  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)
+- `temporalResolution[array]`: Eigenschaft. Modell:'dcat:temporalResolution'. Diese Eigenschaft bezieht sich auf den Mindestzeitraum, der im Datensatz auflösbar ist.  . Model: [dcat:temporalResolution](dcat:temporalResolution)
+- `theme[array]`: Eigenschaft. Modell:'dcat:theme'. Diese Eigenschaft bezieht sich auf eine Kategorie des Datasets. Ein Dataset kann mit mehreren Themen verbunden sein  . Model: [dcat:theme](dcat:theme)
+- `title[array]`: Eigenschaft. Diese Eigenschaft enthält einen Namen, der dem Dataset gegeben wird. Sie entspricht der obligatorischen Eigenschaft "Titel" von DCAT-AP 2.0.1. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden.  
+- `type[string]`: Eigenschaft. NGSI-Typ. Es muss Dataset sein  
+- `updateDate[string]`: Eigenschaft. Modell:'dct:modified'. Diese Eigenschaft enthält das jüngste Datum, an dem der Datensatz geändert oder modifiziert wurde.  . Model: [dct:modified](dct:modified)
+- `version[string]`: Eigenschaft. Modell:'owl:versionInfo'. Diese Eigenschaft enthält eine Versionsnummer oder eine andere Versionsbezeichnung des Datasets  . Model: [owl:versionInfo](owl:versionInfo)
+- `versionNotes[array]`: Eigenschaft. Modell:'adms:versionNotes'. Diese Eigenschaft enthält eine Beschreibung der Unterschiede zwischen dieser Version und einer früheren Version des Datensatzes. Diese Eigenschaft kann für parallele Sprachversionen der Versionshinweise wiederholt werden.  . Model: [adms:versionNotes](adms:versionNotes)
+- `wasGeneratedBy[array]`: Eigenschaft. Modell:'prov:wasGeneratedBy'. Diese Eigenschaft enthält eine Beschreibung der Unterschiede zwischen dieser Version und einer früheren Version des Datensatzes. Diese Eigenschaft kann für parallele Sprachversionen der Versionshinweise wiederholt werden.  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Erforderliche Eigenschaften  
+- `datasetDescription`  
+- `id`  
+- `title`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Datenmodell Beschreibung der Eigenschaften  
+
+Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Dataset:    
   description: Dataset Schema meeting DCAT-AP 2.0 specification    
   properties:    
@@ -304,7 +382,7 @@ Dataset:
       x-ngsi:    
         type: Property    
     spatial:    
-      description: 'Geoproperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
+      description: 'GeoProperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
@@ -549,16 +627,25 @@ Dataset:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Beispiel-Nutzlasten  
-#### Datensatz NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Datensatz im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Beispiel-Nutzlasten  
+
+#### Datensatz NGSI-v2 Schlüsselwerte Beispiel  
+
+Hier ist ein Beispiel für einen Datensatz im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
   "dateCreated": "1985-07-20T10:08:50Z",  
   "dateModified": "2015-07-13T03:09:32Z",  
@@ -692,11 +779,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### Datensatz NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen Datensatz im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+
+#### Datensatz NGSI-v2 normalisiert Beispiel  
+
+Hier ist ein Beispiel für einen Datensatz im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
   "type": "Dataset",  
   "dateCreated": {  
@@ -951,11 +1042,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### Datensatz NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen Datensatz im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+
+#### Datensatz NGSI-LD Schlüsselwerte Beispiel  
+
+Hier ist ein Beispiel für einen Datensatz im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
     "type": "Dataset",  
     "accessRights": "non-public",  
@@ -1092,11 +1187,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### Datensatz NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen Datensatz im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+
+#### Datensatz NGSI-LD normalisiert Beispiel  
+
+Hier ist ein Beispiel für einen Datensatz im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
     "type": "Dataset",  
     "accessRights": {  
@@ -1371,12 +1470,21 @@ Dataset:
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

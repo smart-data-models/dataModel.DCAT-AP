@@ -1,34 +1,99 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティカタログDCAT-AP  
-=================<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな記述です：**DCAT-AP仕様に準拠したデータセットのカタログ**。  
-バージョン：0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティカタログDCAT-AP  
+=================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalogue[array]`: 関係です。モデル：'dcat:catalog'.このプロパティは、このカタログのコンテキストで関心のある内容を持つカタログを参照する  . Model: [dcat:catalog](dcat:catalog)- `creator[string]`: プロパティです。モデル:'https://schema.org/Text'.このプロパティは、カタログの制作を主に担当するエンティティを指します  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dataset[array]`: 関係。このプロパティは、カタログと、カタログの一部であるDatasetをリンクします。モデル:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `hasPart[array]`: 関係です。モデル:'https://schema.org/URL'.このプロパティは、記述されたカタログの一部である関連カタログを参照します。  . Model: [https://schema.org/URL](https://schema.org/URL)- `homepage[string]`: プロパティです。モデル：'foaf:homepage'.このプロパティは、カタログのメインページとして機能するウェブページを参照する。  . Model: [foaf:homepage](foaf:homepage)- `id[*]`: エンティティの一意な識別子  - `isPartOf[string]`: 関係です。モデル:'https://schema.org/URL'.このプロパティは、記述されたカタログが物理的または論理的に含まれる関連カタログを指します。  . Model: [https://schema.org/URL](https://schema.org/URL)- `language[array]`: プロパティです。Model:'dct:language'.このプロパティは、カタログのデータセットのタイトルや説明などを記述するテキストメタデータで使用される言語を指します。このプロパティは、メタデータが複数の言語で提供される場合に繰り返すことができる。  . Model: [dct:language](dct:language)- `licence[string]`: プロパティです。Model:'dct:license'.このプロパティは、カタログの使用または再利用が可能なライセンスを指す。  . Model: [dct:license](dct:license)- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `modificationDate[string]`: プロパティです。モデル:'https://schema.org/DateTime'.このプロパティには、カタログが修正された最新の日付が含まれます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `publisher[string]`: プロパティです。モデル:'https://schema.org/Text'.このプロパティは、カタログを利用可能にする責任を負うエンティティ（組織）を指します。モデル:'dct:publisher'  . Model: [dct:publisher](dct:publisher)- `record[array]`: 関係を示す。このプロパティは、カタログの一部であるカタログレコードを参照します。  - `releaseDate[string]`: プロパティです。モデル:'https://schema.org/DateTime'.このプロパティには、カタログの正式発行（発行など）の日付が含まれています。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: プロパティです。モデル：'dct:rights'.このプロパティは、カタログに関連する権利を指定するステートメントを参照する。  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `service[array]`: プロパティです。このプロパティは、カタログに掲載されているサイトまたはエンドポイントを指します。モデル:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spatial_geographic[array]`: ジオプロパティ。このプロパティは、カタログの対象となる地理的な領域を指す。モデル：'dct:spatial'  . Model: [dct:spatial](dct:spatial)- `themes[array]`: プロパティです。Model:'dcat:themeTaxonomy'.このプロパティは、CatalogueのDatasetを分類するために使用される知識組織システムを指します。  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)- `title[array]`: プロパティです。モデル:'https://schema.org/URL'.このプロパティには、カタログに与えられた名前が含まれています。このプロパティは、名前の並行言語版に対して繰り返すことができる。モデル:'rdfs:Literal'。  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: プロパティです。モデル：'https://schema.org/Text'.CatalogueDCAT-APである必要があります。  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-このデータモデルと主題DCAT-APの他のものは、彼らの使用のために適応されており、追加のコンテキストが含まれることが推奨されるであろう。[https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
+
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+グローバルな記述です：**DCAT-AP仕様に準拠したデータセットのカタログ**。  
+
+バージョン：0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: このアイテムの別称  
+- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `catalogue[array]`: 関係です。モデル：'dcat:catalog'.このプロパティは、このカタログのコンテキストで関心のある内容を持つカタログを参照する  . Model: [dcat:catalog](dcat:catalog)
+- `creator[string]`: プロパティです。モデル:'https://schema.org/Text'.このプロパティは、カタログの制作を主に担当するエンティティを指します  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `dataset[array]`: 関係。このプロパティは、カタログと、カタログの一部であるDatasetをリンクします。モデル:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `description[string]`: このアイテムの説明  
+- `hasPart[array]`: 関係です。モデル:'https://schema.org/URL'.このプロパティは、記述されたカタログの一部である関連カタログを参照します。  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `homepage[string]`: プロパティです。モデル：'foaf:homepage'.このプロパティは、カタログのメインページとして機能するウェブページを参照する。  . Model: [foaf:homepage](foaf:homepage)
+- `id[*]`: エンティティの一意な識別子  
+- `isPartOf[string]`: 関係です。モデル:'https://schema.org/URL'.このプロパティは、記述されたカタログが物理的または論理的に含まれる関連カタログを指します。  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `language[array]`: プロパティです。Model:'dct:language'.このプロパティは、カタログのデータセットのタイトルや説明などを記述するテキストメタデータで使用される言語を指します。このプロパティは、メタデータが複数の言語で提供される場合に繰り返すことができる。  . Model: [dct:language](dct:language)
+- `licence[string]`: プロパティです。Model:'dct:license'.このプロパティは、カタログの使用または再利用が可能なライセンスを指す。  . Model: [dct:license](dct:license)
+- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
+- `modificationDate[string]`: プロパティです。モデル:'https://schema.org/DateTime'.このプロパティには、カタログが修正された最新の日付が含まれます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `name[string]`: この項目の名称です。  
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
+- `publisher[string]`: プロパティです。モデル:'https://schema.org/Text'.このプロパティは、カタログを利用可能にする責任を負うエンティティ（組織）を指します。モデル:'dct:publisher'  . Model: [dct:publisher](dct:publisher)
+- `record[array]`: 関係を示す。このプロパティは、カタログの一部であるカタログレコードを参照します。  
+- `releaseDate[string]`: プロパティです。モデル:'https://schema.org/DateTime'.このプロパティには、カタログの正式発行（発行など）の日付が含まれています。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `rights[string]`: プロパティです。モデル：'dct:rights'.このプロパティは、カタログに関連する権利を指定するステートメントを参照する。  . Model: [dct:rights](dct:rights)
+- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
+- `service[array]`: プロパティです。このプロパティは、カタログに掲載されているサイトまたはエンドポイントを指します。モデル:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)
+- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `spatial_geographic[array]`: ジオプロパティ。このプロパティは、カタログの対象となる地理的な領域を指す。モデル：'dct:spatial'  . Model: [dct:spatial](dct:spatial)
+- `themes[array]`: プロパティです。Model:'dcat:themeTaxonomy'.このプロパティは、CatalogueのDatasetを分類するために使用される知識組織システムを指します。  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)
+- `title[array]`: プロパティです。モデル:'https://schema.org/URL'.このプロパティには、カタログに与えられた名前が含まれています。このプロパティは、名前の並行言語版に対して繰り返すことができる。モデル:'rdfs:Literal'。  . Model: [rdfs:Literal](rdfs:Literal)
+- `type[string]`: プロパティです。モデル：'https://schema.org/Text'.CatalogueDCAT-APである必要があります。  . Model: [https://schema.org/Text](https://schema.org/Text)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- `dataset`  
+- `description`  
+- `id`  
+- `publisher`  
+- `title`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+このデータモデルと主題DCAT-APの他のものは、彼らの使用のために適応されており、追加のコンテキストが含まれることが推奨されるであろう。[https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 CatalogueDCAT-AP:    
   description: Catalogue of datasets compliant with DCAT-AP specification.    
   properties:    
@@ -417,7 +482,7 @@ CatalogueDCAT-AP:
       x-ngsi:    
         type: Property    
     spatial_geographic:    
-      description: 'Geoproperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
+      description: 'GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
@@ -464,16 +529,25 @@ CatalogueDCAT-AP:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### CatalogueDCAT-AP NGSI-v2 key-values Example  
-ここでは、CatalogueDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### CatalogueDCAT-AP NGSI-v2 key-values Example  
+
+ここでは、CatalogueDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "dateCreated": "1980-03-03T10:01:24Z",  
@@ -551,11 +625,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueDCAT-AP NGSI-v2 正規化例  
-JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### CatalogueDCAT-AP NGSI-v2 正規化例  
+
+JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "dateCreated": {  
@@ -708,11 +786,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueDCAT-AP NGSI-LD キー値例  
-ここでは、CatalogueDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### CatalogueDCAT-AP NGSI-LD キー値例  
+
+ここでは、CatalogueDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
     "type": "CatalogueDCAT-AP",  
     "address": {  
@@ -794,11 +876,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueDCAT-AP NGSI-LD 正規化例  
-JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### CatalogueDCAT-AP NGSI-LD 正規化例  
+
+JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "address": {  
@@ -966,12 +1052,21 @@ CatalogueDCAT-AP:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

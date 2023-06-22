@@ -1,34 +1,99 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entität: KatalogDCAT-AP  
-=======================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Globale Beschreibung: **Katalog der Datensätze, die mit der DCAT-AP-Spezifikation übereinstimmen.**  
-Version: 0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Liste der Eigenschaften  
+Entität: KatalogDCAT-AP  
+=======================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalogue[array]`: Beziehung. Modell:'dcat:catalog'. Diese Eigenschaft verweist auf einen Katalog, dessen Inhalt im Zusammenhang mit diesem Katalog von Interesse ist  . Model: [dcat:catalog](dcat:catalog)- `creator[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Diese Eigenschaft bezieht sich auf die Einrichtung, die hauptsächlich für die Erstellung des Katalogs verantwortlich ist  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dataset[array]`: Verknüpfung. Diese Eigenschaft verbindet den Katalog mit einem Dataset, das Teil des Katalogs ist. Modell:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)- `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `hasPart[array]`: Verwandtschaft. Modell:'https://schema.org/URL'. Diese Eigenschaft bezieht sich auf einen verwandten Katalog, der Teil des beschriebenen Katalogs ist  . Model: [https://schema.org/URL](https://schema.org/URL)- `homepage[string]`: Eigenschaft. Modell:'foaf:homepage'. Diese Eigenschaft verweist auf eine Webseite, die als Hauptseite für den Katalog dient.  . Model: [foaf:homepage](foaf:homepage)- `id[*]`: Eindeutiger Bezeichner der Entität  - `isPartOf[string]`: Verwandtschaft. Modell:'https://schema.org/URL'. Diese Eigenschaft bezieht sich auf einen verwandten Katalog, in dem der beschriebene Katalog physisch oder logisch enthalten ist.  . Model: [https://schema.org/URL](https://schema.org/URL)- `language[array]`: Eigenschaft. Modell:'dct:language'. Diese Eigenschaft bezieht sich auf eine Sprache, die in den textlichen Metadaten verwendet wird, die Titel, Beschreibungen usw. der Datensätze im Katalog beschreiben. Diese Eigenschaft kann wiederholt werden, wenn die Metadaten in mehreren Sprachen bereitgestellt werden.  . Model: [dct:language](dct:language)- `licence[string]`: Eigenschaft. Modell:'dct:license'. Diese Eigenschaft bezieht sich auf die Lizenz, unter der der Katalog verwendet oder wiederverwendet werden kann.  . Model: [dct:license](dct:license)- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `modificationDate[string]`: Eigenschaft. Modell:'https://schema.org/DateTime'. Diese Eigenschaft enthält das letzte Datum, an dem der Katalog geändert wurde.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `publisher[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Diese Eigenschaft bezieht sich auf eine Einrichtung (Organisation), die für die Bereitstellung des Katalogs verantwortlich ist. Modell:'dct:publisher'  . Model: [dct:publisher](dct:publisher)- `record[array]`: Verknüpfung. Diese Eigenschaft bezieht sich auf einen Katalogsatz, der Teil des Katalogs ist  - `releaseDate[string]`: Eigenschaft. Modell:'https://schema.org/DateTime'. Diese Eigenschaft enthält das Datum der offiziellen Ausgabe (z. B. Veröffentlichung) des Katalogs.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `rights[string]`: Eigenschaft. Modell:'dct:rights'. Diese Eigenschaft bezieht sich auf eine Erklärung, die die mit dem Katalog verbundenen Rechte angibt.  . Model: [dct:rights](dct:rights)- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `service[array]`: Eigenschaft. Diese Eigenschaft bezieht sich auf einen Standort oder Endpunkt, der im Katalog aufgeführt ist. Modell:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `spatial_geographic[array]`: Geoproperty. Diese Eigenschaft bezieht sich auf ein geografisches Gebiet, das vom Katalog abgedeckt wird. Modell:'dct:spatial'  . Model: [dct:spatial](dct:spatial)- `themes[array]`: Eigenschaft. Modell:'dcat:themeTaxonomy'. Diese Eigenschaft bezieht sich auf ein Wissensorganisationssystem, das zur Klassifizierung der Datensätze des Katalogs verwendet wird.  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)- `title[array]`: Eigenschaft. Model:'https://schema.org/URL'. Diese Eigenschaft enthält einen Namen, der dem Katalog gegeben wurde. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden. Modell:'rdfs:Literal'  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Es muss KatalogDCAT-AP sein  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Erforderliche Eigenschaften  
-- `dataset`  - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Dieses Datenmodell und andere des Themas DCAT-AP werden für ihre Verwendung angepasst und es wird empfohlen, dass zusätzlicher Kontext aufgenommen wird. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Datenmodell Beschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details anklicken)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
+
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+Globale Beschreibung: **Katalog der Datensätze, die mit der DCAT-AP-Spezifikation übereinstimmen.**  
+
+Version: 0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Liste der Eigenschaften  
+
+
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  
+- `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `catalogue[array]`: Beziehung. Modell:'dcat:catalog'. Diese Eigenschaft verweist auf einen Katalog, dessen Inhalt im Zusammenhang mit diesem Katalog von Interesse ist  . Model: [dcat:catalog](dcat:catalog)
+- `creator[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Diese Eigenschaft bezieht sich auf die Einrichtung, die hauptsächlich für die Erstellung des Katalogs verantwortlich ist  . Model: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  
+- `dataset[array]`: Verknüpfung. Diese Eigenschaft verbindet den Katalog mit einem Dataset, das Teil des Katalogs ist. Modell:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)
+- `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  
+- `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  
+- `description[string]`: Eine Beschreibung dieses Artikels  
+- `hasPart[array]`: Verwandtschaft. Modell:'https://schema.org/URL'. Diese Eigenschaft bezieht sich auf einen verwandten Katalog, der Teil des beschriebenen Katalogs ist  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `homepage[string]`: Eigenschaft. Modell:'foaf:homepage'. Diese Eigenschaft verweist auf eine Webseite, die als Hauptseite für den Katalog dient.  . Model: [foaf:homepage](foaf:homepage)
+- `id[*]`: Eindeutiger Bezeichner der Entität  
+- `isPartOf[string]`: Verwandtschaft. Modell:'https://schema.org/URL'. Diese Eigenschaft bezieht sich auf einen verwandten Katalog, in dem der beschriebene Katalog physisch oder logisch enthalten ist.  . Model: [https://schema.org/URL](https://schema.org/URL)
+- `language[array]`: Eigenschaft. Modell:'dct:language'. Diese Eigenschaft bezieht sich auf eine Sprache, die in den textlichen Metadaten verwendet wird, die Titel, Beschreibungen usw. der Datensätze im Katalog beschreiben. Diese Eigenschaft kann wiederholt werden, wenn die Metadaten in mehreren Sprachen bereitgestellt werden.  . Model: [dct:language](dct:language)
+- `licence[string]`: Eigenschaft. Modell:'dct:license'. Diese Eigenschaft bezieht sich auf die Lizenz, unter der der Katalog verwendet oder wiederverwendet werden kann.  . Model: [dct:license](dct:license)
+- `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  
+- `modificationDate[string]`: Eigenschaft. Modell:'https://schema.org/DateTime'. Diese Eigenschaft enthält das letzte Datum, an dem der Katalog geändert wurde.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `name[string]`: Der Name dieses Artikels.  
+- `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  
+- `publisher[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Diese Eigenschaft bezieht sich auf eine Einrichtung (Organisation), die für die Bereitstellung des Katalogs verantwortlich ist. Modell:'dct:publisher'  . Model: [dct:publisher](dct:publisher)
+- `record[array]`: Verknüpfung. Diese Eigenschaft bezieht sich auf einen Katalogsatz, der Teil des Katalogs ist  
+- `releaseDate[string]`: Eigenschaft. Modell:'https://schema.org/DateTime'. Diese Eigenschaft enthält das Datum der offiziellen Ausgabe (z. B. Veröffentlichung) des Katalogs.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
+- `rights[string]`: Eigenschaft. Modell:'dct:rights'. Diese Eigenschaft bezieht sich auf eine Erklärung, die die mit dem Katalog verbundenen Rechte angibt.  . Model: [dct:rights](dct:rights)
+- `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  
+- `service[array]`: Eigenschaft. Diese Eigenschaft bezieht sich auf einen Standort oder Endpunkt, der im Katalog aufgeführt ist. Modell:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)
+- `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  
+- `spatial_geographic[array]`: GeoProperty. Diese Eigenschaft bezieht sich auf ein geografisches Gebiet, das vom Katalog abgedeckt wird. Modell:'dct:spatial'  . Model: [dct:spatial](dct:spatial)
+- `themes[array]`: Eigenschaft. Modell:'dcat:themeTaxonomy'. Diese Eigenschaft bezieht sich auf ein Wissensorganisationssystem, das zur Klassifizierung der Datensätze des Katalogs verwendet wird.  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)
+- `title[array]`: Eigenschaft. Model:'https://schema.org/URL'. Diese Eigenschaft enthält einen Namen, der dem Katalog gegeben wurde. Diese Eigenschaft kann für parallele Sprachversionen des Namens wiederholt werden. Modell:'rdfs:Literal'  . Model: [rdfs:Literal](rdfs:Literal)
+- `type[string]`: Eigenschaft. Modell:'https://schema.org/Text'. Es muss KatalogDCAT-AP sein  . Model: [https://schema.org/Text](https://schema.org/Text)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Erforderliche Eigenschaften  
+- `dataset`  
+- `description`  
+- `id`  
+- `publisher`  
+- `title`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+Dieses Datenmodell und andere des Themas DCAT-AP werden für ihre Verwendung angepasst und es wird empfohlen, dass zusätzlicher Kontext aufgenommen wird. [https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Datenmodell Beschreibung der Eigenschaften  
+
+Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 CatalogueDCAT-AP:    
   description: Catalogue of datasets compliant with DCAT-AP specification.    
   properties:    
@@ -417,7 +482,7 @@ CatalogueDCAT-AP:
       x-ngsi:    
         type: Property    
     spatial_geographic:    
-      description: 'Geoproperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
+      description: 'GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
@@ -464,16 +529,25 @@ CatalogueDCAT-AP:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Beispiel-Nutzlasten  
-#### KatalogDCAT-AP NGSI-v2 Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Beispiel-Nutzlasten  
+
+#### KatalogDCAT-AP NGSI-v2 Schlüsselwerte Beispiel  
+
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "dateCreated": "1980-03-03T10:01:24Z",  
@@ -551,11 +625,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### KatalogDCAT-AP NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+
+#### KatalogDCAT-AP NGSI-v2 normalisiert Beispiel  
+
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "dateCreated": {  
@@ -708,11 +786,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### KatalogDCAT-AP NGSI-LD Schlüsselwerte Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+
+#### KatalogDCAT-AP NGSI-LD Schlüsselwerte Beispiel  
+
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
     "type": "CatalogueDCAT-AP",  
     "address": {  
@@ -794,11 +876,15 @@ CatalogueDCAT-AP:
 }  
 ```  
 </details>  
-#### KatalogDCAT-AP NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+
+#### KatalogDCAT-AP NGSI-LD normalisiert Beispiel  
+
+Hier ist ein Beispiel für einen CatalogueDCAT-AP im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
   "type": "CatalogueDCAT-AP",  
   "address": {  
@@ -966,12 +1052,21 @@ CatalogueDCAT-AP:
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

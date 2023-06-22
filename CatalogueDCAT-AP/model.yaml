@@ -386,7 +386,7 @@ CatalogueDCAT-AP:
       x-ngsi:
         type: Property
     spatial_geographic:
-      description: 'Geoproperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''
+      description: 'GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''
       items:
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
         oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof

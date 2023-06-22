@@ -1,34 +1,112 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティデータセット  
-============<!-- /10-Header -->  
-<!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな記述です：**DCAT-AP 2.0 仕様に準拠したデータセットスキーマ**。  
-バージョン：0.0.2  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+エンティティデータセット  
+============
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `accessRights[string]`: プロパティです。モデル:'foaf:Agent'.このプロパティは、Datasetがオープンデータであるか、アクセス制限があるか、非公開であるかを示す情報を指す。3つのメンバー（:public, :restricted, :non-public）を持つ統制語彙が、EUの出版局によって作成・維持される予定です。列挙：'public, restricted, non-public'  . Model: [foaf:Agent](foaf:Agent)- `alternateName[string]`: このアイテムの別称  - `conformsTo[string]`: プロパティです。Model:'dct:conformsTo'.このプロパティは、実装規則または他の仕様を参照する。  . Model: [dct:conformsTo](dct:conformsTo)- `contactPoint[array]`: プロパティです。モデル：'vcard:Kind'。DCAT-AP 2.0.1の'contact point'必須プロパティに対応する。このプロパティには、データセットに関するコメントを送信するために使用できる連絡先情報が含まれています。  . Model: [vcard:Kind](vcard:Kind)- `creator[string]`: プロパティです。モデル：'dct:creator'.このプロパティは、カタログの制作を主に担当するエンティティを指す  . Model: [dct:creator](dct:creator)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `datasetDescription[array]`: プロパティです。このプロパティには、データセットのフリーテキストによる説明が含まれる。DCAT-AP 2.0.1の'description'必須プロパティと対応している。このプロパティは、説明文の並行言語版のために繰り返すことができる。  - `datasetDistribution[array]`: プロパティです。このプロパティは、データセットと利用可能なディストリビューションを結びつける。DCAT-AP 2.0.1の'dataset distribution'必須プロパティに対応する。モデル：'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)- `datasetSource[array]`: プロパティです。モデル：'rdfs:Resource'。DCAT-AP 2.0.1のプロパティ'source'と対応する。このプロパティは、記述されたDatasetが由来する関連Datasetを指す。  . Model: [rdfs:Resource](rdfs:Resource)- `datasetType[string]`: プロパティです。モデル：'dct:type'.このプロパティは、データセットのタイプを示す。DCAT 2.0.1のプロパティ'Type'に相当する。値の制御語彙は確立されていない。  . Model: [dct:type](dct:type)- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `documentation[array]`: プロパティです。モデル:'foaf:Document'.このプロパティは、このデータセットに関するページまたはドキュメントを参照します。  . Model: [foaf:Document](foaf:Document)- `frequency[string]`: プロパティです。モデル：'dct:Frequency'.このプロパティは、Datasetが更新される頻度について言及する。  . Model: [dct:Frequency](dct:Frequency)- `hasVersion[array]`: プロパティです。このプロパティは、説明されているデータセットのバージョン、エディション、または適応である関連データセットを指します。  - `id[*]`: エンティティの一意な識別子  - `identifier[array]`: プロパティです。Model:'dct:identifier'.このプロパティには、データセットの主な識別子（例：カタログのコンテキストにおけるURIまたはその他の一意の識別子）が含まれます。  . Model: [dct:identifier](dct:identifier)- `isReferencedBy[array]`: プロパティです。Model:'dct:isVersionOf'.このプロパティは、記述されたDatasetがバージョン、エディション、またはアダプテーションである関連Datasetを参照する。  . Model: [dct:isVersionOf](dct:isVersionOf)- `isVersionOf[array]`: プロパティです。Model:'dct:identifier'.このプロパティには、データセットの主な識別子（例：カタログのコンテキストにおけるURIまたはその他の一意の識別子）が含まれます。  . Model: [dct:identifier](dct:identifier)- `keyword[array]`: Property（プロパティ）。このプロパティには、データセットを説明するキーワードまたはタグが含まれます。モデル:'dcat:keyword'  . Model: [dcat:keyword](dcat:keyword)- `landingPage[array]`: プロパティです。Model:'dcat:landingPage'.このプロパティは、データセット、その配布物、および追加情報へのアクセスを提供するウェブページを指します。このプロパティは、アグリゲーターなどの第三者のサイト上のページではなく、元のデータ提供者のランディングページを指すことを意図しています。  . Model: [dcat:landingPage](dcat:landingPage)- `language[array]`: プロパティです。Model:'dct:LinguisticSystem'といいます。このプロパティは、Datasetの言語を参照します。データセットに複数の言語がある場合は、このプロパティを繰り返すことができます。  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)- `name[string]`: この項目の名称です。  - `otherIdentifier[array]`: プロパティです。Model:'dct:identifier'.このプロパティは、MAST/ADS、DataCite、DOI、EZID、W3IDなど、データセットの二次識別子を指します。  . Model: [dct:identifier](dct:identifier)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `provenance[array]`: プロパティです。Model:'dct:ProvenanceStatement'.このプロパティには、Datasetの血統に関するステートメントが含まれます。  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)- `publisher[string]`: プロパティです。Model:'foaf:Agent'.このプロパティは、データセットを利用可能にする責任を負うエンティティ（組織）を指す  . Model: [foaf:Agent](foaf:Agent)- `qualifiedAttribution[array]`: プロパティです。モデル:'prov:qualifiedAttribution'.このプロパティは、データセットを参照、引用、またはその他の方法で指し示す、出版物などの関連リソースに関するものです。  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)- `qualifiedRelation[array]`: プロパティです。Model:'dcat:Relationship'.このプロパティは、データセットを参照、引用、またはその他の方法で指し示す、出版物などの関連リソースに関するものです  . Model: [dcat:Relationship](dcat:Relationship)- `relatedResource[array]`: プロパティです。モデル:'rdfs:Resource'.このプロパティは、関連するリソースを参照する  . Model: [rdfs:Resource](rdfs:Resource)- `releaseDate[string]`: プロパティです。Model:'dct:issued'.このプロパティには、Datasetの正式な発行（例：Publish）日が含まれます。  . Model: [dct:issued](dct:issued)- `sample[array]`: プロパティです。モデル:'rdfs:Resource'.このプロパティは、データセットのサンプル配布を指す  . Model: [rdfs:Resource](rdfs:Resource)- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `spatial[array]`: ジオプロパティです。モデル:'dct:Location'.このプロパティは、Datasetがカバーする地理的な領域を指す  . Model: [dct:Location](dct:Location)- `spatialResolution[array]`: プロパティです。Model:'dcat:spatialResolutionIn Meters'.このプロパティは、データセットで解決可能な最小の空間的分離を指し、メートル単位で測定される  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)- `temporal[array]`: プロパティ。このプロパティは、Datasetがカバーする時間的な期間を指す。モデル:'dct:PeriodOfTime'  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)- `temporalResolution[array]`: プロパティです。モデル：'dcat:temporalResolution'.このプロパティは、データセットで解決可能な最小時間帯を指す。  . Model: [dcat:temporalResolution](dcat:temporalResolution)- `theme[array]`: プロパティです。モデル：'dcat:theme'.このプロパティは、Datasetのカテゴリを参照します。データセットは、複数のテーマと関連付けることができます。  . Model: [dcat:theme](dcat:theme)- `title[array]`: プロパティです。このプロパティには、データセットに付けられた名前が含まれる。DCAT-AP 2.0.1の'Title'必須プロパティに対応する。このプロパティは、名前の並行言語バージョンに対して繰り返すことができる。  - `type[string]`: 特性です。NGSIタイプです。Datasetでなければならない  - `updateDate[string]`: プロパティです。Model:'dct:modified'.このプロパティには、Datasetが変更または修正された最新の日付が含まれます。  . Model: [dct:modified](dct:modified)- `version[string]`: プロパティです。モデル:'owl:versionInfo'.このプロパティには、データセットのバージョン番号または他のバージョン指定が含まれる  . Model: [owl:versionInfo](owl:versionInfo)- `versionNotes[array]`: プロパティです。Model:'adms:versionNotes'.このプロパティには、このバージョンとデータセットの以前のバージョンとの相違点の説明が含まれる。このプロパティは、バージョンノートの並行言語バージョンに対して繰り返すことができる。  . Model: [adms:versionNotes](adms:versionNotes)- `wasGeneratedBy[array]`: プロパティです。Model:'prov:wasGeneratedBy'です。このプロパティには、このバージョンとデータセットの以前のバージョンとの相違点の説明が含まれる。このプロパティは、バージョンノートの並行言語版のために繰り返すことができます。  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `datasetDescription`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
+
+[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+
+グローバルな記述です：**DCAT-AP 2.0 仕様に準拠したデータセットスキーマ**。  
+
+バージョン：0.0.2  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## プロパティ一覧  
+
+
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `accessRights[string]`: プロパティです。モデル:'foaf:Agent'.このプロパティは、Datasetがオープンデータであるか、アクセス制限があるか、非公開であるかを示す情報を指す。3つのメンバー（:public, :restricted, :non-public）を持つ統制語彙が、EUの出版局によって作成・維持される予定です。列挙：'public, restricted, non-public'  . Model: [foaf:Agent](foaf:Agent)
+- `alternateName[string]`: このアイテムの別称  
+- `conformsTo[string]`: プロパティです。Model:'dct:conformsTo'.このプロパティは、実装規則または他の仕様を参照する。  . Model: [dct:conformsTo](dct:conformsTo)
+- `contactPoint[array]`: プロパティです。モデル：'vcard:Kind'。DCAT-AP 2.0.1の'contact point'必須プロパティに対応する。このプロパティには、データセットに関するコメントを送信するために使用できる連絡先情報が含まれています。  . Model: [vcard:Kind](vcard:Kind)
+- `creator[string]`: プロパティです。モデル：'dct:creator'.このプロパティは、カタログの制作を主に担当するエンティティを指す  . Model: [dct:creator](dct:creator)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
+- `datasetDescription[array]`: プロパティです。このプロパティには、データセットのフリーテキストによる説明が含まれる。DCAT-AP 2.0.1の'description'必須プロパティと対応している。このプロパティは、説明文の並行言語版のために繰り返すことができる。  
+- `datasetDistribution[array]`: プロパティです。このプロパティは、データセットと利用可能なディストリビューションを結びつける。DCAT-AP 2.0.1の'dataset distribution'必須プロパティに対応する。モデル：'dcat:distribution'  . Model: [dcat:distribution](dcat:distribution)
+- `datasetSource[array]`: プロパティです。モデル：'rdfs:Resource'。DCAT-AP 2.0.1のプロパティ'source'と対応する。このプロパティは、記述されたDatasetが由来する関連Datasetを指す。  . Model: [rdfs:Resource](rdfs:Resource)
+- `datasetType[string]`: プロパティです。モデル：'dct:type'.このプロパティは、データセットのタイプを示す。DCAT 2.0.1のプロパティ'Type'に相当する。値の制御語彙は確立されていない。  . Model: [dct:type](dct:type)
+- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
+- `description[string]`: このアイテムの説明  
+- `documentation[array]`: プロパティです。モデル:'foaf:Document'.このプロパティは、このデータセットに関するページまたはドキュメントを参照します。  . Model: [foaf:Document](foaf:Document)
+- `frequency[string]`: プロパティです。モデル：'dct:Frequency'.このプロパティは、Datasetが更新される頻度について言及する。  . Model: [dct:Frequency](dct:Frequency)
+- `hasVersion[array]`: プロパティです。このプロパティは、説明されているデータセットのバージョン、エディション、または適応である関連データセットを指します。  
+- `id[*]`: エンティティの一意な識別子  
+- `identifier[array]`: プロパティです。Model:'dct:identifier'.このプロパティには、データセットの主な識別子（例：カタログのコンテキストにおけるURIまたはその他の一意の識別子）が含まれます。  . Model: [dct:identifier](dct:identifier)
+- `isReferencedBy[array]`: プロパティです。Model:'dct:isVersionOf'.このプロパティは、記述されたDatasetがバージョン、エディション、またはアダプテーションである関連Datasetを参照する。  . Model: [dct:isVersionOf](dct:isVersionOf)
+- `isVersionOf[array]`: プロパティです。Model:'dct:identifier'.このプロパティには、データセットの主な識別子（例：カタログのコンテキストにおけるURIまたはその他の一意の識別子）が含まれます。  . Model: [dct:identifier](dct:identifier)
+- `keyword[array]`: Property（プロパティ）。このプロパティには、データセットを説明するキーワードまたはタグが含まれます。モデル:'dcat:keyword'  . Model: [dcat:keyword](dcat:keyword)
+- `landingPage[array]`: プロパティです。Model:'dcat:landingPage'.このプロパティは、データセット、その配布物、および追加情報へのアクセスを提供するウェブページを指します。このプロパティは、アグリゲーターなどの第三者のサイト上のページではなく、元のデータ提供者のランディングページを指すことを意図しています。  . Model: [dcat:landingPage](dcat:landingPage)
+- `language[array]`: プロパティです。Model:'dct:LinguisticSystem'といいます。このプロパティは、Datasetの言語を参照します。データセットに複数の言語がある場合は、このプロパティを繰り返すことができます。  . Model: [dct:LinguisticSystem](dct:LinguisticSystem)
+- `name[string]`: この項目の名称です。  
+- `otherIdentifier[array]`: プロパティです。Model:'dct:identifier'.このプロパティは、MAST/ADS、DataCite、DOI、EZID、W3IDなど、データセットの二次識別子を指します。  . Model: [dct:identifier](dct:identifier)
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
+- `provenance[array]`: プロパティです。Model:'dct:ProvenanceStatement'.このプロパティには、Datasetの血統に関するステートメントが含まれます。  . Model: [dct:ProvenanceStatement](dct:ProvenanceStatement)
+- `publisher[string]`: プロパティです。Model:'foaf:Agent'.このプロパティは、データセットを利用可能にする責任を負うエンティティ（組織）を指す  . Model: [foaf:Agent](foaf:Agent)
+- `qualifiedAttribution[array]`: プロパティです。モデル:'prov:qualifiedAttribution'.このプロパティは、データセットを参照、引用、またはその他の方法で指し示す、出版物などの関連リソースに関するものです。  . Model: [prov:qualifiedAttribution](prov:qualifiedAttribution)
+- `qualifiedRelation[array]`: プロパティです。Model:'dcat:Relationship'.このプロパティは、データセットを参照、引用、またはその他の方法で指し示す、出版物などの関連リソースに関するものです  . Model: [dcat:Relationship](dcat:Relationship)
+- `relatedResource[array]`: プロパティです。モデル:'rdfs:Resource'.このプロパティは、関連するリソースを参照する  . Model: [rdfs:Resource](rdfs:Resource)
+- `releaseDate[string]`: プロパティです。Model:'dct:issued'.このプロパティには、Datasetの正式な発行（例：Publish）日が含まれます。  . Model: [dct:issued](dct:issued)
+- `sample[array]`: プロパティです。モデル:'rdfs:Resource'.このプロパティは、データセットのサンプル配布を指す  . Model: [rdfs:Resource](rdfs:Resource)
+- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
+- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
+- `spatial[array]`: ジオプロパティです。モデル:'dct:Location'.このプロパティは、Datasetがカバーする地理的な領域を指す  . Model: [dct:Location](dct:Location)
+- `spatialResolution[array]`: プロパティです。Model:'dcat:spatialResolutionIn Meters'.このプロパティは、データセットで解決可能な最小の空間的分離を指し、メートル単位で測定される  . Model: [dcat:spatialResolutionIn Meters](dcat:spatialResolutionIn Meters)
+- `temporal[array]`: プロパティ。このプロパティは、Datasetがカバーする時間的な期間を指す。モデル:'dct:PeriodOfTime'  . Model: [dct:PeriodOfTime](dct:PeriodOfTime)
+- `temporalResolution[array]`: プロパティです。モデル：'dcat:temporalResolution'.このプロパティは、データセットで解決可能な最小時間帯を指す。  . Model: [dcat:temporalResolution](dcat:temporalResolution)
+- `theme[array]`: プロパティです。モデル：'dcat:theme'.このプロパティは、Datasetのカテゴリを参照します。データセットは、複数のテーマと関連付けることができます。  . Model: [dcat:theme](dcat:theme)
+- `title[array]`: プロパティです。このプロパティには、データセットに付けられた名前が含まれる。DCAT-AP 2.0.1の'Title'必須プロパティに対応する。このプロパティは、名前の並行言語バージョンに対して繰り返すことができる。  
+- `type[string]`: 特性です。NGSIタイプです。Datasetでなければならない  
+- `updateDate[string]`: プロパティです。Model:'dct:modified'.このプロパティには、Datasetが変更または修正された最新の日付が含まれます。  . Model: [dct:modified](dct:modified)
+- `version[string]`: プロパティです。モデル:'owl:versionInfo'.このプロパティには、データセットのバージョン番号または他のバージョン指定が含まれる  . Model: [owl:versionInfo](owl:versionInfo)
+- `versionNotes[array]`: プロパティです。Model:'adms:versionNotes'.このプロパティには、このバージョンとデータセットの以前のバージョンとの相違点の説明が含まれる。このプロパティは、バージョンノートの並行言語バージョンに対して繰り返すことができる。  . Model: [adms:versionNotes](adms:versionNotes)
+- `wasGeneratedBy[array]`: プロパティです。Model:'prov:wasGeneratedBy'です。このプロパティには、このバージョンとデータセットの以前のバージョンとの相違点の説明が含まれる。このプロパティは、バージョンノートの並行言語版のために繰り返すことができます。  . Model: [prov:wasGeneratedBy](prov:wasGeneratedBy)
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+必須プロパティ  
+- `datasetDescription`  
+- `id`  
+- `title`  
+- `type`  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## プロパティのデータモデル記述  
+
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 Dataset:    
   description: Dataset Schema meeting DCAT-AP 2.0 specification    
   properties:    
@@ -304,7 +382,7 @@ Dataset:
       x-ngsi:    
         type: Property    
     spatial:    
-      description: 'Geoproperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
+      description: 'GeoProperty. Model:''dct:Location''. This property refers to a geographic region that is covered by the Dataset'    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
@@ -549,16 +627,25 @@ Dataset:
   x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例  
-#### データセット NGSI-v2 キー値 例  
-ここでは、DatasetをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ペイロードの例  
+
+#### データセット NGSI-v2 キー値 例  
+
+ここでは、DatasetをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
   "dateCreated": "1985-07-20T10:08:50Z",  
   "dateModified": "2015-07-13T03:09:32Z",  
@@ -692,11 +779,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### データセット NGSI-v2 正規化例  
-JSON-LD形式のDatasetを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### データセット NGSI-v2 正規化例  
+
+JSON-LD形式のDatasetを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
   "type": "Dataset",  
   "dateCreated": {  
@@ -951,11 +1042,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### データセット NGSI-LD キー値 例  
-ここでは、DatasetをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### データセット NGSI-LD キー値 例  
+
+ここでは、DatasetをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
     "type": "Dataset",  
     "accessRights": "non-public",  
@@ -1092,11 +1187,15 @@ Dataset:
 }  
 ```  
 </details>  
-#### データセット NGSI-LD 正規化例  
-ここでは、JSON-LD形式のDatasetを正規化した例を示す。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+
+#### データセット NGSI-LD 正規化例  
+
+ここでは、JSON-LD形式のDatasetを正規化した例を示す。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
     "type": "Dataset",  
     "accessRights": {  
@@ -1371,12 +1470,21 @@ Dataset:
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  
