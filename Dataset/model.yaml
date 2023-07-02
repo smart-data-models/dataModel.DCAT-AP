@@ -428,6 +428,7 @@ Dataset:
       type: array
       x-ngsi:
         model: dct:Location
+        type: GeoProperty
     spatialResolution:
       description: 'Property. Model:''dcat:spatialResolutionIn Meters''. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters'
       items:
