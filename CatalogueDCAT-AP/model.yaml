@@ -393,6 +393,7 @@ CatalogueDCAT-AP:
       type: array
       x-ngsi:
         model: dct:spatial
+        type: GeoProperty
     themes:
       description: 'Property. Model:''dcat:themeTaxonomy''. This property refers to a knowledge organization system used to classify the Catalogue''s Datasets.'
       items:
