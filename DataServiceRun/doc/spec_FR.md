@@ -1,32 +1,59 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : DataServiceRun  
-=======================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceRun/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-## Liste des propriétés  
+Entité : DataServiceRun  
+=======================
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propriétés requises  
-- Aucune propriété requise  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Ce modèle de données ne fait pas partie de la norme DCAT 2.1.0, il s'agit d'une extension qui sera proposée pour adoption.  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## Modèle de données description des propriétés  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceRun/LICENSE.md)  
+
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+## Liste des propriétés  
+
+
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+Propriétés requises  
+- Aucune propriété requise  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+Ce modèle de données ne fait pas partie de la norme DCAT 2.1.0, il s'agit d'une extension qui sera proposée pour adoption.  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## Modèle de données description des propriétés  
+
+Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 DataServiceRun:    
   description: A representation of one specific run of a data service (e.g. DataServiceDCAT-AP).    
   properties:    
@@ -192,16 +219,25 @@ DataServiceRun:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Exemples de charges utiles  
-#### DataServiceRun Valeurs clés NGSI-v2 Exemple  
-Voici un exemple de DataServiceRun au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## Exemples de charges utiles  
+
+#### DataServiceRun Valeurs clés NGSI-v2 Exemple  
+
+Voici un exemple de DataServiceRun au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": [  
@@ -237,11 +273,15 @@ DataServiceRun:
 }  
 ```  
 </details>  
-#### DataServiceRun NGSI-v2 normalisé Exemple  
-Voici un exemple de DataServiceRun au format JSON-LD tel que normalisé. Ce format est compatible avec les NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+
+#### DataServiceRun NGSI-v2 normalisé Exemple  
+
+Voici un exemple de DataServiceRun au format JSON-LD tel que normalisé. Ce format est compatible avec les NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": {  
@@ -302,17 +342,21 @@ DataServiceRun:
     "value": "urn:ngsi-ld:DataServiceDCAT-AP:example"  
   },      
   "@context": [  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    2.1.0  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
 ]  
 }  
 ```  
 </details>  
-#### DataServiceRun Valeurs clés NGSI-LD Exemple  
-Voici un exemple de DataServiceRun au format JSON-LD en tant que valeurs-clés. Ce format est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+
+#### DataServiceRun Valeurs clés NGSI-LD Exemple  
+
+Voici un exemple de DataServiceRun au format JSON-LD en tant que valeurs-clés. Ce format est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": [  
@@ -346,17 +390,21 @@ DataServiceRun:
   ],  
   "service": "urn:ngsi-ld:DataServiceDCAT-AP:example",  
   "@context": [  
-      "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      2.1.0  
       "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-#### DataServiceRun NGSI-LD normalisé Exemple  
-Voici un exemple de DataServiceRun au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+
+#### DataServiceRun NGSI-LD normalisé Exemple  
+
+Voici un exemple de DataServiceRun au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
     "type": "DataServiceRun",  
     "configuration": {  
@@ -417,17 +465,26 @@ DataServiceRun:
         "object": "urn:ngsi-ld:DataServiceDCAT-AP:example"  
     },  
     "@context": [  
-      "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      2.1.0  
       "https://raw.githubusercontent.com/smart-data-models/dataModel.DataServices/master/context.jsonld"  
   ]  
   }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

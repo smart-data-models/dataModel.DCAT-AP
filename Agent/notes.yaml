@@ -1,0 +1,5 @@
+notesHeader:
+  Adapted from [DCAT-AP version 2.1.1](https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1). Original type attribute of DCAT 2.1.1 has been renamed to Type to allow its use with NGSI-LD
+notesMiddle:
+
+notesFooter:

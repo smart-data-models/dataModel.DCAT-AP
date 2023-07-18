@@ -1,0 +1,205 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "1.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Catalogue/schema.json",
+  "title": " Smart Data Models - CatalogueDCAT-AP",
+  "description": "Catalogue of datasets compliant with DCAT-AP specification version 2.1.1.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Catalogue"
+          ],
+          "description": "Property. Model:'https://schema.org/Text'. It has to be Catalogue"
+        },
+         "id": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
+        },
+        "description": {
+          "type": "array",
+          "description": "Property. This property contains a free-text account of\nthe Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 8 of the pdf document https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1",
+          "items": {
+            "type": "string",
+            "description": "Property. Catalog description in different languages"
+          }
+        },
+        "publisher": {
+          "type": "string",
+          "description": "Property. This property refers to an entity (organisation) responsible for making the Catalogue available. Model:'http://xmlns.com/foaf/0.1/Agent'"
+        },
+        "title": {
+          "type": "array",
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name. Model:'rdfs:Literal'",
+          "items": {
+            "type": "string",
+            "description": "Property. Title in different languages"
+          }
+        },
+        "dataset": {
+          "type": "array",
+          "description": "Relationship. This property links the Catalogue with a Dataset that is part of the Catalogue. Model:'http://www.w3.org/ns/dcat#dataset'",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ]
+          }
+        },
+        "service": {
+          "type": "array",
+          "description": "Relationship. This property refers to a site or end-point (Data Service) that is listed in the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check Model:'http://www.w3.org/ns/dcat#DataService'",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ],
+            "description": "Property. NGSI-LD id of the different services linked to the catalogue"
+          }
+        },
+        "homepage": {
+          "type": "string",
+          "format": "uri",
+          "description": "Property. Model:'http://xmlns.com/foaf/0.1/homepage'. This property refers to a web page that acts as the main page for the Catalogue."
+        },
+        "language": {
+          "type": "array",
+          "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.",
+          "items": {
+            "type": "string",
+            "description": "Property. Individual identifiers of the language"
+          }
+        },
+        "licence": {
+          "type": "string",
+          "description": "Property. Model:'http://purl.org/dc/terms/LicenseDocument'. This property refers to the licence under which the Catalogue can be used or reused."
+        },
+        "issued": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Catalogue."
+        },
+        "spatial": {
+          "type": "array",
+          "description": "GeoProperty. Model:'http://purl.org/dc/terms/Location'. This property refers to a geographical area covered by the Catalogue.",
+          "items": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location"
+          }
+        },
+        "themeTaxonomy": {
+          "type": "array",
+          "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#ConceptScheme'. This property refers to a knowledge organization system used to classify the Catalogue's Datasets.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "modified": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Catalogue was modified."
+        },
+        "hasPart": {
+          "type": "array",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a related Catalogue that is part of the described Catalogue",
+          "items": {
+            "type": "string",
+            "format": "uri",
+            "description": "Relationship. Every link to the related catalog"
+          }
+        },
+        "isPartOf": {
+          "type": "string",
+          "format": "uri",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a related Catalogue in which the described Catalogue is physically or logically included."
+        },
+        "record": {
+          "type": "array",
+          "description": "Relationship. This property refers to a Catalogue Record that is part of the Catalogue. Model:'http://www.w3.org/ns/dcat#CatalogRecord'",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ],
+            "description": "Relationship. Link to the catalog record"
+          }
+        },
+        "rights": {
+          "type": "string",
+          "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property refers to a statement that specifies rights associated with the Catalogue."
+        },
+        "catalog": {
+          "type": "array",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a catalog whose contents are of interest in the context of this catalog",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                "description": "Property. Identifier format of any NGSI entity"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Identifier format of any NGSI entity"
+              }
+            ],
+            "description": "Relationship. Every link to the contents of interest to the catalog "
+          }
+        },
+        "creator": {
+          "type": "array",
+          "description": "Relationship. Model:'http://xmlns.com/foaf/0.1/Agent'. The entities primarily responsible for producing the catalogue",
+          "items": {
+            "type": "string",
+            "description": "Relationship. Model:'http://xmlns.com/foaf/0.1/Agent'. The link to an entity primarily responsible for producing the catalogue"
+          }
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "description",
+    "publisher",
+    "title"
+  ]
+}

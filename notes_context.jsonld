@@ -1,11 +1,12 @@
 {
   "@context": {
+    "Activity": "https://www.w3.org/ns/prov#Activity",
     "Agent": "http://xmlns.com/foaf/0.1/Agent",
-    "Catalogue": "http://www.w3.org/ns/dcat#Catalog",
-    "CatalogueRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
+    "Catalog": "http://www.w3.org/ns/dcat#Catalog",
+    "CatalogRecord": "http://www.w3.org/ns/dcat#CatalogRecord",
     "Checksum": "http://spdx.org/rdf/terms#Checksum",
-    "Category": "http://www.w3.org/2004/02/skos/core#Concept",
-    "CategoryScheme": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "Concept": "http://www.w3.org/2004/02/skos/core#Concept",
+    "ConceptScheme": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
     "DataService": "http://www.w3.org/ns/dcat#DataService",
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
     "Distribution": "http://www.w3.org/ns/dcat#Distribution",

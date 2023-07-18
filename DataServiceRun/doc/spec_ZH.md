@@ -1,32 +1,59 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->
+  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体：数据服务运行  
-=========<!-- /10-Header -->  
-<!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceRun/LICENSE.md)  
-[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
 
-##属性列表  
+实体：数据服务运行  
+=========
+<!-- /10-Header -->
+  
+<!-- 15-License -->
+  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-所需属性  
-- 没有要求的属性  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-这个数据模型不属于DCAT 2.1.0标准，它是一个扩展，将被提议采用。  
-<!-- /40-RequiredProperties -->  
-<!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
+[开放许可](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceRun/LICENSE.md)  
+
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->
+  
+<!-- 20-Description -->
+  
+<!-- /20-Description -->
+  
+<!-- 30-PropertiesList -->
+  
+
+
+##属性列表  
+
+
+<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
+<!-- /30-PropertiesList -->
+  
+<!-- 35-RequiredProperties -->
+  
+
+所需属性  
+- 没有要求的属性  
+<!-- /35-RequiredProperties -->
+  
+<!-- 40-RequiredProperties -->
+  
+
+这个数据模型不属于DCAT 2.1.0标准，它是一个扩展，将被提议采用。  
+<!-- /40-RequiredProperties -->
+  
+<!-- 50-DataModelHeader -->
+  
+
+## 数据模型的属性描述  
+
+按字母顺序排列（点击查看详情）。  
+<!-- /50-DataModelHeader -->
+  
+<!-- 60-ModelYaml -->
+  
 <details><summary><strong>full yaml details</strong></summary>    
-```yaml  
+
+```yaml  
 DataServiceRun:    
   description: A representation of one specific run of a data service (e.g. DataServiceDCAT-AP).    
   properties:    
@@ -192,16 +219,25 @@ DataServiceRun:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### DataServiceRun NGSI-v2 key-values 示例  
-下面是一个以JSON-LD格式作为key-values的DataServiceRun的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<!-- /60-ModelYaml -->
+  
+<!-- 70-MiddleNotes -->
+  
+<!-- /70-MiddleNotes -->
+  
+<!-- 80-Examples -->
+  
+
+## ＃＃＃＃有效载荷的例子  
+
+#### DataServiceRun NGSI-v2 key-values 示例  
+
+下面是一个以JSON-LD格式作为key-values的DataServiceRun的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": [  
@@ -237,11 +273,15 @@ DataServiceRun:
 }  
 ```  
 </details>  
-#### DataServiceRun NGSI-v2规范化实例  
-下面是一个以JSON-LD格式规范化的DataServiceRun的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+
+#### DataServiceRun NGSI-v2规范化实例  
+
+下面是一个以JSON-LD格式规范化的DataServiceRun的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": {  
@@ -302,17 +342,21 @@ DataServiceRun:
     "value": "urn:ngsi-ld:DataServiceDCAT-AP:example"  
   },      
   "@context": [  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+    2.1.0  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
 ]  
 }  
 ```  
 </details>  
-#### DataServiceRun NGSI-LD关键值示例  
-下面是一个以JSON-LD格式作为key-values的DataServiceRun的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### DataServiceRun NGSI-LD关键值示例  
+
+下面是一个以JSON-LD格式作为key-values的DataServiceRun的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": [  
@@ -346,17 +390,21 @@ DataServiceRun:
   ],  
   "service": "urn:ngsi-ld:DataServiceDCAT-AP:example",  
   "@context": [  
-      "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      2.1.0  
       "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-#### DataServiceRun NGSI-LD规范化实例  
-下面是一个以JSON-LD格式规范化的DataServiceRun的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+
+#### DataServiceRun NGSI-LD规范化实例  
+
+下面是一个以JSON-LD格式规范化的DataServiceRun的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
-```json  
-{  
+
+```json  
+
+{  
     "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
     "type": "DataServiceRun",  
     "configuration": {  
@@ -417,17 +465,26 @@ DataServiceRun:
         "object": "urn:ngsi-ld:DataServiceDCAT-AP:example"  
     },  
     "@context": [  
-      "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+      2.1.0  
       "https://raw.githubusercontent.com/smart-data-models/dataModel.DataServices/master/context.jsonld"  
   ]  
   }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->
+  
+<!-- 90-FooterNotes -->
+  
+<!-- /90-FooterNotes -->
+  
+<!-- 95-Units -->
+  
+
+参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+<!-- /95-Units -->
+  
+<!-- 97-LastFooter -->
+  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+  

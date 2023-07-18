@@ -59,7 +59,7 @@
     "value": "urn:ngsi-ld:DataServiceDCAT-AP:example"
   },    
   "@context": [
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    2.1.0
     "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
 ]
 }

@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$schemaVersion": "1.0.1",
+  "modelTags": "",
+  "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Agent/schema.json",
+  "title": "Agent DCAT-AP 2.1.1 schema",
+  "description": "Agent Schema meeting DCAT-AP 2.1.1 specification",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Agent"
+          ],
+          "description": "Property. NGSI Entity type. It has to be Agent"
+        },
+        "id": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
+        },
+        "name": {
+          "type": "array",
+          "description": "Property. Model:'dct:description'. This property contains a name of the agent.  This property can be repeated for different  versions of the name (e.g. the name in  different languages)",
+          "items": {
+            "type": "string",
+            "minItems": 1,
+            "description": "Property. Every name in different languages"
+          }
+        },
+        "Type": {
+          "type": "string",
+          "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a type of the agent that makes the Catalogue or Dataset available"
+        }
+
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "name"
+  ]
+}

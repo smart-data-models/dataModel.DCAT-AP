@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$id": "https://github.com/smart-data-models/dataModel.DCAT-AP/master/DataServiceRun/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataServiceRun/schema.json",
   "$schemaVersion": "0.0.1",
   "title": " Smart Data Models - Data Service Run extension to DCAT-AP",
   "description": "A representation of one specific run of a data service (e.g. DataServiceDCAT-AP).",
