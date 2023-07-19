@@ -4,7 +4,7 @@
   "accessService": [
     ""
   ],
-  "accessUrl": [
+  "accessURL": [
     "https://datos.comunidad.madrid/catalogo/dataset/134210b4-3fbc-457d-8064-18d6d8cc785e/resource/fca9a0ef-60b3-44bc-8a69-c17d607b122d/download/alojamientos_turisticos.csv"
   ],
   "address": {
@@ -19,7 +19,8 @@
   "byteSize": 43503,
   "checksum": "H3FR.",
   "compressionFormat": "",
-  "description": "Distribution of open data portals in csv",
+  "description": [
+    "Distribution of open data portals in csv"],
   "page": [],
   "downloadURL": [
     "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",

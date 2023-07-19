@@ -7,10 +7,10 @@
       ""
     ]
   },
-  "accessUrl": {
+  "accessURL": {
     "type": "Property",
     "value": [
-      ""
+      "https://datos.comunidad.madrid/catalogo/dataset/134210b4-3fbc-457d-8064-18d6d8cc785e/resource/fca9a0ef-60b3-44bc-8a69-c17d607b122d/download/alojamientos_turisticos.csv"
     ]
   },
   "address": {
@@ -53,7 +53,9 @@
   },
   "description": {
     "type": "Property",
-    "value": ["Distribution of open data portals in csv"]
+    "value": [
+      "Distribution of open data portals in csv"
+    ]
   },
   "documentation": {
     "type": "Property",
