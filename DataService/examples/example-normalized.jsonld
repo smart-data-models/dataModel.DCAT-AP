@@ -1,6 +1,6 @@
 {
-    "id": "urn:ngsi-ld:DataServiceDCAT-AP:id:JBDJ:56257192",
-    "type": "DataServiceDCAT-AP",
+    "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",
+    "type": "DataService",
     "accessRights": {
         "type": "Property",
         "value": "No restrictions to access the data but APi requests limit, 5000 requests per hour"
@@ -16,33 +16,11 @@
             "postOfficeBoxNumber": ""
         }
     },
-    "alternateName": {
-        "type": "Property",
-        "value": ""
-    },
     "areaServed": {
         "type": "Property",
         "value": "European union and beyond"
     },
-    "dataProvider": {
-        "type": "Property",
-        "value": "European open data portal"
-    },
-    "dataServiceDescription": {
-        "type": "Property",
-        "value": [
-            "Digital resources for accessing to the end points of the EU open data portal for solar system.",
-            "Recursos digitales para el acceso a los puntos de interacci\u00f3n del portal europeo de datos abiertos del sistema solar."
-        ]
-    },
-    "dateCreated": {
-        "type": "Property",
-        "value": {
-            "@type": "DateTime",
-            "@value": "2020-10-28T04:19:29Z"
-        }
-    },
-    "dateModified": {
+    "modified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
@@ -72,7 +50,7 @@
         "value": "EUPL."
     },
     "location": {
-        "type": "Property",
+        "type": "GeoProperty",
         "value": {
             "type": "Point",
             "coordinates": [
@@ -81,24 +59,6 @@
             ]
         }
     },
-    "name": {
-        "type": "Property",
-        "value": ""
-    },
-    "owner": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:HGSY:92686457",
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:JCJR:29622597"
-        ]
-    },
-    "seeAlso": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:JDKD:53476147",
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:XVJQ:09725114"
-        ]
-    },
     "servesDataset": {
         "type": "Property",
         "value": [
@@ -106,34 +66,11 @@
             "EU physical map"
         ]
     },
-    "source": {
-        "type": "Property",
-        "value": ""
-    },
     "title": {
         "type": "Property",
         "value": [
             "Data service of the european open data portal",
             "Data service del portal europeo de datos abiertos"
-        ]
-    },
-    "configuration": {
-        "type": "Property",
-        "value": [
-          "format"
-        ]
-      },
-    "contactPoint": {
-        "type": "Property",
-        "value": {
-            "name": "contact point for european open data portal.",
-            "url": "https://data.europa.eu/en/contact-us"
-        }
-    },
-    "assetProvider": {
-        "type": "Property",
-        "value": [
-            "https://op.europa.eu/en/home"
         ]
     },
     "@context": [

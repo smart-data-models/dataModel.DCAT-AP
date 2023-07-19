@@ -45,7 +45,7 @@
         },
         "distribution": {
           "type": "array",
-          "description": "Property. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'",
+          "description": "Relationship. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'",
           "items": {
             "type": "string",
             "format": "uri",
@@ -142,7 +142,7 @@
         },
         "isReferencedBy": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.",
+          "description": "Relationship. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.",
           "items": {
             "type": "string",
             "format": "uri",
@@ -242,7 +242,7 @@
           }
         },
         "spatialResolutionInMeters": {
-          "type": "array",
+          "type": "number",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters."
         },
         "temporalResolution": {

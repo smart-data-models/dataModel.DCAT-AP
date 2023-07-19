@@ -1,46 +1,6 @@
 {
   "id": "urn:ngsi-ld:id:ZLHO:07918336",
-  "type": "AgentDCAT-AP",
-  "dateCreated": {
-    "type": "DateTime",
-    "value": "1988-07-01T14:50:52Z"
-  },
-  "dateModified": {
-    "type": "DateTime",
-    "value": "2000-06-02T13:25:42Z"
-  },
-  "source": {
-    "type": "Text",
-    "value": "Any source for an Agent."
-  },
-  "name": {
-    "type": "Text",
-    "value": "Agent 10."
-  },
-  "alternateName": {
-    "type": "Text",
-    "value": "Agent-10."
-  },
-  "description": {
-    "type": "Text",
-    "value": "organization the Agent 10 belongs to."
-  },
-  "dataProvider": {
-    "type": "Text",
-    "value": ""
-  },
-  "owner": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:Agent:TBSV:39232621"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:AgentAECY:13995407"
-    ]
-  },
+  "type": "Agent",
   "location": {
     "type": "geo:json",
     "value": {
@@ -63,14 +23,14 @@
       "areaServed": "European Union"
     }
   },
-  "agentName": {
+  "name": {
     "type": "array",
     "value": [
       "Agent 10",
       "Agente 10"
     ]
   },
-  "agentType": {
+  "Type": {
     "type": "Text",
     "value": "EU Publications office"
   }

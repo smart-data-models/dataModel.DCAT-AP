@@ -1,22 +1,6 @@
 {
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",
-  "type": "CatalogueDCAT-AP",
-  "dateCreated": {
-    "type": "DateTime",
-    "value": "1980-03-03T10:01:24Z"
-  },
-  "dateModified": {
-    "type": "DateTime",
-    "value": "1987-12-04T10:44:40Z"
-  },
-  "source": {
-    "type": "Text",
-    "value": ""
-  },
-  "name": {
-    "type": "Text",
-    "value": "Catalogue"
-  },
+  "type": "Catalogue",
   "alternateName": {
     "type": "Text",
     "value": ""
@@ -24,22 +8,6 @@
   "description": {
     "type": "Text",
     "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."
-  },
-  "dataProvider": {
-    "type": "Text",
-    "value": "european open data portal"
-  },
-  "owner": {
-    "type": "Array",
-    "value": [
-      "urn:ngsi-ld:Catalogue:ZYKY:89462950"
-    ]
-  },
-  "seeAlso": {
-    "type": "Array",
-    "value": [
-      "urn:ngsi-ld:Catalogue:ILBA:60770941"
-    ]
   },
   "location": {
     "type": "geo:json",
@@ -64,11 +32,11 @@
     }
   },
   "dataset": {
-    "type": "object",
-    "value": "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"
+    "type": "array",
+    "value": ["urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"]
   },
   "publisher": {
-    "type": "Property",
+    "type": "Text",
     "value": "spanish open data portal"
   },
   "title": {
@@ -79,26 +47,26 @@
     ]
   },
   "homepage": {
-    "type": "string",
+    "type": "Text",
     "value": "urn:ngsi-ld:Catalogue:homepage:ZFAW:13633782"
   },
   "language": {
-    "type": "Array",
+    "type": "array",
     "value": [
       "Town size computer way. Since challenge phone state listen south low.",
       "Eight once single. Build every kid."
     ]
   },
   "licence": {
-    "type": "Property",
+    "type": "Text",
     "value": "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."
   },
-  "releaseDate": {
+  "issued": {
     "type": "DateTime",
     "value": "2004-08-22T22:32:47Z"
   },
-  "spatial_geographic": {
-    "type": "Property",
+  "spatial": {
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -107,23 +75,23 @@
       ]
     }
   },
-  "themes": {
-    "type": "Array",
+  "themeTaxonomy": {
+    "type": "array",
     "value": [
-      "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",
-      "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."
+      "Tourism",
+      "Economy"
     ]
   },
-  "modificationDate": {
+  "modified": {
     "type": "DateTime",
     "value": "1982-09-02T03:16:28Z"
   },
   "hasPart": {
-    "type": "object",
-    "value": "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"
+    "type": "array",
+    "value": ["urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"]
   },
   "isPartOf": {
-    "type": "object",
+    "type": "Text",
     "value": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"
   },
   "record": {
@@ -134,10 +102,10 @@
     ]
   },
   "rights": {
-    "type": "Property",
+    "type": "Text",
     "value": "Open source"
   },
-  "catalogue": {
+  "catalog": {
     "type": "Array",
     "value": [
       "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
@@ -145,7 +113,7 @@
     ]
   },
   "creator": {
-    "type": "Text",
-    "value": "Role fact sport shoulder blue direction probably order."
+    "type": "array",
+    "value": ["Role fact sport shoulder blue direction probably order."]
   }
 }

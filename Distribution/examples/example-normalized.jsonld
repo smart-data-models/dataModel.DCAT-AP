@@ -23,10 +23,6 @@
             "postOfficeBoxNumber": ""
         }
     },
-    "alternateName": {
-        "type": "Property",
-        "value": "csv"
-    },
     "areaServed": {
         "type": "Property",
         "value": "European Union."
@@ -58,7 +54,7 @@
             "@value": "1993-08-16T05:35:56Z"
         }
     },
-    "dateModified": {
+    "modified": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
@@ -99,7 +95,7 @@
         "type": "Property",
         "value": "CC-BY"
     },
-    "linkedSchemas": {
+    "conformsTo": {
         "type": "Property",
         "value": []
     },
@@ -124,22 +120,11 @@
             "@value": "1986-03-28T19:56:43Z"
         }
     },
-    "name": {
-        "type": "Property",
-        "value": "csv portals distribution"
-    },
-    "owner": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",
-            "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"
-        ]
-    },
     "packagingFormat": {
         "type": "Property",
         "value": "zip"
     },
-    "releaseDate": {
+    "issued": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
@@ -150,18 +135,7 @@
         "type": "Property",
         "value": "copyleft"
     },
-    "seeAlso": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",
-            "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"
-        ]
-    },
-    "source": {
-        "type": "Property",
-        "value": ""
-    },
-    "spatialResolution": {
+    "spatialResolutionInMeters": {
         "type": "Property",
         "value": [
             0.5,

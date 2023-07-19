@@ -1,6 +1,6 @@
 {
     "id": "urn:ngsi-ld:id:ZLHO:07918336",
-    "type": "AgentDCAT-AP",
+    "type": "Agent",
     "address": {
         "streetAddress": "2 Rue Mercier",
         "addressLocality": "Luxembourg",
@@ -10,15 +10,11 @@
         "postOfficeBoxNumber": "",
         "areaServed": "European Union"
     },
-    "agentName": [
+    "name": [
         "Agent 10",
         "Agente 10"
     ],
-    "agentType": "EU Publications office",
-    "alternateName": "Agent-10.",
-    "dataProvider": "",
-    "dateCreated": "1988-07-01T14:50:52Z",
-    "dateModified": "2000-06-02T13:25:42Z",
+    "Type": "EU Publications office",
     "description": "organization the Agent 10 belongs to.",
     "location": {
         "type": "Point",
@@ -27,14 +23,7 @@
             -149.532943
         ]
     },
-    "name": "Agent 10.",
-    "owner": [
-        "urn:ngsi-ld:Agent:TBSV:39232621"
-    ],
-    "seeAlso": [
-        "urn:ngsi-ld:AgentAECY:13995407"
-    ],
-    "source": "Any source for an Agent.",
+
     "@context": [
         "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
     ]

@@ -1,6 +1,6 @@
 {
     "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",
-    "type": "CatalogueDCAT-AP",
+    "type": "Catalogue",
     "address": {
         "streetAddress": "2 Rue Mercier",
         "addressLocality": "Luxembourg",

@@ -8,18 +8,6 @@
     "type": "DateTime",
     "value": "1970-07-14T10:48:19Z"
   },
-  "source": {
-    "type": "Text",
-    "value": ""
-  },
-  "name": {
-    "type": "Text",
-    "value": "csv portals distribution"
-  },
-  "alternateName": {
-    "type": "Text",
-    "value": "csv"
-  },
   "description": {
     "type": "Text",
     "value": "Distribution of open data portals in csv"
@@ -27,20 +15,6 @@
   "dataProvider": {
     "type": "Text",
     "value": "Meloda.org"
-  },
-  "owner": {
-    "type": "Text",
-    "value": [
-      "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",
-      "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"
-    ]
-  },
-  "seeAlso": {
-    "type": "array",
-    "value": [
-      "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",
-      "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"
-    ]
   },
   "location": {
     "type": "geo:json",
@@ -126,7 +100,7 @@
       "ES"
     ]
   },
-  "linkedSchemas": {
+  "conformsTo": {
     "type": "array",
     "value": [
     ]
@@ -139,7 +113,7 @@
     "type": "Text",
     "value": "zip"
   },
-  "releaseDate": {
+  "issued": {
     "type": "DateTime",
     "value": "1997-05-06T05:04:10Z"
   },
@@ -147,7 +121,7 @@
     "type": "Text",
     "value": "copyleft"
   },
-  "spatialResolution": {
+  "spatialResolutionInMeters": {
     "type": "array",
     "value": [
       0.5,
@@ -171,7 +145,7 @@
       "Dataset base"
     ]
   },
-  "modifiedDate": {
+  "modified": {
     "type": "DateTime",
     "value": "1986-03-28T19:56:43Z"
   }

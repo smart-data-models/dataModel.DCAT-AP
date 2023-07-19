@@ -5,7 +5,7 @@
     ""
   ],
   "accessUrl": [
-    ""
+    "https://datos.comunidad.madrid/catalogo/dataset/134210b4-3fbc-457d-8064-18d6d8cc785e/resource/fca9a0ef-60b3-44bc-8a69-c17d607b122d/download/alojamientos_turisticos.csv"
   ],
   "address": {
     "addressCountry": "Luxembourg",
@@ -15,17 +15,12 @@
     "postalCode": "24004",
     "streetAddress": "Luxembourg platz 2"
   },
-  "alternateName": "csv",
-  "areaServed": "European Union.",
   "availability": "yes",
   "byteSize": 43503,
   "checksum": "H3FR.",
   "compressionFormat": "",
-  "dataProvider": "Meloda.org",
-  "dateCreated": "1993-08-16T05:35:56Z",
-  "dateModified": "1970-07-14T10:48:19Z",
   "description": "Distribution of open data portals in csv",
-  "documentation": [],
+  "page": [],
   "downloadURL": [
     "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
     "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
@@ -37,7 +32,7 @@
     "ES"
   ],
   "license": "CC-BY",
-  "linkedSchemas": [],
+  "conformsTo": [],
   "location": {
     "coordinates": [
       -67.057831,
@@ -46,21 +41,12 @@
     "type": "Point"
   },
   "mediaType": "",
-  "modifiedDate": "1986-03-28T19:56:43Z",
-  "name": "csv portals distribution",
-  "owner": [
-    "urn:ngsi-ld:DistributionDCAT-AP:items:HZAC:24935175",
-    "urn:ngsi-ld:DistributionDCAT-AP:items:AQGQ:50019342"
-  ],
+  "modified": "1986-03-28T19:56:43Z",
+
   "packagingFormat": "zip",
-  "releaseDate": "1997-05-06T05:04:10Z",
+  "issued": "1997-05-06T05:04:10Z",
   "rights": "copyleft",
-  "seeAlso": [
-    "urn:ngsi-ld:DistributionDCAT-AP:items:TYQY:03354957",
-    "urn:ngsi-ld:DistributionDCAT-AP:items:VZQW:12690544"
-  ],
-  "source": "",
-  "spatialResolution": [
+  "spatialResolutionInMeters": [
     0.5,
     0.5
   ],
