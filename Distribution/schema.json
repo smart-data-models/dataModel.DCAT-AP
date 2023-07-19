@@ -142,7 +142,7 @@
         },
         "temporalResolution": {
           "type": "string",
-          "format": "date-time",
+          "format": "duration",
           "description": "Property. Model:'http://www.w3.org/2001/XMLSchema#duration'. This property refers to the minimum time period resolvable in the dataset. "
         },
         "title": {

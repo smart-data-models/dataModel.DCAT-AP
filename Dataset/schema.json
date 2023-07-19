@@ -250,7 +250,7 @@
           "description": "Property. Model:'http://purl.org/dc/terms/PeriodOfTime'. This property refers to the minimum time period resolvable in the dataset. ",
           "items": {
             "type": "string",
-            "format": "date-time",
+            "format": "duration",
             "description": "Property. Every temporal resolution included"
           }
         },
@@ -289,7 +289,7 @@
   "required": [
     "id",
     "type",
-    "datasetDescription",
+    "description",
     "title"
   ]
 }

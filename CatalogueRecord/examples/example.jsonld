@@ -11,7 +11,7 @@
     },
     "areaServed": "European Union and beyond",
     "modified": "2021-07-02T18:37:55Z",
-    "description": "Catalogue record of the solar system open data portal",
+    "description": ["Catalogue record of the solar system open data portal"],
     "language": [
         "EN",
         "ES"

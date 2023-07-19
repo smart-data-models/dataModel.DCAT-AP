@@ -1,68 +1,62 @@
 {
-    "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",
-    "type": "DistributionDCAT-AP",
-    "accessService": [
-        ""
+  "id": "urn:ngsi-ld:Distribution:id:NUZE:76215118",
+  "type": "Distribution",
+  "accessService": [
+    ""
+  ],
+  "accessUrl": [
+    "https://datos.comunidad.madrid/catalogo/dataset/134210b4-3fbc-457d-8064-18d6d8cc785e/resource/fca9a0ef-60b3-44bc-8a69-c17d607b122d/download/alojamientos_turisticos.csv"
+  ],
+  "address": {
+    "addressCountry": "Luxembourg",
+    "addressLocality": "Luxembourg",
+    "addressRegion": "Luxembourg",
+    "postOfficeBoxNumber": "",
+    "postalCode": "24004",
+    "streetAddress": "Luxembourg platz 2"
+  },
+  "availability": "yes",
+  "byteSize": 43503,
+  "checksum": "H3FR.",
+  "compressionFormat": "",
+  "description": [
+    "Distribution of open data portals in csv"
+  ],
+  "page": [],
+  "downloadURL": [
+    "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
+    "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
+  ],
+  "format": " text/csv",
+  "hasPolicy": "Open data policy.",
+  "language": [
+    "EN",
+    "ES"
+  ],
+  "license": "CC-BY",
+  "conformsTo": [],
+  "location": {
+    "coordinates": [
+      -67.057831,
+      67.968509
     ],
-    "accessUrl": [
-        ""
-    ],
-    "address": {
-        "addressCountry": "Luxembourg",
-        "addressLocality": "Luxembourg",
-        "addressRegion": "Luxembourg",
-        "postOfficeBoxNumber": "",
-        "postalCode": "24004",
-        "streetAddress": "Luxembourg platz 2"
-    },
-    "alternateName": "csv",
-    "areaServed": "European Union.",
-    "availability": "yes",
-    "byteSize": 43503,
-    "checksum": "H3FR.",
-    "compressionFormat": "",
-    "dataProvider": "Meloda.org",
-    "dateCreated": "1993-08-16T05:35:56Z",
-    "dateModified": "1970-07-14T10:48:19Z",
-    "description": "Distribution of open data portals in csv",
-    "documentation": [],
-    "downloadURL": [
-        "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
-        "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
-    ],
-    "format": " text/csv",
-    "hasPolicy": "Open data policy.",
-    "language": [
-        "EN",
-        "ES"
-    ],
-    "license": "CC-BY",
-    "conformsTo": [],
-    "location": {
-        "coordinates": [
-            -67.057831,
-            67.968509
-        ],
-        "type": "Point"
-    },
-    "mediaType": "",
-    "modified": "1986-03-28T19:56:43Z",
-    "packagingFormat": "zip",
-    "issued": "1997-05-06T05:04:10Z",
-    "rights": "copyleft",
-    "spatialResolutionInMeters": [
-        0.5,
-        0.5
-    ],
-    "status": "Withdrawn",
-    "temporalResolution": [
-        2,
-        10
-    ],
-    "title": [
-        "Dataset base"
-    ],
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
-    ]
+    "type": "Point"
+  },
+  "mediaType": "",
+  "modified": "1986-03-28T19:56:43Z",
+  "packagingFormat": "zip",
+  "issued": "1997-05-06T05:04:10Z",
+  "rights": "copyleft",
+  "spatialResolutionInMeters": [
+    0.5,
+    0.5
+  ],
+  "status": "Withdrawn",
+  "temporalResolution": "PT15S",
+  "title": [
+    "Dataset base"
+  ],
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+  ]
 }

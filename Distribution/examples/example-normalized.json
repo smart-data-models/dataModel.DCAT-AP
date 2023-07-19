@@ -1,20 +1,11 @@
 {
-  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",
-  "dateCreated": {
-    "type": "DateTime",
-    "value": "1993-08-16T05:35:56Z"
-  },
-  "dateModified": {
-    "type": "DateTime",
-    "value": "1970-07-14T10:48:19Z"
-  },
+  "id": "urn:ngsi-ld:Distribution:id:NUZE:76215118",
+  "type": "Distribution",
   "description": {
     "type": "Text",
-    "value": "Distribution of open data portals in csv"
-  },
-  "dataProvider": {
-    "type": "Text",
-    "value": "Meloda.org"
+    "value": [
+      "Distribution of open data portals in csv"
+    ]
   },
   "location": {
     "type": "geo:json",
@@ -36,10 +27,6 @@
       "postalCode": "24004",
       "postOfficeBoxNumber": ""
     }
-  },
-  "areaServed": {
-    "type": "Text",
-    "value": "European Union."
   },
   "accessUrl": {
     "type": "array",
@@ -77,7 +64,7 @@
     "type": "Text",
     "value": ""
   },
-  "documentation": {
+  "page": {
     "type": "array",
     "value": [
     ]
@@ -134,10 +121,7 @@
   },
   "temporalResolution": {
     "type": "array",
-    "value": [
-      2,
-      10
-    ]
+    "value": "PT17S"
   },
   "title": {
     "type": "array",

@@ -1,13 +1,9 @@
 {
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",
   "type": "Catalogue",
-  "alternateName": {
-    "type": "Text",
-    "value": ""
-  },
   "description": {
-    "type": "Text",
-    "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."
+    "type": "array",
+    "value": ["Interesting art recently book girl yard represent book. Garden style wish blood your ground size."]
   },
   "location": {
     "type": "geo:json",

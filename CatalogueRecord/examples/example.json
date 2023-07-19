@@ -1,7 +1,7 @@
 {
   "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",
   "type": "CatalogueRecord",
-  "description": "Catalogue record of the solar system open data portal",
+  "description": ["Catalogue record of the solar system open data portal"],
   "location": {
     "type": "Point",
     "coordinates": [

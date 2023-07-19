@@ -1,6 +1,6 @@
 {
-  "id": "urn:ngsi-ld:DistributionDCAT-AP:id:NUZE:76215118",
-  "type": "DistributionDCAT-AP",
+  "id": "urn:ngsi-ld:Distribution:id:NUZE:76215118",
+  "type": "Distribution",
   "accessService": [
     ""
   ],
@@ -51,10 +51,8 @@
     0.5
   ],
   "status": "Withdrawn",
-  "temporalResolution": [
-    2,
-    10
-  ],
+  "temporalResolution":
+    "PT15M",
   "title": [
     "Dataset base"
   ]

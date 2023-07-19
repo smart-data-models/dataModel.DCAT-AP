@@ -194,7 +194,7 @@
   "temporalResolution": {
     "type": "array",
     "value": [
-      0.1
+      "PT15M"
     ]
   },
   "Type": {

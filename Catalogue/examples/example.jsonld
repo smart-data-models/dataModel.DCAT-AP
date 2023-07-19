@@ -1,79 +1,69 @@
 {
-    "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",
-    "type": "Catalogue",
-    "address": {
-        "streetAddress": "2 Rue Mercier",
-        "addressLocality": "Luxembourg",
-        "addressRegion": "Luxembourg",
-        "addressCountry": "Luxembourg",
-        "postalCode": "2985 ",
-        "postOfficeBoxNumber": "",
-        "areaServed": "European Union"
-    },
-    "alternateName": "",
-    "catalogue": [
-        "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
-        "urn:ngsi-ld:Catalogue:items:PECX:02526105"
-    ],
-    "creator": "Role fact sport shoulder blue direction probably order.",
-    "dataProvider": "european open data portal",
-    "dataset": [
-        "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"
-    ],
-    "dateCreated": "1980-03-03T10:01:24Z",
-    "dateModified": "1987-12-04T10:44:40Z",
-    "description": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size.",
-    "hasPart": [
-        "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"
-    ],
-    "homepage": "ngsi-ld:Catalogue:homepage:ZFAW:13633782",
-    "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287",
-    "language": [
-        "ES",
-        "DE"
-    ],
-    "licence": "Creative Commons 3.0 International",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -83.400987,
-            0.152532
-        ]
-    },
-    "modificationDate": "1982-09-02T03:16:28Z",
-    "name": "Catalogue",
-    "owner": [
-        "urn:ngsi-ld:Catalogue:ZYKY:89462950"
-    ],
-    "publisher": "Spanish data portal",
-    "record": [
-        "Catalogue.items.HLGA.73285516",
-        "Catalogue.items.IHOB.85266800"
-    ],
-    "releaseDate": "2004-08-22T22:32:47Z",
-    "rights": "",
-    "seeAlso": [
-        "urn:ngsi-ld:Catalogue:ILBA:60770941"
-    ],
-    "source": "",
-    "spatial_geographic": [
-        {
-            "type": "Point",
-            "coordinates": [
-                57.234944,
-                52.840273
-            ]
-        }
-    ],
-    "themes": [
-        "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",
-        "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."
-    ],
-    "title": [
-        "title first",
-        "Secondary title."
-    ],
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+  "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",
+  "type": "Catalogue",
+  "address": {
+    "streetAddress": "2 Rue Mercier",
+    "addressLocality": "Luxembourg",
+    "addressRegion": "Luxembourg",
+    "addressCountry": "Luxembourg",
+    "postalCode": "2985 ",
+    "postOfficeBoxNumber": "",
+    "areaServed": "European Union"
+  },
+  "catalogue": [
+    "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
+    "urn:ngsi-ld:Catalogue:items:PECX:02526105"
+  ],
+  "creator": ["Role fact sport shoulder blue direction probably order."],
+  "dataset": [
+    "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"
+  ],
+  "description": [
+    "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."
+  ],
+  "hasPart": [
+    "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"
+  ],
+  "homepage": "ngsi-ld:Catalogue:homepage:ZFAW:13633782",
+  "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287",
+  "language": [
+    "ES",
+    "DE"
+  ],
+  "licence": "Creative Commons 3.0 International",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -83.400987,
+      0.152532
     ]
+  },
+  "modified": "1982-09-02T03:16:28Z",
+  "publisher": "Spanish data portal",
+  "record": [
+    "Catalogue.items.HLGA.73285516",
+    "Catalogue.items.IHOB.85266800"
+  ],
+  "issued": "2004-08-22T22:32:47Z",
+  "rights": "",
+  "spatial": [
+    {
+      "type": "Point",
+      "coordinates": [
+        57.234944,
+        52.840273
+      ]
+    }
+  ],
+  "themeTaxonomy": [
+    "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",
+    "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."
+  ],
+  "title": [
+    "title first",
+    "Secondary title."
+  ],
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+  ]
 }

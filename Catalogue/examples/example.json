@@ -1,8 +1,9 @@
 {
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",
   "type": "Catalogue",
-  "description": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size.",
-
+  "description": [
+    "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."
+  ],
   "location": {
     "type": "Point",
     "coordinates": [
@@ -61,6 +62,6 @@
     "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
     "urn:ngsi-ld:Catalogue:items:PECX:02526105"
   ],
-  "creator": ""
+  "creator": [""]
 }
 

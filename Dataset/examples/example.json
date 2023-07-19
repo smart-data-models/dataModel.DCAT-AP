@@ -111,7 +111,7 @@
   ],
   "spatialResolutionInMeters": 0.6,
   "temporalResolution": [
-    0.1
+    "PT15M"
   ],
   "Type": "",
   "version": "",
