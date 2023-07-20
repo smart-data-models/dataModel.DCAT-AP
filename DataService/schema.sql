@@ -1,3 +1,3 @@
-/* (Beta) Export of data model DataServiceDCAT-AP of the subject dataModel.DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE DataServiceDCAT-AP_type AS ENUM ('DataServiceDCAT-AP');
-CREATE TABLE DataServiceDCAT-AP (accessRights text, address json, alternateName text, areaServed text, assetProvider json, configuration json, contactPoint json, dataProvider text, dataServiceDescription json, dateCreated timestamp, dateModified timestamp, description text, endPointDescription json, endPointURL json, id text, license text, location json, name text, owner json, seeAlso json, servesDataset json, source text, title json, type DataServiceDCAT-AP_type);
+/* (Beta) Export of data model DataService of the subject dataModel.DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE DataService_type AS ENUM ('DataService');
+CREATE TABLE DataService (accessRights text, address json, areaServed text, description json, endPointDescription json, endPointURL json, id text, license text, location json, servesDataset json, title json, type DataService_type);
