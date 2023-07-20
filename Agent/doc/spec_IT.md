@@ -1,26 +1,26 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: AgenteDCAT-AP  
-=====================<!-- /10-Header -->  
+Entità: Agente  
+==============<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licenza aperta](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/AgentDCAT-AP/LICENSE.md)  
+[Licenza aperta](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Agent/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descrizione globale: **Schema dell'agente conforme alle specifiche DCAT-AP 2.0**  
-versione: 0.0.1  
+Descrizione globale: **Schema dell'agente conforme alla specifica DCAT-AP 2.1.1**  
+versione: 1.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `agentName[array]`: Questa proprietà contiene un resoconto in testo libero della Distribuzione. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [dct:description](dct:description)- `agentType[string]`: Questa proprietà si riferisce a un tipo di agente che rende disponibile il catalogo o il dataset.  . Model: [dct:type](dct:type)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Tipo di entità NGSI. Deve essere AgenteDCAT-AP  <!-- /30-PropertiesList -->  
+- `Type[string]`: Proprietà. Modello:'http://www.w3.org/2004/02/skos/core#Concept'. Questa proprietà si riferisce a un tipo di agente che rende disponibile il catalogo o il dataset.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[array]`: Proprietà. Modello:'dct:description'. Questa proprietà contiene il nome dell'agente.  Questa proprietà può essere ripetuta per diverse versioni del nome (ad esempio, il nome in diverse lingue).  . Model: [dct:description](dct:description)- `type[string]`: Proprietà. Tipo di entità NGSI. Deve essere Agente  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
-- `agentName`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
+- `id`  - `name`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
+Adattato da [DCAT-AP versione 2.1.1](https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1). L'attributo type originale di DCAT 2.1.1 è stato rinominato in Type per consentirne l'uso con NGSI-LD.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
@@ -29,11 +29,17 @@
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-AgentDCAT-AP:    
-  description: 'Agent Schema meeting DCAT-AP 2.0 specification'    
+Agent:    
+  description: Agent Schema meeting DCAT-AP 2.1.1 specification    
   properties:    
+    Type:    
+      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a type of the agent that makes the Catalogue or Dataset available"    
+      type: string    
+      x-ngsi:    
+        model: "http://www.w3.org/2004/02/skos/core#Concept"    
+        type: Property    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
@@ -44,6 +50,9 @@ AgentDCAT-AP:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
@@ -53,75 +62,36 @@ AgentDCAT-AP:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
-    agentName:    
-      description: 'This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description'    
-      items:    
-        minitems: 1    
-        type: string    
-      type: array    
-      x-ngsi:    
-        model: dct:description    
-        type: Property    
-    agentType:    
-      description: 'This property refers to a type of the agent that makes the Catalogue or Dataset available'    
-      type: string    
-      x-ngsi:    
-        model: dct:type    
-        type: Property    
-    alternateName:    
-      description: 'An alternative name for this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    description:    
-      description: 'A description of this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
     id:    
-      anyOf: &agentdcat-ap_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -140,9 +110,9 @@ AgentDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -164,9 +134,9 @@ AgentDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -190,9 +160,9 @@ AgentDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -213,9 +183,9 @@ AgentDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -239,9 +209,9 @@ AgentDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -267,58 +237,38 @@ AgentDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: 'Property. Model:''dct:description''. This property contains a name of the agent.  This property can be repeated for different  versions of the name (e.g. the name in  different languages)'    
       items:    
-        anyOf: *agentdcat-ap_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        description: Property. Every name in different languages    
+        minItems: 1    
+        type: string    
       type: array    
       x-ngsi:    
-        type: Property    
-    seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: string    
-      x-ngsi:    
+        model: dct:description    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be AgentDCAT-AP'    
+      description: Property. NGSI Entity type. It has to be Agent    
       enum:    
-        - AgentDCAT-AP    
+        - Agent    
       type: string    
       x-ngsi:    
         type: Property    
   required:    
     - id    
     - type    
-    - agentName    
+    - name    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/AgentDCAT-AP/LICENSE.md    
-  x-model-schema: https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/AgentDCAT-AP/schema.json    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Agent/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/Agent/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 1.0.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -326,26 +276,14 @@ AgentDCAT-AP:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Esempi di payload  
-#### AgenteDCAT-AP NGSI-v2 valori-chiave Esempio  
-Ecco un esempio di AgentDCAT-AP in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+#### Agente NGSI-v2 valori-chiave Esempio  
+Ecco un esempio di agente in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:id:ZLHO:07918336",  
-  "type": "AgentDCAT-AP",  
-  "dateCreated": "1988-07-01T14:50:52Z",  
-  "dateModified": "2000-06-02T13:25:42Z",  
-  "source": "Any source for an Agent.",  
+  "type": "Agent",  
   "name": "Agent 10.",  
-  "alternateName": "Agent-10.",  
-  "description": "organization the Agent 10 belongs to.",  
-  "dataProvider": "",  
-  "owner": [  
-    "urn:ngsi-ld:Agent:TBSV:39232621"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:AgentAECY:13995407"  
-  ],  
   "location": {  
     "type": "Point",  
     "coordinates": [  
@@ -362,61 +300,21 @@ AgentDCAT-AP:
     "postOfficeBoxNumber": "",  
     "areaServed": "European Union"  
   },  
-  "agentName": [  
+  "name": [  
     "Agent 10",  
     "Agente 10"  
   ],  
-  "agentType": "EU Publications office"  
+  "Type": "EU Publications office"  
 }  
 ```  
 </details>  
-#### AgenteDCAT-AP NGSI-v2 normalizzato Esempio  
-Ecco un esempio di AgentDCAT-AP in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+#### Agente NGSI-v2 normalizzato Esempio  
+Ecco un esempio di Agente in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano le opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:id:ZLHO:07918336",  
-  "type": "AgentDCAT-AP",  
-  "dateCreated": {  
-    "type": "DateTime",  
-    "value": "1988-07-01T14:50:52Z"  
-  },  
-  "dateModified": {  
-    "type": "DateTime",  
-    "value": "2000-06-02T13:25:42Z"  
-  },  
-  "source": {  
-    "type": "Text",  
-    "value": "Any source for an Agent."  
-  },  
-  "name": {  
-    "type": "Text",  
-    "value": "Agent 10."  
-  },  
-  "alternateName": {  
-    "type": "Text",  
-    "value": "Agent-10."  
-  },  
-  "description": {  
-    "type": "Text",  
-    "value": "organization the Agent 10 belongs to."  
-  },  
-  "dataProvider": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Agent:TBSV:39232621"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:AgentAECY:13995407"  
-    ]  
-  },  
+  "type": "Agent",  
   "location": {  
     "type": "geo:json",  
     "value": {  
@@ -439,27 +337,27 @@ AgentDCAT-AP:
       "areaServed": "European Union"  
     }  
   },  
-  "agentName": {  
+  "name": {  
     "type": "array",  
     "value": [  
       "Agent 10",  
       "Agente 10"  
     ]  
   },  
-  "agentType": {  
+  "Type": {  
     "type": "Text",  
     "value": "EU Publications office"  
   }  
 }  
 ```  
 </details>  
-#### AgenteDCAT-AP Valori chiave NGSI-LD Esempio  
-Ecco un esempio di AgentDCAT-AP in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+#### Valori chiave dell'agente NGSI-LD Esempio  
+Ecco un esempio di agente in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:id:ZLHO:07918336",  
-    "type": "AgentDCAT-AP",  
+    "type": "Agent",  
     "address": {  
         "streetAddress": "2 Rue Mercier",  
         "addressLocality": "Luxembourg",  
@@ -469,15 +367,11 @@ AgentDCAT-AP:
         "postOfficeBoxNumber": "",  
         "areaServed": "European Union"  
     },  
-    "agentName": [  
+    "name": [  
         "Agent 10",  
         "Agente 10"  
     ],  
-    "agentType": "EU Publications office",  
-    "alternateName": "Agent-10.",  
-    "dataProvider": "",  
-    "dateCreated": "1988-07-01T14:50:52Z",  
-    "dateModified": "2000-06-02T13:25:42Z",  
+    "Type": "EU Publications office",  
     "description": "organization the Agent 10 belongs to.",  
     "location": {  
         "type": "Point",  
@@ -486,27 +380,19 @@ AgentDCAT-AP:
             -149.532943  
         ]  
     },  
-    "name": "Agent 10.",  
-    "owner": [  
-        "urn:ngsi-ld:Agent:TBSV:39232621"  
-    ],  
-    "seeAlso": [  
-        "urn:ngsi-ld:AgentAECY:13995407"  
-    ],  
-    "source": "Any source for an Agent.",  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
     ]  
 }  
 ```  
 </details>  
-#### AgenteDCAT-AP NGSI-LD normalizzato Esempio  
-Ecco un esempio di AgentDCAT-AP in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+#### Agente NGSI-LD normalizzato Esempio  
+Ecco un esempio di Agente in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:id:ZLHO:07918336",  
-    "type": "AgentDCAT-AP",  
+    "type": "Agent",  
     "address": {  
         "type": "Property",  
         "value": {  
@@ -519,42 +405,16 @@ AgentDCAT-AP:
             "areaServed": "European Union"  
         }  
     },  
-    "agentName": {  
+    "name": {  
         "type": "Property",  
         "value": [  
             "Agent 10",  
             "Agente 10"  
         ]  
     },  
-    "agentType": {  
+    "Type": {  
         "type": "Property",  
         "value": "EU Publications office"  
-    },  
-    "alternateName": {  
-        "type": "Property",  
-        "value": "Agent-10."  
-    },  
-    "dataProvider": {  
-        "type": "Property",  
-        "value": ""  
-    },  
-    "dateCreated": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "1988-07-01T14:50:52Z"  
-        }  
-    },  
-    "dateModified": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2000-06-02T13:25:42Z"  
-        }  
-    },  
-    "description": {  
-        "type": "Property",  
-        "value": "organization the Agent 10 belongs to."  
     },  
     "location": {  
         "type": "GeoProperty",  
@@ -565,26 +425,6 @@ AgentDCAT-AP:
                 -149.532943  
             ]  
         }  
-    },  
-    "name": {  
-        "type": "Property",  
-        "value": "Agent 10."  
-    },  
-    "owner": {  
-        "type": "Property",  
-        "value": [  
-            "urn:ngsi-ld:Agent:TBSV:39232621"  
-        ]  
-    },  
-    "seeAlso": {  
-        "type": "Property",  
-        "value": [  
-            "urn:ngsi-ld:AgentAECY:13995407"  
-        ]  
-    },  
-    "source": {  
-        "type": "Property",  
-        "value": "Any source for an Agent."  
     },  
     "@context": [  
         "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
