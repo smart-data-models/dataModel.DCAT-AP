@@ -1,10 +1,11 @@
-DataServiceDCAT-AP:
-  description: 'Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard'
+DataService:
+  description: 'Data Service adapted from DCAT-AP 2.1.1 specification, but extended with additional properties and compatible with NGSI standard'
   properties:
     accessRights:
-      description: 'Property. This property MAY include information regarding access or restrictions based on privacy, security, or other policies'
+      description: 'Property. Model:''http://purl.org/dc/terms/RightsStatement''. This property MAY include information regarding access or restrictions based on privacy, security, or other policies'
       type: string
       x-ngsi:
+        model: http://purl.org/dc/terms/RightsStatement
         type: Property
     address:
       description: The mailing address
@@ -37,143 +38,43 @@ DataServiceDCAT-AP:
       x-ngsi:
         model: https://schema.org/address
         type: Property
-    alternateName:
-      description: An alternative name for this item
-      type: string
-      x-ngsi:
-        type: Property
     areaServed:
       description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
         type: Property
-    assetProvider:
-      description: Property. A list of uri pointing to the asset providers for this services.
-      items:
-        format: uri
-        type: string
-      type: array
-      x-ngsi:
-        type: Property
-    configuration:
-      description: 'Property. Technical configuration of the service. This attribute is intended to be an array of parameter names (without values) which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.'
-      items:
-        format: text
-        type: string
-      type: array
-      x-ngsi:
-        type: Property
-    contactPoint:
-      description: The details to contact with the item.
-      properties:
-        areaServed:
-          description: Property. The geographic area where a service or offered item is provided. Supersedes serviceArea.
-          type: string
-        availabilityRestriction:
-          anyOf:
-            - description: Property. Array of identifiers format of any NGSI entity.
-              items:
-                maxLength: 256
-                minLength: 1
-                pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
-                type: string
-              type: array
-            - description: Property. Array of identifiers format of any NGSI entity.
-              items:
-                format: uri
-                type: string
-              type: array
-          description: 'Relationship. Model:''http://schema.org/hoursAvailable''. This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class.'
-        availableLanguage:
-          anyOf:
-            - anyOf:
-                - type: string
-                - items:
-                    type: string
-                  type: array
-          description: 'Property. Model:''http://schema.org/availableLanguage''. A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'
-        contactOption:
-          anyOf:
-            - type: string
-            - items:
-                type: string
-              type: array
-          description: 'Property. Model:''http://schema.org/contactOption''. An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).'
-        contactType:
-          description: Property. Contact type of this item.
-          type: string
-        email:
-          description: Property. Email address of owner.
-          format: idn-email
-          type: string
-        faxNumber:
-          description: 'Property. Model:''http://schema.org/Text''. The fax number.'
-          type: string
-        name:
-          description: Property. The name of this item.
-          type: string
-        productSupported:
-          description: 'Property. Model:''http://schema.org/Text''. The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").'
-          type: string
-        telephone:
-          description: Property. Telephone of this contact.
-          type: string
-        url:
-          description: Property. URL which provides a description or further information about this item.
-          format: uri
-          type: string
-      type: object
-      x-ngsi:
-        model: https://schema.org/ContactPoint
-        type: Property
-    dataProvider:
-      description: A sequence of characters identifying the provider of the harmonised data entity.
-      type: string
-      x-ngsi:
-        type: Property
-    dataServiceDescription:
-      description: Property. This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description
-      items:
-        type: string
-      type: array
-      x-ngsi:
-        type: Property
-    dateCreated:
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.
-      format: date-time
-      type: string
-      x-ngsi:
-        type: Property
-    dateModified:
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
-      format: date-time
-      type: string
-      x-ngsi:
-        type: Property
     description:
-      description: A description of this item
-      type: string
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description"
+      items:
+        description: Property. Every description in a language
+        type: string
+      type: array
       x-ngsi:
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"
         type: Property
     endPointDescription:
-      description: 'Property. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.'
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement."
       items:
+        description: Property. Every service available at an end-point
         type: string
       type: array
       x-ngsi:
+        model: "http://www.w3.org/2000/01/rdf-schema#Resource"
         type: Property
     endPointURL:
-      description: Property. The root location or primary endpoint of the service (an IRI).
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. The root location or primary endpoint of the service (an IRI)."
       items:
+        description: Property. Every root location
         format: uri
         minItems: 1
         type: string
       type: array
       x-ngsi:
+        model: "http://www.w3.org/2000/01/rdf-schema#Resource"
         type: Property
     id:
-      anyOf: &dataservicedcat-ap_-_properties_-_owner_-_items_-_anyof
+      anyOf:
         - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
@@ -186,9 +87,10 @@ DataServiceDCAT-AP:
       x-ngsi:
         type: Property
     license:
-      description: Property. This property contains the licence under which the Data service is made available.
+      description: 'Property. Model:''http://purl.org/dc/terms/LicenseDocument''. This property contains the licence under which the Data service is made available.'
       type: string
       x-ngsi:
+        model: http://purl.org/dc/terms/LicenseDocument
         type: Property
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
@@ -343,54 +245,28 @@ DataServiceDCAT-AP:
           type: object
       x-ngsi:
         type: GeoProperty
-    name:
-      description: The name of this item.
-      type: string
-      x-ngsi:
-        type: Property
-    owner:
-      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
-      items:
-        anyOf: *dataservicedcat-ap_-_properties_-_owner_-_items_-_anyof
-        description: Property. Unique identifier of the entity
-      type: array
-      x-ngsi:
-        type: Property
-    seeAlso:
-      description: list of uri pointing to additional resources about the item
-      oneOf:
-        - items:
-            format: uri
-            type: string
-          minItems: 1
-          type: array
-        - format: uri
-          type: string
-      x-ngsi:
-        type: Property
     servesDataset:
-      description: Property. This property refers to a collection of data that this data service can distribute.
+      description: "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a collection of data that this data service can distribute."
       items:
+        description: Property. Every dataset distributed
         type: string
       type: array
       x-ngsi:
-        type: Property
-    source:
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'
-      type: string
-      x-ngsi:
+        model: "http://www.w3.org/ns/dcat#Dataset"
         type: Property
     title:
-      description: Property. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name."
       items:
+        description: Property. The title in one language
         type: string
       type: array
       x-ngsi:
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"
         type: Property
     type:
-      description: Property. NGSI Entity type. It has to be DataServiceDCAT-AP
+      description: Property. NGSI Entity type. It has to be DataService
       enum:
-        - DataServiceDCAT-AP
+        - DataService
       type: string
       x-ngsi:
         type: Property
@@ -402,7 +278,7 @@ DataServiceDCAT-AP:
   type: object
   x-derived-from: ""
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
-  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/LICENSE.md
-  x-model-schema: https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/DataServiceDCAT-AP/schema.json
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataService/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json
   x-model-tags: ""
   x-version: 0.0.2
