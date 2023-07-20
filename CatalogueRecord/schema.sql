@@ -1,3 +1,3 @@
-/* (Beta) Export of data model CatalogueRecordDCAT-AP of the subject dataModel.DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE CatalogueRecordDCAT-AP_type AS ENUM ('CatalogueRecordDCAT-AP');
-CREATE TABLE CatalogueRecordDCAT-AP (address json, alternateName text, applicationProfile text, areaServed text, changeType text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, language json, listingDate timestamp, location json, modificationDate timestamp, name text, owner json, primaryTopic text, seeAlso json, source text, sourceMetadata text, title json, type CatalogueRecordDCAT-AP_type);
+/* (Beta) Export of data model CatalogueRecord of the subject dataModel.DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE CatalogueRecord_type AS ENUM ('CatalogueRecord');
+CREATE TABLE CatalogueRecord (address json, areaServed text, conformsTo text, description json, id text, issued timestamp, language json, location json, modified timestamp, primaryTopic text, source text, status text, title json, type CatalogueRecord_type);
