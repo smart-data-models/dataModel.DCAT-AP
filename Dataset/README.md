@@ -1,10 +1,10 @@
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
 # Dataset
-Version: 0.0.2
+Version: 2.0.1
 
 ## Description 
 
-Dataset Schema meeting DCAT-AP 2.0 specification
+Dataset Schema meeting DCAT-AP 2.1.1 specification
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.DCAT-AP/Dataset/swagger.yaml)
