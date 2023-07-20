@@ -64,6 +64,10 @@
     "type": "Text",
     "value": ""
   },
+  "belongsToDataset": {
+    "type": "Text",
+    "value": "urn:ngsi-ld:Dataset:items:CHIF:23645981"
+  },
   "page": {
     "type": "array",
     "value": [

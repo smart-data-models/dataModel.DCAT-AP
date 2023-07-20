@@ -43,13 +43,41 @@
             "description": "Property. Every contact element"
           }
         },
+        "belongsToCatalogue": {
+          "description": "Relationship. It links the Dataset to its parent Catalogue. Model:'https://www.w3.org/ns/dcat#Catalogue'",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Link to the catalogue"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Link to the catalogue"
+            }
+          ]
+        },
         "distribution": {
           "type": "array",
-          "description": "Relationship. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'",
+          "description": "Relationship. It links the Dataset to one or more of its available Distribution(s). Model:'http://www.w3.org/ns/dcat#Distribution'",
           "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every link to a distribution"
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256,
+                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                "description": "Property. Every link to a distribution"
+              },
+              {
+                "type": "string",
+                "format": "uri",
+                "description": "Property. Every link to a distribution"
+              }
+            ]
           }
         },
         "keyword": {
