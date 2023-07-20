@@ -1,39 +1,39 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。目录记录DCAT-AP  
-==============<!-- /10-Header -->  
+实体：目录记录  
+=======<!-- /10-Header -->  
 <!-- 15-License -->  
-[开放许可](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueRecordDCAT-AP/LICENSE.md)  
+[开放许可](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueRecord/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全球描述。**根据DCAT-AP标准2.0.1，这是属于一个数据集的目录记录**。  
-版本：0.0.1  
+全局描述：**根据 DCAT-AP 标准 2.1.1，这是属于一个数据集的目录记录**。  
+版本： 1.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-##属性列表  
+## 属性列表  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `applicationProfile[string]`: 这个属性指的是数据集的元数据符合的应用简介。  . Model: [dct:conformsTo](dct:conformsTo)- `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `changeType[string]`: 这个属性指的是目录中数据集条目的最新修订类型。  . Model: [adms:status](adms:status)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `id[*]`: 实体的唯一标识符  - `language[array]`: 这个属性指的是描述数据集的标题、描述等的文本元数据中使用的语言。如果元数据是以多种语言提供的，这个属性可以重复。  . Model: [dct:language](dct:language)- `listingDate[string]`: 这个属性包含了数据集的描述被包含在目录中的日期。  . Model: [dct:issued](dct:issued)- `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `modificationDate[string]`: 此属性包含目录条目被改变或修改的最新日期。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `name[string]`: 这个项目的名称。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `primaryTopic[string]`: 这个属性将目录记录与记录中描述的数据集、数据服务或目录联系起来。  . Model: [foaf:primaryTopic](foaf:primaryTopic)- `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `sourceMetadata[string]`: 这个属性指的是为数据集创建元数据时使用的原始元数据。  . Model: [dct:source](dct:source)- `title[array]`: 此属性包含给予目录记录的一个名称。此属性可重复用于该名称的平行语言版本。  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI实体类型。它必须是 CatalogueRecordDCAT-AP  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `conformsTo[string]`: 属性。模型:'http://purl.org/dc/terms/Standard'。该属性指的是数据集的元数据符合的应用程序配置文件  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `description[array]`: 属性。模型:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含记录的自由文本说明。该属性可重复用于并行语言版本的描述  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `id[*]`: 实体的唯一标识符  - `issued[string]`: 属性。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含数据集描述被列入目录的日期。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: 属性。模型:'http://purl.org/dc/terms/LinguisticSystem'。该属性指描述数据集标题、说明等的文本元数据中使用的语言。如果元数据以多种语言提供，则可重复此属性  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `modified[string]`: 属性。模型:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含更改或修改目录条目的最新日期。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `primaryTopic[string]`: 属性。模型：'http://www.w3.org/ns/dcat#Dataset'。该属性将目录记录链接到记录中描述的数据集、数据服务或目录。  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `source[string]`: 属性。模型：'http://www.w3.org/ns/dcat#CatalogRecord'。该属性指的是为数据集创建元数据时使用的原始元数据。  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `status[string]`: 属性。模型：'http://www.w3.org/2004/02/skos/core#Concept'。该属性指数据集条目在目录中的最新修订类型。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: 属性。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含赋予目录记录的名称。该属性可重复用于名称的并行语言版本。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: 属性。NGSI 实体类型。必须是目录记录  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
-- `id`  - `modificationDate`  - `primaryTopic`  - `type`  <!-- /35-RequiredProperties -->  
+- `id`  - `modified`  - `primaryTopic`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).  
+改编自[DCAT-AP 2.1.1 版](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211)。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-CatalogueRecordDCAT-AP:    
-  description: 'This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.0.1'    
+CatalogueRecord:    
+  description: This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.1.1    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
@@ -44,6 +44,9 @@ CatalogueRecordDCAT-AP:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          type: string    
         postOfficeBoxNumber:    
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
@@ -53,87 +56,67 @@ CatalogueRecordDCAT-AP:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
+        streetNr:    
+          description: Number identifying a specific property on a public street.    
+          type: string    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
-    alternateName:    
-      description: 'An alternative name for this item'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    applicationProfile:    
-      description: 'This property refers to an Application Profile that the Dataset’s metadata conforms to'    
-      type: string    
-      x-ngsi:    
-        model: dct:conformsTo    
-        type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    changeType:    
-      description: 'This property refers to the type of the latest revision of a Dataset''s entry in the Catalogue.'    
+    conformsTo:    
+      description: 'Property. Model:''http://purl.org/dc/terms/Standard''. This property refers to an Application Profile that the Dataset''s metadata conforms to'    
       type: string    
       x-ngsi:    
-        model: adms:status    
-        type: Property    
-    dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
+        model: http://purl.org/dc/terms/Standard    
         type: Property    
     description:    
-      description: 'A description of this item'    
-      type: string    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description"    
+      items:    
+        description: Property. Every language description    
+        type: string    
+      type: array    
       x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     id:    
-      anyOf: &cataloguerecorddcat-ap_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Property. Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
-    language:    
-      description: 'This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages'    
-      items:    
-        type: string    
-      type: array    
-      x-ngsi:    
-        model: dct:language    
-        type: Property    
-    listingDate:    
-      description: 'This property contains the date on which the description of the Dataset was included in the Catalogue.'    
+    issued:    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date on which the description of the Dataset was included in the Catalogue."    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: dct:issued    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        type: Property    
+    language:    
+      description: 'Property. Model:''http://purl.org/dc/terms/LinguisticSystem''. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages'    
+      items:    
+        description: Property. Every language tag    
+        type: string    
+      type: array    
+      x-ngsi:    
+        model: http://purl.org/dc/terms/LinguisticSystem    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -152,9 +135,9 @@ CatalogueRecordDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+        - description: GeoProperty. Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -176,9 +159,9 @@ CatalogueRecordDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+        - description: GeoProperty. Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -202,9 +185,9 @@ CatalogueRecordDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+        - description: GeoProperty. Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -225,9 +208,9 @@ CatalogueRecordDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -251,9 +234,9 @@ CatalogueRecordDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+        - description: GeoProperty. Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -279,71 +262,47 @@ CatalogueRecordDCAT-AP:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
       x-ngsi:    
         type: GeoProperty    
-    modificationDate:    
-      description: 'This property contains the most recent date on which the Catalogue entry was changed or modified..'    
+    modified:    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Catalogue entry was changed or modified."    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: https://schema.org/DateTime    
-        type: Property    
-    name:    
-      description: 'The name of this item.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
-      items:    
-        anyOf: *cataloguerecorddcat-ap_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
-      type: array    
-      x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     primaryTopic:    
-      description: 'This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record.'    
+      description: "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."    
       type: string    
       x-ngsi:    
-        model: foaf:primaryTopic    
-        type: Property    
-    seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
+        model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: "Property. Model:'http://www.w3.org/ns/dcat#CatalogRecord'. This property refers to the original metadata that was used in creating metadata for the Dataset."    
       type: string    
       x-ngsi:    
+        model: "http://www.w3.org/ns/dcat#CatalogRecord"    
         type: Property    
-    sourceMetadata:    
-      description: 'This property refers to the original metadata that was used in creating metadata for the Dataset.'    
+    status:    
+      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the latest revision of a Dataset's entry in the Catalogue."    
       type: string    
       x-ngsi:    
-        model: dct:source    
+        model: "http://www.w3.org/2004/02/skos/core#Concept"    
         type: Property    
     title:    
-      description: 'This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.'    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name."    
       items:    
         type: string    
       type: array    
       x-ngsi:    
-        model: https://schema.org/Text    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
-      description: 'NGSI entity type. It has to be CatalogueRecordDCAT-AP'    
+      description: Property. NGSI entity type. It has to be CatalogueRecord    
       enum:    
-        - CatalogueRecordDCAT-AP    
+        - CatalogueRecord    
       type: string    
       x-ngsi:    
         type: Property    
@@ -351,43 +310,29 @@ CatalogueRecordDCAT-AP:
     - id    
     - type    
     - primaryTopic    
-    - modificationDate    
+    - modified    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecordDCAT-AP/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT_AP/CatalogueRecordDCAT-AP/schema.json    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecord/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueRecord/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 1.0.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### CatalogueRecordDCAT-AP NGSI-v2 key-values 示例  
-下面是一个以JSON-LD格式作为key-values的CatalogueRecordDCAT-AP的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+## 有效载荷示例  
+#### CatalogueRecord NGSI-v2 key-values 示例  
+下面是一个以 JSON-LD 格式作为键值的目录记录示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
-  "type": "CatalogueRecordDCAT-AP",  
-  "dateCreated": "2020-11-02T21:25:54Z",  
-  "dateModified": "2021-07-02T18:37:55Z",  
-  "source": "",  
-  "name": "",  
-  "alternateName": "",  
-  "description": "Catalogue record of the solar system open data portal",  
-  "dataProvider": "european open data portal",  
-  "owner": [  
-    "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:ISXP:07320625",  
-    "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:BQMW:23610768"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:FVCU:03753474",  
-    "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:AIEC:73224831"  
-  ],  
+  "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
+  "type": "CatalogueRecord",  
+  "description": ["Catalogue record of the solar system open data portal"],  
   "location": {  
     "type": "Point",  
     "coordinates": [  
@@ -405,15 +350,12 @@ CatalogueRecordDCAT-AP:
   },  
   "areaServed": "European Union and beyond",  
   "primaryTopic": "Public administration",  
-  "modificationDate": "2021-07-02T18:37:55Z",  
-  "applicationProfile": "DCAT Application profile for data portals in Europe",  
-  "changeType": "First version",  
-  "listingDate": "2021-07-02T18:37:55Z",  
+  "modified": "2021-07-02T18:37:55Z",  
+  "conformsTo": "DCAT Application profile for data portals in Europe",  
   "language": [  
     "EN",  
     "ES"  
   ],  
-  "sourceMetadata": "",  
   "title": [  
     "Example of catalogue record",  
     "Ejemplo de registro de catálogo"  
@@ -421,54 +363,16 @@ CatalogueRecordDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueRecordDCAT-AP NGSI-v2规范化示例  
-下面是一个以JSON-LD格式规范化的CatalogueRecordDCAT-AP的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+#### 目录记录 NGSI-v2 标准化示例  
+下面是一个规范化 JSON-LD 格式的目录记录示例。在不使用选项的情况下，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
-  "type": "CatalogueRecordDCAT-AP",  
-  "dateCreated": {  
-    "type": "DateTime",  
-    "value": "2020-11-02T21:25:54Z"  
-  },  
-  "dateModified": {  
+  "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
+  "type": "CatalogueRecord",  
+  "modified": {  
     "type": "DateTime",  
     "value": "2021-07-02T18:37:55Z"  
-  },  
-  "source": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "alternateName": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "description": {  
-    "type": "Text",  
-    "value": "Catalogue record of the solar system open data portal"  
-  },  
-  "dataProvider": {  
-    "type": "Text",  
-    "value": "european open data portal"  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:ISXP:07320625",  
-      "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:BQMW:23610768"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:FVCU:03753474",  
-      "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:AIEC:73224831"  
-    ]  
   },  
   "location": {  
     "type": "geo:json",  
@@ -499,32 +403,12 @@ CatalogueRecordDCAT-AP:
     "type": "Text",  
     "value": "Public administration"  
   },  
-  "modificationDate": {  
-    "type": "DateTime",  
-    "value": "2021-07-02T18:37:55Z"  
-  },  
-  "applicationProfile": {  
-    "type": "Text",  
-    "value": "DCAT Application profile for data portals in Europe"  
-  },  
-  "changeType": {  
-    "type": "Text",  
-    "value": "First version"  
-  },  
-  "listingDate": {  
-    "type": "DateTime",  
-    "value": "2021-07-02T18:37:55Z"  
-  },  
   "language": {  
     "type": "array",  
     "value": [  
       "EN",  
       "ES"  
     ]  
-  },  
-  "sourceMetadata": {  
-    "type": "Text",  
-    "value": ""  
   },  
   "title": {  
     "type": "array",  
@@ -536,13 +420,13 @@ CatalogueRecordDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueRecordDCAT-AP NGSI-LD key-values 示例  
-下面是一个以JSON-LD格式作为关键值的CatalogueRecordDCAT-AP的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### 目录记录 NGSI-LD 键值 示例  
+下面是一个以 JSON-LD 格式作为键值的目录记录示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
-    "type": "CatalogueRecordDCAT-AP",  
+    "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
+    "type": "CatalogueRecord",  
     "address": {  
         "streetAddress": "2, rue Mercier",  
         "addressLocality": "Luxembourg",  
@@ -551,19 +435,13 @@ CatalogueRecordDCAT-AP:
         "postalCode": "2985",  
         "postOfficeBoxNumber": ""  
     },  
-    "alternateName": "",  
-    "applicationProfile": "DCAT Application profile for data portals in Europe",  
     "areaServed": "European Union and beyond",  
-    "changeType": "First version",  
-    "dataProvider": "european open data portal",  
-    "dateCreated": "2020-11-02T21:25:54Z",  
-    "dateModified": "2021-07-02T18:37:55Z",  
-    "description": "Catalogue record of the solar system open data portal",  
+    "modified": "2021-07-02T18:37:55Z",  
+    "description": ["Catalogue record of the solar system open data portal"],  
     "language": [  
         "EN",  
         "ES"  
     ],  
-    "listingDate": "2021-07-02T18:37:55Z",  
     "location": {  
         "type": "Point",  
         "coordinates": [  
@@ -571,19 +449,7 @@ CatalogueRecordDCAT-AP:
             -85.183315  
         ]  
     },  
-    "modificationDate": "2021-07-02T18:37:55Z",  
-    "name": "",  
-    "owner": [  
-        "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:ISXP:07320625",  
-        "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:BQMW:23610768"  
-    ],  
     "primaryTopic": "Public administration",  
-    "seeAlso": [  
-        "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:FVCU:03753474",  
-        "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:AIEC:73224831"  
-    ],  
-    "source": "",  
-    "sourceMetadata": "",  
     "title": [  
         "Example of catalogue record",  
         "Ejemplo de registro de cat\u00e1logo"  
@@ -594,136 +460,74 @@ CatalogueRecordDCAT-AP:
 }  
 ```  
 </details>  
-#### CatalogueRecordDCAT-AP NGSI-LD规范化示例  
-下面是一个以JSON-LD格式规范化的CatalogueRecordDCAT-AP的例子。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### 目录记录 NGSI-LD 标准化示例  
+下面是一个规范化 JSON-LD 格式的目录记录示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:CatalogueRecordDCAT-AP:id:KFTL:88140679",  
-    "type": "CatalogueRecordDCAT-AP",  
-    "address": {  
-        "type": "Property",  
-        "value": {  
-            "streetAddress": "2, rue Mercier",  
-            "addressLocality": "Luxembourg",  
-            "addressRegion": "Luxembourg",  
-            "addressCountry": "Luxembourg",  
-            "postalCode": "2985",  
-            "postOfficeBoxNumber": ""  
-        }  
-    },  
-    "alternateName": {  
-        "type": "Property",  
-        "value": ""  
-    },  
-    "applicationProfile": {  
-        "type": "Property",  
-        "value": "DCAT Application profile for data portals in Europe"  
-    },  
-    "areaServed": {  
-        "type": "Property",  
-        "value": "European Union and beyond"  
-    },  
-    "changeType": {  
-        "type": "Property",  
-        "value": "First version"  
-    },  
-    "dataProvider": {  
-        "type": "Property",  
-        "value": "european open data portal"  
-    },  
-    "dateCreated": {  
-        "type": {  
-            "@type": "Property",  
-            "@value": "2020-11-02T21:25:54Z"  
-        }  
-    },  
-    "dateModified": {  
-        "type": {  
-            "@type": "Property",  
-            "@value": "2021-07-02T18:37:55Z"  
-        }  
-    },  
-    "description": {  
-        "type": "Property",  
-        "value": "Catalogue record of the solar system open data portal"  
-    },  
-    "language": {  
-        "type": "Property",  
-        "value": [  
-            "EN",  
-            "ES"  
-        ]  
-    },  
-    "listingDate": {  
-        "type": {  
-            "@type": "Property",  
-            "@value": "2021-07-02T18:37:55Z"  
-        }  
-    },  
-    "location": {  
-        "type": "GeoProperty",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                36.633152,  
-                -85.183315  
-            ]  
-        }  
-    },  
-    "modificationDate": {  
-        "type": {  
-            "@type": "Property",  
-            "@value": "2021-07-02T18:37:55Z"  
-        }  
-    },  
-    "name": {  
-        "type": "Property",  
-        "value": ""  
-    },  
-    "owner": {  
-        "type": "Property",  
-        "value": [  
-            "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:ISXP:07320625",  
-            "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:BQMW:23610768"  
-        ]  
-    },  
-    "primaryTopic": {  
-        "type": "Property",  
-        "value": "Public administration"  
-    },  
-    "seeAlso": {  
-        "type": "Property",  
-        "value": [  
-            "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:FVCU:03753474",  
-            "urn:ngsi-ld:CatalogueRecordDCAT-AP:items:AIEC:73224831"  
-        ]  
-    },  
-    "source": {  
-        "type": "Property",  
-        "value": ""  
-    },  
-    "sourceMetadata": {  
-        "type": "Property",  
-        "value": ""  
-    },  
-    "title": {  
-        "type": "Property",  
-        "value": [  
-            "Example of catalogue record",  
-            "Ejemplo de registro de cat\u00e1logo"  
-        ]  
-    },  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+  "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
+  "type": "CatalogueRecord",  
+  "address": {  
+    "type": "Property",  
+    "value": {  
+      "streetAddress": "2, rue Mercier",  
+      "addressLocality": "Luxembourg",  
+      "addressRegion": "Luxembourg",  
+      "addressCountry": "Luxembourg",  
+      "postalCode": "2985",  
+      "postOfficeBoxNumber": ""  
+    }  
+  },  
+  "language": {  
+    "type": "Property",  
+    "value": [  
+      "EN",  
+      "ES"  
     ]  
+  },  
+  "listingDate": {  
+    "type": {  
+      "@type": "Property",  
+      "@value": "2021-07-02T18:37:55Z"  
+    }  
+  },  
+  "location": {  
+    "type": "GeoProperty",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        36.633152,  
+        -85.183315  
+      ]  
+    }  
+  },  
+  "modified": {  
+    "type": {  
+      "@type": "Property",  
+      "@value": "2021-07-02T18:37:55Z"  
+    }  
+  },  
+  "primaryTopic": {  
+    "type": "Property",  
+    "value": "Public administration"  
+  },  
+  "title": {  
+    "type": "Property",  
+    "value": [  
+      "Example of catalogue record",  
+      "Ejemplo de registro de cat\u00e1logo"  
+    ]  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
