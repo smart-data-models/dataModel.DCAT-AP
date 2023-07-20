@@ -1,26 +1,26 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティデータサービスDCAT-AP  
-====================<!-- /10-Header -->  
+エンティティデータサービス  
+=============<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/LICENSE.md)  
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataService/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述です：**DCAT-AP 2.0仕様のデータサービスだが、プロパティを追加して拡張し、NGSI標準と互換性を持たせた**。  
-バージョン：0.0.1  
+グローバルな記述：**データサービスは DCAT-AP 2.1.1 仕様に準拠しているが、追加プロパティで拡張され、NGSI 標準と互換性がある。  
+バージョン: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `accessRights[string]`: このプロパティには、プライバシー、セキュリティ、その他のポリシーに基づくアクセスまたは制限に関する情報を含めることができる。  - `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: このアイテムの別称  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dataServiceDescription[array]`: このプロパティは、データサービスに関するフリーテキストの説明を含む。このプロパティは、並行言語版の説明のために繰り返すことができます。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `endPointDescription[array]`: このプロパティは、エンドポイントを介して利用可能なサービスの説明（操作、パラメータなど）を含む。このプロパティは、実際のエンドポイントインスタンスの具体的な詳細を提供し、dct:conformsToは、エンドポイントが実装する一般的な標準または仕様を示すために使用されます。  - `endPointURL[array]`: サービスのルートロケーションまたは一次エンドポイント（IRI）。  - `id[*]`: エンティティの一意な識別子  - `license[string]`: このプロパティには、データサービスが利用可能なライセンスが含まれる。  - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  - `name[string]`: この項目の名称です。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  - `servesDataset[array]`: このプロパティは、このデータサービスが配布可能なデータの集合体を示すものである。  - `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `title[array]`: このプロパティは、データサービスに与えられた名前を含む。このプロパティは、名前の並列言語バージョンに対して繰り返すことができる。  - `type[string]`: NGSI Entity タイプ。DataServiceDCAT-APである必要があります。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `accessRights[string]`: プロパティ。モデル:'http://purl.org/dc/terms/RightsStatement'.このプロパティには、プライバシー、セキュリティ、その他のポリシーに基づくアクセスや制限に関する情報を含めることができます。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `description[array]`: プロパティ。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。このプロパティには、データサービスのフリーテキスト説明が含まれる。このプロパティは、並列言語版の説明のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `endPointDescription[array]`: プロパティ。Model:'http://www.w3.org/2000/01/rdf-schema#Resource'.このプロパティには、エンドポイントを介して利用可能なサービスの説明が含まれ、その操作やパラメータなどが含まれる。dct:conformsToは、エンドポイントが実装する一般的な標準や仕様を示すために使用されます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `endPointURL[array]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Resource'.サービスのルートロケーションまたはプライマリエンドポイント（IRI）。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `id[*]`: エンティティの一意識別子  - `license[string]`: プロパティ。モデル:'http://purl.org/dc/terms/LicenseDocument'.このプロパティには、データサービスが利用可能なライセンスが含まれます。  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `servesDataset[array]`: プロパティ。Model:'http://www.w3.org/ns/dcat#Dataset'。このプロパティは、このデータサービスが配布できるデータのコレクションを指します。  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `title[array]`: プロパティ。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。このプロパティには、データサービスに与えられた名前が含まれる。このプロパティは、並列言語バージョンの名前のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: プロパティ。NGSI エンティティタイプ。DataServiceでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `endPointURL`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Adapted from [DCAT-AP version 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).いくつかのプロパティは、他の既存のプロパティとの衝突を防ぐために、名前が変更されている。また、NGSI標準や他のデータモデルとの互換性を保つために、他のプロパティが追加されている。  
+DCAT-APバージョン2.1.1](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211)からの引用。いくつかのプロパティは、他の既存のプロパティとの衝突を防ぐために名前が変更されている。さらに、NGSI標準や他のデータモデルとの互換性を維持するために、他のプロパティが追加されている。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
@@ -29,13 +29,14 @@
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-DataServiceDCAT-AP:    
-  description: 'Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard'    
+DataService:    
+  description: 'Data Service adapted from DCAT-AP 2.1.1 specification, but extended with additional properties and compatible with NGSI standard'    
   properties:    
     accessRights:    
-      description: 'Property. This property MAY include information regarding access or restrictions based on privacy, security, or other policies'    
+      description: 'Property. Model:''http://purl.org/dc/terms/RightsStatement''. This property MAY include information regarding access or restrictions based on privacy, security, or other policies'    
       type: string    
       x-ngsi:    
+        model: http://purl.org/dc/terms/RightsStatement    
         type: Property    
     address:    
       description: The mailing address    
@@ -68,143 +69,43 @@ DataServiceDCAT-AP:
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
-    alternateName:    
-      description: An alternative name for this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    assetProvider:    
-      description: Property. A list of uri pointing to the asset providers for this services.    
-      items:    
-        format: uri    
-        type: string    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    configuration:    
-      description: 'Property. Technical configuration of the service. This attribute is intended to be an array of parameter names (without values) which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.'    
-      items:    
-        format: text    
-        type: string    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    contactPoint:    
-      description: The details to contact with the item.    
-      properties:    
-        areaServed:    
-          description: Property. The geographic area where a service or offered item is provided. Supersedes serviceArea.    
-          type: string    
-        availabilityRestriction:    
-          anyOf:    
-            - description: Property. Array of identifiers format of any NGSI entity.    
-              items:    
-                maxLength: 256    
-                minLength: 1    
-                pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-                type: string    
-              type: array    
-            - description: Property. Array of identifiers format of any NGSI entity.    
-              items:    
-                format: uri    
-                type: string    
-              type: array    
-          description: 'Relationship. Model:''http://schema.org/hoursAvailable''. This property links a contact point to information about when the contact point is not available. The details are provided using the Opening Hours Specification class.'    
-        availableLanguage:    
-          anyOf:    
-            - anyOf:    
-                - type: string    
-                - items:    
-                    type: string    
-                  type: array    
-          description: 'Property. Model:''http://schema.org/availableLanguage''. A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. It is implemented the Text option but it could be also Language'    
-        contactOption:    
-          anyOf:    
-            - type: string    
-            - items:    
-                type: string    
-              type: array    
-          description: 'Property. Model:''http://schema.org/contactOption''. An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).'    
-        contactType:    
-          description: Property. Contact type of this item.    
-          type: string    
-        email:    
-          description: Property. Email address of owner.    
-          format: idn-email    
-          type: string    
-        faxNumber:    
-          description: 'Property. Model:''http://schema.org/Text''. The fax number.'    
-          type: string    
-        name:    
-          description: Property. The name of this item.    
-          type: string    
-        productSupported:    
-          description: 'Property. Model:''http://schema.org/Text''. The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. "iPhone") or a general category of products or services (e.g. "smartphones").'    
-          type: string    
-        telephone:    
-          description: Property. Telephone of this contact.    
-          type: string    
-        url:    
-          description: Property. URL which provides a description or further information about this item.    
-          format: uri    
-          type: string    
-      type: object    
-      x-ngsi:    
-        model: https://schema.org/ContactPoint    
-        type: Property    
-    dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dataServiceDescription:    
-      description: Property. This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description    
-      items:    
-        type: string    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
     description:    
-      description: A description of this item    
-      type: string    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description"    
+      items:    
+        description: Property. Every description in a language    
+        type: string    
+      type: array    
       x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     endPointDescription:    
-      description: 'Property. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.'    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement."    
       items:    
+        description: Property. Every service available at an end-point    
         type: string    
       type: array    
       x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
     endPointURL:    
-      description: Property. The root location or primary endpoint of the service (an IRI).    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. The root location or primary endpoint of the service (an IRI)."    
       items:    
+        description: Property. Every root location    
         format: uri    
         minItems: 1    
         type: string    
       type: array    
       x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
     id:    
-      anyOf: &dataservicedcat-ap_-_properties_-_owner_-_items_-_anyof    
+      anyOf:    
         - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
@@ -217,9 +118,10 @@ DataServiceDCAT-AP:
       x-ngsi:    
         type: Property    
     license:    
-      description: Property. This property contains the licence under which the Data service is made available.    
+      description: 'Property. Model:''http://purl.org/dc/terms/LicenseDocument''. This property contains the licence under which the Data service is made available.'    
       type: string    
       x-ngsi:    
+        model: http://purl.org/dc/terms/LicenseDocument    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
@@ -374,54 +276,28 @@ DataServiceDCAT-AP:
           type: object    
       x-ngsi:    
         type: GeoProperty    
-    name:    
-      description: The name of this item.    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
-      items:    
-        anyOf: *dataservicedcat-ap_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    seeAlso:    
-      description: list of uri pointing to additional resources about the item    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
-        type: Property    
     servesDataset:    
-      description: Property. This property refers to a collection of data that this data service can distribute.    
+      description: "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a collection of data that this data service can distribute."    
       items:    
+        description: Property. Every dataset distributed    
         type: string    
       type: array    
       x-ngsi:    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: string    
-      x-ngsi:    
+        model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     title:    
-      description: Property. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name."    
       items:    
+        description: Property. The title in one language    
         type: string    
       type: array    
       x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
-      description: Property. NGSI Entity type. It has to be DataServiceDCAT-AP    
+      description: Property. NGSI Entity type. It has to be DataService    
       enum:    
-        - DataServiceDCAT-AP    
+        - DataService    
       type: string    
       x-ngsi:    
         type: Property    
@@ -433,25 +309,25 @@ DataServiceDCAT-AP:
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/LICENSE.md    
-  x-model-schema: https://github.com/smart-data-models/dataModel.DCAT-AP/edit/master/DataServiceDCAT-AP/schema.json    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataService/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json    
   x-model-tags: ""    
   x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
-より幅広い使い方を可能にするために、いくつかのプロパティが追加されました。すなわち、contactPoint、assetProvider、configurationです。  
+より幅広い使い方ができるように、いくつかのプロパティが追加されました。contactPoint、assetProvider、configurationなどです。  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### DataServiceDCAT-AP NGSI-v2 キー値例  
-DataServiceDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DataService NGSI-v2 キー値の例  
+JSON-LD形式のDataServiceのkey-valuesの例です。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DataServiceDCAT-AP:id:JBDJ:56257192",  
-  "type": "DataServiceDCAT-AP",  
+  "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",  
+  "type": "DataService",  
   "accessRights": "No restrictions to access the data but APi requests limit, 5000 requests per hour",  
   "address": {  
     "addressCountry": "Luxembourg",  
@@ -461,16 +337,11 @@ DataServiceDCAT-AP:
     "postalCode": "2985",  
     "streetAddress": "2, rue Mercier"  
   },  
-  "alternateName": "",  
   "areaServed": "European union and beyond",  
-  "dataProvider": "European open data portal",  
-  "dataServiceDescription": [  
+  "description": [  
     "Digital resources for accessing to the end points of the EU open data portal for solar system.",  
     "Recursos digitales para el acceso a los puntos de interaccion del portal europeo de datos abiertos del sistema solar."  
   ],  
-  "dateCreated": "2020-10-28T04:19:29Z",  
-  "dateModified": "2021-10-06T16:31:26Z",  
-  "description": "Data service for the solar system open data portal.",  
   "endPointDescription": [  
     "SPARQL end point without authentication",  
     "API compliant with CKAN specification"  
@@ -487,85 +358,27 @@ DataServiceDCAT-AP:
     ],  
     "type": "Point"  
   },  
-  "name": "",  
-  "owner": [  
-    "urn:ngsi-ld:DataServiceDCAT-AP:items:HGSY:92686457",  
-    "urn:ngsi-ld:DataServiceDCAT-AP:items:JCJR:29622597"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:DataServiceDCAT-AP:items:JDKD:53476147",  
-    "urn:ngsi-ld:DataServiceDCAT-AP:items:XVJQ:09725114"  
-  ],  
   "servesDataset": [  
     "EU geographic map",  
     "EU physical map"  
   ],  
-  "source": "",  
   "title": [  
     "Data service of the european open data portal",  
     "Data service del portal europeo de datos abiertos"  
-  ],  
-  "assetProvider": [  
-    "https://op.europa.eu/en/home"  
-  ],  
-  "contactPoint": {  
-    "name": "contact point for european open data portal.",  
-    "url": "https://data.europa.eu/en/contact-us"  
-  },  
-  "configuration": [  
-    "format"  
   ]  
 }  
 ```  
 </details>  
-#### DataServiceDCAT-AP NGSI-v2 正規化例  
-JSON-LD形式のDataServiceDCAT-APを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DataService NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のDataServiceの例である。これは、NGSI-v2と互換性があり、オプションを使用しない場合、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:DataServiceDCAT-AP:id:JBDJ:56257192",  
-  "type": "DataServiceDCAT-AP",  
-  "dateCreated": {  
-    "type": "DateTime",  
-    "value": "2020-10-28T04:19:29Z"  
-  },  
-  "dateModified": {  
-    "type": "DateTime",  
-    "value": "2021-10-06T16:31:26Z"  
-  },  
-  "source": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "alternateName": {  
-    "type": "Text",  
-    "value": ""  
-  },  
+  "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",  
+  "type": "DataService",  
   "description": {  
     "type": "Text",  
     "value": "Data service for the solar system open data portal."  
-  },  
-  "dataProvider": {  
-    "type": "Text",  
-    "value": "European open data portal"  
-  },  
-  "owner": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:DataServiceDCAT-AP:items:HGSY:92686457",  
-      "urn:ngsi-ld:DataServiceDCAT-AP:items:JCJR:29622597"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:DataServiceDCAT-AP:items:JDKD:53476147",  
-      "urn:ngsi-ld:DataServiceDCAT-AP:items:XVJQ:09725114"  
-    ]  
   },  
   "location": {  
     "type": "geo:json",  
@@ -624,122 +437,72 @@ DataServiceDCAT-AP:
     "type": "Text",  
     "value": "No restrictions to access the data but APi requests limit, 5000 requests per hour"  
   },  
-  "dataServiceDescription": {  
-    "type": "array",  
-    "value": [  
-      "Digital resources for accessing to the end points of the EU open data portal for solar system.",  
-      "Recursos digitales para el acceso a los puntos de interacción del portal europeo de datos abiertos del sistema solar."  
-    ]  
-  },  
   "license": {  
     "type": "Text",  
     "value": "EUPL."  
-  },  
-  "configuration": {  
-    "type": "array",  
-    "value": [  
-      "format"  
-    ]  
-  },  
-  "contactPoint": {  
-    "type": "StructuredValue",  
-    "value": {  
-      "name": "contact point for european open data portal.",  
-      "url": "https://data.europa.eu/en/contact-us"  
-    }  
-  },  
-  "assetProvider": {  
-    "type": "array",  
-    "value": [  
-      "https://op.europa.eu/en/home"  
-    ]  
   }  
 }  
 ```  
 </details>  
-#### DataServiceDCAT-AP NGSI-LD キー値例  
-DataServiceDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DataService NGSI-LD キー値の例  
+JSON-LD形式のDataServiceのkey-valuesの例です。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:DataServiceDCAT-AP:id:JBDJ:56257192",  
-    "type": "DataServiceDCAT-AP",  
-    "accessRights": "No restrictions to access the data but APi requests limit, 5000 requests per hour",  
-    "address": {  
-        "addressCountry": "Luxembourg",  
-        "addressLocality": "Luxembourg",  
-        "addressRegion": "Luxembourg",  
-        "postOfficeBoxNumber": "",  
-        "postalCode": "2985",  
-        "streetAddress": "2, rue Mercier"  
-    },  
-    "alternateName": "",  
-    "areaServed": "European union and beyond",  
-    "dataProvider": "European open data portal",  
-    "dataServiceDescription": [  
-        "Digital resources for accessing to the end points of the EU open data portal for solar system.",  
-        "Recursos digitales para el acceso a los puntos de interaccion del portal europeo de datos abiertos del sistema solar."  
+  "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",  
+  "type": "DataService",  
+  "accessRights": "No restrictions to access the data but APi requests limit, 5000 requests per hour",  
+  "address": {  
+    "addressCountry": "Luxembourg",  
+    "addressLocality": "Luxembourg",  
+    "addressRegion": "Luxembourg",  
+    "postOfficeBoxNumber": "",  
+    "postalCode": "2985",  
+    "streetAddress": "2, rue Mercier"  
+  },  
+  "areaServed": "European union and beyond",  
+  "description": [  
+    "Digital resources for accessing to the end points of the EU open data portal for solar system.",  
+    "Recursos digitales para el acceso a los puntos de interaccion del portal europeo de datos abiertos del sistema solar."  
+  ],  
+  "modified": "2021-10-06T16:31:26Z",  
+  "endPointDescription": [  
+    "SPARQL end point without authentication",  
+    "API compliant with CKAN specification"  
+  ],  
+  "endPointURL": [  
+    "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",  
+    "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"  
+  ],  
+  "license": "EUPL.",  
+  "location": {  
+    "coordinates": [  
+      72.564509,  
+      11.125289  
     ],  
-    "dateCreated": "2020-10-28T04:19:29Z",  
-    "dateModified": "2021-10-06T16:31:26Z",  
-    "description": "Data service for the solar system open data portal.",  
-    "endPointDescription": [  
-        "SPARQL end point without authentication",  
-        "API compliant with CKAN specification"  
-    ],  
-    "endPointURL": [  
-        "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",  
-        "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"  
-    ],  
-    "license": "EUPL.",  
-    "location": {  
-        "coordinates": [  
-            72.564509,  
-            11.125289  
-        ],  
-        "type": "Point"  
-    },  
-    "name": "",  
-    "owner": [  
-        "urn:ngsi-ld:DataServiceDCAT-AP:items:HGSY:92686457",  
-        "urn:ngsi-ld:DataServiceDCAT-AP:items:JCJR:29622597"  
-    ],  
-    "seeAlso": [  
-        "urn:ngsi-ld:DataServiceDCAT-AP:items:JDKD:53476147",  
-        "urn:ngsi-ld:DataServiceDCAT-AP:items:XVJQ:09725114"  
-    ],  
-    "servesDataset": [  
-        "EU geographic map",  
-        "EU physical map"  
-    ],  
-    "source": "",  
-    "title": [  
-        "Data service of the european open data portal",  
-        "Data service del portal europeo de datos abiertos"  
-    ],  
-    "assetProvider": [  
-        "https://op.europa.eu/en/home"  
-    ],  
-    "contactPoint": {  
-    "name": "contact point for european open data portal.",  
-    "url": "https://data.europa.eu/en/contact-us"  
-    },  
-    "configuration": [  
-    "format"  
-    ],  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
-    ]  
+    "type": "Point"  
+  },  
+  "servesDataset": [  
+    "EU geographic map",  
+    "EU physical map"  
+  ],  
+  "title": [  
+    "Data service of the european open data portal",  
+    "Data service del portal europeo de datos abiertos"  
+  ],  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
-#### DataServiceDCAT-AP NGSI-LD 正規化例  
-JSON-LD形式のDataServiceDCAT-APを正規化した例を紹介します。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### DataService NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のDataServiceの例である。これは、オプションを使用しない場合はNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:DataServiceDCAT-AP:id:JBDJ:56257192",  
-    "type": "DataServiceDCAT-AP",  
+    "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",  
+    "type": "DataService",  
     "accessRights": {  
         "type": "Property",  
         "value": "No restrictions to access the data but APi requests limit, 5000 requests per hour"  
@@ -755,33 +518,11 @@ DataServiceDCAT-AP:
             "postOfficeBoxNumber": ""  
         }  
     },  
-    "alternateName": {  
-        "type": "Property",  
-        "value": ""  
-    },  
     "areaServed": {  
         "type": "Property",  
         "value": "European union and beyond"  
     },  
-    "dataProvider": {  
-        "type": "Property",  
-        "value": "European open data portal"  
-    },  
-    "dataServiceDescription": {  
-        "type": "Property",  
-        "value": [  
-            "Digital resources for accessing to the end points of the EU open data portal for solar system.",  
-            "Recursos digitales para el acceso a los puntos de interacci\u00f3n del portal europeo de datos abiertos del sistema solar."  
-        ]  
-    },  
-    "dateCreated": {  
-        "type": "Property",  
-        "value": {  
-            "@type": "DateTime",  
-            "@value": "2020-10-28T04:19:29Z"  
-        }  
-    },  
-    "dateModified": {  
+    "modified": {  
         "type": "Property",  
         "value": {  
             "@type": "DateTime",  
@@ -811,7 +552,7 @@ DataServiceDCAT-AP:
         "value": "EUPL."  
     },  
     "location": {  
-        "type": "Property",  
+        "type": "GeoProperty",  
         "value": {  
             "type": "Point",  
             "coordinates": [  
@@ -820,24 +561,6 @@ DataServiceDCAT-AP:
             ]  
         }  
     },  
-    "name": {  
-        "type": "Property",  
-        "value": ""  
-    },  
-    "owner": {  
-        "type": "Property",  
-        "value": [  
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:HGSY:92686457",  
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:JCJR:29622597"  
-        ]  
-    },  
-    "seeAlso": {  
-        "type": "Property",  
-        "value": [  
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:JDKD:53476147",  
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:XVJQ:09725114"  
-        ]  
-    },  
     "servesDataset": {  
         "type": "Property",  
         "value": [  
@@ -845,34 +568,11 @@ DataServiceDCAT-AP:
             "EU physical map"  
         ]  
     },  
-    "source": {  
-        "type": "Property",  
-        "value": ""  
-    },  
     "title": {  
         "type": "Property",  
         "value": [  
             "Data service of the european open data portal",  
             "Data service del portal europeo de datos abiertos"  
-        ]  
-    },  
-    "configuration": {  
-        "type": "Property",  
-        "value": [  
-          "format"  
-        ]  
-      },  
-    "contactPoint": {  
-        "type": "Property",  
-        "value": {  
-            "name": "contact point for european open data portal.",  
-            "url": "https://data.europa.eu/en/contact-us"  
-        }  
-    },  
-    "assetProvider": {  
-        "type": "Property",  
-        "value": [  
-            "https://op.europa.eu/en/home"  
         ]  
     },  
     "@context": [  
@@ -884,7 +584,7 @@ DataServiceDCAT-AP:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
