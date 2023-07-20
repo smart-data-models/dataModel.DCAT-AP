@@ -1,22 +1,22 @@
 # dataModel.DCAT-AP
-These data models are mapped from version 2.0.1 of the DCAT-AP standard. [Link](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/dcat-ap-release-201). They have been extended with the data model dataServiceRun data model and additional attributes
+These data models are mapped from version 2.1.1 of the DCAT-AP standard. [Link](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211). They have been extended with the data model dataServiceRun data model and additional attributes
 
 ### List of data models
 
 The following entity types are available:
-- [AgentDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/AgentDCAT-AP/README.md). Agent Schema meeting DCAT-AP 2.0 specification
+- [Agent](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Agent/README.md). Agent Schema meeting DCAT-AP 2.1.1 specification
 
-- [CatalogueDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/README.md). Catalogue of datasets compliant with DCAT-AP specification.
+- [Catalogue](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Catalogue/README.md). Catalogue of datasets compliant with DCAT-AP specification version 2.1.1.
 
-- [CatalogueRecordDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecordDCAT-AP/README.md). This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.0.1
+- [CatalogueRecord](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecord/README.md). This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.1.1
 
-- [DataServiceDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceDCAT-AP/README.md). Data Service adapted from DCAT-AP 2.0 specification, but extended with additional properties and compatible with NGSI standard
+- [DataService](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataService/README.md). Data Service adapted from DCAT-AP 2.1.1 specification, but extended with additional properties and compatible with NGSI standard
 
 - [DataServiceRun](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceRun/README.md). A representation of one specific run of a data service (e.g. DataServiceDCAT-AP).
 
-- [Dataset](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting DCAT-AP 2.0 specification
+- [Dataset](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting DCAT-AP 2.1.1 specification
 
-- [DistributionDCAT-AP](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DistributionDCAT-AP/README.md). this is a distribution belonging ot a dataset according to the DCAT-AP standard 2.0.1
+- [Distribution](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Distribution/README.md). This is a distribution belonging ot a dataset according to the DCAT-AP standard 2.1.1
 
 
 
