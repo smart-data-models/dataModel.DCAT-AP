@@ -1,101 +1,37 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティカタログ  
+==========<!-- /10-Header -->  
+<!-- 15-License -->  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Catalogue/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述**DCAT-AP仕様バージョン2.1.1.**に準拠したデータセットのカタログ。  
+バージョン: 1.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-エンティティカタログDCAT-AP  
-=================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## プロパティのリスト  
 
-[オープンライセンス](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md)  
-
-[文書が自動的に生成されます](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-
-グローバルな記述です：**DCAT-AP仕様に準拠したデータセットのカタログ**。  
-
-バージョン：0.0.2  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## プロパティ一覧  
-
-
-<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)
-- `alternateName[string]`: このアイテムの別称  
-- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `catalogue[array]`: 関係です。モデル：'dcat:catalog'.このプロパティは、このカタログのコンテキストで関心のある内容を持つカタログを参照する  . Model: [dcat:catalog](dcat:catalog)
-- `creator[string]`: プロパティです。モデル:'https://schema.org/Text'.このプロパティは、カタログの制作を主に担当するエンティティを指します  . Model: [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  
-- `dataset[array]`: 関係。このプロパティは、カタログと、カタログの一部であるDatasetをリンクします。モデル:'dcat:Dataset'  . Model: [dcat:Dataset](dcat:Dataset)
-- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  
-- `description[string]`: このアイテムの説明  
-- `hasPart[array]`: 関係です。モデル:'https://schema.org/URL'.このプロパティは、記述されたカタログの一部である関連カタログを参照します。  . Model: [https://schema.org/URL](https://schema.org/URL)
-- `homepage[string]`: プロパティです。モデル：'foaf:homepage'.このプロパティは、カタログのメインページとして機能するウェブページを参照する。  . Model: [foaf:homepage](foaf:homepage)
-- `id[*]`: エンティティの一意な識別子  
-- `isPartOf[string]`: 関係です。モデル:'https://schema.org/URL'.このプロパティは、記述されたカタログが物理的または論理的に含まれる関連カタログを指します。  . Model: [https://schema.org/URL](https://schema.org/URL)
-- `language[array]`: プロパティです。Model:'dct:language'.このプロパティは、カタログのデータセットのタイトルや説明などを記述するテキストメタデータで使用される言語を指します。このプロパティは、メタデータが複数の言語で提供される場合に繰り返すことができる。  . Model: [dct:language](dct:language)
-- `licence[string]`: プロパティです。Model:'dct:license'.このプロパティは、カタログの使用または再利用が可能なライセンスを指す。  . Model: [dct:license](dct:license)
-- `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかである。  
-- `modificationDate[string]`: プロパティです。モデル:'https://schema.org/DateTime'.このプロパティには、カタログが修正された最新の日付が含まれます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
-- `name[string]`: この項目の名称です。  
-- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリストです。  
-- `publisher[string]`: プロパティです。モデル:'https://schema.org/Text'.このプロパティは、カタログを利用可能にする責任を負うエンティティ（組織）を指します。モデル:'dct:publisher'  . Model: [dct:publisher](dct:publisher)
-- `record[array]`: 関係を示す。このプロパティは、カタログの一部であるカタログレコードを参照します。  
-- `releaseDate[string]`: プロパティです。モデル:'https://schema.org/DateTime'.このプロパティには、カタログの正式発行（発行など）の日付が含まれています。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)
-- `rights[string]`: プロパティです。モデル：'dct:rights'.このプロパティは、カタログに関連する権利を指定するステートメントを参照する。  . Model: [dct:rights](dct:rights)
-- `seeAlso[*]`: アイテムに関する追加リソースを指す URI のリスト。  
-- `service[array]`: プロパティです。このプロパティは、カタログに掲載されているサイトまたはエンドポイントを指します。モデル:'dcat:DataService'  . Model: [dcat:DataService](dcat:DataService)
-- `source[string]`: エンティティデータの元のソースをURLとして与える一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  
-- `spatial_geographic[array]`: ジオプロパティ。このプロパティは、カタログの対象となる地理的な領域を指す。モデル：'dct:spatial'  . Model: [dct:spatial](dct:spatial)
-- `themes[array]`: プロパティです。Model:'dcat:themeTaxonomy'.このプロパティは、CatalogueのDatasetを分類するために使用される知識組織システムを指します。  . Model: [dcat:themeTaxonomy](dcat:themeTaxonomy)
-- `title[array]`: プロパティです。モデル:'https://schema.org/URL'.このプロパティには、カタログに与えられた名前が含まれています。このプロパティは、名前の並行言語版に対して繰り返すことができる。モデル:'rdfs:Literal'。  . Model: [rdfs:Literal](rdfs:Literal)
-- `type[string]`: プロパティです。モデル：'https://schema.org/Text'.CatalogueDCAT-APである必要があります。  . Model: [https://schema.org/Text](https://schema.org/Text)
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-必須プロパティ  
-- `dataset`  
-- `description`  
-- `id`  
-- `publisher`  
-- `title`  
-- `type`  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-
-このデータモデルと主題DCAT-APの他のものは、彼らの使用のために適応されており、追加のコンテキストが含まれることが推奨されるであろう。[https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## プロパティのデータモデル記述  
-
-アルファベット順（クリックで詳細表示）  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalog[array]`: 関係。Model:'http://www.w3.org/ns/dcat#Catalog'.このプロパティは、このカタログのコンテキストで関心のある内容のカタログを参照する  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `creator[array]`: 関係。Model:'http://xmlns.com/foaf/0.1/Agent'.カタログの作成を主に担当するエンティティ  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `dataset[array]`: リレーションシップ。このプロパティは、カタログと、カタログの一部であるデータセットをリンクします。モデル:'http://www.w3.org/ns/dcat#dataset'  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `description[array]`: プロパティこのプロパティには  
+が含まれます。このプロパティは、並行言語版の説明のために繰り返すことができます。多言語に関する詳細については、pdf文書 https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1 のセクション8を参照してください。  - `hasPart[array]`: 関係。Model:'http://www.w3.org/ns/dcat#Catalog'.このプロパティは、記述されたカタログの一部である関連カタログを参照します。  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[string]`: プロパティ。モデル:'http://xmlns.com/foaf/0.1/homepage'.このプロパティは、カタログのメインページとして機能するウェブページを参照します。  . Model: [http://xmlns.com/foaf/0.1/homepage](http://xmlns.com/foaf/0.1/homepage)- `id[*]`: エンティティの一意識別子  - `isPartOf[string]`: 関係。Model:'http://www.w3.org/ns/dcat#Catalog'.このプロパティは、記述されたカタログが物理的または論理的に含まれる関連カタログを参照する。  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[string]`: プロパティ。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。このプロパティには、カタログの正式発行（発行など）の日付が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: プロパティ。Model:'http://purl.org/dc/terms/LinguisticSystem'。このプロパティは、カタログ内のデータセットのタイトルや説明などを記述するテキストメタデータで使用される言語を指します。メタデータが複数の言語で提供される場合は、このプロパティを繰り返すことができます。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `licence[string]`: プロパティ。Model:'http://purl.org/dc/terms/LicenseDocument'。このプロパティは、カタログを使用または再利用できるライセンスを指します。  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `modified[string]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Literal'.このプロパティには、カタログが変更された最新の日付が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `publisher[string]`: プロパティ。このプロパティは、カタログを利用可能にする責任を負うエンティティ（組織）を指します。モデル:'http://xmlns.com/foaf/0.1/Agent'  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `record[array]`: 関係。このプロパティは、カタログの一部であるカタログレコードを参照します。モデル:'http://www.w3.org/ns/dcat#CatalogRecord'  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: プロパティ。Model:'http://purl.org/dc/terms/RightsStatement'。このプロパティは、カタログに関連する権利を指定するステートメントを指します。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `service[array]`: 関係。このプロパティは、カタログに掲載されているサイトまたはエンドポイント（データサービス）を参照する。空のカタログは通常問題の兆候であるため、このプロパティは前のプロパティデータセットと組み合わせて空のカタログチェックを実装する必要があります Model:'http://www.w3.org/ns/dcat#DataService'  . Model: [As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check http://www.w3.org/ns/dcat#DataService](As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check http://www.w3.org/ns/dcat#DataService)- `spatial[array]`: GeoProperty.モデル:'http://purl.org/dc/terms/Location'.このプロパティは、カタログでカバーされている地理的領域を指します。  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: プロパティ。Model:'http://www.w3.org/2004/02/skos/core#ConceptScheme'。このプロパティは、カタログのデータセットを分類するために使用される知識体系を指します。  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Literal'.このプロパティには、カタログに与えられた名前が含まれます。このプロパティは、並列言語版の名前のために繰り返すことができます。モデル:'rdfs:Literal'  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: プロパティ。モデル:'https://schema.org/Text'.カタログでなければなりません  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルと対象DCAT-APの他のものは、それらの使用のために適応されており、追加の文脈が含まれることが推奨されるだろう。[https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld" ](https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld)  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順（クリックで詳細表示）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
-CatalogueDCAT-AP:    
-  description: Catalogue of datasets compliant with DCAT-AP specification.    
+```yaml  
+Catalogue:    
+  description: Catalogue of datasets compliant with DCAT-AP specification version 2.1.1.    
   properties:    
     address:    
       description: The mailing address    
@@ -128,19 +64,14 @@ CatalogueDCAT-AP:
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
-    alternateName:    
-      description: An alternative name for this item    
-      type: string    
-      x-ngsi:    
-        type: Property    
     areaServed:    
       description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
-    catalogue:    
-      description: 'Relationship. Model:''dcat:catalog''. This property refers to a catalog whose contents are of interest in the context of this catalog'    
+    catalog:    
+      description: "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a catalog whose contents are of interest in the context of this catalog"    
       items:    
         anyOf:    
           - description: Property. Identifier format of any NGSI entity    
@@ -151,23 +82,22 @@ CatalogueDCAT-AP:
           - description: Property. Identifier format of any NGSI entity    
             format: uri    
             type: string    
+        description: 'Relationship. Every link to the contents of interest to the catalog '    
       type: array    
       x-ngsi:    
-        model: dcat:catalog    
+        model: "http://www.w3.org/ns/dcat#Catalog"    
         type: Relationship    
     creator:    
-      description: 'Property. Model:''https://schema.org/Text''. This property refers to the entity primarily responsible for producing the catalogue'    
-      type: string    
+      description: 'Relationship. Model:''http://xmlns.com/foaf/0.1/Agent''. The entities primarily responsible for producing the catalogue'    
+      items:    
+        description: 'Relationship. Model:''http://xmlns.com/foaf/0.1/Agent''. The link to an entity primarily responsible for producing the catalogue'    
+        type: string    
+      type: array    
       x-ngsi:    
-        model: https://schema.org/Text    
-        type: Property    
-    dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
-      type: string    
-      x-ngsi:    
-        type: Property    
+        model: http://xmlns.com/foaf/0.1/Agent    
+        type: Relationship    
     dataset:    
-      description: 'Relationship. This property links the Catalogue with a Dataset that is part of the Catalogue. Model:''dcat:Dataset'''    
+      description: "Relationship. This property links the Catalogue with a Dataset that is part of the Catalogue. Model:'http://www.w3.org/ns/dcat#dataset'"    
       items:    
         anyOf:    
           - description: Property. Identifier format of any NGSI entity    
@@ -180,43 +110,37 @@ CatalogueDCAT-AP:
             type: string    
       type: array    
       x-ngsi:    
-        model: dcat:Dataset    
+        model: "http://www.w3.org/ns/dcat#dataset"    
         type: Relationship    
-    dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        type: Property    
     description:    
-      description: A description of this item    
-      type: string    
+      description: |-    
+        Property. This property contains a free-text account of    
+        the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 8 of the pdf document https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1    
+      items:    
+        description: Property. Catalog description in different languages    
+        type: string    
+      type: array    
       x-ngsi:    
         type: Property    
     hasPart:    
-      description: 'Relationship. Model:''https://schema.org/URL''. This property refers to a related Catalogue that is part of the described Catalogue'    
+      description: "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a related Catalogue that is part of the described Catalogue"    
       items:    
+        description: Relationship. Every link to the related catalog    
         format: uri    
         type: string    
       type: array    
       x-ngsi:    
-        model: https://schema.org/URL    
+        model: "http://www.w3.org/ns/dcat#Catalog"    
         type: Relationship    
     homepage:    
-      description: 'Property. Model:''foaf:homepage''. This property refers to a web page that acts as the main page for the Catalogue.'    
+      description: 'Property. Model:''http://xmlns.com/foaf/0.1/homepage''. This property refers to a web page that acts as the main page for the Catalogue.'    
       format: uri    
       type: string    
       x-ngsi:    
-        model: foaf:homepage    
+        model: http://xmlns.com/foaf/0.1/homepage    
         type: Property    
     id:    
-      anyOf: &cataloguedcat-ap_-_properties_-_owner_-_items_-_anyof    
+      anyOf:    
         - description: Property. Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
@@ -229,29 +153,37 @@ CatalogueDCAT-AP:
       x-ngsi:    
         type: Property    
     isPartOf:    
-      description: 'Relationship. Model:''https://schema.org/URL''. This property refers to a related Catalogue in which the described Catalogue is physically or logically included.'    
+      description: "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a related Catalogue in which the described Catalogue is physically or logically included."    
       format: uri    
       type: string    
       x-ngsi:    
-        model: https://schema.org/URL    
+        model: "http://www.w3.org/ns/dcat#Catalog"    
         type: Relationship    
+    issued:    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Catalogue."    
+      format: date-time    
+      type: string    
+      x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        type: Property    
     language:    
-      description: 'Property. Model:''dct:language''. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.'    
+      description: 'Property. Model:''http://purl.org/dc/terms/LinguisticSystem''. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.'    
       items:    
+        description: Property. Individual identifiers of the language    
         type: string    
       type: array    
       x-ngsi:    
-        model: dct:language    
+        model: http://purl.org/dc/terms/LinguisticSystem    
         type: Property    
     licence:    
-      description: 'Property. Model:''dct:license''. This property refers to the licence under which the Catalogue can be used or reused.'    
+      description: 'Property. Model:''http://purl.org/dc/terms/LicenseDocument''. This property refers to the licence under which the Catalogue can be used or reused.'    
       type: string    
       x-ngsi:    
-        model: dct:license    
+        model: http://purl.org/dc/terms/LicenseDocument    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf: &cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
+      oneOf: &catalogue_-_properties_-_spatial_-_items_-_oneof    
         - description: GeoProperty. Geojson reference to the item. Point    
           properties:    
             bbox:    
@@ -402,34 +334,21 @@ CatalogueDCAT-AP:
           type: object    
       x-ngsi:    
         type: GeoProperty    
-    modificationDate:    
-      description: 'Property. Model:''https://schema.org/DateTime''. This property contains the most recent date on which the Catalogue was modified.'    
+    modified:    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Catalogue was modified."    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: https://schema.org/DateTime    
-        type: Property    
-    name:    
-      description: The name of this item.    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    owner:    
-      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
-      items:    
-        anyOf: *cataloguedcat-ap_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
-      type: array    
-      x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     publisher:    
-      description: 'Property. Model:''https://schema.org/Text''. This property refers to an entity (organisation) responsible for making the Catalogue available. Model:''dct:publisher'''    
+      description: 'Property. This property refers to an entity (organisation) responsible for making the Catalogue available. Model:''http://xmlns.com/foaf/0.1/Agent'''    
       type: string    
       x-ngsi:    
-        model: dct:publisher    
+        model: http://xmlns.com/foaf/0.1/Agent    
         type: Property    
     record:    
-      description: Relationship. This property refers to a Catalogue Record that is part of the Catalogue    
+      description: "Relationship. This property refers to a Catalogue Record that is part of the Catalogue. Model:'http://www.w3.org/ns/dcat#CatalogRecord'"    
       items:    
         anyOf:    
           - description: Property. Identifier format of any NGSI entity    
@@ -440,75 +359,64 @@ CatalogueDCAT-AP:
           - description: Property. Identifier format of any NGSI entity    
             format: uri    
             type: string    
+        description: Relationship. Link to the catalog record    
       type: array    
       x-ngsi:    
+        model: "http://www.w3.org/ns/dcat#CatalogRecord"    
         type: Relationship    
-    releaseDate:    
-      description: 'Property. Model:''https://schema.org/DateTime''. This property contains the date of formal issuance (e.g., publication) of the Catalogue.'    
-      format: date-time    
-      type: string    
-      x-ngsi:    
-        model: https://schema.org/DateTime    
-        type: Property    
     rights:    
-      description: 'Property. Model:''dct:rights''. This property refers to a statement that specifies rights associated with the Catalogue.'    
+      description: 'Property. Model:''http://purl.org/dc/terms/RightsStatement''. This property refers to a statement that specifies rights associated with the Catalogue.'    
       type: string    
       x-ngsi:    
-        model: dct:rights    
-        type: Property    
-    seeAlso:    
-      description: list of uri pointing to additional resources about the item    
-      oneOf:    
-        - items:    
-            format: uri    
-            type: string    
-          minItems: 1    
-          type: array    
-        - format: uri    
-          type: string    
-      x-ngsi:    
+        model: http://purl.org/dc/terms/RightsStatement    
         type: Property    
     service:    
-      description: 'Property. This property refers to a site or end-point that is listed in the catalog. Model:''dcat:DataService'''    
+      description: "Relationship. This property refers to a site or end-point (Data Service) that is listed in the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check Model:'http://www.w3.org/ns/dcat#DataService'"    
       items:    
-        type: string    
+        anyOf:    
+          - description: Property. Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+          - description: Property. Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+        description: Property. NGSI-LD id of the different services linked to the catalogue    
       type: array    
       x-ngsi:    
-        model: dcat:DataService    
-        type: Property    
-    source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: string    
-      x-ngsi:    
-        type: Property    
-    spatial_geographic:    
-      description: 'GeoProperty. This property refers to a geographical area covered by the Catalogue. Model:''dct:spatial'''    
+        model: "As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check http://www.w3.org/ns/dcat#DataService"    
+        type: Relationship    
+    spatial:    
+      description: 'GeoProperty. Model:''http://purl.org/dc/terms/Location''. This property refers to a geographical area covered by the Catalogue.'    
       items:    
         description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-        oneOf: *cataloguedcat-ap_-_properties_-_spatial_geographic_-_items_-_oneof    
+        oneOf: *catalogue_-_properties_-_spatial_-_items_-_oneof    
       type: array    
       x-ngsi:    
-        model: dct:spatial    
-    themes:    
-      description: 'Property. Model:''dcat:themeTaxonomy''. This property refers to a knowledge organization system used to classify the Catalogue''s Datasets.'    
+        model: http://purl.org/dc/terms/Location    
+        type: GeoProperty    
+    themeTaxonomy:    
+      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#ConceptScheme'. This property refers to a knowledge organization system used to classify the Catalogue's Datasets."    
       items:    
         type: string    
       type: array    
       x-ngsi:    
-        model: dcat:themeTaxonomy    
+        model: "http://www.w3.org/2004/02/skos/core#ConceptScheme"    
         type: Property    
     title:    
-      description: 'Property. Model:''https://schema.org/URL''. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name. Model:''rdfs:Literal'''    
+      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name. Model:'rdfs:Literal'"    
       items:    
+        description: Property. Title in different languages    
         type: string    
       type: array    
       x-ngsi:    
         model: rdfs:Literal    
         type: Property    
     type:    
-      description: 'Property. Model:''https://schema.org/Text''. It has to be CatalogueDCAT-AP'    
+      description: 'Property. Model:''https://schema.org/Text''. It has to be Catalogue'    
       enum:    
-        - CatalogueDCAT-AP    
+        - Catalogue    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
@@ -516,52 +424,32 @@ CatalogueDCAT-AP:
   required:    
     - id    
     - type    
-    - dataset    
     - description    
     - publisher    
     - title    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
-  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueDCAT-AP/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueDCAT-AP/schema.json    
+  x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Catalogue/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/Catalogue/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.2    
+  x-version: 1.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## ペイロードの例  
-
-#### CatalogueDCAT-AP NGSI-v2 key-values Example  
-
-ここでは、CatalogueDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ペイロードの例  
+#### NGSI-v2 キー値カタログの例  
+JSON-LD形式のカタログをkey-valuesとした例である。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
-  "type": "CatalogueDCAT-AP",  
-  "dateCreated": "1980-03-03T10:01:24Z",  
-  "dateModified": "1987-12-04T10:44:40Z",  
-  "source": "",  
-  "name": "Catalogue",  
-  "alternateName": "",  
-  "description": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size.",  
-  "dataProvider": "european open data portal",  
-  "owner": [  
-    "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
-  ],  
-  "seeAlso": [  
-    "urn:ngsi-ld:Catalogue:ILBA:60770941"  
+  "type": "Catalogue",  
+  "description": [  
+    "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
   ],  
   "location": {  
     "type": "Point",  
@@ -593,8 +481,8 @@ CatalogueDCAT-AP:
     "DE"  
   ],  
   "licence": "Creative Commons 3.0 International",  
-  "releaseDate": "2004-08-22T22:32:47Z",  
-  "spatial_geographic": [  
+  "issued": "2004-08-22T22:32:47Z",  
+  "spatial": [  
     {  
       "type": "Point",  
       "coordinates": [  
@@ -603,11 +491,11 @@ CatalogueDCAT-AP:
       ]  
     }  
   ],  
-  "themes": [  
+  "themeTaxonomy": [  
     "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
     "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
   ],  
-  "modificationDate": "1982-09-02T03:16:28Z",  
+  "modified": "1982-09-02T03:16:28Z",  
   "hasPart": [  
     "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
   ],  
@@ -617,64 +505,24 @@ CatalogueDCAT-AP:
     "Catalogue.items.IHOB.85266800"  
   ],  
   "rights": "",  
-  "catalogue": [  
+  "catalog": [  
     "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
     "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
   ],  
-  "creator": "Role fact sport shoulder blue direction probably order."  
+  "creator": [""]  
 }  
 ```  
 </details>  
-
-#### CatalogueDCAT-AP NGSI-v2 正規化例  
-
-JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### カタログ NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のカタログの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
-  "type": "CatalogueDCAT-AP",  
-  "dateCreated": {  
-    "type": "DateTime",  
-    "value": "1980-03-03T10:01:24Z"  
-  },  
-  "dateModified": {  
-    "type": "DateTime",  
-    "value": "1987-12-04T10:44:40Z"  
-  },  
-  "source": {  
-    "type": "Text",  
-    "value": ""  
-  },  
-  "name": {  
-    "type": "Text",  
-    "value": "Catalogue"  
-  },  
-  "alternateName": {  
-    "type": "Text",  
-    "value": ""  
-  },  
+  "type": "Catalogue",  
   "description": {  
-    "type": "Text",  
-    "value": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
-  },  
-  "dataProvider": {  
-    "type": "Text",  
-    "value": "european open data portal"  
-  },  
-  "owner": {  
-    "type": "Array",  
-    "value": [  
-      "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
-    ]  
-  },  
-  "seeAlso": {  
-    "type": "Array",  
-    "value": [  
-      "urn:ngsi-ld:Catalogue:ILBA:60770941"  
-    ]  
+    "type": "array",  
+    "value": ["Interesting art recently book girl yard represent book. Garden style wish blood your ground size."]  
   },  
   "location": {  
     "type": "geo:json",  
@@ -699,11 +547,11 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。これは
     }  
   },  
   "dataset": {  
-    "type": "object",  
-    "value": "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
+    "type": "array",  
+    "value": ["urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"]  
   },  
   "publisher": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "spanish open data portal"  
   },  
   "title": {  
@@ -714,26 +562,26 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。これは
     ]  
   },  
   "homepage": {  
-    "type": "string",  
+    "type": "Text",  
     "value": "urn:ngsi-ld:Catalogue:homepage:ZFAW:13633782"  
   },  
   "language": {  
-    "type": "Array",  
+    "type": "array",  
     "value": [  
       "Town size computer way. Since challenge phone state listen south low.",  
       "Eight once single. Build every kid."  
     ]  
   },  
   "licence": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Improve social simply court week debate bad. Structure ago cup head point. Above much can own course."  
   },  
-  "releaseDate": {  
+  "issued": {  
     "type": "DateTime",  
     "value": "2004-08-22T22:32:47Z"  
   },  
-  "spatial_geographic": {  
-    "type": "Property",  
+  "spatial": {  
+    "type": "geo:json",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
@@ -742,23 +590,23 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。これは
       ]  
     }  
   },  
-  "themes": {  
-    "type": "Array",  
+  "themeTaxonomy": {  
+    "type": "array",  
     "value": [  
-      "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
-      "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+      "Tourism",  
+      "Economy"  
     ]  
   },  
-  "modificationDate": {  
+  "modified": {  
     "type": "DateTime",  
     "value": "1982-09-02T03:16:28Z"  
   },  
   "hasPart": {  
-    "type": "object",  
-    "value": "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
+    "type": "array",  
+    "value": ["urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"]  
   },  
   "isPartOf": {  
-    "type": "object",  
+    "type": "Text",  
     "value": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"  
   },  
   "record": {  
@@ -769,10 +617,10 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。これは
     ]  
   },  
   "rights": {  
-    "type": "Property",  
+    "type": "Text",  
     "value": "Open source"  
   },  
-  "catalogue": {  
+  "catalog": {  
     "type": "Array",  
     "value": [  
       "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
@@ -780,113 +628,94 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。これは
     ]  
   },  
   "creator": {  
-    "type": "Text",  
-    "value": "Role fact sport shoulder blue direction probably order."  
+    "type": "array",  
+    "value": ["Role fact sport shoulder blue direction probably order."]  
   }  
 }  
 ```  
 </details>  
-
-#### CatalogueDCAT-AP NGSI-LD キー値例  
-
-ここでは、CatalogueDCAT-APをJSON-LD形式でkey-valuesとした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### カタログ NGSI-LD キー値 例  
+以下はJSON-LD形式のカタログをkey-valuesとした例である。options=keyValues`を使うとNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
-    "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
-    "type": "CatalogueDCAT-AP",  
-    "address": {  
-        "streetAddress": "2 Rue Mercier",  
-        "addressLocality": "Luxembourg",  
-        "addressRegion": "Luxembourg",  
-        "addressCountry": "Luxembourg",  
-        "postalCode": "2985 ",  
-        "postOfficeBoxNumber": "",  
-        "areaServed": "European Union"  
-    },  
-    "alternateName": "",  
-    "catalogue": [  
-        "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
-        "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
-    ],  
-    "creator": "Role fact sport shoulder blue direction probably order.",  
-    "dataProvider": "european open data portal",  
-    "dataset": [  
-        "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
-    ],  
-    "dateCreated": "1980-03-03T10:01:24Z",  
-    "dateModified": "1987-12-04T10:44:40Z",  
-    "description": "Interesting art recently book girl yard represent book. Garden style wish blood your ground size.",  
-    "hasPart": [  
-        "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
-    ],  
-    "homepage": "ngsi-ld:Catalogue:homepage:ZFAW:13633782",  
-    "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287",  
-    "language": [  
-        "ES",  
-        "DE"  
-    ],  
-    "licence": "Creative Commons 3.0 International",  
-    "location": {  
-        "type": "Point",  
-        "coordinates": [  
-            -83.400987,  
-            0.152532  
-        ]  
-    },  
-    "modificationDate": "1982-09-02T03:16:28Z",  
-    "name": "Catalogue",  
-    "owner": [  
-        "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
-    ],  
-    "publisher": "Spanish data portal",  
-    "record": [  
-        "Catalogue.items.HLGA.73285516",  
-        "Catalogue.items.IHOB.85266800"  
-    ],  
-    "releaseDate": "2004-08-22T22:32:47Z",  
-    "rights": "",  
-    "seeAlso": [  
-        "urn:ngsi-ld:Catalogue:ILBA:60770941"  
-    ],  
-    "source": "",  
-    "spatial_geographic": [  
-        {  
-            "type": "Point",  
-            "coordinates": [  
-                57.234944,  
-                52.840273  
-            ]  
-        }  
-    ],  
-    "themes": [  
-        "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
-        "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
-    ],  
-    "title": [  
-        "title first",  
-        "Secondary title."  
-    ],  
-    "@context": [  
-        "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+```json  
+{  
+  "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
+  "type": "Catalogue",  
+  "address": {  
+    "streetAddress": "2 Rue Mercier",  
+    "addressLocality": "Luxembourg",  
+    "addressRegion": "Luxembourg",  
+    "addressCountry": "Luxembourg",  
+    "postalCode": "2985 ",  
+    "postOfficeBoxNumber": "",  
+    "areaServed": "European Union"  
+  },  
+  "catalogue": [  
+    "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
+    "urn:ngsi-ld:Catalogue:items:PECX:02526105"  
+  ],  
+  "creator": ["Role fact sport shoulder blue direction probably order."],  
+  "dataset": [  
+    "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
+  ],  
+  "description": [  
+    "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."  
+  ],  
+  "hasPart": [  
+    "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"  
+  ],  
+  "homepage": "ngsi-ld:Catalogue:homepage:ZFAW:13633782",  
+  "isPartOf": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287",  
+  "language": [  
+    "ES",  
+    "DE"  
+  ],  
+  "licence": "Creative Commons 3.0 International",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      -83.400987,  
+      0.152532  
     ]  
+  },  
+  "modified": "1982-09-02T03:16:28Z",  
+  "publisher": "Spanish data portal",  
+  "record": [  
+    "Catalogue.items.HLGA.73285516",  
+    "Catalogue.items.IHOB.85266800"  
+  ],  
+  "issued": "2004-08-22T22:32:47Z",  
+  "rights": "",  
+  "spatial": [  
+    {  
+      "type": "Point",  
+      "coordinates": [  
+        57.234944,  
+        52.840273  
+      ]  
+    }  
+  ],  
+  "themeTaxonomy": [  
+    "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
+    "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+  ],  
+  "title": [  
+    "title first",  
+    "Secondary title."  
+  ],  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
-
-#### CatalogueDCAT-AP NGSI-LD 正規化例  
-
-JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### カタログ NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のカタログの例である。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",  
-  "type": "CatalogueDCAT-AP",  
+  "type": "Catalogue",  
   "address": {  
     "type": "Property",  
     "value": {  
@@ -899,11 +728,7 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプシ
       "areaServed": "European Union"  
     }  
   },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "catalogue": {  
+  "catalog": {  
     "type": "Relationship",  
     "value": [  
       "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",  
@@ -911,12 +736,8 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプシ
     ]  
   },  
   "creator": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "European open data portal"  
+    "type": "Relationship",  
+    "object": [""]  
   },  
   "dataset": {  
     "type": "Relationship",  
@@ -924,23 +745,9 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプシ
       "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"  
     ]  
   },  
-  "dateCreated": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2020-03-03T10:01:24Z"  
-    }  
-  },  
-  "dateModified": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-07-04T10:44:40Z"  
-    }  
-  },  
   "description": {  
     "type": "Property",  
-    "value": ""  
+    "value": [""]  
   },  
   "hasPart": {  
     "type": "Relationship",  
@@ -965,9 +772,8 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプシ
   },  
   "licence": {  
     "type": "Property",  
-    "value": [  
+    "value":  
       "Creative Commons 3.0 International"  
-    ]  
   },  
   "location": {  
     "type": "GeoProperty",  
@@ -979,50 +785,36 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプシ
       ]  
     }  
   },  
-  "modificationDate": {  
-    "type": "DateTime",  
-    "value": "1982-09-02T03:16:28Z"  
-  },  
-  "name": {  
+  "modified": {  
     "type": "Property",  
-    "value": "Catalogue"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Catalogue:ZYKY:89462950"  
-    ]  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "1982-09-02T03:16:28Z"  
+    }  
   },  
   "publisher": {  
     "type": "Property",  
     "value": "Spain open data portal"  
   },  
   "record": {  
-    "type": "Property",  
+    "type": "Relationship",  
     "value": [  
       "Catalogue.items.HLGA.73285516",  
       "Catalogue.items.IHOB.85266800"  
     ]  
   },  
-  "releaseDate": {  
-    "type": "DateTime",  
-    "value": "2004-08-22T22:32:47Z"  
+  "issued": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2004-08-22T22:32:47Z"  
+    }  
   },  
   "rights": {  
     "type": "Property",  
     "value": ""  
   },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Catalogue:ILBA:60770941"  
-    ]  
-  },  
-  "source": {  
-    "type": "Property",  
-    "value": ""  
-  },  
-  "spatial_geographic": {  
+  "spatial": {  
     "type": "GeoProperty",  
     "value": {  
       "type": "Point",  
@@ -1032,11 +824,11 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプシ
       ]  
     }  
   },  
-  "themes": {  
+  "themeTaxonomy": {  
     "type": "Property",  
     "value": [  
-      "Want couple him finally responsibility begin. Coach join down new major. Happy yard letter then return member.",  
-      "Politics road two question offer white. Recognize fight keep blue person create be. Radio edge or improve less special future. Itself detail computer exist."  
+      "Tourism",  
+      "Economy"  
     ]  
   },  
   "title": {  
@@ -1047,26 +839,16 @@ JSON-LD形式のCatalogueDCAT-APを正規化した例を示します。オプシ
     ]  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/SEMICeu/DCAT-AP/master/releases/1.1/dcat-ap_1.1.jsonld",  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
   ]  
 }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
