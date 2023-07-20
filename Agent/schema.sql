@@ -1,3 +1,3 @@
-/* (Beta) Export of data model AgentDCAT-AP of the subject dataModel.DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE AgentDCAT-AP_type AS ENUM ('AgentDCAT-AP');
-CREATE TABLE AgentDCAT-AP (address json, agentName json, agentType text, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, owner json, seeAlso json, source text, type AgentDCAT-AP_type);
+/* (Beta) Export of data model Agent of the subject dataModel.DCAT-AP for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Agent_type AS ENUM ('Agent');
+CREATE TABLE Agent (Type text, address json, areaServed text, id text, location json, name json, type Agent_type);
