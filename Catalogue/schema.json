@@ -27,7 +27,7 @@
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 8 of the pdf document https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1",
           "items": {
             "type": "string",
-            "description": "Property. Catalog description in different languages."
+            "description": "Property. Catalogue description in different languages."
           }
         },
         "publisher": {
