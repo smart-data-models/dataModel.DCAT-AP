@@ -68,13 +68,13 @@
           "type": "string",
           "description": "Property. Model:'http://spdx.org/rdf/terms#Checksum'. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."
         },
-        "compressionFormat": {
+        "compressFormat": {
           "type": "string",
           "description": "Property. Model:'http://purl.org/dc/terms/MediaType'. This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA"
         },
         "page": {
           "type": "array",
-          "description": "Property. Model:'https://schema.org/Text'. This property refers to a page or document about this Distribution.",
+          "description": "Property. Model:'http://xmlns.com/foaf/0.1/#term_Document'. This property refers to a page or document about this Distribution.",
           "items": {
             "type": "string",
             "description": "Property. Every page providing information about the distribution"
@@ -103,7 +103,7 @@
         },
         "conformsTo": {
           "type": "array",
-          "description": "Property. Model:'\"http://purl.org/dc/terms/Standard'. This property refers to an established schema to which the described Distribution conforms.",
+          "description": "Property. Model:'http://purl.org/dc/terms/Standard'. This property refers to an established schema to which the described Distribution conforms.",
           "items": {
             "type": "string",
             "description": "Property. Every rule o standard the distribution complies with"
