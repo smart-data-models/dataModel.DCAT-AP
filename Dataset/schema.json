@@ -44,7 +44,7 @@
           }
         },
         "belongsToCatalogue": {
-          "description": "Relationship. It links the Dataset to its parent Catalogue. Model:'https://www.w3.org/ns/dcat#Catalogue'",
+          "description": "Relationship. It links the Dataset to its parent Catalogue. Model:'https://www.w3.org/ns/dcat#Catalogue'. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1",
           "anyOf": [
             {
               "type": "string",
@@ -62,7 +62,7 @@
         },
         "distribution": {
           "type": "array",
-          "description": "Relationship. It links the Dataset to one or more of its available Distribution(s). Model:'http://www.w3.org/ns/dcat#Distribution'",
+          "description": "Relationship. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'",
           "items": {
             "anyOf": [
               {
