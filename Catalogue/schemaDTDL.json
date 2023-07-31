@@ -175,7 +175,7 @@
                 "@type": "Array",
                 "elementSchema": "string"
             },
-            "comment": "This property refers to a catalog whose contents are of interest in the context of this catalog",
+            "comment": "This property refers to a catalogue whose contents are of interest in the context of this catalog",
             "displayName": "catalogue"
         },
         {

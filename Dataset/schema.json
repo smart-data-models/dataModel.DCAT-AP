@@ -237,7 +237,7 @@
             "description": "Property. Every qualified relation included"
           }
         },
-        "relatedResource": {
+        "relation": {
           "type": "array",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property refers to a related resource.",
           "items": {
@@ -291,7 +291,7 @@
           "format": "date-time",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Dataset was changed or modified."
         },
-        "version": {
+        "versionInfo": {
           "type": "string",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a version number or other version designation of the Dataset."
         },

@@ -172,7 +172,7 @@
       ""
     ]
   },
-  "relatedResource": {
+  "relation": {
     "type": "Property",
     "value": [
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",
@@ -209,7 +209,7 @@
     "type": "Property",
     "value": ""
   },
-  "version": {
+  "versionInfo": {
     "type": "Property",
     "value": "3.0"
   },
