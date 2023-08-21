@@ -19,6 +19,7 @@
   "byteSize": 43503,
   "checksum": "H3FR.",
   "compressionFormat": "",
+  "belongsToDataset": "urn:ngsi-ld:Dataset:items:CHIF:23645981",
   "description": [
     "Distribution of open data portals in csv"
   ],

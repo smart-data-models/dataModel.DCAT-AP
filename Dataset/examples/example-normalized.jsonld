@@ -28,11 +28,15 @@
        "https://datos.gob.es/es/comment/reply/145778."
     ]
   },
+  "belongsToCatalogue": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
+  },
   "distribution": {
     "type": "Relationship",
     "object": [
-         "urn:ngsi-ld:Distribution:items:KJVK:30944451",
-    "urn:ngsi-ld:Distribution:items:MMWU:84196227"
+      "urn:ngsi-ld:Distribution:items:KJVK:30944451",
+      "urn:ngsi-ld:Distribution:items:MMWU:84196227"
     ]
   },
   "keyword": {

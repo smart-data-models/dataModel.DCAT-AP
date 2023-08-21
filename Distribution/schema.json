@@ -72,6 +72,23 @@
           "type": "string",
           "description": "Property. Model:'http://purl.org/dc/terms/MediaType'. This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA"
         },
+        "belongsToDataset": {
+          "description": "Relationship. It links the Distribution to its parent Dataset. Model:'https://www.w3.org/ns/dcat#Dataset'. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1",
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Link to the dataset"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Link to the dataset"
+            }
+          ]
+        },
         "page": {
           "type": "array",
           "description": "Property. Model:'http://xmlns.com/foaf/0.1/#term_Document'. This property refers to a page or document about this Distribution.",
