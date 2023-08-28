@@ -32,7 +32,7 @@ Distribution:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
         district:
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          description: 'Property. A district is a type of administrative division that, in some countries, is managed by the local government'
           type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
@@ -44,7 +44,7 @@ Distribution:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
         streetNr:
-          description: Number identifying a specific property on a public street.
+          description: Property. Number identifying a specific property on a public street
           type: string
       type: object
       x-ngsi:
@@ -62,6 +62,20 @@ Distribution:
       x-ngsi:
         model: "http://www.w3.org/2004/02/skos/core#Concept"
         type: Property
+    belongsToDataset:
+      anyOf:
+        - description: Property. Link to the dataset
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: Property. Link to the dataset
+          format: uri
+          type: string
+      description: "Relationship. It links the Distribution to its parent Dataset. Model:'https://www.w3.org/ns/dcat#Dataset'. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1"
+      x-ngsi:
+        model: "https://www.w3.org/ns/dcat#Dataset"
+        type: Relationship
     byteSize:
       description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the size of a Distribution in bytes."
       type: number
@@ -74,14 +88,14 @@ Distribution:
       x-ngsi:
         model: "http://spdx.org/rdf/terms#Checksum"
         type: Property
-    compressionFormat:
+    compressFormat:
       description: 'Property. Model:''http://purl.org/dc/terms/MediaType''. This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA'
       type: string
       x-ngsi:
         model: http://purl.org/dc/terms/MediaType
         type: Property
     conformsTo:
-      description: 'Property. Model:''"http://purl.org/dc/terms/Standard''. This property refers to an established schema to which the described Distribution conforms.'
+      description: 'Property. Model:''http://purl.org/dc/terms/Standard''. This property refers to an established schema to which the described Distribution conforms.'
       items:
         description: Property. Every rule o standard the distribution complies with
         type: string
@@ -315,13 +329,13 @@ Distribution:
         model: http://purl.org/dc/terms/MediaType
         type: Property
     page:
-      description: 'Property. Model:''https://schema.org/Text''. This property refers to a page or document about this Distribution.'
+      description: "Property. Model:'http://xmlns.com/foaf/0.1/#term_Document'. This property refers to a page or document about this Distribution."
       items:
         description: Property. Every page providing information about the distribution
         type: string
       type: array
       x-ngsi:
-        model: https://schema.org/Text
+        model: "http://xmlns.com/foaf/0.1/#term_Document"
         type: Property
     rights:
       description: 'Property. Model:''http://purl.org/dc/terms/RightsStatement''. This property refers to a statement that specifies rights associated with the Distribution.'
