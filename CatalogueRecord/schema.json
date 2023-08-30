@@ -1,83 +1,83 @@
 {
-  "$schema": "http://json-schema.org/schema",
-  "$schemaVersion": "1.0.1",
-  "modelTags": "",
-  "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueRecord/schema.json",
-  "title": "Smart Data models - DCAT-AP Catalogue Record",
-  "description": "This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.1.1",
-  "type": "object",
-  "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
-    },
-    {
-      "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "CatalogueRecord"
-          ],
-          "description": "Property. NGSI entity type. It has to be CatalogueRecord"
+    "$schema": "http://json-schema.org/schema",
+    "$schemaVersion": "1.0.1",
+    "modelTags": "",
+    "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueRecord/schema.json",
+    "title": "Smart Data models - DCAT-AP Catalogue Record",
+    "description": "This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.1.1",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
         },
-        "id": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
-        },
-        "primaryTopic": {
-          "type": "string",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."
-        },
-        "modified": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Catalogue entry was changed or modified."
-        },
-        "conformsTo": {
-          "type": "string",
-          "description": "Property. Model:'http://purl.org/dc/terms/Standard'. This property refers to an Application Profile that the Dataset's metadata conforms to"
-        },
-        "status": {
-          "type": "string",
-          "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the latest revision of a Dataset's entry in the Catalogue."
-        },
-        "issued": {
-          "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date on which the description of the Dataset was included in the Catalogue."
-        },
-        "description": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description",
-          "items": {
-            "type": "string",
-            "description": "Property. Every language description"
-          }
-        },
-        "language": {
-          "type": "array",
-          "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages",
-          "items": {
-            "type": "string",
-            "description": "Property. Every language tag"
-          }
-        },
-        "source": {
-          "type": "string",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#CatalogRecord'. This property refers to the original metadata that was used in creating metadata for the Dataset."
-        },
-        "title": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.",
-          "items": {
-            "type": "string"
-          }
+        {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "CatalogueRecord"
+                    ],
+                    "description": "Property. NGSI entity type. It has to be CatalogueRecord"
+                },
+                "id": {
+                    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
+                },
+                "primaryTopic": {
+                    "type": "string",
+                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record"
+                },
+                "modified": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Catalogue entry was changed or modified"
+                },
+                "conformsTo": {
+                    "type": "string",
+                    "description": "Property. Model:'http://purl.org/dc/terms/Standard'. This property refers to an Application Profile that the Dataset's metadata conforms to"
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the latest revision of a Dataset's entry in the Catalogue"
+                },
+                "issued": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date on which the description of the Dataset was included in the Catalogue"
+                },
+                "description": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every language description"
+                    }
+                },
+                "language": {
+                    "type": "array",
+                    "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every language tag"
+                    }
+                },
+                "source": {
+                    "type": "string",
+                    "description": "Property. Model:'http://www.w3.org/ns/dcat#CatalogRecord'. This property refers to the original metadata that was used in creating metadata for the Dataset"
+                },
+                "title": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
         }
-      }
-    }
-  ],
-  "required": [
-    "id",
-    "type",
-    "primaryTopic",
-    "modified"
-  ]
+    ],
+    "required": [
+        "id",
+        "type",
+        "primaryTopic",
+        "modified"
+    ]
 }
