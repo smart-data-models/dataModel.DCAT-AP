@@ -27,7 +27,7 @@
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 8 of the pdf document https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1",
                     "items": {
                         "type": "string",
-                        "description": "Property. Catalogue description in different languages."
+                        "description": "Property. Catalogue description in different languages"
                     }
                 },
                 "publisher": {
@@ -39,7 +39,7 @@
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name",
                     "items": {
                         "type": "string",
-                        "description": "Property. Title in different languages."
+                        "description": "Property. Title in different languages"
                     }
                 },
                 "dataset": {
@@ -52,12 +52,12 @@
                                 "minLength": 1,
                                 "maxLength": 256,
                                 "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                "description": "Property. Identifier format of any NGSI entity."
+                                "description": "Property. Identifier format of any NGSI entity"
                             },
                             {
                                 "type": "string",
                                 "format": "uri",
-                                "description": "Property. Identifier format of any NGSI entity."
+                                "description": "Property. Identifier format of any NGSI entity"
                             }
                         ]
                     }
@@ -72,15 +72,15 @@
                                 "minLength": 1,
                                 "maxLength": 256,
                                 "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                "description": "Property. Identifier format of any NGSI entity."
+                                "description": "Property. Identifier format of any NGSI entity"
                             },
                             {
                                 "type": "string",
                                 "format": "uri",
-                                "description": "Property. Identifier format of any NGSI entity."
+                                "description": "Property. Identifier format of any NGSI entity"
                             }
                         ],
-                        "description": "Property. NGSI-LD id of the different services linked to the catalogue."
+                        "description": "Property. NGSI-LD id of the different services linked to the catalogue"
                     }
                 },
                 "homepage": {
@@ -93,7 +93,7 @@
                     "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages",
                     "items": {
                         "type": "string",
-                        "description": "Property. Individual identifiers of the language."
+                        "description": "Property. Individual identifiers of the language"
                     }
                 },
                 "license": {
@@ -130,7 +130,7 @@
                     "items": {
                         "type": "string",
                         "format": "uri",
-                        "description": "Relationship. Every link to the related catalog."
+                        "description": "Relationship. Every link to the related catalog"
                     }
                 },
                 "isPartOf": {
@@ -148,15 +148,15 @@
                                 "minLength": 1,
                                 "maxLength": 256,
                                 "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                "description": "Property. Identifier format of any NGSI entity."
+                                "description": "Property. Identifier format of any NGSI entity"
                             },
                             {
                                 "type": "string",
                                 "format": "uri",
-                                "description": "Property. Identifier format of any NGSI entity."
+                                "description": "Property. Identifier format of any NGSI entity"
                             }
                         ],
-                        "description": "Relationship. Link to the catalog record."
+                        "description": "Relationship. Link to the catalog record"
                     }
                 },
                 "rights": {
@@ -173,15 +173,15 @@
                                 "minLength": 1,
                                 "maxLength": 256,
                                 "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                "description": "Property. Identifier format of any NGSI entity."
+                                "description": "Property. Identifier format of any NGSI entity"
                             },
                             {
                                 "type": "string",
                                 "format": "uri",
-                                "description": "Property. Identifier format of any NGSI entity."
+                                "description": "Property. Identifier format of any NGSI entity"
                             }
                         ],
-                        "description": "Relationship. Every link to the contents of interest to the catalog."
+                        "description": "Relationship. Every link to the contents of interest to the catalog"
                     }
                 },
                 "creator": {
@@ -189,7 +189,7 @@
                     "description": "Relationship. Model:'http://xmlns.com/foaf/0.1/Agent'. The entities primarily responsible for producing the catalogue",
                     "items": {
                         "type": "string",
-                        "description": "Relationship. Model:'http://xmlns.com/foaf/0.1/Agent'. The link to an entity primarily responsible for producing the catalogue."
+                        "description": "Relationship. Model:'http://xmlns.com/foaf/0.1/Agent'. The link to an entity primarily responsible for producing the catalogue"
                     }
                 }
             }
