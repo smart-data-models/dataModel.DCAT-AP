@@ -15,7 +15,7 @@
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
-- `Type[string]`: 属性。Model:'http://www.w3.org/2004/02/skos/core#Concept'。该属性指数据集的类型。建议使用受控词汇数据类型。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `accessRights[string]`: 属性。模型:'http://purl.org/dc/terms/RightsStatement'。该属性指的是数据集是开放数据、有访问限制还是不公开的信息。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `accrualPeriodicity[string]`: 属性。模型：'http://purl.org/dc/terms/Frequency'。该属性指数据集的更新频率。  . Model: [http://purl.org/dc/terms/Frequency](http://purl.org/dc/terms/Frequency)- `conformsTo[array]`: 属性。模型:'http://purl.org/dc/terms/Standard'。该属性指的是实施规则或其他规范。  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `contactPoint[array]`: 属性。模型:'http://www.w3.org/2006/vcard/ns#Kind'。该属性包含联系信息，可用于发送有关数据集的评论。  . Model: [http://www.w3.org/2006/vcard/ns#Kind](http://www.w3.org/2006/vcard/ns#Kind)- `creator[array]`: 属性。模型：'http://xmlns.com/foaf/0.1/Agent'。该属性指的是主要负责制作数据集的实体。  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `description[array]`: 属性。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含数据集的自由文本说明。该属性可重复用于并行语言版本的描述。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `distribution[array]`: 关系。此属性将数据集链接到可用的分布。模型:'http://www.w3.org/ns/dcat#Distribution  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `hasVersion[array]`: 属性。模型:'http://www.w3.org/ns/dcat#Dataset'。该属性指的是相关数据集，它是所述数据集的一个版本、版本或改编版本。  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `id[*]`: 实体的唯一标识符  - `identifier[array]`: 属性。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含数据集的主要标识符，例如 URI 或目录中的其他唯一标识符。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `isReferencedBy[array]`: 关系。模型:'http://www.w3.org/2000/01/rdf-schema#Resource'。该属性涉及引用、引用或以其他方式指向数据集的相关资源（如出版物）。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `isVersionOf[array]`: 属性。模型:'http://www.w3.org/ns/dcat#Dataset'。该属性指相关数据集，所述数据集是其版本、版本或改编。  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `issued[string]`: 属性。模型:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含数据集的正式发布（如出版）日期。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `keyword[array]`: 属性。该属性包含描述数据集的关键字或标记。模型:'http://www.w3.org/2000/01/rdf-schema#Literal'。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal.](http://www.w3.org/2000/01/rdf-schema#Literal.)- `landingPage[array]`: 属性。模型:'http://xmlns.com/foaf/0.1/Document'。该属性指的是可访问数据集、其分布和/或其他信息的网页。其目的是指向原始数据提供者的登陆页面，而不是第三方网站（如聚合器）上的页面。  . Model: [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)- `language[array]`: 属性。Model:'http://purl.org/dc/terms/LinguisticSystem'。该属性指数据集的一种语言。如果数据集中有多种语言，可重复使用此属性。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `modified[string]`: 属性。模型:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含数据集更改或修改的最新日期。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `otherIdentifier[array]`: 属性。模型:'http://www.w3.org/ns/adms#Identifier'。该属性指数据集的二级标识符，如 MAST/ADS、DataCite、DOI、EZID 或 W3ID。  . Model: [http://www.w3.org/ns/adms#Identifier](http://www.w3.org/ns/adms#Identifier)- `page[array]`: 属性。模型:'http://xmlns.com/foaf/0.1/Document'。该属性指向有关该数据集的页面或文档。  . Model: [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)- `provenance[array]`: 属性。模型:'http://purl.org/dc/terms/ProvenanceStatement'。该属性包含有关数据集世系的声明。  . Model: [http://purl.org/dc/terms/ProvenanceStatement](http://purl.org/dc/terms/ProvenanceStatement)- `publisher[string]`: 属性。模型:'http://xmlns.com/foaf/0.1/Agent'。该属性指负责提供数据集的实体（组织）。  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `qualifiedAttribution[array]`: 属性。模型:'http://www.w3.org/ns/dcat#Relationship'。该属性指向对资源负有某种责任的代理的链接  . Model: [http://www.w3.org/ns/dcat#Relationship](http://www.w3.org/ns/dcat#Relationship)- `qualifiedRelation[array]`: 属性。模型:'http://www.w3.org/ns/dcat#Relationship'。该属性为描述与另一资源的关系提供了链接。  . Model: [http://www.w3.org/ns/dcat#Relationship](http://www.w3.org/ns/dcat#Relationship)- `relatedResource[array]`: 属性。模型:'http://www.w3.org/2000/01/rdf-schema#Resource'。该属性指向相关资源。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `sample[array]`: 属性。模型：'http://www.w3.org/ns/dcat#Distribution'。该属性指的是数据集的样本分布。  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `source[array]`: 属性。模型:'http://www.w3.org/ns/dcat#Dataset'。该属性指的是一个相关数据集，描述的数据集就是从该数据集派生出来的。  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `spatial[array]`: GeoProperty.模型：'http://purl.org/dc/terms/Location'。该属性指数据集覆盖的地理区域。  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `spatialResolutionInMeters[number]`: 属性。模型:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性指数据集中可分辨的最小空间间隔，单位为米。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `temporal[array]`: 属性。该属性指数据集涵盖的时间段。模型:'http://purl.org/dc/terms/PeriodOfTime'。  . Model: [http://purl.org/dc/terms/PeriodOfTime.](http://purl.org/dc/terms/PeriodOfTime.)- `temporalResolution[array]`: 属性。模型：'http://purl.org/dc/terms/PeriodOfTime'。该属性指数据集中可解析的最小时间段。  . Model: [http://purl.org/dc/terms/PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)- `theme[array]`: 属性。模型：'http://www.w3.org/2004/02/skos/core#Concept'。此属性指数据集的一个类别。一个数据集可能与多个主题相关联。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: 属性。模型：'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含数据集的名称。该属性可重复用于并行语言版本的名称。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: 属性。NGSI 类型。必须是数据集  - `version[string]`: 属性。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含数据集的版本号或其他版本名称。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `versionNotes[array]`: 属性。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。此属性包含此版本与数据集先前版本之间差异的说明。此属性可重复用于平行语言版本的版本说明。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `wasGeneratedBy[array]`: 属性。模型：'https://www.w3.org/ns/prov#Activity'。该属性指的是生成数据集或为创建数据集提供业务背景的活动。  . Model: [https://www.w3.org/ns/prov#Activity](https://www.w3.org/ns/prov#Activity)<!-- /30-PropertiesList -->  
+- `Type[string]`: 该属性指数据集的类型。推荐的受控词汇数据类型包括  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `accessRights[string]`: 该属性指的是表明数据集是开放数据、有访问限制还是非公开数据的信息。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `accrualPeriodicity[string]`: 该属性指数据集的更新频率  . Model: [http://purl.org/dc/terms/Frequency](http://purl.org/dc/terms/Frequency)- `belongsToCatalogue[*]`: 它将数据集链接到其父目录。注意：该属性不属于当前的 DCAT-AP 2.1.1 版本。  . Model: [https://www.w3.org/ns/dcat#Catalogue](https://www.w3.org/ns/dcat#Catalogue)- `conformsTo[array]`: 该属性指的是实施规则或其他规范。  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `contactPoint[array]`: 该属性包含联系信息，可用于发送有关数据集的评论  . Model: [http://www.w3.org/2006/vcard/ns#Kind](http://www.w3.org/2006/vcard/ns#Kind)- `creator[array]`: 该属性指主要负责制作数据集的实体  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `description[array]`: 该属性包含数据集的自由文本说明。该属性可重复用于并行语言版本的描述  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `distribution[array]`: 此属性将数据集链接到可用的分布区  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `hasVersion[array]`: 该属性指的是相关数据集，它是所述数据集的一个版本、版本或改编版本  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `id[*]`: 实体的唯一标识符  - `identifier[array]`: 该属性包含数据集的主要标识符，例如 URI 或目录中的其他唯一标识符  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `isReferencedBy[array]`: 该属性与相关资源（如出版物）有关，该资源参考、引用或以其他方式指向数据集  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `isVersionOf[array]`: 该属性指相关数据集，所述数据集是其版本、版本或改编版本  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `issued[date-time]`: 该属性包含数据集的正式发布（如出版）日期  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `keyword[array]`: 该属性包含描述数据集的关键字或标记  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `landingPage[array]`: 该属性指的是可访问数据集、其分布和/或其他信息的网页。其目的是指向原始数据提供者的登陆页面，而不是第三方网站（如聚合器）上的页面。  . Model: [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)- `language[array]`: 此属性指数据集的一种语言。如果数据集中有多种语言，该属性可重复使用  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `modified[date-time]`: 该属性包含数据集更改或修改的最新日期  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `otherIdentifier[array]`: 该属性指数据集的二级标识符，如 MAST/ADS、DataCite、DOI、EZID 或 W3ID。  . Model: [http://www.w3.org/ns/adms#Identifier](http://www.w3.org/ns/adms#Identifier)- `page[array]`: 该属性指向有关该数据集的页面或文档。  . Model: [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)- `provenance[array]`: 该属性包含有关数据集世系的声明  . Model: [http://purl.org/dc/terms/ProvenanceStatement](http://purl.org/dc/terms/ProvenanceStatement)- `publisher[string]`: 该属性指负责提供数据集的实体（组织）。  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `qualifiedAttribution[array]`: 该属性指向对资源负有某种责任的代理的链接  . Model: [http://www.w3.org/ns/dcat#Relationship](http://www.w3.org/ns/dcat#Relationship)- `qualifiedRelation[array]`: 该属性为描述与另一资源的关系提供了链接  . Model: [http://www.w3.org/ns/dcat#Relationship](http://www.w3.org/ns/dcat#Relationship)- `relation[array]`: 该属性指向相关资源  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `sample[array]`: 该属性指的是数据集的样本分布  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `source[array]`: 该属性指的是一个相关数据集，描述的数据集就来源于该数据集  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `spatial[array]`: 该属性指数据集覆盖的地理区域  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `spatialResolutionInMeters[number]`: 该属性是指数据集可分辨的最小空间间隔，单位为米  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `temporal[array]`: 该属性指数据集涵盖的时间段  . Model: [http://purl.org/dc/terms/PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)- `temporalResolution[array]`: 该属性指数据集中可解析的最小时间段。  . Model: [http://purl.org/dc/terms/PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)- `theme[array]`: 此属性指数据集的类别。一个数据集可能与多个主题相关联  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: 此属性包含数据集的名称。该属性可重复用于并行语言版本的名称  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSI 类型。必须是数据集  - `versionInfo[string]`: 此属性包含数据集的版本号或其他版本名称  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `versionNotes[array]`: 此属性包含此版本与数据集先前版本之间差异的说明。并行语言版本的版本说明可重复使用此属性  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `wasGeneratedBy[array]`: 该属性指生成数据集或为创建数据集提供业务背景的活动  . Model: [https://www.w3.org/ns/prov#Activity](https://www.w3.org/ns/prov#Activity)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `description`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -33,282 +33,396 @@ Dataset:
   description: Dataset Schema meeting DCAT-AP 2.1.1 specification    
   properties:    
     Type:    
-      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen."    
+      description: This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2004/02/skos/core#Concept"    
         type: Property    
     accessRights:    
-      description: 'Property. Model:''http://purl.org/dc/terms/RightsStatement''. This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public.'    
+      description: 'This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public'    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/RightsStatement    
         type: Property    
     accrualPeriodicity:    
-      description: 'Property. Model:''http://purl.org/dc/terms/Frequency''. This property refers to the frequency at which the Dataset is updated.'    
+      description: This property refers to the frequency at which the Dataset is updated    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/Frequency    
         type: Property    
+    belongsToCatalogue:    
+      anyOf:    
+        - description: Link to the catalogue    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Link to the catalogue    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: 'It links the Dataset to its parent Catalogue. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1'    
+      x-ngsi:    
+        model: "https://www.w3.org/ns/dcat#Catalogue"    
+        type: Relationship    
     conformsTo:    
-      description: 'Property. Model:''http://purl.org/dc/terms/Standard''. This property refers to an implementing rule or other specification. '    
+      description: 'This property refers to an implementing rule or other specification. '    
       items:    
-        description: Property. Every rule or specification applicable    
+        description: Every rule or specification applicable    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/Standard    
         type: Property    
     contactPoint:    
-      description: "Property. Model:'http://www.w3.org/2006/vcard/ns#Kind'. This property contains contact information that can be used for sending comments about the Dataset."    
+      description: This property contains contact information that can be used for sending comments about the Dataset    
       items:    
-        description: Property. Every contact element    
+        description: Every contact element    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2006/vcard/ns#Kind"    
         type: Property    
     creator:    
-      description: 'Property. Model:''http://xmlns.com/foaf/0.1/Agent''. This property refers to the entity primarily responsible for producing the dataset.'    
+      description: This property refers to the entity primarily responsible for producing the dataset    
       items:    
-        description: Property. Every creator included    
+        description: Every creator included    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://xmlns.com/foaf/0.1/Agent    
         type: Property    
     description:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."    
+      description: This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description    
       items:    
-        description: Property. Every description in a language    
+        description: Every description in a language    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     distribution:    
-      description: "Relationship. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'"    
+      description: This property links the Dataset to an available Distribution    
       items:    
-        description: Property. Every link to a distribution    
-        format: uri    
-        type: string    
+        anyOf:    
+          - description: Every link to a distribution    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Every link to a distribution    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Distribution"    
         type: Relationship    
     hasVersion:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset."    
+      description: 'This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset'    
       items:    
-        description: Property. Every version of the related datasets    
+        description: Every version of the related datasets    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     id:    
       anyOf:    
-        - description: Property. Identifier format of any NGSI entity    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     identifier:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."    
+      description: 'This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'    
       items:    
-        description: Property. Every identifier of the dataset    
+        description: Every identifier of the dataset    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     isReferencedBy:    
-      description: "Relationship. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."    
+      description: 'This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset'    
       items:    
-        description: Property. Every resource related to the dataset    
+        description: Every resource related to the dataset    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Relationship    
     isVersionOf:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation."    
+      description: 'This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation'    
       items:    
-        description: Property. Every dataset that the current dataset is a version of it    
+        description: Every dataset that the current dataset is a version of it    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     issued:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Dataset."    
+      description: 'This property contains the date of formal issuance (e.g., publication) of the Dataset'    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     keyword:    
-      description: "Property. This property contains a keyword or tag, describing the Dataset. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'."    
+      description: 'This property contains a keyword or tag, describing the Dataset'    
       items:    
-        description: Property. Every keyword tag included    
+        description: Every keyword tag included    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal."    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     landingPage:    
-      description: 'Property. Model:''http://xmlns.com/foaf/0.1/Document''. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.'    
+      description: 'This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator'    
       items:    
-        description: Property. Every web page listed    
+        description: Every web page listed    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://xmlns.com/foaf/0.1/Document    
         type: Property    
     language:    
-      description: 'Property. Model:''http://purl.org/dc/terms/LinguisticSystem''. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.'    
+      description: This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset    
       items:    
-        description: Property. Every language included    
+        description: Every language included    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/LinguisticSystem    
         type: Property    
     modified:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Dataset was changed or modified."    
+      description: This property contains the most recent date on which the Dataset was changed or modified    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     otherIdentifier:    
-      description: "Property. Model:'http://www.w3.org/ns/adms#Identifier'. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID."    
+      description: 'This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID'    
       items:    
-        description: Property. Every additional identifier included    
+        description: Every additional identifier included    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/adms#Identifier"    
         type: Property    
     page:    
-      description: 'Property. Model:''http://xmlns.com/foaf/0.1/Document''. This property refers to a page or document about this Dataset. '    
+      description: 'This property refers to a page or document about this Dataset. '    
       items:    
-        description: Property. Every page or document    
+        description: Every page or document    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://xmlns.com/foaf/0.1/Document    
         type: Property    
     provenance:    
-      description: 'Property. Model:''http://purl.org/dc/terms/ProvenanceStatement''. This property contains a statement about the lineage of a Dataset.'    
+      description: This property contains a statement about the lineage of a Dataset    
       items:    
-        description: Property. Every lineage associated to the dataset    
+        description: Every lineage associated to the dataset    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/ProvenanceStatement    
         type: Property    
     publisher:    
-      description: 'Property. Model:''http://xmlns.com/foaf/0.1/Agent''. This property refers to an entity (organisation) responsible for making the Dataset available.'    
+      description: This property refers to an entity (organisation) responsible for making the Dataset available    
       type: string    
       x-ngsi:    
         model: http://xmlns.com/foaf/0.1/Agent    
         type: Property    
     qualifiedAttribution:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property refers to a link to an Agent having some form of responsibility for the resource"    
+      description: This property refers to a link to an Agent having some form of responsibility for the resource    
       items:    
-        description: Property. Every attribution included    
+        description: Every attribution included    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Relationship"    
         type: Property    
     qualifiedRelation:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property provides a link to a description of a relationship with another resource."    
+      description: This property provides a link to a description of a relationship with another resource    
       items:    
-        description: Property. Every qualified relation included    
+        description: Every qualified relation included    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Relationship"    
         type: Property    
-    relatedResource:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property refers to a related resource."    
+    relation:    
+      description: This property refers to a related resource    
       items:    
-        description: Property. Every related resource included    
+        description: Every related resource included    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
     sample:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#Distribution'. This property refers to a sample distribution of the dataset."    
+      description: This property refers to a sample distribution of the dataset    
       items:    
-        description: Property. Every sample included with the dataset    
+        description: Every sample included with the dataset    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Distribution"    
         type: Property    
     source:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset from which the described Dataset is derived."    
+      description: This property refers to a related Dataset from which the described Dataset is derived    
       items:    
-        description: Property. Every dataset which is a source of the current dataset    
+        description: Every dataset which is a source of the current dataset    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     spatial:    
-      description: 'GeoProperty. Model:''http://purl.org/dc/terms/Location''. This property refers to a geographic region that is covered by the Dataset.'    
+      description: This property refers to a geographic region that is covered by the Dataset    
       items:    
-        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
         oneOf:    
-          - description: GeoProperty. Geojson reference to the item. Point    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
-              type:    
-                enum:    
-                  - Point    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON Point    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. LineString    
-            properties:    
-              bbox:    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
                 items:    
-                  type: number    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
                 minItems: 4    
                 type: array    
-              coordinates:    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
                 items:    
                   items:    
                     type: number    
@@ -316,193 +430,120 @@ Dataset:
                   type: array    
                 minItems: 2    
                 type: array    
-              type:    
-                enum:    
-                  - LineString    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON LineString    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. Polygon    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
                 items:    
                   items:    
                     items:    
-                      type: number    
                     minItems: 2    
                     type: array    
                   minItems: 4    
                   type: array    
                 type: array    
-              type:    
-                enum:    
-                  - Polygon    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON Polygon    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. MultiPoint    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
-                items:    
-                  items:    
-                    type: number    
-                  minItems: 2    
-                  type: array    
-                type: array    
-              type:    
-                enum:    
-                  - MultiPoint    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON MultiPoint    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. MultiLineString    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
-                items:    
-                  items:    
-                    items:    
-                      type: number    
-                    minItems: 2    
-                    type: array    
-                  minItems: 2    
-                  type: array    
-                type: array    
-              type:    
-                enum:    
-                  - MultiLineString    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON MultiLineString    
-            type: object    
-          - description: GeoProperty. Geojson reference to the item. MultiLineString    
-            properties:    
-              bbox:    
-                items:    
-                  type: number    
-                minItems: 4    
-                type: array    
-              coordinates:    
-                items:    
-                  items:    
-                    items:    
-                      items:    
-                        type: number    
-                      minItems: 2    
-                      type: array    
-                    minItems: 4    
-                    type: array    
-                  type: array    
-                type: array    
-              type:    
-                enum:    
-                  - MultiPolygon    
-                type: string    
-            required:    
-              - type    
-              - coordinates    
-            title: GeoJSON MultiPolygon    
-            type: object    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+        x-ngsi:    
+          type: GeoProperty    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/Location    
         type: GeoProperty    
     spatialResolutionInMeters:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters."    
+      description: 'This property refers to the minimum spatial separation resolvable in a dataset, measured in meters'    
       type: number    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     temporal:    
-      description: 'Property. This property refers to a temporal period that the Dataset covers. Model:''http://purl.org/dc/terms/PeriodOfTime''.'    
+      description: This property refers to a temporal period that the Dataset covers    
       items:    
-        description: Property. Every temporal period included    
+        description: Every temporal period included    
         format: date-time    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: http://purl.org/dc/terms/PeriodOfTime.    
+        model: http://purl.org/dc/terms/PeriodOfTime    
         type: Property    
     temporalResolution:    
-      description: 'Property. Model:''http://purl.org/dc/terms/PeriodOfTime''. This property refers to the minimum time period resolvable in the dataset. '    
+      description: 'This property refers to the minimum time period resolvable in the dataset. '    
       items:    
-        description: Property. Every temporal resolution included    
+        description: Every temporal resolution included    
         format: duration    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/PeriodOfTime    
         type: Property    
     theme:    
-      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes."    
+      description: This property refers to a category of the Dataset. A Dataset may be associated with multiple themes    
       items:    
-        description: Property. Every theme included    
+        description: Every theme included    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2004/02/skos/core#Concept"    
         type: Property    
     title:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name."    
+      description: This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name    
       items:    
-        description: Property. Every title in a language    
+        description: Every title in a language    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
-      description: Property. NGSI type. It has to be Dataset    
+      description: NGSI type. It has to be Dataset    
       enum:    
         - Dataset    
       type: string    
       x-ngsi:    
         type: Property    
-    version:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a version number or other version designation of the Dataset."    
+    versionInfo:    
+      description: This property contains a version number or other version designation of the Dataset    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     versionNotes:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes."    
+      description: This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes    
       items:    
-        description: Property. Every language description of the version notes    
+        description: Every language description of the version notes    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     wasGeneratedBy:    
-      description: "Property. Model:'https://www.w3.org/ns/prov#Activity'. This property refers to an activity that generated, or provides the business context for, the creation of the dataset."    
+      description: 'This property refers to an activity that generated, or provides the business context for, the creation of the dataset'    
       items:    
-        description: Property. Every activity included    
+        description: Every activity included    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "https://www.w3.org/ns/prov#Activity"    
@@ -546,6 +587,7 @@ Dataset:
   "contactPoint": [  
     "https://datos.gob.es/es/comment/reply/145778."  
   ],  
+  "belongsToCatalogue": "urn:ngsi-ld:Catalogue:items:MWVK:61846917",  
   "distribution": [  
     "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
     "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
@@ -686,11 +728,15 @@ Dataset:
        "https://datos.gob.es/es/comment/reply/145778."  
     ]  
   },  
+  "belongsToCatalogue": {  
+    "type": "Text",  
+    "value": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"  
+  },  
   "distribution": {  
     "type": "array",  
     "value": [  
-         "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
-    "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
+      "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
+      "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
     ]  
   },  
   "keyword": {  
@@ -899,6 +945,7 @@ Dataset:
   "contactPoint": [  
     "https://datos.gob.es/es/comment/reply/145778."  
   ],  
+  "belongsToCatalogue": "urn:ngsi-ld:Catalogue:items:MWVK:61846917",  
   "distribution": [  
     "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
     "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
@@ -1046,11 +1093,15 @@ Dataset:
        "https://datos.gob.es/es/comment/reply/145778."  
     ]  
   },  
+  "belongsToCatalogue": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"  
+  },  
   "distribution": {  
     "type": "Relationship",  
     "object": [  
-         "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
-    "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
+      "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
+      "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
     ]  
   },  
   "keyword": {  
@@ -1186,7 +1237,7 @@ Dataset:
       ""  
     ]  
   },  
-  "relatedResource": {  
+  "relation": {  
     "type": "Property",  
     "value": [  
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",  
@@ -1223,7 +1274,7 @@ Dataset:
     "type": "Property",  
     "value": ""  
   },  
-  "version": {  
+  "versionInfo": {  
     "type": "Property",  
     "value": "3.0"  
   },  
