@@ -1,59 +1,34 @@
-<!-- 10-Header -->
-  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: DataServiceRun  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceRun/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Eine Darstellung eines bestimmten Laufs eines Datendienstes (z. B. DataServiceDCAT-AP).**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Entität: DataServiceRun  
-=======================
-<!-- /10-Header -->
-  
-<!-- 15-License -->
-  
+## Liste der Eigenschaften  
 
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/DataServiceRun/LICENSE.md)  
-
-[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->
-  
-<!-- 20-Description -->
-  
-<!-- /20-Description -->
-  
-<!-- 30-PropertiesList -->
-  
-
-
-## Liste der Eigenschaften  
-
-
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-<!-- /30-PropertiesList -->
-  
-<!-- 35-RequiredProperties -->
-  
-
-Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  
-<!-- /35-RequiredProperties -->
-  
-<!-- 40-RequiredProperties -->
-  
-
-Dieses Datenmodell gehört nicht zum DCAT 2.1.0-Standard, sondern ist eine Erweiterung, die zur Annahme vorgeschlagen wird.  
-<!-- /40-RequiredProperties -->
-  
-<!-- 50-DataModelHeader -->
-  
-
-## Datenmodell Beschreibung der Eigenschaften  
-
-Alphabetisch sortiert (für Details anklicken)  
-<!-- /50-DataModelHeader -->
-  
-<!-- 60-ModelYaml -->
-  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `configuration[array]`: Technische Konfiguration des Dienstes. Bei diesem Attribut handelt es sich um ein Array von Eigenschaften und deren Werten, die Parameter erfassen, die mit der Konfiguration eines Dienstes zu tun haben (Ausgabeformat, URL usw.) und die derzeit nicht durch die in diesem Modell definierten Standardattribute abgedeckt sind  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `resultEntities[array]`: Eine Liste von Referenzen, die auf NGSI-LD-Entitäten zeigen, die innerhalb eines Dienstlaufs erzeugt wurden  - `resultExternal[array]`: Eine Liste von Uri, die auf externe Ergebnisse verweist, die im Rahmen eines Dienstlaufs erzeugt wurden  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `service[*]`: Eine Referenz, die auf die NGSI-LD-Entität verweist, die den entsprechenden Datendienst repräsentiert (z. B. vom Typ DataServiceDCAT-AP)  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `sourceEntities[array]`: Eine Liste von Referenzen, die auf NGSI-LD-Entitäten verweisen, die als Quelle innerhalb eines Dienstlaufs fungierten  - `sourceExternal[array]`: Eine Liste von URLs, die auf externe Ergebnisse verweisen, die als Quelle in einem Dienstlauf fungierten  - `type[string]`: NGSI-Entitätstyp. Es muss DataServiceRun sein  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Erforderliche Eigenschaften  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Dieses Datenmodell gehört nicht zum DCAT 2.1.0-Standard, sondern ist eine Erweiterung, die zur Annahme vorgeschlagen wird.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Datenmodell Beschreibung der Eigenschaften  
+Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
-
-```yaml  
+```yaml  
 DataServiceRun:    
   description: A representation of one specific run of a data service (e.g. DataServiceDCAT-AP).    
   properties:    
@@ -63,7 +38,7 @@ DataServiceRun:
       x-ngsi:    
         type: Property    
     configuration:    
-      description: 'Property. Model:''https://schema.org/StructuredValue''. Technical configuration of the service. This attribute is intended to be an array of properties and their values which capture parameters which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.'    
+      description: 'Technical configuration of the service. This attribute is intended to be an array of properties and their values which capture parameters which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model'    
       items:    
         properties:    
           parameter:    
@@ -77,18 +52,18 @@ DataServiceRun:
         model: https://schema.org/StructuredValue    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -99,48 +74,70 @@ DataServiceRun:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &dataservicerun_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *dataservicerun_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    resultEntities:    
-      description: Relationship. A list of references pointing to NGSI-LD entities that were generated within a service run.    
-      items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    resultEntities:    
+      description: A list of references pointing to NGSI-LD entities that were generated within a service run    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     resultExternal:    
-      description: Property. A list of uri pointing to external results that were generated within a service run.    
+      description: A list of uri pointing to external results that were generated within a service run    
       items:    
         format: uri    
         type: string    
@@ -161,39 +158,47 @@ DataServiceRun:
         type: Property    
     service:    
       anyOf:    
-        - description: Property. Identifier format of any NGSI entity    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: Relationship. A reference pointing to the NGSI-LD entity representing the corresponding data service (e.g. of type DataServiceDCAT-AP).    
+          x-ngsi:    
+            type: Property    
+      description: A reference pointing to the NGSI-LD entity representing the corresponding data service (e.g. of type DataServiceDCAT-AP)    
       x-ngsi:    
         type: Relationship    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     sourceEntities:    
-      description: Relationship. A list of references pointing to NGSI-LD entities that acted as source within a service run.    
+      description: A list of references pointing to NGSI-LD entities that acted as source within a service run    
       items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
+            x-ngsi:    
+              type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     sourceExternal:    
-      description: Property. A list of uri pointing to external results that acted as source within a service run.    
+      description: A list of uri pointing to external results that acted as source within a service run    
       items:    
         format: uri    
         type: string    
@@ -201,7 +206,7 @@ DataServiceRun:
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. NGSI entity type. It has to be DataServiceRun    
+      description: NGSI entity type. It has to be DataServiceRun    
       enum:    
         - DataServiceRun    
       type: string    
@@ -214,30 +219,21 @@ DataServiceRun:
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceRun/LICENSE.md    
-  x-model-schema: https://github.com/smart-data-models/dataModel.DCAT-AP/master/DataServiceRun/schema.json    
+  x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/DataServiceRun/schema.json    
   x-model-tags: SALTED    
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->
-  
-<!-- 70-MiddleNotes -->
-  
-<!-- /70-MiddleNotes -->
-  
-<!-- 80-Examples -->
-  
-
-## Beispiel-Nutzlasten  
-
-#### DataServiceRun NGSI-v2 key-values Beispiel  
-
-Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Beispiel-Nutzlasten  
+#### DataServiceRun NGSI-v2 key-values Beispiel  
+Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": [  
@@ -273,15 +269,11 @@ Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format als Key-Values
 }  
 ```  
 </details>  
-
-#### DataServiceRun NGSI-v2 normalisiert Beispiel  
-
-Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### DataServiceRun NGSI-v2 normalisiert Beispiel  
+Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": {  
@@ -342,21 +334,16 @@ Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format in normalisier
     "value": "urn:ngsi-ld:DataServiceDCAT-AP:example"  
   },      
   "@context": [  
-    2.1.0  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
-]  
+  ]  
 }  
 ```  
 </details>  
-
-#### DataServiceRun NGSI-LD key-values Beispiel  
-
-Hier ist ein Beispiel für einen DataServiceRun im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+#### DataServiceRun NGSI-LD key-values Beispiel  
+Hier ist ein Beispiel für einen DataServiceRun im JSON-LD Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
   "type": "DataServiceRun",  
   "configuration": [  
@@ -390,21 +377,16 @@ Hier ist ein Beispiel für einen DataServiceRun im JSON-LD Format als Key-Values
   ],  
   "service": "urn:ngsi-ld:DataServiceDCAT-AP:example",  
   "@context": [  
-      2.1.0  
       "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-
-#### DataServiceRun NGSI-LD normalisiert Beispiel  
-
-Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### DataServiceRun NGSI-LD normalisiert Beispiel  
+Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
 <details><summary><strong>show/hide example</strong></summary>    
-
-```json  
-
-{  
+```json  
+{  
     "id": "urn:ngsi-ld:DataServiceRun:example-1234",  
     "type": "DataServiceRun",  
     "configuration": {  
@@ -465,26 +447,16 @@ Hier ist ein Beispiel für einen DataServiceRun im JSON-LD-Format in normalisier
         "object": "urn:ngsi-ld:DataServiceDCAT-AP:example"  
     },  
     "@context": [  
-      2.1.0  
       "https://raw.githubusercontent.com/smart-data-models/dataModel.DataServices/master/context.jsonld"  
   ]  
   }  
 ```  
-</details><!-- /80-Examples -->
-  
-<!-- 90-FooterNotes -->
-  
-<!-- /90-FooterNotes -->
-  
-<!-- 95-Units -->
-  
-
-Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
-<!-- /95-Units -->
-  
-<!-- 97-LastFooter -->
-  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
-  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
