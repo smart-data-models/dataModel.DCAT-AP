@@ -15,7 +15,14 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `accessRights[string]`: Proprietà. Modello:'http://purl.org/dc/terms/RightsStatement'. Questa proprietà PUÒ includere informazioni relative all'accesso o alle restrizioni basate sulla privacy, sulla sicurezza o su altri criteri.  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `description[array]`: Proprietà. Modello:'http://www.w3.org/2000/01/rdf-schema#Literal'. Questa proprietà contiene un resoconto in testo libero del Servizio dati. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `endPointDescription[array]`: Proprietà. Modello:'http://www.w3.org/2000/01/rdf-schema#Resource'. Questa proprietà contiene una descrizione dei servizi disponibili tramite gli endpoint, comprese le operazioni, i parametri, ecc. La proprietà fornisce dettagli specifici sulle istanze degli endpoint effettivi, mentre dct:conformsTo è usato per indicare lo standard o la specifica generale che gli endpoint implementano.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `endPointURL[array]`: Proprietà. Modello:'http://www.w3.org/2000/01/rdf-schema#Resource'. La posizione principale o l'endpoint primario del servizio (un IRI).  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `id[*]`: Identificatore univoco dell'entità  - `license[string]`: Proprietà. Modello:'http://purl.org/dc/terms/LicenseDocument'. Questa proprietà contiene la licenza con cui il servizio Dati è reso disponibile.  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `servesDataset[array]`: Proprietà. Modello:'http://www.w3.org/ns/dcat#Dataset'. Questa proprietà si riferisce a una raccolta di dati che questo servizio dati può distribuire.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `title[array]`: Proprietà. Modello:'http://www.w3.org/2000/01/rdf-schema#Literal'. Questa proprietà contiene un nome dato al Servizio dati. Questa proprietà può essere ripetuta per versioni linguistiche parallele del nome.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Proprietà. Tipo di entità NGSI. Deve essere DataService  <!-- /30-PropertiesList -->  
+- `accessRights[string]`: Questa proprietà PUÒ includere informazioni relative all'accesso o alle restrizioni basate sulla privacy, sulla sicurezza o su altre politiche.  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `description[array]`: Questa proprietà contiene un resoconto in testo libero del Servizio dati. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `endPointDescription[array]`: Questa proprietà contiene una descrizione dei servizi disponibili tramite gli endpoint, comprese le operazioni, i parametri, ecc. La proprietà fornisce dettagli specifici sulle istanze degli endpoint effettivi, mentre dct:conformsTo è usato per indicare lo standard o la specifica generale che gli endpoint implementano.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `endPointURL[array]`: L'ubicazione principale o l'endpoint primario del servizio (un IRI).  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `id[*]`: Identificatore univoco dell'entità  - `license[string]`: Questa proprietà contiene la licenza in base alla quale il servizio Dati è reso disponibile  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `servesDataset[array]`: Questa proprietà si riferisce a una collezione di dati che questo servizio dati può distribuire  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `title[array]`: Questa proprietà contiene un nome dato al Servizio dati. Questa proprietà può essere ripetuta per versioni in lingue parallele del nome  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Tipo di entità NGSI. Deve essere DataService  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `endPointURL`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -33,7 +40,7 @@ DataService:
   description: 'Data Service adapted from DCAT-AP 2.1.1 specification, but extended with additional properties and compatible with NGSI standard'    
   properties:    
     accessRights:    
-      description: 'Property. Model:''http://purl.org/dc/terms/RightsStatement''. This property MAY include information regarding access or restrictions based on privacy, security, or other policies'    
+      description: 'This property MAY include information regarding access or restrictions based on privacy, security, or other policies'    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/RightsStatement    
@@ -42,29 +49,51 @@ DataService:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -76,49 +105,59 @@ DataService:
         model: https://schema.org/Text    
         type: Property    
     description:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description"    
+      description: This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description    
       items:    
-        description: Property. Every description in a language    
+        description: Every description in a language    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     endPointDescription:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement."    
+      description: 'This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement'    
       items:    
-        description: Property. Every service available at an end-point    
+        description: Every service available at an end-point    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
     endPointURL:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. The root location or primary endpoint of the service (an IRI)."    
+      description: The root location or primary endpoint of the service (an IRI)    
       items:    
-        description: Property. Every root location    
+        description: Every root location    
         format: uri    
         minItems: 1    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
     id:    
       anyOf:    
-        - description: Property. Identifier format of any NGSI entity    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     license:    
-      description: 'Property. Model:''http://purl.org/dc/terms/LicenseDocument''. This property contains the licence under which the Data service is made available.'    
+      description: This property contains the licence under which the Data service is made available    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/LicenseDocument    
@@ -126,7 +165,7 @@ DataService:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -147,7 +186,9 @@ DataService:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -171,7 +212,9 @@ DataService:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -197,7 +240,9 @@ DataService:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -220,7 +265,9 @@ DataService:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -246,7 +293,9 @@ DataService:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -274,28 +323,34 @@ DataService:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     servesDataset:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a collection of data that this data service can distribute."    
+      description: This property refers to a collection of data that this data service can distribute    
       items:    
-        description: Property. Every dataset distributed    
+        description: Every dataset distributed    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     title:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name."    
+      description: This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name    
       items:    
-        description: Property. The title in one language    
+        description: The title in one language    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
-      description: Property. NGSI Entity type. It has to be DataService    
+      description: NGSI Entity type. It has to be DataService    
       enum:    
         - DataService    
       type: string    
