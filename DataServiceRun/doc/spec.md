@@ -15,7 +15,7 @@
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-- `alternateName[string]`: An alternative name for this item  - `configuration[array]`: Property. Model:'https://schema.org/StructuredValue'. Technical configuration of the service. This attribute is intended to be an array of properties and their values which capture parameters which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `resultEntities[array]`: Relationship. A list of references pointing to NGSI-LD entities that were generated within a service run.  - `resultExternal[array]`: Property. A list of uri pointing to external results that were generated within a service run.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `service[*]`: Relationship. A reference pointing to the NGSI-LD entity representing the corresponding data service (e.g. of type DataServiceDCAT-AP).  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `sourceEntities[array]`: Relationship. A list of references pointing to NGSI-LD entities that acted as source within a service run.  - `sourceExternal[array]`: Property. A list of uri pointing to external results that acted as source within a service run.  - `type[string]`: Property. NGSI entity type. It has to be DataServiceRun  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: An alternative name for this item  - `configuration[array]`: Technical configuration of the service. This attribute is intended to be an array of properties and their values which capture parameters which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `name[string]`: The name of this item  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `resultEntities[array]`: A list of references pointing to NGSI-LD entities that were generated within a service run  - `resultExternal[array]`: A list of uri pointing to external results that were generated within a service run  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `service[*]`: A reference pointing to the NGSI-LD entity representing the corresponding data service (e.g. of type DataServiceDCAT-AP)  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `sourceEntities[array]`: A list of references pointing to NGSI-LD entities that acted as source within a service run  - `sourceExternal[array]`: A list of uri pointing to external results that acted as source within a service run  - `type[string]`: NGSI entity type. It has to be DataServiceRun  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -38,7 +38,7 @@ DataServiceRun:
       x-ngsi:    
         type: Property    
     configuration:    
-      description: 'Property. Model:''https://schema.org/StructuredValue''. Technical configuration of the service. This attribute is intended to be an array of properties and their values which capture parameters which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model.'    
+      description: 'Technical configuration of the service. This attribute is intended to be an array of properties and their values which capture parameters which have to do with the configuration of a service (output format, URL, etc.) and which are not currently covered by the standard attributes defined by this model'    
       items:    
         properties:    
           parameter:    
@@ -74,15 +74,19 @@ DataServiceRun:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &dataservicerun_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
@@ -94,28 +98,46 @@ DataServiceRun:
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *dataservicerun_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
-      type: array    
-      x-ngsi:    
-        type: Property    
-    resultEntities:    
-      description: Relationship. A list of references pointing to NGSI-LD entities that were generated within a service run.    
-      items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
+    resultEntities:    
+      description: A list of references pointing to NGSI-LD entities that were generated within a service run    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     resultExternal:    
-      description: Property. A list of uri pointing to external results that were generated within a service run.    
+      description: A list of uri pointing to external results that were generated within a service run    
       items:    
         format: uri    
         type: string    
@@ -136,15 +158,19 @@ DataServiceRun:
         type: Property    
     service:    
       anyOf:    
-        - description: Property. Identifier format of any NGSI entity    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: Relationship. A reference pointing to the NGSI-LD entity representing the corresponding data service (e.g. of type DataServiceDCAT-AP).    
+          x-ngsi:    
+            type: Property    
+      description: A reference pointing to the NGSI-LD entity representing the corresponding data service (e.g. of type DataServiceDCAT-AP)    
       x-ngsi:    
         type: Relationship    
     source:    
@@ -153,22 +179,26 @@ DataServiceRun:
       x-ngsi:    
         type: Property    
     sourceEntities:    
-      description: Relationship. A list of references pointing to NGSI-LD entities that acted as source within a service run.    
+      description: A list of references pointing to NGSI-LD entities that acted as source within a service run    
       items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
+            x-ngsi:    
+              type: Property    
       type: array    
       x-ngsi:    
         type: Relationship    
     sourceExternal:    
-      description: Property. A list of uri pointing to external results that acted as source within a service run.    
+      description: A list of uri pointing to external results that acted as source within a service run    
       items:    
         format: uri    
         type: string    
@@ -176,7 +206,7 @@ DataServiceRun:
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. NGSI entity type. It has to be DataServiceRun    
+      description: NGSI entity type. It has to be DataServiceRun    
       enum:    
         - DataServiceRun    
       type: string    
