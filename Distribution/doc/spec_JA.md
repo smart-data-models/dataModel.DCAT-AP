@@ -15,7 +15,14 @@
 ## プロパティのリスト  
 
 <sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
-- `accessService[array]`: プロパティ。Model:'http://www.w3.org/ns/dcat#DataService'。このプロパティは、データセットの配布にアクセスできるデータサービスを指します。  . Model: [http://www.w3.org/ns/dcat#DataService](http://www.w3.org/ns/dcat#DataService)- `accessUrl[array]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Resource'.このプロパティには、データセットの配布にアクセスできる URL が含まれます。アクセスURLのリソースには、データセットの取得方法に関する情報が含まれている場合があります。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `availability[string]`: プロパティ。Model:'http://www.w3.org/2004/02/skos/core#Concept'。このプロパティは、データセットのDistributioを利用可能な状態に保つ期間を示します。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `byteSize[number]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Literal'.このプロパティには、ディストリビューションのサイズがバイト単位で格納されます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: プロパティ。モデル:'http://spdx.org/rdf/terms#Checksum'.このプロパティは、ディストリビューションのコンテンツが変更されていないことを確認するために使用できるメカニズムを提供します。チェックサムはdownloadURLに関連しています。  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `compressionFormat[string]`: プロパティ。Model:'http://purl.org/dc/terms/MediaType'。このプロパティは、ダウンロード可能なファイルサイズを小さくするためなどに、データが圧縮された形で含まれるファイルの形式を指す。IANAが管理するメディアタイプの公式登録で定義されているメディアタイプを使用して表現されるべきである（SHOULD）。  . Model: [http://purl.org/dc/terms/MediaType](http://purl.org/dc/terms/MediaType)- `conformsTo[array]`: 物件。Model:'"http://purl.org/dc/terms/Standard'.このプロパティは、記述されたディストリビューションが準拠する、確立されたスキーマを指す。  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `description[array]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Literal'.このプロパティには、ディストリビューションに関するフリーテキストの説明が含まれる。このプロパティは、説明の並行言語バージョン用に繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Resource'.このプロパティには、指定された形式でダウンロード可能なファイルへの直接リンクである URL が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: プロパティ。モデル:'https://schema.org/Text'.このプロパティは、ディストリビューションのファイル形式を参照します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `hasPolicy[string]`: プロパティ。Model:'http://www.w3.org/ns/odrl/2/hasPolicy'。このプロパティは、ODRL語彙を使用する場合、配布に関連する権利を表現するポリシーを指します。  . Model: [http://www.w3.org/ns/odrl/2/hasPolicy](http://www.w3.org/ns/odrl/2/hasPolicy)- `issued[string]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Literal'.このプロパティには、ディストリビューションの正式発行（発行など）の日付が含まれる。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: プロパティ。モデル:'http://purl.org/dc/terms/LinguisticSystem'.このプロパティは、ディストリビューションで使用される言語を指す。メタデータが複数の言語で提供される場合、このプロパティを繰り返すことができます。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: プロパティ。Model:'http://purl.org/dc/terms/LicenseDocument'。このプロパティは、データセットの配布にアクセスできるデータサービスを指します。  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mediaType[string]`: プロパティ。Model:'http://purl.org/dc/terms/MediaType'。このプロパティは、IANAによって管理されるメディアタイプの公式登録で定義される、ディストリビューションのメディアタイプを指す。  . Model: [http://purl.org/dc/terms/MediaType](http://purl.org/dc/terms/MediaType)- `modified[string]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Literal'.このプロパティには、ディストリビューションが変更または修正された最新の日付が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `packageFormat[string]`: プロパティ。Model:'http://purl.org/dc/terms/MediaType'。このプロパティは、1つ以上のデータファイルがグループ化されたファイルのフォーマットを指す。IANAが管理するメディアタイプの公式登録で定義されているメディアタイプを使用して表現されるべきである（SHOULD）。  . Model: [http://purl.org/dc/terms/MediaType](http://purl.org/dc/terms/MediaType)- `page[array]`: プロパティ。モデル:'https://schema.org/Text'.このプロパティは、このディストリビューションに関するページまたはドキュメントを参照します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `rights[string]`: プロパティ。Model:'http://purl.org/dc/terms/RightsStatement'。このプロパティは、ディストリビューションに関連する権利を指定するステートメントを指します。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `spatialResolutionInMeters[array]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Literal'.このプロパティは、分布で解決可能な最小空間分離を指し、メートル単位で測定される。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `status[string]`: プロパティ。Model:'http://www.w3.org/2004/02/skos/core#Concept'.このプロパティは、ディストリビューションの成熟度を表します。Completed、Deprecated、Under Development、Withdrawnのいずれかの値を取らなければなりません。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `temporalResolution[string]`: プロパティ。モデル:'http://www.w3.org/2001/XMLSchema#duration'.このプロパティは、データセットで解決可能な最小期間を指す。  . Model: [http://www.w3.org/2001/XMLSchema#duration](http://www.w3.org/2001/XMLSchema#duration)- `title[array]`: プロパティ。モデル:'http://www.w3.org/2000/01/rdf-schema#Literal'.このプロパティには、ディストリビューションに与えられた名前が含まれる。このプロパティは、説明の並列言語バージョンのために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: プロパティ。NGSI エンティティタイプ。ディストリビューションでなければならない。  <!-- /30-PropertiesList -->  
+- `accessService[array]`: このプロパティは、データセットの配布にアクセスできるデータサービスを指す。  . Model: [http://www.w3.org/ns/dcat#DataService](http://www.w3.org/ns/dcat#DataService)- `accessUrl[array]`: このプロパティには、データセットの配布にアクセスするための URL が含まれます。アクセスURLのリソースには、データセットの取得方法に関する情報が含まれている場合があります。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `availability[string]`: このプロパティは、データセットのDistributioを利用可能な状態に保つ期間を示します。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `belongsToDataset[*]`: ディストリビューションを親データセットにリンクします。注：この属性は、DCAT-APの現在のバージョン2.1.1にはありません。  . Model: [https://www.w3.org/ns/dcat#Dataset](https://www.w3.org/ns/dcat#Dataset)- `byteSize[number]`: このプロパティは、ディストリビューションのサイズをバイト数で表します。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `checksum[string]`: このプロパティは、ディストリビューションのコンテンツが変更されていないことを確認するために使用できるメカニズムを提供します。チェックサムは、downloadURL  . Model: [http://spdx.org/rdf/terms#Checksum](http://spdx.org/rdf/terms#Checksum)- `compressFormat[string]`: このプロパティは、ダウンロード可能なファイルサイズを小さくするためなどに、データが圧縮された形で含まれるファイルの形式を指す。IANAが管理するメディアタイプの公式登録で定義されているメディアタイプを使用して表現されるべきである（SHOULD）。  . Model: [http://purl.org/dc/terms/MediaType](http://purl.org/dc/terms/MediaType)- `conformsTo[array]`: このプロパティは、記述されたディストリビューションが準拠する、確立されたスキーマを指す。  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `description[array]`: このプロパティには、ディストリビューションに関するフリーテキストの説明が含まれる。このプロパティは、並列言語版の説明のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `downloadURL[array]`: このプロパティには、指定された形式でダウンロード可能なファイルへの直接リンクである URL が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `format[string]`: このプロパティは、ディストリビューションのファイルフォーマットを参照します。  . Model: [https://schema.org/Text](https://schema.org/Text)- `hasPolicy[string]`: このプロパティは、ODRL語彙を使用する場合、配布に関連する権利を表現するポリシーを指す。  . Model: [http://www.w3.org/ns/odrl/2/hasPolicy](http://www.w3.org/ns/odrl/2/hasPolicy)- `issued[date-time]`: このプロパティには、ディストリビューションの正式発行日（発行日など）が格納される。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: このプロパティは、ディストリビューションで使用される言語を指す。メタデータが複数の言語で提供される場合、このプロパティを繰り返すことができます。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: このプロパティは、データセットの配布にアクセスできるデータサービスを指す。  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `mediaType[string]`: このプロパティは、IANAが管理するメディアタイプの公式登録で定義されている、ディストリビューションのメディアタイプを指す。  . Model: [http://purl.org/dc/terms/MediaType](http://purl.org/dc/terms/MediaType)- `modified[date-time]`: このプロパティには、ディストリビューションが変更または修正された最新の日付が含まれます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `packageFormat[string]`: このプロパティは、1つ以上のデータファイルがグループ化されたファイルのフォーマットを指す。IANAが管理するメディアタイプの公式登録で定義されるメディアタイプを使用して表現されるべきである（SHOULD）。  . Model: [http://purl.org/dc/terms/MediaType](http://purl.org/dc/terms/MediaType)- `page[array]`: このプロパティは、このディストリビューションに関するページまたはドキュメントを参照します。  . Model: [http://xmlns.com/foaf/0.1/#term_Document](http://xmlns.com/foaf/0.1/#term_Document)- `rights[string]`: このプロパティは、ディストリビューションに関連する権利を指定するステートメントを指す。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `spatialResolutionInMeters[array]`: この特性は、ある分布で分解可能な最小の空間分離を指し、メートル単位で測定される。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `status[string]`: このプロパティは、ディストリビューションの満期を指す。Completed、Deprecated、Under Development、Withdrawnのいずれかの値を取らなければなりません。  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `temporalResolution[duration]`: このプロパティは、データセットで解決可能な最小期間を指す。  . Model: [http://www.w3.org/2001/XMLSchema#duration](http://www.w3.org/2001/XMLSchema#duration)- `title[array]`: このプロパティには、ディストリビューションに与えられた名前が含まれる。このプロパティは、並列言語版の記述のために繰り返すことができます。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSIエンティティタイプ。ディストリビューションでなければならない。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `accessURL`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
@@ -33,16 +40,18 @@ Distribution:
   description: This is a distribution belonging ot a dataset according to the DCAT-AP standard 2.1.1    
   properties:    
     accessService:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#DataService'. This property refers to a data service that gives access to the distribution of the dataset"    
+      description: This property refers to a data service that gives access to the distribution of the dataset    
       items:    
-        description: Property. Every Data service providing access to the distribution    
+        description: Every Data service providing access to the distribution    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#DataService"    
         type: Property    
     accessUrl:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset."    
+      description: This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset    
       items:    
         minItems: 1    
         type: string    
@@ -54,29 +63,51 @@ Distribution:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -88,87 +119,113 @@ Distribution:
         model: https://schema.org/Text    
         type: Property    
     availability:    
-      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property indicates how long it is planned to keep the Distributio of the Dataset available."    
+      description: This property indicates how long it is planned to keep the Distributio of the Dataset available    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2004/02/skos/core#Concept"    
         type: Property    
+    belongsToDataset:    
+      anyOf:    
+        - description: Link to the dataset    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Link to the dataset    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
+      description: 'It links the Distribution to its parent Dataset. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1'    
+      x-ngsi:    
+        model: "https://www.w3.org/ns/dcat#Dataset"    
+        type: Relationship    
     byteSize:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the size of a Distribution in bytes."    
+      description: This property contains the size of a Distribution in bytes    
       type: number    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     checksum:    
-      description: "Property. Model:'http://spdx.org/rdf/terms#Checksum'. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL."    
+      description: This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL    
       type: string    
       x-ngsi:    
         model: "http://spdx.org/rdf/terms#Checksum"    
         type: Property    
-    compressionFormat:    
-      description: 'Property. Model:''http://purl.org/dc/terms/MediaType''. This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA'    
+    compressFormat:    
+      description: 'This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA'    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/MediaType    
         type: Property    
     conformsTo:    
-      description: 'Property. Model:''"http://purl.org/dc/terms/Standard''. This property refers to an established schema to which the described Distribution conforms.'    
+      description: This property refers to an established schema to which the described Distribution conforms    
       items:    
-        description: Property. Every rule o standard the distribution complies with    
+        description: Every rule o standard the distribution complies with    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/Standard    
         type: Property    
     description:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description."    
+      description: This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description    
       items:    
-        description: Property. Every description of the distribution in a language    
+        description: Every description of the distribution in a language    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     downloadURL:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a URL that is a direct link to a downloadable file in a given format."    
+      description: This property contains a URL that is a direct link to a downloadable file in a given format    
       items:    
-        description: Property. Every URL available for downloading    
+        description: Every URL available for downloading    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
         type: Property    
     format:    
-      description: 'Property. Model:''https://schema.org/Text''. This property refers to the file format of the Distribution.'    
+      description: This property refers to the file format of the Distribution    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     hasPolicy:    
-      description: 'Property. Model:''http://www.w3.org/ns/odrl/2/hasPolicy''. This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary'    
+      description: This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary    
       type: string    
       x-ngsi:    
         model: http://www.w3.org/ns/odrl/2/hasPolicy    
         type: Property    
     issued:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Distribution."    
+      description: 'This property contains the date of formal issuance (e.g., publication) of the Distribution'    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     language:    
-      description: 'Property. Model:''http://purl.org/dc/terms/LinguisticSystem''. This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.'    
+      description: This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages    
       items:    
-        description: Property. Every language included    
+        description: Every language included    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/LinguisticSystem    
         type: Property    
     license:    
-      description: 'Property. Model:''http://purl.org/dc/terms/LicenseDocument''. This property refers to a data service that gives access to the distribution of the dataset'    
+      description: This property refers to a data service that gives access to the distribution of the dataset    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/LicenseDocument    
@@ -176,7 +233,7 @@ Distribution:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -197,7 +254,9 @@ Distribution:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -221,7 +280,9 @@ Distribution:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -247,7 +308,9 @@ Distribution:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -270,7 +333,9 @@ Distribution:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -296,7 +361,9 @@ Distribution:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -324,50 +391,54 @@ Distribution:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     mediaType:    
-      description: 'Property. Model:''http://purl.org/dc/terms/MediaType''. This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA'    
+      description: This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/MediaType    
         type: Property    
     modified:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Distribution was changed or modified."    
+      description: This property contains the most recent date on which the Distribution was changed or modified    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     packageFormat:    
-      description: 'Property. Model:''http://purl.org/dc/terms/MediaType''. This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA'    
+      description: 'This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA'    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/MediaType    
         type: Property    
     page:    
-      description: 'Property. Model:''https://schema.org/Text''. This property refers to a page or document about this Distribution.'    
+      description: This property refers to a page or document about this Distribution    
       items:    
-        description: Property. Every page providing information about the distribution    
+        description: Every page providing information about the distribution    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: https://schema.org/Text    
+        model: "http://xmlns.com/foaf/0.1/#term_Document"    
         type: Property    
     rights:    
-      description: 'Property. Model:''http://purl.org/dc/terms/RightsStatement''. This property refers to a statement that specifies rights associated with the Distribution.'    
+      description: This property refers to a statement that specifies rights associated with the Distribution    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/RightsStatement    
         type: Property    
     spatialResolutionInMeters:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a distribution, measured in meters."    
+      description: 'This property refers to the minimum spatial separation resolvable in a distribution, measured in meters'    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     status:    
-      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn"    
+      description: 'This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn'    
       enum:    
         - Completed    
         - Deprecated    
@@ -378,23 +449,25 @@ Distribution:
         model: "http://www.w3.org/2004/02/skos/core#Concept"    
         type: Property    
     temporalResolution:    
-      description: "Property. Model:'http://www.w3.org/2001/XMLSchema#duration'. This property refers to the minimum time period resolvable in the dataset. "    
+      description: 'This property refers to the minimum time period resolvable in the dataset. '    
       format: duration    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2001/XMLSchema#duration"    
         type: Property    
     title:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description."    
+      description: This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description    
       items:    
-        description: Property. Every language description of the distribution title    
+        description: Every language description of the distribution title    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
-      description: Property. NGSI entity type. It has to be Distribution    
+      description: NGSI entity type. It has to be Distribution    
       enum:    
         - Distribution    
       type: string    
@@ -443,6 +516,7 @@ Distribution:
   "byteSize": 43503,  
   "checksum": "H3FR.",  
   "compressionFormat": "",  
+  "belongsToDataset": "urn:ngsi-ld:Dataset:items:CHIF:23645981",  
   "description": [  
     "Distribution of open data portals in csv"],  
   "page": [],  
@@ -553,6 +627,10 @@ Distribution:
     "type": "Text",  
     "value": ""  
   },  
+  "belongsToDataset": {  
+    "type": "Text",  
+    "value": "urn:ngsi-ld:Dataset:items:CHIF:23645981"  
+  },  
   "page": {  
     "type": "array",  
     "value": [  
@@ -650,6 +728,7 @@ Distribution:
   "byteSize": 43503,  
   "checksum": "H3FR.",  
   "compressionFormat": "",  
+  "belongsToDataset": "urn:ngsi-ld:Dataset:items:CHIF:23645981",  
   "description": [  
     "Distribution of open data portals in csv"  
   ],  
@@ -735,9 +814,13 @@ Distribution:
     "type": "Property",  
     "value": "H3FR."  
   },  
-  "compressionFormat": {  
+  "compressFormat": {  
     "type": "Property",  
     "value": ""  
+  },  
+  "belongsToDataset": {  
+    "type": "Relationship",  
+    "object": "urn:ngsi-ld:Dataset:items:CHIF:23645981"  
   },  
   "dataProvider": {  
     "type": "Property",  
