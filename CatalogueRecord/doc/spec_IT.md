@@ -15,7 +15,14 @@
 ## Elenco delle proprietà  
 
 <sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
-- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `conformsTo[string]`: Proprietà. Modello:'http://purl.org/dc/terms/Standard'. Questa proprietà si riferisce a un profilo di applicazione a cui sono conformi i metadati del dataset.  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `description[array]`: Proprietà. Modello:'http://www.w3.org/2000/01/rdf-schema#Literal'. Questa proprietà contiene un resoconto in testo libero del record. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `id[*]`: Identificatore univoco dell'entità  - `issued[string]`: Proprietà. Modello:'http://www.w3.org/2000/01/rdf-schema#Literal'. Questa proprietà contiene la data in cui la descrizione del set di dati è stata inserita nel catalogo.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: Proprietà. Modello:'http://purl.org/dc/terms/LinguisticSystem'. Questa proprietà si riferisce a una lingua utilizzata nei metadati testuali che descrivono titoli, descrizioni, ecc. del set di dati. Questa proprietà può essere ripetuta se i metadati sono forniti in più lingue.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `modified[string]`: Proprietà. Modello:'http://www.w3.org/2000/01/rdf-schema#Literal'. Questa proprietà contiene la data più recente in cui la voce del catalogo è stata modificata.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `primaryTopic[string]`: Proprietà. Modello:'http://www.w3.org/ns/dcat#Dataset'. Questa proprietà collega il record del catalogo al set di dati, al servizio dati o al catalogo descritto nel record.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `source[string]`: Proprietà. Modello:'http://www.w3.org/ns/dcat#CatalogRecord'. Questa proprietà si riferisce ai metadati originali utilizzati per creare i metadati del set di dati.  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `status[string]`: Proprietà. Modello:'http://www.w3.org/2004/02/skos/core#Concept'. Questa proprietà si riferisce al tipo di ultima revisione della voce di un set di dati nel catalogo.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: Proprietà. Modello:'http://www.w3.org/2000/01/rdf-schema#Literal'. Questa proprietà contiene il nome assegnato al record del catalogo. Questa proprietà può essere ripetuta per versioni linguistiche parallele del nome.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Proprietà. Tipo di entità NGSI. Deve essere CatalogueRecord  <!-- /30-PropertiesList -->  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `conformsTo[string]`: Questa proprietà si riferisce a un profilo applicativo a cui i metadati del dataset sono conformi.  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `description[array]`: Questa proprietà contiene un resoconto in testo libero del record. Questa proprietà può essere ripetuta per le versioni in lingue parallele della descrizione.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `id[*]`: Identificatore univoco dell'entità  - `issued[date-time]`: Questa proprietà contiene la data in cui la descrizione del Dataset è stata inserita nel Catalogo.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: Questa proprietà si riferisce a una lingua utilizzata nei metadati testuali che descrivono titoli, descrizioni, ecc. del Dataset. Questa proprietà può essere ripetuta se i metadati sono forniti in più lingue.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `modified[date-time]`: Questa proprietà contiene la data più recente in cui la voce del catalogo è stata cambiata o modificata.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `primaryTopic[string]`: Questa proprietà collega il record del catalogo al set di dati, al servizio dati o al catalogo descritto nel record.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `source[string]`: Questa proprietà si riferisce ai metadati originali utilizzati per la creazione dei metadati del set di dati.  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `status[string]`: Questa proprietà si riferisce al tipo di ultima revisione della voce di un Dataset nel Catalogo.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: Questa proprietà contiene il nome assegnato al record del catalogo. Questa proprietà può essere ripetuta per versioni linguistiche parallele del nome.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Tipo di entità NGSI. Deve essere CatalogueRecord  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `id`  - `modified`  - `primaryTopic`  - `type`  <!-- /35-RequiredProperties -->  
@@ -36,29 +43,51 @@ CatalogueRecord:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -70,45 +99,53 @@ CatalogueRecord:
         model: https://schema.org/Text    
         type: Property    
     conformsTo:    
-      description: 'Property. Model:''http://purl.org/dc/terms/Standard''. This property refers to an Application Profile that the Dataset''s metadata conforms to'    
+      description: This property refers to an Application Profile that the Dataset's metadata conforms to    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/Standard    
         type: Property    
     description:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description"    
+      description: This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description    
       items:    
-        description: Property. Every language description    
+        description: Every language description    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     id:    
       anyOf:    
-        - description: Property. Identifier format of any NGSI entity    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     issued:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date on which the description of the Dataset was included in the Catalogue."    
+      description: This property contains the date on which the description of the Dataset was included in the Catalogue    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     language:    
-      description: 'Property. Model:''http://purl.org/dc/terms/LinguisticSystem''. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages'    
+      description: 'This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages'    
       items:    
-        description: Property. Every language tag    
+        description: Every language tag    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/LinguisticSystem    
@@ -116,7 +153,7 @@ CatalogueRecord:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -137,7 +174,9 @@ CatalogueRecord:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -161,7 +200,9 @@ CatalogueRecord:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -187,7 +228,9 @@ CatalogueRecord:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -210,7 +253,9 @@ CatalogueRecord:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -236,7 +281,9 @@ CatalogueRecord:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -264,35 +311,37 @@ CatalogueRecord:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     modified:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Catalogue entry was changed or modified."    
+      description: This property contains the most recent date on which the Catalogue entry was changed or modified    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     primaryTopic:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."    
+      description: 'This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record'    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Dataset"    
         type: Property    
     source:    
-      description: "Property. Model:'http://www.w3.org/ns/dcat#CatalogRecord'. This property refers to the original metadata that was used in creating metadata for the Dataset."    
+      description: This property refers to the original metadata that was used in creating metadata for the Dataset    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#CatalogRecord"    
         type: Property    
     status:    
-      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the latest revision of a Dataset's entry in the Catalogue."    
+      description: This property refers to the type of the latest revision of a Dataset's entry in the Catalogue    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2004/02/skos/core#Concept"    
         type: Property    
     title:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name."    
+      description: This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name    
       items:    
         type: string    
       type: array    
@@ -300,7 +349,7 @@ CatalogueRecord:
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
-      description: Property. NGSI entity type. It has to be CatalogueRecord    
+      description: NGSI entity type. It has to be CatalogueRecord    
       enum:    
         - CatalogueRecord    
       type: string    
