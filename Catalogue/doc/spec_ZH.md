@@ -15,8 +15,14 @@
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalog[array]`: 关系。模型:'http://www.w3.org/ns/dcat#Catalog'。该属性指的是其内容与本目录相关的目录  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `creator[array]`: 关系。模型:'http://xmlns.com/foaf/0.1/Agent'。主要负责编制目录的实体  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `dataset[array]`: 关系。此属性将目录与属于目录一部分的数据集连接起来。模型:'http://www.w3.org/ns/dcat#dataset  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `description[array]`: 属性该属性包含关于  
-目录的自由文本说明。该属性可重复用于平行语言版本的描述。有关多语言问题的更多信息，请参阅 pdf 文档 https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1 第 8 节。  - `hasPart[array]`: 关系。模型:'http://www.w3.org/ns/dcat#Catalog'。该属性指的是相关目录，该目录是所描述目录的一部分  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[string]`: 属性。模型:'http://xmlns.com/foaf/0.1/homepage'。该属性指的是作为目录主页的网页。  . Model: [http://xmlns.com/foaf/0.1/homepage](http://xmlns.com/foaf/0.1/homepage)- `id[*]`: 实体的唯一标识符  - `isPartOf[string]`: 关系。模型:'http://www.w3.org/ns/dcat#Catalog'。该属性指的是相关目录，描述的目录在物理或逻辑上包含在该目录中。  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[string]`: 属性。模型:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含《目录》的正式发布（如出版）日期。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: 属性。模型:'http://purl.org/dc/terms/LinguisticSystem'。该属性指的是描述目录中数据集的标题、描述等的文本元数据所使用的语言。如果元数据以多种语言提供，则可重复此属性。  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `licence[string]`: 属性。模型:'http://purl.org/dc/terms/LicenseDocument'。该属性指的是可以使用或重复使用《目录》的许可。  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `modified[string]`: 属性。模型:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含修改目录的最新日期。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `publisher[string]`: 属性。该属性指的是负责提供目录的实体（组织）。模型:'http://xmlns.com/foaf/0.1/Agent  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `record[array]`: 关系。该属性指的是属于目录一部分的目录记录。模型:'http://www.w3.org/ns/dcat#CatalogRecord  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: 属性。模型:'http://purl.org/dc/terms/RightsStatement'。该属性指的是指定与目录相关的权限的声明。  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `service[array]`: 关系。该属性指的是目录中列出的站点或端点（数据服务）。由于空目录通常表明存在问题，因此应将此属性与前一个属性数据集结合起来，以实现空目录检查 模型:'http://www.w3.org/ns/dcat#DataService'  . Model: [As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check http://www.w3.org/ns/dcat#DataService](As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check http://www.w3.org/ns/dcat#DataService)- `spatial[array]`: GeoProperty.模型:'http://purl.org/dc/terms/Location'。该属性指的是目录覆盖的地理区域。  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: 属性。模型：'http://www.w3.org/2004/02/skos/core#ConceptScheme'。该属性指的是用于对目录数据集进行分类的知识组织系统。  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: 属性。Model:'http://www.w3.org/2000/01/rdf-schema#Literal'。该属性包含赋予目录的名称。对于并行语言版本的名称，该属性可以重复。模型:'rdfs:字面'。  . Model: [rdfs:Literal](rdfs:Literal)- `type[string]`: 属性。模型:'https://schema.org/Text'。必须是目录  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `catalog[array]`: 该属性指的是其内容与本目录相关的目录  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `creator[array]`: 主要负责编制目录的实体  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `dataset[array]`: 该属性将目录与属于目录一部分的数据集连接起来  . Model: [http://www.w3.org/ns/dcat#dataset](http://www.w3.org/ns/dcat#dataset)- `description[array]`: 该属性包含《目录》的自由文本说明。该属性可重复用于平行语言版本的说明。有关多语言问题的更多信息，请参阅 pdf 文档 https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1 第 8 节。  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `hasPart[array]`: 该属性指的是相关目录，它是所描述目录的一部分  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `homepage[uri]`: 该属性指的是作为《目录》主页的网页  . Model: [http://xmlns.com/foaf/0.1/homepage](http://xmlns.com/foaf/0.1/homepage)- `id[*]`: 实体的唯一标识符  - `isPartOf[uri]`: 该属性指的是相关目录，所述目录在物理或逻辑上包含在该目录中  . Model: [http://www.w3.org/ns/dcat#Catalog](http://www.w3.org/ns/dcat#Catalog)- `issued[date-time]`: 该属性包含《目录》的正式发布（如出版）日期  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: 该属性指描述目录中数据集标题、描述等的文本元数据中使用的语言。如果元数据以多种语言提供，该属性可以重复使用  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: 该属性指的是可以使用或重复使用《目录》的许可证  . Model: [http://purl.org/dc/terms/LicenseDocument](http://purl.org/dc/terms/LicenseDocument)- `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `modified[date-time]`: 该属性包含修改目录的最新日期  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `publisher[string]`: 该属性指的是负责提供目录的实体（组织）。  . Model: [http://xmlns.com/foaf/0.1/#term_Agent](http://xmlns.com/foaf/0.1/#term_Agent)- `record[array]`: 该属性指的是属于《目录》一部分的目录记录  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `rights[string]`: 该属性指的是一项声明，其中规定了与目录相关的权利  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `service[array]`: 该属性指的是目录中列出的站点或端点（数据服务）。由于空目录通常表明存在问题，因此应将此属性与前一个属性数据集结合起来，以执行空目录检查  . Model: [http://www.w3.org/ns/dcat#DataService](http://www.w3.org/ns/dcat#DataService)- `spatial[array]`: 该属性指《目录》涵盖的地理区域  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `themeTaxonomy[array]`: 该属性指的是用于对《目录》数据集进行分类的知识组织系统  . Model: [http://www.w3.org/2004/02/skos/core#ConceptScheme](http://www.w3.org/2004/02/skos/core#ConceptScheme)- `title[array]`: 该属性包含赋予目录的名称。该属性可重复用于并行语言版本的名称  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: 必须是《目录  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `description`  - `id`  - `publisher`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
@@ -37,29 +43,51 @@ Catalogue:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -71,69 +99,85 @@ Catalogue:
         model: https://schema.org/Text    
         type: Property    
     catalog:    
-      description: "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a catalog whose contents are of interest in the context of this catalog"    
+      description: This property refers to a catalog whose contents are of interest in the context of this catalog    
       items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
-        description: 'Relationship. Every link to the contents of interest to the catalog '    
+            x-ngsi:    
+              type: Property    
+        description: Every link to the contents of interest to the catalog    
+        x-ngsi:    
+          type: Relationship    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Catalog"    
         type: Relationship    
     creator:    
-      description: 'Relationship. Model:''http://xmlns.com/foaf/0.1/Agent''. The entities primarily responsible for producing the catalogue'    
+      description: The entities primarily responsible for producing the catalogue    
       items:    
-        description: 'Relationship. Model:''http://xmlns.com/foaf/0.1/Agent''. The link to an entity primarily responsible for producing the catalogue'    
+        description: The link to an entity primarily responsible for producing the catalogue    
         type: string    
+        x-ngsi:    
+          model: http://xmlns.com/foaf/0.1/Agent    
+          type: Relationship    
       type: array    
       x-ngsi:    
         model: http://xmlns.com/foaf/0.1/Agent    
         type: Relationship    
     dataset:    
-      description: "Relationship. This property links the Catalogue with a Dataset that is part of the Catalogue. Model:'http://www.w3.org/ns/dcat#dataset'"    
+      description: This property links the Catalogue with a Dataset that is part of the Catalogue    
       items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
+            x-ngsi:    
+              type: Property    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#dataset"    
         type: Relationship    
     description:    
-      description: |-    
-        Property. This property contains a free-text account of    
-        the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 8 of the pdf document https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1    
+      description: 'This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 8 of the pdf document https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1'    
       items:    
-        description: Property. Catalog description in different languages    
+        description: Catalogue description in different languages    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     hasPart:    
-      description: "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a related Catalogue that is part of the described Catalogue"    
+      description: This property refers to a related Catalogue that is part of the described Catalogue    
       items:    
-        description: Relationship. Every link to the related catalog    
+        description: Every link to the related catalog    
         format: uri    
         type: string    
+        x-ngsi:    
+          type: Relationship    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Catalog"    
         type: Relationship    
     homepage:    
-      description: 'Property. Model:''http://xmlns.com/foaf/0.1/homepage''. This property refers to a web page that acts as the main page for the Catalogue.'    
+      description: This property refers to a web page that acts as the main page for the Catalogue    
       format: uri    
       type: string    
       x-ngsi:    
@@ -141,50 +185,56 @@ Catalogue:
         type: Property    
     id:    
       anyOf:    
-        - description: Property. Identifier format of any NGSI entity    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     isPartOf:    
-      description: "Relationship. Model:'http://www.w3.org/ns/dcat#Catalog'. This property refers to a related Catalogue in which the described Catalogue is physically or logically included."    
+      description: This property refers to a related Catalogue in which the described Catalogue is physically or logically included    
       format: uri    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#Catalog"    
         type: Relationship    
     issued:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Catalogue."    
+      description: 'This property contains the date of formal issuance (e.g., publication) of the Catalogue'    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     language:    
-      description: 'Property. Model:''http://purl.org/dc/terms/LinguisticSystem''. This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages.'    
+      description: 'This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages'    
       items:    
-        description: Property. Individual identifiers of the language    
+        description: Individual identifiers of the language    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/LinguisticSystem    
         type: Property    
-    licence:    
-      description: 'Property. Model:''http://purl.org/dc/terms/LicenseDocument''. This property refers to the licence under which the Catalogue can be used or reused.'    
+    license:    
+      description: This property refers to the licence under which the Catalogue can be used or reused    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/LicenseDocument    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-      oneOf: &catalogue_-_properties_-_spatial_-_items_-_oneof    
-        - description: GeoProperty. Geojson reference to the item. Point    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -205,7 +255,9 @@ Catalogue:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -229,7 +281,9 @@ Catalogue:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -255,7 +309,9 @@ Catalogue:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -278,7 +334,9 @@ Catalogue:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -304,7 +362,9 @@ Catalogue:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -332,72 +392,193 @@ Catalogue:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     modified:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Catalogue was modified."    
+      description: This property contains the most recent date on which the Catalogue was modified    
       format: date-time    
       type: string    
       x-ngsi:    
         model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     publisher:    
-      description: 'Property. This property refers to an entity (organisation) responsible for making the Catalogue available. Model:''http://xmlns.com/foaf/0.1/Agent'''    
+      description: This property refers to an entity (organisation) responsible for making the Catalogue available    
       type: string    
       x-ngsi:    
-        model: http://xmlns.com/foaf/0.1/Agent    
+        model: "http://xmlns.com/foaf/0.1/#term_Agent"    
         type: Property    
     record:    
-      description: "Relationship. This property refers to a Catalogue Record that is part of the Catalogue. Model:'http://www.w3.org/ns/dcat#CatalogRecord'"    
+      description: This property refers to a Catalogue Record that is part of the Catalogue    
       items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
-        description: Relationship. Link to the catalog record    
+            x-ngsi:    
+              type: Property    
+        description: Link to the catalog record    
+        x-ngsi:    
+          type: Relationship    
       type: array    
       x-ngsi:    
         model: "http://www.w3.org/ns/dcat#CatalogRecord"    
         type: Relationship    
     rights:    
-      description: 'Property. Model:''http://purl.org/dc/terms/RightsStatement''. This property refers to a statement that specifies rights associated with the Catalogue.'    
+      description: This property refers to a statement that specifies rights associated with the Catalogue    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/RightsStatement    
         type: Property    
     service:    
-      description: "Relationship. This property refers to a site or end-point (Data Service) that is listed in the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check Model:'http://www.w3.org/ns/dcat#DataService'"    
+      description: 'This property refers to a site or end-point (Data Service) that is listed in the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check'    
       items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
-        description: Property. NGSI-LD id of the different services linked to the catalogue    
+            x-ngsi:    
+              type: Property    
+        description: NGSI-LD id of the different services linked to the catalogue    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: "As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check http://www.w3.org/ns/dcat#DataService"    
+        model: "http://www.w3.org/ns/dcat#DataService"    
         type: Relationship    
     spatial:    
-      description: 'GeoProperty. Model:''http://purl.org/dc/terms/Location''. This property refers to a geographical area covered by the Catalogue.'    
+      description: This property refers to a geographical area covered by the Catalogue    
       items:    
-        description: 'GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
-        oneOf: *catalogue_-_properties_-_spatial_-_items_-_oneof    
+        description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        oneOf:    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          - bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+        x-ngsi:    
+          type: GeoProperty    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/Location    
         type: GeoProperty    
     themeTaxonomy:    
-      description: "Property. Model:'http://www.w3.org/2004/02/skos/core#ConceptScheme'. This property refers to a knowledge organization system used to classify the Catalogue's Datasets."    
+      description: This property refers to a knowledge organization system used to classify the Catalogue's Datasets    
       items:    
         type: string    
       type: array    
@@ -405,16 +586,18 @@ Catalogue:
         model: "http://www.w3.org/2004/02/skos/core#ConceptScheme"    
         type: Property    
     title:    
-      description: "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name. Model:'rdfs:Literal'"    
+      description: This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name    
       items:    
-        description: Property. Title in different languages    
+        description: Title in different languages    
         type: string    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: rdfs:Literal    
+        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
         type: Property    
     type:    
-      description: 'Property. Model:''https://schema.org/Text''. It has to be Catalogue'    
+      description: It has to be Catalogue    
       enum:    
         - Catalogue    
       type: string    
@@ -770,7 +953,7 @@ Catalogue:
       "DE"  
     ]  
   },  
-  "licence": {  
+  "license": {  
     "type": "Property",  
     "value":  
       "Creative Commons 3.0 International"  
