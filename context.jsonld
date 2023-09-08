@@ -19,6 +19,10 @@
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "availability": "https://smartdatamodels.org/dataModel.DCAT-AP/availability",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "belongsToCatalogue": "https://smartdatamodels.org/dataModel.DCAT-AP/belongsToCatalogue",
         "belongsToDataset": "https://smartdatamodels.org/dataModel.DCAT-AP/belongsToDataset",
         "byteSize": "https://smartdatamodels.org/dataModel.DCAT-AP/byteSize",
@@ -28,6 +32,10 @@
         "configuration": "https://smartdatamodels.org/dataModel.DCAT-AP/configuration",
         "conformsTo": "https://smartdatamodels.org/dataModel.DCAT-AP/conformsTo",
         "contactPoint": "https://smartdatamodels.org/contactPoint",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "creator": "https://smartdatamodels.org/dataModel.DCAT-AP/creator",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dataset": {
@@ -66,6 +74,7 @@
         "owner": "https://smartdatamodels.org/owner",
         "packageFormat": "https://smartdatamodels.org/dataModel.DCAT-AP/packageFormat",
         "page": "https://smartdatamodels.org/dataModel.DCAT-AP/page",
+        "parameter": "https://smartdatamodels.org/dataModel.DCAT-AP/parameter",
         "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
         "postalCode": "https://smartdatamodels.org/postalCode",
         "primaryTopic": "https://smartdatamodels.org/dataModel.DCAT-AP/primaryTopic",
@@ -96,6 +105,7 @@
         "themeTaxonomy": "https://smartdatamodels.org/dataModel.DCAT-AP/themeTaxonomy",
         "title": "http://purl.org/dc/terms/title",
         "type": "@type",
+        "value": "ngsi-ld:hasValue",
         "versionInfo": "https://smartdatamodels.org/dataModel.DCAT-AP/versionInfo",
         "versionNotes": "https://smartdatamodels.org/dataModel.DCAT-AP/versionNotes",
         "wasGeneratedBy": "https://smartdatamodels.org/dataModel.DCAT-AP/wasGeneratedBy"
