@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.2",
-    "modelTags": "",
+    "$schemaVersion": "0.1.0",
+    "modelTags": "WATERVERSE",
     "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json",
     "title": "Data Service DCAT-AP 2.1.1 schema - extended",
     "description": "Data Service adapted from DCAT-AP 2.1.1 specification, but extended with additional properties and compatible with NGSI standard",
@@ -71,6 +71,22 @@
                 "license": {
                     "type": "string",
                     "description": "Property. Model:'http://purl.org/dc/terms/LicenseDocument'. This property contains the licence under which the Data service is made available"
+                },
+                "provenance": {
+                    "type": "array",
+                    "description": "Property. Model:'http://purl.org/dc/terms/ProvenanceStatement'. List of libraries and tools used in the development and execution of the service.",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "lastUpdated": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Property. Model:'https://schema.org/DateTime'. Last time at which the data service has been updated in a way that changes its behaviour."
+                },
+                "validationSchema": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/url'. URL to the technical validation schema for the DataService (JSON Schema) in the Smart Data Models program."
                 }
             }
         }

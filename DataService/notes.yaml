@@ -1,5 +1,6 @@
 notesHeader:
   Adapted from [DCAT-AP version 2.1.1](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211). Some properties have been renamed in order to prevent conflicts with other existing properties. Additionally other properties have been added to mantain compatibility with NGSI standard and other data models.
+  Adding of the FAIR principles and MELODA5 dimensions properties.
 
 notesMiddle:
   Some properties have been added to allow for more a wider range of usage. Namely contactPoint, assetProvider and configuration. 
