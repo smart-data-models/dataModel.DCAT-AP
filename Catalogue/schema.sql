@@ -1,3 +1,3 @@
 /* (Beta) Export of data model Catalogue of the subject dataModel.DCAT-AP for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Catalogue_type AS ENUM ('Catalogue');
-CREATE TABLE Catalogue (address JSON, areaServed TEXT, catalog JSON, creator JSON, dataset JSON, description JSON, hasPart JSON, homepage TEXT, isPartOf TEXT, issued TIMESTAMP, language JSON, license TEXT, modified TIMESTAMP, publisher TEXT, record JSON, rights TEXT, service JSON, spatial JSON, themeTaxonomy JSON, title JSON, type Catalogue_type);
+CREATE TABLE Catalogue (address JSON, areaServed TEXT, catalog JSON, creator JSON, dataset JSON, description JSON, hasPart JSON, homepage TEXT, id TEXT PRIMARY KEY, isPartOf TEXT, issued TIMESTAMP, language JSON, license TEXT, location JSON, modified TIMESTAMP, publisher TEXT, record JSON, rights TEXT, service JSON, spatial JSON, themeTaxonomy JSON, title JSON, type Catalogue_type);
