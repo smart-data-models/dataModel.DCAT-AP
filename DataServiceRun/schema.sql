@@ -1,3 +1,3 @@
 /* (Beta) Export of data model DataServiceRun of the subject dataModel.DCAT-AP for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE DataServiceRun_type AS ENUM ('DataServiceRun');
-CREATE TABLE DataServiceRun (alternateName TEXT, configuration JSON, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, name TEXT, owner JSON, resultEntities JSON, resultExternal JSON, source TEXT, sourceEntities JSON, sourceExternal JSON, type DataServiceRun_type);
+CREATE TABLE DataServiceRun (alternateName TEXT, configuration JSON, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, name TEXT, owner JSON, resultEntities JSON, resultExternal JSON, seeAlso JSON, source TEXT, sourceEntities JSON, sourceExternal JSON, type DataServiceRun_type);
