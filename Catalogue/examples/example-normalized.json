@@ -2,8 +2,10 @@
   "id": "urn:ngsi-ld:Catalogue:id:LMVP:18269678",
   "type": "Catalogue",
   "description": {
-    "type": "array",
-    "value": ["Interesting art recently book girl yard represent book. Garden style wish blood your ground size."]
+    "type": "StructuredValue",
+    "value": [
+      "Interesting art recently book girl yard represent book. Garden style wish blood your ground size."
+    ]
   },
   "location": {
     "type": "geo:json",
@@ -28,15 +30,17 @@
     }
   },
   "dataset": {
-    "type": "array",
-    "value": ["urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"]
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"
+    ]
   },
   "publisher": {
     "type": "Text",
     "value": "spanish open data portal"
   },
   "title": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "Hair commercial free civil. Figure American film despite few. Box watch cold act mean thank music people. Third fill us.",
       "Technology life low standard second."
@@ -47,7 +51,7 @@
     "value": "urn:ngsi-ld:Catalogue:homepage:ZFAW:13633782"
   },
   "language": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "Town size computer way. Since challenge phone state listen south low.",
       "Eight once single. Build every kid."
@@ -62,17 +66,19 @@
     "value": "2004-08-22T22:32:47Z"
   },
   "spatial": {
-    "type": "geo:json",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        57.234944,
-        52.840273
-      ]
-    }
+    "type": "StructuredValue",
+    "value": [
+      {
+        "type": "Point",
+        "coordinates": [
+          57.234944,
+          52.840273
+        ]
+      }
+    ]
   },
   "themeTaxonomy": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "Tourism",
       "Economy"
@@ -83,15 +89,17 @@
     "value": "1982-09-02T03:16:28Z"
   },
   "hasPart": {
-    "type": "array",
-    "value": ["urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"]
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Catalogue:hasPart:GVZM:66676591"
+    ]
   },
   "isPartOf": {
     "type": "Text",
     "value": "urn:ngsi-ld:Catalogue:isPartOf:NXBZ:88517287"
   },
   "record": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Catalogue:items:HLGA:73285516",
       "urn:ngsi-ld:Catalogue:items:IHOB:85266800"
@@ -102,14 +110,16 @@
     "value": "Open source"
   },
   "catalog": {
-    "type": "Array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
       "urn:ngsi-ld:Catalogue:items:PECX:02526105"
     ]
   },
   "creator": {
-    "type": "array",
-    "value": ["Role fact sport shoulder blue direction probably order."]
+    "type": "StructuredValue",
+    "value": [
+      "Role fact sport shoulder blue direction probably order."
+    ]
   }
 }
