@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:Distribution:id:NUZE:76215118",
   "type": "Distribution",
   "description": {
-    "type": "Text",
+    "type": "StructuredValue",
     "value": [
       "Distribution of open data portals in csv"
     ]
@@ -18,7 +18,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "Luxembourg platz 2",
       "addressLocality": "Luxembourg",
@@ -29,7 +29,7 @@
     }
   },
   "accessURL": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "https://datos.comunidad.madrid/catalogo/dataset/134210b4-3fbc-457d-8064-18d6d8cc785e/resource/fca9a0ef-60b3-44bc-8a69-c17d607b122d/download/alojamientos_turisticos.csv"
     ]
@@ -47,13 +47,13 @@
     "value": "CC-BY"
   },
   "accessService": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       ""
     ]
   },
   "byteSize": {
-    "type": "array",
+    "type": "Number",
     "value": 43503
   },
   "checksum": {
@@ -69,12 +69,11 @@
     "value": "urn:ngsi-ld:Dataset:items:CHIF:23645981"
   },
   "page": {
-    "type": "array",
-    "value": [
-    ]
+    "type": "StructuredValue",
+    "value": []
   },
   "downloadURL": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
       "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
@@ -85,16 +84,15 @@
     "value": "Open data policy."
   },
   "language": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "EN",
       "ES"
     ]
   },
   "conformsTo": {
-    "type": "array",
-    "value": [
-    ]
+    "type": "StructuredValue",
+    "value": []
   },
   "mediaType": {
     "type": "Text",
@@ -113,7 +111,7 @@
     "value": "copyleft"
   },
   "spatialResolutionInMeters": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       0.5,
       0.5
@@ -124,11 +122,11 @@
     "value": "Withdrawn"
   },
   "temporalResolution": {
-    "type": "array",
+    "type": "Text",
     "value": "PT17S"
   },
   "title": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "Dataset base"
     ]
@@ -138,5 +136,3 @@
     "value": "1986-03-28T19:56:43Z"
   }
 }
-
-
