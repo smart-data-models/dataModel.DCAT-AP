@@ -6,24 +6,27 @@
     "value": "2021-07-01T10:27:59Z"
   },
   "source": {
-    "type": "Text",
-    "value":"urn:ngsi-ld:Dataset:items:YSWN:41266715"
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:YSWN:41266715"
+    ]
   },
   "description": {
-    "type": "Text",
-    "value": ["Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."]
-  },
-
-  "title": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-      "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"
+      "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."
+    ]
+  },
+  "title": {
+    "type": "StructuredValue",
+    "value": [
+      "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"
     ]
   },
   "contactPoint": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-       "https://datos.gob.es/es/comment/reply/145778."
+      "https://datos.gob.es/es/comment/reply/145778."
     ]
   },
   "belongsToCatalogue": {
@@ -31,30 +34,30 @@
     "value": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
   },
   "distribution": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Distribution:items:KJVK:30944451",
       "urn:ngsi-ld:Distribution:items:MMWU:84196227"
     ]
   },
   "keyword": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-    "alojamiento",
-    "apartamento rural",
-    "apartamento turístico",
-    "campamento de turismo",
-    "camping",
-    "casa rural",
-    "casas de huéspedes",
-    "hostal",
-    "hostel",
-    "hosteria",
-    "hotel",
-    "hotel rural",
-    "hotel-apartamento",
-    "pension",
-    "vivienda de uso turistico"
+      "alojamiento",
+      "apartamento rural",
+      "apartamento tur\u00edstico",
+      "campamento de turismo",
+      "camping",
+      "casa rural",
+      "casas de hu\u00e9spedes",
+      "hostal",
+      "hostel",
+      "hosteria",
+      "hotel",
+      "hotel rural",
+      "hotel-apartamento",
+      "pension",
+      "vivienda de uso turistico"
     ]
   },
   "publisher": {
@@ -62,26 +65,28 @@
     "value": "comunidad de madrid"
   },
   "spatial": {
-    "type": "geo:json",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        22.1394715,
-        -7.100602
-      ]
-    }
+    "type": "StructuredValue",
+    "value": [
+      {
+        "type": "Point",
+        "coordinates": [
+          22.1394715,
+          -7.100602
+        ]
+      }
+    ]
   },
   "temporal": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-    "2023-04-03T02:35:57Z"
+      "2023-04-03T02:35:57Z"
     ]
   },
   "theme": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
-    "Economy",
-    "Tourism"
+      "Economy",
+      "Tourism"
     ]
   },
   "accessRights": {
@@ -89,89 +94,91 @@
     "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
   },
   "creator": {
-    "type": "Text",
-    "value":  "Comunidad de Madrid"
+    "type": "StructuredValue",
+    "value": [
+      "Comunidad de Madrid"
+    ]
   },
   "page": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "",
       ""
     ]
   },
   "accrualPeriodicity": {
-    "type": "array",
+    "type": "Text",
     "value": "two years"
   },
   "hasVersion": {
-    "type": "Text",
+    "type": "StructuredValue",
     "value": [
       "",
       ""
     ]
   },
   "identifier": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "",
       ""
     ]
   },
   "isReferencedBy": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:HJNK:88711880",
       "urn:ngsi-ld:Dataset:items:MDEO:95193079"
     ]
   },
   "isVersionOf": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:RBWE:31388012",
       "urn:ngsi-ld:Dataset:items:GATZ:02632837"
     ]
   },
   "landingPage": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "htps://meloda.org"
     ]
   },
   "language": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "EN",
       "ES"
     ]
   },
   "otherIdentifier": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "",
       ""
     ]
   },
   "provenance": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "",
       ""
     ]
   },
   "qualifiedAttribution": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       ""
     ]
   },
   "qualifiedRelation": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       ""
     ]
   },
   "relatedResource": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",
       "urn:ngsi-ld:Dataset:items:ZAUC:79968579"
@@ -182,21 +189,18 @@
     "value": "2021-10-01T15:46:46Z"
   },
   "sample": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:MLHW:64299003",
       "urn:ngsi-ld:Dataset:items:GNXL:59256807"
     ]
   },
-
   "spatialResolutionInMeters": {
-    "type": "array",
-    "value": [
-      0.6
-    ]
+    "type": "Number",
+    "value": 0.6
   },
   "temporalResolution": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "PT15M"
     ]
@@ -210,17 +214,15 @@
     "value": "3.0"
   },
   "versionNotes": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "With temporal evolution"
     ]
   },
   "wasGeneratedBy": {
-    "type": "Text",
+    "type": "StructuredValue",
     "value": [
       "meloda Team"
     ]
   }
 }
-
-
