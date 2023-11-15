@@ -21,7 +21,8 @@
   "compressionFormat": "",
   "belongsToDataset": "urn:ngsi-ld:Dataset:items:CHIF:23645981",
   "description": [
-    "Distribution of open data portals in csv"],
+    "Distribution of open data portals in csv"
+  ],
   "page": [],
   "downloadURL": [
     "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
@@ -44,7 +45,6 @@
   },
   "mediaType": "",
   "modified": "1986-03-28T19:56:43Z",
-
   "packagingFormat": "zip",
   "issued": "1997-05-06T05:04:10Z",
   "rights": "copyleft",
@@ -53,8 +53,7 @@
     0.5
   ],
   "status": "Withdrawn",
-  "temporalResolution":
-    "PT15M",
+  "temporalResolution": "PT15M",
   "title": [
     "Dataset base"
   ]
