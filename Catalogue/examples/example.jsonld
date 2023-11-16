@@ -14,7 +14,9 @@
     "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
     "urn:ngsi-ld:Catalogue:items:PECX:02526105"
   ],
-  "creator": ["Role fact sport shoulder blue direction probably order."],
+  "creator": [
+    "Role fact sport shoulder blue direction probably order."
+  ],
   "dataset": [
     "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"
   ],
