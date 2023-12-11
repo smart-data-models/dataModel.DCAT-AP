@@ -25,8 +25,7 @@
   ],
   "page": [],
   "downloadURL": [
-    "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
-    "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/WeatherObserved/examples/example.json"
   ],
   "format": " text/csv",
   "hasPolicy": "Open data policy.",
@@ -35,7 +34,7 @@
     "ES"
   ],
   "license": "CC-BY",
-  "conformsTo": [],
+  "conformsTo": ["https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/WeatherObserved/schema.json"],
   "location": {
     "coordinates": [
       -67.057831,
