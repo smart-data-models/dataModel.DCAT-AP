@@ -15,7 +15,6 @@
     "Agente 10"
   ],
   "Type": "EU Publications office",
-  "description": "organization the Agent 10 belongs to.",
   "location": {
     "type": "Point",
     "coordinates": [
