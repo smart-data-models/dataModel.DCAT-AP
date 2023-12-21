@@ -102,7 +102,7 @@
     "urn:ngsi-ld:Dataset:items:ITFK:67369057",
     "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
   ],
-  "relatedResource": [
+  "relation": [
     "urn:ngsi-ld:Dataset:items:FXEY:35067714",
     "urn:ngsi-ld:Dataset:items:YYOL:47950545"
   ],

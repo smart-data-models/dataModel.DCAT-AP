@@ -177,7 +177,7 @@
       ""
     ]
   },
-  "relatedResource": {
+  "relation": {
     "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",

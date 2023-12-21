@@ -42,7 +42,7 @@
     ],
     "type": "Point"
   },
-  "mediaType": "",
+  "mediaType": "application/json",
   "modified": "1986-03-28T19:56:43Z",
   "packagingFormat": "zip",
   "issued": "1997-05-06T05:04:10Z",
