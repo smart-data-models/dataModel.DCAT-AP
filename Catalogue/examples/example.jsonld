@@ -10,7 +10,7 @@
     "postOfficeBoxNumber": "",
     "areaServed": "European Union"
   },
-  "catalogue": [
+  "catalog": [
     "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
     "urn:ngsi-ld:Catalogue:items:PECX:02526105"
   ],
