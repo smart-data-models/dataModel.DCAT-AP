@@ -12,7 +12,7 @@ Distribution:
       x-ngsi:
         model: "http://www.w3.org/ns/dcat#DataService"
         type: Property
-    accessUrl:
+    accessURL:
       description: This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset
       items:
         minItems: 1
@@ -441,7 +441,7 @@ Distribution:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Distribution/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/Distribution/schema.json
   x-model-tags: ""
