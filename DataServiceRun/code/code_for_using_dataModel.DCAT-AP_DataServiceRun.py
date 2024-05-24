@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "DataServiceRun"
 subject = "dataModel.DCAT-AP"
-configuration = {'type': 'Property', 'value': [{'parameter': 'param1', 'value': '10'}, {'parameter': 'param2', 'value': '3'}]}
+configuration = [{'parameter': 'param1', 'value': '10'}, {'parameter': 'param2', 'value': '3'}]
 attribute = "configuration"
 value = configuration
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-resultEntities = {'type': 'Relationship', 'object': ['urn:ngsi-ld:KeyPerformanceIndicator:example3', 'urn:ngsi-ld:KeyPerformanceIndicator:example4']}
+resultEntities = ['urn:ngsi-ld:KeyPerformanceIndicator:example3', 'urn:ngsi-ld:KeyPerformanceIndicator:example4']
 attribute = "resultEntities"
 value = resultEntities
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-resultExternal = {'type': 'Property', 'value': ['http://1.2.3.4:5678/files/example-file-3', 'http://1.2.3.4:5678/files/example-file-4']}
+resultExternal = ['http://1.2.3.4:5678/files/example-file-3', 'http://1.2.3.4:5678/files/example-file-4']
 attribute = "resultExternal"
 value = resultExternal
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-sourceEntities = {'type': 'Relationship', 'object': ['urn:ngsi-ld:Organization:example1', 'urn:ngsi-ld:Organization:example2']}
+sourceEntities = ['urn:ngsi-ld:Organization:example1', 'urn:ngsi-ld:Organization:example2']
 attribute = "sourceEntities"
 value = sourceEntities
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
