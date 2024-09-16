@@ -1,315 +1,137 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "2.0.1",
-  "modelTags": "INTERSTAT",
-  "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Dataset/schema.json",
-  "title": "Dataset DCAT-AP 2.1.1 schema",
-  "description": "Dataset Schema meeting DCAT-AP 2.1.1 specification",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.3.4",
+  "modelTags": "IUDX",
+  "$id": "https://smart-data-models.github.io/dataModel.Weather/WeatherObserved/schema.json",
+  "title": "Weather Observed schema - Smart Data Models",
+  "description": "An observation of weather conditions at a certain place and time. This data model has been developed in cooperation with mobile operators and the GSMA.",
   "type": "object",
   "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "$ref": "https://smart-data-models.github.io/dataModel.Weather/weather-schema.json#/definitions/Weather-Commons"
+    },
     {
       "properties": {
         "type": {
           "type": "string",
           "enum": [
-            "Dataset"
+            "WeatherObserved"
           ],
-          "description": "Property. NGSI type. It has to be Dataset"
+          "description": "Property. NGSI Entity type. It has to be WeatherObserved"
         },
-        "id": {
-          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
+        "dateObserved": {
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
         },
-        "description": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description",
-          "items": {
-            "type": "string",
-            "description": "Property. Every description in a language"
-          }
+        "precipitation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Amount of water rain registered. Units:'Liters per square meter'. "
         },
-        "title": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name",
-          "items": {
-            "type": "string",
-            "description": "Property. Every title in a language"
-          }
+        "solarRadiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The solar radiation observed measured in Watts per square. Units:'w/m2'"
         },
-        "contactPoint": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2006/vcard/ns#Kind'. This property contains contact information that can be used for sending comments about the Dataset",
-          "items": {
-            "type": "string",
-            "description": "Property. Every contact element"
-          }
+        "directIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Direct irradiance is the part of the solar irradiance that directly reaches a surface. Units:'w/m2'"
         },
-        "belongsToCatalogue": {
-          "description": "Relationship. It links the Dataset to its parent Catalogue. Model:'https://www.w3.org/ns/dcat#Catalogue'. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1",
+        "diffuseIrradiation": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Diffuse irradiance is the part of the solar irradiance that is scattered by the atmosphere. Units:'w/m2'"
+        },
+        "pressureTendency": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "falling",
+                "raising",
+                "steady"
+              ]
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "description": "Property. Enum:'falling, raising, steady'. Is the pressure rising or falling? It can be expressed in quantitative terms or qualitative terms"
+        },
+        "dewPoint": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Units:'Celsius degrees'. The dew point encoded as a number. Observed temperature to which air must be cooled to become saturated with water vapor"
+        },
+        "refDevice": {
           "anyOf": [
             {
               "type": "string",
               "minLength": 1,
               "maxLength": 256,
               "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Link to the catalogue"
+              "description": "Property. Identifier format of any NGSI entity"
             },
             {
               "type": "string",
               "format": "uri",
-              "description": "Property. Link to the catalogue"
+              "description": "Property. Identifier format of any NGSI entity"
             }
-          ]
+          ],
+          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the device(s) which captured this observation"
         },
-        "distribution": {
-          "type": "array",
-          "description": "Relationship. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'",
-          "items": {
-            "anyOf": [
-              {
-                "type": "string",
-                "minLength": 1,
-                "maxLength": 256,
-                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                "description": "Property. Every link to a distribution"
-              },
-              {
-                "type": "string",
-                "format": "uri",
-                "description": "Property. Every link to a distribution"
-              }
-            ]
-          }
-        },
-        "keyword": {
-          "type": "array",
-          "description": "Property. This property contains a keyword or tag, describing the Dataset. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'",
-          "items": {
-            "type": "string",
-            "description": "Property. Every keyword tag included"
-          }
-        },
-        "publisher": {
-          "description": "Property. Model:'http://xmlns.com/foaf/0.1/Agent'. This property refers to an entity (organisation) responsible for making the Dataset available",
-          "type": "string"
-        },
-        "spatial": {
-          "description": "GeoProperty. Model:'http://purl.org/dc/terms/Location'. This property refers to a geographic region that is covered by the Dataset",
-          "type": "array",
-          "items": {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location",
-            "description": "Property. Every location included"
-          }
-        },
-        "temporal": {
-          "description": "Property. This property refers to a temporal period that the Dataset covers. Model:'http://purl.org/dc/terms/PeriodOfTime'",
-          "type": "array",
-          "items": {
-            "type": "string",
-            "format": "date-time",
-            "description": "Property. Every temporal period included"
-          }
-        },
-        "theme": {
-          "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes",
-          "type": "array",
-          "items": {
-            "type": "string",
-            "description": "Property. Every theme included"
-          }
-        },
-        "accessRights": {
-          "type": "string",
-          "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public"
-        },
-        "creator": {
-          "type": "array",
-          "description": "Property. Model:'http://xmlns.com/foaf/0.1/Agent'. This property refers to the entity primarily responsible for producing the dataset",
-          "items": {
-            "type": "string",
-            "description": "Property. Every creator included"
-          }
-        },
-        "conformsTo": {
-          "type": "array",
-          "description": "Property. Model:'http://purl.org/dc/terms/Standard'. This property refers to an implementing rule or other specification. ",
-          "items": {
-            "type": "string",
-            "description": "Property. Every rule or specification applicable"
-          }
-        },
-        "page": {
-          "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a page or document about this Dataset. ",
-          "type": "array",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every page or document"
-          }
-        },
-        "accrualPeriodicity": {
-          "type": "string",
-          "description": "Property. Model:'http://purl.org/dc/terms/Frequency'. This property refers to the frequency at which the Dataset is updated"
-        },
-        "hasVersion": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every version of the related datasets"
-          }
-        },
-        "identifier": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every identifier of the dataset"
-          }
-        },
-        "isReferencedBy": {
-          "type": "array",
-          "description": "Relationship. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every resource related to the dataset"
-          }
-        },
-        "isVersionOf": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every dataset that the current dataset is a version of it"
-          }
-        },
-        "landingPage": {
-          "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator",
-          "type": "array",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every web page listed"
-          }
-        },
-        "language": {
-          "type": "array",
-          "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset",
-          "items": {
-            "type": "string",
-            "description": "Property. Every language included"
-          }
-        },
-        "otherIdentifier": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/adms#Identifier'. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every additional identifier included"
-          }
-        },
-        "provenance": {
-          "type": "array",
-          "description": "Property. Model:'http://purl.org/dc/terms/ProvenanceStatement'. This property contains a statement about the lineage of a Dataset",
-          "items": {
-            "type": "string",
-            "description": "Property. Every lineage associated to the dataset"
-          }
-        },
-        "qualifiedAttribution": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property refers to a link to an Agent having some form of responsibility for the resource",
-          "items": {
-            "type": "string",
-            "description": "Property. Every attribution included"
-          }
-        },
-        "qualifiedRelation": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property provides a link to a description of a relationship with another resource",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every qualified relation included"
-          }
-        },
-        "relation": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property refers to a related resource",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every related resource included"
-          }
-        },
-        "issued": {
-          "type": "string",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Dataset",
-          "format": "date-time"
-        },
-        "sample": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Distribution'. This property refers to a sample distribution of the dataset",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every sample included with the dataset"
-          }
-        },
-        "source": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset from which the described Dataset is derived",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every dataset which is a source of the current dataset"
-          }
-        },
-        "spatialResolutionInMeters": {
+        "streamGauge": {
           "type": "number",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters"
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The water level surface elevation observed by Hydrometric measurement sensors, namely a [Stream Gauge](https://en.wikipedia.org/wiki/Stream_gauge) expressed in centimeters. Units:'centimeters'"
         },
-        "temporalResolution": {
-          "type": "array",
-          "description": "Property. Model:'http://purl.org/dc/terms/PeriodOfTime'. This property refers to the minimum time period resolvable in the dataset. ",
-          "items": {
-            "type": "string",
-            "format": "duration",
-            "description": "Property. Every temporal resolution included"
-          }
+        "snowHeight": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The snow height observed by generic snow depth measurement sensors, expressed in centimeters. Units:'centimeters'"
         },
-        "Type": {
+        "uVIndexMax": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. The maximum UV index for the period, based on the World Health Organization's UV Index measure. [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/) the values between 1 and 11 are the valid range for the index. The value 0 is for describing that no signal is detected so no value is stored"
+        },
+        "aqiMajorPollutant": {
           "type": "string",
-          "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen"
+          "description": "Property. Model:'https://schema.org/Text'. Major pollutant in the Air Quality Index (AQI)"
         },
-        "modified": {
+        "aqiMajorPollutantForecast": {
           "type": "string",
-          "format": "date-time",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Dataset was changed or modified"
+          "description": "Property. Model:'https://schema.org/Text'. Forecasted major air pollutant in the Air Quality Index (AQI) over a certain duration in future"
         },
-        "versionInfo": {
-          "type": "string",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a version number or other version designation of the Dataset"
+        "airTemperatureForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted value of air temperature over a certain duration in future"
         },
-        "versionNotes": {
-          "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes",
-          "items": {
-            "type": "string",
-            "description": "Property. Every language description of the version notes"
-          }
+        "precipitationForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted rainfall over a certain duration in future"
         },
-        "wasGeneratedBy": {
-          "type": "array",
-          "description": "Property. Model:'https://www.w3.org/ns/prov#Activity'. This property refers to an activity that generated, or provides the business context for, the creation of the dataset",
-          "items": {
-            "type": "string",
-            "description": "Property. Every activity included"
-          }
+        "airQualityIndex": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Air quality index is a number used to report the quality of the air on any given day"
+        },
+        "relativeHumidityForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted relative humidity (water vapour in air) over a certain duration in future"
+        },
+        "airQualityIndexForecast": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. Forecasted overall Air Quality Index (AQI) over a certain duration in future"
+        },
+        "airTemperatureTSA": {
+          "type": "object",
+          "description": "Property. Air temperature time series aggregation",
+          "$ref": "https://smart-data-models.github.io/dataModel.Environment/Environment-schema.json#/definitions/TimeSeriesAggregation"
         }
       }
     }
@@ -317,7 +139,7 @@
   "required": [
     "id",
     "type",
-    "description",
-    "title"
+    "dateObserved",
+    "location"
   ]
 }
