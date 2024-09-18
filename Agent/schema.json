@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "1.0.1",
   "modelTags": "",
   "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Agent/schema.json",
@@ -35,7 +35,6 @@
           "type": "string",
           "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a type of the agent that makes the Catalogue or Dataset available"
         }
-
       }
     }
   ],
