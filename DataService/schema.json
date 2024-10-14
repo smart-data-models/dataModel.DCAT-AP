@@ -1,10 +1,10 @@
 {
-    "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.1.0",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$schemaVersion": "1.0.0",
     "modelTags": "WATERVERSE",
     "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json",
-    "title": "Data Service DCAT-AP 2.1.1 schema - extended",
-    "description": "Data Service adapted from DCAT-AP 2.1.1 specification, but extended with additional properties and compatible with NGSI standard",
+    "title": "Data Service DCAT-AP 3.0.0 schema - extended",
+    "description": "Data Service adapted from DCAT-AP 3.0.0 specification, but extended with additional properties and compatible with NGSI standard",
     "type": "object",
     "allOf": [
         {
@@ -22,7 +22,7 @@
                 "id": {
                     "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
                 },
-                "endPointURL": {
+                "endpointURL": {
                     "type": "array",
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. The root location or primary endpoint of the service (an IRI)",
                     "items": {
@@ -33,14 +33,39 @@
                     }
                 },
                 "title": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. The title in one language"
-                    }
+                    "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name",
+                    "oneOf": [
+    				    {
+                            "type": "object",
+                            "properties": {
+                                "languageMap": {
+                                    "type": "object",
+                                    "description": "Property, Model:'https://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                                    "properties": {
+                        	            "en": {"type": "string"},
+                        	            "de": {"type": "string"},
+                        	            "es": {"type": "string"},
+                        	            "fr": {"type": "string"},
+                        	            "it": {"type": "string"},
+                        	            "ja": {"type": "string"},
+                        	            "ko": {"type": "string"},
+                        	            "zh": {"type": "string"},
+                                        "el": {"type": "string"},
+                                        "nl": {"type": "string"},
+                                        "fi": {"type": "string"}
+                                    },
+					                "additionalProperties": false
+                                },
+                                "additionalProperties": false
+                            },
+                            "additionalProperties": false
+                        },
+    				    {
+                            "type": "string"
+                        }
+                    ]
                 },
-                "endPointDescription": {
+                "endpointDescription": {
                     "type": "array",
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement",
                     "items": {
@@ -50,7 +75,7 @@
                 },
                 "servesDataset": {
                     "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a collection of data that this data service can distribute",
+                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a collection of data that this data service can distribute",
                     "items": {
                         "type": "string",
                         "description": "Property. Every dataset distributed"
@@ -61,12 +86,37 @@
                     "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property MAY include information regarding access or restrictions based on privacy, security, or other policies"
                 },
                 "description": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every description in a language"
-                    }
+                    "description": "LanguageProperty. Model:'http://purl.org/dc/terms/description'. A free-text account of the Data Service.",
+                    "oneOf": [
+    				    {
+                            "type": "object",
+                            "properties": {
+                                "languageMap": {
+                                    "type": "object",
+                                    "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                                    "properties": {
+                        	            "en": {"type": "string"},
+                        	            "de": {"type": "string"},
+                        	            "es": {"type": "string"},
+                        	            "fr": {"type": "string"},
+                        	            "it": {"type": "string"},
+                        	            "ja": {"type": "string"},
+                        	            "ko": {"type": "string"},
+                        	            "zh": {"type": "string"},
+                                        "el": {"type": "string"},
+                                        "nl": {"type": "string"},
+                                        "fi": {"type": "string"}
+                                    },
+					                "additionalProperties": false
+                                },
+                                "additionalProperties": false
+                            },
+                            "additionalProperties": false
+                        },
+    				    {
+                            "type": "string"
+                        }
+                    ]
                 },
                 "license": {
                     "type": "string",
@@ -87,7 +137,203 @@
                 "validationSchema": {
                     "type": "string",
                     "description": "Property. Model:'https://schema.org/url'. URL to the technical validation schema for the DataService (JSON Schema) in the Smart Data Models program."
-                }
+                },
+                "operationSpace": {
+                  "oneOf": [
+                    {
+                      "title": "GeoJSON Point",
+                      "type": "object",
+                      "required": [ "type", "coordinates" ],
+                      "description": "GeoProperty. Geojson reference to the item. Point",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "Point"
+                          ]
+                        },
+                        "coordinates": {
+                          "type": "array",
+                          "minItems": 2,
+                          "items": {
+                            "type": "number"
+                          }
+                        },
+                        "bbox": {
+                          "type": "array",
+                          "minItems": 4,
+                          "items": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "title": "GeoJSON LineString",
+                      "type": "object",
+                      "required": [ "type", "coordinates" ],
+                      "description": "GeoProperty. Geojson reference to the item. LineString",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "LineString"
+                          ]
+                        },
+                        "coordinates": {
+                          "type": "array",
+                          "minItems": 2,
+                          "items": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                              "type": "number"
+                            }
+                          }
+                        },
+                        "bbox": {
+                          "type": "array",
+                          "minItems": 4,
+                          "items": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "title": "GeoJSON Polygon",
+                      "type": "object",
+                      "required": [ "type", "coordinates" ],
+                      "description": "GeoProperty. Geojson reference to the item. Polygon",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [ "Polygon" ]
+                        },
+                        "coordinates": {
+                          "type": "array",
+                          "items": {
+                            "type": "array",
+                            "minItems": 4,
+                            "items": {
+                              "type": "array",
+                              "minItems": 2,
+                              "items": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        },
+                        "bbox": {
+                          "type": "array",
+                          "minItems": 4,
+                          "items": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "title": "GeoJSON MultiPoint",
+                      "type": "object",
+                      "required": [ "type", "coordinates" ],
+                      "description": "GeoProperty. Geojson reference to the item. MultiPoint",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [ "MultiPoint" ]
+                        },
+                        "coordinates": {
+                          "type": "array",
+                          "items": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                              "type": "number"
+                            }
+                          }
+                        },
+                        "bbox": {
+                          "type": "array",
+                          "minItems": 4,
+                          "items": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "title": "GeoJSON MultiLineString",
+                      "type": "object",
+                      "required": [ "type", "coordinates" ],
+                      "description": "GeoProperty. Geojson reference to the item. MultiLineString",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [ "MultiLineString" ]
+                        },
+                        "coordinates": {
+                          "type": "array",
+                          "items": {
+                            "type": "array",
+                            "minItems": 2,
+                            "items": {
+                              "type": "array",
+                              "minItems": 2,
+                              "items": {
+                                "type": "number"
+                              }
+                            }
+                          }
+                        },
+                        "bbox": {
+                          "type": "array",
+                          "minItems": 4,
+                          "items": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "title": "GeoJSON MultiPolygon",
+                      "type": "object",
+                      "required": [ "type", "coordinates" ],
+                      "description": "GeoProperty. Geojson reference to the item. MultiLineString",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [ "MultiPolygon" ]
+                        },
+                        "coordinates": {
+                          "type": "array",
+                          "items": {
+                            "type": "array",
+                            "items": {
+                              "type": "array",
+                              "minItems": 4,
+                              "items": {
+                                "type": "array",
+                                "minItems": 2,
+                                "items": {
+                                  "type": "number"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "bbox": {
+                          "type": "array",
+                          "minItems": 4,
+                          "items": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  ],
+                "description": "GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"
+               }
             }
         }
     ],

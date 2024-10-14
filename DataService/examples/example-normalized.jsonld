@@ -20,7 +20,7 @@
         "type": "Property",
         "value": "European union and beyond"
     },
-    "modified": {
+    "modifiedAt": {
         "type": "Property",
         "value": {
             "@type": "DateTime",
@@ -31,14 +31,14 @@
         "type": "Property",
         "value": "Data service for the solar system open data portal."
     },
-    "endPointDescription": {
+    "endpointDescription": {
         "type": "Property",
         "value": [
             "SPARQL end point without authentication",
             "API compliant with CKAN specification"
         ]
     },
-    "endPointURL": {
+    "endpointURL": {
         "type": "Property",
         "value": [
             "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
@@ -49,7 +49,7 @@
         "type": "Property",
         "value": "EUPL."
     },
-    "location": {
+    "operationSpace": {
         "type": "GeoProperty",
         "value": {
             "type": "Point",

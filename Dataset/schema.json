@@ -1,10 +1,10 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "2.1.0",
+    "$schemaVersion": "3.0.0",
     "modelTags": "INTERSTAT, WATERVERSE",
     "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Dataset/schema.json",
-    "title": "Dataset DCAT-AP 2.1.1 schema",
-    "description": "Dataset Schema meeting DCAT-AP 2.1.1 specification",
+    "title": "Dataset DCAT-AP 3.0.0 schema",
+    "description": "Dataset Schema definition based on DCAT-AP 3.0.0 specification",
     "type": "object",
     "allOf": [
         {
@@ -21,7 +21,7 @@
                 },
                 "description": {
                     "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description",
+                    "description": "LanguageProperty. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description",
                     "items": {
                         "type": "string",
                         "description": "Property. Every description in a language"
@@ -32,7 +32,7 @@
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name",
                     "items": {
                         "type": "string",
-                        "description": "Property. Every title in a language"
+                        "description": "LanguageProperty. Every title in a language"
                     }
                 },
                 "contactPoint": {
@@ -131,7 +131,7 @@
                 },
                 "conformsTo": {
                     "type": "array",
-                    "description": "Property. Model:'http://purl.org/dc/terms/Standard'. This property refers to an implementing rule or other specification. ",
+                    "description": "Property. Model:'http://purl.org/dc/terms/conformsTo'. This property refers to an implementing rule or other specification. ",
                     "items": {
                         "type": "string",
                         "description": "Property. Every rule or specification applicable"
@@ -152,7 +152,7 @@
                 },
                 "hasVersion": {
                     "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset",
+                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset",
                     "items": {
                         "type": "string",
                         "format": "uri",
@@ -197,7 +197,7 @@
                 },
                 "language": {
                     "type": "array",
-                    "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset",
+                    "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset. Improve the description of the property to provide\nonly the values defined by the Library of Congress (ISO 639-1: http://id.loc.gov/vocabulary/iso639-1.html, ISO 639-2: http://id.loc.gov/vocabulary/iso639-2.html).",
                     "items": {
                         "type": "string",
                         "description": "Property. Every language included"
@@ -262,7 +262,7 @@
                 },
                 "source": {
                     "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset from which the described Dataset is derived",
+                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset from which the described Dataset is derived",
                     "items": {
                         "type": "string",
                         "format": "uri",
@@ -286,12 +286,12 @@
                     "type": "string",
                     "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen"
                 },
-                "modified": {
+                "modifiedAt": {
                     "type": "string",
                     "format": "date-time",
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Dataset was changed or modified"
                 },
-                "versionInfo": {
+                "version": {
                     "type": "string",
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a version number or other version designation of the Dataset"
                 },
@@ -379,6 +379,22 @@
                 "reputationOrganization": {
                     "type": "string",
                     "description": "Property. Model:'https://schema.org/url'. URI to the organization which is responsible for the publication of the dataset in terms of reputation. It matches the dimension reputation of MELODA5 and it allows to retrieve their prestige from the ranking."
+                },
+                "applicableLegislation": {
+                    "type": "array",
+                    "description": "Property. Model:'https://www.w3.org/ns/prov#Activity'. The legislation that mandates the creation or management of the Dataset. Cardinality: 0..n",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation,policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
+                    }
+                },
+                "inSeries": {
+                    "type": "array",
+                    "description": "Relationship. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'. A dataset series of which the dataset is part. Cardinality: 0..n",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation,policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
+                    }
                 },
                 "license": {
                     "type": "string",

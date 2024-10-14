@@ -1,10 +1,11 @@
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-# DataService
-Version: 0.0.2
+
+# DataService
+Version: 0.2.0
 
 ## Description 
 
-Data Service adapted from DCAT-AP 2.1.1 specification, but extended with additional properties and compatible with NGSI standard
+Data Service adapted from DCAT-AP 3.0.0 specification, but extended with additional properties and compatible with NGSI standard
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/swagger.yaml)

@@ -10,11 +10,11 @@ The following entity types are available:
 
 - [CatalogueRecord](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecord/README.md). This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.1.1
 
-- [DataService](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataService/README.md). Data Service adapted from DCAT-AP 2.1.1 specification, but extended with additional properties and compatible with NGSI standard
+- [DataService](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataService/README.md). Data Service adapted from DCAT-AP 3.0.0 specification, but extended with additional properties and compatible with NGSI standard
 
 - [DataServiceRun](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/DataServiceRun/README.md). A representation of one specific run of a data service (e.g. DataServiceDCAT-AP).
 
-- [Dataset](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting DCAT-AP 2.1.1 specification
+- [Dataset](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/README.md). Dataset Schema meeting DCAT-AP 3.0.0 specification
 
 - [Distribution](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Distribution/README.md). This is a distribution belonging ot a dataset according to the DCAT-AP standard 2.1.1
 
