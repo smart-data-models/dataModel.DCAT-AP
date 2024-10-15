@@ -1,5 +1,7 @@
 # dataModel.DCAT-AP
-These data models are mapped from version 2.1.1 of the DCAT-AP standard. [Link](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211). They have been extended with the data model dataServiceRun data model and additional attributes
+These data models are mapped from [version 2.1.1](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211) 
+and [version 3.0.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0) of the DCAT-AP standard. They have been extended 
+with the data model dataServiceRun data model and additional attributes.
 
 ### List of data models
 

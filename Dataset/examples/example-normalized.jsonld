@@ -1,7 +1,7 @@
 {
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",
   "type": "Dataset",
-  "modified": {
+  "modifiedAt": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
@@ -9,8 +9,10 @@
     }
   },
   "source": {
-    "type": "Property",
-    "value":"urn:ngsi-ld:Dataset:items:YSWN:41266715"
+    "type": "Relationship",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:YSWN:41266715"
+    ]
   },
   "description": {
     "type": "LanguageProperty",
@@ -29,10 +31,20 @@
     }
   },
   "title": {
-    "type": "Property",
-    "value": [
-      "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"
-    ]
+    "type": "LanguageProperty",
+    "languageMap": {
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
+      "zh": "马德里大区不同类型和类别的旅游住宿。",
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
+    }
   },
   "contactPoint": {
     "type": "Property",
@@ -120,8 +132,8 @@
   "hasVersion": {
     "type": "Property",
     "value": [
-      "",
-      ""
+      "urn:ngsi-ld:Dataset:id:ASDF:68185655",
+      "urn:ngsi-ld:Dataset:id:ASDF:78185655"
     ]
   },
   "identifier": {
@@ -221,7 +233,7 @@
     "type": "Property",
     "value": ""
   },
-  "versionInfo": {
+  "version": {
     "type": "Property",
     "value": "3.0"
   },
@@ -240,7 +252,22 @@
   "applicableLegislation": {
     "type": "Property",
     "value": [
-      "meloda Team"
+      "Regulation 883/2004",
+      "Regulation 465/2012"
+    ]
+  },
+  "inSeries": {
+    "type": "Relationship",
+    "value": [
+      "urn:ngsi-ld:Dataset:id:HUZY:681332655",
+      "urn:ngsi-ld:Dataset:id:HUZY:681970245"
+    ]
+  },
+  "conformsTo": {
+    "type": "Property",
+    "value": [
+      "http://www.opengis.net/def/crs/EPSG/0/28992",
+      "http://data.europa.eu/eli/reg/2014/1312/oj"
     ]
   },
   "@context": [
