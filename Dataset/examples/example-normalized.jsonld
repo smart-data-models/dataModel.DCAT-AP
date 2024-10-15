@@ -237,6 +237,12 @@
       "meloda Team"
     ]
   },
+  "applicableLegislation": {
+    "type": "Property",
+    "value": [
+      "meloda Team"
+    ]
+  },
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
   ]

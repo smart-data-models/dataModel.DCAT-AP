@@ -28,8 +28,20 @@
         }
     },
     "description": {
-        "type": "Property",
-        "value": "Data service for the solar system open data portal."
+        "type": "LanguageProperty",
+        "languageMap": {
+            "en": "Data service of the european open data portal",
+            "de": "Datendienst des Europäischen Portals für offene Daten",
+            "es": "Data service del portal europeo de datos abiertos",
+            "fr": "Service de données du portail européen de données ouvertes",
+            "it": "Servizio dati del Portale europeo dei dati aperti",
+            "ja": "欧州オープンデータ・ポータルのデータサービス",
+            "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+            "zh": "欧洲开放数据门户的数据服务",
+            "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+            "nl": "Dataservice van het Europese open dataportaal",
+            "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+        }
     },
     "endpointDescription": {
         "type": "Property",
@@ -47,7 +59,7 @@
     },
     "license": {
         "type": "Property",
-        "value": "EUPL."
+        "value": "EUPL-1.2"
     },
     "operationSpace": {
         "type": "GeoProperty",
@@ -60,18 +72,27 @@
         }
     },
     "servesDataset": {
-        "type": "Property",
-        "value": [
-            "EU geographic map",
-            "EU physical map"
+        "type": "Relationship",
+        "object": [
+            "urn:ngsi-ld:Dataset:id:HUZY:41266715",
+            "urn:ngsi-ld:Dataset:id:HUZY:41266716"
         ]
     },
     "title": {
-        "type": "Property",
-        "value": [
-            "Data service of the european open data portal",
-            "Data service del portal europeo de datos abiertos"
-        ]
+        "type": "LanguageProperty",
+        "languageMap": {
+            "en": "Data service of the european open data portal",
+            "de": "Datendienst des Europäischen Portals für offene Daten",
+            "es": "Data service del portal europeo de datos abiertos",
+            "fr": "Service de données du portail européen de données ouvertes",
+            "it": "Servizio dati del Portale europeo dei dati aperti",
+            "ja": "欧州オープンデータ・ポータルのデータサービス",
+            "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+            "zh": "欧洲开放数据门户的数据服务",
+            "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+            "nl": "Dataservice van het Europese open dataportaal",
+            "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+        }
     },
     "@context": [
         "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"

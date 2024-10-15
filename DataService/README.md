@@ -1,7 +1,7 @@
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
 
 # DataService
-Version: 0.2.0
+Version: 1.0.0
 
 ## Description 
 

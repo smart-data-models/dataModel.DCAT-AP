@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/schema#",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$schemaVersion": "3.0.0",
     "modelTags": "INTERSTAT, WATERVERSE",
     "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Dataset/schema.json",
@@ -20,20 +20,70 @@
                     "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
                 },
                 "description": {
-                    "type": "array",
-                    "description": "LanguageProperty. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every description in a language"
-                    }
+                    "description": "LanguageProperty. Model:'http://purl.org/dc/terms/description'. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.",
+                    "oneOf": [
+    				    {
+                            "type": "object",
+                            "properties": {
+                                "languageMap": {
+                                    "type": "object",
+                                    "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                                    "properties": {
+                        	            "en": {"type": "string"},
+                        	            "de": {"type": "string"},
+                        	            "es": {"type": "string"},
+                        	            "fr": {"type": "string"},
+                        	            "it": {"type": "string"},
+                        	            "ja": {"type": "string"},
+                        	            "ko": {"type": "string"},
+                        	            "zh": {"type": "string"},
+                                        "el": {"type": "string"},
+                                        "nl": {"type": "string"},
+                                        "fi": {"type": "string"}
+                                    },
+					                "additionalProperties": false
+                                },
+                                "additionalProperties": false
+                            },
+                            "additionalProperties": false
+                        },
+    				    {
+                            "type": "string"
+                        }
+                    ]
                 },
                 "title": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name",
-                    "items": {
-                        "type": "string",
-                        "description": "LanguageProperty. Every title in a language"
-                    }
+                    "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.",
+                    "oneOf": [
+    				    {
+                            "type": "object",
+                            "properties": {
+                                "languageMap": {
+                                    "type": "object",
+                                    "description": "Property, Model:'https://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                                    "properties": {
+                        	            "en": {"type": "string"},
+                        	            "de": {"type": "string"},
+                        	            "es": {"type": "string"},
+                        	            "fr": {"type": "string"},
+                        	            "it": {"type": "string"},
+                        	            "ja": {"type": "string"},
+                        	            "ko": {"type": "string"},
+                        	            "zh": {"type": "string"},
+                                        "el": {"type": "string"},
+                                        "nl": {"type": "string"},
+                                        "fi": {"type": "string"}
+                                    },
+					                "additionalProperties": false
+                                },
+                                "additionalProperties": false
+                            },
+                            "additionalProperties": false
+                        },
+    				    {
+                            "type": "string"
+                        }
+                    ]
                 },
                 "contactPoint": {
                     "type": "array",
@@ -152,11 +202,23 @@
                 },
                 "hasVersion": {
                     "type": "array",
-                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset",
+                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.",
                     "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every version of the related datasets"
+                        "description": "Property. Every version of the related datasets.",
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 256,
+                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                                "description": "Property. Identifier format of any NGSI entity"
+                            },
+                            {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Property. Identifier format of any NGSI entity"
+                            }
+                        ]
                     }
                 },
                 "identifier": {
@@ -197,7 +259,7 @@
                 },
                 "language": {
                     "type": "array",
-                    "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset. Improve the description of the property to provide\nonly the values defined by the Library of Congress (ISO 639-1: http://id.loc.gov/vocabulary/iso639-1.html, ISO 639-2: http://id.loc.gov/vocabulary/iso639-2.html).",
+                    "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset. Improve the description of the property to provide only the values defined by the Library of Congress (ISO 639-1: http://id.loc.gov/vocabulary/iso639-1.html, ISO 639-2: http://id.loc.gov/vocabulary/iso639-2.html).",
                     "items": {
                         "type": "string",
                         "description": "Property. Every language included"
@@ -262,11 +324,23 @@
                 },
                 "source": {
                     "type": "array",
-                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset from which the described Dataset is derived",
+                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset from which the described Dataset is derived.",
                     "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every dataset which is a source of the current dataset"
+                        "description": "Property. Every version of the related datasets.",
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 256,
+                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                                "description": "Property. Identifier format of any NGSI entity"
+                            },
+                            {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Property. Identifier format of any NGSI entity"
+                            }
+                        ]
                     }
                 },
                 "spatialResolutionInMeters": {
@@ -382,7 +456,7 @@
                 },
                 "applicableLegislation": {
                     "type": "array",
-                    "description": "Property. Model:'https://www.w3.org/ns/prov#Activity'. The legislation that mandates the creation or management of the Dataset. Cardinality: 0..n",
+                    "description": "Property. Model:'http://data.europa.eu/r5r/applicableLegislation'. The legislation that mandates the creation or management of the Dataset. Cardinality: 0..n",
                     "items": {
                         "type": "string",
                         "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation,policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
@@ -390,10 +464,23 @@
                 },
                 "inSeries": {
                     "type": "array",
-                    "description": "Relationship. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'. A dataset series of which the dataset is part. Cardinality: 0..n",
+                    "description": "Relationship. Model:'https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series'. This property links the Dataset to an available Distribution.",
                     "items": {
-                        "type": "string",
-                        "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation,policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
+                        "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. A dataset series of which the dataset is part.",
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 256,
+                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                                "description": "Property. Identifier format of any NGSI entity"
+                            },
+                            {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Property. Identifier format of any NGSI entity"
+                            }
+                        ]
                     }
                 },
                 "license": {
