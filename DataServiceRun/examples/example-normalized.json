@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:DataServiceRun:example-1234",
   "type": "DataServiceRun",
   "configuration": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       {
         "parameter": "param1",
@@ -27,28 +27,28 @@
     "value": "This is a representation of one specific run of a data service."
   },
   "resultEntities": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:KeyPerformanceIndicator:example3",
       "urn:ngsi-ld:KeyPerformanceIndicator:example4"
     ]
   },
   "resultExternal": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "http://1.2.3.4:5678/files/example-file-3",
       "http://1.2.3.4:5678/files/example-file-4"
     ]
   },
   "sourceEntities": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Organization:example1",
       "urn:ngsi-ld:Organization:example2"
     ]
   },
   "sourceExternal": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "http://1.2.3.4:5678/files/example-file-1",
       "http://1.2.3.4:5678/files/example-file-2"
@@ -57,8 +57,5 @@
   "service": {
     "type": "Text",
     "value": "urn:ngsi-ld:DataServiceDCAT-AP:example"
-  },    
-  "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
-  ]
+  }
 }

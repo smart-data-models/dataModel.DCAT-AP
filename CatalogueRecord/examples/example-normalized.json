@@ -16,7 +16,7 @@
     }
   },
   "address": {
-    "type": "PostalAdress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "2, rue Mercier",
       "addressLocality": "Luxembourg",
@@ -35,17 +35,17 @@
     "value": "Public administration"
   },
   "language": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "EN",
       "ES"
     ]
   },
   "title": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "Example of catalogue record",
-      "Ejemplo de registro de catálogo"
+      "Ejemplo de registro de cat\u00e1logo"
     ]
   }
 }

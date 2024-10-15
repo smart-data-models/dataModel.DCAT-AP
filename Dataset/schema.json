@@ -488,7 +488,7 @@
                     "description": "Property. Model:'http://purl.org/dc/terms#LicenseDocument'. This property refers to the license under which the Dataset is made available. Id of the license according to the enumerated values. It is extracted from the id of the SPDX standard (https://spdx.org/licenses).",
                     "enum": [
                         "0BSD",
-                        "AAL", 
+                        "AAL",
                         "Abstyles",
                         "AdaCore-doc",
                         "Adobe-2006",

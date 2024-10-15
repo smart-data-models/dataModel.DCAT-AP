@@ -24,7 +24,7 @@
     }
   },
   "name": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "Agent 10",
       "Agente 10"

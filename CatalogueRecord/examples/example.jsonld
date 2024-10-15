@@ -1,34 +1,36 @@
 {
-    "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",
-    "type": "CatalogueRecord",
-    "address": {
-        "streetAddress": "2, rue Mercier",
-        "addressLocality": "Luxembourg",
-        "addressRegion": "Luxembourg",
-        "addressCountry": "Luxembourg",
-        "postalCode": "2985",
-        "postOfficeBoxNumber": ""
-    },
-    "areaServed": "European Union and beyond",
-    "modified": "2021-07-02T18:37:55Z",
-    "description": ["Catalogue record of the solar system open data portal"],
-    "language": [
-        "EN",
-        "ES"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            36.633152,
-            -85.183315
-        ]
-    },
-    "primaryTopic": "Public administration",
-    "title": [
-        "Example of catalogue record",
-        "Ejemplo de registro de cat\u00e1logo"
-    ],
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+  "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",
+  "type": "CatalogueRecord",
+  "address": {
+    "streetAddress": "2, rue Mercier",
+    "addressLocality": "Luxembourg",
+    "addressRegion": "Luxembourg",
+    "addressCountry": "Luxembourg",
+    "postalCode": "2985",
+    "postOfficeBoxNumber": ""
+  },
+  "areaServed": "European Union and beyond",
+  "modified": "2021-07-02T18:37:55Z",
+  "description": [
+    "Catalogue record of the solar system open data portal"
+  ],
+  "language": [
+    "EN",
+    "ES"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      36.633152,
+      -85.183315
     ]
+  },
+  "primaryTopic": "Public administration",
+  "title": [
+    "Example of catalogue record",
+    "Ejemplo de registro de cat\u00e1logo"
+  ],
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+  ]
 }

@@ -33,7 +33,7 @@
     "ES",
     "DE"
   ],
-  "licence": "Creative Commons 3.0 International",
+  "license": "Creative Commons 3.0 International",
   "issued": "2004-08-22T22:32:47Z",
   "spatial": [
     {
@@ -62,6 +62,7 @@
     "urn:ngsi-ld:Catalogue:items:LZMQ:44249979",
     "urn:ngsi-ld:Catalogue:items:PECX:02526105"
   ],
-  "creator": [""]
+  "creator": [
+    ""
+  ]
 }
-

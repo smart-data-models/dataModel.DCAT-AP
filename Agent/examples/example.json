@@ -1,7 +1,10 @@
 {
   "id": "urn:ngsi-ld:id:ZLHO:07918336",
   "type": "Agent",
-  "name": "Agent 10.",
+  "name": [
+    "Agent 10",
+    "Agente 10"
+  ],
   "location": {
     "type": "Point",
     "coordinates": [
@@ -18,9 +21,5 @@
     "postOfficeBoxNumber": "",
     "areaServed": "European Union"
   },
-  "name": [
-    "Agent 10",
-    "Agente 10"
-  ],
   "Type": "EU Publications office"
 }

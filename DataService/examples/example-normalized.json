@@ -2,8 +2,10 @@
   "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",
   "type": "DataService",
   "description": {
-    "type": "Text",
-    "value": "Data service for the solar system open data portal."
+    "type": "StructuredValue",
+    "value": [
+      "Data service for the solar system open data portal."
+    ]
   },
   "location": {
     "type": "geo:json",
@@ -16,7 +18,7 @@
     }
   },
   "address": {
-    "type": "PostalAddress",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "2, rue Mercier",
       "addressLocality": "Luxembourg",
@@ -31,28 +33,28 @@
     "value": "European union and beyond"
   },
   "endPointURL": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
       "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"
     ]
   },
   "title": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "Data service of the european open data portal",
       "Data service del portal europeo de datos abiertos"
     ]
   },
   "endPointDescription": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "SPARQL end point without authentication",
       "API compliant with CKAN specification"
     ]
   },
   "servesDataset": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "EU geographic map",
       "EU physical map"
@@ -67,5 +69,3 @@
     "value": "EUPL."
   }
 }
-
-

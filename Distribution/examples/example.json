@@ -21,11 +21,11 @@
   "compressionFormat": "",
   "belongsToDataset": "urn:ngsi-ld:Dataset:items:CHIF:23645981",
   "description": [
-    "Distribution of open data portals in csv"],
+    "Distribution of open data portals in csv"
+  ],
   "page": [],
   "downloadURL": [
-    "urn:ngsi-ld:DistributionDCAT-AP:items:HVWX:12201868",
-    "urn:ngsi-ld:DistributionDCAT-AP:items:ICPI:96947751"
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/WeatherObserved/examples/example.json"
   ],
   "format": " text/csv",
   "hasPolicy": "Open data policy.",
@@ -34,7 +34,7 @@
     "ES"
   ],
   "license": "CC-BY",
-  "conformsTo": [],
+  "conformsTo": ["https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/WeatherObserved/schema.json"],
   "location": {
     "coordinates": [
       -67.057831,
@@ -42,9 +42,8 @@
     ],
     "type": "Point"
   },
-  "mediaType": "",
+  "mediaType": "application/json",
   "modified": "1986-03-28T19:56:43Z",
-
   "packagingFormat": "zip",
   "issued": "1997-05-06T05:04:10Z",
   "rights": "copyleft",
@@ -53,8 +52,7 @@
     0.5
   ],
   "status": "Withdrawn",
-  "temporalResolution":
-    "PT15M",
+  "temporalResolution": "PT15M",
   "title": [
     "Dataset base"
   ]

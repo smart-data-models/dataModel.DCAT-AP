@@ -6,10 +6,10 @@
     "urn:ngsi-ld:Dataset:items:YSWN:41266715"
   ],
   "description": [
-    "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."
+    "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."
   ],
   "title": [
-    "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"
+    "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"
   ],
   "contactPoint": [
     "https://datos.gob.es/es/comment/reply/145778."
@@ -22,11 +22,11 @@
   "keyword": [
     "alojamiento",
     "apartamento rural",
-    "apartamento turístico",
+    "apartamento tur\u00edstico",
     "campamento de turismo",
     "camping",
     "casa rural",
-    "casas de huéspedes",
+    "casas de hu\u00e9spedes",
     "hostal",
     "hostel",
     "hosteria",
@@ -102,7 +102,7 @@
     "urn:ngsi-ld:Dataset:items:ITFK:67369057",
     "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
   ],
-  "relatedResource": [
+  "relation": [
     "urn:ngsi-ld:Dataset:items:FXEY:35067714",
     "urn:ngsi-ld:Dataset:items:YYOL:47950545"
   ],
@@ -113,12 +113,11 @@
   ],
   "spatialResolutionInMeters": 0.6,
   "temporalResolution": [
-   "PT15M"
+    "PT15M"
   ],
   "Type": "",
   "version": "",
-  "versionNotes": [
-  ],
+  "versionNotes": [],
   "wasGeneratedBy": [
     "datos.gob.es"
   ],

@@ -1,30 +1,28 @@
 {
-    "id": "urn:ngsi-ld:id:ZLHO:07918336",
-    "type": "Agent",
-    "address": {
-        "streetAddress": "2 Rue Mercier",
-        "addressLocality": "Luxembourg",
-        "addressRegion": "Luxembourg",
-        "addressCountry": "Luxembourg",
-        "postalCode": "2985 ",
-        "postOfficeBoxNumber": "",
-        "areaServed": "European Union"
-    },
-    "name": [
-        "Agent 10",
-        "Agente 10"
-    ],
-    "Type": "EU Publications office",
-    "description": "organization the Agent 10 belongs to.",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            12.934074,
-            -149.532943
-        ]
-    },
-
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+  "id": "urn:ngsi-ld:id:ZLHO:07918336",
+  "type": "Agent",
+  "address": {
+    "streetAddress": "2 Rue Mercier",
+    "addressLocality": "Luxembourg",
+    "addressRegion": "Luxembourg",
+    "addressCountry": "Luxembourg",
+    "postalCode": "2985 ",
+    "postOfficeBoxNumber": "",
+    "areaServed": "European Union"
+  },
+  "name": [
+    "Agent 10",
+    "Agente 10"
+  ],
+  "Type": "EU Publications office",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.934074,
+      -149.532943
     ]
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+  ]
 }
