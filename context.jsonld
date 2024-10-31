@@ -10,7 +10,7 @@
         "Type": "https://smartdatamodels.org/dataModel.DCAT-AP/Type",
         "accessRights": "https://smartdatamodels.org/dataModel.DCAT-AP/accessRights",
         "accessService": "https://smartdatamodels.org/dataModel.DCAT-AP/accessService",
-        "accessUrl": "https://smartdatamodels.org/dataModel.DCAT-AP/accessUrl",
+        "accessURL": "https://smartdatamodels.org/dataModel.DCAT-AP/accessURL",
         "accrualPeriodicity": "https://smartdatamodels.org/dataModel.DCAT-AP/accrualPeriodicity",
         "address": "https://smartdatamodels.org/address",
         "addressCountry": "https://smartdatamodels.org/addressCountry",
@@ -21,7 +21,7 @@
         "availability": "https://smartdatamodels.org/dataModel.DCAT-AP/availability",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "belongsToCatalogue": "https://smartdatamodels.org/dataModel.DCAT-AP/belongsToCatalogue",
         "belongsToDataset": "https://smartdatamodels.org/dataModel.DCAT-AP/belongsToDataset",
@@ -34,13 +34,13 @@
         "contactPoint": "https://smartdatamodels.org/contactPoint",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "creator": "https://smartdatamodels.org/dataModel.DCAT-AP/creator",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dataset": {
             "@container": "@index",
-            "@id": "ngsi-ld:hasDataset"
+            "@id": "https://uri.etsi.org/ngsi-ld/hasDataset"
         },
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
@@ -50,7 +50,7 @@
         "downloadURL": "https://smartdatamodels.org/dataModel.DCAT-AP/downloadURL",
         "endPointDescription": "https://smartdatamodels.org/dataModel.DCAT-AP/endPointDescription",
         "endPointURL": "https://smartdatamodels.org/dataModel.DCAT-AP/endPointURL",
-        "format": "ngsi-ld:format",
+        "format": "https://uri.etsi.org/ngsi-ld/format",
         "hasPart": "https://smartdatamodels.org/dataModel.DCAT-AP/hasPart",
         "hasPolicy": "https://smartdatamodels.org/dataModel.DCAT-AP/hasPolicy",
         "hasVersion": "https://smartdatamodels.org/dataModel.DCAT-AP/hasVersion",
@@ -65,7 +65,7 @@
         "landingPage": "https://smartdatamodels.org/dataModel.DCAT-AP/landingPage",
         "language": "https://smartdatamodels.org/dataModel.DCAT-AP/language",
         "license": "https://smartdatamodels.org/dataModel.DCAT-AP/license",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "mediaType": "https://smartdatamodels.org/dataModel.DCAT-AP/mediaType",
         "modified": "https://smartdatamodels.org/dataModel.DCAT-AP/modified",
         "name": "https://smartdatamodels.org/name",
@@ -96,7 +96,7 @@
         "sourceExternal": "https://smartdatamodels.org/dataModel.DCAT-AP/sourceExternal",
         "spatial": "https://smartdatamodels.org/dataModel.DCAT-AP/spatial",
         "spatialResolutionInMeters": "https://smartdatamodels.org/dataModel.DCAT-AP/spatialResolutionInMeters",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
         "temporal": "https://smartdatamodels.org/dataModel.DCAT-AP/temporal",
@@ -105,7 +105,7 @@
         "themeTaxonomy": "https://smartdatamodels.org/dataModel.DCAT-AP/themeTaxonomy",
         "title": "http://purl.org/dc/terms/title",
         "type": "@type",
-        "value": "ngsi-ld:hasValue",
+        "value": "https://uri.etsi.org/ngsi-ld/hasValue",
         "versionInfo": "https://smartdatamodels.org/dataModel.DCAT-AP/versionInfo",
         "versionNotes": "https://smartdatamodels.org/dataModel.DCAT-AP/versionNotes",
         "wasGeneratedBy": "https://smartdatamodels.org/dataModel.DCAT-AP/wasGeneratedBy"
