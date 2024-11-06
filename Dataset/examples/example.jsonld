@@ -1,16 +1,40 @@
 {
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",
   "type": "Dataset",
-  "modified": "2015-07-13T03:09:32Z",
+  "modifiedAt": "2015-07-13T03:09:32Z",
   "source": [
     "urn:ngsi-ld:Dataset:items:YSWN:41266715"
   ],
-  "description": [
-    "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."
-  ],
-  "title": [
-    "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"
-  ],
+  "description": {
+    "languageMap": {
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
+      "zh": "马德里大区不同类型和类别的旅游住宿。",
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
+    }
+  },
+  "title": {
+    "languageMap": {
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
+      "zh": "马德里大区不同类型和类别的旅游住宿。",
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
+    }
+  },
   "contactPoint": [
     "https://datos.gob.es/es/comment/reply/145778."
   ],
@@ -111,15 +135,29 @@
     "urn:ngsi-ld:Dataset:items:QJPZ:50290394",
     "urn:ngsi-ld:Dataset:items:ZSSA:73451152"
   ],
-  "spatialResolutionInMeters": 0.6,
+  "spatialResolution": 0.6,
   "temporalResolution": [
     "PT15M"
   ],
-  "Type": "",
-  "version": "",
-  "versionNotes": [],
+  "Type": "service",
+  "version": "3.0",
+  "versionNotes": [
+    "With temporal evolution"
+  ],
   "wasGeneratedBy": [
     "datos.gob.es"
+  ],
+  "applicableLegislation": [
+    "Regulation 883/2004",
+    "Regulation 465/2012"
+  ],
+  "inSeries": [
+      "urn:ngsi-ld:Dataset:id:HUZY:681332655",
+      "urn:ngsi-ld:Dataset:id:HUZY:681970245"
+  ],
+  "conformsTo": [
+      "http://www.opengis.net/def/crs/EPSG/0/28992",
+      "http://data.europa.eu/eli/reg/2014/1312/oj"
   ],
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"

@@ -33,37 +33,68 @@
                     }
                 },
                 "title": {
-                    "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name",
-                    "oneOf": [
-    				    {
-                            "type": "object",
-                            "properties": {
-                                "languageMap": {
-                                    "type": "object",
-                                    "description": "Property, Model:'https://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
-                                    "properties": {
-                        	            "en": {"type": "string"},
-                        	            "de": {"type": "string"},
-                        	            "es": {"type": "string"},
-                        	            "fr": {"type": "string"},
-                        	            "it": {"type": "string"},
-                        	            "ja": {"type": "string"},
-                        	            "ko": {"type": "string"},
-                        	            "zh": {"type": "string"},
-                                        "el": {"type": "string"},
-                                        "nl": {"type": "string"},
-                                        "fi": {"type": "string"}
-                                    },
-					                "additionalProperties": false
-                                },
-                                "additionalProperties": false
+                  "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name",
+                  "oneOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "languageMap": {
+                          "type": "object",
+                          "description": "Property, Model:'https://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                          "properties": {
+                            "en": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in English."
                             },
-                            "additionalProperties": false
-                        },
-    				    {
-                            "type": "string"
+                            "de": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in German."
+                            },
+                            "es": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Spanish."
+                            },
+                            "fr": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in French."
+                            },
+                            "it": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Italian."
+                            },
+                            "ja": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Japanese."
+                            },
+                            "ko": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Korean."
+                            },
+                            "zh": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Chinese."
+                            },
+                            "el": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Modern Greek."
+                            },
+                            "nl": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Dutch."
+                            },
+                            "fi": {
+                              "type": "string",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Finnish."
+                            }
+                          }
                         }
-                    ]
+                      }
+                    },
+                    {
+                      "type": "string",
+                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in a specific language."
+                    }
+                  ]
                 },
                 "endpointDescription": {
                     "type": "array",
@@ -101,39 +132,70 @@
                 "description": {
                     "description": "LanguageProperty. Model:'http://purl.org/dc/terms/description'. A free-text account of the Data Service.",
                     "oneOf": [
-    				    {
-                            "type": "object",
-                            "properties": {
-                                "languageMap": {
-                                    "type": "object",
-                                    "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
-                                    "properties": {
-                        	            "en": {"type": "string"},
-                        	            "de": {"type": "string"},
-                        	            "es": {"type": "string"},
-                        	            "fr": {"type": "string"},
-                        	            "it": {"type": "string"},
-                        	            "ja": {"type": "string"},
-                        	            "ko": {"type": "string"},
-                        	            "zh": {"type": "string"},
-                                        "el": {"type": "string"},
-                                        "nl": {"type": "string"},
-                                        "fi": {"type": "string"}
-                                    },
-					                "additionalProperties": false
+                      {
+                        "type": "object",
+                          "properties": {
+                            "languageMap": {
+                              "type": "object",
+                              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                              "properties": {
+                                "en": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in English."
                                 },
-                                "additionalProperties": false
-                            },
-                            "additionalProperties": false
+                                "de": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in German."
+                                },
+                                "es": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Spanish."
+                                },
+                                "fr": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in French."
+                                },
+                                "it": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Italian."
+                                },
+                                "ja": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Japanese."
+                                },
+                                "ko": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Korean."
+                                },
+                                "zh": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Chinese."
+                                },
+                                "el": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Modern Greek."
+                                },
+                                "nl": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Dutch."
+                                },
+                                "fi": {
+                                  "type": "string",
+                                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Finnish."
+                                }
+                              }
+                            }
+                          }
                         },
-    				    {
-                            "type": "string"
+                        {
+                          "type": "string",
+                          "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in a specific language."
                         }
                     ]
                 },
-                "license": {
+                "licence": {
                     "type": "string",
-                    "description": "Property. Model:'http://purl.org/dc/terms/LicenseDocument'. This property contains the licence under which the Data service is made available",
+                    "description": "Property. Model:'http://purl.org/dc/terms/LicenseDocument'. This property contains the license under which the Data service is made available",
                     "enum": [
                         "0BSD",
                         "AAL",
@@ -710,17 +772,65 @@
                         "ZPL-2.1"
                     ]
                 },
+                "applicableLegislation": {
+                  "type": "array",
+                  "description": "Property. Model:'http://data.europa.eu/r5r/applicableLegislation'. The legislation that mandates the creation or management of the Data Service. Cardinality: 0..n",
+                  "items": {
+                      "type": "string",
+                      "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation, policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
+                  }
+                },
+                "conformsTo": {
+                  "type": "array",
+                  "description": "Property. Model:'http://purl.org/dc/terms/conformsTo'. An established (technical) standard to which the Data Service conforms. The standards referred here SHOULD describe the Data Service and not the data it serves. The latter is provided by the dataset with which this Data Service is connected. For instance the data service adheres to the OGC WFS API standard, while the associated dataset adheres to the INSPIRE (https://knowledge-base.inspire.ec.europa.eu/index_en) Address data model. Cardinality: 0..n",
+                  "items": {
+                      "type": "string",
+                      "description": "Property. Model:'https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard'. A standard or other specification to which a resource conforms. This specification does not impose any additional requirements to properties for this entity."
+                  }
+                },
+                "contactPoint": {
+                  "type": "array",
+                  "description": "Property. Model:'http://www.w3.org/ns/dcat#contactPoint'. Contact information that can be used for sending comments about the Data Service. Cardinality: 0..n",
+                  "items": {
+                      "type": "object",
+                      "description": "Property. Model:'https://www.w3.org/ns/dcat#contactPoint'. Relevant contact information for the cataloged resource. Use of vCard is recommended (https://www.w3.org/TR/vcard-rdf/#d4e1819)."
+                  }
+                },
+                "documentation": {
+                  "type": "array",
+                  "description": "Property. Model:'http://xmlns.com/foaf/0.1/page'. A page or document about this Data Service. Cardinality: 0..n",
+                  "items": {
+                      "type": "string",
+                      "description": "Property. Model:'https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document'. A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset. This specification does not impose any additional requirements to properties for this entity."
+                  }
+                },
+                "format": {
+
+                },
+                "keyword": {
+
+                },
+                "landingPage": {
+
+                },
+                "publisher": {
+
+                },
+                "theme": {
+
+                },
                 "provenance": {
                     "type": "array",
                     "description": "Property. Model:'http://purl.org/dc/terms/ProvenanceStatement'. List of libraries and tools used in the development and execution of the service.",
                     "items": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "Property. Every lineage associated to the dataset"
                     }
                 },
                 "lastUpdated": {
                     "type": "string",
                     "format": "date-time",
-                    "description": "Property. Model:'https://schema.org/DateTime'. Last time at which the data service has been updated in a way that changes its behaviour."
+                    "description": "Property. Model:'https://schema.org/DateTime'. Last time at which the data service has been updated in a way that changes its behavior."
                 },
                 "validationSchema": {
                     "type": "string",

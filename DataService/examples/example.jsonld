@@ -11,20 +11,31 @@
     "streetAddress": "2, rue Mercier"
   },
   "areaServed": "European union and beyond",
-  "description": [
-    "Digital resources for accessing to the end points of the EU open data portal for solar system.",
-    "Recursos digitales para el acceso a los puntos de interaccion del portal europeo de datos abiertos del sistema solar."
-  ],
-  "endPointDescription": [
+  "description": {
+    "languageMap": {
+        "en": "Data service of the european open data portal",
+        "de": "Datendienst des Europäischen Portals für offene Daten",
+        "es": "Data service del portal europeo de datos abiertos",
+        "fr": "Service de données du portail européen de données ouvertes",
+        "it": "Servizio dati del Portale europeo dei dati aperti",
+        "ja": "欧州オープンデータ・ポータルのデータサービス",
+        "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+        "zh": "欧洲开放数据门户的数据服务",
+        "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+        "nl": "Dataservice van het Europese open dataportaal",
+        "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+    }
+  },
+  "endpointDescription": [
     "SPARQL end point without authentication",
     "API compliant with CKAN specification"
   ],
-  "endPointURL": [
+  "endpointURL": [
     "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
     "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"
   ],
-  "license": "EUPL.",
-  "location": {
+  "licence": "EUPL.",
+  "operationSpace": {
     "coordinates": [
       72.564509,
       11.125289
@@ -35,11 +46,22 @@
     "EU geographic map",
     "EU physical map"
   ],
-  "title": [
-    "Data service of the european open data portal",
-    "Data service del portal europeo de datos abiertos"
-  ],
-  "@context": [
+  "title": {
+    "languageMap": {
+        "en": "Data service of the european open data portal",
+        "de": "Datendienst des Europäischen Portals für offene Daten",
+        "es": "Data service del portal europeo de datos abiertos",
+        "fr": "Service de données du portail européen de données ouvertes",
+        "it": "Servizio dati del Portale europeo dei dati aperti",
+        "ja": "欧州オープンデータ・ポータルのデータサービス",
+        "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+        "zh": "欧洲开放数据门户的数据服务",
+        "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+        "nl": "Dataservice van het Europese open dataportaal",
+        "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+    }
+},
+"@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
   ]
 }

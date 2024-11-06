@@ -57,9 +57,41 @@
             "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"
         ]
     },
-    "license": {
+    "licence": {
         "type": "Property",
         "value": "EUPL-1.2"
+    },
+    "applicableLegislation": {
+        "type": "Property",
+        "value": [
+          "Regulation 883/2004",
+          "Regulation 465/2012"
+        ]
+    },
+    "conformsTo": {
+        "type": "Property",
+        "value": [
+            "OGC WFS API"
+        ]  
+    },
+    "contactPoint": {
+        "type": "Property",
+        "value": [
+            {
+                "type": "ContactPoint",
+                "email": "wheatfarm@email.com"
+            },
+            {
+                "type": "ContactPoint",
+                "email": "vehiculoelectrico@ava.es"
+            }
+        ]
+    }, 
+    "documentation": {
+        "type": "Property",
+        "value": [
+            "http://foo.org/how-to"
+        ]
     },
     "operationSpace": {
         "type": "GeoProperty",

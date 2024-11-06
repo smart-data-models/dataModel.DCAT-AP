@@ -11,10 +11,10 @@
             "properties": {
                 "type": {
                     "type": "string",
+                    "description": "Property. NGSI type. It has to be Dataset",
                     "enum": [
                         "Dataset"
-                    ],
-                    "description": "Property. NGSI type. It has to be Dataset"
+                    ]
                 },
                 "id": {
                     "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
@@ -22,66 +22,128 @@
                 "description": {
                     "description": "LanguageProperty. Model:'http://purl.org/dc/terms/description'. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.",
                     "oneOf": [
-    				    {
+                        {
                             "type": "object",
                             "properties": {
                                 "languageMap": {
                                     "type": "object",
                                     "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
                                     "properties": {
-                        	            "en": {"type": "string"},
-                        	            "de": {"type": "string"},
-                        	            "es": {"type": "string"},
-                        	            "fr": {"type": "string"},
-                        	            "it": {"type": "string"},
-                        	            "ja": {"type": "string"},
-                        	            "ko": {"type": "string"},
-                        	            "zh": {"type": "string"},
-                                        "el": {"type": "string"},
-                                        "nl": {"type": "string"},
-                                        "fi": {"type": "string"}
-                                    },
-					                "additionalProperties": false
-                                },
-                                "additionalProperties": false
-                            },
-                            "additionalProperties": false
+                                        "en": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in English."
+                                        },
+                                        "de": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in German."
+                                        },
+                                        "es": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Spanish."
+                                        },
+                                        "fr": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in French."
+                                        },
+                                        "it": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Italian."
+                                        },
+                                        "ja": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Japanese."
+                                        },
+                                        "ko": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Korean."
+                                        },
+                                        "zh": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Chinese."
+                                        },
+                                        "el": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Modern Greek."
+                                        },
+                                        "nl": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Dutch."
+                                        },
+                                        "fi": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Finnish."
+                                        }
+                                    }
+                                }
+                            }
                         },
-    				    {
-                            "type": "string"
+                        {
+                            "type": "string",
+                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in a specific language."
                         }
                     ]
                 },
                 "title": {
                     "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.",
                     "oneOf": [
-    				    {
+                        {
                             "type": "object",
                             "properties": {
                                 "languageMap": {
                                     "type": "object",
                                     "description": "Property, Model:'https://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
                                     "properties": {
-                        	            "en": {"type": "string"},
-                        	            "de": {"type": "string"},
-                        	            "es": {"type": "string"},
-                        	            "fr": {"type": "string"},
-                        	            "it": {"type": "string"},
-                        	            "ja": {"type": "string"},
-                        	            "ko": {"type": "string"},
-                        	            "zh": {"type": "string"},
-                                        "el": {"type": "string"},
-                                        "nl": {"type": "string"},
-                                        "fi": {"type": "string"}
-                                    },
-					                "additionalProperties": false
-                                },
-                                "additionalProperties": false
-                            },
-                            "additionalProperties": false
+                                        "en": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in English."
+                                        },
+                                        "de": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in German."
+                                        },
+                                        "es": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Spanish."
+                                        },
+                                        "fr": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in French."
+                                        },
+                                        "it": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Italian."
+                                        },
+                                        "ja": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Japanese."
+                                        },
+                                        "ko": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Korean."
+                                        },
+                                        "zh": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Chinese."
+                                        },
+                                        "el": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Modern Greek."
+                                        },
+                                        "nl": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Dutch."
+                                        },
+                                        "fi": {
+                                            "type": "string",
+                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Finnish."
+                                        }
+                                    }
+                                }
+                            }
                         },
-    				    {
-                            "type": "string"
+                        {
+                            "type": "string",
+                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in a specific language."
                         }
                     ]
                 },
@@ -308,7 +370,7 @@
                         "description": "Property. Every related resource included"
                     }
                 },
-                "issued": {
+                "releaseDate": {
                     "type": "string",
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Dataset",
                     "format": "date-time"
@@ -343,7 +405,7 @@
                         ]
                     }
                 },
-                "spatialResolutionInMeters": {
+                "spatialResolution": {
                     "type": "number",
                     "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters"
                 },
@@ -358,7 +420,7 @@
                 },
                 "Type": {
                     "type": "string",
-                    "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen"
+                    "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen. The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as DCMI Type vocabulary (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7), [ISO-19115-1] scope codes (https://standards.iso.org/iso/19115/resources/Codelists/gml/MD_ScopeCode.xml), Datacite resource types [DataCite] (https://schema.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd), PARSE.Insight content-types used by re3data.org [RE3DATA-SCHEMA] (https://www.re3data.org/) (see item 15 contentType), MARC intellectual resource types (http://id.loc.gov/vocabulary/marcgt.html). Some members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [ISO-19115-1](https://www.w3.org/TR/vocab-dcat-3/#bib-iso-19115-1) CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications."
                 },
                 "modifiedAt": {
                     "type": "string",
@@ -459,7 +521,7 @@
                     "description": "Property. Model:'http://data.europa.eu/r5r/applicableLegislation'. The legislation that mandates the creation or management of the Dataset. Cardinality: 0..n",
                     "items": {
                         "type": "string",
-                        "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation,policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
+                        "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation, policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
                     }
                 },
                 "inSeries": {

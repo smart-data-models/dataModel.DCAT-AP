@@ -49,7 +49,7 @@
   "contactPoint": {
     "type": "Property",
     "value": [
-       "https://datos.gob.es/es/comment/reply/145778."
+      "https://datos.gob.es/es/comment/reply/145778."
     ]
   },
   "belongsToCatalogue": {
@@ -116,13 +116,15 @@
   },
   "creator": {
     "type": "Property",
-    "value":  "Comunidad de Madrid"
+    "value":  [
+      "Comunidad de Madrid"
+    ]
   },
   "page": {
     "type": "Property",
     "value": [
-      "",
-      ""
+      "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
+      "urn:ngsi-ld:Dataset:items:GKJO:30040605"
     ]
   },
   "accrualPeriodicity": {
@@ -139,8 +141,8 @@
   "identifier": {
     "type": "Property",
     "value": [
-      "",
-      ""
+      "urn:ngsi-ld:Dataset:items:MBNQ:57176010",
+      "urn:ngsi-ld:Dataset:items:DDDJ:93242038"
     ]
   },
   "isReferencedBy": {
@@ -173,27 +175,29 @@
   "otherIdentifier": {
     "type": "Property",
     "value": [
-      "",
-      ""
-    ]
+      "urn:ngsi-ld:Dataset:items:ZNYR:18053145",
+      "urn:ngsi-ld:Dataset:items:ICBO:96194869"
+      ]
   },
   "provenance": {
     "type": "Property",
     "value": [
-      "",
-      ""
+      "1",
+      "2"
     ]
   },
   "qualifiedAttribution": {
     "type": "Property",
     "value": [
-      ""
+      "Central born manage evidence data. Answer doctor visit ready physical fact. Quite allow however certain lose heart.",
+      "Home interesting range ever. Magazine the instead particularly. Late have collection."
     ]
   },
   "qualifiedRelation": {
     "type": "Property",
     "value": [
-      ""
+      "urn:ngsi-ld:Dataset:items:ITFK:67369057",
+      "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
     ]
   },
   "relation": {
@@ -203,7 +207,7 @@
       "urn:ngsi-ld:Dataset:items:ZAUC:79968579"
     ]
   },
-  "issued": {
+  "releaseDate": {
     "type": "Property",
     "value": {
       "@type": "DateTime",
@@ -217,7 +221,7 @@
       "urn:ngsi-ld:Dataset:items:GNXL:59256807"
     ]
   },
-  "spatialResolutionInMeters": {
+  "spatialResolution": {
     "type": "Property",
     "value": [
       0.6
@@ -231,7 +235,7 @@
   },
   "Type": {
     "type": "Property",
-    "value": ""
+    "value": "service"
   },
   "version": {
     "type": "Property",
