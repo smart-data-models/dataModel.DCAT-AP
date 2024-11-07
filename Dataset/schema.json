@@ -3,21 +3,91 @@
     "$schemaVersion": "3.0.0",
     "modelTags": "INTERSTAT, WATERVERSE",
     "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Dataset/schema.json",
-    "title": "Dataset DCAT-AP 3.0.0 schema",
-    "description": "Dataset Schema definition based on DCAT-AP 3.0.0 specification",
+    "title": "Dataset DCAT-AP 3.0.0 schema.",
+    "description": "Dataset Schema definition based on DCAT-AP 3.0.0 specification.",
     "type": "object",
     "allOf": [
         {
             "properties": {
+                "id": {
+                    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
+                },
                 "type": {
                     "type": "string",
-                    "description": "Property. NGSI type. It has to be Dataset",
+                    "description": "Property. NGSI type. It has to be Dataset.",
                     "enum": [
                         "Dataset"
                     ]
                 },
-                "id": {
-                    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons/properties/id"
+                "accessMechanism": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Text'. Access level according to the 3 levels of MELODA5 metric. The expected values are: * Level1AccessMechanism: Web access or unique URL parameters to dataset. * Level2AccessMechanism: Web Access unique with parameters to single data. * Level3AccessMechanism: API or query language.",
+                    "enum": [
+                        "Level1AccessMechanism",
+                        "Level2AccessMechanism",
+                        "Level3AccessMechanism"
+                    ]
+                },
+                "accessRights": {
+                    "type": "string",
+                    "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public."
+                },
+                "addressesAvailable": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has postal addresses to identify the elements in the dataset.",
+                    "enum": [
+                        "True",
+                        "False"
+                    ]
+                },
+                "applicableLegislation": {
+                    "type": "array",
+                    "description": "Property. Model:'http://data.europa.eu/r5r/applicableLegislation'. The legislation that mandates the creation or management of the Dataset. Cardinality: 0..n.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation, policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
+                    }
+                },
+                "belongsToCatalogue": {
+                    "description": "Relationship. It links the Dataset to its parent Catalogue. Model:'https://www.w3.org/ns/dcat#Catalogue'. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1.",
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 256,
+                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                            "description": "Property. Link to the catalogue."
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Property. Link to the catalogue."
+                        }
+                    ]
+                },
+                "conformsTo": {
+                    "type": "array",
+                    "description": "Property. Model:'http://purl.org/dc/terms/conformsTo'. This property refers to an implementing rule or other specification.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every rule or specification applicable."
+                    }
+                },
+                "contactPoint": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/2006/vcard/ns#Kind'. This property contains contact information that can be used for sending comments about the Dataset.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every contact element."
+                    }
+                },
+                "creator": {
+                    "type": "array",
+                    "description": "Property. Model:'http://xmlns.com/foaf/0.1/Agent'. This property refers to the entity primarily responsible for producing the dataset.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every creator included."
+                    }
                 },
                 "description": {
                     "description": "LanguageProperty. Model:'http://purl.org/dc/terms/description'. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.",
@@ -83,413 +153,6 @@
                         }
                     ]
                 },
-                "title": {
-                    "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.",
-                    "oneOf": [
-                        {
-                            "type": "object",
-                            "properties": {
-                                "languageMap": {
-                                    "type": "object",
-                                    "description": "Property, Model:'https://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
-                                    "properties": {
-                                        "en": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in English."
-                                        },
-                                        "de": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in German."
-                                        },
-                                        "es": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Spanish."
-                                        },
-                                        "fr": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in French."
-                                        },
-                                        "it": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Italian."
-                                        },
-                                        "ja": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Japanese."
-                                        },
-                                        "ko": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Korean."
-                                        },
-                                        "zh": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Chinese."
-                                        },
-                                        "el": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Modern Greek."
-                                        },
-                                        "nl": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Dutch."
-                                        },
-                                        "fi": {
-                                            "type": "string",
-                                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Finnish."
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "type": "string",
-                            "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in a specific language."
-                        }
-                    ]
-                },
-                "contactPoint": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/2006/vcard/ns#Kind'. This property contains contact information that can be used for sending comments about the Dataset",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every contact element"
-                    }
-                },
-                "belongsToCatalogue": {
-                    "description": "Relationship. It links the Dataset to its parent Catalogue. Model:'https://www.w3.org/ns/dcat#Catalogue'. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1",
-                    "anyOf": [
-                        {
-                            "type": "string",
-                            "minLength": 1,
-                            "maxLength": 256,
-                            "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                            "description": "Property. Link to the catalogue"
-                        },
-                        {
-                            "type": "string",
-                            "format": "uri",
-                            "description": "Property. Link to the catalogue"
-                        }
-                    ]
-                },
-                "distribution": {
-                    "type": "array",
-                    "description": "Relationship. This property links the Dataset to an available Distribution. Model:'http://www.w3.org/ns/dcat#Distribution'",
-                    "items": {
-                        "anyOf": [
-                            {
-                                "type": "string",
-                                "minLength": 1,
-                                "maxLength": 256,
-                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                "description": "Property. Every link to a distribution"
-                            },
-                            {
-                                "type": "string",
-                                "format": "uri",
-                                "description": "Property. Every link to a distribution"
-                            }
-                        ]
-                    }
-                },
-                "keyword": {
-                    "type": "array",
-                    "description": "Property. This property contains a keyword or tag, describing the Dataset. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every keyword tag included"
-                    }
-                },
-                "publisher": {
-                    "description": "Property. Model:'http://xmlns.com/foaf/0.1/Agent'. This property refers to an entity (organisation) responsible for making the Dataset available",
-                    "type": "string"
-                },
-                "spatial": {
-                    "description": "GeoProperty. Model:'http://purl.org/dc/terms/Location'. This property refers to a geographic region that is covered by the Dataset",
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location",
-                        "description": "Property. Every location included"
-                    }
-                },
-                "temporal": {
-                    "description": "Property. This property refers to a temporal period that the Dataset covers. Model:'http://purl.org/dc/terms/PeriodOfTime'",
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "format": "date-time",
-                        "description": "Property. Every temporal period included"
-                    }
-                },
-                "theme": {
-                    "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes",
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every theme included"
-                    }
-                },
-                "accessRights": {
-                    "type": "string",
-                    "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public"
-                },
-                "creator": {
-                    "type": "array",
-                    "description": "Property. Model:'http://xmlns.com/foaf/0.1/Agent'. This property refers to the entity primarily responsible for producing the dataset",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every creator included"
-                    }
-                },
-                "conformsTo": {
-                    "type": "array",
-                    "description": "Property. Model:'http://purl.org/dc/terms/conformsTo'. This property refers to an implementing rule or other specification. ",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every rule or specification applicable"
-                    }
-                },
-                "page": {
-                    "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a page or document about this Dataset. ",
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every page or document"
-                    }
-                },
-                "accrualPeriodicity": {
-                    "type": "string",
-                    "description": "Property. Model:'http://purl.org/dc/terms/Frequency'. This property refers to the frequency at which the Dataset is updated"
-                },
-                "hasVersion": {
-                    "type": "array",
-                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.",
-                    "items": {
-                        "description": "Property. Every version of the related datasets.",
-                        "anyOf": [
-                            {
-                                "type": "string",
-                                "minLength": 1,
-                                "maxLength": 256,
-                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                "description": "Property. Identifier format of any NGSI entity"
-                            },
-                            {
-                                "type": "string",
-                                "format": "uri",
-                                "description": "Property. Identifier format of any NGSI entity"
-                            }
-                        ]
-                    }
-                },
-                "identifier": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every identifier of the dataset"
-                    }
-                },
-                "isReferencedBy": {
-                    "type": "array",
-                    "description": "Relationship. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every resource related to the dataset"
-                    }
-                },
-                "isVersionOf": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every dataset that the current dataset is a version of it"
-                    }
-                },
-                "landingPage": {
-                    "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator",
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every web page listed"
-                    }
-                },
-                "language": {
-                    "type": "array",
-                    "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset. Improve the description of the property to provide only the values defined by the Library of Congress (ISO 639-1: http://id.loc.gov/vocabulary/iso639-1.html, ISO 639-2: http://id.loc.gov/vocabulary/iso639-2.html).",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every language included"
-                    }
-                },
-                "otherIdentifier": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/ns/adms#Identifier'. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every additional identifier included"
-                    }
-                },
-                "provenance": {
-                    "type": "array",
-                    "description": "Property. Model:'http://purl.org/dc/terms/ProvenanceStatement'. This property contains a statement about the lineage of a Dataset",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every lineage associated to the dataset"
-                    }
-                },
-                "qualifiedAttribution": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property refers to a link to an Agent having some form of responsibility for the resource",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every attribution included"
-                    }
-                },
-                "qualifiedRelation": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property provides a link to a description of a relationship with another resource",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every qualified relation included"
-                    }
-                },
-                "relation": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property refers to a related resource",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every related resource included"
-                    }
-                },
-                "releaseDate": {
-                    "type": "string",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Dataset",
-                    "format": "date-time"
-                },
-                "sample": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Distribution'. This property refers to a sample distribution of the dataset",
-                    "items": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "Property. Every sample included with the dataset"
-                    }
-                },
-                "source": {
-                    "type": "array",
-                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset from which the described Dataset is derived.",
-                    "items": {
-                        "description": "Property. Every version of the related datasets.",
-                        "anyOf": [
-                            {
-                                "type": "string",
-                                "minLength": 1,
-                                "maxLength": 256,
-                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                "description": "Property. Identifier format of any NGSI entity"
-                            },
-                            {
-                                "type": "string",
-                                "format": "uri",
-                                "description": "Property. Identifier format of any NGSI entity"
-                            }
-                        ]
-                    }
-                },
-                "spatialResolution": {
-                    "type": "number",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters"
-                },
-                "temporalResolution": {
-                    "type": "array",
-                    "description": "Property. Model:'http://purl.org/dc/terms/PeriodOfTime'. This property refers to the minimum time period resolvable in the dataset. ",
-                    "items": {
-                        "type": "string",
-                        "format": "duration",
-                        "description": "Property. Every temporal resolution included"
-                    }
-                },
-                "Type": {
-                    "type": "string",
-                    "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen. The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as DCMI Type vocabulary (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7), [ISO-19115-1] scope codes (https://standards.iso.org/iso/19115/resources/Codelists/gml/MD_ScopeCode.xml), Datacite resource types [DataCite] (https://schema.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd), PARSE.Insight content-types used by re3data.org [RE3DATA-SCHEMA] (https://www.re3data.org/) (see item 15 contentType), MARC intellectual resource types (http://id.loc.gov/vocabulary/marcgt.html). Some members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [ISO-19115-1](https://www.w3.org/TR/vocab-dcat-3/#bib-iso-19115-1) CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications."
-                },
-                "modifiedAt": {
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Dataset was changed or modified"
-                },
-                "version": {
-                    "type": "string",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a version number or other version designation of the Dataset"
-                },
-                "versionNotes": {
-                    "type": "array",
-                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every language description of the version notes"
-                    }
-                },
-                "wasGeneratedBy": {
-                    "type": "array",
-                    "description": "Property. Model:'https://www.w3.org/ns/prov#Activity'. This property refers to an activity that generated, or provides the business context for, the creation of the dataset",
-                    "items": {
-                        "type": "string",
-                        "description": "Property. Every activity included"
-                    }
-                },
-                "geolocation": {
-                    "type": "string",
-                    "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has geolocation (coordinates) in any of its attributes.",
-                    "enum": [
-                      "True",
-                      "False"
-                    ]
-                },
-                "addressesAvailable": {
-                    "type": "string",
-                    "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has postal addresses to identify the elements in the dataset.",
-                    "enum": [
-                      "True",
-                      "False"
-                    ]
-                },
-                "standardization": {
-                    "type": "string",
-                    "description": "Property. Model:'https://schema.org/Text'. The type of data model standardization followed by the dataset. This is an enumeration with three (4) possible values: * Level1Standardization: data model standardized by the publisher without releasing the documentation. * Level2Standardization: data model standardized by the published releasing the documentation. * Level3Standardization: data model using a local standard (national or smaller regional scope). * Level4Standardization: data model using an international standard",
-                    "enum": [
-                        "Level1Standardization",
-                        "Level2Standardization",
-                        "Level3Standardization",
-                        "Level4Standardization"
-                    ]
-                },
-                "standardizationSource": {
-                    "type": "string",
-                    "description": "Property, Model:'https://schema.org/url'. URI to the source where the definitions of the attributes can be read. It is associated with the standardization property. It can be empty in case of Level1 and Level2 or link to an existing standardization body (e.g., DIN, UNE, etc.) for Level3 or (e.g., ISO, W3C, etc.) for Level4."
-                },
-                "validationSchema": {
-                    "type": "string",
-                    "description": "Property, Model:'https://schema.org/url'. URL to the technical validation schema for the dataset (JSON Schema) in the Smart Data Models program."
-                },
-                "accessMechanism": {
-                    "type": "string",
-                    "description": "Property. Model:'https://schema.org/Text'. Access level according to the 3 levels of MELODA5 metric. The expected values are: * Level1AccessMechanism: Web access or unique URL parameters to dataset. * Level2AccessMechanism: Web Access unique with parameters to single data. * Level3AccessMechanism: API or query language.",
-                    "enum": [
-                        "Level1AccessMechanism",
-                        "Level2AccessMechanism",
-                        "Level3AccessMechanism"
-                    ]
-                },
                 "dissemination": {
                     "type": "string",
                     "description": "Property. Model:'https://schema.org/Text'. Dissemination level according to MELODA5 communication dimension: * Level1Dissemination: communication/dissemination not systematic. * Level2Dissemination: available resources on updates (i.e., RSS feed). * Level3Dissemination: proactive dissemination/push dissemination (information automatic and timely).",
@@ -503,25 +166,83 @@
                     "type": "string",
                     "description": "Property. Model:'https://schema.org/url'. URI to the organization which is responsible for dissemination activities related to the dataset. It matches the dimension/communication of MELODA5."
                 },
-                "reputation": {
-                    "type": "string",
-                    "description": "Property. Model:'https://schema.org/Text'. Reputation level according to MELODA5 reputation dimension: * Level1Reputation: no information about the reputation of the data source. * Level2Reputation: statistics or reports published on user’s opinions. * Level3Reputation: Indicators or rankings on reputation of the data source.",
-                    "enum": [
-                        "Level1Reputation",
-                        "Level2Reputation",
-                        "Level3Reputation"
-                    ]
-                },
-                "reputationOrganization": {
-                    "type": "string",
-                    "description": "Property. Model:'https://schema.org/url'. URI to the organization which is responsible for the publication of the dataset in terms of reputation. It matches the dimension reputation of MELODA5 and it allows to retrieve their prestige from the ranking."
-                },
-                "applicableLegislation": {
+                "distribution": {
                     "type": "array",
-                    "description": "Property. Model:'http://data.europa.eu/r5r/applicableLegislation'. The legislation that mandates the creation or management of the Dataset. Cardinality: 0..n",
+                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Distribution'. This property links the Dataset to an available Distribution.",
+                    "items": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 256,
+                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                                "description": "Property. Every link to a distribution."
+                            },
+                            {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Property. Every link to a distribution."
+                            }
+                        ]
+                    }
+                },
+                "documentation": {
+                    "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a page or document about this Dataset.",
+                    "type": "array",
                     "items": {
                         "type": "string",
-                        "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation, policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
+                        "format": "uri",
+                        "description": "Property. Every page or document."
+                    }
+                },
+                "frequency": {
+                    "type": "string",
+                    "description": "Property. Model:'http://purl.org/dc/terms/Frequency'. This property refers to the frequency at which the Dataset is updated."
+                },
+                "geographicalCoverage": {
+                    "description": "GeoProperty. Model:'http://purl.org/dc/terms/Location'. This property refers to a geographic region that is covered by the Dataset.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location",
+                        "description": "Property. Every location included."
+                    }
+                },
+                "geolocation": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has geolocation (coordinates) in any of its attributes.",
+                    "enum": [
+                        "True",
+                        "False"
+                    ]
+                },
+                "hasVersion": {
+                    "type": "array",
+                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.",
+                    "items": {
+                        "description": "Property. Every version of the related datasets.",
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 256,
+                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                                "description": "Property. Identifier format of any NGSI entity."
+                            },
+                            {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Property. Identifier format of any NGSI entity."
+                            }
+                        ]
+                    }
+                },
+                "identifier": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Property. Every identifier of the dataset."
                     }
                 },
                 "inSeries": {
@@ -535,14 +256,57 @@
                                 "minLength": 1,
                                 "maxLength": 256,
                                 "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                                "description": "Property. Identifier format of any NGSI entity"
+                                "description": "Property. Identifier format of any NGSI entity."
                             },
                             {
                                 "type": "string",
                                 "format": "uri",
-                                "description": "Property. Identifier format of any NGSI entity"
+                                "description": "Property. Identifier format of any NGSI entity."
                             }
                         ]
+                    }
+                },
+                "isReferencedBy": {
+                    "type": "array",
+                    "description": "Relationship. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Property. Every resource related to the dataset."
+                    }
+                },
+                "isVersionOf": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Property. Every dataset that the current dataset is a version of it."
+                    }
+                },
+                "keyword": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a keyword or tag, describing the Dataset.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every keyword tag included."
+                    }
+                },
+                "landingPage": {
+                    "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Property. Every web page listed."
+                    }
+                },
+                "language": {
+                    "type": "array",
+                    "description": "Property. Model:'http://purl.org/dc/terms/LinguisticSystem'. This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset. The possible values are defined by the Library of Congress (ISO 639-1: http://id.loc.gov/vocabulary/iso639-1.html, ISO 639-2: http://id.loc.gov/vocabulary/iso639-2.html).",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every language included."
                     }
                 },
                 "license": {
@@ -1123,6 +887,237 @@
                         "ZPL-2.0",
                         "ZPL-2.1"
                     ]
+                },
+                "otherIdentifier": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/ns/adms#Identifier'. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Property. Every additional identifier included."
+                    }
+                },
+                "provenance": {
+                    "type": "array",
+                    "description": "Property. Model:'http://purl.org/dc/terms/ProvenanceStatement'. This property contains a statement about the lineage of a Dataset.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every lineage associated to the dataset."
+                    }
+                },
+                "publisher": {
+                    "type": "string",
+                    "description": "Property. Model:'http://xmlns.com/foaf/0.1/Agent'. This property refers to an entity (organisation) responsible for making the Dataset available."
+                },
+                "qualifiedAttribution": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property refers to a link to an Agent having some form of responsibility for the resource.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every attribution included."
+                    }
+                },
+                "qualifiedRelation": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property provides a link to a description of a relationship with another resource.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Property. Every qualified relation included."
+                    }
+                },
+                "relatedResource": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property refers to a related resource.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Property. Every related resource included."
+                    }
+                },
+                "releaseDate": {
+                    "type": "string",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Dataset.",
+                    "format": "date-time"
+                },
+                "reputation": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Text'. Reputation level according to MELODA5 reputation dimension: * Level1Reputation: no information about the reputation of the data source. * Level2Reputation: statistics or reports published on user’s opinions. * Level3Reputation: Indicators or rankings on reputation of the data source.",
+                    "enum": [
+                        "Level1Reputation",
+                        "Level2Reputation",
+                        "Level3Reputation"
+                    ]
+                },
+                "reputationOrganization": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/url'. URI to the organization which is responsible for the publication of the dataset in terms of reputation. It matches the dimension reputation of MELODA5 and it allows to retrieve their prestige from the ranking."
+                },
+                "sample": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/ns/dcat#Distribution'. This property refers to a sample distribution of the dataset.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Property. Every sample included with the dataset."
+                    }
+                },
+                "source": {
+                    "type": "array",
+                    "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset from which the described Dataset is derived.",
+                    "items": {
+                        "description": "Property. Every version of the related datasets.",
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 256,
+                                "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+                                "description": "Property. Identifier format of any NGSI entity."
+                            },
+                            {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Property. Identifier format of any NGSI entity."
+                            }
+                        ]
+                    }
+                },
+                "spatialResolution": {
+                    "type": "number",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters."
+                },
+                "standardization": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/Text'. The type of data model standardization followed by the dataset. This is an enumeration with three (4) possible values: * Level1Standardization: data model standardized by the publisher without releasing the documentation. * Level2Standardization: data model standardized by the published releasing the documentation. * Level3Standardization: data model using a local standard (national or smaller regional scope). * Level4Standardization: data model using an international standard.",
+                    "enum": [
+                        "Level1Standardization",
+                        "Level2Standardization",
+                        "Level3Standardization",
+                        "Level4Standardization"
+                    ]
+                },
+                "standardizationSource": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/url'. URI to the source where the definitions of the attributes can be read. It is associated with the standardization property. It can be empty in case of Level1 and Level2 or link to an existing standardization body (e.g., DIN, UNE, etc.) for Level3 or (e.g., ISO, W3C, etc.) for Level4."
+                },
+                "temporalCoverage": {
+                    "type": "array",
+                    "description": "Property. Model:'http://purl.org/dc/terms/PeriodOfTime'. This property refers to a temporal period that the Dataset covers.",
+                    "items": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "Property. Every temporal period included."
+                    }
+                },
+                "temporalResolution": {
+                    "type": "array",
+                    "description": "Property. Model:'http://purl.org/dc/terms/PeriodOfTime'. This property refers to the minimum time period resolvable in the dataset.",
+                    "items": {
+                        "type": "string",
+                        "format": "duration",
+                        "description": "Property. Every temporal resolution included."
+                    }
+                },
+                "theme": {
+                    "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every theme included."
+                    }
+                },
+                "title": {
+                    "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.",
+                    "oneOf": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "languageMap": {
+                                    "type": "object",
+                                    "description": "Property. Model:'https://www.w3.org/2000/01/rdf-schema#Literal'. A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                                    "properties": {
+                                        "en": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in English."
+                                        },
+                                        "de": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in German."
+                                        },
+                                        "es": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Spanish."
+                                        },
+                                        "fr": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in French."
+                                        },
+                                        "it": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Italian."
+                                        },
+                                        "ja": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Japanese."
+                                        },
+                                        "ko": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Korean."
+                                        },
+                                        "zh": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Chinese."
+                                        },
+                                        "el": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Modern Greek."
+                                        },
+                                        "nl": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Dutch."
+                                        },
+                                        "fi": {
+                                            "type": "string",
+                                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in Finnish."
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "string",
+                            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in a specific language."
+                        }
+                    ]
+                },
+                "Type": {
+                    "type": "string",
+                    "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen. The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as DCMI Type vocabulary (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7), [ISO-19115-1] scope codes (https://standards.iso.org/iso/19115/resources/Codelists/gml/MD_ScopeCode.xml), Datacite resource types [DataCite] (https://schema.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd), PARSE.Insight content-types used by re3data.org [RE3DATA-SCHEMA] (https://www.re3data.org/) (see item 15 contentType), MARC intellectual resource types (http://id.loc.gov/vocabulary/marcgt.html). Some members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [ISO-19115-1](https://www.w3.org/TR/vocab-dcat-3/#bib-iso-19115-1) CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications."
+                },
+                "validationSchema": {
+                    "type": "string",
+                    "description": "Property. Model:'https://schema.org/url'. URL to the technical validation schema for the dataset (JSON Schema) in the Smart Data Models program."
+                },
+                "version": {
+                    "type": "string",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a version number or other version designation of the Dataset."
+                },
+                "versionNotes": {
+                    "type": "array",
+                    "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every language description of the version notes."
+                    }
+                },
+                "wasGeneratedBy": {
+                    "type": "array",
+                    "description": "Property. Model:'https://www.w3.org/ns/prov#Activity'. This property refers to an activity that generated, or provides the business context for, the creation of the dataset.",
+                    "items": {
+                        "type": "string",
+                        "description": "Property. Every activity included."
+                    }
                 }
             }
         }

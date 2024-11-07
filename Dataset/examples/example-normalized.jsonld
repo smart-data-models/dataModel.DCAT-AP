@@ -8,10 +8,46 @@
       "@value": "2021-07-01T10:27:59Z"
     }
   },
-  "source": {
-    "type": "Relationship",
+  "accessMechanism": {
+    "type": "Property",
+    "value": "Level3AccessMechanism"
+  },
+  "accessRights": {
+    "type": "Property",
+    "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
+  },
+  "addressesAvailable": {
+    "type": "Property",
+    "value": "True"
+  },
+  "applicableLegislation": {
+    "type": "Property",
     "value": [
-      "urn:ngsi-ld:Dataset:items:YSWN:41266715"
+      "Regulation 883/2004",
+      "Regulation 465/2012"
+    ]
+  },
+  "belongsToCatalogue": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
+  },
+  "conformsTo": {
+    "type": "Property",
+    "value": [
+      "http://www.opengis.net/def/crs/EPSG/0/28992",
+      "http://data.europa.eu/eli/reg/2014/1312/oj"
+    ]
+  },
+  "contactPoint": {
+    "type": "Property",
+    "value": [
+      "https://datos.gob.es/es/comment/reply/145778."
+    ]
+  },
+  "creator": {
+    "type": "Property",
+    "value":  [
+      "Comunidad de Madrid"
     ]
   },
   "description": {
@@ -30,37 +66,79 @@
       "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
     }
   },
-  "title": {
-    "type": "LanguageProperty",
-    "languageMap": {
-      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
-      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
-      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
-      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
-      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
-      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
-      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
-      "zh": "马德里大区不同类型和类别的旅游住宿。",
-      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
-      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
-      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
-    }
-  },
-  "contactPoint": {
+  "dissemination": {
     "type": "Property",
-    "value": [
-      "https://datos.gob.es/es/comment/reply/145778."
-    ]
+    "value": "Level2Dissemination"
   },
-  "belongsToCatalogue": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
+  "disseminationOrganization": {
+    "type": "Property",
+    "value": "https://url_to_organization.org"
   },
   "distribution": {
     "type": "Relationship",
     "object": [
       "urn:ngsi-ld:Distribution:items:KJVK:30944451",
       "urn:ngsi-ld:Distribution:items:MMWU:84196227"
+    ]
+  },
+  "documentation": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
+      "urn:ngsi-ld:Dataset:items:GKJO:30040605"
+    ]
+  },
+  "frequency": {
+    "type": "Property",
+    "value": "two years"
+  },
+  "geographicalCoverage": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        22.1394715,
+        -7.100602
+      ]
+    }
+  },
+  "geolocation": {
+    "type": "Property",
+    "value": "True"
+  },
+  "hasVersion": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Dataset:id:ASDF:68185655",
+      "urn:ngsi-ld:Dataset:id:ASDF:78185655"
+    ]
+  },
+  "identifier": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:MBNQ:57176010",
+      "urn:ngsi-ld:Dataset:items:DDDJ:93242038"
+    ]
+  },
+  "inSeries": {
+    "type": "Relationship",
+    "value": [
+      "urn:ngsi-ld:Dataset:id:HUZY:681332655",
+      "urn:ngsi-ld:Dataset:id:HUZY:681970245"
+    ]
+  },
+  "isReferencedBy": {
+    "type": "Relationship",
+    "object": [
+      "urn:ngsi-ld:Dataset:items:HJNK:88711880",
+      "urn:ngsi-ld:Dataset:items:MDEO:95193079"
+    ]
+  },
+  "isVersionOf": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:RBWE:31388012",
+      "urn:ngsi-ld:Dataset:items:GATZ:02632837"
     ]
   },
   "keyword": {
@@ -83,82 +161,6 @@
     "vivienda de uso turistico"
     ]
   },
-  "publisher": {
-    "type": "Property",
-    "value": "Comunidad de madrid"
-  },
-  "spatial": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        22.1394715,
-        -7.100602
-      ]
-    }
-  },
-  "temporal": {
-    "type": "Property",
-    "value": [
-    "2023-04-03T02:35:57Z"
-    ]
-  },
-  "theme": {
-    "type": "Property",
-    "value": [
-    "Economy",
-    "Tourism"
-    ]
-  },
-  "accessRights": {
-    "type": "Property",
-    "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
-  },
-  "creator": {
-    "type": "Property",
-    "value":  [
-      "Comunidad de Madrid"
-    ]
-  },
-  "page": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
-      "urn:ngsi-ld:Dataset:items:GKJO:30040605"
-    ]
-  },
-  "accrualPeriodicity": {
-    "type": "Property",
-    "value": "two years"
-  },
-  "hasVersion": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dataset:id:ASDF:68185655",
-      "urn:ngsi-ld:Dataset:id:ASDF:78185655"
-    ]
-  },
-  "identifier": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dataset:items:MBNQ:57176010",
-      "urn:ngsi-ld:Dataset:items:DDDJ:93242038"
-    ]
-  },
-  "isReferencedBy": {
-    "type": "Relationship",
-    "object": [
-      "urn:ngsi-ld:Dataset:items:HJNK:88711880",
-      "urn:ngsi-ld:Dataset:items:MDEO:95193079"
-    ]
-  },
-  "isVersionOf": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dataset:items:RBWE:31388012",
-      "urn:ngsi-ld:Dataset:items:GATZ:02632837"
-    ]
-  },
   "landingPage": {
     "type": "Property",
     "value": [
@@ -171,6 +173,10 @@
       "EN",
       "ES"
     ]
+  },
+  "license": {
+    "type": "Property",
+    "value": "AGPL-3.0"
   },
   "otherIdentifier": {
     "type": "Property",
@@ -186,6 +192,10 @@
       "2"
     ]
   },
+  "publisher": {
+    "type": "Property",
+    "value": "Comunidad de madrid"
+  },
   "qualifiedAttribution": {
     "type": "Property",
     "value": [
@@ -200,7 +210,7 @@
       "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
     ]
   },
-  "relation": {
+  "relatedResource": {
     "type": "Property",
     "value": [
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",
@@ -214,11 +224,25 @@
       "@value": "2021-10-01T15:46:46Z"
     }
   },
+  "reputation": {
+    "type": "Property",
+    "value": "Level2Reputation"
+  },
+  "reputationOrganization": {
+    "type": "Property",
+    "value": "https://url_to_organization.org"
+  },
   "sample": {
     "type": "Property",
     "value": [
       "urn:ngsi-ld:Dataset:items:MLHW:64299003",
       "urn:ngsi-ld:Dataset:items:GNXL:59256807"
+    ]
+  },
+  "source": {
+    "type": "Relationship",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:YSWN:41266715"
     ]
   },
   "spatialResolution": {
@@ -227,15 +251,56 @@
       0.6
     ]
   },
+  "standardization": {
+    "type": "Property",
+    "value": "Level4Standardization"
+  },
+  "standardizationSource": {
+    "type": "Property",
+    "value": "https://www.w3.org/"
+  },
+  "temporalCoverage": {
+    "type": "Property",
+    "value": [
+    "2023-04-03T02:35:57Z"
+    ]
+  },
   "temporalResolution": {
     "type": "Property",
     "value": [
       "PT15M"
     ]
   },
+  "theme": {
+    "type": "Property",
+    "value": [
+    "Economy",
+    "Tourism"
+    ]
+  },
+  "title": {
+    "type": "LanguageProperty",
+    "languageMap": {
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
+      "zh": "马德里大区不同类型和类别的旅游住宿。",
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
+    }
+  },
   "Type": {
     "type": "Property",
     "value": "service"
+  },
+  "validationSchema": {
+    "type": "Property",
+    "value": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json"
   },
   "version": {
     "type": "Property",
@@ -251,27 +316,6 @@
     "type": "Property",
     "value": [
       "meloda Team"
-    ]
-  },
-  "applicableLegislation": {
-    "type": "Property",
-    "value": [
-      "Regulation 883/2004",
-      "Regulation 465/2012"
-    ]
-  },
-  "inSeries": {
-    "type": "Relationship",
-    "value": [
-      "urn:ngsi-ld:Dataset:id:HUZY:681332655",
-      "urn:ngsi-ld:Dataset:id:HUZY:681970245"
-    ]
-  },
-  "conformsTo": {
-    "type": "Property",
-    "value": [
-      "http://www.opengis.net/def/crs/EPSG/0/28992",
-      "http://data.europa.eu/eli/reg/2014/1312/oj"
     ]
   },
   "@context": [
