@@ -6,6 +6,8 @@
   "title": "Dataset DCAT-AP 3.0.0 schema.",
   "description": "Dataset Schema definition based on DCAT-AP 3.0.0 specification.",
   "type": "object",
+  "derivedFrom": "https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset",
+  "license": "https://creativecommons.org/licenses/by/4.0",
   "allOf": [
     {
       "properties": {
