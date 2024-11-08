@@ -18,15 +18,15 @@
         "type": {
           "type": "string",
           "enum": ["DataService"],
-          "description": "Property. NGSI Entity type. It has to be DataService"
+          "description": "Property. NGSI Entity type. It has to be DataService."
         },
         "accessRights": {
           "type": "string",
-          "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property MAY include information regarding access or restrictions based on privacy, security, or other policies"
+          "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property MAY include information regarding access or restrictions based on privacy, security, or other policies."
         },
         "applicableLegislation": {
           "type": "array",
-          "description": "Property. Model:'http://data.europa.eu/r5r/applicableLegislation'. The legislation that mandates the creation or management of the Data Service. Cardinality: 0..n",
+          "description": "Property. Model:'http://data.europa.eu/r5r/applicableLegislation'. The legislation that mandates the creation or management of the Data Service. Cardinality: 0..n.",
           "items": {
             "type": "string",
             "description": "Property. Model:'http://data.europa.eu/eli/ontology#LegalResource'. This class represents the legislation, policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines."
@@ -34,7 +34,7 @@
         },
         "conformsTo": {
           "type": "array",
-          "description": "Property. Model:'http://purl.org/dc/terms/conformsTo'. An established (technical) standard to which the Data Service conforms. The standards referred here SHOULD describe the Data Service and not the data it serves. The latter is provided by the dataset with which this Data Service is connected. For instance the data service adheres to the OGC WFS API standard, while the associated dataset adheres to the INSPIRE (https://knowledge-base.inspire.ec.europa.eu/index_en) Address data model. Cardinality: 0..n",
+          "description": "Property. Model:'http://purl.org/dc/terms/conformsTo'. An established (technical) standard to which the Data Service conforms. The standards referred here SHOULD describe the Data Service and not the data it serves. The latter is provided by the dataset with which this Data Service is connected. For instance the data service adheres to the OGC WFS API standard, while the associated dataset adheres to the INSPIRE (https://knowledge-base.inspire.ec.europa.eu/index_en) Address data model. Cardinality: 0..n.",
           "items": {
             "type": "string",
             "description": "Property. Model:'https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard'. A standard or other specification to which a resource conforms. This specification does not impose any additional requirements to properties for this entity."
@@ -42,7 +42,7 @@
         },
         "contactPoint": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#contactPoint'. Contact information that can be used for sending comments about the Data Service. Cardinality: 0..n",
+          "description": "Property. Model:'http://www.w3.org/ns/dcat#contactPoint'. Contact information that can be used for sending comments about the Data Service. Cardinality: 0..n.",
           "items": {
             "type": "object",
             "description": "Property. Model:'https://www.w3.org/ns/dcat#contactPoint'. Relevant contact information for the cataloged resource. Use of vCard is recommended (https://www.w3.org/TR/vcard-rdf/#d4e1819)."
@@ -114,7 +114,7 @@
         },
         "documentation": {
           "type": "array",
-          "description": "Property. Model:'http://xmlns.com/foaf/0.1/page'. A page or document about this Data Service. Cardinality: 0..n",
+          "description": "Property. Model:'http://xmlns.com/foaf/0.1/page'. A page or document about this Data Service. Cardinality: 0..n.",
           "items": {
             "type": "string",
             "description": "Property. Model:'https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document'. A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset. This specification does not impose any additional requirements to properties for this entity."
@@ -122,10 +122,10 @@
         },
         "endpointDescription": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement",
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.",
           "items": {
             "type": "string",
-            "description": "Property. Every service available at an end-point"
+            "description": "Property. Every service available at an end-point."
           }
         },
         "endpointURL": {
@@ -170,7 +170,7 @@
         },
         "licence": {
           "type": "string",
-          "description": "Property. Model:'http://purl.org/dc/terms/LicenseDocument'. This property contains the license under which the Data service is made available",
+          "description": "Property. Model:'http://purl.org/dc/terms/LicenseDocument'. This property contains the license under which the Data Service is made available.",
           "enum": [
             "0BSD",
             "AAL",
@@ -748,12 +748,13 @@
           ]
         },
         "operationSpace": {
+          "description": "GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon.",
           "oneOf": [
             {
               "title": "GeoJSON Point",
               "type": "object",
               "required": ["type", "coordinates"],
-              "description": "GeoProperty. Geojson reference to the item. Point",
+              "description": "GeoProperty. Geojson reference to the item. Point.",
               "properties": {
                 "type": {
                   "type": "string",
@@ -779,7 +780,7 @@
               "title": "GeoJSON LineString",
               "type": "object",
               "required": ["type", "coordinates"],
-              "description": "GeoProperty. Geojson reference to the item. LineString",
+              "description": "GeoProperty. Geojson reference to the item. LineString.",
               "properties": {
                 "type": {
                   "type": "string",
@@ -809,7 +810,7 @@
               "title": "GeoJSON Polygon",
               "type": "object",
               "required": ["type", "coordinates"],
-              "description": "GeoProperty. Geojson reference to the item. Polygon",
+              "description": "GeoProperty. Geojson reference to the item. Polygon.",
               "properties": {
                 "type": {
                   "type": "string",
@@ -842,7 +843,7 @@
               "title": "GeoJSON MultiPoint",
               "type": "object",
               "required": ["type", "coordinates"],
-              "description": "GeoProperty. Geojson reference to the item. MultiPoint",
+              "description": "GeoProperty. Geojson reference to the item. MultiPoint.",
               "properties": {
                 "type": {
                   "type": "string",
@@ -871,7 +872,7 @@
               "title": "GeoJSON MultiLineString",
               "type": "object",
               "required": ["type", "coordinates"],
-              "description": "GeoProperty. Geojson reference to the item. MultiLineString",
+              "description": "GeoProperty. Geojson reference to the item. MultiLineString.",
               "properties": {
                 "type": {
                   "type": "string",
@@ -904,7 +905,7 @@
               "title": "GeoJSON MultiPolygon",
               "type": "object",
               "required": ["type", "coordinates"],
-              "description": "GeoProperty. Geojson reference to the item. MultiLineString",
+              "description": "GeoProperty. Geojson reference to the item. MultiLineString.",
               "properties": {
                 "type": {
                   "type": "string",
@@ -936,15 +937,14 @@
                 }
               }
             }
-          ],
-          "description": "GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon"
+          ]
         },
         "provenance": {
           "type": "array",
           "description": "Property. Model:'http://purl.org/dc/terms/ProvenanceStatement'. List of libraries and tools used in the development and execution of the service.",
           "items": {
             "type": "string",
-            "description": "Property. Every lineage associated to the data service"
+            "description": "Property. Every lineage associated to the data service."
           }
         },
         "publisher": {
@@ -953,35 +953,35 @@
         },
         "servesDataset": {
           "type": "array",
-          "description": "Relationship. Model:'https://www.w3.org/ns/dcat#servesDataset'. This property refers to a collection of data that this data service can distribute",
+          "description": "Relationship. Model:'https://www.w3.org/ns/dcat#servesDataset'. This property refers to a collection of data that this data service can distribute.",
           "items": {
-            "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a collection of data that this data service can distribute",
+            "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a collection of data that this data service can distribute.",
             "anyOf": [
               {
                 "type": "string",
                 "minLength": 1,
                 "maxLength": 256,
                 "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-                "description": "Property. Identifier format of any NGSI entity"
+                "description": "Property. Identifier format of any NGSI entity."
               },
               {
                 "type": "string",
                 "format": "uri",
-                "description": "Property. Identifier format of any NGSI entity"
+                "description": "Property. Identifier format of any NGSI entity."
               }
             ]
           }
         },
         "theme": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.",
+          "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#Concept'. This property refers to a category of the Data Service. A Dataset may be associated with multiple themes.",
           "items": {
             "type": "string",
             "description": "Property. Every theme included."
           }
         },
         "title": {
-          "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name",
+          "description": "LanguageProperty. Model:'http://purl.org/dc/terms/title'. This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.",
           "oneOf": [
             {
               "type": "object",

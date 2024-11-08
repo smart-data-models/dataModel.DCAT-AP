@@ -1,8 +1,28 @@
 notesHeader:
-  Adapted from [DCAT-AP version 3.0.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/). Some properties have been renamed in order to prevent conflicts with other existing properties. Additionally other properties have been added to maintain compatibility with NGSI standard and other data models.
-  Adding of the FAIR principles and MELODA5 dimensions properties.
+  - Adapted from [DCAT-AP version 3.0.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/). Some properties have been renamed in order to prevent conflicts with other existing properties. Additionally other properties have been added to maintain compatibility with NGSI standard and other data models.
+  - Adding of the FAIR principles and MELODA5 dimensions properties:
+      - provenance, list of libraries and tools used in the development and execution of the service.
+      - lastUpdated, last time at which the data service has been updated in a way that changes its behavior.
+      - operationSpace, Geojson reference to the Data Service, it can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon.
+      - address, the mailing address or the organization that provide the Data Service.
+      - validationSchema, URL to the technical validation schema for the Data Service (JSON Schema) in the Smart Data Models program.
+      - licence, this property contains the license under which the Data service is made available.
 
 notesMiddle:
-  Some properties have been added to allow for more a wider range of usage. Namely contactPoint, assetProvider and configuration. 
+  Some properties have been added to allow for more a wider range of usage. Namely assetProvider and configuration. 
 
 notesFooter:
+  # CHANGELOG DCAT-AP <img align="right" src="/semic-icon-small.png" alt="SEMIC Core Vocabulary" />
+
+  ## DCAT-AP::DataService 2.1.1 -> 3.0.0 ($schemaVersion": "0.0.2 -> $schemaVersion": "1.0.0")
+
+  - contactPoint, new property in DCAT-AP 3.0.0, array of contacts information that can be used for sending comments about the Data Service.
+  - format, new property in DCAT-AP 3.0.0, the structure that can be returned by querying the endpointURL.
+  - keyword, new property in DCAT-AP 3.0.0, contains a list of keywords or tags, describing the Data Service. 
+  - landingPage, new property in DCAT-AP 3.0.0, this property refers to a web page that provides access to the Data Service and/or additional information.
+  - publisher, new property in DCAT-AP 3.0.0, this property refers to a collection of data that this data service can distribute.
+  - theme, new property in DCAT-AP 3.0.0, this property refers to a category of the Data Service.
+  - endPointURL is translated to endpointURL.
+  - endPointDescription is translated to endpointDescription.
+  - serverDataset description is modified from Property to Relationship of Datasets.
+  - title/description properties were represented as an array of strings, each entry in the array being a translation in a specific language. They are represented now as LanguageProperty defined in the ETSI NGSI-LD specification to offer multilanguage support of the Data Service data.
