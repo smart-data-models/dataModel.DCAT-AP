@@ -58,51 +58,51 @@
               "properties": {
                 "languageMap": {
                   "type": "object",
-                  "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                  "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
                   "properties": {
                     "en": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in English."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in English."
                     },
                     "de": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in German."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in German."
                     },
                     "es": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Spanish."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Spanish."
                     },
                     "fr": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in French."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in French."
                     },
                     "it": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Italian."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Italian."
                     },
                     "ja": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Japanese."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Japanese."
                     },
                     "ko": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Korean."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Korean."
                     },
                     "zh": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Chinese."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Chinese."
                     },
                     "el": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Modern Greek."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Modern Greek."
                     },
                     "nl": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Dutch."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Dutch."
                     },
                     "fi": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Finnish."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Finnish."
                     }
                   }
                 }
@@ -110,7 +110,7 @@
             },
             {
               "type": "string",
-              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in a specific language."
+              "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in a specific language."
             }
           ]
         },
@@ -990,51 +990,51 @@
               "properties": {
                 "languageMap": {
                   "type": "object",
-                  "description": "Property, Model:'https://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
+                  "description": "Property. Model:'https://www.w3.org/2000/01/rdf-schema#Literal'.  A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.",
                   "properties": {
                     "en": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in English."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in English."
                     },
                     "de": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in German."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in German."
                     },
                     "es": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Spanish."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Spanish."
                     },
                     "fr": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in French."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in French."
                     },
                     "it": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Italian."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Italian."
                     },
                     "ja": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Japanese."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Japanese."
                     },
                     "ko": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Korean."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Korean."
                     },
                     "zh": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Chinese."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Chinese."
                     },
                     "el": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Modern Greek."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Modern Greek."
                     },
                     "nl": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Dutch."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Dutch."
                     },
                     "fi": {
                       "type": "string",
-                      "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Finnish."
+                      "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The description written in Finnish."
                     }
                   }
                 }
@@ -1042,7 +1042,7 @@
             },
             {
               "type": "string",
-              "description": "Property, Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in a specific language."
+              "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. The title written in a specific language."
             }
           ]
         },

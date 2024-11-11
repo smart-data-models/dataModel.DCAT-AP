@@ -1,6 +1,7 @@
 {
   "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",
   "type": "DataService",
+  "modifiedAt": "2021-10-06T16:31:26Z",
   "accessRights": "No restrictions to access the data but APi requests limit, 5000 requests per hour",
   "address": {
     "addressCountry": "Luxembourg",
@@ -10,33 +11,98 @@
     "postalCode": "2985",
     "streetAddress": "2, rue Mercier"
   },
-  "areaServed": "European union and beyond",
-  "description": [
-    "Digital resources for accessing to the end points of the EU open data portal for solar system.",
-    "Recursos digitales para el acceso a los puntos de interaccion del portal europeo de datos abiertos del sistema solar."
+  "applicableLegislation": [
+    "Regulation 883/2004",
+    "Regulation 465/2012"
   ],
-  "endPointDescription": [
+  "areaServed": "European Union and beyond",
+  "conformsTo": [
+    "OGC WFS API"
+  ],
+  "contactPoint": [
+    {
+      "type": "ContactPoint",
+      "email": "wheatfarm@email.com"
+    },
+    {
+      "type": "ContactPoint",
+      "email": "vehiculoelectrico@ava.es"
+    }
+  ],
+  "description": {
+    "languageMap": {
+      "en": "Data service of the european open data portal",
+      "de": "Datendienst des Europäischen Portals für offene Daten",
+      "es": "Data service del portal europeo de datos abiertos",
+      "fr": "Service de données du portail européen de données ouvertes",
+      "it": "Servizio dati del Portale europeo dei dati aperti",
+      "ja": "欧州オープンデータ・ポータルのデータサービス",
+      "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+      "zh": "欧洲开放数据门户的数据服务",
+      "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+      "nl": "Dataservice van het Europese open dataportaal",
+      "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+    }
+  },
+  "documentation": [
+    "http://foo.org/how-to"
+  ],
+  "endpointDescription": [
     "SPARQL end point without authentication",
     "API compliant with CKAN specification"
   ],
-  "endPointURL": [
+  "endpointURL": [
     "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
     "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"
   ],
-  "license": "EUPL.",
-  "location": {
+  "format": [
+    "CSV",
+    "JSON"
+  ],
+  "keyword": [
+    "Data Service",
+    "CKAN"
+  ],
+  "landingPage": [
+    "https://dataservice.data",
+    "https://otherservice.data"
+  ],
+  "lastUpdated": "2021-07-01T10:27:59Z",
+  "licence": "EUPL.",
+  "operationSpace": {
     "coordinates": [
       72.564509,
       11.125289
     ],
     "type": "Point"
   },
-  "servesDataset": [
-    "EU geographic map",
-    "EU physical map"
+  "provenance": [
+    "1",
+    "2"
   ],
-  "title": [
-    "Data service of the european open data portal",
-    "Data service del portal europeo de datos abiertos"
-  ]
+  "publisher": "Comunidad de madrid",
+  "servesDataset": [
+    "urn:ngsi-ld:Dataset:id:HUZY:41266715",
+    "urn:ngsi-ld:Dataset:id:HUZY:41266716"
+  ],
+  "theme": [
+    "Economy",
+    "Tourism"
+  ],
+  "title": {
+    "languageMap": {
+      "en": "Data service of the european open data portal",
+      "de": "Datendienst des Europäischen Portals für offene Daten",
+      "es": "Data service del portal europeo de datos abiertos",
+      "fr": "Service de données du portail européen de données ouvertes",
+      "it": "Servizio dati del Portale europeo dei dati aperti",
+      "ja": "欧州オープンデータ・ポータルのデータサービス",
+      "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+      "zh": "欧洲开放数据门户的数据服务",
+      "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+      "nl": "Dataservice van het Europese open dataportaal",
+      "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+    }
+  },
+  "validationSchema": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/DataService/schema.json"
 }
