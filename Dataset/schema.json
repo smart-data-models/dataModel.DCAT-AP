@@ -882,6 +882,11 @@
             "ZPL-2.1"
           ]
         },
+        "modified": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the most recent date on which the Dataset was changed or modified."
+        },
         "otherIdentifier": {
           "type": "array",
           "description": "Property. Model:'http://www.w3.org/ns/adms#Identifier'. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.",

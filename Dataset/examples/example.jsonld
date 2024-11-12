@@ -1,7 +1,6 @@
 {
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",
   "type": "Dataset",
-  "modifiedAt": "2015-07-13T03:09:32Z",
   "accessMechanism": "Level3AccessMechanism",
   "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
   "addressesAvailable": "True",
@@ -102,6 +101,7 @@
     "SP"
   ],
   "license": "AGPL-3.0",
+  "modified": "2015-07-13T03:09:32Z",
   "otherIdentifier": [
     "urn:ngsi-ld:Dataset:items:ZNYR:18053145",
     "urn:ngsi-ld:Dataset:items:ICBO:96194869"

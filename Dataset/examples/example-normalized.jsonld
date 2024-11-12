@@ -1,13 +1,6 @@
 {
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",
   "type": "Dataset",
-  "modifiedAt": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-07-01T10:27:59Z"
-    }
-  },
   "accessMechanism": {
     "type": "Property",
     "value": "Level3AccessMechanism"
@@ -177,6 +170,13 @@
   "license": {
     "type": "Property",
     "value": "AGPL-3.0"
+  },
+  "modified": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-07-01T10:27:59Z"
+    }
   },
   "otherIdentifier": {
     "type": "Property",
