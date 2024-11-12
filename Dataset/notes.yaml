@@ -34,7 +34,6 @@ notesFooter:
   ## DCAT-AP::Dataset 2.1.1 -> 3.0.0 ($schemaVersion": "2.0.1" -> $schemaVersion": "3.0.0")
 
   - spatial property translated to geographicalCoverage.
-  - modified property is translated to modifiedAt and deleted from the schema as per the ETSI NGSI-LD specification.
   - temporal is translated to temporalCoverage.
   - page is translated to documentation.
   - accuralPeriodicity is translated to frequency.
