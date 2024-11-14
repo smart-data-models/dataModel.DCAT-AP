@@ -6,7 +6,7 @@ notesHeader:
       - operationSpace, Geojson reference to the Data Service, it can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon.
       - address, the mailing address or the organization that provide the Data Service.
       - validationSchema, URL to the technical validation schema for the Data Service (JSON Schema) in the Smart Data Models program.
-      - licence, this property contains the license under which the Data service is made available.
+      - license, this property contains the license under which the Data service is made available.
 
 notesMiddle:
   Some properties have been added to allow for more a wider range of usage. Namely assetProvider and configuration. 

@@ -69,12 +69,6 @@
       "fi": "Euroopan avoimen datan portaalin tietopalvelu"
     }
   },
-  "documentation": {
-    "type": "Property",
-    "value": [
-      "http://foo.org/how-to"
-    ]
-  },
   "endpointDescription": {
     "type": "Property",
     "value": [
@@ -117,7 +111,7 @@
       "@value": "2021-07-01T10:27:59Z"
     }
   },
-  "licence": {
+  "license": {
     "type": "Property",
     "value": "EUPL-1.2"
   },
@@ -130,6 +124,12 @@
         11.125289
       ]
     }
+  },
+  "page": {
+    "type": "Property",
+    "value": [
+      "http://foo.org/how-to"
+    ]
   },
   "provenance": {
     "type": "Property",
