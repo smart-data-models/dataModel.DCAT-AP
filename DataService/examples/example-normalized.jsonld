@@ -1,13 +1,6 @@
 {
   "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",
   "type": "DataService",
-  "modifiedAt": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-10-06T16:31:26Z"
-    }
-  },
   "accessRights": {
     "type": "Property",
     "value": "No restrictions to access the data but APi requests limit, 5000 requests per hour"
