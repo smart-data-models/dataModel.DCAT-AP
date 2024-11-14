@@ -106,7 +106,7 @@
   },
   "license": {
     "type": "Property",
-    "value": "EUPL-1.2"
+    "value": "GPL-1.0"
   },
   "operationSpace": {
     "type": "GeoProperty",
