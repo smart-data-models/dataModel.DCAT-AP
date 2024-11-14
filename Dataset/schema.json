@@ -32,6 +32,10 @@
           "type": "string",
           "description": "Property. Model:'http://purl.org/dc/terms/RightsStatement'. This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public."
         },
+        "accuralPeriodicity": {
+          "type": "string",
+          "description": "Property. Model:'http://purl.org/dc/terms/Frequency'. This property refers to the frequency at which the Dataset is updated."
+        },
         "addressesAvailable": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has postal addresses to identify the elements in the dataset.",
@@ -183,27 +187,6 @@
             ]
           }
         },
-        "documentation": {
-          "type": "array",
-          "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a page or document about this Dataset.",
-          "items": {
-            "type": "string",
-            "format": "uri",
-            "description": "Property. Every page or document."
-          }
-        },
-        "frequency": {
-          "type": "string",
-          "description": "Property. Model:'http://purl.org/dc/terms/Frequency'. This property refers to the frequency at which the Dataset is updated."
-        },
-        "geographicalCoverage": {
-          "type": "array",
-          "description": "GeoProperty. Model:'http://purl.org/dc/terms/Location'. This property refers to a geographic region that is covered by the Dataset.",
-          "items": {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location",
-            "description": "Property. Every location included."
-          }
-        },
         "geolocation": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has geolocation (coordinates) in any of its attributes.",
@@ -277,6 +260,11 @@
             "format": "uri",
             "description": "Property. Every dataset that the current dataset is a version of it."
           }
+        },
+        "issued": {
+          "type": "string",
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Dataset.",
+          "format": "date-time"
         },
         "keyword": {
           "type": "array",
@@ -896,6 +884,15 @@
             "description": "Property. Every additional identifier included."
           }
         },
+        "page": {
+          "type": "array",
+          "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a page or document about this Dataset.",
+          "items": {
+            "type": "string",
+            "format": "uri",
+            "description": "Property. Every page or document."
+          }
+        },
         "provenance": {
           "type": "array",
           "description": "Property. Model:'http://purl.org/dc/terms/ProvenanceStatement'. This property contains a statement about the lineage of a Dataset.",
@@ -925,7 +922,7 @@
             "description": "Property. Every qualified relation included."
           }
         },
-        "relatedResource": {
+        "relation": {
           "type": "array",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property refers to a related resource.",
           "items": {
@@ -933,11 +930,6 @@
             "format": "uri",
             "description": "Property. Every related resource included."
           }
-        },
-        "releaseDate": {
-          "type": "string",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the date of formal issuance (e.g., publication) of the Dataset.",
-          "format": "date-time"
         },
         "reputation": {
           "type": "string",
@@ -978,6 +970,14 @@
             ]
           }
         },
+        "spatial": {
+          "type": "array",
+          "description": "GeoProperty. Model:'http://purl.org/dc/terms/Location'. This property refers to a geographic region that is covered by the Dataset.",
+          "items": {
+            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Location-Commons/properties/location",
+            "description": "Property. Every location included."
+          }
+        },
         "spatialResolution": {
           "type": "number",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a dataset, measured in meters."
@@ -996,7 +996,7 @@
           "type": "string",
           "description": "Property. Model:'https://schema.org/url'. URI to the source where the definitions of the attributes can be read. It is associated with the standardization property. It can be empty in case of Level1 and Level2 or link to an existing standardization body (e.g., DIN, UNE, etc.) for Level3 or (e.g., ISO, W3C, etc.) for Level4."
         },
-        "temporalCoverage": {
+        "temporal": {
           "type": "array",
           "description": "Property. Model:'http://purl.org/dc/terms/PeriodOfTime'. This property refers to a temporal period that the Dataset covers.",
           "items": {

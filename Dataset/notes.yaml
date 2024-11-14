@@ -33,11 +33,6 @@ notesFooter:
 
   ## DCAT-AP::Dataset 2.1.1 -> 3.0.0 ($schemaVersion": "2.0.1" -> $schemaVersion": "3.0.0")
 
-  - spatial property translated to geographicalCoverage.
-  - temporal is translated to temporalCoverage.
-  - page is translated to documentation.
-  - accuralPeriodicity is translated to frequency.
-  - relation is translated to relatedResource.
   - conformsTo changed the Model from 'http://purl.org/dc/terms/Standard' to 'http://purl.org/dc/terms/conformsTo'.
   - title/description properties were represented as an array of strings, each entry in the array being a translation in a specific language. They are represented now as LanguageProperty defined in the ETSI NGSI-LD specification to offer multilanguage support of the Dataset data.
   - hasVersion represented as Property, changed to Relationship of Datasets.

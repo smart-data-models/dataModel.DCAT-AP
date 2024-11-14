@@ -3,6 +3,7 @@
   "type": "Dataset",
   "accessMechanism": "Level3AccessMechanism",
   "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
+  "accuralPeriodicity": "weekly",
   "addressesAvailable": "True",
   "applicableLegislation": [
     "Regulation 883/2004",
@@ -40,20 +41,6 @@
     "urn:ngsi-ld:Distribution:items:KJVK:30944451",
     "urn:ngsi-ld:Distribution:items:MMWU:84196227"
   ],
-  "documentation": [
-    "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
-    "urn:ngsi-ld:Dataset:items:GKJO:30040605"
-  ],
-  "frequency": "weekly",
-  "geographicalCoverage": [
-    {
-      "type": "Point",
-      "coordinates": [
-        9.922458,
-        109.478534
-      ]
-    }
-  ],
   "geolocation": "True",
   "hasVersion": [
     "urn:ngsi-ld:Dataset:items:SQSB:90831182",
@@ -75,14 +62,15 @@
     "urn:ngsi-ld:Dataset:items:AMAC:16896252",
     "urn:ngsi-ld:Dataset:items:IPSO:04920226"
   ],
+  "issued": "1983-07-16T12:51:26Z",
   "keyword": [
     "alojamiento",
     "apartamento rural",
-    "apartamento tur\u00edstico",
+    "apartamento turístico",
     "campamento de turismo",
     "camping",
     "casa rural",
-    "casas de hu\u00e9spedes",
+    "casas de huéspedes",
     "hostal",
     "hostel",
     "hosteria",
@@ -90,7 +78,7 @@
     "hotel rural",
     "hotel-apartamento",
     "pension",
-    "vivienda de uso turistico"
+    "vivienda de uso turístico"
   ],
   "landingPage": [
     "urn:ngsi-ld:Dataset:items:UMBA:72418275",
@@ -106,6 +94,10 @@
     "urn:ngsi-ld:Dataset:items:ZNYR:18053145",
     "urn:ngsi-ld:Dataset:items:ICBO:96194869"
   ],
+  "page": [
+    "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
+    "urn:ngsi-ld:Dataset:items:GKJO:30040605"
+  ],
   "provenance": [
     "1",
     "2"
@@ -119,11 +111,10 @@
     "urn:ngsi-ld:Dataset:items:ITFK:67369057",
     "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
   ],
-  "relatedResource": [
+  "relation": [
     "urn:ngsi-ld:Dataset:items:FXEY:35067714",
     "urn:ngsi-ld:Dataset:items:YYOL:47950545"
   ],
-  "releaseDate": "1983-07-16T12:51:26Z",
   "reputation": "Level2Reputation",
   "reputationOrganization": "https://url_to_organization.org",
   "sample": [
@@ -133,10 +124,19 @@
   "source": [
     "urn:ngsi-ld:Dataset:items:YSWN:41266715"
   ],
+  "spatial": [
+    {
+      "type": "Point",
+      "coordinates": [
+        9.922458,
+        109.478534
+      ]
+    }
+  ],
   "spatialResolution": 0.6,
   "standardization": "Level4Standardization",
   "standardizationSource": "https://www.w3.org/",
-  "temporalCoverage": [
+  "temporal": [
     "2023-04-03T02:35:57Z"
   ],
   "temporalResolution": [

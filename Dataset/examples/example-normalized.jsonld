@@ -9,6 +9,10 @@
     "type": "Property",
     "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
   },
+  "accuralPeriodicity": {
+    "type": "Property",
+    "value": "two years"
+  },
   "addressesAvailable": {
     "type": "Property",
     "value": "True"
@@ -74,27 +78,6 @@
       "urn:ngsi-ld:Distribution:items:MMWU:84196227"
     ]
   },
-  "documentation": {
-    "type": "Property",
-    "value": [
-      "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
-      "urn:ngsi-ld:Dataset:items:GKJO:30040605"
-    ]
-  },
-  "frequency": {
-    "type": "Property",
-    "value": "two years"
-  },
-  "geographicalCoverage": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        22.1394715,
-        -7.100602
-      ]
-    }
-  },
   "geolocation": {
     "type": "Property",
     "value": "True"
@@ -134,6 +117,13 @@
       "urn:ngsi-ld:Dataset:items:GATZ:02632837"
     ]
   },
+  "issued": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-10-01T15:46:46Z"
+    }
+  },
   "keyword": {
     "type": "Property",
     "value": [
@@ -151,7 +141,7 @@
     "hotel rural",
     "hotel-apartamento",
     "pension",
-    "vivienda de uso turistico"
+    "vivienda de uso turístico"
     ]
   },
   "landingPage": {
@@ -185,6 +175,13 @@
       "urn:ngsi-ld:Dataset:items:ICBO:96194869"
       ]
   },
+  "page": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
+      "urn:ngsi-ld:Dataset:items:GKJO:30040605"
+    ]
+  },
   "provenance": {
     "type": "Property",
     "value": [
@@ -210,19 +207,12 @@
       "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
     ]
   },
-  "relatedResource": {
+  "relation": {
     "type": "Property",
     "value": [
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",
       "urn:ngsi-ld:Dataset:items:ZAUC:79968579"
     ]
-  },
-  "releaseDate": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2021-10-01T15:46:46Z"
-    }
   },
   "reputation": {
     "type": "Property",
@@ -245,6 +235,16 @@
       "urn:ngsi-ld:Dataset:items:YSWN:41266715"
     ]
   },
+  "spatial": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        22.1394715,
+        -7.100602
+      ]
+    }
+  },
   "spatialResolution": {
     "type": "Property",
     "value": 0.6
@@ -257,7 +257,7 @@
     "type": "Property",
     "value": "https://www.w3.org/"
   },
-  "temporalCoverage": {
+  "temporal": {
     "type": "Property",
     "value": [
     "2023-04-03T02:35:57Z"
