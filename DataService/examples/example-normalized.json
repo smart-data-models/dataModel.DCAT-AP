@@ -32,7 +32,7 @@
     "type": "Text",
     "value": "European union and beyond"
   },
-  "endPointURL": {
+  "endpointURL": {
     "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
@@ -46,7 +46,7 @@
       "Data service del portal europeo de datos abiertos"
     ]
   },
-  "endPointDescription": {
+  "endpointDescription": {
     "type": "StructuredValue",
     "value": [
       "SPARQL end point without authentication",
