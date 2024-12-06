@@ -1,6 +1,41 @@
 notesHeader:
-  Adapted from [DCAT-AP version 2.1.1](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211).
+  - Adapted from [DCAT-AP version 3.0.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/).
+  - Adding of the FAIR principles and MELODA5 dimensions properties.
+      - accessMechanism, access level according to the 3 levels of Meloda5 metric. The expected values are
+          - Level1AccessMechanism, Web access or unique URL parameters to dataset;
+          - Level2AccessMechanism, Web Access unique with parameters to single data;
+          - Level3AccessMechanism, API or query language.
+      - addressAvailable, defines if the data stream has postal addresses to identify the elements in the dataset.
+      - dissemination, dissemination level according to Meloda5 communication dimension
+          - Level1Dissemination, communication/dissemination not systematic;
+          - Level2Dissemination, available resources on updates (i.e., RSS feed);
+          - Level3Dissemination, proactive dissemination/push dissemination (information automatic and timely).
+      - diseminationOrganization, URI to the organization which is responsible for dissemination activities related to the dataset. It matches the dimension/communication of Meloda5.
+      - geolocation, defines if the data stream has geolocation (coordinates) in any of its attributes.
+      - license, This property refers to the license under which the Dataset is made available. Id of the license according to the enumerated values. It is extracted from the id of the SPDX standard (https://spdx.org/licenses).
+      - reputation, reputation level according to Meloda5 reputation dimension
+          - Level1Reputation, no information about the reputation of the data source;
+          - Level2Reputation, statistics or reports published on user’s opinions;
+          - Level3Reputation, Indicators or rankings on reputation of the data source.
+      - reputationOrganization, URI to the organization which is responsible for the publication of the dataset in terms of reputation. It matches the dimension reputation of Meloda5 and it allows to retrieve their prestige from the ranking.
+      - standardization, the type of data model standardization followed by the dataset. This is an enumeration with three (4) possible values
+          - Level1Standardization, data model standardized by the publisher without releasing the documentation;
+          - Level2Standardization, data model standardized by the published releasing the documentation;
+          - Level3Standardization, data model using a local standard (national or smaller regional scope);
+          - Level4Standardization, data model using an international standard.
+      - standardizationSource, URI to the source where the definitions of the attributes can be read. It is associated with the standardization property. It can be empty in case of Level1 and Level2 or link to an existing standardization body (e.g., DIN, UNE, etc.) for Level3 or (e.g., ISO, W3C, etc.) for Level4.
+      - validationSchema, URL to the technical validation schema for the dataset (JSON Schema) in the Smart Data Models program.
 
 notesMiddle:
-
+  
 notesFooter:
+  # CHANGELOG DCAT-AP <img align="right" src="/semic-icon-small.png" alt="SEMIC Core Vocabulary" />
+
+  ## DCAT-AP::Dataset 2.1.1 -> 3.0.0 ($schemaVersion": "2.0.1" -> $schemaVersion": "3.0.0")
+
+  - conformsTo changed the Model from 'http://purl.org/dc/terms/Standard' to 'http://purl.org/dc/terms/conformsTo'.
+  - title/description properties were represented as an array of strings, each entry in the array being a translation in a specific language. They are represented now as LanguageProperty defined in the ETSI NGSI-LD specification to offer multilanguage support of the Dataset data.
+  - hasVersion represented as Property, changed to Relationship of Datasets.
+  - language, defined the possible values are defined by the Library of Congress [ISO 639-1](http://id.loc.gov/vocabulary/iso639-1.html), [ISO 639-2](http://id.loc.gov/vocabulary/iso639-2.html).
+  - source changed from array of Properties to array of Relationships in the description of the property.
+  - versionInfo, as per the definition in the [DCAT v3 vocabulary specification](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version), they should be written version.

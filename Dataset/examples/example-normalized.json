@@ -1,132 +1,118 @@
 {
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",
   "type": "Dataset",
-  "modified": {
-    "type": "DateTime",
-    "value": "2021-07-01T10:27:59Z"
-  },
-  "source": {
-    "type": "StructuredValue",
-    "value": [
-      "urn:ngsi-ld:Dataset:items:YSWN:41266715"
-    ]
-  },
-  "description": {
-    "type": "StructuredValue",
-    "value": [
-      "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."
-    ]
-  },
-  "title": {
-    "type": "StructuredValue",
-    "value": [
-      "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"
-    ]
-  },
-  "contactPoint": {
-    "type": "StructuredValue",
-    "value": [
-      "https://datos.gob.es/es/comment/reply/145778."
-    ]
-  },
-  "belongsToCatalogue": {
+  "accessMechanism": {
     "type": "Text",
-    "value": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
-  },
-  "distribution": {
-    "type": "StructuredValue",
-    "value": [
-      "urn:ngsi-ld:Distribution:items:KJVK:30944451",
-      "urn:ngsi-ld:Distribution:items:MMWU:84196227"
-    ]
-  },
-  "keyword": {
-    "type": "StructuredValue",
-    "value": [
-      "alojamiento",
-      "apartamento rural",
-      "apartamento tur\u00edstico",
-      "campamento de turismo",
-      "camping",
-      "casa rural",
-      "casas de hu\u00e9spedes",
-      "hostal",
-      "hostel",
-      "hosteria",
-      "hotel",
-      "hotel rural",
-      "hotel-apartamento",
-      "pension",
-      "vivienda de uso turistico"
-    ]
-  },
-  "publisher": {
-    "type": "Text",
-    "value": "comunidad de madrid"
-  },
-  "spatial": {
-    "type": "StructuredValue",
-    "value": [
-      {
-        "type": "Point",
-        "coordinates": [
-          22.1394715,
-          -7.100602
-        ]
-      }
-    ]
-  },
-  "temporal": {
-    "type": "StructuredValue",
-    "value": [
-      "2023-04-03T02:35:57Z"
-    ]
-  },
-  "theme": {
-    "type": "StructuredValue",
-    "value": [
-      "Economy",
-      "Tourism"
-    ]
+    "value": "Level3AccessMechanism"
   },
   "accessRights": {
     "type": "Text",
     "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
   },
-  "creator": {
+  "accuralPeriodicity": {
+    "type": "Text",
+    "value": "two years"
+  },
+  "addressesAvailable": {
+    "type": "Boolean",
+    "value": true
+  },
+  "applicableLegislation": {
     "type": "StructuredValue",
     "value": [
+      "Regulation 883/2004",
+      "Regulation 465/2012"
+    ]
+  },
+  "belongsToCatalogue": {
+    "type": "Text",
+    "object": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
+  },
+  "conformsTo": {
+    "type": "StructuredValue",
+    "value": [
+      "http://www.opengis.net/def/crs/EPSG/0/28992",
+      "http://data.europa.eu/eli/reg/2014/1312/oj"
+    ]
+  },
+  "contactPoint": {
+    "type": "StructuredValue",
+    "value": [
+      {
+        "type": "Text",
+        "email": "wheatfarm@email.com"
+      },
+      {
+        "type": "Text",
+        "email": "vehiculoelectrico@ava.es"
+      }
+    ]
+  },
+  "creator": {
+    "type": "StructuredValue",
+    "value":  [
       "Comunidad de Madrid"
     ]
   },
-  "page": {
+  "description": {
     "type": "StructuredValue",
-    "value": [
-      "",
-      ""
+    "value": {
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
+      "zh": "马德里大区不同类型和类别的旅游住宿。",
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
+    }
+  },
+  "dissemination": {
+    "type": "Text",
+    "value": "Level2Dissemination"
+  },
+  "disseminationOrganization": {
+    "type": "Text",
+    "value": "https://url_to_organization.org"
+  },
+  "distribution": {
+    "type": "StructuredValue",
+    "object": [
+      "urn:ngsi-ld:Distribution:items:KJVK:30944451",
+      "urn:ngsi-ld:Distribution:items:MMWU:84196227"
     ]
   },
-  "accrualPeriodicity": {
-    "type": "Text",
-    "value": "two years"
+  "geolocation": {
+    "type": "Boolean",
+    "value": true
   },
   "hasVersion": {
     "type": "StructuredValue",
     "value": [
-      "",
-      ""
+      "urn:ngsi-ld:Dataset:id:ASDF:68185655",
+      "urn:ngsi-ld:Dataset:id:ASDF:78185655"
     ]
   },
   "identifier": {
     "type": "StructuredValue",
     "value": [
-      "",
-      ""
+      "urn:ngsi-ld:Dataset:items:MBNQ:57176010",
+      "urn:ngsi-ld:Dataset:items:DDDJ:93242038"
+    ]
+  },
+  "inSeries": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Dataset:id:HUZY:681332655",
+      "urn:ngsi-ld:Dataset:id:HUZY:681970245"
     ]
   },
   "isReferencedBy": {
     "type": "StructuredValue",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:HJNK:88711880",
       "urn:ngsi-ld:Dataset:items:MDEO:95193079"
     ]
@@ -136,6 +122,33 @@
     "value": [
       "urn:ngsi-ld:Dataset:items:RBWE:31388012",
       "urn:ngsi-ld:Dataset:items:GATZ:02632837"
+    ]
+  },
+  "issued": {
+    "type": "StructuredValue",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-10-01T15:46:46Z"
+    }
+  },
+  "keyword": {
+    "type": "StructuredValue",
+    "value": [
+    "alojamiento",
+    "apartamento rural",
+    "apartamento turístico",
+    "campamento de turismo",
+    "camping",
+    "casa rural",
+    "casas de huéspedes",
+    "hostal",
+    "hostel",
+    "hosteria",
+    "hotel",
+    "hotel rural",
+    "hotel-apartamento",
+    "pension",
+    "vivienda de uso turístico"
     ]
   },
   "landingPage": {
@@ -151,30 +164,54 @@
       "ES"
     ]
   },
+  "license": {
+    "type": "Text",
+    "value": "AGPL-3.0"
+  },
+  "modified": {
+    "type": "StructuredValue",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-07-01T10:27:59Z"
+    }
+  },
   "otherIdentifier": {
     "type": "StructuredValue",
     "value": [
-      "",
-      ""
+      "urn:ngsi-ld:Dataset:items:ZNYR:18053145",
+      "urn:ngsi-ld:Dataset:items:ICBO:96194869"
+      ]
+  },
+  "page": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
+      "urn:ngsi-ld:Dataset:items:GKJO:30040605"
     ]
   },
   "provenance": {
     "type": "StructuredValue",
     "value": [
-      "",
-      ""
+      "1",
+      "2"
     ]
+  },
+  "publisher": {
+    "type": "Text",
+    "value": "Comunidad de madrid"
   },
   "qualifiedAttribution": {
     "type": "StructuredValue",
     "value": [
-      ""
+      "urn:ngsi-ld:Agent:2567369057",
+      "urn:ngsi-ld:Agent:6457369057"
     ]
   },
   "qualifiedRelation": {
     "type": "StructuredValue",
     "value": [
-      ""
+      "urn:ngsi-ld:Dataset:items:ITFK:67369057",
+      "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
     ]
   },
   "relation": {
@@ -184,9 +221,13 @@
       "urn:ngsi-ld:Dataset:items:ZAUC:79968579"
     ]
   },
-  "issued": {
-    "type": "DateTime",
-    "value": "2021-10-01T15:46:46Z"
+  "reputation": {
+    "type": "Text",
+    "value": "Level2Reputation"
+  },
+  "reputationOrganization": {
+    "type": "Text",
+    "value": "https://url_to_organization.org"
   },
   "sample": {
     "type": "StructuredValue",
@@ -195,9 +236,39 @@
       "urn:ngsi-ld:Dataset:items:GNXL:59256807"
     ]
   },
-  "spatialResolutionInMeters": {
+  "source": {
+    "type": "StructuredValue",
+    "value": [
+      "urn:ngsi-ld:Dataset:items:YSWN:41266715"
+    ]
+  },
+  "spatial": {
+    "type": "StructuredValue",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        22.1394715,
+        -7.100602
+      ]
+    }
+  },
+  "spatialResolution": {
     "type": "Number",
     "value": 0.6
+  },
+  "standardization": {
+    "type": "Text",
+    "value": "Level4Standardization"
+  },
+  "standardizationSource": {
+    "type": "Text",
+    "value": "https://www.w3.org/"
+  },
+  "temporal": {
+    "type": "StructuredValue",
+    "value": [
+    "2023-04-03T02:35:57Z"
+    ]
   },
   "temporalResolution": {
     "type": "StructuredValue",
@@ -205,9 +276,36 @@
       "PT15M"
     ]
   },
+  "theme": {
+    "type": "StructuredValue",
+    "value": [
+    "Economy",
+    "Tourism"
+    ]
+  },
+  "title": {
+    "type": "StructuredValue",
+    "value": {
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
+      "zh": "马德里大区不同类型和类别的旅游住宿。",
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
+    }
+  },
   "Type": {
     "type": "Text",
-    "value": ""
+    "value": "service"
+  },
+  "validationSchema": {
+    "type": "Text",
+    "value": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json"
   },
   "version": {
     "type": "Text",
