@@ -47,7 +47,13 @@
           "description": "Property. Model:'http://www.w3.org/ns/dcat#contactPoint'. Contact information that can be used for sending comments about the Data Service. Cardinality: 0..n.",
           "items": {
             "type": "object",
-            "description": "Property. Model:'https://www.w3.org/ns/dcat#contactPoint'. Relevant contact information for the cataloged resource. Use of vCard is recommended (https://www.w3.org/TR/vcard-rdf/#d4e1819)."
+            "description": "Property. Every contact element",
+            "properties": {
+              "email": {
+                "type": "string",
+                "format": "email"
+              }
+            }
           }
         },
         "description": {

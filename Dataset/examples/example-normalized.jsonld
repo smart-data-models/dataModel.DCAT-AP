@@ -15,7 +15,7 @@
   },
   "addressesAvailable": {
     "type": "Property",
-    "value": "True"
+    "value": true
   },
   "applicableLegislation": {
     "type": "Property",
@@ -38,7 +38,12 @@
   "contactPoint": {
     "type": "Property",
     "value": [
-      "https://datos.gob.es/es/comment/reply/145778."
+      {
+        "email": "wheatfarm@email.com"
+      },
+      {
+        "email": "vehiculoelectrico@ava.es"
+      }
     ]
   },
   "creator": {
@@ -80,10 +85,10 @@
   },
   "geolocation": {
     "type": "Property",
-    "value": "True"
+    "value": true
   },
   "hasVersion": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Dataset:id:ASDF:68185655",
       "urn:ngsi-ld:Dataset:id:ASDF:78185655"
@@ -196,8 +201,8 @@
   "qualifiedAttribution": {
     "type": "Property",
     "value": [
-      "Central born manage evidence data. Answer doctor visit ready physical fact. Quite allow however certain lose heart.",
-      "Home interesting range ever. Magazine the instead particularly. Late have collection."
+      "urn:ngsi-ld:Agent:2567369057",
+      "urn:ngsi-ld:Agent:6457369057"
     ]
   },
   "qualifiedRelation": {
@@ -317,6 +322,6 @@
     ]
   },
   "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+    "https://smart-data-models.github.io/dataModel.DCAT-AP/context.jsonld"
   ]
 }

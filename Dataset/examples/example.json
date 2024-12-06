@@ -4,7 +4,7 @@
   "accessMechanism": "Level3AccessMechanism",
   "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
   "accuralPeriodicity": "weekly",
-  "addressesAvailable": "True",
+  "addressesAvailable": true,
   "applicableLegislation": [
     "Regulation 883/2004",
     "Regulation 465/2012"
@@ -15,13 +15,17 @@
     "http://data.europa.eu/eli/reg/2014/1312/oj"
   ],
   "contactPoint": [
-    "https://datos.gob.es/es/comment/reply/145778."
+    {
+      "email": "wheatfarm@email.com"
+    },
+    {
+      "email": "vehiculoelectrico@ava.es"
+    }
   ],
   "creator": [
     "Comunidad de Madrid"
   ],
   "description": {
-    "languageMap": {
       "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
       "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
       "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
@@ -33,7 +37,6 @@
       "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
       "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
       "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
-    }
   },
   "dissemination": "Level2Dissemination",
   "disseminationOrganization": "https://url_to_organization.org",
@@ -41,7 +44,7 @@
     "urn:ngsi-ld:Distribution:items:KJVK:30944451",
     "urn:ngsi-ld:Distribution:items:MMWU:84196227"
   ],
-  "geolocation": "True",
+  "geolocation": true,
   "hasVersion": [
     "urn:ngsi-ld:Dataset:items:SQSB:90831182",
     "urn:ngsi-ld:Dataset:items:FFVZ:69502935"
@@ -104,8 +107,8 @@
   ],
   "publisher": "Statement which consumer product thought total. Nothing concern picture involve paper nor kid.",
   "qualifiedAttribution": [
-    "Central born manage evidence data. Answer doctor visit ready physical fact. Quite allow however certain lose heart.",
-    "Home interesting range ever. Magazine the instead particularly. Late have collection."
+    "urn:ngsi-ld:Agent:2567369057",
+    "urn:ngsi-ld:Agent:6457369057"
   ],
   "qualifiedRelation": [
     "urn:ngsi-ld:Dataset:items:ITFK:67369057",
@@ -147,7 +150,6 @@
     "Tourism"
   ],
   "title": {
-    "languageMap": {
       "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
       "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
       "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
@@ -159,7 +161,6 @@
       "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
       "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
       "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
-    }
   },
   "Type": "service",
   "validationSchema": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json",

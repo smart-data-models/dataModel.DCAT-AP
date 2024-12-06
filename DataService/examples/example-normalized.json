@@ -2,11 +2,11 @@
   "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",
   "type": "DataService",
   "accessRights": {
-    "type": "Property",
+    "type": "Text",
     "value": "No restrictions to access the data but APi requests limit, 5000 requests per hour"
   },
   "address": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "streetAddress": "2, rue Mercier",
       "addressLocality": "Luxembourg",
@@ -17,38 +17,38 @@
     }
   },
   "applicableLegislation": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "Regulation 883/2004",
       "Regulation 465/2012"
     ]
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": "European Union and beyond"
   },
   "conformsTo": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "OGC WFS API"
     ]
   },
   "contactPoint": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       {
-        "type": "ContactPoint",
+        "type": "Text",
         "email": "wheatfarm@email.com"
       },
       {
-        "type": "ContactPoint",
+        "type": "Text",
         "email": "vehiculoelectrico@ava.es"
       }
     ]
   },
   "description": {
-    "type": "LanguageProperty",
-    "languageMap": {
+    "type": "StructuredValue",
+    "value": {
       "en": "Data service of the european open data portal",
       "de": "Datendienst des Europäischen Portals für offene Daten",
       "es": "Data service del portal europeo de datos abiertos",
@@ -63,53 +63,53 @@
     }
   },
   "endpointDescription": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "SPARQL end point without authentication",
       "API compliant with CKAN specification"
     ]
   },
   "endpointURL": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
       "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"
     ]
   },
   "format": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "CSV",
       "JSON"
     ]
   },
   "keyword": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "Data Service",
       "CKAN"
     ]
   },
   "landingPage": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "https://dataservice.data",
       "https://otherservice.data"
     ]
   },
   "lastUpdated": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "@type": "DateTime",
       "@value": "2021-07-01T10:27:59Z"
     }
   },
   "license": {
-    "type": "Property",
+    "type": "Text",
     "value": "GPL-1.0"
   },
   "operationSpace": {
-    "type": "GeoProperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -119,39 +119,39 @@
     }
   },
   "page": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "http://foo.org/how-to"
     ]
   },
   "provenance": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "1",
       "2"
     ]
   },
   "publisher": {
-    "type": "Property",
+    "type": "Text",
     "value": "Comunidad de madrid"
   },
   "servesDataset": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "object": [
       "urn:ngsi-ld:Dataset:id:HUZY:41266715",
       "urn:ngsi-ld:Dataset:id:HUZY:41266716"
     ]
   },
   "theme": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "Economy",
       "Tourism"
     ]
   },
   "title": {
-    "type": "LanguageProperty",
-    "languageMap": {
+    "type": "StructuredValue",
+    "value": {
       "en": "Data service of the european open data portal",
       "de": "Datendienst des Europäischen Portals für offene Daten",
       "es": "Data service del portal europeo de datos abiertos",
@@ -166,7 +166,7 @@
     }
   },
   "validationSchema": {
-    "type": "Property",
-    "value": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/DataService/schema.json"
+    "type": "Text",
+    "value": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json"
   }
 }

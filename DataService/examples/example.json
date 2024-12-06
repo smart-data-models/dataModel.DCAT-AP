@@ -20,16 +20,13 @@
   ],
   "contactPoint": [
     {
-      "type": "ContactPoint",
       "email": "wheatfarm@email.com"
     },
     {
-      "type": "ContactPoint",
       "email": "vehiculoelectrico@ava.es"
     }
   ],
   "description": {
-    "languageMap": {
       "en": "Data service of the european open data portal",
       "de": "Datendienst des Europäischen Portals für offene Daten",
       "es": "Data service del portal europeo de datos abiertos",
@@ -41,7 +38,6 @@
       "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
       "nl": "Dataservice van het Europese open dataportaal",
       "fi": "Euroopan avoimen datan portaalin tietopalvelu"
-    }
   },
   "endpointDescription": [
     "SPARQL end point without authentication",
@@ -89,7 +85,6 @@
     "Tourism"
   ],
   "title": {
-    "languageMap": {
       "en": "Data service of the european open data portal",
       "de": "Datendienst des Europäischen Portals für offene Daten",
       "es": "Data service del portal europeo de datos abiertos",
@@ -101,7 +96,6 @@
       "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
       "nl": "Dataservice van het Europese open dataportaal",
       "fi": "Euroopan avoimen datan portaalin tietopalvelu"
-    }
   },
-  "validationSchema": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/DataService/schema.json"
+  "validationSchema": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json"
 }

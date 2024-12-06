@@ -2,54 +2,61 @@
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",
   "type": "Dataset",
   "accessMechanism": {
-    "type": "Property",
+    "type": "Text",
     "value": "Level3AccessMechanism"
   },
   "accessRights": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"
   },
   "accuralPeriodicity": {
-    "type": "Property",
+    "type": "Text",
     "value": "two years"
   },
   "addressesAvailable": {
-    "type": "Property",
-    "value": "True"
+    "type": "Boolean",
+    "value": true
   },
   "applicableLegislation": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "Regulation 883/2004",
       "Regulation 465/2012"
     ]
   },
   "belongsToCatalogue": {
-    "type": "Relationship",
+    "type": "Text",
     "object": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
   },
   "conformsTo": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "http://www.opengis.net/def/crs/EPSG/0/28992",
       "http://data.europa.eu/eli/reg/2014/1312/oj"
     ]
   },
   "contactPoint": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
-      "https://datos.gob.es/es/comment/reply/145778."
+      {
+        "type": "Text",
+        "email": "wheatfarm@email.com"
+      },
+      {
+        "type": "Text",
+        "email": "vehiculoelectrico@ava.es"
+      }
     ]
   },
   "creator": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value":  [
       "Comunidad de Madrid"
     ]
   },
   "description": {
-    "type": "LanguageProperty",
-    "languageMap": {
+    "type": "StructuredValue",
+    "value": {
       "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
       "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
       "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
@@ -64,68 +71,68 @@
     }
   },
   "dissemination": {
-    "type": "Property",
+    "type": "Text",
     "value": "Level2Dissemination"
   },
   "disseminationOrganization": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://url_to_organization.org"
   },
   "distribution": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "object": [
       "urn:ngsi-ld:Distribution:items:KJVK:30944451",
       "urn:ngsi-ld:Distribution:items:MMWU:84196227"
     ]
   },
   "geolocation": {
-    "type": "Property",
-    "value": "True"
+    "type": "Boolean",
+    "value": true
   },
   "hasVersion": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:id:ASDF:68185655",
       "urn:ngsi-ld:Dataset:id:ASDF:78185655"
     ]
   },
   "identifier": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:MBNQ:57176010",
       "urn:ngsi-ld:Dataset:items:DDDJ:93242038"
     ]
   },
   "inSeries": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:id:HUZY:681332655",
       "urn:ngsi-ld:Dataset:id:HUZY:681970245"
     ]
   },
   "isReferencedBy": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "object": [
       "urn:ngsi-ld:Dataset:items:HJNK:88711880",
       "urn:ngsi-ld:Dataset:items:MDEO:95193079"
     ]
   },
   "isVersionOf": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:RBWE:31388012",
       "urn:ngsi-ld:Dataset:items:GATZ:02632837"
     ]
   },
   "issued": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "@type": "DateTime",
       "@value": "2021-10-01T15:46:46Z"
     }
   },
   "keyword": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
     "alojamiento",
     "apartamento rural",
@@ -145,98 +152,98 @@
     ]
   },
   "landingPage": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "htps://meloda.org"
     ]
   },
   "language": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "EN",
       "ES"
     ]
   },
   "license": {
-    "type": "Property",
+    "type": "Text",
     "value": "AGPL-3.0"
   },
   "modified": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "@type": "DateTime",
       "@value": "2021-07-01T10:27:59Z"
     }
   },
   "otherIdentifier": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:ZNYR:18053145",
       "urn:ngsi-ld:Dataset:items:ICBO:96194869"
       ]
   },
   "page": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
       "urn:ngsi-ld:Dataset:items:GKJO:30040605"
     ]
   },
   "provenance": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "1",
       "2"
     ]
   },
   "publisher": {
-    "type": "Property",
+    "type": "Text",
     "value": "Comunidad de madrid"
   },
   "qualifiedAttribution": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
-      "Central born manage evidence data. Answer doctor visit ready physical fact. Quite allow however certain lose heart.",
-      "Home interesting range ever. Magazine the instead particularly. Late have collection."
+      "urn:ngsi-ld:Agent:2567369057",
+      "urn:ngsi-ld:Agent:6457369057"
     ]
   },
   "qualifiedRelation": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:ITFK:67369057",
       "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
     ]
   },
   "relation": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",
       "urn:ngsi-ld:Dataset:items:ZAUC:79968579"
     ]
   },
   "reputation": {
-    "type": "Property",
+    "type": "Text",
     "value": "Level2Reputation"
   },
   "reputationOrganization": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://url_to_organization.org"
   },
   "sample": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:MLHW:64299003",
       "urn:ngsi-ld:Dataset:items:GNXL:59256807"
     ]
   },
   "source": {
-    "type": "Relationship",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Dataset:items:YSWN:41266715"
     ]
   },
   "spatial": {
-    "type": "GeoProperty",
+    "type": "StructuredValue",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -246,39 +253,39 @@
     }
   },
   "spatialResolution": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.6
   },
   "standardization": {
-    "type": "Property",
+    "type": "Text",
     "value": "Level4Standardization"
   },
   "standardizationSource": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://www.w3.org/"
   },
   "temporal": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
     "2023-04-03T02:35:57Z"
     ]
   },
   "temporalResolution": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "PT15M"
     ]
   },
   "theme": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
     "Economy",
     "Tourism"
     ]
   },
   "title": {
-    "type": "LanguageProperty",
-    "languageMap": {
+    "type": "StructuredValue",
+    "value": {
       "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
       "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
       "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
@@ -293,25 +300,25 @@
     }
   },
   "Type": {
-    "type": "Property",
+    "type": "Text",
     "value": "service"
   },
   "validationSchema": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json"
   },
   "version": {
-    "type": "Property",
+    "type": "Text",
     "value": "3.0"
   },
   "versionNotes": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "With temporal evolution"
     ]
   },
   "wasGeneratedBy": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "meloda Team"
     ]

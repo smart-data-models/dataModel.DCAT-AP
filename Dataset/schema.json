@@ -37,9 +37,8 @@
           "description": "Property. Model:'http://purl.org/dc/terms/Frequency'. This property refers to the frequency at which the Dataset is updated."
         },
         "addressesAvailable": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has postal addresses to identify the elements in the dataset.",
-          "enum": ["True", "False"]
+          "type": "boolean",
+          "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has postal addresses to identify the elements in the dataset."
         },
         "applicableLegislation": {
           "type": "array",
@@ -76,10 +75,16 @@
         },
         "contactPoint": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2006/vcard/ns#Kind'. This property contains contact information that can be used for sending comments about the Dataset.",
+          "description": "Property. Model:'http://www.w3.org/ns/dcat#contactPoint'. Contact information that can be used for sending comments about the Dataset. Cardinality: 0..n.",
           "items": {
-            "type": "string",
-            "description": "Property. Every contact element."
+            "type": "object",
+            "description": "Property. Every contact element",
+            "properties" : {
+              "email": {
+                "type": "string",
+                "format": "email"
+              }
+            }
           }
         },
         "creator": {
@@ -188,9 +193,8 @@
           }
         },
         "geolocation": {
-          "type": "string",
-          "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has geolocation (coordinates) in any of its attributes.",
-          "enum": ["True", "False"]
+          "type": "boolean",
+          "description": "Property. Model:'https://schema.org/Boolean'. Defines if the data stream has geolocation (coordinates) in any of its attributes."
         },
         "hasVersion": {
           "type": "array",
@@ -907,7 +911,7 @@
         },
         "qualifiedAttribution": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property refers to a link to an Agent having some form of responsibility for the resource.",
+          "description": "Relationship. Model:'https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Attribution'. This property refers to a link to an Agent having some form of responsibility for the resource.",
           "items": {
             "type": "string",
             "description": "Property. Every attribution included."

@@ -37,11 +37,9 @@
     "type": "Property",
     "value": [
       {
-        "type": "ContactPoint",
         "email": "wheatfarm@email.com"
       },
       {
-        "type": "ContactPoint",
         "email": "vehiculoelectrico@ava.es"
       }
     ]
@@ -167,9 +165,9 @@
   },
   "validationSchema": {
     "type": "Property",
-    "value": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/DataService/schema.json"
+    "value": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json"
   },
   "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+    "https://smart-data-models.github.io/dataModel.DCAT-AP/context.jsonld"
   ]
 }
