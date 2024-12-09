@@ -1,72 +1,173 @@
 {
-    "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",
-    "type": "DataService",
-    "accessRights": {
-        "type": "Property",
-        "value": "No restrictions to access the data but APi requests limit, 5000 requests per hour"
-    },
-    "address": {
-        "type": "Property",
-        "value": {
-            "streetAddress": "2, rue Mercier",
-            "addressLocality": "Luxembourg",
-            "addressRegion": "Luxembourg",
-            "addressCountry": "Luxembourg",
-            "postalCode": "2985",
-            "postOfficeBoxNumber": ""
-        }
-    },
-    "areaServed": {
-        "type": "Property",
-        "value": "European union and beyond"
-    },
-    "description": {
-        "type": "Property",
-        "value": "Data service for the solar system open data portal."
-    },
-    "endPointDescription": {
-        "type": "Property",
-        "value": [
-            "SPARQL end point without authentication",
-            "API compliant with CKAN specification"
-        ]
-    },
-    "endPointURL": {
-        "type": "Property",
-        "value": [
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
-            "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"
-        ]
-    },
-    "license": {
-        "type": "Property",
-        "value": "EUPL."
-    },
-    "location": {
-        "type": "GeoProperty",
-        "value": {
-            "type": "Point",
-            "coordinates": [
-                72.564509,
-                11.125289
-            ]
-        }
-    },
-    "servesDataset": {
-        "type": "Property",
-        "value": [
-            "EU geographic map",
-            "EU physical map"
-        ]
-    },
-    "title": {
-        "type": "Property",
-        "value": [
-            "Data service of the european open data portal",
-            "Data service del portal europeo de datos abiertos"
-        ]
-    },
-    "@context": [
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+  "id": "urn:ngsi-ld:DataService:id:JBDJ:56257192",
+  "type": "DataService",
+  "accessRights": {
+    "type": "Property",
+    "value": "No restrictions to access the data but APi requests limit, 5000 requests per hour"
+  },
+  "address": {
+    "type": "Property",
+    "value": {
+      "streetAddress": "2, rue Mercier",
+      "addressLocality": "Luxembourg",
+      "addressRegion": "Luxembourg",
+      "addressCountry": "Luxembourg",
+      "postalCode": "2985",
+      "postOfficeBoxNumber": ""
+    }
+  },
+  "applicableLegislation": {
+    "type": "Property",
+    "value": [
+      "Regulation 883/2004",
+      "Regulation 465/2012"
     ]
+  },
+  "areaServed": {
+    "type": "Property",
+    "value": "European Union and beyond"
+  },
+  "conformsTo": {
+    "type": "Property",
+    "value": [
+      "OGC WFS API"
+    ]
+  },
+  "contactPoint": {
+    "type": "Property",
+    "value": [
+      {
+        "email": "wheatfarm@email.com"
+      },
+      {
+        "email": "vehiculoelectrico@ava.es"
+      }
+    ]
+  },
+  "description": {
+    "type": "LanguageProperty",
+    "languageMap": {
+      "en": "Data service of the european open data portal",
+      "de": "Datendienst des Europäischen Portals für offene Daten",
+      "es": "Data service del portal europeo de datos abiertos",
+      "fr": "Service de données du portail européen de données ouvertes",
+      "it": "Servizio dati del Portale europeo dei dati aperti",
+      "ja": "欧州オープンデータ・ポータルのデータサービス",
+      "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+      "zh": "欧洲开放数据门户的数据服务",
+      "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+      "nl": "Dataservice van het Europese open dataportaal",
+      "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+    }
+  },
+  "endpointDescription": {
+    "type": "Property",
+    "value": [
+      "SPARQL end point without authentication",
+      "API compliant with CKAN specification"
+    ]
+  },
+  "endpointURL": {
+    "type": "Property",
+    "value": [
+      "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
+      "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"
+    ]
+  },
+  "format": {
+    "type": "Property",
+    "value": [
+      "CSV",
+      "JSON"
+    ]
+  },
+  "keyword": {
+    "type": "Property",
+    "value": [
+      "Data Service",
+      "CKAN"
+    ]
+  },
+  "landingPage": {
+    "type": "Property",
+    "value": [
+      "https://dataservice.data",
+      "https://otherservice.data"
+    ]
+  },
+  "lastUpdated": {
+    "type": "Property",
+    "value": {
+      "@type": "DateTime",
+      "@value": "2021-07-01T10:27:59Z"
+    }
+  },
+  "license": {
+    "type": "Property",
+    "value": "GPL-1.0"
+  },
+  "operationSpace": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        72.564509,
+        11.125289
+      ]
+    }
+  },
+  "page": {
+    "type": "Property",
+    "value": [
+      "http://foo.org/how-to"
+    ]
+  },
+  "provenance": {
+    "type": "Property",
+    "value": [
+      "1",
+      "2"
+    ]
+  },
+  "publisher": {
+    "type": "Property",
+    "value": "Comunidad de madrid"
+  },
+  "servesDataset": {
+    "type": "Relationship",
+    "object": [
+      "urn:ngsi-ld:Dataset:id:HUZY:41266715",
+      "urn:ngsi-ld:Dataset:id:HUZY:41266716"
+    ]
+  },
+  "theme": {
+    "type": "Property",
+    "value": [
+      "Economy",
+      "Tourism"
+    ]
+  },
+  "title": {
+    "type": "LanguageProperty",
+    "languageMap": {
+      "en": "Data service of the european open data portal",
+      "de": "Datendienst des Europäischen Portals für offene Daten",
+      "es": "Data service del portal europeo de datos abiertos",
+      "fr": "Service de données du portail européen de données ouvertes",
+      "it": "Servizio dati del Portale europeo dei dati aperti",
+      "ja": "欧州オープンデータ・ポータルのデータサービス",
+      "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+      "zh": "欧洲开放数据门户的数据服务",
+      "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+      "nl": "Dataservice van het Europese open dataportaal",
+      "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+    }
+  },
+  "validationSchema": {
+    "type": "Property",
+    "value": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json"
+  },
+  "@context": [
+    "https://smart-data-models.github.io/dataModel.DCAT-AP/context.jsonld"
+  ]
 }

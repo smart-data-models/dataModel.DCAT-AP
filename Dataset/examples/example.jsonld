@@ -1,67 +1,52 @@
 {
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",
   "type": "Dataset",
-  "modified": "2015-07-13T03:09:32Z",
-  "source": [
-    "urn:ngsi-ld:Dataset:items:YSWN:41266715"
-  ],
-  "description": [
-    "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."
-  ],
-  "title": [
-    "Alojamientos tur\u00edsticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"
-  ],
-  "contactPoint": [
-    "https://datos.gob.es/es/comment/reply/145778."
+  "accessMechanism": "Level3AccessMechanism",
+  "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
+  "accuralPeriodicity": "weekly",
+  "addressesAvailable": true,
+  "applicableLegislation": [
+    "Regulation 883/2004",
+    "Regulation 465/2012"
   ],
   "belongsToCatalogue": "urn:ngsi-ld:Catalogue:items:MWVK:61846917",
+  "conformsTo": [
+    "http://www.opengis.net/def/crs/EPSG/0/28992",
+    "http://data.europa.eu/eli/reg/2014/1312/oj"
+  ],
+  "contactPoint": [
+    {
+      "email": "wheatfarm@email.com"
+    },
+    {
+      "email": "vehiculoelectrico@ava.es"
+    }
+  ],
+  "creator": [
+    "Comunidad de Madrid"
+  ],
+  "description": {
+    "languageMap": {
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
+      "zh": "马德里大区不同类型和类别的旅游住宿。",
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
+    }
+  },
+  "dissemination": "Level2Dissemination",
+  "disseminationOrganization": "https://url_to_organization.org",
   "distribution": [
     "urn:ngsi-ld:Distribution:items:KJVK:30944451",
     "urn:ngsi-ld:Distribution:items:MMWU:84196227"
   ],
-  "keyword": [
-    "alojamiento",
-    "apartamento rural",
-    "apartamento tur\u00edstico",
-    "campamento de turismo",
-    "camping",
-    "casa rural",
-    "casas de hu\u00e9spedes",
-    "hostal",
-    "hostel",
-    "hosteria",
-    "hotel",
-    "hotel rural",
-    "hotel-apartamento",
-    "pension",
-    "vivienda de uso turistico"
-  ],
-  "publisher": "Statement which consumer product thought total. Nothing concern picture involve paper nor kid.",
-  "spatial": [
-    {
-      "type": "Point",
-      "coordinates": [
-        9.922458,
-        109.478534
-      ]
-    }
-  ],
-  "temporal": [
-    "2023-04-03T02:35:57Z"
-  ],
-  "theme": [
-    "Economy",
-    "Tourism"
-  ],
-  "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",
-  "creator": [
-    "Comunidad de Madrid"
-  ],
-  "page": [
-    "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
-    "urn:ngsi-ld:Dataset:items:GKJO:30040605"
-  ],
-  "accrualPeriodicity": "weekly",
+  "geolocation": true,
   "hasVersion": [
     "urn:ngsi-ld:Dataset:items:SQSB:90831182",
     "urn:ngsi-ld:Dataset:items:FFVZ:69502935"
@@ -69,6 +54,10 @@
   "identifier": [
     "urn:ngsi-ld:Dataset:items:MBNQ:57176010",
     "urn:ngsi-ld:Dataset:items:DDDJ:93242038"
+  ],
+  "inSeries": [
+    "urn:ngsi-ld:Dataset:id:HUZY:681332655",
+    "urn:ngsi-ld:Dataset:id:HUZY:681970245"
   ],
   "isReferencedBy": [
     "urn:ngsi-ld:Dataset:items:YQRP:33454193",
@@ -78,6 +67,24 @@
     "urn:ngsi-ld:Dataset:items:AMAC:16896252",
     "urn:ngsi-ld:Dataset:items:IPSO:04920226"
   ],
+  "issued": "1983-07-16T12:51:26Z",
+  "keyword": [
+    "alojamiento",
+    "apartamento rural",
+    "apartamento turístico",
+    "campamento de turismo",
+    "camping",
+    "casa rural",
+    "casas de huéspedes",
+    "hostal",
+    "hostel",
+    "hosteria",
+    "hotel",
+    "hotel rural",
+    "hotel-apartamento",
+    "pension",
+    "vivienda de uso turístico"
+  ],
   "landingPage": [
     "urn:ngsi-ld:Dataset:items:UMBA:72418275",
     "urn:ngsi-ld:Dataset:items:GUKW:86586813"
@@ -86,17 +93,24 @@
     "EN",
     "SP"
   ],
+  "license": "AGPL-3.0",
+  "modified": "2015-07-13T03:09:32Z",
   "otherIdentifier": [
     "urn:ngsi-ld:Dataset:items:ZNYR:18053145",
     "urn:ngsi-ld:Dataset:items:ICBO:96194869"
+  ],
+  "page": [
+    "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
+    "urn:ngsi-ld:Dataset:items:GKJO:30040605"
   ],
   "provenance": [
     "1",
     "2"
   ],
+  "publisher": "Statement which consumer product thought total. Nothing concern picture involve paper nor kid.",
   "qualifiedAttribution": [
-    "Central born manage evidence data. Answer doctor visit ready physical fact. Quite allow however certain lose heart.",
-    "Home interesting range ever. Magazine the instead particularly. Late have collection."
+    "urn:ngsi-ld:Agent:2567369057",
+    "urn:ngsi-ld:Agent:6457369057"
   ],
   "qualifiedRelation": [
     "urn:ngsi-ld:Dataset:items:ITFK:67369057",
@@ -106,22 +120,62 @@
     "urn:ngsi-ld:Dataset:items:FXEY:35067714",
     "urn:ngsi-ld:Dataset:items:YYOL:47950545"
   ],
-  "releaseDate": "1983-07-16T12:51:26Z",
+  "reputation": "Level2Reputation",
+  "reputationOrganization": "https://url_to_organization.org",
   "sample": [
     "urn:ngsi-ld:Dataset:items:QJPZ:50290394",
     "urn:ngsi-ld:Dataset:items:ZSSA:73451152"
   ],
-  "spatialResolutionInMeters": 0.6,
+  "source": [
+    "urn:ngsi-ld:Dataset:items:YSWN:41266715"
+  ],
+  "spatial": [
+    {
+      "type": "Point",
+      "coordinates": [
+        9.922458,
+        109.478534
+      ]
+    }
+  ],
+  "spatialResolution": 0.6,
+  "standardization": "Level4Standardization",
+  "standardizationSource": "https://www.w3.org/",
+  "temporal": [
+    "2023-04-03T02:35:57Z"
+  ],
   "temporalResolution": [
     "PT15M"
   ],
-  "Type": "",
-  "version": "",
-  "versionNotes": [],
+  "theme": [
+    "Economy",
+    "Tourism"
+  ],
+  "title": {
+    "languageMap": {
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",
+      "zh": "马德里大区不同类型和类别的旅游住宿。",
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."
+    }
+  },
+  "Type": "service",
+  "validationSchema": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json",
+  "version": "3.0",
+  "versionNotes": [
+    "With temporal evolution"
+  ],
   "wasGeneratedBy": [
     "datos.gob.es"
   ],
   "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"
+    "https://smart-data-models.github.io/dataModel.DCAT-AP/context.jsonld"
   ]
 }
