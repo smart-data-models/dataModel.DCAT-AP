@@ -95,7 +95,7 @@
     ]
   },
   "identifier": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Dataset:items:MBNQ:57176010",
       "urn:ngsi-ld:Dataset:items:DDDJ:93242038"
@@ -116,7 +116,7 @@
     ]
   },
   "isVersionOf": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Dataset:items:RBWE:31388012",
       "urn:ngsi-ld:Dataset:items:GATZ:02632837"
@@ -174,14 +174,14 @@
     }
   },
   "otherIdentifier": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Dataset:items:ZNYR:18053145",
       "urn:ngsi-ld:Dataset:items:ICBO:96194869"
       ]
   },
   "page": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
       "urn:ngsi-ld:Dataset:items:GKJO:30040605"
@@ -199,21 +199,21 @@
     "value": "Comunidad de madrid"
   },
   "qualifiedAttribution": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Agent:2567369057",
       "urn:ngsi-ld:Agent:6457369057"
     ]
   },
   "qualifiedRelation": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Dataset:items:ITFK:67369057",
       "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
     ]
   },
   "relation": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",
       "urn:ngsi-ld:Dataset:items:ZAUC:79968579"
@@ -228,7 +228,7 @@
     "value": "https://url_to_organization.org"
   },
   "sample": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:Dataset:items:MLHW:64299003",
       "urn:ngsi-ld:Dataset:items:GNXL:59256807"

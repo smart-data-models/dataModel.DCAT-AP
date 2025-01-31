@@ -29,13 +29,11 @@ notesHeader:
 notesMiddle:
   
 notesFooter:
-  # CHANGELOG DCAT-AP <img align="right" src="/semic-icon-small.png" alt="SEMIC Core Vocabulary" />
-
-  ## DCAT-AP::Dataset 2.1.1 -> 3.0.0 ($schemaVersion": "2.0.1" -> $schemaVersion": "3.0.0")
-
-  - conformsTo changed the Model from 'http://purl.org/dc/terms/Standard' to 'http://purl.org/dc/terms/conformsTo'.
-  - title/description properties were represented as an array of strings, each entry in the array being a translation in a specific language. They are represented now as LanguageProperty defined in the ETSI NGSI-LD specification to offer multilanguage support of the Dataset data.
-  - hasVersion represented as Property, changed to Relationship of Datasets.
-  - language, defined the possible values are defined by the Library of Congress [ISO 639-1](http://id.loc.gov/vocabulary/iso639-1.html), [ISO 639-2](http://id.loc.gov/vocabulary/iso639-2.html).
-  - source changed from array of Properties to array of Relationships in the description of the property.
-  - versionInfo, as per the definition in the [DCAT v3 vocabulary specification](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version), they should be written version.
+  - CHANGELOG DCAT-AP
+      - DCAT-AP::Dataset 2.1.1 -> 3.0.0 (schemaVersion: "2.0.1" -> schemaVersion: "3.0.0").
+      - conformsTo changed the Model from 'http://purl.org/dc/terms/Standard' to 'http://purl.org/dc/terms/conformsTo'.
+      - title/description properties were represented as an array of strings, each entry in the array being a translation in a specific language. They are represented now as LanguageProperty defined in the ETSI NGSI-LD specification to offer multilanguage support of the Dataset data.
+      - hasVersion represented as Property, changed to Relationship of Datasets.
+      - language, defined the possible values are defined by the Library of Congress [ISO 639-1](http://id.loc.gov/vocabulary/iso639-1.html), [ISO 639-2](http://id.loc.gov/vocabulary/iso639-2.html).
+      - source changed from array of Properties to array of Relationships in the description of the property.
+      - versionInfo, as per the definition in the [DCAT v3 vocabulary specification](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version), they should be written version.

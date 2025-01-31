@@ -68,7 +68,7 @@
     ]
   },
   "endpointURL": {
-    "type": "Property",
+    "type": "Relationship",
     "value": [
       "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
       "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"

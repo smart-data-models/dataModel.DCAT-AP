@@ -219,7 +219,7 @@
         },
         "identifier": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.",
+          "description": "Relationship. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.",
           "items": {
             "type": "string",
             "format": "uri",
@@ -258,7 +258,7 @@
         },
         "isVersionOf": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Dataset'. This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.",
           "items": {
             "type": "string",
             "format": "uri",
@@ -881,7 +881,7 @@
         },
         "otherIdentifier": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/adms#Identifier'. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.",
+          "description": "Relationship. Model:'http://www.w3.org/ns/adms#Identifier'. This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.",
           "items": {
             "type": "string",
             "format": "uri",
@@ -890,7 +890,7 @@
         },
         "page": {
           "type": "array",
-          "description": "Property. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a page or document about this Dataset.",
+          "description": "Relationship. Model:'http://xmlns.com/foaf/0.1/Document'. This property refers to a page or document about this Dataset.",
           "items": {
             "type": "string",
             "format": "uri",
@@ -919,7 +919,7 @@
         },
         "qualifiedRelation": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Relationship'. This property provides a link to a description of a relationship with another resource.",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Relationship'. This property provides a link to a description of a relationship with another resource.",
           "items": {
             "type": "string",
             "format": "uri",
@@ -928,7 +928,7 @@
         },
         "relation": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property refers to a related resource.",
+          "description": "Relationship. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property refers to a related resource.",
           "items": {
             "type": "string",
             "format": "uri",
@@ -946,7 +946,7 @@
         },
         "sample": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/ns/dcat#Distribution'. This property refers to a sample distribution of the dataset.",
+          "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Distribution'. This property refers to a sample distribution of the dataset.",
           "items": {
             "type": "string",
             "format": "uri",
