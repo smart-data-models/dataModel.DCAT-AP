@@ -51,6 +51,7 @@
             "properties": {
               "email": {
                 "type": "string",
+                "description": "Property. Model:'https://www.w3.org/2006/vcard/ns#Email'. To specify the electronic mail address for communication with the object the DataService represents.",
                 "format": "email"
               }
             }
