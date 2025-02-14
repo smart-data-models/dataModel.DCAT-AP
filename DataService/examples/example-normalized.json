@@ -137,7 +137,7 @@
   },
   "servesDataset": {
     "type": "StructuredValue",
-    "object": [
+    "value": [
       "urn:ngsi-ld:Dataset:id:HUZY:41266715",
       "urn:ngsi-ld:Dataset:id:HUZY:41266716"
     ]

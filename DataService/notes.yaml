@@ -13,7 +13,7 @@ notesMiddle:
 
 notesFooter:
   - CHANGELOG DCAT-AP
-      - DCAT-AP::DataService 2.1.1 -> 3.0.0 (schemaVersion: "0.0.2" -> schemaVersion: "1.0.0")
+      - DCAT-AP::DataService 2.1.1 -> 3.0.0 (schemaVersion "0.0.2" -> schemaVersion "1.0.0")
       - contactPoint, new property in DCAT-AP 3.0.0, array of contacts information that can be used for sending comments about the Data Service.
       - format, new property in DCAT-AP 3.0.0, the structure that can be returned by querying the endpointURL.
       - keyword, new property in DCAT-AP 3.0.0, contains a list of keywords or tags, describing the Data Service. 
