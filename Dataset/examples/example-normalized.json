@@ -26,7 +26,7 @@
   },
   "belongsToCatalogue": {
     "type": "Text",
-    "object": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
+    "value": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"
   },
   "conformsTo": {
     "type": "StructuredValue",
@@ -80,7 +80,7 @@
   },
   "distribution": {
     "type": "StructuredValue",
-    "object": [
+    "value": [
       "urn:ngsi-ld:Distribution:items:KJVK:30944451",
       "urn:ngsi-ld:Distribution:items:MMWU:84196227"
     ]
@@ -112,7 +112,7 @@
   },
   "isReferencedBy": {
     "type": "StructuredValue",
-    "object": [
+    "value": [
       "urn:ngsi-ld:Dataset:items:HJNK:88711880",
       "urn:ngsi-ld:Dataset:items:MDEO:95193079"
     ]

@@ -82,6 +82,7 @@
             "properties" : {
               "email": {
                 "type": "string",
+                "description": "email as defined by the 'Mailbox' ABNF rule in RFC 5321, section 4.1.2 (https://datatracker.ietf.org/doc/html/rfc5321#section-4.1.2).",
                 "format": "email"
               }
             }
@@ -176,6 +177,7 @@
           "type": "array",
           "description": "Relationship. Model:'http://www.w3.org/ns/dcat#Distribution'. This property links the Dataset to an available Distribution.",
           "items": {
+            "description": "This property provides a list of distributions in the format of either URI or NGSI-LD Identifier.",
             "anyOf": [
               {
                 "type": "string",
