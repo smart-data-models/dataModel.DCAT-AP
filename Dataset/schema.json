@@ -82,7 +82,7 @@
             "properties" : {
               "email": {
                 "type": "string",
-                "description": "email as defined by the 'Mailbox' ABNF rule in RFC 5321, section 4.1.2 (https://datatracker.ietf.org/doc/html/rfc5321#section-4.1.2).",
+                "description": "Property. Email as defined by the 'Mailbox' ABNF rule in RFC 5321, section 4.1.2 (https://datatracker.ietf.org/doc/html/rfc5321#section-4.1.2).",
                 "format": "email"
               }
             }

@@ -89,21 +89,21 @@
   },
   "hasVersion": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:id:ASDF:68185655",
       "urn:ngsi-ld:Dataset:id:ASDF:78185655"
     ]
   },
   "identifier": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:MBNQ:57176010",
       "urn:ngsi-ld:Dataset:items:DDDJ:93242038"
     ]
   },
   "inSeries": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:id:HUZY:681332655",
       "urn:ngsi-ld:Dataset:id:HUZY:681970245"
     ]
@@ -117,7 +117,7 @@
   },
   "isVersionOf": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:RBWE:31388012",
       "urn:ngsi-ld:Dataset:items:GATZ:02632837"
     ]
@@ -132,21 +132,21 @@
   "keyword": {
     "type": "Property",
     "value": [
-    "alojamiento",
-    "apartamento rural",
-    "apartamento turístico",
-    "campamento de turismo",
-    "camping",
-    "casa rural",
-    "casas de huéspedes",
-    "hostal",
-    "hostel",
-    "hosteria",
-    "hotel",
-    "hotel rural",
-    "hotel-apartamento",
-    "pension",
-    "vivienda de uso turístico"
+      "alojamiento",
+      "apartamento rural",
+      "apartamento turístico",
+      "campamento de turismo",
+      "camping",
+      "casa rural",
+      "casas de huéspedes",
+      "hostal",
+      "hostel",
+      "hosteria",
+      "hotel",
+      "hotel rural",
+      "hotel-apartamento",
+      "pension",
+      "vivienda de uso turístico"
     ]
   },
   "landingPage": {
@@ -175,14 +175,14 @@
   },
   "otherIdentifier": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:ZNYR:18053145",
       "urn:ngsi-ld:Dataset:items:ICBO:96194869"
-      ]
+    ]
   },
   "page": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:EDTJ:28919577",
       "urn:ngsi-ld:Dataset:items:GKJO:30040605"
     ]
@@ -200,21 +200,21 @@
   },
   "qualifiedAttribution": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Agent:2567369057",
       "urn:ngsi-ld:Agent:6457369057"
     ]
   },
   "qualifiedRelation": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:ITFK:67369057",
       "urn:ngsi-ld:Dataset:items:ZJWX:10596189"
     ]
   },
   "relation": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:LGBY:74926949",
       "urn:ngsi-ld:Dataset:items:ZAUC:79968579"
     ]
@@ -229,14 +229,14 @@
   },
   "sample": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:MLHW:64299003",
       "urn:ngsi-ld:Dataset:items:GNXL:59256807"
     ]
   },
   "source": {
     "type": "Relationship",
-    "value": [
+    "object": [
       "urn:ngsi-ld:Dataset:items:YSWN:41266715"
     ]
   },
@@ -265,7 +265,7 @@
   "temporal": {
     "type": "Property",
     "value": [
-    "2023-04-03T02:35:57Z"
+      "2023-04-03T02:35:57Z"
     ]
   },
   "temporalResolution": {
@@ -277,8 +277,8 @@
   "theme": {
     "type": "Property",
     "value": [
-    "Economy",
-    "Tourism"
+      "Economy",
+      "Tourism"
     ]
   },
   "title": {

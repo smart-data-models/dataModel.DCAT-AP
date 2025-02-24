@@ -116,7 +116,8 @@
           "type": "array",
           "description": "Property. Model:'http://www.w3.org/2004/02/skos/core#ConceptScheme'. This property refers to a knowledge organization system used to classify the Catalogue's Datasets",
           "items": {
-            "type": "string"
+            "type": "string",
+            "description": "Property. The value to be used for this property is the URI of the vocabulary itself, i.e. the concept scheme, not the URIs of the concepts in the vocabulary."
           }
         },
         "modified": {
