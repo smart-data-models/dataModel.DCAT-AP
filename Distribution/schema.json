@@ -1,10 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "1.0.1",
-  "modelTags": "",
+  "modelTags": "INTERSTAT, WATERVERSE",
   "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Distribution/schema.json",
   "title": "Smart Data models DCAT-AP distribution of a Dataset, according to DCAT-AP 2.1.1",
   "description": "This is a distribution belonging ot a dataset according to the DCAT-AP standard 2.1.1",
+  "derivedFrom": "https://github.com/SEMICeu/DCAT-AP/blob/master/releases/2.1.1/dcat-ap_2.1.1.pdf",
+  "license": "https://creativecommons.org/licenses/by/4.0",
   "type": "object",
   "required": [
     "accessURL",
@@ -29,6 +31,7 @@
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Resource'. This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset",
           "items": {
             "type": "string",
+            "description": "Property. URL that gives access to a Distribution of the Dataset",
             "minItems": 1
           }
         },
@@ -68,9 +71,13 @@
           "type": "string",
           "description": "Property. Model:'http://spdx.org/rdf/terms#Checksum'. This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL"
         },
-        "compressFormat": {
+        "compressionFormat": {
           "type": "string",
           "description": "Property. Model:'http://purl.org/dc/terms/MediaType'. This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA"
+        },
+        "packagingFormat": {
+          "type": "string",
+          "description": "Property. Model:'http://purl.org/dc/terms/MediaType'. This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA. Cardinality (0..1)"
         },
         "belongsToDataset": {
           "description": "Relationship. It links the Distribution to its parent Dataset. Model:'https://www.w3.org/ns/dcat#Dataset'. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1",
@@ -145,7 +152,11 @@
         },
         "spatialResolutionInMeters": {
           "type": "array",
-          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a distribution, measured in meters"
+          "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a distribution, measured in meters",
+          "items": {
+            "type": "string",
+            "description": "Property. The minimum spatial separation resolvable in a dataset distribution, measured in meters."
+          }
         },
         "status": {
           "type": "string",

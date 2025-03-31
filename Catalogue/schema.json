@@ -1,10 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "1.0.1",
-  "modelTags": "",
+  "modelTags": "INTERSTAT, WATERVERSE",
   "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/Catalogue/schema.json",
   "title": " Smart Data Models - CatalogueDCAT-AP",
   "description": "Catalogue of datasets compliant with DCAT-AP specification version 2.1.1.",
+  "derivedFrom": "https://github.com/SEMICeu/DCAT-AP/blob/master/releases/2.1.1/dcat-ap_2.1.1.pdf",
+  "license": "https://creativecommons.org/licenses/by/4.0",
   "type": "object",
   "allOf": [
     {
