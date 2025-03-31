@@ -154,7 +154,7 @@
           "type": "array",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property refers to the minimum spatial separation resolvable in a distribution, measured in meters",
           "items": {
-            "type": "string",
+            "type": "number",
             "description": "Property. The minimum spatial separation resolvable in a dataset distribution, measured in meters."
           }
         },
