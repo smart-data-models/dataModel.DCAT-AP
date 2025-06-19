@@ -97,5 +97,13 @@
       "nl": "Dataservice van het Europese open dataportaal",
       "fi": "Euroopan avoimen datan portaalin tietopalvelu"
   },
+  "imageSource": "https://images.app.goo.gl/ZYWsnKdMG7eaKBs18",
+  "version": 1.0,
+  "versionNotes": "Improved the performance of the Data Service",
+  "disseminationOrganisation": "https://www.comunidad.madrid/",
+  "dissemination": "Available resources on updates.",
+  "reputationOrganisation": "https://www.comunidad.madrid/",
+  "reputation": "Statistics or reports published on user's opinions.",
+  "accessMechanism": "The Data Service is accessible via an API.",
   "validationSchema": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json"
 }

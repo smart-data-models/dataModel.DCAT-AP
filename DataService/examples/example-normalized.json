@@ -165,6 +165,38 @@
       "fi": "Euroopan avoimen datan portaalin tietopalvelu"
     }
   },
+  "imageSource": {
+    "type": "Text",
+    "value": "https://images.app.goo.gl/ZYWsnKdMG7eaKBs18"
+  },
+  "version": {
+    "type": "Text",
+    "value": 1.0
+  },
+  "versionNotes": {
+    "type": "Text",
+    "value": "Improved the performance of the Data Service"
+  },
+  "disseminationOrganisation": {
+    "type": "StructuredValue",
+    "value": "https://www.comunidad.madrid/"
+  },
+  "dissemination": {
+    "type": "Text",
+    "value": "Available resources on updates."
+  },
+  "reputationOrganisation": {
+    "type": "StructuredValue",
+    "value": "https://www.comunidad.madrid/"
+  },
+  "reputation": {
+    "type": "Text",
+    "value": "Statistics or reports published on user's opinions."
+  },
+  "accessMechanism": {
+    "type": "Text",
+    "value": "The Data Service is accessible via an API."
+  },
   "validationSchema": {
     "type": "Text",
     "value": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json"

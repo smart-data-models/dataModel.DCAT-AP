@@ -101,6 +101,19 @@
       "fi": "Euroopan avoimen datan portaalin tietopalvelu"
     }
   },
+  "imageSource": "https://images.app.goo.gl/ZYWsnKdMG7eaKBs18",
+  "version": {
+    "value": 1.0,
+    "observedAt": "2025-06-12T14:00:00Z",
+    "versionNotes": {
+      "value": "Improved the performance of the Data Service"
+    }
+  },
+  "disseminationOrganisation": "urn:ngsi-ld:City:ComunidadMadrid",
+  "dissemination": "Available resources on updates.",
+  "reputationOrganisation": "urn:ngsi-ld:City:ComunidadMadrid",
+  "reputation": "Statistics or reports published on user's opinions.",
+  "accessMechanism": "The Data Service is accessible via an API.",
   "validationSchema": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json",
   "@context": [
     "https://smart-data-models.github.io/dataModel.DCAT-AP/context.jsonld"
