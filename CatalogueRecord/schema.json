@@ -1,10 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "1.0.1",
-  "modelTags": "",
+  "modelTags": "INTERSTAT, WATERVERSE",
   "$id": "https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueRecord/schema.json",
   "title": "Smart Data models - DCAT-AP Catalogue Record",
   "description": "This is a Catalogue Record belonging to a dataset according to the DCAT-AP standard 2.1.1",
+  "derivedFrom": "https://github.com/SEMICeu/DCAT-AP/blob/master/releases/2.1.1/dcat-ap_2.1.1.pdf",
+  "license": "https://creativecommons.org/licenses/by/4.0",
   "type": "object",
   "allOf": [
     {
@@ -68,7 +70,8 @@
           "type": "array",
           "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name",
           "items": {
-            "type": "string"
+            "type": "string",
+            "description": "Property. Model:'http://www.w3.org/2000/01/rdf-schema#Literal'. Every title."
           }
         }
       }

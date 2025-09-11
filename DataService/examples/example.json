@@ -10,33 +10,92 @@
     "postalCode": "2985",
     "streetAddress": "2, rue Mercier"
   },
-  "areaServed": "European union and beyond",
-  "description": [
-    "Digital resources for accessing to the end points of the EU open data portal for solar system.",
-    "Recursos digitales para el acceso a los puntos de interaccion del portal europeo de datos abiertos del sistema solar."
+  "applicableLegislation": [
+    "Regulation 883/2004",
+    "Regulation 465/2012"
   ],
-  "endPointDescription": [
+  "areaServed": "European Union and beyond",
+  "conformsTo": [
+    "OGC WFS API"
+  ],
+  "contactPoint": [
+    {
+      "email": "wheatfarm@email.com"
+    },
+    {
+      "email": "vehiculoelectrico@ava.es"
+    }
+  ],
+  "description": {
+      "en": "Data service of the european open data portal",
+      "de": "Datendienst des Europäischen Portals für offene Daten",
+      "es": "Data service del portal europeo de datos abiertos",
+      "fr": "Service de données du portail européen de données ouvertes",
+      "it": "Servizio dati del Portale europeo dei dati aperti",
+      "ja": "欧州オープンデータ・ポータルのデータサービス",
+      "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+      "zh": "欧洲开放数据门户的数据服务",
+      "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+      "nl": "Dataservice van het Europese open dataportaal",
+      "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+  },
+  "endpointDescription": [
     "SPARQL end point without authentication",
     "API compliant with CKAN specification"
   ],
-  "endPointURL": [
+  "endpointURL": [
     "urn:ngsi-ld:DataServiceDCAT-AP:items:AFGI:79071729",
     "urn:ngsi-ld:DataServiceDCAT-AP:items:JAZP:97999812"
   ],
-  "license": "EUPL.",
-  "location": {
+  "format": [
+    "CSV",
+    "JSON"
+  ],
+  "keyword": [
+    "Data Service",
+    "CKAN"
+  ],
+  "landingPage": [
+    "https://dataservice.data",
+    "https://otherservice.data"
+  ],
+  "lastUpdated": "2021-07-01T10:27:59Z",
+  "license": "GPL-1.0",
+  "operationSpace": {
     "coordinates": [
       72.564509,
       11.125289
     ],
     "type": "Point"
   },
-  "servesDataset": [
-    "EU geographic map",
-    "EU physical map"
+  "page": [
+    "http://foo.org/how-to"
   ],
-  "title": [
-    "Data service of the european open data portal",
-    "Data service del portal europeo de datos abiertos"
-  ]
+  "provenance": [
+    "1",
+    "2"
+  ],
+  "publisher": "Comunidad de madrid",
+  "servesDataset": [
+    "urn:ngsi-ld:Dataset:id:HUZY:41266715",
+    "urn:ngsi-ld:Dataset:id:HUZY:41266716"
+  ],
+  "theme": [
+    "Economy",
+    "Tourism"
+  ],
+  "title": {
+      "en": "Data service of the european open data portal",
+      "de": "Datendienst des Europäischen Portals für offene Daten",
+      "es": "Data service del portal europeo de datos abiertos",
+      "fr": "Service de données du portail européen de données ouvertes",
+      "it": "Servizio dati del Portale europeo dei dati aperti",
+      "ja": "欧州オープンデータ・ポータルのデータサービス",
+      "ko": "유럽 오픈 데이터 포털의 데이터 서비스",
+      "zh": "欧洲开放数据门户的数据服务",
+      "el": "Υπηρεσία δεδομένων της Ευρωπαϊκής Πύλης Ανοικτών Δεδομένων",
+      "nl": "Dataservice van het Europese open dataportaal",
+      "fi": "Euroopan avoimen datan portaalin tietopalvelu"
+  },
+  "validationSchema": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json"
 }
