@@ -1053,6 +1053,38 @@
             }
           ]
         },
+        "imageSource": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/url'. URL to an image that can be used to accompany the presentation of the Data Service."
+        },
+        "version": {
+          "type": "string",
+          "description": "Property. Model:'https://www.w3.org/ns/dcat#version'. The version indicator (name or identifier) of a resource."
+        },
+        "versionNotes": {
+          "type": "string",
+          "description": "Property. Model:'https://www.w3.org/TR/vocab-adms/#adms-versionnotes'. A description of changes between this version and the previous version of the resource."
+        },
+        "disseminationOrganisation": {
+          "type": "string",
+          "description": "Relationship. Model:'http://xmlns.com/foaf/0.1/Agent'. The organisation in charge of the dissemenation of the Data Service."
+        },
+        "dissemination": {
+          "type": "string",
+          "description": "Property. A summary of the dissemination effort that is done by the organisation (not systematic, available resources on updates, proactive dissemination / push dissemination,...)."
+        },
+        "reputationOrganisation": {
+          "type": "string",
+          "description": "Relationship. Model:'http://xmlns.com/foaf/0.1/Agent'. The organisation in charge of the reputation of the Data Service."
+        },
+        "reputation": {
+          "type": "string",
+          "description": "Property. A summary of the reputation effort that is done by the organisation (no information, statistics or reports published on user's opinions, indicators or rankings on reputation of the data source,...)."
+        },
+        "accessMechanism": {
+          "type": "string",
+          "description": "Property. How the information can be accessed (Web access or unique URL parameters to dataset, Web Access unique with parameters to single data, API or query language,...)."
+        },
         "validationSchema": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/url'. URL to the technical validation schema for the DataService (JSON Schema) in the Smart Data Models program."

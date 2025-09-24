@@ -167,6 +167,39 @@
     "type": "Property",
     "value": "https://smart-data-models.github.io/dataModel.DCAT-AP/DataService/schema.json"
   },
+  "imageSource": {
+    "type": "Property",
+    "value": "https://images.app.goo.gl/ZYWsnKdMG7eaKBs18"
+  },
+  "version": {
+    "type": "Property",
+    "value": "1.0",
+    "observedAt": "2025-06-12T14:00:00Z",
+    "versionNotes": {
+      "type": "Property",
+      "value": "Improved the performance of the Data Service"
+    }
+  },
+  "disseminationOrganisation": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:City:ComunidadMadrid"
+  },
+  "dissemination": {
+    "type": "Property",
+    "value": "Available resources on updates."
+  },
+  "reputationOrganisation": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:City:ComunidadMadrid"
+  },
+  "reputation": {
+    "type": "Property",
+    "value": "Statistics or reports published on user's opinions."
+  },
+  "accessMechanism": {
+    "type": "Property",
+    "value": "The Data Service is accessible via an API."
+  },
   "@context": [
     "https://smart-data-models.github.io/dataModel.DCAT-AP/context.jsonld"
   ]
