@@ -98,7 +98,7 @@
       "fi": "Euroopan avoimen datan portaalin tietopalvelu"
   },
   "imageSource": "https://images.app.goo.gl/ZYWsnKdMG7eaKBs18",
-  "version": 1.0,
+  "version": "1.0",
   "versionNotes": "Improved the performance of the Data Service",
   "disseminationOrganisation": "https://www.comunidad.madrid/",
   "dissemination": "Available resources on updates.",

@@ -173,7 +173,7 @@
   },
   "version": {
     "type": "Property",
-    "value": 1.0,
+    "value": "1.0",
     "observedAt": "2025-06-12T14:00:00Z",
     "versionNotes": {
       "type": "Property",
