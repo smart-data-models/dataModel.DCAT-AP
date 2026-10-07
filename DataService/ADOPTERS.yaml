@@ -16,3 +16,11 @@ currentAdopters:
  project: https://salted-project.eu/
  comments: 
  startDate:
+-
+ adopter: Waterverse Project
+ description:
+ mail:
+ organization:
+ project:  https://waterverse.eu/
+ comments: Adoption of DCAT-AP to define metadata information of Datasets including FAIR and Meloda5 principles
+ startDate: 2024-10-01

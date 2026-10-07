@@ -20,10 +20,8 @@
     ]
   },
   "listingDate": {
-    "type": {
-      "@type": "Property",
-      "@value": "2021-07-02T18:37:55Z"
-    }
+    "type": "Property",
+    "value": "2021-07-02T18:37:55Z"
   },
   "location": {
     "type": "GeoProperty",
@@ -36,13 +34,9 @@
     }
   },
   "modified": {
-    "type": {
-      "@type": "Property",
-      "@value": "2021-07-02T18:37:55Z"
-    }
+    "type": "Property",
+    "value": "2021-07-02T18:37:55Z"
   },
-
-
   "primaryTopic": {
     "type": "Property",
     "value": "Public administration"

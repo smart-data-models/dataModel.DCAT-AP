@@ -5,6 +5,8 @@
   "title": " Smart Data Models - Data Service Run extension to DCAT-AP",
   "description": "A representation of one specific run of a data service (e.g. DataServiceDCAT-AP).",
   "modelTags": "SALTED",
+  "derivedFrom": "https://github.com/SEMICeu/DCAT-AP/blob/master/releases/2.1.1/dcat-ap_2.1.1.pdf",
+  "license": "https://creativecommons.org/licenses/by/4.0",
   "type": "object",
   "allOf": [
     {
@@ -44,7 +46,8 @@
           "description": "Property. A list of uri pointing to external results that were generated within a service run",
           "items": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "Property. A uri pointing to external results that were generated within a service run"
           }
         },
         "sourceEntities": {
@@ -72,7 +75,8 @@
           "description": "Property. A list of uri pointing to external results that acted as source within a service run",
           "items": {
             "type": "string",
-            "format": "uri"
+            "format": "uri",
+            "description": "Property. A uri pointing to external results that acted as source within a service run"
           }
         },
         "service": {
@@ -100,10 +104,12 @@
             "properties": {
               "parameter": {
                 "type": "string",
-                "format": "text"
+                "format": "text",
+                "description": "Property. Name of the parameter"
               },
               "value": {
-                "type": "string"
+                "type": "string",
+                "description": "Property. Value of the parameter"
               }
             }
           }
