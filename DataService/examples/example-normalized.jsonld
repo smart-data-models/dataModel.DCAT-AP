@@ -174,11 +174,11 @@
   "version": {
     "type": "Property",
     "value": "1.0",
-    "observedAt": "2025-06-12T14:00:00Z",
-    "versionNotes": {
-      "type": "Property",
-      "value": "Improved the performance of the Data Service"
-    }
+    "observedAt": "2025-06-12T14:00:00Z"
+  },
+  "versionNotes": {
+    "type": "Property",
+    "value": "Improved the performance of the Data Service"
   },
   "disseminationOrganisation": {
     "type": "Relationship",
