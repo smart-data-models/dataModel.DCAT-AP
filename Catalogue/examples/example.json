@@ -17,8 +17,7 @@
     "addressRegion": "Luxembourg",
     "addressCountry": "Luxembourg",
     "postalCode": "2985 ",
-    "postOfficeBoxNumber": "",
-    "areaServed": "European Union"
+    "postOfficeBoxNumber": ""
   },
   "dataset": [
     "urn:ngsi-ld:Catalogue:dataset:ZBCW:95668818"
