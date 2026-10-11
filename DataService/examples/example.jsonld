@@ -102,13 +102,8 @@
     }
   },
   "imageSource": "https://images.app.goo.gl/ZYWsnKdMG7eaKBs18",
-  "version": {
-    "value": "1.0",
-    "observedAt": "2025-06-12T14:00:00Z",
-    "versionNotes": {
-      "value": "Improved the performance of the Data Service"
-    }
-  },
+  "version": "1.0",
+  "versionNotes": "Improved the performance of the Data Service",
   "disseminationOrganisation": "urn:ngsi-ld:City:ComunidadMadrid",
   "dissemination": "Available resources on updates.",
   "reputationOrganisation": "urn:ngsi-ld:City:ComunidadMadrid",
