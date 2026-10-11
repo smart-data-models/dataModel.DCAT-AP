@@ -179,7 +179,7 @@
   },
   "disseminationOrganisation": {
     "type": "StructuredValue",
-    "value": "https://www.comunidad.madrid/"
+    "value": "urn:ngsi-ld:City:ComunidadMadrid"
   },
   "dissemination": {
     "type": "Text",
@@ -187,7 +187,7 @@
   },
   "reputationOrganisation": {
     "type": "StructuredValue",
-    "value": "https://www.comunidad.madrid/"
+    "value": "urn:ngsi-ld:City:ComunidadMadrid"
   },
   "reputation": {
     "type": "Text",
