@@ -3,35 +3,36 @@
 Entité : CatalogueRecord  
 ========================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueRecord/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[Licence Ouverte](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecord/LICENSE.md)  
+[document généré automatiquement](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Description globale : **Il s'agit d'une fiche de catalogue appartenant à un ensemble de données conformément à la norme DCAT-AP 2.1.1**.  
-version : 1.0.1  
+Description globale : **Il s'agit d'un enregistrement de catalogue appartenant à un jeu de données conformément à la norme DCAT-AP 2.1.1**  
+version: 1.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>  
 - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
-	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse de la rue, et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité, et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local    
+	- `postOfficeBoxNumber[string]`: Le numéro de boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `conformsTo[string]`: Cette propriété fait référence à un profil d'application auquel les métadonnées de l'ensemble de données sont conformes.  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `description[array]`: Cette propriété contient un compte rendu en texte libre de l'enregistrement. Cette propriété peut être répétée pour les versions en langues parallèles de la description.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `id[*]`: Identifiant unique de l'entité  - `issued[date-time]`: Cette propriété contient la date à laquelle la description de l'ensemble de données a été incluse dans le catalogue.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: Cette propriété fait référence à une langue utilisée dans les métadonnées textuelles décrivant les titres, les descriptions, etc. de l'ensemble de données. Cette propriété peut être répétée si les métadonnées sont fournies dans plusieurs langues.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `modified[date-time]`: Cette propriété contient la date la plus récente à laquelle l'entrée du catalogue a été changée ou modifiée.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `primaryTopic[string]`: Cette propriété relie la fiche du catalogue à l'ensemble de données, au service de données ou au catalogue décrit dans la fiche.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `source[string]`: Cette propriété fait référence aux métadonnées originales qui ont été utilisées pour créer les métadonnées de l'ensemble de données.  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `status[string]`: Cette propriété fait référence au type de la dernière révision de l'entrée d'un jeu de données dans le catalogue.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: Cette propriété contient un nom donné à la notice du catalogue. Cette propriété peut être répétée pour les versions linguistiques parallèles du nom.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Type d'entité NGSI. Il doit s'agir de CatalogueRecord  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une rue publique    
+- `areaServed[string]`: La zone géographique où un service ou un article proposé est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `conformsTo[string]`: Cette propriété fait référence à un profil d'application auquel les métadonnées du jeu de données sont conformes  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `description[array]`: Cette propriété contient un compte rendu en texte libre de l'enregistrement. Cette propriété peut être répétée pour des versions linguistiques parallèles de la description  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `id[*]`: Identifiant unique de l'entité  - `issued[date-time]`: Cette propriété contient la date à laquelle la description du jeu de données a été incluse dans le catalogue  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: Cette propriété fait référence à une langue utilisée dans les métadonnées textuelles décrivant les titres, les descriptions, etc., du jeu de données. Cette propriété peut être répétée si les métadonnées sont fournies dans plusieurs langues  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon  - `modified[date-time]`: Cette propriété contient la date la plus récente à laquelle l'entrée du catalogue a été modifiée ou changée  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `primaryTopic[string]`: Cette propriété lie l'enregistrement du catalogue au jeu de données, au service de données ou au catalogue décrit dans l'enregistrement  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `source[string]`: Cette propriété fait référence aux métadonnées originales utilisées pour créer les métadonnées du jeu de données  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `status[string]`: Cette propriété fait référence au type de la dernière révision de l'entrée d'un jeu de données dans le catalogue  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: Cette propriété contient un nom donné à l'enregistrement du catalogue. Cette propriété peut être répétée pour des versions linguistiques parallèles du nom  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Type d'entité NGSI. Il doit s'agir de CatalogueRecord  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `modified`  - `primaryTopic`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Adapté de [DCAT-AP version 2.1.1] (https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211).  
-<!-- /40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+Adapté de [DCAT-AP version 2.1.1](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211).  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
-## Modèle de données description des propriétés  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
+## Description des propriétés du modèle de données  
+Trié par ordre alphabétique (cliquer pour les détails)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -43,36 +44,36 @@ CatalogueRecord:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'The country. For example, Spain'    
+          description: The country. For example, Spain    
           type: string    
           x-ngsi:    
             model: https://schema.org/addressCountry    
             type: Property    
         addressLocality:    
-          description: 'The locality in which the street address is, and which is in the region'    
+          description: The locality in which the street address is, and which is in the region    
           type: string    
           x-ngsi:    
             model: https://schema.org/addressLocality    
             type: Property    
         addressRegion:    
-          description: 'The region in which the locality is, and which is in the country'    
+          description: The region in which the locality is, and which is in the country    
           type: string    
           x-ngsi:    
             model: https://schema.org/addressRegion    
             type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          description: A district is a type of administrative division that, in some countries, is managed by the local government    
           type: string    
           x-ngsi:    
             type: Property    
         postOfficeBoxNumber:    
-          description: 'The post office box number for PO box addresses. For example, 03578'    
+          description: The post office box number for PO box addresses. For example, 03578    
           type: string    
           x-ngsi:    
             model: https://schema.org/postOfficeBoxNumber    
             type: Property    
         postalCode:    
-          description: 'The postal code. For example, 24004'    
+          description: The postal code. For example, 24004    
           type: string    
           x-ngsi:    
             model: https://schema.org/https://schema.org/postalCode    
@@ -113,7 +114,7 @@ CatalogueRecord:
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     id:    
       anyOf:    
@@ -131,16 +132,16 @@ CatalogueRecord:
             type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     issued:    
       description: This property contains the date on which the description of the Dataset was included in the Catalogue    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     language:    
-      description: 'This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages'    
+      description: This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages    
       items:    
         description: Every language tag    
         type: string    
@@ -151,20 +152,26 @@ CatalogueRecord:
         model: http://purl.org/dc/terms/LinguisticSystem    
         type: Property    
     location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon    
       oneOf:    
         - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
@@ -179,11 +186,15 @@ CatalogueRecord:
         - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -191,6 +202,8 @@ CatalogueRecord:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
@@ -205,11 +218,15 @@ CatalogueRecord:
         - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -219,6 +236,8 @@ CatalogueRecord:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
@@ -233,17 +252,23 @@ CatalogueRecord:
         - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
@@ -258,11 +283,15 @@ CatalogueRecord:
         - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -272,6 +301,8 @@ CatalogueRecord:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -291,6 +322,7 @@ CatalogueRecord:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
@@ -302,6 +334,8 @@ CatalogueRecord:
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
@@ -320,33 +354,37 @@ CatalogueRecord:
       format: date-time    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     primaryTopic:    
-      description: 'This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record'    
+      description: This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Dataset"    
+        model: http://www.w3.org/ns/dcat#Dataset    
         type: Property    
     source:    
       description: This property refers to the original metadata that was used in creating metadata for the Dataset    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#CatalogRecord"    
+        model: http://www.w3.org/ns/dcat#CatalogRecord    
         type: Property    
     status:    
       description: This property refers to the type of the latest revision of a Dataset's entry in the Catalogue    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2004/02/skos/core#Concept"    
+        model: http://www.w3.org/2004/02/skos/core#Concept    
         type: Property    
     title:    
       description: This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name    
       items:    
+        description: Every title.    
         type: string    
+        x-ngsi:    
+          model: http://www.w3.org/2000/01/rdf-schema#Literal    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     type:    
       description: NGSI entity type. It has to be CatalogueRecord    
@@ -361,11 +399,11 @@ CatalogueRecord:
     - primaryTopic    
     - modified    
   type: object    
-  x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-derived-from: https://github.com/SEMICeu/DCAT-AP/blob/master/releases/2.1.1/dcat-ap_2.1.1.pdf    
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
   x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecord/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueRecord/schema.json    
-  x-model-tags: ""    
+  x-model-tags: INTERSTAT, WATERVERSE    
   x-version: 1.0.1    
 ```  
 </details>    
@@ -374,14 +412,16 @@ CatalogueRecord:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
-#### CatalogueRecord Valeurs clés NGSI-v2 Exemple  
-Voici un exemple de CatalogueRecord au format JSON-LD en tant que valeurs clés. Il est compatible avec la NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### Exemple de CatalogueRecord NGSI-v2 sous forme de paires clé-valeur  
+Voici un exemple de CatalogueRecord au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
   "type": "CatalogueRecord",  
-  "description": ["Catalogue record of the solar system open data portal"],  
+  "description": [  
+    "Catalogue record of the solar system open data portal"  
+  ],  
   "location": {  
     "type": "Point",  
     "coordinates": [  
@@ -407,13 +447,13 @@ CatalogueRecord:
   ],  
   "title": [  
     "Example of catalogue record",  
-    "Ejemplo de registro de catálogo"  
+    "Ejemplo de registro de cat\u00e1logo"  
   ]  
 }  
 ```  
 </details>  
-#### CatalogueRecord NGSI-v2 normalisé Exemple  
-Voici un exemple de CatalogueRecord au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Exemple de CatalogueRecord NGSI-v2 normalisé  
+Voici un exemple de CatalogueRecord au format JSON-LD sous forme normalisée. Ceci est compatible avec NGSI-v2 lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -434,7 +474,7 @@ CatalogueRecord:
     }  
   },  
   "address": {  
-    "type": "PostalAdress",  
+    "type": "StructuredValue",  
     "value": {  
       "streetAddress": "2, rue Mercier",  
       "addressLocality": "Luxembourg",  
@@ -453,64 +493,66 @@ CatalogueRecord:
     "value": "Public administration"  
   },  
   "language": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
       "EN",  
       "ES"  
     ]  
   },  
   "title": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
       "Example of catalogue record",  
-      "Ejemplo de registro de catálogo"  
+      "Ejemplo de registro de cat\u00e1logo"  
     ]  
   }  
 }  
 ```  
 </details>  
-#### CatalogueRecord Valeurs clés NGSI-LD Exemple  
-Voici un exemple de CatalogueRecord au format JSON-LD en tant que key-values. Ce format est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### Exemple de CatalogueRecord NGSI-LD sous forme de paires clé-valeur  
+Voici un exemple de CatalogueRecord au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
-    "type": "CatalogueRecord",  
-    "address": {  
-        "streetAddress": "2, rue Mercier",  
-        "addressLocality": "Luxembourg",  
-        "addressRegion": "Luxembourg",  
-        "addressCountry": "Luxembourg",  
-        "postalCode": "2985",  
-        "postOfficeBoxNumber": ""  
-    },  
-    "areaServed": "European Union and beyond",  
-    "modified": "2021-07-02T18:37:55Z",  
-    "description": ["Catalogue record of the solar system open data portal"],  
-    "language": [  
-        "EN",  
-        "ES"  
-    ],  
-    "location": {  
-        "type": "Point",  
-        "coordinates": [  
-            36.633152,  
-            -85.183315  
-        ]  
-    },  
-    "primaryTopic": "Public administration",  
-    "title": [  
-        "Example of catalogue record",  
-        "Ejemplo de registro de cat\u00e1logo"  
-    ],  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+  "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
+  "type": "CatalogueRecord",  
+  "address": {  
+    "streetAddress": "2, rue Mercier",  
+    "addressLocality": "Luxembourg",  
+    "addressRegion": "Luxembourg",  
+    "addressCountry": "Luxembourg",  
+    "postalCode": "2985",  
+    "postOfficeBoxNumber": ""  
+  },  
+  "areaServed": "European Union and beyond",  
+  "modified": "2021-07-02T18:37:55Z",  
+  "description": [  
+    "Catalogue record of the solar system open data portal"  
+  ],  
+  "language": [  
+    "EN",  
+    "ES"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      36.633152,  
+      -85.183315  
     ]  
+  },  
+  "primaryTopic": "Public administration",  
+  "title": [  
+    "Example of catalogue record",  
+    "Ejemplo de registro de cat\u00e1logo"  
+  ],  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
-#### CatalogueRecord NGSI-LD normalisé Exemple  
-Voici un exemple de CatalogueRecord au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Exemple de CatalogueRecord NGSI-LD normalisé  
+Voici un exemple de CatalogueRecord au format JSON-LD sous forme normalisée. Ceci est compatible avec NGSI-LD lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -535,10 +577,8 @@ CatalogueRecord:
     ]  
   },  
   "listingDate": {  
-    "type": {  
-      "@type": "Property",  
-      "@value": "2021-07-02T18:37:55Z"  
-    }  
+    "type": "Property",  
+    "value": "2021-07-02T18:37:55Z"  
   },  
   "location": {  
     "type": "GeoProperty",  
@@ -551,10 +591,8 @@ CatalogueRecord:
     }  
   },  
   "modified": {  
-    "type": {  
-      "@type": "Property",  
-      "@value": "2021-07-02T18:37:55Z"  
-    }  
+    "type": "Property",  
+    "value": "2021-07-02T18:37:55Z"  
   },  
   "primaryTopic": {  
     "type": "Property",  
@@ -576,7 +614,7 @@ CatalogueRecord:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
+Voir la [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la manière de gérer les unités de grandeur  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

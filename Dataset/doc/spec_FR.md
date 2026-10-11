@@ -1,99 +1,134 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : Ensemble de données  
-============================<!-- /10-Header -->  
+Entité : Dataset  
+================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licence ouverte] (https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
-[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[Licence ouverte](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md)  
+[document généré automatiquement](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Description globale : **Dataset Schema conforme à la spécification DCAT-AP 2.1.1**  
-version : 2.0.1  
+Description globale : **Définition du schéma de Dataset basée sur la spécification DCAT-AP 3.0.0.**  
+version: 3.0.0  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `Type[string]`: Cette propriété fait référence au type de l'ensemble de données. Un vocabulaire contrôlé recommandé est prévu pour le type de données  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `accessRights[string]`: Cette propriété fait référence aux informations qui indiquent si le jeu de données est une donnée ouverte, s'il a des restrictions d'accès ou s'il n'est pas public.  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `accrualPeriodicity[string]`: Cette propriété fait référence à la fréquence à laquelle l'ensemble de données est mis à jour.  . Model: [http://purl.org/dc/terms/Frequency](http://purl.org/dc/terms/Frequency)- `belongsToCatalogue[*]`: Il relie l'ensemble de données à son catalogue parent. Note : cet attribut ne fait pas partie de la version actuelle de DCAT-AP, 2.1.1.  . Model: [https://www.w3.org/ns/dcat#Catalogue](https://www.w3.org/ns/dcat#Catalogue)- `conformsTo[array]`: Cette propriété fait référence à une règle de mise en œuvre ou à une autre spécification.  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `contactPoint[array]`: Cette propriété contient des informations de contact qui peuvent être utilisées pour envoyer des commentaires sur l'ensemble de données.  . Model: [http://www.w3.org/2006/vcard/ns#Kind](http://www.w3.org/2006/vcard/ns#Kind)- `creator[array]`: Cette propriété fait référence à l'entité principalement responsable de la production de l'ensemble de données.  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `description[array]`: Cette propriété contient un compte rendu en texte libre de l'ensemble de données. Cette propriété peut être répétée pour les versions en langues parallèles de la description.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `distribution[array]`: Cette propriété lie l'ensemble de données à une distribution disponible.  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `hasVersion[array]`: Cette propriété fait référence à un jeu de données apparenté qui est une version, une édition ou une adaptation du jeu de données décrit.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `id[*]`: Identifiant unique de l'entité  - `identifier[array]`: Cette propriété contient l'identifiant principal de l'ensemble de données, par exemple l'URI ou un autre identifiant unique dans le contexte du catalogue.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `isReferencedBy[array]`: Cette propriété concerne une ressource connexe, telle qu'une publication, qui fait référence, cite ou pointe vers l'ensemble de données.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `isVersionOf[array]`: Cette propriété fait référence à un jeu de données apparenté dont le jeu de données décrit est une version, une édition ou une adaptation.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `issued[date-time]`: Cette propriété contient la date d'émission officielle (par exemple, la publication) de l'ensemble de données.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `keyword[array]`: Cette propriété contient un mot-clé ou une étiquette décrivant l'ensemble de données.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `landingPage[array]`: Cette propriété fait référence à une page web qui donne accès à l'ensemble de données, à ses distributions et/ou à des informations supplémentaires. Elle est destinée à pointer vers une page d'atterrissage chez le fournisseur de données original, et non vers une page sur le site d'un tiers, tel qu'un agrégateur.  . Model: [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)- `language[array]`: Cette propriété fait référence à une langue de l'ensemble de données. Cette propriété peut être répétée si l'ensemble de données contient plusieurs langues.  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `modified[date-time]`: Cette propriété contient la date la plus récente à laquelle l'ensemble de données a été changé ou modifié.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `otherIdentifier[array]`: Cette propriété fait référence à un identifiant secondaire de l'ensemble de données, tel que MAST/ADS, DataCite, DOI, EZID ou W3ID.  . Model: [http://www.w3.org/ns/adms#Identifier](http://www.w3.org/ns/adms#Identifier)- `page[array]`: Cette propriété renvoie à une page ou à un document sur cet ensemble de données.  . Model: [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)- `provenance[array]`: Cette propriété contient une déclaration sur la lignée d'un ensemble de données.  . Model: [http://purl.org/dc/terms/ProvenanceStatement](http://purl.org/dc/terms/ProvenanceStatement)- `publisher[string]`: Cette propriété fait référence à une entité (organisation) responsable de la mise à disposition du jeu de données.  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `qualifiedAttribution[array]`: Cette propriété renvoie à un lien vers un agent ayant une certaine forme de responsabilité pour la ressource.  . Model: [http://www.w3.org/ns/dcat#Relationship](http://www.w3.org/ns/dcat#Relationship)- `qualifiedRelation[array]`: Cette propriété fournit un lien vers la description d'une relation avec une autre ressource  . Model: [http://www.w3.org/ns/dcat#Relationship](http://www.w3.org/ns/dcat#Relationship)- `relation[array]`: Cette propriété fait référence à une ressource connexe  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `sample[array]`: Cette propriété fait référence à une distribution d'échantillons de l'ensemble de données.  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `source[array]`: Cette propriété fait référence à un ensemble de données apparenté dont l'ensemble de données décrit est dérivé.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `spatial[array]`: Cette propriété fait référence à une région géographique couverte par l'ensemble de données.  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `spatialResolutionInMeters[number]`: Cette propriété fait référence à la séparation spatiale minimale pouvant être résolue dans un ensemble de données, mesurée en mètres.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `temporal[array]`: Cette propriété fait référence à une période temporelle couverte par l'ensemble de données.  . Model: [http://purl.org/dc/terms/PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)- `temporalResolution[array]`: Cette propriété fait référence à la période minimale pouvant être résolue dans l'ensemble de données.  . Model: [http://purl.org/dc/terms/PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)- `theme[array]`: Cette propriété fait référence à une catégorie du Dataset. Un Dataset peut être associé à plusieurs thèmes.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: Cette propriété contient le nom donné à l'ensemble de données. Cette propriété peut être répétée pour les versions linguistiques parallèles du nom.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: Type d'INSG. Il doit s'agir d'un ensemble de données  - `versionInfo[string]`: Cette propriété contient un numéro de version ou une autre désignation de la version de l'ensemble de données.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `versionNotes[array]`: Cette propriété contient une description des différences entre cette version et une version précédente de l'ensemble de données. Cette propriété peut être répétée pour les versions linguistiques parallèles des notes de version.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `wasGeneratedBy[array]`: Cette propriété fait référence à une activité qui a généré, ou qui fournit le contexte commercial pour la création de l'ensemble de données.  . Model: [https://www.w3.org/ns/prov#Activity](https://www.w3.org/ns/prov#Activity)<!-- /30-PropertiesList -->  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>  
+- `Type[string]`: Cette propriété fait référence au type de jeu de données. Un type de données à vocabulaire contrôlé recommandé est prévu. La valeur DOIT être tirée d'un vocabulaire contrôlé bien gouverné et largement reconnu, tel que le vocabulaire DCMI Type (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7), les codes de portée [ISO-19115-1] (https://standards.iso.org/iso/19115/resources/Codelists/gml/MD_ScopeCode.xml), les types de ressources Datacite [DataCite] (https://schema.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd), les types de contenu PARSE.Insight utilisés par re3data.org [RE3DATA-SCHEMA] (https://www.re3data.org/) (voir l'élément 15 contentType), les types de ressources intellectuelles MARC (http://id.loc.gov/vocabulary/marcgt.html). Certains membres de ces vocabulaires contrôlés ne sont pas strictement adaptés aux jeux de données ou aux services de données (par exemple, DCMI Type Event, PhysicalObject ; [ISO-19115-1](https://www.w3.org/TR/vocab-dcat-3/#bib-iso-19115-1) CollectionHardware, CollectionSession, Initiative, Sample, Repository), mais pourraient être utilisés dans le contexte d'autres types de catalogues définis dans des profils ou des applications DCAT.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `accessMechanism[string]`: Niveau d'accès selon les 3 niveaux de la métrique MELODA5. Les valeurs attendues sont : * Level1AccessMechanism : Accès Web ou paramètres d'URL uniques vers le jeu de données. * Level2AccessMechanism : Accès Web unique avec paramètres pour une donnée individuelle. * Level3AccessMechanism : API ou langage de requête.  . Model: [https://schema.org/Text](https://schema.org/Text)- `accessRights[string]`: Cette propriété fait référence aux informations indiquant si le jeu de données est en open data, s'il présente des restrictions d'accès ou s'il n'est pas public.  . Model: [http://purl.org/dc/terms/RightsStatement](http://purl.org/dc/terms/RightsStatement)- `accuralPeriodicity[string]`: Cette propriété fait référence à la fréquence à laquelle le jeu de données est mis à jour.  . Model: [http://purl.org/dc/terms/Frequency](http://purl.org/dc/terms/Frequency)- `addressesAvailable[boolean]`: Définit si le flux de données possède des adresses postales pour identifier les éléments du jeu de données.  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `applicableLegislation[array]`: La législation qui impose la création ou la gestion du jeu de données. Cardinalité : 0..n.  . Model: [http://data.europa.eu/r5r/applicableLegislation](http://data.europa.eu/r5r/applicableLegislation)- `belongsToCatalogue[*]`: Elle lie le jeu de données à son catalogue parent. Remarque : cet attribut n'appartient pas à la version actuelle de DCAT-AP, 2.1.1.  . Model: [https://www.w3.org/ns/dcat#Catalogue](https://www.w3.org/ns/dcat#Catalogue)- `conformsTo[array]`: Cette propriété fait référence à une règle de mise en œuvre ou une autre spécification.  . Model: [http://purl.org/dc/terms/conformsTo](http://purl.org/dc/terms/conformsTo)- `contactPoint[array]`: Informations de contact pouvant être utilisées pour envoyer des commentaires sur le jeu de données. Cardinalité : 0..n.  . Model: [http://www.w3.org/ns/dcat#contactPoint](http://www.w3.org/ns/dcat#contactPoint)- `creator[array]`: Cette propriété fait référence à l'entité principalement responsable de la production du jeu de données.  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `description[*]`: LanguageProperty. Cette propriété contient un compte en texte libre du jeu de données. Cette propriété peut être répétée pour des versions linguistiques parallèles de la description.  . Model: [http://purl.org/dc/terms/description](http://purl.org/dc/terms/description)- `dissemination[string]`: Niveau de diffusion selon la dimension de communication MELODA5 : * Level1Dissemination : communication/diffusion non systématique. * Level2Dissemination : ressources disponibles sur les mises à jour (ex : flux RSS). * Level3Dissemination : diffusion proactive/diffusion poussée (information automatique et opportune).  . Model: [https://schema.org/Text](https://schema.org/Text)- `disseminationOrganization[string]`: URI de l'organisation responsable des activités de diffusion liées au jeu de données. Elle correspond à la dimension communication de MELODA5.  . Model: [https://schema.org/url](https://schema.org/url)- `distribution[array]`: Cette propriété lie le jeu de données à une distribution disponible.  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `geolocation[boolean]`: Définit si le flux de données comporte une géolocalisation (coordonnées) dans l'un de ses attributs.  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `hasVersion[array]`: Cette propriété fait référence à un jeu de données lié qui est une version, une édition ou une adaptation du jeu de données décrit.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `id[*]`: Identifiant unique de l'entité  - `identifier[array]`: Cette propriété contient l'identifiant principal du jeu de données, par exemple l'URI ou un autre identifiant unique dans le contexte du Catalogue.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `inSeries[array]`: Cette propriété lie le jeu de données à une distribution disponible.  . Model: [https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series)- `isReferencedBy[array]`: Cette propriété concerne une ressource liée, telle qu'une publication, qui fait référence, cite ou pointe d'une autre manière vers le jeu de données.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `isVersionOf[array]`: Cette propriété fait référence à un jeu de données lié dont le jeu de données décrit est une version, une édition ou une adaptation.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `issued[date-time]`: Cette propriété contient la date d'émission formelle (par exemple, publication) du jeu de données.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `keyword[array]`: Cette propriété contient un mot-clé ou une étiquette décrivant le jeu de données.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `landingPage[array]`: Cette propriété fait référence à une page web qui donne accès au jeu de données, à ses distributions et/ou à des informations supplémentaires. Elle est destinée à pointer vers une page d'accueil chez le fournisseur de données d'origine, et non vers une page sur le site d'un tiers, tel qu'un agrégateur.  . Model: [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)- `language[array]`: Cette propriété fait référence à une langue du jeu de données. Cette propriété peut être répétée s'il existe plusieurs langues dans le jeu de données. Les valeurs possibles sont définies par la Library of Congress (ISO 639-1 : http://id.loc.gov/vocabulary/iso639-1.html, ISO 639-2 : http://id.loc.gov/vocabulary/iso639-2.html).  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `license[string]`: Cette propriété fait référence à la licence sous laquelle le jeu de données est mis à disposition. Identifiant de la licence selon les valeurs énumérées. Il est extrait de l'identifiant de la norme SPDX (https://spdx.org/licenses).  . Model: [http://purl.org/dc/terms#LicenseDocument](http://purl.org/dc/terms#LicenseDocument)- `modified[date-time]`: Cette propriété contient la date la plus récente à laquelle le jeu de données a été modifié ou mis à jour.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `otherIdentifier[array]`: Cette propriété fait référence à un identifiant secondaire du jeu de données, tel que MAST/ADS, DataCite, DOI, EZID ou W3ID.  . Model: [http://www.w3.org/ns/adms#Identifier](http://www.w3.org/ns/adms#Identifier)- `page[array]`: Cette propriété fait référence à une page ou un document concernant ce jeu de données.  . Model: [http://xmlns.com/foaf/0.1/Document](http://xmlns.com/foaf/0.1/Document)- `provenance[array]`: Cette propriété contient une déclaration concernant la lignée d'un jeu de données.  . Model: [http://purl.org/dc/terms/ProvenanceStatement](http://purl.org/dc/terms/ProvenanceStatement)- `publisher[string]`: Cette propriété fait référence à une entité (organisation) responsable de la mise à disposition du jeu de données.  . Model: [http://xmlns.com/foaf/0.1/Agent](http://xmlns.com/foaf/0.1/Agent)- `qualifiedAttribution[array]`: Cette propriété fait référence à un lien vers un Agent ayant une forme de responsabilité pour la ressource.  . Model: [https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Attribution](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Attribution)- `qualifiedRelation[array]`: Cette propriété fournit un lien vers une description d'une relation avec une autre ressource.  . Model: [http://www.w3.org/ns/dcat#Relationship](http://www.w3.org/ns/dcat#Relationship)- `relation[array]`: Cette propriété fait référence à une ressource liée.  . Model: [http://www.w3.org/2000/01/rdf-schema#Resource](http://www.w3.org/2000/01/rdf-schema#Resource)- `reputation[string]`: Niveau de réputation selon la dimension de réputation MELODA5 : * Level1Reputation : aucune information sur la réputation de la source de données. * Level2Reputation : statistiques ou rapports publiés sur les opinions des utilisateurs. * Level3Reputation : indicateurs ou classements sur la réputation de la source de données.  . Model: [https://schema.org/Text](https://schema.org/Text)- `reputationOrganization[string]`: URI de l'organisation responsable de la publication du jeu de données en termes de réputation. Elle correspond à la dimension réputation de MELODA5 et permet de récupérer leur prestige à partir du classement.  . Model: [https://schema.org/url](https://schema.org/url)- `sample[array]`: Cette propriété fait référence à une distribution d'échantillon du jeu de données.  . Model: [http://www.w3.org/ns/dcat#Distribution](http://www.w3.org/ns/dcat#Distribution)- `source[array]`: Cette propriété fait référence à un jeu de données lié dont le jeu de données décrit est dérivé.  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `spatial[array]`: Cette propriété fait référence à une région géographique couverte par le jeu de données.  . Model: [http://purl.org/dc/terms/Location](http://purl.org/dc/terms/Location)- `spatialResolution[number]`: Cette propriété fait référence à la séparation spatiale minimale résoluble dans un jeu de données, mesurée en mètres.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `standardization[string]`: Le type de standardisation du modèle de données suivi par le jeu de données. Il s'agit d'une énumération avec trois (4) valeurs possibles : * Level1Standardization : modèle de données standardisé par l'éditeur sans publication de la documentation. * Level2Standardization : modèle de données standardisé par l'éditeur avec publication de la documentation. * Level3Standardization : modèle de données utilisant une norme locale (portée nationale ou régionale plus restreinte). * Level4Standardization : modèle de données utilisant une norme internationale.  . Model: [https://schema.org/Text](https://schema.org/Text)- `standardizationSource[string]`: URI de la source où les définitions des attributs peuvent être lues. Elle est associée à la propriété de normalisation. Elle peut être vide dans les cas de Niveau 1 et Niveau 2 ou pointer vers un organisme de normalisation existant (par exemple, DIN, UNE, etc.) pour le Niveau 3 ou (par exemple, ISO, W3C, etc.) pour le Niveau 4.  . Model: [https://schema.org/url](https://schema.org/url)- `temporal[array]`: Cette propriété fait référence à une période temporelle couverte par le jeu de données.  . Model: [http://purl.org/dc/terms/PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)- `temporalResolution[array]`: Cette propriété fait référence à la période temporelle minimale résoluble dans le jeu de données.  . Model: [http://purl.org/dc/terms/PeriodOfTime](http://purl.org/dc/terms/PeriodOfTime)- `theme[array]`: Cette propriété fait référence à une catégorie du jeu de données. Un jeu de données peut être associé à plusieurs thèmes.  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[*]`: LanguageProperty. Cette propriété contient un nom donné au jeu de données. Cette propriété peut être répétée pour des versions linguistiques parallèles du nom.  . Model: [http://purl.org/dc/terms/title](http://purl.org/dc/terms/title)- `type[string]`: Type NGSI. Il doit s'agir de Dataset.  - `validationSchema[string]`: URL vers le schéma de validation technique pour le jeu de données (JSON Schema) dans le programme Smart Data Models.  . Model: [https://schema.org/url](https://schema.org/url)- `version[string]`: Cette propriété contient un numéro de version ou une autre désignation de version du jeu de données.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `versionNotes[array]`: Cette propriété contient une description des différences entre cette version et une version précédente du jeu de données. Cette propriété peut être répétée pour des versions linguistiques parallèles des notes de version.  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `wasGeneratedBy[array]`: Cette propriété fait référence à une activité qui a généré, ou qui fournit le contexte métier de, la création du jeu de données.  . Model: [https://www.w3.org/ns/prov#Activity](https://www.w3.org/ns/prov#Activity)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `description`  - `id`  - `title`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
-Adapté de [DCAT-AP version 2.1.1] (https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211).  
-<!-- /40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+Adapté de [DCAT-AP version 3.0.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/). Ajout des principes FAIR et des propriétés des dimensions MELODA5. accessMechanism, niveau d'accès selon les 3 niveaux de la métrique Meloda5. Les valeurs attendues sont Level1AccessMechanism (accès Web ou paramètres d'URL uniques vers le jeu de données), Level2AccessMechanism (accès Web unique avec paramètres vers une seule donnée), Level3AccessMechanism (API ou langage de requête). addressAvailable, définit si le flux de données possède des adresses postales pour identifier les éléments du jeu de données. dissemination, niveau de diffusion selon la dimension communication de Meloda5 : Level1Dissemination (communication/diffusion non systématique), Level2Dissemination (ressources disponibles sur les mises à jour, ex : flux RSS), Level3Dissemination (diffusion proactive/diffusion poussée, information automatique et opportune). diseminationOrganization, URI de l'organisation responsable des activités de diffusion liées au jeu de données. Elle correspond à la dimension communication de Meloda5. geolocation, définit si le flux de données possède une géolocalisation (coordonnées) dans l'un de ses attributs. license, Cette propriété fait référence à la licence sous laquelle le jeu de données est mis à disposition. Id de la licence selon les valeurs énumérées. Elle est extraite de l'id de la norme SPDX (https://spdx.org/licenses). reputation, niveau de réputation selon la dimension de réputation de Meloda5 : Level1Reputation (aucune information sur la réputation de la source de données), Level2Reputation (statistiques ou rapports publiés sur les opinions des utilisateurs), Level3Reputation (indicateurs ou classements sur la réputation de la source de données). reputationOrganization, URI de l'organisation responsable de la publication du jeu de données en termes de réputation. Elle correspond à la dimension réputation de Meloda5 et permet de récupérer leur prestige à partir du classement. standardization, le type de normalisation du modèle de données suivi par le jeu de données. Il s'agit d'une énumération avec quatre valeurs possibles : Level1Standardization (modèle de données normalisé par l'éditeur sans publication de la documentation), Level2Standardization (modèle de données normalisé par l'éditeur avec publication de la documentation), Level3Standardization (modèle de données utilisant une norme locale, nationale ou à portée régionale plus restreinte), Level4Standardization (modèle de données utilisant une norme internationale). standardizationSource, URI de la source où les définitions des attributs peuvent être lues. Elle est associée à la propriété de normalisation. Elle peut être vide dans les cas de Niveau 1 et Niveau 2 ou pointer vers un organisme de normalisation existant (par exemple, DIN, UNE, etc.) pour le Niveau 3 ou (par exemple, ISO, W3C, etc.) pour le Niveau 4. validationSchema, URL vers le schéma de validation technique pour le jeu de données (JSON Schema) dans le programme Smart Data Models.  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
-## Modèle de données description des propriétés  
-Classés par ordre alphabétique (cliquez pour plus de détails)  
+## Description des propriétés du modèle de données  
+Trié par ordre alphabétique (cliquer pour les détails)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 Dataset:    
-  description: Dataset Schema meeting DCAT-AP 2.1.1 specification    
+  description: Dataset Schema definition based on DCAT-AP 3.0.0 specification.    
   properties:    
     Type:    
-      description: This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen    
+      description: This property refers to the type of the Dataset. A recommended controlled vocabulary data-type is foreseen. The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as DCMI Type vocabulary (https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7), [ISO-19115-1] scope codes (https://standards.iso.org/iso/19115/resources/Codelists/gml/MD_ScopeCode.xml), Datacite resource types [DataCite] (https://schema.datacite.org/meta/kernel-4.1/include/datacite-resourceType-v4.1.xsd), PARSE.Insight content-types used by re3data.org [RE3DATA-SCHEMA] (https://www.re3data.org/) (see item 15 contentType), MARC intellectual resource types (http://id.loc.gov/vocabulary/marcgt.html). Some members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [ISO-19115-1](https://www.w3.org/TR/vocab-dcat-3/#bib-iso-19115-1) CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2004/02/skos/core#Concept"    
+        model: http://www.w3.org/2004/02/skos/core#Concept    
+        type: Property    
+    accessMechanism:    
+      description: 'Access level according to the 3 levels of MELODA5 metric. The expected values are: * Level1AccessMechanism: Web access or unique URL parameters to dataset. * Level2AccessMechanism: Web Access unique with parameters to single data. * Level3AccessMechanism: API or query language.'    
+      enum:    
+        - Level1AccessMechanism    
+        - Level2AccessMechanism    
+        - Level3AccessMechanism    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
         type: Property    
     accessRights:    
-      description: 'This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public'    
+      description: This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public.    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/RightsStatement    
         type: Property    
-    accrualPeriodicity:    
-      description: This property refers to the frequency at which the Dataset is updated    
+    accuralPeriodicity:    
+      description: This property refers to the frequency at which the Dataset is updated.    
       type: string    
       x-ngsi:    
         model: http://purl.org/dc/terms/Frequency    
         type: Property    
+    addressesAvailable:    
+      description: Defines if the data stream has postal addresses to identify the elements in the dataset.    
+      type: boolean    
+      x-ngsi:    
+        model: https://schema.org/Boolean    
+        type: Property    
+    applicableLegislation:    
+      description: 'The legislation that mandates the creation or management of the Dataset. Cardinality: 0..n.'    
+      items:    
+        description: This class represents the legislation, policy or policies that lie behind the Rules that govern the service. The definition and properties of the Legal Resource class are aligned with the ontology included in Council conclusions inviting the introduction of the European Legislation Identifier (ELI - https://eur-lex.europa.eu/eli-register/about.html). For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI - https://op.europa.eu/en/web/eu-vocabularies/eli) URI guidelines.    
+        type: string    
+        x-ngsi:    
+          model: http://data.europa.eu/eli/ontology#LegalResource    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        model: http://data.europa.eu/r5r/applicableLegislation    
+        type: Property    
     belongsToCatalogue:    
       anyOf:    
-        - description: Link to the catalogue    
+        - description: Link to the catalogue.    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
           x-ngsi:    
             type: Property    
-        - description: Link to the catalogue    
+        - description: Link to the catalogue.    
           format: uri    
           type: string    
           x-ngsi:    
             type: Property    
-      description: 'It links the Dataset to its parent Catalogue. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1'    
+      description: 'It links the Dataset to its parent Catalogue. Note: this attribute does not belong to the current version of DCAT-AP, 2.1.1.'    
       x-ngsi:    
-        model: "https://www.w3.org/ns/dcat#Catalogue"    
+        model: https://www.w3.org/ns/dcat#Catalogue    
         type: Relationship    
     conformsTo:    
-      description: 'This property refers to an implementing rule or other specification. '    
+      description: This property refers to an implementing rule or other specification.    
       items:    
-        description: Every rule or specification applicable    
+        description: Every rule or specification applicable.    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: http://purl.org/dc/terms/Standard    
+        model: http://purl.org/dc/terms/conformsTo    
         type: Property    
     contactPoint:    
-      description: This property contains contact information that can be used for sending comments about the Dataset    
+      description: 'Contact information that can be used for sending comments about the Dataset. Cardinality: 0..n.'    
       items:    
         description: Every contact element    
-        type: string    
+        properties:    
+          email:    
+            description: Email as defined by the 'Mailbox' ABNF rule in RFC 5321, section 4.1.2 (https://datatracker.ietf.org/doc/html/rfc5321#section-4.1.2).    
+            format: email    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        type: object    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2006/vcard/ns#Kind"    
+        model: http://www.w3.org/ns/dcat#contactPoint    
         type: Property    
     creator:    
-      description: This property refers to the entity primarily responsible for producing the dataset    
+      description: This property refers to the entity primarily responsible for producing the dataset.    
       items:    
-        description: Every creator included    
+        description: Every creator included.    
         type: string    
         x-ngsi:    
           type: Property    
@@ -102,48 +137,156 @@ Dataset:
         model: http://xmlns.com/foaf/0.1/Agent    
         type: Property    
     description:    
-      description: This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description    
-      items:    
-        description: Every description in a language    
-        type: string    
-        x-ngsi:    
-          type: Property    
-      type: array    
+      description: LanguageProperty. This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.    
+      oneOf:    
+        - properties:    
+            languageMap:    
+              description: ' A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.'    
+              properties:    
+                de:    
+                  description: The description written in German.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                el:    
+                  description: The description written in Modern Greek.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                en:    
+                  description: The description written in English.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                es:    
+                  description: The description written in Spanish.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                fi:    
+                  description: The description written in Finnish.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                fr:    
+                  description: The description written in French.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                it:    
+                  description: The description written in Italian.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                ja:    
+                  description: The description written in Japanese.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                ko:    
+                  description: The description written in Korean.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                nl:    
+                  description: The description written in Dutch.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                zh:    
+                  description: The description written in Chinese.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+              type: object    
+              x-ngsi:    
+                model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                type: Property    
+          type: object    
+        - description: The description written in a specific language.    
+          type: string    
+          x-ngsi:    
+            model: http://www.w3.org/2000/01/rdf-schema#Literal    
+            type: Property    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://purl.org/dc/terms/description    
+    dissemination:    
+      description: 'Dissemination level according to MELODA5 communication dimension: * Level1Dissemination: communication/dissemination not systematic. * Level2Dissemination: available resources on updates (i.e., RSS feed). * Level3Dissemination: proactive dissemination/push dissemination (information automatic and timely).'    
+      enum:    
+        - Level1Dissemination    
+        - Level2Dissemination    
+        - Level3Dissemination    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    disseminationOrganization:    
+      description: URI to the organization which is responsible for dissemination activities related to the dataset. It matches the dimension/communication of MELODA5.    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/url    
         type: Property    
     distribution:    
-      description: This property links the Dataset to an available Distribution    
+      description: This property links the Dataset to an available Distribution.    
       items:    
         anyOf:    
-          - description: Every link to a distribution    
+          - description: Every link to a distribution.    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
             x-ngsi:    
               type: Property    
-          - description: Every link to a distribution    
+          - description: Every link to a distribution.    
             format: uri    
             type: string    
             x-ngsi:    
               type: Property    
+        description: This property provides a list of distributions in the format of either URI or NGSI-LD Identifier.    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Distribution"    
+        model: http://www.w3.org/ns/dcat#Distribution    
         type: Relationship    
+    geolocation:    
+      description: Defines if the data stream has geolocation (coordinates) in any of its attributes.    
+      type: boolean    
+      x-ngsi:    
+        model: https://schema.org/Boolean    
+        type: Property    
     hasVersion:    
-      description: 'This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset'    
+      description: This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.    
       items:    
-        description: Every version of the related datasets    
-        format: uri    
-        type: string    
+        anyOf:    
+          - description: Identifier format of any NGSI entity.    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity.    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Every version of the related datasets.    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Dataset"    
-        type: Property    
+        model: http://www.w3.org/ns/dcat#Dataset    
+        type: Relationship    
     id:    
       anyOf:    
         - description: Identifier format of any NGSI entity    
@@ -160,65 +303,89 @@ Dataset:
             type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     identifier:    
-      description: 'This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue'    
+      description: This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.    
       items:    
-        description: Every identifier of the dataset    
+        description: Every identifier of the dataset.    
         format: uri    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
-        type: Property    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
+        type: Relationship    
+    inSeries:    
+      description: This property links the Dataset to an available Distribution.    
+      items:    
+        anyOf:    
+          - description: Identifier format of any NGSI entity.    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity.    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: A dataset series of which the dataset is part.    
+        x-ngsi:    
+          model: http://www.w3.org/ns/dcat#Dataset    
+          type: Property    
+      type: array    
+      x-ngsi:    
+        model: https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series    
+        type: Relationship    
     isReferencedBy:    
-      description: 'This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset'    
+      description: This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.    
       items:    
-        description: Every resource related to the dataset    
+        description: Every resource related to the dataset.    
         format: uri    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
+        model: http://www.w3.org/2000/01/rdf-schema#Resource    
         type: Relationship    
     isVersionOf:    
-      description: 'This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation'    
+      description: This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.    
       items:    
-        description: Every dataset that the current dataset is a version of it    
+        description: Every dataset that the current dataset is a version of it.    
         format: uri    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Dataset"    
-        type: Property    
+        model: http://www.w3.org/ns/dcat#Dataset    
+        type: Relationship    
     issued:    
-      description: 'This property contains the date of formal issuance (e.g., publication) of the Dataset'    
+      description: This property contains the date of formal issuance (e.g., publication) of the Dataset.    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     keyword:    
-      description: 'This property contains a keyword or tag, describing the Dataset'    
+      description: This property contains a keyword or tag, describing the Dataset.    
       items:    
-        description: Every keyword tag included    
+        description: Every keyword tag included.    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     landingPage:    
-      description: 'This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator'    
+      description: This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.    
       items:    
-        description: Every web page listed    
+        description: Every web page listed.    
         format: uri    
         type: string    
         x-ngsi:    
@@ -228,9 +395,9 @@ Dataset:
         model: http://xmlns.com/foaf/0.1/Document    
         type: Property    
     language:    
-      description: This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset    
+      description: 'This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset. The possible values are defined by the Library of Congress (ISO 639-1: http://id.loc.gov/vocabulary/iso639-1.html, ISO 639-2: http://id.loc.gov/vocabulary/iso639-2.html).'    
       items:    
-        description: Every language included    
+        description: Every language included.    
         type: string    
         x-ngsi:    
           type: Property    
@@ -238,29 +405,609 @@ Dataset:
       x-ngsi:    
         model: http://purl.org/dc/terms/LinguisticSystem    
         type: Property    
+    license:    
+      description: This property refers to the license under which the Dataset is made available. Id of the license according to the enumerated values. It is extracted from the id of the SPDX standard (https://spdx.org/licenses).    
+      enum:    
+        - 0BSD    
+        - AAL    
+        - Abstyles    
+        - AdaCore-doc    
+        - Adobe-2006    
+        - Adobe-Glyph    
+        - ADSL    
+        - AFL-1.1    
+        - AFL-1.2    
+        - AFL-2.0    
+        - AFL-2.1    
+        - AFL-3.0    
+        - Afmparse    
+        - AGPL-1.0    
+        - AGPL-1.0-only    
+        - AGPL-1.0-or-later    
+        - AGPL-3.0    
+        - AGPL-3.0-only    
+        - AGPL-3.0-or-later    
+        - Aladdin    
+        - AMDPLPA    
+        - AML    
+        - AMPAS    
+        - ANTLR-PD    
+        - ANTLR-PD-fallback    
+        - Apache-1.0    
+        - Apache-1.1    
+        - Apache-2.0    
+        - APAFML    
+        - APL-1.0    
+        - App-s2p    
+        - APSL-1.0    
+        - APSL-1.1    
+        - APSL-1.2    
+        - APSL-2.0    
+        - Arphic-1999    
+        - Artistic-1.0    
+        - Artistic-1.0-cl8    
+        - Artistic-1.0-Perl    
+        - Artistic-2.0    
+        - ASWF-Digital-Assets-1.0    
+        - ASWF-Digital-Assets-1.1    
+        - Baekmuk    
+        - Bahyph    
+        - Barr    
+        - Beerware    
+        - Bitstream-Charter    
+        - Bitstream-Vera    
+        - BitTorrent-1.0    
+        - BitTorrent-1.1    
+        - blessing    
+        - BlueOak-1.0.0    
+        - Boehm-GC    
+        - Borceux    
+        - Brian-Gladman-3-Clause    
+        - BSD-1-Clause    
+        - BSD-2-Clause    
+        - BSD-2-Clause-FreeBSD    
+        - BSD-2-Clause-NetBSD    
+        - BSD-2-Clause-Patent    
+        - BSD-2-Clause-Views    
+        - BSD-3-Clause    
+        - BSD-3-Clause-Attribution    
+        - BSD-3-Clause-Clear    
+        - BSD-3-Clause-LBNL    
+        - BSD-3-Clause-Modification    
+        - BSD-3-Clause-No-Military-License    
+        - BSD-3-Clause-No-Nuclear-License    
+        - BSD-3-Clause-No-Nuclear-License-2014    
+        - BSD-3-Clause-No-Nuclear-Warranty    
+        - BSD-3-Clause-Open-MPI    
+        - BSD-4-Clause    
+        - BSD-4-Clause-Shortened    
+        - BSD-4-Clause-UC    
+        - BSD-4.3RENO    
+        - BSD-4.3TAHOE    
+        - BSD-Advertising-Acknowledgement    
+        - BSD-Attribution-HPND-disclaimer    
+        - BSD-Protection    
+        - BSD-Source-Code    
+        - BSL-1.0    
+        - BUSL-1.1    
+        - bzip2-1.0.5    
+        - bzip2-1.0.6    
+        - C-UDA-1.0    
+        - CAL-1.0    
+        - CAL-1.0-Combined-Work-Exception    
+        - Caldera    
+        - CATOSL-1.1    
+        - CC-BY-1.0    
+        - CC-BY-2.0    
+        - CC-BY-2.5    
+        - CC-BY-2.5-AU    
+        - CC-BY-3.0    
+        - CC-BY-3.0-AT    
+        - CC-BY-3.0-DE    
+        - CC-BY-3.0-IGO    
+        - CC-BY-3.0-NL    
+        - CC-BY-3.0-US    
+        - CC-BY-4.0    
+        - CC-BY-NC-1.0    
+        - CC-BY-NC-2.0    
+        - CC-BY-NC-2.5    
+        - CC-BY-NC-3.0    
+        - CC-BY-NC-3.0-DE    
+        - CC-BY-NC-4.0    
+        - CC-BY-NC-ND-1.0    
+        - CC-BY-NC-ND-2.0    
+        - CC-BY-NC-ND-2.5    
+        - CC-BY-NC-ND-3.0    
+        - CC-BY-NC-ND-3.0-DE    
+        - CC-BY-NC-ND-3.0-IGO    
+        - CC-BY-NC-ND-4.0    
+        - CC-BY-NC-SA-1.0    
+        - CC-BY-NC-SA-2.0    
+        - CC-BY-NC-SA-2.0-DE    
+        - CC-BY-NC-SA-2.0-FR    
+        - CC-BY-NC-SA-2.0-UK    
+        - CC-BY-NC-SA-2.5    
+        - CC-BY-NC-SA-3.0    
+        - CC-BY-NC-SA-3.0-DE    
+        - CC-BY-NC-SA-3.0-IGO    
+        - CC-BY-NC-SA-4.0    
+        - CC-BY-ND-1.0    
+        - CC-BY-ND-2.0    
+        - CC-BY-ND-2.5    
+        - CC-BY-ND-3.0    
+        - CC-BY-ND-3.0-DE    
+        - CC-BY-ND-4.0    
+        - CC-BY-SA-1.0    
+        - CC-BY-SA-2.0    
+        - CC-BY-SA-2.0-UK    
+        - CC-BY-SA-2.1-JP    
+        - CC-BY-SA-2.5    
+        - CC-BY-SA-3.0    
+        - CC-BY-SA-3.0-AT    
+        - CC-BY-SA-3.0-DE    
+        - CC-BY-SA-3.0-IGO    
+        - CC-BY-SA-4.0    
+        - CC-PDDC    
+        - CC0-1.0    
+        - CDDL-1.0    
+        - CDDL-1.1    
+        - CDL-1.0    
+        - CDLA-Permissive-1.0    
+        - CDLA-Permissive-2.0    
+        - CDLA-Sharing-1.0    
+        - CECILL-1.0    
+        - CECILL-1.1    
+        - CECILL-2.0    
+        - CECILL-2.1    
+        - CECILL-B    
+        - CECILL-C    
+        - CERN-OHL-1.1    
+        - CERN-OHL-1.2    
+        - CERN-OHL-P-2.0    
+        - CERN-OHL-S-2.0    
+        - CERN-OHL-W-2.0    
+        - CFITSIO    
+        - check-cvs    
+        - checkmk    
+        - ClArtistic    
+        - Clips    
+        - CMU-Mach    
+        - CNRI-Jython    
+        - CNRI-Python    
+        - CNRI-Python-GPL-Compatible    
+        - COIL-1.0    
+        - Community-Spec-1.0    
+        - Condor-1.1    
+        - copyleft-next-0.3.0    
+        - copyleft-next-0.3.1    
+        - Cornell-Lossless-JPEG    
+        - CPAL-1.0    
+        - CPL-1.0    
+        - CPOL-1.02    
+        - Crossword    
+        - CrystalStacker    
+        - CUA-OPL-1.0    
+        - Cube    
+        - curl    
+        - D-FSL-1.0    
+        - diffmark    
+        - DL-DE-BY-2.0    
+        - DL-DE-ZERO-2.0    
+        - DOC    
+        - Dotseqn    
+        - DRL-1.0    
+        - DSDP    
+        - dtoa    
+        - dvipdfm    
+        - ECL-1.0    
+        - ECL-2.0    
+        - eCos-2.0    
+        - EFL-1.0    
+        - EFL-2.0    
+        - eGenix    
+        - Elastic-2.0    
+        - Entessa    
+        - EPICS    
+        - EPL-1.0    
+        - EPL-2.0    
+        - ErlPL-1.1    
+        - etalab-2.0    
+        - EUDatagrid    
+        - EUPL-1.0    
+        - EUPL-1.1    
+        - EUPL-1.2    
+        - Eurosym    
+        - Fair    
+        - FDK-AAC    
+        - Frameworx-1.0    
+        - FreeBSD-DOC    
+        - FreeImage    
+        - FSFAP    
+        - FSFUL    
+        - FSFULLR    
+        - FSFULLRWD    
+        - FTL    
+        - GD    
+        - GFDL-1.1    
+        - GFDL-1.1-invariants-only    
+        - GFDL-1.1-invariants-or-later    
+        - GFDL-1.1-no-invariants-only    
+        - GFDL-1.1-no-invariants-or-later    
+        - GFDL-1.1-only    
+        - GFDL-1.1-or-later    
+        - GFDL-1.2    
+        - GFDL-1.2-invariants-only    
+        - GFDL-1.2-invariants-or-later    
+        - GFDL-1.2-no-invariants-only    
+        - GFDL-1.2-no-invariants-or-later    
+        - GFDL-1.2-only    
+        - GFDL-1.2-or-later    
+        - GFDL-1.3    
+        - GFDL-1.3-invariants-only    
+        - GFDL-1.3-invariants-or-later    
+        - GFDL-1.3-no-invariants-only    
+        - GFDL-1.3-no-invariants-or-later    
+        - GFDL-1.3-only    
+        - GFDL-1.3-or-later    
+        - Giftware    
+        - GL2PS    
+        - Glide    
+        - Glulxe    
+        - GLWTPL    
+        - GNU-compiler-exception    
+        - gnuplot    
+        - GPL-1.0    
+        - GPL-1.0+    
+        - GPL-1.0-only    
+        - GPL-1.0-or-later    
+        - GPL-2.0    
+        - GPL-2.0+    
+        - GPL-2.0-only    
+        - GPL-2.0-or-later    
+        - GPL-2.0-with-autoconf-exception    
+        - GPL-2.0-with-bison-exception    
+        - GPL-2.0-with-classpath-exception    
+        - GPL-2.0-with-font-exception    
+        - GPL-2.0-with-GCC-exception    
+        - GPL-3.0    
+        - GPL-3.0+    
+        - GPL-3.0-only    
+        - GPL-3.0-or-later    
+        - GPL-3.0-with-autoconf-exception    
+        - GPL-3.0-with-GCC-exception    
+        - Graphics-Gems    
+        - gSOAP-1.3b    
+        - HaskellReport    
+        - Hippocratic-2.1    
+        - HP-1986    
+        - HP-1989    
+        - HPND    
+        - HPND-export-US    
+        - HPND-Markus-Kuhn    
+        - HPND-sell-variant    
+        - HPND-sell-variant-MIT-disclaimer    
+        - HTMLTIDY    
+        - IBM-pibs    
+        - ICU    
+        - IEC-Code-Components-EULA    
+        - IJG    
+        - IJG-short    
+        - ImageMagick    
+        - iMatix    
+        - Imlib2    
+        - Info-ZIP    
+        - Inner-Net-2.0    
+        - Intel    
+        - Intel-ACPI    
+        - Interbase-1.0    
+        - IPA    
+        - IPL-1.0    
+        - ISC    
+        - Jam    
+        - JasPer-2.0    
+        - JPL-image    
+        - JPNIC    
+        - JSON    
+        - Kazlib    
+        - Knuth-CTAN    
+        - LAL-1.2    
+        - LAL-1.3    
+        - Latex2e    
+        - Latex2e-translated-notice    
+        - Leptonica    
+        - LGPL-2.0    
+        - LGPL-2.0+    
+        - LGPL-2.0-only    
+        - LGPL-2.0-or-later    
+        - LGPL-2.1    
+        - LGPL-2.1+    
+        - LGPL-2.1-only    
+        - LGPL-2.1-or-later    
+        - LGPL-3.0    
+        - LGPL-3.0+    
+        - LGPL-3.0-only    
+        - LGPL-3.0-or-later    
+        - LGPLLR    
+        - Libpng    
+        - libpng-2.0    
+        - libselinux-1.0    
+        - libtiff    
+        - libutil-David-Nugent    
+        - LiLiQ-P-1.1    
+        - LiLiQ-R-1.1    
+        - LiLiQ-Rplus-1.1    
+        - Linux-man-pages-1-para    
+        - Linux-man-pages-copyleft    
+        - Linux-man-pages-copyleft-2-para    
+        - Linux-man-pages-copyleft-var    
+        - Linux-OpenIB    
+        - LOOP    
+        - LPL-1.0    
+        - LPL-1.02    
+        - LPPL-1.0    
+        - LPPL-1.1    
+        - LPPL-1.2    
+        - LPPL-1.3a    
+        - LPPL-1.3c    
+        - LZMA-SDK-9.11-to-9.20    
+        - LZMA-SDK-9.22    
+        - MakeIndex    
+        - Martin-Birgmeier    
+        - metamail    
+        - Minpack    
+        - MirOS    
+        - MIT    
+        - MIT-0    
+        - MIT-advertising    
+        - MIT-CMU    
+        - MIT-enna    
+        - MIT-feh    
+        - MIT-Festival    
+        - MIT-Modern-Variant    
+        - MIT-open-group    
+        - MIT-testregex    
+        - MIT-Wu    
+        - MITNFA    
+        - MMIXware    
+        - Motosoto    
+        - MPEG-Software-Simulation    
+        - mpi-permissive    
+        - mpich2    
+        - MPL-1.0    
+        - MPL-1.1    
+        - MPL-2.0    
+        - MPL-2.0-no-copyleft-exception    
+        - mplus    
+        - MS-LPL    
+        - MS-PL    
+        - MS-RL    
+        - MTLL    
+        - MulanPSL-1.0    
+        - MulanPSL-2.0    
+        - Multics    
+        - Mup    
+        - NAIST-2003    
+        - NASA-1.3    
+        - Naumen    
+        - NBPL-1.0    
+        - NCGL-UK-2.0    
+        - NCSA    
+        - Net-SNMP    
+        - NetCDF    
+        - Newsletr    
+        - NGPL    
+        - NICTA-1.0    
+        - NIST-PD    
+        - NIST-PD-fallback    
+        - NIST-Software    
+        - NLOD-1.0    
+        - NLOD-2.0    
+        - NLPL    
+        - Nokia    
+        - NOSL    
+        - Noweb    
+        - NPL-1.0    
+        - NPL-1.1    
+        - NPOSL-3.0    
+        - NRL    
+        - NTP    
+        - NTP-0    
+        - Nunit    
+        - O-UDA-1.0    
+        - OCCT-PL    
+        - OCLC-2.0    
+        - ODbL-1.0    
+        - ODC-By-1.0    
+        - OFFIS    
+        - OFL-1.0    
+        - OFL-1.0-no-RFN    
+        - OFL-1.0-RFN    
+        - OFL-1.1    
+        - OFL-1.1-no-RFN    
+        - OFL-1.1-RFN    
+        - OGC-1.0    
+        - OGDL-Taiwan-1.0    
+        - OGL-Canada-2.0    
+        - OGL-UK-1.0    
+        - OGL-UK-2.0    
+        - OGL-UK-3.0    
+        - OGTSL    
+        - OLDAP-1.1    
+        - OLDAP-1.2    
+        - OLDAP-1.3    
+        - OLDAP-1.4    
+        - OLDAP-2.0    
+        - OLDAP-2.0.1    
+        - OLDAP-2.1    
+        - OLDAP-2.2    
+        - OLDAP-2.2.1    
+        - OLDAP-2.2.2    
+        - OLDAP-2.3    
+        - OLDAP-2.4    
+        - OLDAP-2.5    
+        - OLDAP-2.6    
+        - OLDAP-2.7    
+        - OLDAP-2.8    
+        - OLFL-1.3    
+        - OML    
+        - OpenPBS-2.3    
+        - OpenSSL    
+        - OPL-1.0    
+        - OPL-UK-3.0    
+        - OPUBL-1.0    
+        - OSET-PL-2.1    
+        - OSL-1.0    
+        - OSL-1.1    
+        - OSL-2.0    
+        - OSL-2.1    
+        - OSL-3.0    
+        - Parity-6.0.0    
+        - Parity-7.0.0    
+        - PDDL-1.0    
+        - PHP-3.0    
+        - PHP-3.01    
+        - Plexus    
+        - pnmstitch    
+        - PolyForm-Noncommercial-1.0.0    
+        - PolyForm-Small-Business-1.0.0    
+        - PostgreSQL    
+        - PSF-2.0    
+        - psfrag    
+        - psutils    
+        - Python-2.0    
+        - Python-2.0.1    
+        - Qhull    
+        - QPL-1.0    
+        - QPL-1.0-INRIA-2004    
+        - Rdisc    
+        - RHeCos-1.1    
+        - RPL-1.1    
+        - RPL-1.5    
+        - RPSL-1.0    
+        - RSA-MD    
+        - RSCPL    
+        - Ruby    
+        - SANE-exception    
+        - SAX-PD    
+        - Saxpath    
+        - SCEA    
+        - SchemeReport    
+        - Sendmail    
+        - Sendmail-8.23    
+        - SGI-B-1.0    
+        - SGI-B-1.1    
+        - SGI-B-2.0    
+        - SGP4    
+        - SHL-0.5    
+        - SHL-0.51    
+        - SimPL-2.0    
+        - SISSL    
+        - SISSL-1.2    
+        - SL    
+        - Sleepycat    
+        - SMLNJ    
+        - SMPPL    
+        - SNIA    
+        - snprintf    
+        - Soundex    
+        - Spencer-86    
+        - Spencer-94    
+        - Spencer-99    
+        - SPL-1.0    
+        - SSH-OpenSSH    
+        - SSH-short    
+        - SSPL-1.0    
+        - StandardML-NJ    
+        - stunnel-exception    
+        - SugarCRM-1.1.3    
+        - SunPro    
+        - SWL    
+        - Symlinks    
+        - TAPR-OHL-1.0    
+        - TCL    
+        - TCP-wrappers    
+        - TermReadKey    
+        - Texinfo-exception    
+        - TMate    
+        - TORQUE-1.1    
+        - TOSL    
+        - TPDL    
+        - TPL-1.0    
+        - TTWL    
+        - TTYP0    
+        - TU-Berlin-1.0    
+        - TU-Berlin-2.0    
+        - UCAR    
+        - UCL-1.0    
+        - Unicode-DFS-2015    
+        - Unicode-DFS-2016    
+        - Unicode-TOU    
+        - UnixCrypt    
+        - Unlicense    
+        - UPL-1.0    
+        - URT-RLE    
+        - Vim    
+        - VOSTROM    
+        - VSL-1.0    
+        - W3C    
+        - W3C-19980720    
+        - W3C-20150513    
+        - w3m    
+        - Watcom-1.0    
+        - Widget-Workshop    
+        - Wsuipa    
+        - WTFPL    
+        - wxWindows    
+        - X11    
+        - X11-distribute-modifications-variant    
+        - Xdebug-1.03    
+        - Xerox    
+        - Xfig    
+        - XFree86-1.1    
+        - xinetd    
+        - xlock    
+        - Xnet    
+        - xpp    
+        - XSkat    
+        - YPL-1.0    
+        - YPL-1.1    
+        - Zed    
+        - Zeeff    
+        - Zend-2.0    
+        - Zimbra-1.3    
+        - Zimbra-1.4    
+        - Zlib    
+        - zlib-acknowledgement    
+        - ZPL-1.1    
+        - ZPL-2.0    
+        - ZPL-2.1    
+      type: string    
+      x-ngsi:    
+        model: http://purl.org/dc/terms#LicenseDocument    
+        type: Property    
     modified:    
-      description: This property contains the most recent date on which the Dataset was changed or modified    
+      description: This property contains the most recent date on which the Dataset was changed or modified.    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     otherIdentifier:    
-      description: 'This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID'    
+      description: This property refers to a secondary identifier of the Dataset, such as MAST/ADS, DataCite, DOI, EZID or W3ID.    
       items:    
-        description: Every additional identifier included    
+        description: Every additional identifier included.    
         format: uri    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/ns/adms#Identifier"    
-        type: Property    
+        model: http://www.w3.org/ns/adms#Identifier    
+        type: Relationship    
     page:    
-      description: 'This property refers to a page or document about this Dataset. '    
+      description: This property refers to a page or document about this Dataset.    
       items:    
-        description: Every page or document    
+        description: Every page or document.    
         format: uri    
         type: string    
         x-ngsi:    
@@ -268,11 +1015,11 @@ Dataset:
       type: array    
       x-ngsi:    
         model: http://xmlns.com/foaf/0.1/Document    
-        type: Property    
+        type: Relationship    
     provenance:    
-      description: This property contains a statement about the lineage of a Dataset    
+      description: This property contains a statement about the lineage of a Dataset.    
       items:    
-        description: Every lineage associated to the dataset    
+        description: Every lineage associated to the dataset.    
         type: string    
         x-ngsi:    
           type: Property    
@@ -281,95 +1028,132 @@ Dataset:
         model: http://purl.org/dc/terms/ProvenanceStatement    
         type: Property    
     publisher:    
-      description: This property refers to an entity (organisation) responsible for making the Dataset available    
+      description: This property refers to an entity (organisation) responsible for making the Dataset available.    
       type: string    
       x-ngsi:    
         model: http://xmlns.com/foaf/0.1/Agent    
         type: Property    
     qualifiedAttribution:    
-      description: This property refers to a link to an Agent having some form of responsibility for the resource    
+      description: This property refers to a link to an Agent having some form of responsibility for the resource.    
       items:    
-        description: Every attribution included    
+        description: Every attribution included.    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Relationship"    
-        type: Property    
+        model: https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Attribution    
+        type: Relationship    
     qualifiedRelation:    
-      description: This property provides a link to a description of a relationship with another resource    
+      description: This property provides a link to a description of a relationship with another resource.    
       items:    
-        description: Every qualified relation included    
+        description: Every qualified relation included.    
         format: uri    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Relationship"    
-        type: Property    
+        model: http://www.w3.org/ns/dcat#Relationship    
+        type: Relationship    
     relation:    
-      description: This property refers to a related resource    
+      description: This property refers to a related resource.    
       items:    
-        description: Every related resource included    
+        description: Every related resource included.    
         format: uri    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Resource"    
+        model: http://www.w3.org/2000/01/rdf-schema#Resource    
+        type: Relationship    
+    reputation:    
+      description: 'Reputation level according to MELODA5 reputation dimension: * Level1Reputation: no information about the reputation of the data source. * Level2Reputation: statistics or reports published on user’s opinions. * Level3Reputation: Indicators or rankings on reputation of the data source.'    
+      enum:    
+        - Level1Reputation    
+        - Level2Reputation    
+        - Level3Reputation    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    reputationOrganization:    
+      description: URI to the organization which is responsible for the publication of the dataset in terms of reputation. It matches the dimension reputation of MELODA5 and it allows to retrieve their prestige from the ranking.    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/url    
         type: Property    
     sample:    
-      description: This property refers to a sample distribution of the dataset    
+      description: This property refers to a sample distribution of the dataset.    
       items:    
-        description: Every sample included with the dataset    
+        description: Every sample included with the dataset.    
         format: uri    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Distribution"    
-        type: Property    
+        model: http://www.w3.org/ns/dcat#Distribution    
+        type: Relationship    
     source:    
-      description: This property refers to a related Dataset from which the described Dataset is derived    
+      description: This property refers to a related Dataset from which the described Dataset is derived.    
       items:    
-        description: Every dataset which is a source of the current dataset    
-        format: uri    
-        type: string    
+        anyOf:    
+          - description: Identifier format of any NGSI entity.    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity.    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Every version of the related datasets.    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Dataset"    
-        type: Property    
+        model: http://www.w3.org/ns/dcat#Dataset    
+        type: Relationship    
     spatial:    
-      description: This property refers to a geographic region that is covered by the Dataset    
+      description: This property refers to a geographic region that is covered by the Dataset.    
       items:    
-        description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+        description: Every location included.    
         oneOf:    
           - bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
               type: string    
           - bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -377,16 +1161,22 @@ Dataset:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
               type: string    
           - bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -396,32 +1186,44 @@ Dataset:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
               type: string    
           - bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
               type: string    
           - bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -431,6 +1233,8 @@ Dataset:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -441,36 +1245,56 @@ Dataset:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
-                    items:    
+                    items: {}    
                     minItems: 2    
                     type: array    
                   minItems: 4    
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
               type: string    
         x-ngsi:    
-          type: GeoProperty    
+          type: Property    
       type: array    
       x-ngsi:    
         model: http://purl.org/dc/terms/Location    
         type: GeoProperty    
-    spatialResolutionInMeters:    
-      description: 'This property refers to the minimum spatial separation resolvable in a dataset, measured in meters'    
+    spatialResolution:    
+      description: This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.    
       type: number    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
+        type: Property    
+    standardization:    
+      description: 'The type of data model standardization followed by the dataset. This is an enumeration with three (4) possible values: * Level1Standardization: data model standardized by the publisher without releasing the documentation. * Level2Standardization: data model standardized by the published releasing the documentation. * Level3Standardization: data model using a local standard (national or smaller regional scope). * Level4Standardization: data model using an international standard.'    
+      enum:    
+        - Level1Standardization    
+        - Level2Standardization    
+        - Level3Standardization    
+        - Level4Standardization    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/Text    
+        type: Property    
+    standardizationSource:    
+      description: URI to the source where the definitions of the attributes can be read. It is associated with the standardization property. It can be empty in case of Level1 and Level2 or link to an existing standardization body (e.g., DIN, UNE, etc.) for Level3 or (e.g., ISO, W3C, etc.) for Level4.    
+      type: string    
+      x-ngsi:    
+        model: https://schema.org/url    
         type: Property    
     temporal:    
-      description: This property refers to a temporal period that the Dataset covers    
+      description: This property refers to a temporal period that the Dataset covers.    
       items:    
-        description: Every temporal period included    
+        description: Every temporal period included.    
         format: date-time    
         type: string    
         x-ngsi:    
@@ -480,9 +1304,9 @@ Dataset:
         model: http://purl.org/dc/terms/PeriodOfTime    
         type: Property    
     temporalResolution:    
-      description: 'This property refers to the minimum time period resolvable in the dataset. '    
+      description: This property refers to the minimum time period resolvable in the dataset.    
       items:    
-        description: Every temporal resolution included    
+        description: Every temporal resolution included.    
         format: duration    
         type: string    
         x-ngsi:    
@@ -492,61 +1316,141 @@ Dataset:
         model: http://purl.org/dc/terms/PeriodOfTime    
         type: Property    
     theme:    
-      description: This property refers to a category of the Dataset. A Dataset may be associated with multiple themes    
+      description: This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.    
       items:    
-        description: Every theme included    
+        description: Every theme included.    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2004/02/skos/core#Concept"    
+        model: http://www.w3.org/2004/02/skos/core#Concept    
         type: Property    
     title:    
-      description: This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name    
-      items:    
-        description: Every title in a language    
-        type: string    
-        x-ngsi:    
-          type: Property    
-      type: array    
+      description: LanguageProperty. This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.    
+      oneOf:    
+        - properties:    
+            languageMap:    
+              description: A JSON object consisting of a series of key-value pairs where the keys shall be JSON strings representing IETF RFC 5646 (https://www.rfc-editor.org/info/rfc5646) language codes.    
+              properties:    
+                de:    
+                  description: The title written in German.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                el:    
+                  description: The title written in Modern Greek.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                en:    
+                  description: The title written in English.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                es:    
+                  description: The title written in Spanish.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                fi:    
+                  description: The title written in Finnish.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                fr:    
+                  description: The title written in French.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                it:    
+                  description: The title written in Italian.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                ja:    
+                  description: The title written in Japanese.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                ko:    
+                  description: The title written in Korean.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                nl:    
+                  description: The title written in Dutch.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+                zh:    
+                  description: The title written in Chinese.    
+                  type: string    
+                  x-ngsi:    
+                    model: http://www.w3.org/2000/01/rdf-schema#Literal    
+                    type: Property    
+              type: object    
+              x-ngsi:    
+                model: https://www.w3.org/2000/01/rdf-schema#Literal    
+                type: Property    
+          type: object    
+        - description: The title written in a specific language.    
+          type: string    
+          x-ngsi:    
+            model: http://www.w3.org/2000/01/rdf-schema#Literal    
+            type: Property    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
-        type: Property    
+        model: http://purl.org/dc/terms/title    
     type:    
-      description: NGSI type. It has to be Dataset    
+      description: NGSI type. It has to be Dataset.    
       enum:    
         - Dataset    
       type: string    
       x-ngsi:    
         type: Property    
-    versionInfo:    
-      description: This property contains a version number or other version designation of the Dataset    
+    validationSchema:    
+      description: URL to the technical validation schema for the dataset (JSON Schema) in the Smart Data Models program.    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: https://schema.org/url    
+        type: Property    
+    version:    
+      description: This property contains a version number or other version designation of the Dataset.    
+      type: string    
+      x-ngsi:    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     versionNotes:    
-      description: This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes    
+      description: This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.    
       items:    
-        description: Every language description of the version notes    
+        description: Every language description of the version notes.    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     wasGeneratedBy:    
-      description: 'This property refers to an activity that generated, or provides the business context for, the creation of the dataset'    
+      description: This property refers to an activity that generated, or provides the business context for, the creation of the dataset.    
       items:    
-        description: Every activity included    
+        description: Every activity included.    
         type: string    
         x-ngsi:    
           type: Property    
       type: array    
       x-ngsi:    
-        model: "https://www.w3.org/ns/prov#Activity"    
+        model: https://www.w3.org/ns/prov#Activity    
         type: Property    
   required:    
     - id    
@@ -554,12 +1458,12 @@ Dataset:
     - description    
     - title    
   type: object    
-  x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-derived-from: https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset    
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
   x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Dataset/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/Dataset/schema.json    
-  x-model-tags: INTERSTAT    
-  x-version: 2.0.1    
+  x-model-tags: INTERSTAT, WATERVERSE    
+  x-version: 3.0.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -567,31 +1471,78 @@ Dataset:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
-#### Ensemble de données NGSI-v2 Valeurs clés Exemple  
-Voici un exemple de jeu de données au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### Exemple de Dataset NGSI-v2 clé-valeur  
+Voici un exemple de jeu de données au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
   "type": "Dataset",  
-  "modified": "2015-07-13T03:09:32Z",  
-  "source": [  
-    "urn:ngsi-ld:Dataset:items:YSWN:41266715"  
-  ],  
-  "description": [  
-    "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."  
-  ],  
-  "title": [  
-    "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"  
-  ],  
-  "contactPoint": [  
-    "https://datos.gob.es/es/comment/reply/145778."  
+  "accessMechanism": "Level3AccessMechanism",  
+  "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",  
+  "accuralPeriodicity": "weekly",  
+  "addressesAvailable": true,  
+  "applicableLegislation": [  
+    "Regulation 883/2004",  
+    "Regulation 465/2012"  
   ],  
   "belongsToCatalogue": "urn:ngsi-ld:Catalogue:items:MWVK:61846917",  
+  "conformsTo": [  
+    "http://www.opengis.net/def/crs/EPSG/0/28992",  
+    "http://data.europa.eu/eli/reg/2014/1312/oj"  
+  ],  
+  "contactPoint": [  
+    {  
+      "email": "wheatfarm@email.com"  
+    },  
+    {  
+      "email": "vehiculoelectrico@ava.es"  
+    }  
+  ],  
+  "creator": [  
+    "Comunidad de Madrid"  
+  ],  
+  "description": {  
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",  
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",  
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",  
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",  
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",  
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",  
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",  
+      "zh": "马德里大区不同类型和类别的旅游住宿。",  
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",  
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",  
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."  
+  },  
+  "dissemination": "Level2Dissemination",  
+  "disseminationOrganization": "https://url_to_organization.org",  
   "distribution": [  
     "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
     "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
   ],  
+  "geolocation": true,  
+  "hasVersion": [  
+    "urn:ngsi-ld:Dataset:items:SQSB:90831182",  
+    "urn:ngsi-ld:Dataset:items:FFVZ:69502935"  
+  ],  
+  "identifier": [  
+    "urn:ngsi-ld:Dataset:items:MBNQ:57176010",  
+    "urn:ngsi-ld:Dataset:items:DDDJ:93242038"  
+  ],  
+  "inSeries": [  
+    "urn:ngsi-ld:Dataset:id:HUZY:681332655",  
+    "urn:ngsi-ld:Dataset:id:HUZY:681970245"  
+  ],  
+  "isReferencedBy": [  
+    "urn:ngsi-ld:Dataset:items:YQRP:33454193",  
+    "urn:ngsi-ld:Dataset:items:RBND:48628164"  
+  ],  
+  "isVersionOf": [  
+    "urn:ngsi-ld:Dataset:items:AMAC:16896252",  
+    "urn:ngsi-ld:Dataset:items:IPSO:04920226"  
+  ],  
+  "issued": "1983-07-16T12:51:26Z",  
   "keyword": [  
     "alojamiento",  
     "apartamento rural",  
@@ -607,49 +1558,7 @@ Dataset:
     "hotel rural",  
     "hotel-apartamento",  
     "pension",  
-    "vivienda de uso turistico"  
-  ],  
-  "publisher": "comunidad de madrid.",  
-  "spatial": [  
-    {  
-      "type": "Point",  
-      "coordinates": [  
-        9.922458,  
-        109.478534  
-      ]  
-    }  
-  ],  
-  "temporal": [  
-    "2023-04-03T02:35:57Z"  
-  ],  
-  "theme": [  
-    "Economy",  
-    "Tourism"  
-  ],  
-  "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",  
-  "creator": [  
-    "Comunidad de Madrid"  
-  ],  
-  "page": [  
-    "urn:ngsi-ld:Dataset:items:EDTJ:28919577",  
-    "urn:ngsi-ld:Dataset:items:GKJO:30040605"  
-  ],  
-  "accrualPeriodicity": "weekly",  
-  "hasVersion": [  
-    "urn:ngsi-ld:Dataset:items:SQSB:90831182",  
-    "urn:ngsi-ld:Dataset:items:FFVZ:69502935"  
-  ],  
-  "identifier": [  
-    "urn:ngsi-ld:Dataset:items:MBNQ:57176010",  
-    "urn:ngsi-ld:Dataset:items:DDDJ:93242038"  
-  ],  
-  "isReferencedBy": [  
-    "urn:ngsi-ld:Dataset:items:YQRP:33454193",  
-    "urn:ngsi-ld:Dataset:items:RBND:48628164"  
-  ],  
-  "isVersionOf": [  
-    "urn:ngsi-ld:Dataset:items:AMAC:16896252",  
-    "urn:ngsi-ld:Dataset:items:IPSO:04920226"  
+    "vivienda de uso turístico"  
   ],  
   "landingPage": [  
     "urn:ngsi-ld:Dataset:items:UMBA:72418275",  
@@ -659,37 +1568,82 @@ Dataset:
     "EN",  
     "SP"  
   ],  
+  "license": "AGPL-3.0",  
+  "modified": "2015-07-13T03:09:32Z",  
   "otherIdentifier": [  
     "urn:ngsi-ld:Dataset:items:ZNYR:18053145",  
     "urn:ngsi-ld:Dataset:items:ICBO:96194869"  
+  ],  
+  "page": [  
+    "urn:ngsi-ld:Dataset:items:EDTJ:28919577",  
+    "urn:ngsi-ld:Dataset:items:GKJO:30040605"  
   ],  
   "provenance": [  
     "1",  
     "2"  
   ],  
+  "publisher": "Comunidad de madrid",  
   "qualifiedAttribution": [  
-    ""  
+    "urn:ngsi-ld:Agent:2567369057",  
+    "urn:ngsi-ld:Agent:6457369057"  
   ],  
   "qualifiedRelation": [  
     "urn:ngsi-ld:Dataset:items:ITFK:67369057",  
     "urn:ngsi-ld:Dataset:items:ZJWX:10596189"  
   ],  
-  "relatedResource": [  
+  "relation": [  
     "urn:ngsi-ld:Dataset:items:FXEY:35067714",  
     "urn:ngsi-ld:Dataset:items:YYOL:47950545"  
   ],  
-  "issued": "1983-07-16T12:51:26Z",  
+  "reputation": "Level2Reputation",  
+  "reputationOrganization": "https://url_to_organization.org",  
   "sample": [  
     "urn:ngsi-ld:Dataset:items:QJPZ:50290394",  
     "urn:ngsi-ld:Dataset:items:ZSSA:73451152"  
   ],  
-  "spatialResolutionInMeters": 0.6,  
+  "source": [  
+    "urn:ngsi-ld:Dataset:items:YSWN:41266715"  
+  ],  
+  "spatial": [  
+    {  
+      "type": "Point",  
+      "coordinates": [  
+        9.922458,  
+        109.478534  
+      ]  
+    }  
+  ],  
+  "spatialResolution": 0.6,  
+  "standardization": "Level4Standardization",  
+  "standardizationSource": "https://www.w3.org/",  
+  "temporal": [  
+    "2023-04-03T02:35:57Z"  
+  ],  
   "temporalResolution": [  
     "PT15M"  
   ],  
-  "Type": "",  
-  "version": "",  
+  "theme": [  
+    "Economy",  
+    "Tourism"  
+  ],  
+  "title": {  
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",  
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",  
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",  
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",  
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",  
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",  
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",  
+      "zh": "马德里大区不同类型和类别的旅游住宿。",  
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",  
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",  
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."  
+  },  
+  "Type": "service",  
+  "validationSchema": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json",  
+  "version": "3.0",  
   "versionNotes": [  
+    "With temporal evolution"  
   ],  
   "wasGeneratedBy": [  
     "datos.gob.es"  
@@ -697,50 +1651,145 @@ Dataset:
 }  
 ```  
 </details>  
-#### Ensemble de données NGSI-v2 normalisé Exemple  
-Voici un exemple d'un jeu de données au format JSON-LD tel que normalisé. Ce format est compatible avec les NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+#### Exemple de Dataset NGSI-v2 normalisé  
+Voici un exemple de jeu de données au format JSON-LD sous forme normalisée. Ceci est compatible avec NGSI-v2 lorsque l'on n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
   "type": "Dataset",  
-  "modified": {  
-    "type": "DateTime",  
-    "value": "2021-07-01T10:27:59Z"  
-  },  
-  "source": {  
+  "accessMechanism": {  
     "type": "Text",  
-    "value":"urn:ngsi-ld:Dataset:items:YSWN:41266715"  
+    "value": "Level3AccessMechanism"  
   },  
-  "description": {  
+  "accessRights": {  
     "type": "Text",  
-    "value": ["Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."]  
+    "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"  
   },  
-  "title": {  
-    "type": "array",  
-    "value": [  
-      "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"  
-    ]  
+  "accuralPeriodicity": {  
+    "type": "Text",  
+    "value": "two years"  
   },  
-  "contactPoint": {  
-    "type": "array",  
+  "addressesAvailable": {  
+    "type": "Boolean",  
+    "value": true  
+  },  
+  "applicableLegislation": {  
+    "type": "StructuredValue",  
     "value": [  
-       "https://datos.gob.es/es/comment/reply/145778."  
+      "Regulation 883/2004",  
+      "Regulation 465/2012"  
     ]  
   },  
   "belongsToCatalogue": {  
     "type": "Text",  
     "value": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"  
   },  
+  "conformsTo": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "http://www.opengis.net/def/crs/EPSG/0/28992",  
+      "http://data.europa.eu/eli/reg/2014/1312/oj"  
+    ]  
+  },  
+  "contactPoint": {  
+    "type": "StructuredValue",  
+    "value": [  
+      {  
+        "type": "Text",  
+        "email": "wheatfarm@email.com"  
+      },  
+      {  
+        "type": "Text",  
+        "email": "vehiculoelectrico@ava.es"  
+      }  
+    ]  
+  },  
+  "creator": {  
+    "type": "StructuredValue",  
+    "value":  [  
+      "Comunidad de Madrid"  
+    ]  
+  },  
+  "description": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",  
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",  
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",  
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",  
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",  
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",  
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",  
+      "zh": "马德里大区不同类型和类别的旅游住宿。",  
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",  
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",  
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."  
+    }  
+  },  
+  "dissemination": {  
+    "type": "Text",  
+    "value": "Level2Dissemination"  
+  },  
+  "disseminationOrganization": {  
+    "type": "Text",  
+    "value": "https://url_to_organization.org"  
+  },  
   "distribution": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
       "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
       "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
     ]  
   },  
+  "geolocation": {  
+    "type": "Boolean",  
+    "value": true  
+  },  
+  "hasVersion": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:id:ASDF:68185655",  
+      "urn:ngsi-ld:Dataset:id:ASDF:78185655"  
+    ]  
+  },  
+  "identifier": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:MBNQ:57176010",  
+      "urn:ngsi-ld:Dataset:items:DDDJ:93242038"  
+    ]  
+  },  
+  "inSeries": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:id:HUZY:681332655",  
+      "urn:ngsi-ld:Dataset:id:HUZY:681970245"  
+    ]  
+  },  
+  "isReferencedBy": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:HJNK:88711880",  
+      "urn:ngsi-ld:Dataset:items:MDEO:95193079"  
+    ]  
+  },  
+  "isVersionOf": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:RBWE:31388012",  
+      "urn:ngsi-ld:Dataset:items:GATZ:02632837"  
+    ]  
+  },  
+  "issued": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2021-10-01T15:46:46Z"  
+    }  
+  },  
   "keyword": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
     "alojamiento",  
     "apartamento rural",  
@@ -756,15 +1805,102 @@ Dataset:
     "hotel rural",  
     "hotel-apartamento",  
     "pension",  
-    "vivienda de uso turistico"  
+    "vivienda de uso turístico"  
+    ]  
+  },  
+  "landingPage": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "htps://meloda.org"  
+    ]  
+  },  
+  "language": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "EN",  
+      "ES"  
+    ]  
+  },  
+  "license": {  
+    "type": "Text",  
+    "value": "AGPL-3.0"  
+  },  
+  "modified": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2021-07-01T10:27:59Z"  
+    }  
+  },  
+  "otherIdentifier": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:ZNYR:18053145",  
+      "urn:ngsi-ld:Dataset:items:ICBO:96194869"  
+      ]  
+  },  
+  "page": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:EDTJ:28919577",  
+      "urn:ngsi-ld:Dataset:items:GKJO:30040605"  
+    ]  
+  },  
+  "provenance": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "1",  
+      "2"  
     ]  
   },  
   "publisher": {  
     "type": "Text",  
-    "value": "comunidad de madrid"  
+    "value": "Comunidad de madrid"  
+  },  
+  "qualifiedAttribution": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Agent:2567369057",  
+      "urn:ngsi-ld:Agent:6457369057"  
+    ]  
+  },  
+  "qualifiedRelation": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:ITFK:67369057",  
+      "urn:ngsi-ld:Dataset:items:ZJWX:10596189"  
+    ]  
+  },  
+  "relation": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:LGBY:74926949",  
+      "urn:ngsi-ld:Dataset:items:ZAUC:79968579"  
+    ]  
+  },  
+  "reputation": {  
+    "type": "Text",  
+    "value": "Level2Reputation"  
+  },  
+  "reputationOrganization": {  
+    "type": "Text",  
+    "value": "https://url_to_organization.org"  
+  },  
+  "sample": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:MLHW:64299003",  
+      "urn:ngsi-ld:Dataset:items:GNXL:59256807"  
+    ]  
+  },  
+  "source": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "urn:ngsi-ld:Dataset:items:YSWN:41266715"  
+    ]  
   },  
   "spatial": {  
-    "type": "geo:json",  
+    "type": "StructuredValue",  
     "value": {  
       "type": "Point",  
       "coordinates": [  
@@ -773,151 +1909,73 @@ Dataset:
       ]  
     }  
   },  
+  "spatialResolution": {  
+    "type": "Number",  
+    "value": 0.6  
+  },  
+  "standardization": {  
+    "type": "Text",  
+    "value": "Level4Standardization"  
+  },  
+  "standardizationSource": {  
+    "type": "Text",  
+    "value": "https://www.w3.org/"  
+  },  
   "temporal": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
     "2023-04-03T02:35:57Z"  
     ]  
   },  
+  "temporalResolution": {  
+    "type": "StructuredValue",  
+    "value": [  
+      "PT15M"  
+    ]  
+  },  
   "theme": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
     "Economy",  
     "Tourism"  
     ]  
   },  
-  "accessRights": {  
-    "type": "Text",  
-    "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"  
-  },  
-  "creator": {  
-    "type": "Text",  
-    "value":  "Comunidad de Madrid"  
-  },  
-  "page": {  
-    "type": "array",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "accrualPeriodicity": {  
-    "type": "array",  
-    "value": "two years"  
-  },  
-  "hasVersion": {  
-    "type": "Text",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "identifier": {  
-    "type": "array",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "isReferencedBy": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Dataset:items:HJNK:88711880",  
-      "urn:ngsi-ld:Dataset:items:MDEO:95193079"  
-    ]  
-  },  
-  "isVersionOf": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Dataset:items:RBWE:31388012",  
-      "urn:ngsi-ld:Dataset:items:GATZ:02632837"  
-    ]  
-  },  
-  "landingPage": {  
-    "type": "array",  
-    "value": [  
-      "htps://meloda.org"  
-    ]  
-  },  
-  "language": {  
-    "type": "array",  
-    "value": [  
-      "EN",  
-      "ES"  
-    ]  
-  },  
-  "otherIdentifier": {  
-    "type": "array",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "provenance": {  
-    "type": "array",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "qualifiedAttribution": {  
-    "type": "array",  
-    "value": [  
-      ""  
-    ]  
-  },  
-  "qualifiedRelation": {  
-    "type": "array",  
-    "value": [  
-      ""  
-    ]  
-  },  
-  "relatedResource": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Dataset:items:LGBY:74926949",  
-      "urn:ngsi-ld:Dataset:items:ZAUC:79968579"  
-    ]  
-  },  
-  "issued": {  
-    "type": "DateTime",  
-    "value": "2021-10-01T15:46:46Z"  
-  },  
-  "sample": {  
-    "type": "array",  
-    "value": [  
-      "urn:ngsi-ld:Dataset:items:MLHW:64299003",  
-      "urn:ngsi-ld:Dataset:items:GNXL:59256807"  
-    ]  
-  },  
-  "spatialResolutionInMeters": {  
-    "type": "array",  
-    "value": [  
-      0.6  
-    ]  
-  },  
-  "temporalResolution": {  
-    "type": "array",  
-    "value": [  
-      "PT15M"  
-    ]  
+  "title": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",  
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",  
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",  
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",  
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",  
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",  
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",  
+      "zh": "马德里大区不同类型和类别的旅游住宿。",  
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",  
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",  
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."  
+    }  
   },  
   "Type": {  
     "type": "Text",  
-    "value": ""  
+    "value": "service"  
+  },  
+  "validationSchema": {  
+    "type": "Text",  
+    "value": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json"  
   },  
   "version": {  
     "type": "Text",  
     "value": "3.0"  
   },  
   "versionNotes": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
       "With temporal evolution"  
     ]  
   },  
   "wasGeneratedBy": {  
-    "type": "Text",  
+    "type": "StructuredValue",  
     "value": [  
       "meloda Team"  
     ]  
@@ -925,31 +1983,80 @@ Dataset:
 }  
 ```  
 </details>  
-#### Ensemble de données Valeurs clés NGSI-LD Exemple  
-Voici un exemple d'ensemble de données au format JSON-LD en tant que valeurs clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+#### Exemple de clés-valeurs Dataset NGSI-LD  
+Voici un exemple de jeu de données au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Dataset:id:VESI:23278568",  
   "type": "Dataset",  
-  "modified": "2015-07-13T03:09:32Z",  
-  "source": [  
-    "urn:ngsi-ld:Dataset:items:YSWN:41266715"  
-  ],  
-  "description": [  
-    "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."  
-  ],  
-  "title": [  
-    "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"  
-  ],  
-  "contactPoint": [  
-    "https://datos.gob.es/es/comment/reply/145778."  
+  "accessMechanism": "Level3AccessMechanism",  
+  "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",  
+  "accuralPeriodicity": "weekly",  
+  "addressesAvailable": true,  
+  "applicableLegislation": [  
+    "Regulation 883/2004",  
+    "Regulation 465/2012"  
   ],  
   "belongsToCatalogue": "urn:ngsi-ld:Catalogue:items:MWVK:61846917",  
+  "conformsTo": [  
+    "http://www.opengis.net/def/crs/EPSG/0/28992",  
+    "http://data.europa.eu/eli/reg/2014/1312/oj"  
+  ],  
+  "contactPoint": [  
+    {  
+      "email": "wheatfarm@email.com"  
+    },  
+    {  
+      "email": "vehiculoelectrico@ava.es"  
+    }  
+  ],  
+  "creator": [  
+    "Comunidad de Madrid"  
+  ],  
+  "description": {  
+    "languageMap": {  
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",  
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",  
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",  
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",  
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",  
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",  
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",  
+      "zh": "马德里大区不同类型和类别的旅游住宿。",  
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",  
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",  
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."  
+    }  
+  },  
+  "dissemination": "Level2Dissemination",  
+  "disseminationOrganization": "https://url_to_organization.org",  
   "distribution": [  
     "urn:ngsi-ld:Distribution:items:KJVK:30944451",  
     "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
   ],  
+  "geolocation": true,  
+  "hasVersion": [  
+    "urn:ngsi-ld:Dataset:items:SQSB:90831182",  
+    "urn:ngsi-ld:Dataset:items:FFVZ:69502935"  
+  ],  
+  "identifier": [  
+    "urn:ngsi-ld:Dataset:items:MBNQ:57176010",  
+    "urn:ngsi-ld:Dataset:items:DDDJ:93242038"  
+  ],  
+  "inSeries": [  
+    "urn:ngsi-ld:Dataset:id:HUZY:681332655",  
+    "urn:ngsi-ld:Dataset:id:HUZY:681970245"  
+  ],  
+  "isReferencedBy": [  
+    "urn:ngsi-ld:Dataset:items:YQRP:33454193",  
+    "urn:ngsi-ld:Dataset:items:RBND:48628164"  
+  ],  
+  "isVersionOf": [  
+    "urn:ngsi-ld:Dataset:items:AMAC:16896252",  
+    "urn:ngsi-ld:Dataset:items:IPSO:04920226"  
+  ],  
+  "issued": "1983-07-16T12:51:26Z",  
   "keyword": [  
     "alojamiento",  
     "apartamento rural",  
@@ -965,49 +2072,7 @@ Dataset:
     "hotel rural",  
     "hotel-apartamento",  
     "pension",  
-    "vivienda de uso turistico"  
-  ],  
-  "publisher": "Statement which consumer product thought total. Nothing concern picture involve paper nor kid.",  
-  "spatial": [  
-    {  
-      "type": "Point",  
-      "coordinates": [  
-        9.922458,  
-        109.478534  
-      ]  
-    }  
-  ],  
-  "temporal": [  
-    "2023-04-03T02:35:57Z"  
-  ],  
-  "theme": [  
-    "Economy",  
-    "Tourism"  
-  ],  
-  "accessRights": "https://creativecommons.org/licenses/by/4.0/legalcode.es",  
-  "creator": [  
-    "Comunidad de Madrid"  
-  ],  
-  "page": [  
-    "urn:ngsi-ld:Dataset:items:EDTJ:28919577",  
-    "urn:ngsi-ld:Dataset:items:GKJO:30040605"  
-  ],  
-  "accrualPeriodicity": "weekly",  
-  "hasVersion": [  
-    "urn:ngsi-ld:Dataset:items:SQSB:90831182",  
-    "urn:ngsi-ld:Dataset:items:FFVZ:69502935"  
-  ],  
-  "identifier": [  
-    "urn:ngsi-ld:Dataset:items:MBNQ:57176010",  
-    "urn:ngsi-ld:Dataset:items:DDDJ:93242038"  
-  ],  
-  "isReferencedBy": [  
-    "urn:ngsi-ld:Dataset:items:YQRP:33454193",  
-    "urn:ngsi-ld:Dataset:items:RBND:48628164"  
-  ],  
-  "isVersionOf": [  
-    "urn:ngsi-ld:Dataset:items:AMAC:16896252",  
-    "urn:ngsi-ld:Dataset:items:IPSO:04920226"  
+    "vivienda de uso turístico"  
   ],  
   "landingPage": [  
     "urn:ngsi-ld:Dataset:items:UMBA:72418275",  
@@ -1017,85 +2082,175 @@ Dataset:
     "EN",  
     "SP"  
   ],  
+  "license": "AGPL-3.0",  
+  "modified": "2015-07-13T03:09:32Z",  
   "otherIdentifier": [  
     "urn:ngsi-ld:Dataset:items:ZNYR:18053145",  
     "urn:ngsi-ld:Dataset:items:ICBO:96194869"  
+  ],  
+  "page": [  
+    "urn:ngsi-ld:Dataset:items:EDTJ:28919577",  
+    "urn:ngsi-ld:Dataset:items:GKJO:30040605"  
   ],  
   "provenance": [  
     "1",  
     "2"  
   ],  
+  "publisher": "Comunidad de madrid",  
   "qualifiedAttribution": [  
-    "Central born manage evidence data. Answer doctor visit ready physical fact. Quite allow however certain lose heart.",  
-    "Home interesting range ever. Magazine the instead particularly. Late have collection."  
+    "urn:ngsi-ld:Agent:2567369057",  
+    "urn:ngsi-ld:Agent:6457369057"  
   ],  
   "qualifiedRelation": [  
     "urn:ngsi-ld:Dataset:items:ITFK:67369057",  
     "urn:ngsi-ld:Dataset:items:ZJWX:10596189"  
   ],  
-  "relatedResource": [  
+  "relation": [  
     "urn:ngsi-ld:Dataset:items:FXEY:35067714",  
     "urn:ngsi-ld:Dataset:items:YYOL:47950545"  
   ],  
-  "releaseDate": "1983-07-16T12:51:26Z",  
+  "reputation": "Level2Reputation",  
+  "reputationOrganization": "https://url_to_organization.org",  
   "sample": [  
     "urn:ngsi-ld:Dataset:items:QJPZ:50290394",  
     "urn:ngsi-ld:Dataset:items:ZSSA:73451152"  
   ],  
-  "spatialResolutionInMeters": 0.6,  
-  "temporalResolution": [  
-   "PT15M"  
+  "source": [  
+    "urn:ngsi-ld:Dataset:items:YSWN:41266715"  
   ],  
-  "Type": "",  
-  "version": "",  
+  "spatial": [  
+    {  
+      "type": "Point",  
+      "coordinates": [  
+        9.922458,  
+        109.478534  
+      ]  
+    }  
+  ],  
+  "spatialResolution": 0.6,  
+  "standardization": "Level4Standardization",  
+  "standardizationSource": "https://www.w3.org/",  
+  "temporal": [  
+    "2023-04-03T02:35:57Z"  
+  ],  
+  "temporalResolution": [  
+    "PT15M"  
+  ],  
+  "theme": [  
+    "Economy",  
+    "Tourism"  
+  ],  
+  "title": {  
+    "languageMap": {  
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",  
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",  
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",  
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",  
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",  
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",  
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",  
+      "zh": "马德里大区不同类型和类别的旅游住宿。",  
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",  
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",  
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."  
+    }  
+  },  
+  "Type": "service",  
+  "validationSchema": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json",  
+  "version": "3.0",  
   "versionNotes": [  
+    "With temporal evolution"  
   ],  
   "wasGeneratedBy": [  
     "datos.gob.es"  
   ],  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.DCAT-AP/context.jsonld"  
   ]  
 }  
 ```  
 </details>  
-#### Ensemble de données NGSI-LD normalisé Exemple  
-Voici un exemple de jeu de données au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données contextuelles d'une entité individuelle.  
+#### Exemple de Dataset NGSI-LD normalisé  
+Voici un exemple de jeu de données au format JSON-LD sous forme normalisée. Ceci est compatible avec NGSI-LD lorsque l'on n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:Dataset:id:HUZY:68185655",  
   "type": "Dataset",  
-  "modified": {  
+  "accessMechanism": {  
     "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-07-01T10:27:59Z"  
-    }  
+    "value": "Level3AccessMechanism"  
   },  
-  "source": {  
+  "accessRights": {  
     "type": "Property",  
-    "value":"urn:ngsi-ld:Dataset:items:YSWN:41266715"  
+    "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"  
   },  
-  "description": {  
+  "accuralPeriodicity": {  
     "type": "Property",  
-    "value": ["Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid."]  
+    "value": "two years"  
   },  
-  "title": {  
+  "addressesAvailable": {  
+    "type": "Property",  
+    "value": true  
+  },  
+  "applicableLegislation": {  
     "type": "Property",  
     "value": [  
-      "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid"  
-    ]  
-  },  
-  "contactPoint": {  
-    "type": "Property",  
-    "value": [  
-       "https://datos.gob.es/es/comment/reply/145778."  
+      "Regulation 883/2004",  
+      "Regulation 465/2012"  
     ]  
   },  
   "belongsToCatalogue": {  
     "type": "Relationship",  
     "object": "urn:ngsi-ld:Catalogue:items:MWVK:61846917"  
+  },  
+  "conformsTo": {  
+    "type": "Property",  
+    "value": [  
+      "http://www.opengis.net/def/crs/EPSG/0/28992",  
+      "http://data.europa.eu/eli/reg/2014/1312/oj"  
+    ]  
+  },  
+  "contactPoint": {  
+    "type": "Property",  
+    "value": [  
+      {  
+        "email": "wheatfarm@email.com"  
+      },  
+      {  
+        "email": "vehiculoelectrico@ava.es"  
+      }  
+    ]  
+  },  
+  "creator": {  
+    "type": "Property",  
+    "value":  [  
+      "Comunidad de Madrid"  
+    ]  
+  },  
+  "description": {  
+    "type": "LanguageProperty",  
+    "languageMap": {  
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",  
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",  
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",  
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",  
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",  
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",  
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",  
+      "zh": "马德里大区不同类型和类别的旅游住宿。",  
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",  
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",  
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."  
+    }  
+  },  
+  "dissemination": {  
+    "type": "Property",  
+    "value": "Level2Dissemination"  
+  },  
+  "disseminationOrganization": {  
+    "type": "Property",  
+    "value": "https://url_to_organization.org"  
   },  
   "distribution": {  
     "type": "Relationship",  
@@ -1104,29 +2259,162 @@ Dataset:
       "urn:ngsi-ld:Distribution:items:MMWU:84196227"  
     ]  
   },  
+  "geolocation": {  
+    "type": "Property",  
+    "value": true  
+  },  
+  "hasVersion": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:id:ASDF:68185655",  
+      "urn:ngsi-ld:Dataset:id:ASDF:78185655"  
+    ]  
+  },  
+  "identifier": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:MBNQ:57176010",  
+      "urn:ngsi-ld:Dataset:items:DDDJ:93242038"  
+    ]  
+  },  
+  "inSeries": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:id:HUZY:681332655",  
+      "urn:ngsi-ld:Dataset:id:HUZY:681970245"  
+    ]  
+  },  
+  "isReferencedBy": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:HJNK:88711880",  
+      "urn:ngsi-ld:Dataset:items:MDEO:95193079"  
+    ]  
+  },  
+  "isVersionOf": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:RBWE:31388012",  
+      "urn:ngsi-ld:Dataset:items:GATZ:02632837"  
+    ]  
+  },  
+  "issued": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2021-10-01T15:46:46Z"  
+    }  
+  },  
   "keyword": {  
     "type": "Property",  
     "value": [  
-    "alojamiento",  
-    "apartamento rural",  
-    "apartamento turístico",  
-    "campamento de turismo",  
-    "camping",  
-    "casa rural",  
-    "casas de huéspedes",  
-    "hostal",  
-    "hostel",  
-    "hosteria",  
-    "hotel",  
-    "hotel rural",  
-    "hotel-apartamento",  
-    "pension",  
-    "vivienda de uso turistico"  
+      "alojamiento",  
+      "apartamento rural",  
+      "apartamento turístico",  
+      "campamento de turismo",  
+      "camping",  
+      "casa rural",  
+      "casas de huéspedes",  
+      "hostal",  
+      "hostel",  
+      "hosteria",  
+      "hotel",  
+      "hotel rural",  
+      "hotel-apartamento",  
+      "pension",  
+      "vivienda de uso turístico"  
+    ]  
+  },  
+  "landingPage": {  
+    "type": "Property",  
+    "value": [  
+      "htps://meloda.org"  
+    ]  
+  },  
+  "language": {  
+    "type": "Property",  
+    "value": [  
+      "EN",  
+      "ES"  
+    ]  
+  },  
+  "license": {  
+    "type": "Property",  
+    "value": "AGPL-3.0"  
+  },  
+  "modified": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "DateTime",  
+      "@value": "2021-07-01T10:27:59Z"  
+    }  
+  },  
+  "otherIdentifier": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:ZNYR:18053145",  
+      "urn:ngsi-ld:Dataset:items:ICBO:96194869"  
+    ]  
+  },  
+  "page": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:EDTJ:28919577",  
+      "urn:ngsi-ld:Dataset:items:GKJO:30040605"  
+    ]  
+  },  
+  "provenance": {  
+    "type": "Property",  
+    "value": [  
+      "1",  
+      "2"  
     ]  
   },  
   "publisher": {  
     "type": "Property",  
     "value": "Comunidad de madrid"  
+  },  
+  "qualifiedAttribution": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Agent:2567369057",  
+      "urn:ngsi-ld:Agent:6457369057"  
+    ]  
+  },  
+  "qualifiedRelation": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:ITFK:67369057",  
+      "urn:ngsi-ld:Dataset:items:ZJWX:10596189"  
+    ]  
+  },  
+  "relation": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:LGBY:74926949",  
+      "urn:ngsi-ld:Dataset:items:ZAUC:79968579"  
+    ]  
+  },  
+  "reputation": {  
+    "type": "Property",  
+    "value": "Level2Reputation"  
+  },  
+  "reputationOrganization": {  
+    "type": "Property",  
+    "value": "https://url_to_organization.org"  
+  },  
+  "sample": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:MLHW:64299003",  
+      "urn:ngsi-ld:Dataset:items:GNXL:59256807"  
+    ]  
+  },  
+  "source": {  
+    "type": "Relationship",  
+    "object": [  
+      "urn:ngsi-ld:Dataset:items:YSWN:41266715"  
+    ]  
   },  
   "spatial": {  
     "type": "GeoProperty",  
@@ -1138,130 +2426,22 @@ Dataset:
       ]  
     }  
   },  
+  "spatialResolution": {  
+    "type": "Property",  
+    "value": 0.6  
+  },  
+  "standardization": {  
+    "type": "Property",  
+    "value": "Level4Standardization"  
+  },  
+  "standardizationSource": {  
+    "type": "Property",  
+    "value": "https://www.w3.org/"  
+  },  
   "temporal": {  
     "type": "Property",  
     "value": [  
-    "2023-04-03T02:35:57Z"  
-    ]  
-  },  
-  "theme": {  
-    "type": "Property",  
-    "value": [  
-    "Economy",  
-    "Tourism"  
-    ]  
-  },  
-  "accessRights": {  
-    "type": "Property",  
-    "value": "https://creativecommons.org/licenses/by/4.0/legalcode.es"  
-  },  
-  "creator": {  
-    "type": "Property",  
-    "value":  "Comunidad de Madrid"  
-  },  
-  "page": {  
-    "type": "Property",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "accrualPeriodicity": {  
-    "type": "Property",  
-    "value": "two years"  
-  },  
-  "hasVersion": {  
-    "type": "Property",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "identifier": {  
-    "type": "Property",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "isReferencedBy": {  
-    "type": "Relationship",  
-    "object": [  
-      "urn:ngsi-ld:Dataset:items:HJNK:88711880",  
-      "urn:ngsi-ld:Dataset:items:MDEO:95193079"  
-    ]  
-  },  
-  "isVersionOf": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Dataset:items:RBWE:31388012",  
-      "urn:ngsi-ld:Dataset:items:GATZ:02632837"  
-    ]  
-  },  
-  "landingPage": {  
-    "type": "Property",  
-    "value": [  
-      "htps://meloda.org"  
-    ]  
-  },  
-  "language": {  
-    "type": "Property",  
-    "value": [  
-      "EN",  
-      "ES"  
-    ]  
-  },  
-  "otherIdentifier": {  
-    "type": "Property",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "provenance": {  
-    "type": "Property",  
-    "value": [  
-      "",  
-      ""  
-    ]  
-  },  
-  "qualifiedAttribution": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
-  },  
-  "qualifiedRelation": {  
-    "type": "Property",  
-    "value": [  
-      ""  
-    ]  
-  },  
-  "relation": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Dataset:items:LGBY:74926949",  
-      "urn:ngsi-ld:Dataset:items:ZAUC:79968579"  
-    ]  
-  },  
-  "issued": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2021-10-01T15:46:46Z"  
-    }  
-  },  
-  "sample": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Dataset:items:MLHW:64299003",  
-      "urn:ngsi-ld:Dataset:items:GNXL:59256807"  
-    ]  
-  },  
-  "spatialResolutionInMeters": {  
-    "type": "Property",  
-    "value": [  
-      0.6  
+      "2023-04-03T02:35:57Z"  
     ]  
   },  
   "temporalResolution": {  
@@ -1270,11 +2450,38 @@ Dataset:
       "PT15M"  
     ]  
   },  
+  "theme": {  
+    "type": "Property",  
+    "value": [  
+      "Economy",  
+      "Tourism"  
+    ]  
+  },  
+  "title": {  
+    "type": "LanguageProperty",  
+    "languageMap": {  
+      "en": "Tourist accommodation in its different types and categories in the Community of Madrid.",  
+      "de": "Touristische Unterkünfte in ihren verschiedenen Arten und Kategorien in der Gemeinschaft Madrid.",  
+      "es": "Alojamientos turísticos en sus diferentes modalidades y categorias de la Comunidad de Madrid.",  
+      "fr": "L'hébergement touristique dans ses différents types et catégories dans la Communauté de Madrid.",  
+      "it": "Gli alloggi turistici nelle loro diverse tipologie e categorie nella Comunità di Madrid.",  
+      "ja": "マドリッド州内の様々なタイプやカテゴリーの観光宿泊施設。",  
+      "ko": "마드리드 커뮤니티의 다양한 유형과 카테고리의 관광 숙박 시설.",  
+      "zh": "马德里大区不同类型和类别的旅游住宿。",  
+      "el": "Τουριστικά καταλύματα σε διάφορους τύπους και κατηγορίες στην Κοινότητα της Μαδρίτης.",  
+      "nl": "Toeristische accommodatie in de verschillende soorten en categorieën in de gemeente Madrid.",  
+      "fi": "Matkailijoiden majoitustyypit ja -luokat Madridin alueella."  
+    }  
+  },  
   "Type": {  
     "type": "Property",  
-    "value": ""  
+    "value": "service"  
   },  
-  "versionInfo": {  
+  "validationSchema": {  
+    "type": "Property",  
+    "value": "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/refs/heads/master/Dataset/schema.json"  
+  },  
+  "version": {  
     "type": "Property",  
     "value": "3.0"  
   },  
@@ -1291,15 +2498,16 @@ Dataset:
     ]  
   },  
   "@context": [  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+    "https://smart-data-models.github.io/dataModel.DCAT-AP/context.jsonld"  
   ]  
 }  
 ```  
 </details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
+CHANGELOG DCAT-AP DCAT-AP::Dataset 2.1.1 -> 3.0.0 (schemaVersion "2.0.1" -> schemaVersion "3.0.0"). conformsTo a modifié le modèle de 'http://purl.org/dc/terms/Standard' vers 'http://purl.org/dc/terms/conformsTo'. Les propriétés title/description étaient représentées comme un tableau de chaînes de caractères, chaque entrée du tableau étant une traduction dans une langue spécifique. Elles sont désormais représentées comme LanguageProperty défini dans la spécification ETSI NGSI-LD pour offrir un support multilingue des données du jeu de données. hasVersion représenté comme Property, changé en Relationship de Datasets. language, les valeurs possibles sont définies par la Library of Congress ISO 639-1 (http://id.loc.gov/vocabulary/iso639-1.html), ISO 639-2 (http://id.loc.gov/vocabulary/iso639-2.html). source est passé d'un tableau de Properties à un tableau de Relationships dans la description de la propriété. versionInfo, conformément à la définition de la spécification du vocabulaire DCAT v3 (https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version), elles devraient être écrites version.  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Voir [FAQ 10] (https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse à la question de savoir comment traiter les unités de magnitude.  
+Voir la [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la manière de gérer les unités de grandeur  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

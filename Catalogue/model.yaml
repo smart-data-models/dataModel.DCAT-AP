@@ -5,36 +5,36 @@ Catalogue:
       description: The mailing address
       properties:
         addressCountry:
-          description: 'The country. For example, Spain'
+          description: The country. For example, Spain
           type: string
           x-ngsi:
             model: https://schema.org/addressCountry
             type: Property
         addressLocality:
-          description: 'The locality in which the street address is, and which is in the region'
+          description: The locality in which the street address is, and which is in the region
           type: string
           x-ngsi:
             model: https://schema.org/addressLocality
             type: Property
         addressRegion:
-          description: 'The region in which the locality is, and which is in the country'
+          description: The region in which the locality is, and which is in the country
           type: string
           x-ngsi:
             model: https://schema.org/addressRegion
             type: Property
         district:
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
           type: string
           x-ngsi:
             type: Property
         postOfficeBoxNumber:
-          description: 'The post office box number for PO box addresses. For example, 03578'
+          description: The post office box number for PO box addresses. For example, 03578
           type: string
           x-ngsi:
             model: https://schema.org/postOfficeBoxNumber
             type: Property
         postalCode:
-          description: 'The postal code. For example, 24004'
+          description: The postal code. For example, 24004
           type: string
           x-ngsi:
             model: https://schema.org/https://schema.org/postalCode
@@ -81,7 +81,7 @@ Catalogue:
           type: Relationship
       type: array
       x-ngsi:
-        model: "http://www.w3.org/ns/dcat#Catalog"
+        model: http://www.w3.org/ns/dcat#Catalog
         type: Relationship
     creator:
       description: The entities primarily responsible for producing the catalogue
@@ -113,10 +113,10 @@ Catalogue:
               type: Property
       type: array
       x-ngsi:
-        model: "http://www.w3.org/ns/dcat#dataset"
+        model: http://www.w3.org/ns/dcat#dataset
         type: Relationship
     description:
-      description: 'This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 8 of the pdf document https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1'
+      description: This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description. For further information on multilingual issues, please refer to section 8 of the pdf document https://codeload.github.com/SEMICeu/DCAT-AP/zip/refs/tags/v2.1.1
       items:
         description: Catalogue description in different languages
         type: string
@@ -124,7 +124,7 @@ Catalogue:
           type: Property
       type: array
       x-ngsi:
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"
+        model: http://www.w3.org/2000/01/rdf-schema#Literal
         type: Property
     hasPart:
       description: This property refers to a related Catalogue that is part of the described Catalogue
@@ -136,7 +136,7 @@ Catalogue:
           type: Relationship
       type: array
       x-ngsi:
-        model: "http://www.w3.org/ns/dcat#Catalog"
+        model: http://www.w3.org/ns/dcat#Catalog
         type: Relationship
     homepage:
       description: This property refers to a web page that acts as the main page for the Catalogue
@@ -161,23 +161,23 @@ Catalogue:
             type: Property
       description: Unique identifier of the entity
       x-ngsi:
-        type: Property
+        type: Relationship
     isPartOf:
       description: This property refers to a related Catalogue in which the described Catalogue is physically or logically included
       format: uri
       type: string
       x-ngsi:
-        model: "http://www.w3.org/ns/dcat#Catalog"
+        model: http://www.w3.org/ns/dcat#Catalog
         type: Relationship
     issued:
-      description: 'This property contains the date of formal issuance (e.g., publication) of the Catalogue'
+      description: This property contains the date of formal issuance (e.g., publication) of the Catalogue
       format: date-time
       type: string
       x-ngsi:
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"
+        model: http://www.w3.org/2000/01/rdf-schema#Literal
         type: Property
     language:
-      description: 'This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages'
+      description: This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the  metadata is provided in multiple languages
       items:
         description: Individual identifiers of the language
         type: string
@@ -194,20 +194,26 @@ Catalogue:
         model: http://purl.org/dc/terms/LicenseDocument
         type: Property
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
       oneOf:
         - description: Geojson reference to the item. Point
           properties:
             bbox:
+              description: BBox of the  Point
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the Point
               items:
                 type: number
               minItems: 2
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - Point
@@ -222,11 +228,15 @@ Catalogue:
         - description: Geojson reference to the item. LineString
           properties:
             bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the LineString
               items:
                 items:
                   type: number
@@ -234,6 +244,8 @@ Catalogue:
                 type: array
               minItems: 2
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - LineString
@@ -248,11 +260,15 @@ Catalogue:
         - description: Geojson reference to the item. Polygon
           properties:
             bbox:
+              description: BBox coordinates of the Polygon
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the Polygon
               items:
                 items:
                   items:
@@ -262,6 +278,8 @@ Catalogue:
                 minItems: 4
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - Polygon
@@ -276,17 +294,23 @@ Catalogue:
         - description: Geojson reference to the item. MultiPoint
           properties:
             bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the MulitPoint
               items:
                 items:
                   type: number
                 minItems: 2
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiPoint
@@ -301,11 +325,15 @@ Catalogue:
         - description: Geojson reference to the item. MultiLineString
           properties:
             bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the MultiLineString
               items:
                 items:
                   items:
@@ -315,6 +343,8 @@ Catalogue:
                 minItems: 2
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiLineString
@@ -334,6 +364,7 @@ Catalogue:
               minItems: 4
               type: array
             coordinates:
+              description: Coordinates of the MultiPolygon
               items:
                 items:
                   items:
@@ -345,6 +376,8 @@ Catalogue:
                   type: array
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiPolygon
@@ -363,13 +396,13 @@ Catalogue:
       format: date-time
       type: string
       x-ngsi:
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"
+        model: http://www.w3.org/2000/01/rdf-schema#Literal
         type: Property
     publisher:
       description: This property refers to an entity (organisation) responsible for making the Catalogue available
       type: string
       x-ngsi:
-        model: "http://xmlns.com/foaf/0.1/#term_Agent"
+        model: http://xmlns.com/foaf/0.1/#term_Agent
         type: Property
     record:
       description: This property refers to a Catalogue Record that is part of the Catalogue
@@ -392,7 +425,7 @@ Catalogue:
           type: Relationship
       type: array
       x-ngsi:
-        model: "http://www.w3.org/ns/dcat#CatalogRecord"
+        model: http://www.w3.org/ns/dcat#CatalogRecord
         type: Relationship
     rights:
       description: This property refers to a statement that specifies rights associated with the Catalogue
@@ -401,7 +434,7 @@ Catalogue:
         model: http://purl.org/dc/terms/RightsStatement
         type: Property
     service:
-      description: 'This property refers to a site or end-point (Data Service) that is listed in the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check'
+      description: This property refers to a site or end-point (Data Service) that is listed in the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalogue check
       items:
         anyOf:
           - description: Identifier format of any NGSI entity
@@ -421,33 +454,43 @@ Catalogue:
           type: Property
       type: array
       x-ngsi:
-        model: "http://www.w3.org/ns/dcat#DataService"
+        model: http://www.w3.org/ns/dcat#DataService
         type: Relationship
     spatial:
       description: This property refers to a geographical area covered by the Catalogue
       items:
-        description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+        description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
         oneOf:
           - bbox:
+              description: BBox of the  Point
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the Point
               items:
                 type: number
               minItems: 2
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - Point
               type: string
           - bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the LineString
               items:
                 items:
                   type: number
@@ -455,16 +498,22 @@ Catalogue:
                 type: array
               minItems: 2
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - LineString
               type: string
           - bbox:
+              description: BBox coordinates of the Polygon
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the Polygon
               items:
                 items:
                   items:
@@ -474,32 +523,44 @@ Catalogue:
                 minItems: 4
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - Polygon
               type: string
           - bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the MulitPoint
               items:
                 items:
                   type: number
                 minItems: 2
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiPoint
               type: string
           - bbox:
+              description: BBox coordinates of the LineString
               items:
                 type: number
               minItems: 4
               type: array
+              x-ngsi:
+                type: Property
             coordinates:
+              description: Coordinates of the MultiLineString
               items:
                 items:
                   items:
@@ -509,6 +570,8 @@ Catalogue:
                 minItems: 2
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiLineString
@@ -519,16 +582,19 @@ Catalogue:
               minItems: 4
               type: array
             coordinates:
+              description: Coordinates of the MultiPolygon
               items:
                 items:
                   items:
-                    items:
+                    items: {}
                     minItems: 2
                     type: array
                   minItems: 4
                   type: array
                 type: array
               type: array
+              x-ngsi:
+                type: Property
             type:
               enum:
                 - MultiPolygon
@@ -542,10 +608,13 @@ Catalogue:
     themeTaxonomy:
       description: This property refers to a knowledge organization system used to classify the Catalogue's Datasets
       items:
+        description: The value to be used for this property is the URI of the vocabulary itself, i.e. the concept scheme, not the URIs of the concepts in the vocabulary.
         type: string
+        x-ngsi:
+          type: Property
       type: array
       x-ngsi:
-        model: "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        model: http://www.w3.org/2004/02/skos/core#ConceptScheme
         type: Property
     title:
       description: This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name
@@ -556,7 +625,7 @@ Catalogue:
           type: Property
       type: array
       x-ngsi:
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"
+        model: http://www.w3.org/2000/01/rdf-schema#Literal
         type: Property
     type:
       description: It has to be Catalogue
@@ -573,9 +642,9 @@ Catalogue:
     - publisher
     - title
   type: object
-  x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-derived-from: https://github.com/SEMICeu/DCAT-AP/blob/master/releases/2.1.1/dcat-ap_2.1.1.pdf
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program
   x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/Catalogue/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/Catalogue/schema.json
-  x-model-tags: ""
+  x-model-tags: INTERSTAT, WATERVERSE
   x-version: 1.0.1

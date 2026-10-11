@@ -1,10 +1,10 @@
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-# Agent
+# Agent
 Version: 1.0.1
 
 ## Description 
 
-Agent Schema meeting DCAT-AP 2.1.1 specification
+Agent Schema definition based on DCAT-AP 2.1.1 specification
 ### Specification
 
 Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.DCAT-AP/Agent/swagger.yaml)

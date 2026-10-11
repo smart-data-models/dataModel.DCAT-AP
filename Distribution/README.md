@@ -1,6 +1,6 @@
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-# Distribution
-Version: 1.0.1
+# Distribution
+Version: 1.0.2
 
 ## Description 
 

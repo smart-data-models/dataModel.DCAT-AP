@@ -3,7 +3,7 @@
 Entity: CatalogueRecord  
 =======================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.DCAT-AP/blob/master/CatalogueRecord/LICENSE.md)  
+[Open License](https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecord/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
@@ -22,13 +22,14 @@
 	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
 - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `conformsTo[string]`: This property refers to an Application Profile that the Dataset's metadata conforms to  . Model: [http://purl.org/dc/terms/Standard](http://purl.org/dc/terms/Standard)- `description[array]`: This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `id[*]`: Unique identifier of the entity  - `issued[date-time]`: This property contains the date on which the description of the Dataset was included in the Catalogue  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `language[array]`: This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages  . Model: [http://purl.org/dc/terms/LinguisticSystem](http://purl.org/dc/terms/LinguisticSystem)- `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `modified[date-time]`: This property contains the most recent date on which the Catalogue entry was changed or modified  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `primaryTopic[string]`: This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record  . Model: [http://www.w3.org/ns/dcat#Dataset](http://www.w3.org/ns/dcat#Dataset)- `source[string]`: This property refers to the original metadata that was used in creating metadata for the Dataset  . Model: [http://www.w3.org/ns/dcat#CatalogRecord](http://www.w3.org/ns/dcat#CatalogRecord)- `status[string]`: This property refers to the type of the latest revision of a Dataset's entry in the Catalogue  . Model: [http://www.w3.org/2004/02/skos/core#Concept](http://www.w3.org/2004/02/skos/core#Concept)- `title[array]`: This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name  . Model: [http://www.w3.org/2000/01/rdf-schema#Literal](http://www.w3.org/2000/01/rdf-schema#Literal)- `type[string]`: NGSI entity type. It has to be CatalogueRecord  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
 - `id`  - `modified`  - `primaryTopic`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
 Adapted from [DCAT-AP version 2.1.1](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211).  
-<!-- /40-RequiredProperties -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
@@ -43,36 +44,36 @@ CatalogueRecord:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'The country. For example, Spain'    
+          description: The country. For example, Spain    
           type: string    
           x-ngsi:    
             model: https://schema.org/addressCountry    
             type: Property    
         addressLocality:    
-          description: 'The locality in which the street address is, and which is in the region'    
+          description: The locality in which the street address is, and which is in the region    
           type: string    
           x-ngsi:    
             model: https://schema.org/addressLocality    
             type: Property    
         addressRegion:    
-          description: 'The region in which the locality is, and which is in the country'    
+          description: The region in which the locality is, and which is in the country    
           type: string    
           x-ngsi:    
             model: https://schema.org/addressRegion    
             type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          description: A district is a type of administrative division that, in some countries, is managed by the local government    
           type: string    
           x-ngsi:    
             type: Property    
         postOfficeBoxNumber:    
-          description: 'The post office box number for PO box addresses. For example, 03578'    
+          description: The post office box number for PO box addresses. For example, 03578    
           type: string    
           x-ngsi:    
             model: https://schema.org/postOfficeBoxNumber    
             type: Property    
         postalCode:    
-          description: 'The postal code. For example, 24004'    
+          description: The postal code. For example, 24004    
           type: string    
           x-ngsi:    
             model: https://schema.org/https://schema.org/postalCode    
@@ -113,7 +114,7 @@ CatalogueRecord:
           type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     id:    
       anyOf:    
@@ -131,16 +132,16 @@ CatalogueRecord:
             type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
-        type: Property    
+        type: Relationship    
     issued:    
       description: This property contains the date on which the description of the Dataset was included in the Catalogue    
       format: date-time    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     language:    
-      description: 'This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages'    
+      description: This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages    
       items:    
         description: Every language tag    
         type: string    
@@ -151,20 +152,26 @@ CatalogueRecord:
         model: http://purl.org/dc/terms/LinguisticSystem    
         type: Property    
     location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon    
       oneOf:    
         - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
+              description: BBox of the  Point    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Point    
               items:    
                 type: number    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Point    
@@ -179,11 +186,15 @@ CatalogueRecord:
         - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the LineString    
               items:    
                 items:    
                   type: number    
@@ -191,6 +202,8 @@ CatalogueRecord:
                 type: array    
               minItems: 2    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - LineString    
@@ -205,11 +218,15 @@ CatalogueRecord:
         - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
+              description: BBox coordinates of the Polygon    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the Polygon    
               items:    
                 items:    
                   items:    
@@ -219,6 +236,8 @@ CatalogueRecord:
                 minItems: 4    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - Polygon    
@@ -233,17 +252,23 @@ CatalogueRecord:
         - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MulitPoint    
               items:    
                 items:    
                   type: number    
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPoint    
@@ -258,11 +283,15 @@ CatalogueRecord:
         - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
+              description: BBox coordinates of the LineString    
               items:    
                 type: number    
               minItems: 4    
               type: array    
+              x-ngsi:    
+                type: Property    
             coordinates:    
+              description: Coordinates of the MultiLineString    
               items:    
                 items:    
                   items:    
@@ -272,6 +301,8 @@ CatalogueRecord:
                 minItems: 2    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiLineString    
@@ -291,6 +322,7 @@ CatalogueRecord:
               minItems: 4    
               type: array    
             coordinates:    
+              description: Coordinates of the MultiPolygon    
               items:    
                 items:    
                   items:    
@@ -302,6 +334,8 @@ CatalogueRecord:
                   type: array    
                 type: array    
               type: array    
+              x-ngsi:    
+                type: Property    
             type:    
               enum:    
                 - MultiPolygon    
@@ -320,33 +354,37 @@ CatalogueRecord:
       format: date-time    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     primaryTopic:    
-      description: 'This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record'    
+      description: This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#Dataset"    
+        model: http://www.w3.org/ns/dcat#Dataset    
         type: Property    
     source:    
       description: This property refers to the original metadata that was used in creating metadata for the Dataset    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/ns/dcat#CatalogRecord"    
+        model: http://www.w3.org/ns/dcat#CatalogRecord    
         type: Property    
     status:    
       description: This property refers to the type of the latest revision of a Dataset's entry in the Catalogue    
       type: string    
       x-ngsi:    
-        model: "http://www.w3.org/2004/02/skos/core#Concept"    
+        model: http://www.w3.org/2004/02/skos/core#Concept    
         type: Property    
     title:    
       description: This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name    
       items:    
+        description: Every title.    
         type: string    
+        x-ngsi:    
+          model: http://www.w3.org/2000/01/rdf-schema#Literal    
+          type: Property    
       type: array    
       x-ngsi:    
-        model: "http://www.w3.org/2000/01/rdf-schema#Literal"    
+        model: http://www.w3.org/2000/01/rdf-schema#Literal    
         type: Property    
     type:    
       description: NGSI entity type. It has to be CatalogueRecord    
@@ -361,11 +399,11 @@ CatalogueRecord:
     - primaryTopic    
     - modified    
   type: object    
-  x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-derived-from: https://github.com/SEMICeu/DCAT-AP/blob/master/releases/2.1.1/dcat-ap_2.1.1.pdf    
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
   x-license-url: https://github.com/smart-data-models/dataModel.DCAT-AP/blob/master/CatalogueRecord/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.DCAT-AP/CatalogueRecord/schema.json    
-  x-model-tags: ""    
+  x-model-tags: INTERSTAT, WATERVERSE    
   x-version: 1.0.1    
 ```  
 </details>    
@@ -381,7 +419,9 @@ CatalogueRecord:
 {  
   "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
   "type": "CatalogueRecord",  
-  "description": ["Catalogue record of the solar system open data portal"],  
+  "description": [  
+    "Catalogue record of the solar system open data portal"  
+  ],  
   "location": {  
     "type": "Point",  
     "coordinates": [  
@@ -407,7 +447,7 @@ CatalogueRecord:
   ],  
   "title": [  
     "Example of catalogue record",  
-    "Ejemplo de registro de catálogo"  
+    "Ejemplo de registro de cat\u00e1logo"  
   ]  
 }  
 ```  
@@ -434,7 +474,7 @@ CatalogueRecord:
     }  
   },  
   "address": {  
-    "type": "PostalAdress",  
+    "type": "StructuredValue",  
     "value": {  
       "streetAddress": "2, rue Mercier",  
       "addressLocality": "Luxembourg",  
@@ -453,17 +493,17 @@ CatalogueRecord:
     "value": "Public administration"  
   },  
   "language": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
       "EN",  
       "ES"  
     ]  
   },  
   "title": {  
-    "type": "array",  
+    "type": "StructuredValue",  
     "value": [  
       "Example of catalogue record",  
-      "Ejemplo de registro de catálogo"  
+      "Ejemplo de registro de cat\u00e1logo"  
     ]  
   }  
 }  
@@ -474,38 +514,40 @@ CatalogueRecord:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
-    "type": "CatalogueRecord",  
-    "address": {  
-        "streetAddress": "2, rue Mercier",  
-        "addressLocality": "Luxembourg",  
-        "addressRegion": "Luxembourg",  
-        "addressCountry": "Luxembourg",  
-        "postalCode": "2985",  
-        "postOfficeBoxNumber": ""  
-    },  
-    "areaServed": "European Union and beyond",  
-    "modified": "2021-07-02T18:37:55Z",  
-    "description": ["Catalogue record of the solar system open data portal"],  
-    "language": [  
-        "EN",  
-        "ES"  
-    ],  
-    "location": {  
-        "type": "Point",  
-        "coordinates": [  
-            36.633152,  
-            -85.183315  
-        ]  
-    },  
-    "primaryTopic": "Public administration",  
-    "title": [  
-        "Example of catalogue record",  
-        "Ejemplo de registro de cat\u00e1logo"  
-    ],  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+  "id": "urn:ngsi-ld:CatalogueRecord:id:KFTL:88140679",  
+  "type": "CatalogueRecord",  
+  "address": {  
+    "streetAddress": "2, rue Mercier",  
+    "addressLocality": "Luxembourg",  
+    "addressRegion": "Luxembourg",  
+    "addressCountry": "Luxembourg",  
+    "postalCode": "2985",  
+    "postOfficeBoxNumber": ""  
+  },  
+  "areaServed": "European Union and beyond",  
+  "modified": "2021-07-02T18:37:55Z",  
+  "description": [  
+    "Catalogue record of the solar system open data portal"  
+  ],  
+  "language": [  
+    "EN",  
+    "ES"  
+  ],  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      36.633152,  
+      -85.183315  
     ]  
+  },  
+  "primaryTopic": "Public administration",  
+  "title": [  
+    "Example of catalogue record",  
+    "Ejemplo de registro de cat\u00e1logo"  
+  ],  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.DCAT-AP/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
@@ -535,10 +577,8 @@ CatalogueRecord:
     ]  
   },  
   "listingDate": {  
-    "type": {  
-      "@type": "Property",  
-      "@value": "2021-07-02T18:37:55Z"  
-    }  
+    "type": "Property",  
+    "value": "2021-07-02T18:37:55Z"  
   },  
   "location": {  
     "type": "GeoProperty",  
@@ -551,10 +591,8 @@ CatalogueRecord:
     }  
   },  
   "modified": {  
-    "type": {  
-      "@type": "Property",  
-      "@value": "2021-07-02T18:37:55Z"  
-    }  
+    "type": "Property",  
+    "value": "2021-07-02T18:37:55Z"  
   },  
   "primaryTopic": {  
     "type": "Property",  
